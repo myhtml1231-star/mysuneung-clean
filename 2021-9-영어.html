@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>기출 다운로드</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#fff; --muted:#6b7280; --accent:#F4B733; --border:#e6e6e6;
+  }
+  body{margin:0;font-family:"Pretendard","Noto Sans KR",sans-serif;background:var(--bg);color:#111}
+  header{padding:18px;text-align:center}
+  header img{width:56px;height:auto;display:block;margin:0 auto 8px}
+  h1{font-size:26px;text-align:center;margin:6px 0 18px;font-weight:800}
+
+  .main{max-width:1100px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .card{background:var(--card);border-radius:14px;padding:26px;border:1px solid var(--border);box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+  .group-title{font-weight:800;margin-bottom:18px;font-size:20px;color:#222;text-align:center}
+
+  .item{display:flex;justify-content:space-between;align-items:center;padding:14px;border-radius:12px;background:#fff;margin-bottom:12px;border:1px solid #f0f0f0}
+  .item .label{font-weight:700}
+  .item a{color:#111;text-decoration:none;font-weight:700}
+
+  /* player */
+  .player-center{text-align:center}
+  .seek{width:100%;-webkit-appearance:none;height:8px;background:#e6e6e6;border-radius:6px;outline:none}
+  .seek::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;background:var(--accent);border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.18);border:2px solid #fff}
+
+  .controls{display:flex;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap}
+  .btn{background:#f3f3f3;border:1px solid #ddd;padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700}
+  .btn:hover{background:#eee}
+  .speed-btn{padding:6px 10px;border-radius:8px;border:1px solid #e0e0e0;background:#fafafa;cursor:pointer;font-weight:700}
+  .speed-btn.active{background:#fff2d6;border-color:var(--accent)}
+  .time{margin-top:10px;color:var(--muted);font-size:14px}
+
+  .downloads{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+  .download-link{padding:12px;border-radius:10px;background:#fff;border:1px solid #f0f0f0;text-decoration:none;color:#111;font-weight:700;text-align:center}
+
+  .back{display:inline-block;margin:28px auto;padding:10px 18px;border-radius:10px;background:#fff;border:1px solid #ddd;text-decoration:none;color:#111;font-weight:700}
+
+  @media(max-width:900px){
+    .main{grid-template-columns:1fr}
+    .back{margin-bottom:40px}
+  }
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #444;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+</style>
+</head>
+<body>
+
+<header>    <img src="Images/logo.png" alt="logo">
+</header>
+
+<h1>2021학년도 고3 9월 영어-다운로드</h1>
+
+<div class="main">
+
+  <!-- LEFT -->
+  <div class="card">
+    <div class="group-title">문항 자료</div>
+
+    <div class="item">
+      <div class="label">문제지</div>
+      <a href="batch3/2021-9-영어.pdf" download>다운로드</a>
+    </div>
+
+    <div class="item">
+      <div class="label">정답지</div>
+      <a href="2021-9-영정.pdf" download>다운로드</a>
+    </div>
+
+    <div class="item">
+      <div class="label">해설지</div>
+      <a href="batch3/2021-9-영어'.pdf" download>다운로드</a>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="card">
+    <div class="group-title">듣기 자료</div>
+
+    <div class="player-center">
+
+      <audio id="audio" preload="metadata"
+             src="https://pub-847376fcebac40e496cc5726d0ff6245.r2.dev/2021-9-듣기.mp3"></audio>
+
+      <input id="seek" class="seek" type="range" min="0" max="100" value="0">
+
+      <div class="controls">
+        <button class="btn" id="back10">⏪ -10s</button>
+        <button class="btn" id="toggle">▶ 재생</button>
+        <button class="btn" id="fwd10">+10s ⏩</button>
+      </div>
+
+      <div class="controls">
+        <button class="speed-btn" data-speed="0.5">0.5x</button>
+        <button class="speed-btn" data-speed="0.75">0.75x</button>
+        <button class="speed-btn active" data-speed="1">1.0x</button>
+        <button class="speed-btn" data-speed="1.25">1.25x</button>
+        <button class="speed-btn" data-speed="1.5">1.5x</button>
+        <button class="speed-btn" data-speed="2">2.0x</button>
+      </div>
+
+      <div class="time" id="time">00:00 / 00:00</div>
+
+      <!-- DOWNLOAD AREA: 2개로 분리 -->
+      <div class="downloads">
+        <a class="download-link"
+           href="https://pub-847376fcebac40e496cc5726d0ff6245.r2.dev/2021-9-%EB%93%A3%EA%B8%B0.zip"
+           download>
+           듣기 전체 다운로드         </a>
+
+        <a class="download-link"
+           href="https://pub-847376fcebac40e496cc5726d0ff6245.r2.dev/2021-9-%EB%93%A3%EA%B0%9C.zip"
+           download>
+           듣기 개별 다운로드         </a>
+
+        <a class="download-link" href="batch3/2021-9-듣대.pdf" download>
+          듣기 대본 다운로드        </a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div style="text-align:center;">
+    <a class="back-btn" href="2021_9.html">← 이전 화면으로 돌아가기</a>
+</div>
+
+<script>
+  const audio = document.getElementById('audio');
+  const seek = document.getElementById('seek');
+  const timeEl = document.getElementById('time');
+  const toggle = document.getElementById('toggle');
+  const back10 = document.getElementById('back10');
+  const fwd10 = document.getElementById('fwd10');
+  const speedBtns = document.querySelectorAll('.speed-btn');
+
+  function fmt(t){
+    if(!isFinite(t) || t <= 0) return '00:00';
+    const m = Math.floor(t/60).toString().padStart(2,'0');
+    const s = Math.floor(t%60).toString().padStart(2,'0');
+    return `${m}:${s}`;
+  }
+
+  audio.addEventListener('loadedmetadata', () => {
+    seek.max = Math.floor(audio.duration);
+    timeEl.textContent = `00:00 / ${fmt(audio.duration)}`;
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    seek.value = audio.currentTime;
+    timeEl.textContent = `${fmt(audio.currentTime)} / ${fmt(audio.duration)}`;
+  });
+
+  seek.addEventListener('input', () => {
+    audio.currentTime = seek.value;
+  });
+
+  toggle.addEventListener('click', () => {
+    if(audio.paused){
+      audio.play();
+      toggle.textContent = '⏸ 일시정지';
+    } else {
+      audio.pause();
+      toggle.textContent = '▶ 재생';
+    }
+  });
+
+  back10.addEventListener('click', ()=> audio.currentTime = Math.max(0, audio.currentTime - 10));
+  fwd10.addEventListener('click', ()=> audio.currentTime = Math.min(audio.duration, audio.currentTime + 10));
+
+  speedBtns.forEach(btn => {
+    btn.addEventListener('click', ()=>{
+      audio.playbackRate = parseFloat(btn.dataset.speed);
+      speedBtns.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

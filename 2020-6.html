@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기출 다운로드</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #f5f7fa;
+        font-family: "Pretendard", sans-serif;
+    }
+
+    /* 상단 로고 영역 */
+    .header {
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+        background: white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .header img {
+        width: 55px;
+        opacity: 0.9;
+    }
+
+    /* 전체 페이지 래퍼 */
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        width: 100%;
+        max-width: 1300px;
+        margin: 50px auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* 좌/우 박스 */
+    .exam-box {
+        flex: 1;
+        max-width: 600px;
+        background: white;
+        padding: 35px 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .exam-title {
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f7f9fc;
+        border-radius: 12px;
+        padding: 18px 24px;
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+
+    .item a {
+        text-decoration: none;
+        color: #4a5568;
+        font-weight: 600;
+    }
+
+    /* 뒤로가기 버튼 */
+    .back-area {
+        width: 100%;
+        text-align: center;
+        margin: 50px 0 70px 0;
+    }
+
+    .back-btn {
+ display: inline-block;
+      margin-top: 60px;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #444;
+      font-size: 18px;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+    .back-btn:hover {
+        background: #f3f3f3;
+        transform: translateY(-2px);
+    }
+
+    /* 모바일 대응 */
+    @media (max-width: 900px) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        .exam-box {
+            max-width: 90%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- 헤더 -->
+<div class="header">
+    <img src="Images/logo.png" alt="logo">
+</div>
+
+<!-- 본문 -->
+<div class="wrapper">
+
+    <!-- 왼쪽 박스 -->
+    <div class="exam-box">
+        <div class="exam-title">2020학년도 고3 6월 수학(가형)</div>
+
+        <div class="item">
+            <span>문제지</span>
+            <a href="Files/mj-question.pdf" download>PDF 다운로드</a>
+        </div>
+
+        <div class="item">
+            <span>정답지</span>
+            <a href="Files/mj-answer.pdf" download>PDF 다운로드</a>
+        </div>
+
+        <div class="item">
+            <span>해설지</span>
+            <a href="Files/mj-solution.pdf" download>PDF 다운로드</a>
+        </div>
+    </div>
+
+    <!-- 오른쪽 박스 -->
+    <div class="exam-box">
+        <div class="exam-title">2021학년도 고3 6월 수학(나형)</div>
+
+        <div class="item">
+            <span>문제지</span>
+            <a href="Files/gh-question.pdf" download>PDF 다운로드</a>
+        </div>
+
+        <div class="item">
+            <span>정답지</span>
+            <a href="Files/gh-answer.pdf" download>PDF 다운로드</a>
+        </div>
+
+        <div class="item">
+            <span>해설지</span>
+            <a href="Files/gh-solution.pdf" download>PDF 다운로드</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- 뒤로가기 -->
+<div class="back-area">
+    <a class="back-btn" href="2020_6.html">← 이전 화면으로 돌아가기</a>
+</div>
+
+</body>
+</html>

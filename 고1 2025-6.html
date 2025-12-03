@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>등급컷 사이트</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Pretendard", sans-serif;
+}
+
+body {
+    background: #f4f5f7;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* 상단 헤더(로고 + 연도) */
+.top-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 연도 가운데 정렬 */
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+}
+
+.top-year {
+    font-size: 52px;
+    font-weight: 800;
+}
+
+/* 메인 카테고리 버튼 */
+.subject-btn {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.25s;
+    position: relative;
+}
+
+.subject-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* 토글되는 선택과목 영역 */
+.sub-wrap {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    transition: max-height 0.35s ease, padding 0.25s;
+}
+
+/* 선택과목 카드 */
+.sub-box {
+    display: inline-block;
+    width: 200px;
+    height: 120px;
+    background: white;
+    border: 2px solid #000;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* 제목 */
+.sub-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* 등급컷 */
+.cut-area {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.45;
+}
+
+/* 뒤로가기 버튼 (회색 박스 버튼) */
+.back-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #e7e7e7;
+    border-radius: 10px;
+    color: #333 !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #d4d4d4;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #dcdcdc;
+}
+</style>
+
+</head>
+<body>
+
+<!-- 상단 헤더 -->
+<div class="top-header">
+    <img src="Images/logo.png" class="logo" alt="logo">
+    <div class="top-year">2025학년도 6월 등급컷</div>
+</div>
+
+<div class="container">
+
+    <!-- 국어 -->
+    <div class="subject-btn">국어</div>
+    <div class="sub-wrap">
+        <div class="sub-box">
+            <div class="sub-title">화법과 작문</div>
+            <div class="cut-area">1등급: <br>2등급: <br>3등급:</div>
+        </div>
+        <div class="sub-box">
+            <div class="sub-title">언어와 매체</div>
+            <div class="cut-area">1등급: <br>2등급: <br>3등급:</div>
+        </div>
+    </div>
+
+    <!-- 수학 -->
+    <div class="subject-btn">수학</div>
+    <div class="sub-wrap">
+        <div class="sub-box"><div class="sub-title">확률과 통계</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">미적분</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">기하</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+    </div>
+
+    <!-- 과탐 -->
+    <div class="subject-btn">과학탐구</div>
+    <div class="sub-wrap">
+        <div class="sub-box"><div class="sub-title">물리</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">화학</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">생명과학</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">지구과학</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+    </div>
+
+    <!-- 사탐 -->
+    <div class="subject-btn">사회탐구</div>
+    <div class="sub-wrap">
+
+        <div class="sub-box"><div class="sub-title">생활과 윤리</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">윤리와 사상</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">한국지리</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">세계지리</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+
+        <div class="sub-box"><div class="sub-title">동아시아사</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+
+        <div class="sub-box"><div class="sub-title">세계사</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">정치와 법</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">경제</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+        <div class="sub-box"><div class="sub-title">사회·문화</div><div class="cut-area">1등급:<br>2등급:<br>3등급:</div></div>
+    </div>
+
+    <!-- 뒤로가기 버튼 -->
+    <a href="2025 고1 컷 년도 선택.html" class="back-btn">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+<!-- ▼ JS : 버튼 클릭하면 슬라이드 토글 -->
+<script>
+document.querySelectorAll(".subject-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const wrap = btn.nextElementSibling;
+
+        if (wrap.style.maxHeight && wrap.style.maxHeight !== "0px") {
+            wrap.style.maxHeight = "0px";
+            wrap.style.padding = "0";
+        } else {
+            wrap.style.maxHeight = wrap.scrollHeight + "px";
+            wrap.style.padding = "12px 0 20px 0";
+        }
+    });
+});
+</script>
+
+</body>
+</html>

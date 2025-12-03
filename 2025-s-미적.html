@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>기출 다운로드</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", sans-serif;
+      background: #fafafa;
+      text-align: center;
+    }
+
+    /* 로고 */
+    .logo {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 180px;
+      user-select: none;
+    }
+
+    /* 제목 */
+    .title {
+      font-size: 32px;
+      font-weight: 900;
+      color: #333;
+      margin-bottom: 50px;
+    }
+
+    /* 박스 전체 컨테이너 */
+    .box-container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      padding: 20px;
+    }
+
+    /* 박스 디자인 */
+    .download-box {
+      background: white;
+      padding: 40px 10px;
+      border-radius: 18px;
+      border: 1px solid #e6e6e6;
+      font-size: 22px;
+      font-weight: 700;
+      color: #333;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-decoration: none;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .download-box:hover {
+      background: #fff8e5;
+      border-color: #F4B733;
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    /* 뒤로가기 */
+    .back-btn {
+      display: inline-block;
+      margin-top: 60px;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #444;
+      font-size: 18px;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+    .back-btn:hover {
+      background: #e4e4e4;
+      transform: translateY(-2px);
+    }
+
+    /* 반응형 */
+    @media (max-width: 720px) {
+      .box-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+      }
+      .download-box {
+        padding: 32px 10px;
+        font-size: 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- 로고 -->
+  <div class="logo">
+    <img src="Images/logo.png" alt="logo">
+  </div>
+
+  <!-- 제목 -->
+  <div class="title">2025학년도 고3 수능 수학(미적분) — 다운로드</div>
+
+  <!-- 다운로드 박스 3개 -->
+  <div class="box-container">
+    <a class="download-box" href="batch4/2025-s-미적.pdf" download>문제</a>
+    <a class="download-box" href="batch4/2025-s-수학.pdf" download>정답</a>
+    <a class="download-box" href="batch4/2025-s-미적'.pdf" download>해설</a>
+  </div>
+
+  <!-- 뒤로가기 -->
+  <a class="back-btn" href="2025_s.html">← 이전 화면으로 돌아가기</a>
+
+</body>
+</html>

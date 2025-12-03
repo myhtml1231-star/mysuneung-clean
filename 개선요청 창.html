@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>개선 요청</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f5f7fb;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .container {
+        width: 820px;
+        min-width: 820px;
+        max-width: 820px;
+        background: #ffffff;
+        margin: 40px auto;
+        padding: 40px 45px;
+        border-radius: 20px;
+        box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .title-wrap {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .title-wrap img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title-wrap h2 {
+        font-size: 25px;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        padding: 8px 12px;
+        background: #f3f4f6;
+        border-radius: 10px;
+        border: 1px solid #e2e2e2;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .back-btn:hover {
+        background: #e9eaec;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 28px;
+    }
+
+    .input-area textarea {
+        width: 100%;
+        height: 200px;
+        padding: 18px;
+        font-size: 16px;
+        border-radius: 12px;
+        border: 1px solid #dcdcdc;
+        background: #fafafa;
+        resize: none;
+        outline: none;
+        transition: 0.2s;
+    }
+
+    .input-area textarea:focus {
+        border-color: #bbb;
+        background: #f7f7f7;
+    }
+
+    .submit-btn {
+        margin-top: 25px;
+        width: 100%;
+        padding: 16px 0;
+        border-radius: 12px;
+        border: 1px solid #e2e2e2;
+        background: #f3f4f6;
+        font-size: 17px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .submit-btn:hover {
+        background: #e9eaec;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="title-wrap" onclick="location.href='index.html'">
+        <img src="Images/logo.png">
+        <h2>개선 요청</h2>
+    </div>
+
+    <div class="back-btn" onclick="history.back()">← 돌아가기</div>
+
+    <div class="page-title">서비스 개선 의견 보내기</div>
+
+    <div class="input-area">
+        <textarea id="feedbackText" placeholder="어떤 점을 개선하면 좋을지 자유롭게 작성해주세요."></textarea>
+        <button class="submit-btn" onclick="sendFeedback()">개선 요청 제출하기</button>
+    </div>
+
+</div>
+
+
+<script>
+function sendFeedback() {
+    const text = document.getElementById("feedbackText").value.trim();
+
+    if (text === "") {
+        alert("개선 의견을 입력해주세요!");
+        return;
+    }
+
+    // 기존 저장된 목록 불러오기
+    let list = JSON.parse(localStorage.getItem("feedbackList") || "[]");
+
+    // 새로운 개선요청 추가
+    list.push({
+        content: text,
+        date: new Date().toLocaleString()
+    });
+
+    // 다시 저장
+    localStorage.setItem("feedbackList", JSON.stringify(list));
+
+    // 안내문
+    alert("개선 요청이 성공적으로 제출되었습니다! 감사합니다 😊");
+
+    // 로비로 이동 (원하는 페이지로 바꿀 수 있음!)
+    location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

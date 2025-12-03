@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025학년도 수능 등급컷</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Pretendard",sans-serif;}
+body{background:#f4f5f7;padding:40px;}
+.container{max-width:900px;margin:auto;}
+.top-header{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:35px;}
+.logo{width:75px;}
+.top-year{font-size:46px;font-weight:800;}
+
+/* subject button */
+.subject-btn{
+    width:100%;background:#fff;padding:20px;margin-bottom:16px;border-radius:14px;
+    font-size:20px;font-weight:600;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    transition:0.25s;display:flex;justify-content:space-between;align-items:center;
+}
+.subject-btn:hover{transform:translateY(-3px);}
+.subject-btn::after{content:"▼";font-size:18px;transition:0.3s;}
+.subject-btn.active::after{transform:rotate(-180deg);}
+.sub-wrap{overflow:hidden;max-height:0;padding:0;transition:max-height .35s,padding .25s;}
+
+/* boxes */
+.sub-box{
+    display:inline-block;width:200px;height:170px;background:#fff;border:2px solid #000;
+    border-radius:10px;margin-right:8px;margin-bottom:12px;padding:10px;vertical-align:top;
+}
+.sub-title{font-size:15px;font-weight:700;margin-bottom:4px;}
+.sub-diff{font-size:12px;color:#666;margin-bottom:6px;}
+.cut-area{font-size:14px;color:#444;line-height:1.45;}
+
+.back-btn {
+    display: inline-block;
+    margin: 60px auto 0 auto;
+    padding: 12px 24px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    border: 1px solid #ddd;
+}
+.back-wrap { text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="top-header">
+    <img src="Images/logo.png" class="logo">
+    <div class="top-year">2025학년도 수능 등급컷</div>
+</div>
+
+<div class="container">
+
+<!-- 국어 -->
+<div class="subject-btn">국어</div>
+<div class="sub-wrap">
+
+    <div class="sub-box">
+        <div class="sub-title">화법과 작문</div>
+        <div class="sub-diff">난이도: 평이함</div>
+        <div class="cut-area">
+            1등급: 95점<br>
+            2등급: 88점<br>
+            3등급: 79점<br>
+            4등급: 69점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">언어와 매체</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 92점<br>
+            2등급: 86점<br>
+            3등급: 77점<br>
+            4등급: 66점
+        </div>
+    </div>
+
+</div>
+
+<!-- 수학 -->
+<div class="subject-btn">수학</div>
+<div class="sub-wrap">
+
+    <div class="sub-box">
+        <div class="sub-title">미적분</div>
+        <div class="sub-diff">난이도: 어려움</div>
+        <div class="cut-area">
+            1등급: 88점<br>
+            2등급: 77점<br>
+            3등급: 69점<br>
+            4등급: 61점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">기하</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 90점<br>
+            2등급: 79점<br>
+            3등급: 72점<br>
+            4등급: 63점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">확률과 통계</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 94점<br>
+            2등급: 84점<br>
+            3등급: 75점<br>
+            4등급: 65점
+        </div>
+    </div>
+
+</div>
+
+<!-- 영어 -->
+<div class="subject-btn">영어</div>
+<div class="sub-wrap">
+    <div class="sub-box">
+        <div class="sub-title">영어</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급 비율: 6.22%<br>
+            2등급 누적: 22.57%<br>
+            3등급 누적: 43.94%<br>
+            4등급 누적: 65.56%
+        </div>
+    </div>
+</div>
+
+<!-- 한국사 -->
+<div class="subject-btn">한국사</div>
+<div class="sub-wrap">
+    <div class="sub-box">
+        <div class="sub-title">한국사</div>
+        <div class="sub-diff">난이도: 매우 평이함</div>
+        <div class="cut-area">
+            1등급 비율: 19.62%<br>
+            2등급 누적: 35.17%<br>
+            3등급 누적: 51.07%<br>
+            4등급 누적: 66.69%
+        </div>
+    </div>
+</div>
+
+<!-- 사회탐구 -->
+<div class="subject-btn">사회탐구</div>
+<div class="sub-wrap">
+
+    <div class="sub-box">
+        <div class="sub-title">생활과 윤리</div>
+        <div class="sub-diff">난이도: 어려움</div>
+        <div class="cut-area">
+            1등급: 41점<br>
+            2등급: 37점<br>
+            3등급: 32점<br>
+            4등급: 26점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">윤리와 사상</div>
+        <div class="sub-diff">난이도: 어려움</div>
+        <div class="cut-area">
+            1등급: 42점<br>
+            2등급: 39점<br>
+            3등급: 34점<br>
+            4등급: 27점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">한국지리</div>
+        <div class="sub-diff">난이도:  평이함</div>
+        <div class="cut-area">
+            1등급: 47점<br>
+            2등급: 43점<br>
+            3등급: 38점<br>
+            4등급: 28점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">세계지리</div>
+        <div class="sub-diff">난이도:  평이함</div>
+        <div class="cut-area">
+            1등급: 47점<br>
+            2등급: 43점<br>
+            3등급: 39점<br>
+            4등급: 32점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">동아시아사</div>
+        <div class="sub-diff">난이도: 매우 평이함</div>
+        <div class="cut-area">
+            1등급: 48점<br>
+            2등급: 45점<br>
+            3등급: 40점<br>
+            4등급: 31점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">세계사</div>
+        <div class="sub-diff">난이도:  평이함</div>
+        <div class="cut-area">
+            1등급: 47점<br>
+            2등급: 44점<br>
+            3등급: 39점<br>
+            4등급: 30점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">경제</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 46점<br>
+            2등급: 42점<br>
+            3등급: 34점<br>
+            4등급: 25점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">정치와 법</div>
+        <div class="sub-diff">난이도: 매우 평이함</div>
+        <div class="cut-area">
+            1등급: 48점<br>
+            2등급: 44점<br>
+            3등급: 40점<br>
+            4등급: 35점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">사회·문화</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 45점<br>
+            2등급: 42점<br>
+            3등급: 38점<br>
+            4등급: 32점
+        </div>
+    </div>
+
+</div>
+
+<!-- 과학탐구 -->
+<div class="subject-btn">과학탐구</div>
+<div class="sub-wrap">
+
+    <div class="sub-box">
+        <div class="sub-title">물리학 I</div>
+        <div class="sub-diff">난이도:  평이함</div>
+        <div class="cut-area">
+            1등급: 48점<br>
+            2등급: 45점<br>
+            3등급: 40점<br>
+            4등급: 33점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">화학 I</div>
+        <div class="sub-diff">난이도: 매우  평이함</div>
+        <div class="cut-area">
+            1등급: 50점<br>
+            2등급: 47점<br>
+            3등급: 41점<br>
+            4등급: 34점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">생명과학 I</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 45점<br>
+            2등급: 42점<br>
+            3등급: 37점<br>
+            4등급: 34점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">지구과학 I</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 44점<br>
+            2등급: 39점<br>
+            3등급: 35점<br>
+            4등급: 28점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">물리학 II</div>
+        <div class="sub-diff">난이도: 매우  평이함</div>
+        <div class="cut-area">
+            1등급: 48점<br>
+            2등급: 44점<br>
+            3등급: 35점<br>
+            4등급: 25점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">화학 II</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 45점<br>
+            2등급: 39점<br>
+            3등급: 33점<br>
+            4등급: 25점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">생명과학 II</div>
+        <div class="sub-diff">난이도: 보통</div>
+        <div class="cut-area">
+            1등급: 44점<br>
+            2등급: 39점<br>
+            3등급: 35점<br>
+            4등급: 28점
+        </div>
+    </div>
+
+    <div class="sub-box">
+        <div class="sub-title">지구과학 II</div>
+        <div class="sub-diff">난이도:  평이함</div>
+        <div class="cut-area">
+            1등급: 47점<br>
+            2등급: 41점<br>
+            3등급: 34점<br>
+            4등급: 22점
+        </div>
+    </div>
+
+</div>
+
+</div> <!-- container -->
+
+<div class="back-wrap">
+    <a href="2024 고3 컷 년도 선택.html" class="back-btn">← 이전화면으로 돌아가기</a>
+</div>
+
+<script>
+document.querySelectorAll(".subject-btn").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+        const wrap=btn.nextElementSibling;
+        btn.classList.toggle("active");
+        if(wrap.style.maxHeight){
+            wrap.style.maxHeight=null;
+            wrap.style.padding="0";
+        }else{
+            wrap.style.maxHeight=wrap.scrollHeight+"px";
+            wrap.style.padding="12px 0 20px 0";
+        }
+    });
+});
+</script>
+
+</body>
+</html>

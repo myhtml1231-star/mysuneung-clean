@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>질문 게시판</title>
+
+<style>
+    .back-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #e7e7e7;
+    border-radius: 10px;
+    color: #333 !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #d4d4d4;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background: #F4B733;
+    color: #fff;
+}
+
+    body {
+        font-family: "Pretendard", sans-serif;
+        background: #f5f7fb;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 820px;
+        min-width: 820px;
+        height: 800px;
+        margin: 30px auto;
+        background: #ffffff;
+        padding: 35px 45px;
+        border-radius: 20px;
+        box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+    }
+
+    /* 제목 + 로고 정렬 */
+    .header {
+        display: flex;
+        align-items: center;       /* ⬅ 로고와 텍스트를 세로로 맞춤 */
+        justify-content: center;   /* ⬅ 전체를 가운데로 */
+        gap: 12px;                 /* ⬅ 간격 */
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .header img {
+        height: 40px;     /* 로고 크기 고정 */
+        width: auto;
+        display: block;
+    }
+
+    .header h2 {
+        font-size: 26px;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1;
+    }
+
+    /* 검색줄 */
+    .top-bar {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .search-box {
+        flex: 1;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #dcdcdc;
+        background: #fafafa;
+        font-size: 15px;
+        outline: none;
+    }
+
+    .search-btn {
+        padding: 14px 18px;
+        background: #000;
+        border-radius: 12px;
+        border: none;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .ask-btn {
+        margin-top: 18px;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        padding: 14px 20px;
+        background: #f3f4f6;
+        border-radius: 12px;
+        border: 1px solid #e2e2e2;
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        white-space: nowrap;
+        transition: 0.2s;
+    }
+
+    .list-wrap {
+        max-height: 500px;
+        overflow-y: auto;
+        padding-right: 4px;
+    }
+
+    .q-box {
+        padding: 18px 15px;
+        border-bottom: 1px solid #e4e4e4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .q-title {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .q-meta {
+        font-size: 13px;
+        color: #777;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ⭐ 로고 + 제목 정상 정렬 -->
+    <div class="header">
+        <img src="Images/logo.png" alt="logo">
+        <h2>질문 게시판</h2>
+    </div>
+
+    <div class="top-bar">
+        <input type="text" id="searchInput" class="search-box" placeholder="질문 검색하기">
+        <button class="search-btn" onclick="searchQuestion()">검색</button>
+    </div>
+
+    <div class="list-wrap" id="questionList"></div>
+
+    <a href="질문하기.html" class="ask-btn">질문하기</a>
+    <a href="index.html" class="back-btn">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+
+<script>
+function loadQuestions(keyword = "") {
+    let list = JSON.parse(localStorage.getItem("questions") || "[]");
+
+    list.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    if (keyword.trim() !== "") {
+        list = list.filter(q => q.title.includes(keyword));
+    }
+
+    const wrap = document.getElementById("questionList");
+    wrap.innerHTML = "";
+
+    if (list.length === 0) {
+        wrap.innerHTML = "<div style='padding:20px; text-align:center; color:#777;'>등록된 질문이 없습니다.</div>";
+        return;
+    }
+
+    list.forEach(q => {
+        const box = document.createElement("div");
+        box.className = "q-box";
+
+        box.innerHTML = `
+            <div class="q-title">${q.private ? "[비공개]" : "[공개]"} ${q.title}</div>
+            <div class="q-meta">${q.date}</div>
+        `;
+
+        wrap.appendChild(box);
+    });
+}
+
+function searchQuestion() {
+    const keyword = document.getElementById("searchInput").value;
+    loadQuestions(keyword);
+}
+
+loadQuestions();
+
+document.getElementById("searchInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        searchQuestion();
+    }
+});
+</script>
+
+
+</body>
+</html>

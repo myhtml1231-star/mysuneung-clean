@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기출 다운로드</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #f5f7fa;
+        font-family: "Pretendard", sans-serif;
+    }
+
+    /* 상단 로고 영역 */
+    .header {
+        width: 100%;
+        padding: 18px 0;
+        background: white;
+        border-bottom: 1px solid #e5e8eb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .header img {
+        height: 42px;
+    }
+
+    /* 페이지 제목 */
+    .title {
+        text-align: center;
+        font-size: 26px;
+        margin: 30px 0 20px;
+        font-weight: 600;
+        color: #2d2f33;
+    }
+
+    /* 다운로드 박스 전체 */
+    .box-container {
+        width: 92%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* 개별 박스 */
+    .download-box {
+        background: white;
+        padding: 22px;
+        border-radius: 14px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.15s ease;
+        text-decoration: none;
+        color: #2b2d31;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .download-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    }
+
+    .download-box span {
+        font-size: 16px;
+        color: #636a73;
+    }
+
+    /* 이전으로 돌아가기 버튼 */
+    .back-btn {
+        margin-top: 35px;
+        display: inline-block;
+        padding: 12px 24px;
+        background: #f0f0f0;
+        border-radius: 10px;
+        font-size: 18px;
+        color: #444;
+        text-decoration: none;
+        font-weight: 600;
+        border: 1px solid #ddd;
+        transition: 0.2s;
+        text-align: center;
+    }
+
+    .back-btn:hover {
+        background: #e4e4e4;
+        transform: translateY(-2px);
+    }
+</style>
+</head>
+
+<body>
+
+<!-- 로고 -->
+<div class="header">
+     <img src="Images/logo.png" alt="logo">
+</div>
+
+<!-- 제목 -->
+<div class="title">2024학년도 고3 9월 국어(화법과작문) — 다운로드</div>
+
+<!-- 3개 다운로드 버튼 -->
+<div class="box-container">
+
+    <a class="download-box" href="batch4/2024-9-화작.pdf" download>
+        문제지
+        <span>PDF 다운로드</span>
+    </a>
+
+    <!-- 🔥 이 부분만 수정 -->
+    <a class="download-box" href="2024-9-국어.pdf" download>
+        정답지
+        <span>PDF 다운로드</span>
+    </a>
+
+    <a class="download-box" href="batch4/2024-9-화작'.pdf" download>
+        해설지
+        <span>PDF 다운로드</span>
+    </a>
+
+    <a class="back-btn" href="2024_9.html">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+</body>
+</html>

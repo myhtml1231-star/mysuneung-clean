@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>자주 묻는 질문</title>
+
+<style>
+      .back-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #e7e7e7;
+    border-radius: 10px;
+    color: #333 !important;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #d4d4d4;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+    body {
+        margin: 0;
+        font-family: "Noto Sans KR", sans-serif;
+        background: #f5f7fb;
+    }
+
+    /* 중앙 컨테이너 */
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    /* ===== 로고 + 제목 ===== */
+    .title-wrap {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .title-wrap .logo {
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+
+    .title-wrap h2 {
+        font-size: 26px;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    /* 타이틀 */
+    .page-title {
+        font-size: 32px;
+        font-weight: 800;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    /* FAQ 카드 */
+    .faq-card {
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        padding: 20px 25px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .faq-card:hover {
+        background: #f0efff;
+    }
+
+    /* 질문(제목) */
+    .faq-question {
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 답변 */
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        line-height: 1.7;
+        font-size: 15px;
+        margin-top: 10px;
+        color: #444;
+        transition: max-height 0.3s ease;
+    }
+
+    /* 펼쳐졌을 때 */
+    .faq-card.active .faq-answer {
+        max-height: 500px;
+    }
+
+    /* 화살표 */
+    .arrow {
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .faq-card.active .arrow {
+        transform: rotate(180deg);
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 로고 + 텍스트 (가로 정렬) -->
+    <div class="title-wrap" onclick="location.href='index.html'">
+        <img src="Images/logo.png" class="logo">
+        <h2>질문하기</h2>
+    </div>
+
+    <h1 class="page-title">자주 묻는 질문 (FAQ)</h1>
+
+    <!-- FAQ 1 -->
+    <div class="faq-card">
+        <div class="faq-question">
+            회원가입 없이도 이용할 수 있나요?
+            <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+            네, 기본적인 기능은 회원가입 없이도 이용할 수 있습니다. 다만 게시글 작성 등 일부 기능은 회원가입이 필요합니다.
+        </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="faq-card">
+        <div class="faq-question">
+            게시글은 어떻게 작성하나요?
+            <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+            질문 게시판 페이지에서 하단의 ‘질문하기’ 버튼을 눌러 작성 페이지로 이동할 수 있습니다.
+        </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="faq-card">
+        <div class="faq-question">
+            게시글은 언제 승인되나요?
+            <span class="arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+            보통 1~5분 이내에 자동 승인됩니다. 간혹 변동이 있을 수 있습니다.
+        </div>
+    </div>
+    <a href="index.html" class="back-btn">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+<script>
+    // FAQ 클릭 이벤트
+    const cards = document.querySelectorAll(".faq-card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            card.classList.toggle("active");
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html> <html lang="ko"> <head> <meta charset="UTF-8"> <title>난이도 TOP10</title> <style> .indent { display: inline-block; padding-left: 41px; /* 앞줄과 정렬 맞추는 여백 */ } .test-item.empty div { visibility: hidden; /* 안 보이지만 자리는 차지함 */ } /* --- 기본 설정 --- */ body { font-family: "Pretendard", sans-serif; background: #f5f7fb; margin: 0; padding: 0; } .container { width: 92%; max-width: 1200px; margin: 0 auto 60px auto; } /* --- 제목 --- */ .page-title { display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 25px; margin-bottom: 20px; } .page-title img { height: 38px; } .page-title h2 { font-size: 25px; font-weight: 800; } /* --- 과목 선택 버튼 --- */ .subject-filter { text-align: center; margin: 20px auto; } .subject-filter button { padding: 8px 15px; margin: 4px; border: none; background: #eceff3; border-radius: 10px; cursor: pointer; font-size: 14px; transition: 0.15s; } .subject-filter button:hover { background: #ffe3a6; } .subject-filter button.active { background: #ffd27a !important; color: white; font-weight: 600; } /* --- 과목 박스 3열 GRID --- */ .subject-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 25px; } .subject-box { background: #ffffff; padding: 20px 22px; border-radius: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: left; } /* --- 박스 제목 --- */ .subject-title { font-size: 18px; font-weight: 700; margin-bottom: 12px; border-bottom: 2px solid #eee; padding-bottom: 8px; display: flex; justify-content: space-between; align-items: center; } .score-tag { font-size: 14px; color: #777; } /* --- 항목 --- */ .test-item { display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 8px 4px; border-bottom: 1px solid #f1f1f1; font-size: 14px; } .test-item:last-child { border-bottom: none; } /* 10위 말줄임 */ .test-item.long div:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } /* --- 뒤로가기 버튼 --- */ .back-btn { display: block; margin: 40px auto 0 auto; padding: 12px 26px; background: #f3f4f6; border-radius: 10px; font-size: 16px; font-weight: 600; color: #333; text-decoration: none; border: 1px solid #e2e2e2; box-shadow: 0 2px 4px rgba(0,0,0,0.07); text-align: center; width: 220px; } .back-btn:hover { background: #e8e9eb; box-shadow: 0 3px 6px rgba(0,0,0,0.12); } </style> </head> <body>
+<div class="container">
+
+    <!-- 과목 선택 -->
+    <div class="subject-filter">
+        <button class="active" onclick="showSubject('all', this)">전체</button>
+        <button onclick="showSubject('물리', this)">물리</button>
+        <button onclick="showSubject('화학', this)">화학</button>
+        <button onclick="showSubject('생명과학', this)">생명과학</button>
+        <button onclick="showSubject('지구과학', this)">지구과학</button>
+        <button onclick="showSubject('물리Ⅱ', this)">물리Ⅱ</button>
+        <button onclick="showSubject('화학Ⅱ', this)">화학Ⅱ</button>
+        <button onclick="showSubject('생명과학Ⅱ', this)">생명과학Ⅱ</button>
+        <button onclick="showSubject('지구과학Ⅱ', this)">지구과학Ⅱ</button>
+    </div>
+
+    <!-- 제목 -->
+    <div class="page-title">
+        <img src="Images/logo.png" alt="로고">
+        <h2>역대 고3 과탐 난이도 TOP10</h2>
+    </div>
+
+    <!-- 3열 GRID -->
+    <div class="subject-grid">
+
+        <!-- 물리 -->
+        <div class="subject-box" data-name="물리">
+            <div class="subject-title">물리 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2022 6평</div><div>78</div></div>
+            <div class="test-item"><div>2위 — 2020 6평, 2023 9평</div><div>73</div></div>
+            <div class="test-item"><div>3위 — 2022 수능</div><div>72</div></div>
+            <div class="test-item"><div>4위 — 2023 수능, 2022 9평</div><div>70</div></div>
+  <div class="test-item long"> <div>5위 — 2026 9평, 2024 수능, 2024 9평, 2024 6평<br><span style="display:inline-block; width:37px;"></span> 2021 9평</div> <div>69</div> </div> 
+            <div class="test-item"><div>6위 — 2025 6평, 2021 6평</div><div>68</div></div>
+            <div class="test-item"><div>7위 — 2025 수능, 2023 6평</div><div>67</div></div>
+            <div class="test-item"><div>8위 — 2020 수능, 2020 9평</div><div>66</div></div>
+            <div class="test-item"><div>9위 — 2026 6평</div><div>65</div></div>
+ <div class="test-item"><div>10위 — 2021 수능</div><div>64</div></div>
+        </div>
+
+        <!-- 화학 -->
+        <div class="subject-box" data-name="화학">
+            <div class="subject-title">화학 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2023 6평, 2023 수능</div><div>75</div></div>
+            <div class="test-item"><div>2위 — 2026 6평</div><div>74</div></div>
+            <div class="test-item"><div>3위 — 2026 9평, 2024 6평, 2023 9평</div><div>71</div></div>
+            <div class="test-item"><div>4위 — 2020 6평</div><div>70</div></div>
+            <div class="test-item"><div>5위 — 2025 6평, 2024 수능, 2022 6평, 2021 6평</div><div>69</div></div>
+            <div class="test-item"><div>6위 — 2024 9평, 2022 수능, 2021 수능,  2021 9평 </div><div>68</div></div>
+            <div class="test-item"><div>7위 — 2025 9평, 2022 9평, 2020 수능, 2020 9평</div><div>67</div></div>
+            <div class="test-item"><div>8위 — 2025 수능</div><div>65</div></div>
+            <div class="test-item"><div>9위 — 미집계</div><div>-</div></div>
+            <div class="test-item"><div>10위 — 미집계</div><div>-</div></div>
+        </div>
+
+        <!-- 생명과학 -->
+        <div class="subject-box" data-name="생명과학">
+            <div class="subject-title">생명과학 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2020 6평</div><div>73</div></div>
+            <div class="test-item"><div>2위 — 2026 6평, 2023 수능, 2022 수능</div><div>72</div></div>
+            <div class="test-item"><div>3위 — 2023 9평, 2022 9평, 2021 수능, 2021 9평</div><div>71</div></div>
+            <div class="test-item"><div>4위 — 2026 9평, 2025 수능, 2022 6평, 2020 9평</div><div>70</div></div>
+            <div class="test-item"><div>5위 — 2025 9평, 2024 수능, 2024 9평, 2021 6평</div><div>69</div></div>
+            <div class="test-item"><div>6위 — 2025 6평, 2023 6평</div><div>68</div></div>
+            <div class="test-item"><div>7위 — 2020 수능</div><div>67</div></div>
+            <div class="test-item"><div>8위 — 2024 6평</div><div>66</div></div>
+            <div class="test-item"><div>9위 — 미집계</div><div>-</div></div>
+            <div class="test-item"><div>10위 — 미집계</div><div>-</div></div>
+        </div>
+
+        <!-- 지구과학 -->
+        <div class="subject-box" data-name="지구과학">
+            <div class="subject-title">지구과학 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2020 6평</div><div>78</div></div>
+            <div class="test-item"><div>2위 —2021 6평, 2020 9평</div><div>77</div></div>
+            <div class="test-item"><div>3위 — 2026 9평, 2026 6평, 2022 수능, 2020 수능</div><div>74</div></div>
+            <div class="test-item"><div>4위 — 2023 수능</div><div>73</div></div>
+            <div class="test-item"><div>5위 — 2025 수능, 2025 6평, 2021 수능</div><div>72</div></div>
+            <div class="test-item"><div>6위 — 2024 6평</div><div>71</div></div>
+            <div class="test-item"><div>7위 — 2023 6평</div><div>70</div></div>
+            <div class="test-item"><div>8위 — 2025 9평, 2023 9평, 2022 9평, 2022 6평</div><div>69</div></div>
+            <div class="test-item"><div>9위 — 2024 수능, 2021 9평</div><div>68</div></div>
+            <div class="test-item"><div>10위 — 2024 9평</div><div>66</div></div>
+        </div>
+
+        <!-- 물리Ⅱ -->
+        <div class="subject-box" data-name="물리Ⅱ">
+            <div class="subject-title">물리Ⅱ TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2024 6평</div><div>86</div></div>
+            <div class="test-item"><div>2위 — 2020 6평</div><div>82</div></div>
+            <div class="test-item"><div>3위 — 2023 6평</div><div>80</div></div>
+            <div class="test-item"><div>4위 — 2024 6평</div><div>78</div></div>
+            <div class="test-item"><div>5위 — 2022 6평</div><div>76</div></div>
+            <div class="test-item"><div>6위 — 2023 9평</div><div>75</div></div>
+            <div class="test-item"><div>7위 — 2024 수능</div><div>74</div></div>
+            <div class="test-item"><div>8위 — 2026 9평, 2021 6평</div><div>73</div></div>
+            <div class="test-item"><div>9위 — 2020 9평</div><div>72</div></div>
+            <div class="test-item"><div>10위 — 2023 수능, 2021 9평</div><div>71</div></div>
+        </div>
+
+        <!-- 화학Ⅱ -->
+        <div class="subject-box" data-name="화학Ⅱ">
+            <div class="subject-title">화학Ⅱ TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2024 6평</div><div>93</div></div>
+            <div class="test-item"><div>2위 — 2021 6평</div><div>85</div></div>
+            <div class="test-item"><div>3위 — 2024 수능</div><div>80</div></div>
+            <div class="test-item"><div>4위 — 2020 6평</div><div>79</div></div>
+            <div class="test-item"><div>5위 — 2023 6평</div><div>78</div></div>
+            <div class="test-item"><div>6위 — 2025 6평, 2022 6평</div><div>77</div></div>
+            <div class="test-item"><div>7위 — 2024 9평</div><div>76</div></div>
+            <div class="test-item"><div>8위 — 2026 6평</div><div>75</div></div>
+            <div class="test-item"><div>9위 — 2025 수능, 2023 수능</div><div>73</div></div>
+            <div class="test-item"><div>10위 — 2023 9평</div><div>72</div></div>
+        </div>
+
+        <!-- 생명과학Ⅱ -->
+        <div class="subject-box" data-name="생명과학Ⅱ">
+            <div class="subject-title">생명과학Ⅱ TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2024 6평</div><div>90</div></div>
+            <div class="test-item"><div>2위 — 2024 9평</div><div>77</div></div>
+            <div class="test-item"><div>3위 — 2025 6평, 2020 9평</div><div>76</div></div>
+              <div class="test-item long"> <div>4위 — 2026 9평, 2025 9평, 2024 수능, 2021 6평<br><span style="display:inline-block; width:37px;"></span> 2020 6평</div> <div>73</div> </div> 
+            <div class="test-item"><div>5위 — 2026 6평, 2025 수능, 2022 6평</div><div>72</div></div>
+            <div class="test-item"><div>6위 — 2023 수능, 2020 9평</div><div>71</div></div>
+            <div class="test-item"><div>7위 — 2021 9평</div><div>70</div></div>
+            <div class="test-item"><div>8위 — 2023 9평, 2022 9평, 2021 수능</div><div>69</div></div>
+            <div class="test-item"><div>9위 — 2022 수능, 2020 수능</div><div>68</div></div>
+            <div class="test-item"><div>10위 — 미집계</div><div>-</div></div>
+        </div>
+
+        <!-- 지구과학Ⅱ -->
+        <div class="subject-box" data-name="지구과학Ⅱ">
+            <div class="subject-title">지구과학Ⅱ TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2024 6평</div><div>98</div></div>
+            <div class="test-item"><div>2위 — 2024 9평</div><div>89</div></div>
+            <div class="test-item"><div>3위 — 2023 6평</div><div>85</div></div>
+            <div class="test-item"><div>4위 — 2022 수능</div><div>77</div></div>
+            <div class="test-item"><div>5위 — 2026 6평, 2025 6평, 2023 9평</div><div>76</div></div>
+            <div class="test-item"><div>6위 — 2022 6평, 2021 6평</div><div>75</div></div>
+            <div class="test-item"><div>7위 — 2025 9평</div><div>74</div></div>
+            <div class="test-item"><div>8위 — 2026 9평, 2020 9평, 2020 6평</div><div>73</div></div>
+            <div class="test-item"><div>9위 — 2025 수능, 2024 수능</div><div>72</div></div>
+            <div class="test-item"><div>10위 — 2021 9평</div><div>70</div></div>
+        </div>
+
+    </div>
+
+    <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+<!-- 과목 필터 JS -->
+<script>
+function showSubject(name, btn) {
+    const boxes = document.querySelectorAll('.subject-box');
+    const buttons = document.querySelectorAll('.subject-filter button');
+
+    // 버튼 active 초기화
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    boxes.forEach(box => {
+        const subject = box.dataset.name;
+
+        if (name === "all") {
+            box.style.display = "block";
+        } else if (subject === name) {
+            box.style.display = "block";
+        } else {
+            box.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

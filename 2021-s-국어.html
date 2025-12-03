@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>기출 다운로드</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #f5f7fa;
+        font-family: "Pretendard", sans-serif;
+    }
+
+    /* 상단 로고 영역 */
+    .header {
+        width: 100%;
+        padding: 18px 0;
+        background: white;
+        border-bottom: 1px solid #e5e8eb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .header img {
+        height: 42px;
+    }
+
+    /* 페이지 제목 */
+    .title {
+        text-align: center;
+        font-size: 26px;
+        margin: 30px 0 20px;
+        font-weight: 600;
+        color: #2d2f33;
+    }
+
+    /* 2열 그리드 */
+    .grid-container {
+        width: 92%;
+        max-width: 700px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    /* 정답지 전용 - 2칸 차지 */
+    .full-width {
+        grid-column: span 2;
+    }
+
+    /* 단일 박스 */
+    .download-box {
+        background: white;
+        padding: 22px;
+        border-radius: 14px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.15s ease;
+        text-decoration: none;
+        color: #2b2d31;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .download-box:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    }
+
+    .download-box span {
+        font-size: 16px;
+        color: #636a73;
+    }
+
+    /* 뒤로가기 버튼 */
+    .back-btn {
+        margin: 35px auto 0;
+        display: block;
+        width: fit-content;
+        padding: 12px 24px;
+        background: #f0f0f0;
+        border-radius: 10px;
+        font-size: 18px;
+        color: #444;
+        text-decoration: none;
+        font-weight: 600;
+        border: 1px solid #ddd;
+        transition: 0.2s;
+    }
+
+    .back-btn:hover {
+        background: #e4e4e4;
+        transform: translateY(-2px);
+    }
+</style>
+</head>
+
+<body>
+
+<!-- 로고 -->
+<div class="header">
+     <img src="Images/logo.png" alt="logo">
+</div>
+
+<!-- 제목 -->
+<div class="title">2021학년도 고3 수능 국어 — 다운로드</div>
+
+<!-- 2-1-2 구조 -->
+<div class="grid-container">
+
+    <!-- Row 1 -->
+    <a class="download-box" href="batch3/2021-s-공통.pdf" download>
+        문제지(비문학+문학만)
+        <span>PDF</span>
+    </a>
+
+    <a class="download-box" href="batch3/2021-s-국어.pdf" download>
+        문제지(전체)
+        <span>PDF</span>
+    </a>
+
+    <!-- Row 2: 정답지 전체 너비 -->
+    <a class="download-box full-width" href="batch3/2021-s.pdf" download>
+        정답지
+        <span>PDF 다운로드</span>
+    </a>
+
+    <!-- Row 3 -->
+    <a class="download-box" href="batch3/2021-s-공통'.pdf" download>
+        해설지(비문학+문학만)
+        <span>PDF</span>
+    </a>
+
+    <a class="download-box" href="batch3/2021-s-국어'.pdf" download>
+        해설지(전체)
+        <span>PDF</span>
+    </a>
+
+</div>
+
+<!-- 뒤로가기 -->
+<a class="back-btn" href="2021_s.html">← 이전 화면으로 돌아가기</a>
+
+</body>
+</html>

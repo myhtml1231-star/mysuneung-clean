@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2023학년도 고2 3월 모의평가 과목 선택</title>
+<style>
+body{margin:0;font-family:"Noto Sans KR",sans-serif;background:#fafafa;}
+.container{width:100%;max-width:900px;margin:0 auto;padding:60px 20px;text-align:center;}
+.title{font-size:38px;font-weight:900;margin-bottom:40px;color:#333;}
+.subject-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:20px;}
+.subject-item{position:relative;}
+.subject-box{padding:45px 10px;background:white;border-radius:18px;border:1px solid #e6e6e6;box-shadow:0 4px 12px rgba(0,0,0,0.05);font-size:24px;font-weight:700;color:#333;text-decoration:none;display:flex;align-items:center;justify-content:center;transition:0.2s;cursor:pointer;user-select:none;}
+.subject-box:hover{transform:translateY(-4px);background:#fff8e5;border-color:#F4B733;box-shadow:0 6px 16px rgba(0,0,0,0.08);}
+.dropdown{display:none;position:absolute;left:0;top:100%;width:100%;margin-top:12px;background:white;border-radius:14px;border:1px solid #e6e6e6;box-shadow:0 8px 20px rgba(0,0,0,0.06);padding:10px;z-index:40;}
+.dropdown a{display:block;padding:10px 12px;font-weight:700;font-size:18px;color:#333;text-decoration:none;border-radius:10px;transition:0.15s;}
+.dropdown a:hover{background:#fff8e5;border-color:#F4B733;transform:translateY(-2px);}
+.subject-item.open .dropdown{display:block;}
+.subject-box .caret{margin-left:8px;font-size:16px;opacity:0.85;transform:translateY(1px);}
+.back-btn{margin-top:50px;display:inline-block;padding:12px 24px;background:#f0f0f0;border-radius:10px;font-size:18px;color:#444;text-decoration:none;font-weight:600;border:1px solid #ddd;transition:0.2s;}
+.back-btn:hover{background:#e4e4e4;transform:translateY(-2px);}
+@media(max-width:720px){.subject-grid{grid-template-columns:repeat(2,1fr);gap:18px;}.subject-box{padding:36px 8px;font-size:20px;}.title{font-size:32px;}}
+@media(max-width:420px){.subject-grid{grid-template-columns:1fr;}.subject-box{padding:30px 8px;font-size:20px;}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="title">2023학년도 고2 3월 모의평가 과목 선택</div>
+<div class="subject-grid">
+<div class="subject-item"><a class="subject-box" href="023-3-ko.html">국어</a></div>
+<div class="subject-item"><a class="subject-box" href="023-3-ma.html">수학</a></div>
+<div class="subject-item"><a class="subject-box" href="023-3-영어.html">영어</a></div>
+<div class="subject-item"><a class="subject-box" href="023-3-hi.html">한국사</a></div>
+
+<div class="subject-item" data-subject="social">
+<div class="subject-box" role="button" aria-expanded="false" tabindex="0">사회탐구 <span class="caret">▾</span></div>
+<div class="dropdown">
+<a class="subject-box" href="023-3-y.html">윤리와사상</a>
+<a class="subject-box" href="023-3-j.html">정치와법</a>
+<a class="subject-box" href="023-3-k.html">경제</a>
+<a class="subject-box" href="023-3-sm.html">사회문화</a>
+<a class="subject-box" href="023-3-s.html">세계사</a>
+<a class="subject-box" href="023-3-h.html">한국지리</a>
+<a class="subject-box" href="023-3-sa.html">생활과윤리</a>
+<a class="subject-box" href="023-3-d.html">동아시아사</a>
+<a class="subject-box" href="023-3-sj.html">세계지리</a>
+</div>
+</div>
+
+<div class="subject-item" data-subject="science">
+<div class="subject-box" role="button" aria-expanded="false" tabindex="0">과학탐구 <span class="caret">▾</span></div>
+<div class="dropdown">
+<a class="subject-box" href="023-3-m.html">물리학Ⅰ</a>
+<a class="subject-box" href="023-3-c.html">화학Ⅰ</a>
+<a class="subject-box" href="023-3-l.html">생명과학Ⅰ</a>
+<a class="subject-box" href="023-3-e.html">지구과학Ⅰ</a>
+</div>
+</div>
+
+</div>
+<a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
+</div>
+
+<script>
+(function(){
+  const items=document.querySelectorAll('.subject-item');
+  function closeAll(except=null){items.forEach(it=>{if(it!==except){it.classList.remove('open');const box=it.querySelector('.subject-box');if(box)box.setAttribute('aria-expanded','false');const dd=it.querySelector('.dropdown');if(dd)dd.setAttribute('aria-hidden','true');}});}
+  items.forEach(item=>{const box=item.querySelector('.subject-box');const dropdown=item.querySelector('.dropdown');if(!box)return;
+  box.addEventListener('click',()=>{const isOpen=item.classList.contains('open');if(isOpen){item.classList.remove('open');box.setAttribute('aria-expanded','false');if(dropdown)dropdown.setAttribute('aria-hidden','true');}else{closeAll(item);item.classList.add('open');box.setAttribute('aria-expanded','true');if(dropdown)dropdown.setAttribute('aria-hidden','false');}});  box.addEventListener('keydown',(e)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();box.click();}});  if(dropdown){dropdown.addEventListener('click',(e)=>{if(e.target.tagName.toLowerCase()==='a')closeAll();});}});  document.addEventListener('click',e=>{if(!e.target.closest('.subject-item'))closeAll();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll();});
+})();
+</script>
+</body>
+</html>

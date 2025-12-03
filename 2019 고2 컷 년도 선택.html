@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>시행날짜 선택</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", sans-serif;
+      background: #fafafa;
+    }
+
+    /* 중앙 전체 컨테이너 */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    /* 타이틀 */
+    .title {
+      font-size: 38px;
+      font-weight: 900;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    /* 현대적 6분할 그리드 */
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .subject-box {
+      padding: 45px 10px;
+      background: white;
+      border-radius: 18px;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .subject-box:hover {
+      transform: translateY(-4px);
+      background: #fff8e5;
+      border-color: #F4B733;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    /* 뒤로가기 버튼 */
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #444;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+
+    .back-btn:hover {
+      background: #e4e4e4;
+      transform: translateY(-2px);
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="title">고2 2019학년도 시행날짜 선택</div>
+
+  <div class="subject-grid">
+ <a class="subject-box" href="고2 2020-3.html">3월</a>
+    <a class="subject-box" href="고2 2020-6.html">6월</a>
+    <a class="subject-box" href="고2 2020-9.html">9월</a>
+    <a class="subject-box" href="고2 2020-10.html">10월</a>
+
+  </div>
+
+  <!-- 뒤로가기 버튼 -->
+  <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+</body>
+</html>

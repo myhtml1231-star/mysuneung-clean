@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>과목선택</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", sans-serif;
+      background: #fafafa;
+    }
+
+    /* 중앙 전체 컨테이너 */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    /* 타이틀 */
+    .title {
+      font-size: 38px;
+      font-weight: 900;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    /* 현대적 6분할 그리드 */
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .subject-item {
+      position: relative; /* dropdown 위치를 위해 필요 */
+    }
+
+    .subject-box {
+      padding: 45px 10px;
+      background: white;
+      border-radius: 18px;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .subject-box:hover {
+      transform: translateY(-4px);
+      background: #fff8e5;
+      border-color: #F4B733;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    /* 드롭다운 (초기 숨김) */
+    .dropdown {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      margin-top: 12px;
+      background: white;
+      border-radius: 14px;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      padding: 10px;
+      z-index: 40;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 12px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.15s;
+    }
+
+    .dropdown a:hover {
+      background: #fff8e5;
+      border-color: #F4B733;
+      transform: translateY(-2px);
+    }
+
+    /* 표시 상태 클래스 */
+    .subject-item.open .dropdown {
+      display: block;
+    }
+
+    /* 화살표 표시 (디자인 변경 없이 미미한 표시) */
+    .subject-box .caret {
+      margin-left: 8px;
+      font-size: 16px;
+      opacity: 0.85;
+      transform: translateY(1px);
+    }
+
+    /* 뒤로가기 버튼 */
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #444;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+
+    .back-btn:hover {
+      background: #e4e4e4;
+      transform: translateY(-2px);
+    }
+
+    /* 간단한 반응형 — 레이아웃 본래 디자인을 유지하도록 보수적으로 적용 */
+    @media (max-width: 720px) {
+      .subject-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+      .subject-box { padding: 36px 8px; font-size: 20px; }
+      .title { font-size: 32px; }
+    }
+
+    @media (max-width: 420px) {
+      .subject-grid { grid-template-columns: 1fr; }
+      .subject-box { padding: 30px 8px; font-size: 20px; }
+    }
+
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="title">2024학년도 고3 9월 모의평가 과목 선택</div>
+
+  <div class="subject-grid">
+
+    <!-- 고3(복합) 예시: 국어 (언어와매체 / 독서/문학/화법작문 등) -->
+    <div class="subject-item" data-subject="korean">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        국어 <span class="caret">▾</span>
+      </div>
+      <div class="dropdown" aria-hidden="true">
+        <!-- 실제 파일 경로로 href 교체 -->
+       <a class="subject-box" href="2024-9-언매.html">언어와매체</a>
+       <a class="subject-box" href="2024-9-화작.html">화법과작문</a>
+    
+      </div>
+    </div>
+
+    <!-- 수학: 확률과통계 / 미적분 / 기하 -->
+    <div class="subject-item" data-subject="math">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        수학 <span class="caret">▾</span>
+      </div>
+      <div class="dropdown" aria-hidden="true">
+         <a class="subject-box" href="2024-9-확통.html">확률과통계</a>
+         <a class="subject-box" href="2024-9-미적.html">미적분</a>
+         <a class="subject-box" href="2024-9-기하.html">기하</a>
+      </div>
+    </div>
+
+    <!-- 영어: 단일 파일(예시) -->
+    <div class="subject-item">
+      <a class="subject-box" href="2024-9-영어.html">영어</a>
+    </div>
+
+    <!-- 한국사: 단일 파일 -->
+    <div class="subject-item">
+      <a class="subject-box" href="2024-9-역사.html">한국사</a>
+    </div>
+
+    <!-- 사회탐구: 여러 과목 -->
+    <div class="subject-item" data-subject="social">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        사회탐구 <span class="caret">▾</span>
+      </div>
+<div class="dropdown">
+    <a class="subject-box" href="2024-9-y.html">윤리와사상</a>
+    <a class="subject-box" href="2024-9-j.html">정치와법</a>
+    <a class="subject-box" href="2024-9-k.html">경제</a>
+    <a class="subject-box" href="2024-9-sm.html">사회문화</a>
+    <a class="subject-box" href="2024-9-s.html">세계사</a>
+    <a class="subject-box" href="2024-9-h.html">한국지리</a>
+    <a class="subject-box" href="2024-9-sa.html">생활과윤리</a>
+    <a class="subject-box" href="2024-9-d.html">동아시아사</a>
+    <a class="subject-box" href="2024-9-sj.html">세계지리</a>
+</div>
+</div>
+
+
+    <!-- 과학탐구: 여러 과목 -->
+    <div class="subject-item" data-subject="science">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        과학탐구 <span class="caret">▾</span>
+      </div>
+<div class="dropdown">
+    <a class="subject-box" href="2024-9-m.html">물리학Ⅰ</a>
+    <a class="subject-box" href="2024-9-c.html">화학Ⅰ</a>
+    <a class="subject-box" href="2024-9-l.html">생명과학Ⅰ</a>
+    <a class="subject-box" href="2024-9-e.html">지구과학Ⅰ</a>
+    <a class="subject-box" href="2024-9-m2.html">물리학Ⅱ</a>
+    <a class="subject-box" href="2024-9-c2.html">화학Ⅱ</a>
+    <a class="subject-box" href="2024-9-l2.html">생명과학Ⅱ</a>
+    <a class="subject-box" href="2024-9-e2.html">지구과학Ⅱ</a>
+</div>
+</div>
+
+
+  </div>
+
+  <!-- 뒤로가기 버튼 -->
+  <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+<script>
+  // 토글 동작: 클릭, 키보드(Enter/Space) 지원, 외부 클릭으로 닫기
+  (function () {
+    const items = document.querySelectorAll('.subject-item');
+
+    function closeAll(except = null) {
+      items.forEach(it => {
+        if (it !== except) {
+          it.classList.remove('open');
+          const box = it.querySelector('.subject-box');
+          if (box) box.setAttribute('aria-expanded', 'false');
+          const dd = it.querySelector('.dropdown');
+          if (dd) dd.setAttribute('aria-hidden', 'true');
+        }
+      });
+    }
+
+    items.forEach(item => {
+      const box = item.querySelector('.subject-box');
+      const dropdown = item.querySelector('.dropdown');
+
+      // subject-box가 앵커(a)인 경우(직접 링크)에는 토글 비활성
+      if (!box) return;
+
+      // 클릭 토글
+      box.addEventListener('click', (e) => {
+        // 만약 내부에 실제 링크(a.subject-box)를 사용하고 싶다면 이 부분 조정
+        const isOpen = item.classList.contains('open');
+        if (isOpen) {
+          item.classList.remove('open');
+          box.setAttribute('aria-expanded', 'false');
+          if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
+        } else {
+          closeAll(item);
+          item.classList.add('open');
+          box.setAttribute('aria-expanded', 'true');
+          if (dropdown) dropdown.setAttribute('aria-hidden', 'false');
+        }
+      });
+
+      // 키보드 접근성: Enter / Space 로 열기
+      box.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          box.click();
+        }
+      });
+
+      // 드롭다운 내부에서 링크 클릭 시 자동으로 닫히도록
+      if (dropdown) {
+        dropdown.addEventListener('click', (e) => {
+          const target = e.target;
+          if (target.tagName.toLowerCase() === 'a') {
+            // 다운로드 링크 클릭했을 때 UI 닫기(브라우저가 다운로드를 처리함)
+            closeAll();
+          }
+        });
+      }
+    });
+
+    // 외부 클릭 시 모두 닫기
+    document.addEventListener('click', (e) => {
+      const isInside = e.target.closest('.subject-item');
+      if (!isInside) closeAll();
+    });
+
+    // ESC 키로 닫기
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAll();
+    });
+
+  })();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

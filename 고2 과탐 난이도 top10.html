@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>난이도 TOP10</title>
+  <style>
+.subject-grid.single {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+    .indent {
+      display: inline-block;
+      padding-left: 41px;
+    }
+    .test-item.empty div {
+      visibility: hidden;
+    }
+
+    /* 기본 */
+    body {
+      font-family: "Pretendard", sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+    }
+
+    /* 제목 */
+    .page-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .page-title img { height: 38px; }
+    .page-title h2 { font-size: 25px; font-weight: 800; }
+
+    /* 버튼 */
+    .subject-filter {
+      text-align: center;
+      margin: 20px auto;
+    }
+    .subject-filter button {
+      padding: 8px 15px;
+      margin: 4px;
+      border: none;
+      background: #eceff3;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.15s;
+    }
+    .subject-filter button:hover { background: #ffe3a6; }
+    .subject-filter button.active {
+      background: #ffd27a !important;
+      color: white;
+      font-weight: 600;
+    }
+
+    /* 2×2 GRID */
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+      margin-top: 25px;
+    }
+
+    .subject-box {
+      background: #ffffff;
+      padding: 20px 22px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    /* 박스 제목 */
+    .subject-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .score-tag { font-size: 14px; color: #777; }
+
+    /* 항목 */
+    .test-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      padding: 8px 4px;
+      border-bottom: 1px solid #f1f1f1;
+      font-size: 14px;
+    }
+    .test-item:last-child { border-bottom: none; }
+    .test-item.long div:first-child {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* 뒤로가기 */
+    .back-btn {
+      display: block;
+      margin: 40px auto 0 auto;
+      padding: 12px 26px;
+      background: #f3f4f6;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      text-decoration: none;
+      border: 1px solid #e2e2e2;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+      text-align: center;
+      width: 220px;
+    }
+    .back-btn:hover {
+      background: #e8e9eb;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 버튼 -->
+    <div class="subject-filter">
+        <button class="active" onclick="showSubject('all', this)">전체</button>
+        <button onclick="showSubject('물리', this)">물리</button>
+        <button onclick="showSubject('화학', this)">화학</button>
+        <button onclick="showSubject('생명과학', this)">생명과학</button>
+        <button onclick="showSubject('지구과학', this)">지구과학</button>
+
+    </div>
+
+    <!-- 제목 -->
+    <div class="page-title">
+        <img src="Images/logo.png" alt="로고">
+        <h2>역대 고2 과탐 난이도 TOP10</h2>
+    </div>
+
+    <!-- 🔥 2×2 구조: 물리/화학 + 생명/지구 -->
+    <div class="subject-grid">
+
+        <!-- 물리 -->
+        <div class="subject-box" data-name="물리">
+            <div class="subject-title">물리 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2021 9월</div><div>87</div></div>
+            <div class="test-item"><div>2위 — 2022 9월</div><div>80</div></div>
+            <div class="test-item"><div>3위 — 2024 9월</div><div>79</div></div>
+            <div class="test-item"><div>4위 — 2023 6월</div><div>78</div></div>
+            <div class="test-item"><div>5위 — 2020 9월</div><div>77</div></div>
+            <div class="test-item"><div>6위 — 2025 9월</div><div>76</div></div>
+            <div class="test-item"><div>7위 — 2025 10월, 2024 6월, 2022 10월</div><div>73</div></div>
+            <div class="test-item"><div>8위 — 2025 6월, 2024 3월, 2023 3월</div><div>72</div></div>
+            <div class="test-item"><div>9위 — 2023 3월, 2022 6월, 2020 10월 </div><div>71</div></div>
+ <div class="test-item"><div>10위 — 2023 10월, 2022 3월</div><div>70</div></div>
+        </div>
+
+        <!-- 화학 -->
+        <div class="subject-box" data-name="화학">
+            <div class="subject-title">화학 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2022 9월</div><div>88</div></div>
+            <div class="test-item"><div>2위 — 2021 9월</div><div>80</div></div>
+            <div class="test-item"><div>3위 — 2024 9월, 2023 10월, 2022 10월, 2021 10월</div><div>77</div></div>
+            <div class="test-item"><div>4위 — 2025 9월, 2024 10월</div><div>76</div></div>
+            <div class="test-item"><div>5위 — 2023 9월, 2022 6월</div><div>75</div></div>
+            <div class="test-item"><div>6위 — 2020 10월</div><div>74</div></div>
+            <div class="test-item"><div>7위 — 2025 10월, 2023 3월, 2022 3월, 2020 6월</div><div>73</div></div>
+            <div class="test-item"><div>8위 — 2025 6월</div><div>71</div></div>
+            <div class="test-item"><div>9위 — 2023 6월, 2021 3월, 2020 9월</div><div>70</div></div>
+            <div class="test-item"><div>10위 — 2025 6월, 2025 3월</div><div>68</div></div>
+            
+        </div>
+
+        <!-- 생명과학 -->
+        <div class="subject-box" data-name="생명과학">
+            <div class="subject-title">생명과학 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2020 10월, 2020 6월</div><div>79</div></div>
+            <div class="test-item"><div>2위 — 2022 6월</div><div>77</div></div>
+            <div class="test-item"><div>3위 — 2025 10월, 2024 10월, 2024 9월, 2021 6월</div><div>76</div></div>
+            <div class="test-item"><div>4위 — 2022 9월, 2021 10월, 2021 9월</div><div>75</div></div>
+            <div class="test-item"><div>5위 — 2025 6월, 2024 6월, 2023 6월</div><div>74</div></div>
+            <div class="test-item"><div>6위 — 2023 10월, 2023 9월, 2022 10월, 2020 9월</div><div>73</div></div>
+            <div class="test-item"><div>7위 — 2025 9월</div><div>72</div></div>
+            <div class="test-item"><div>8위 — 2024 3월</div><div>70</div></div>
+            <div class="test-item"><div>9위 — 2022 3월</div><div>69</div></div>
+            <div class="test-item"><div>10위 — 2025 3월, 2021 3월</div><div>68</div></div>
+        </div>
+
+        <!-- 지구과학 -->
+        <div class="subject-box" data-name="지구과학">
+            <div class="subject-title">지구과학 TOP10 <span class="score-tag">표점</span></div>
+
+            <div class="test-item"><div>1위 — 2022 9월</div><div>84</div></div>
+            <div class="test-item"><div>2위 — 2021 10월</div><div>79</div></div>
+            <div class="test-item"><div>3위 — 2020 9월</div><div>78</div></div>
+            <div class="test-item"><div>4위 — 2025 10월, 2025 9월, 2022 3월, 2021 9월</div><div>77</div></div>
+            <div class="test-item"><div>5위 — 2024 9월, 2020 10월</div><div>76</div></div>
+            <div class="test-item"><div>6위 — 2025 3월, 2023 3월, 2022 10월, 2021 6월</div><div>75</div></div>
+            <div class="test-item"><div>7위 — 2023 10월, 2023 9월, 2023 6월</div><div>73</div></div>
+            <div class="test-item"><div>8위 — 2024 10월, 2024 6월, 2022 6월</div><div>72</div></div>
+            <div class="test-item"><div>9위 — 2020 6월</div><div>71</div></div>
+            <div class="test-item"><div>10위 — 2025 6월, 2021 3월</div><div>70</div></div>
+        </div>
+
+        <!-- 물리Ⅱ -->
+
+
+    </div>
+
+    <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+<!-- 과목 필터 JS -->
+<script>
+function showSubject(name, btn) {
+    const boxes   = document.querySelectorAll('.subject-box');
+    const buttons = document.querySelectorAll('.subject-filter button');
+    const grid    = document.querySelector('.subject-grid');
+
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    let visibleCount = 0;
+
+    boxes.forEach(box => {
+        const subject = box.dataset.name;
+        const show = (name === 'all' || subject === name);
+
+        box.style.display = show ? 'block' : 'none';
+        if (show) visibleCount++;
+    });
+
+    if (visibleCount === 1) {
+        grid.classList.add('single');   // ← 중앙 배치
+    } else {
+        grid.classList.remove('single');
+    }
+}
+
+</script>
+
+</body>
+</html>
