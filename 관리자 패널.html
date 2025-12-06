@@ -268,12 +268,19 @@
   const auth = getAuth(app);
 
   /* ---------------- 관리자 로그인 ---------------- */
-  const ALLOWED_EMAILS = ["you@example.com"]; // 본인 이메일만 남겨두면 나만 접속 가능
+  // 🔒 이 배열에 본인 이메일만 적어두면 나만 접속 가능합니다.
+  // Firebase 콘솔 > Authentication에 등록한 동일한 이메일을 넣어주세요.
+  const ALLOWED_EMAILS = ["you@example.com"]; 
 
   const loginForm = document.getElementById("loginForm");
   const adminPanel = document.getElementById("adminPanel");
   const loginButton = document.getElementById("loginButton");
   const logoutButton = document.getElementById("logoutButton");
+
+  const allowedText = document.createElement("p");
+  allowedText.style.cssText = "margin-top:10px; font-size:12px; color:#888;";
+  allowedText.textContent = `허용된 이메일: ${ALLOWED_EMAILS.join(", ") || "(없음)"}`;
+  loginForm.appendChild(allowedText);
 
   loginButton.addEventListener("click", handleAdminLogin);
   logoutButton.addEventListener("click", handleAdminLogout);
