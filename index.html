@@ -1495,7 +1495,7 @@
           const haystack = item.searchTokens;
           return tokens.every(token => haystack.some(piece => piece.includes(token) || token.includes(piece)));
         })
-        .slice(0, 30);
+        .slice(0, 120);
 
       if (!matched.length) {
         searchResults.innerHTML = `<div class="search-result-item" tabindex="0">일치하는 자료가 없어요.</div>`;
@@ -1526,6 +1526,39 @@
       fetch("search-index.json")
         .then(res => res.json())
         .then(data => {
+          const yearVariants = year => {
+            const yy = year.slice(-2);
+            const variants = new Set([
+              year,
+              `${year}년`,
+              yy,
+              `${yy}년`,
+              yy.padStart(3, "0"),
+              `${yy.padStart(3, "0")}년`,
+            ]);
+            return Array.from(variants);
+          };
+
+          const subjectAliases = new Map([
+            ["사회문화", ["사문"]],
+            ["생활과윤리", ["생윤"]],
+            ["윤리와사상", ["윤사"]],
+            ["세계지리", ["세계지"]],
+            ["한국지리", ["한지"]],
+            ["동아시아사", ["동사"]],
+            ["세계사", ["세사"]],
+            ["경제", ["경"]],
+            ["정치와법", ["정법"]],
+            ["지구과학Ⅰ", ["지1", "지구1"]],
+            ["지구과학Ⅱ", ["지2", "지구2"]],
+            ["물리학Ⅰ", ["물1", "물리1"]],
+            ["물리학Ⅱ", ["물2", "물리2"]],
+            ["화학Ⅰ", ["화1", "화학1"]],
+            ["화학Ⅱ", ["화2", "화학2"]],
+            ["생명과학Ⅰ", ["생1", "생과1"]],
+            ["생명과학Ⅱ", ["생2", "생과2"]],
+          ]);
+
           searchIndex = data.map(item => {
             const academicYear = item.grade === "고3" && Number.isFinite(Number(item.year))
               ? `${Number(item.year) + 1}학년도`
@@ -1533,15 +1566,17 @@
 
             const pieces = [
               item.grade,
-              item.year,
-              `${item.year}년`,
               item.month,
               item.subject,
+              ...yearVariants(item.year),
             ];
 
             if (academicYear) {
               pieces.push(academicYear);
             }
+
+            const aliasList = subjectAliases.get(item.subject);
+            if (aliasList) pieces.push(...aliasList);
 
             const searchTokens = pieces.map(normalizer);
 
