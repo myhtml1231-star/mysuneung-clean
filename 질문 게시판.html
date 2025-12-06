@@ -533,8 +533,14 @@ header img {
 <!-- Firestore 연동 스크립트 -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-  import { 
-    getFirestore, collection, addDoc, getDocs, getDoc, doc 
+  import {
+    getFirestore,
+    collection,
+    addDoc,
+    getDoc,
+    doc,
+    onSnapshot,
+    serverTimestamp
   } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
   const firebaseConfig = {
@@ -552,11 +558,11 @@ header img {
 
   console.log("🔥 QnA Firestore 연결 완료");
 
-  // [1] Firestore에서 질문 목록 불러오기
-  async function renderQuestions() {
-    const list = document.getElementById("questionsList");
-    const snap = await getDocs(collection(db, "inquiries"));
+  // [1] Firestore에서 질문 목록 실시간 불러오기
+  const inquiriesRef = collection(db, "inquiries");
 
+  function renderQuestionsFromSnapshot(snap) {
+    const list = document.getElementById("questionsList");
     let html = "";
     const questions = [];
 
@@ -588,6 +594,16 @@ header img {
     window.__questions = questions;
     list.innerHTML = html || '<div class="empty-state">아직 질문이 없습니다.</div>';
   }
+
+  onSnapshot(
+    inquiriesRef,
+    (snap) => renderQuestionsFromSnapshot(snap),
+    (err) => {
+      console.error("질문 목록 불러오기 실패", err);
+      document.getElementById("questionsList").innerHTML = '<div class="empty-state">질문을 불러오지 못했습니다.</div>';
+      window.showToast("질문 목록을 불러오는 중 오류가 발생했습니다");
+    }
+  );
 
   // [2] 질문 상세 보기
   window.openDetailModal = async function(id) {
@@ -657,8 +673,12 @@ header img {
   };
 
   // [4] 질문 등록 (Firestore에 저장)
+  let isSubmitting = false;
+
   window.handleAsk = async function (e) {
     e.preventDefault();
+
+    if (isSubmitting) return;
 
     const title = document.getElementById('title').value.trim();
     const author = document.getElementById('author').value.trim() || '익명';
@@ -676,25 +696,31 @@ header img {
       return;
     }
 
-    await addDoc(collection(db, "inquiries"), {
-      title,
-      author,
-      content,
-      privacy,
-      password: privacy === "private" ? password : "",
-      date: new Date().toLocaleDateString("ko-KR"),
-      answer: null,
-      answered: false,
-      isQuestion: true
-    });
+    isSubmitting = true;
 
-    window.showToast("질문이 등록되었습니다");
-    closeAskModal();
-    renderQuestions();
+    try {
+      await addDoc(inquiriesRef, {
+        title,
+        author,
+        content,
+        privacy,
+        password: privacy === "private" ? password : "",
+        date: new Date().toLocaleDateString("ko-KR"),
+        createdAt: serverTimestamp(),
+        answer: null,
+        answered: false,
+        isQuestion: true
+      });
+
+      window.showToast("질문이 등록되었습니다");
+      closeAskModal();
+    } catch (err) {
+      console.error("질문 등록 실패", err);
+      window.showToast("질문 등록 중 오류가 발생했습니다");
+    } finally {
+      isSubmitting = false;
+    }
   };
-
-  // 최초 로딩
-  renderQuestions();
 </script>
 
 </body>

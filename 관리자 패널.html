@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>관리자 패널</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Inter", "Noto Sans KR", sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 24px; font-weight: bold; }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .login-container {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 40px;
+      max-width: 400px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .login-container h2 { margin-bottom: 30px; }
+
+    .form-group { margin-bottom: 15px; text-align: left; }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .btn {
+      width: 100%;
+      background: #333;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn:hover { background: #000; }
+
+    .btn-logout {
+      background: #888;
+      width: auto;
+      padding: 8px 20px;
+      margin-bottom: 20px;
+    }
+    .btn-logout:hover { background: #666; }
+
+    .admin-panel { display: none; }
+    .admin-panel.active { display: block; }
+
+    .questions-list { display: grid; gap: 15px; }
+
+    .question-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      cursor: pointer;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .question-card:hover {
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border-color: #333;
+    }
+
+    .question-card h3 { font-size: 15px; margin-bottom: 8px; }
+
+    .question-card-meta {
+      display: flex;
+      justify-content: space-between;
+      color: #999;
+      font-size: 12px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .question-card-content {
+      font-size: 13px;
+      color: #555;
+      margin: 10px 0;
+      max-height: 60px;
+      overflow: hidden;
+      white-space: pre-wrap;
+    }
+
+    .status {
+      font-size: 11px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+    .status-answered { background: #d4edda; color: #155724; }
+    .status-pending { background: #fff3cd; color: #856404; }
+    .status-private { background: #f8d7da; color: #721c24; margin-left: 5px; }
+
+    /* Modal */
+    .modal {
+      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000;
+    }
+    .modal.active { display: flex; }
+
+    .modal-content {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 95%;
+      max-width: 600px;
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+
+    .modal-close {
+      float: right; font-size: 24px; cursor: pointer; color: #999;
+    }
+    .modal-title { margin-top: 10px; font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+
+    .modal-meta {
+      display: flex; gap: 15px; color: #999; font-size: 12px; margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .modal-body {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 4px;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      width: 100%; min-height: 140px; padding: 10px;
+      border: 1px solid #ddd; border-radius: 4px;
+      resize: vertical; font-family: inherit;
+    }
+
+    .toast {
+      position: fixed; bottom: 20px; right: 20px;
+      background: #333; color: white; padding: 10px 15px; border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>관리자 패널</h1>
+</header>
+
+<div class="container">
+
+  <!-- 로그인 화면 -->
+  <div class="login-container" id="loginForm">
+    <h2>관리자 로그인</h2>
+
+    <div class="form-group">
+      <label>관리자 이메일</label>
+      <input type="email" id="adminEmail" placeholder="Firebase에 등록한 관리자 이메일" autocomplete="email">
+    </div>
+
+    <div class="form-group">
+      <label>비밀번호</label>
+      <input type="password" id="adminPassword" placeholder="비밀번호 입력" autocomplete="current-password">
+    </div>
+
+    <button class="btn" id="loginButton">로그인</button>
+
+    <p style="margin-top:12px; font-size:13px; color:#666; line-height:1.4;">
+      * Firebase Authentication에 등록된 관리자 계정만 접속할 수 있도록 제한했습니다.<br>
+      * 아래 코드의 <strong>ALLOWED_EMAILS</strong> 배열에 본인 이메일만 넣어두면 됩니다.
+    </p>
+  </div>
+
+  <!-- 관리자 화면 -->
+  <div class="admin-panel" id="adminPanel">
+    <button class="btn btn-logout" id="logoutButton">로그아웃</button>
+
+    <h2 style="margin-bottom:20px;">등록된 질문</h2>
+    <div id="questionsList" class="questions-list"></div>
+  </div>
+
+</div>
+
+<!-- 답변 모달 -->
+<div id="answerModal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal">×</button>
+
+    <div class="modal-title" id="modalTitle"></div>
+    <div class="modal-meta">
+      <span id="modalAuthor"></span>
+      <span id="modalDate"></span>
+      <span id="modalCreated"></span>
+    </div>
+
+    <div class="modal-body" id="modalBody"></div>
+
+    <label style="font-weight:bold; margin-bottom:5px; display:block;">답변 작성</label>
+    <textarea id="answerText" placeholder="답변 입력..."></textarea>
+
+    <button class="btn" id="saveAnswer">답변 저장</button>
+  </div>
+</div>
+
+<script type="module">
+  /* ---------------- Firebase ---------------- */
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import {
+    getFirestore,
+    collection,
+    doc,
+    getDoc,
+    onSnapshot,
+    orderBy,
+    query,
+    serverTimestamp,
+    updateDoc
+  } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+  import {
+    getAuth,
+    onAuthStateChanged,
+    signInWithEmailAndPassword,
+    signOut
+  } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCeEo-XbOdIJSqYRTbA4re3Ot1xWeEjfW0",
+    authDomain: "mysuneung.firebaseapp.com",
+    projectId: "mysuneung",
+    storageBucket: "mysuneung.firebasestorage.app",
+    messagingSenderId: "1047770825934",
+    appId: "1:1047770825934:web:cf4afe0e4331422e043c9f"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const auth = getAuth(app);
+
+  /* ---------------- 관리자 로그인 ---------------- */
+  const ALLOWED_EMAILS = ["you@example.com"]; // 본인 이메일만 남겨두면 나만 접속 가능
+
+  const loginForm = document.getElementById("loginForm");
+  const adminPanel = document.getElementById("adminPanel");
+  const loginButton = document.getElementById("loginButton");
+  const logoutButton = document.getElementById("logoutButton");
+
+  loginButton.addEventListener("click", handleAdminLogin);
+  logoutButton.addEventListener("click", handleAdminLogout);
+
+  onAuthStateChanged(auth, (user) => {
+    const isAllowed = !!user && ALLOWED_EMAILS.includes(user.email || "");
+
+    if (isAllowed) {
+      loginForm.style.display = "none";
+      adminPanel.classList.add("active");
+      subscribeQuestions();
+    } else {
+      adminPanel.classList.remove("active");
+      loginForm.style.display = "block";
+      if (window.__unsubscribeQuestions) {
+        window.__unsubscribeQuestions();
+        window.__unsubscribeQuestions = null;
+      }
+
+      if (user) {
+        // 로그인은 됐지만 허용된 이메일이 아니면 바로 로그아웃
+        showToast("허용되지 않은 계정입니다. 다른 기기에서는 로그인 불가.");
+        signOut(auth);
+      }
+    }
+  });
+
+  async function handleAdminLogin() {
+    const email = document.getElementById("adminEmail").value.trim();
+    const pw = document.getElementById("adminPassword").value;
+
+    if (!email || !pw) return showToast("이메일과 비밀번호를 입력하세요.");
+
+    if (!ALLOWED_EMAILS.includes(email)) {
+      return showToast("허용된 이메일이 아닙니다. 본인 이메일만 남겨두세요.");
+    }
+
+    try {
+      await signInWithEmailAndPassword(auth, email, pw);
+    } catch (err) {
+      console.error("로그인 실패", err);
+      showToast("로그인에 실패했습니다. 이메일/비밀번호를 확인하세요.");
+    }
+  }
+
+  function handleAdminLogout() {
+    signOut(auth);
+    adminPanel.classList.remove("active");
+    loginForm.style.display = "block";
+    if (window.__unsubscribeQuestions) {
+      window.__unsubscribeQuestions();
+      window.__unsubscribeQuestions = null;
+    }
+  }
+
+  /* ---------------- 질문 목록 실시간 ---------------- */
+  const questionsList = document.getElementById("questionsList");
+
+  function subscribeQuestions() {
+    const qRef = query(collection(db, "inquiries"), orderBy("createdAt", "desc"));
+
+    window.__unsubscribeQuestions = onSnapshot(
+      qRef,
+      (snap) => {
+        let html = "";
+        snap.forEach((docu) => {
+          const data = { id: docu.id, ...docu.data() };
+          const created = data.createdAt?.toDate?.();
+          const createdText = created
+            ? `${created.toLocaleDateString("ko-KR")} ${created.toLocaleTimeString("ko-KR")}`
+            : (data.date || "시간 정보 없음");
+
+          html += `
+            <div class="question-card" data-id="${data.id}">
+              <h3>${data.title || "(제목 없음)"}</h3>
+              <div class="question-card-meta">
+                <span>${data.author || "익명"}</span>
+                <span>${createdText}</span>
+              </div>
+              <div class="question-card-content">${data.content || "내용 없음"}</div>
+              <div>
+                <span class="status ${data.answer ? "status-answered" : "status-pending"}">
+                  ${data.answer ? "✓ 답변완료" : "⏳ 답변대기"}
+                </span>
+                ${data.privacy === "private" ? `<span class="status status-private">비공개</span>` : ""}
+              </div>
+            </div>`;
+        });
+
+        questionsList.innerHTML = html || '<div class="empty-state">등록된 질문이 없습니다.</div>';
+      },
+      (err) => {
+        console.error("질문 목록 실시간 구독 실패", err);
+        showToast("질문 목록을 불러오지 못했습니다");
+      }
+    );
+  }
+
+  questionsList.addEventListener("click", async (e) => {
+    const card = e.target.closest(".question-card");
+    if (!card) return;
+    await openModal(card.dataset.id);
+  });
+
+  /* ---------------- 질문 상세 모달 ---------------- */
+  const modal = document.getElementById("answerModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalAuthor = document.getElementById("modalAuthor");
+  const modalDate = document.getElementById("modalDate");
+  const modalCreated = document.getElementById("modalCreated");
+  const modalBody = document.getElementById("modalBody");
+  const answerText = document.getElementById("answerText");
+  const closeModalBtn = document.getElementById("closeModal");
+  const saveAnswerBtn = document.getElementById("saveAnswer");
+
+  closeModalBtn.addEventListener("click", closeModal);
+  saveAnswerBtn.addEventListener("click", submitAnswer);
+
+  async function openModal(id) {
+    const snap = await getDoc(doc(db, "inquiries", id));
+    if (!snap.exists()) {
+      showToast("질문을 찾을 수 없습니다");
+      return;
+    }
+
+    const data = { id, ...snap.data() };
+    window.__current = data;
+
+    const created = data.createdAt?.toDate?.();
+
+    modalTitle.textContent = data.title || "(제목 없음)";
+    modalAuthor.textContent = "작성자: " + (data.author || "익명");
+    modalDate.textContent = data.date || "등록일 없음";
+    modalCreated.textContent = created
+      ? `작성 시간: ${created.toLocaleDateString("ko-KR")} ${created.toLocaleTimeString("ko-KR")}`
+      : "작성 시간 정보 없음";
+    modalBody.textContent = data.content || "내용 없음";
+
+    answerText.value = data.answer || "";
+
+    modal.classList.add("active");
+  }
+
+  function closeModal() {
+    modal.classList.remove("active");
+    window.__current = null;
+  }
+
+  /* ---------------- 답변 저장 ---------------- */
+  async function submitAnswer() {
+    const text = answerText.value.trim();
+    if (!text) return showToast("답변을 입력하세요.");
+
+    const q = window.__current;
+    if (!q?.id) return showToast("선택된 질문이 없습니다.");
+
+    try {
+      await updateDoc(doc(db, "inquiries", q.id), {
+        answer: text,
+        answered: true,
+        answeredAt: serverTimestamp()
+      });
+
+      showToast("답변 저장 완료");
+      closeModal();
+    } catch (err) {
+      console.error("답변 저장 실패", err);
+      showToast("답변을 저장하지 못했습니다");
+    }
+  }
+
+  /* ---------------- 토스트 메시지 ---------------- */
+  function showToast(msg) {
+    const t = document.createElement("div");
+    t.className = "toast";
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 1800);
+  }
+
+  // 외부에서도 재사용할 수 있도록 window에 등록
+  window.showToast = showToast;
+</script>
+
+</body>
+</html>
