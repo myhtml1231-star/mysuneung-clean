@@ -31,14 +31,14 @@
     "grade": "고1",
     "year": "2024",
     "month": "10",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "24-10-sa.html"
   },
   {
     "grade": "고1",
     "year": "2024",
     "month": "10",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "24-10-sc.html"
   },
   {
@@ -73,14 +73,14 @@
     "grade": "고1",
     "year": "2020",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "20-3-sa.html"
   },
   {
     "grade": "고1",
     "year": "2020",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "20-3-sc.html"
   },
   {
@@ -115,119 +115,119 @@
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2020-9-y.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2020-9-j.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2020-9-k.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2020-9-sm.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2020-9-s.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2020-9-h.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2020-9-sa.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2020-9-d.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2020-9-sj.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2020-9-m.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2020-9-c.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2020-9-l.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2020-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2020-9-m2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2020-9-c2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2020-9-l2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "9",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2020-9-e2.html"
   },
   {
@@ -262,14 +262,14 @@
     "grade": "고1",
     "year": "2024",
     "month": "6",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "24-6-sa.html"
   },
   {
     "grade": "고1",
     "year": "2024",
     "month": "6",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "24-6-sc.html"
   },
   {
@@ -304,91 +304,91 @@
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "023-6-y.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "023-6-j.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "023-6-k.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "023-6-sm.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "023-6-s.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "023-6-h.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "023-6-sa.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "023-6-d.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "023-6-sj.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "023-6-m.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "023-6-c.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "023-6-l.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "023-6-e.html"
   },
   {
@@ -423,77 +423,77 @@
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2021-9-m.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2021-9-c.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2021-9-l.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2021-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2021-9-m2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2021-9-c2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2021-9-l2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2021-9-e2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2023-9-언매.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2023-9-화작.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2023-9-확통.html"
   },
   {
@@ -528,119 +528,119 @@
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2023-9-y.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2023-9-j.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2023-9-k.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2023-9-sm.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2023-9-s.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2023-9-h.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2023-9-sa.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2023-9-d.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2023-9-sj.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2023-9-m.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2023-9-c.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2023-9-l.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2023-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2023-9-m2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2023-9-c2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2023-9-l2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2023-9-e2.html"
   },
   {
@@ -675,112 +675,112 @@
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "023-3-y.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "023-3-j.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "023-3-k.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "023-3-sm.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "023-3-s.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "023-3-h.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "023-3-sa.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "023-3-d.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "023-3-sj.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "023-3-m.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "023-3-c.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "023-3-l.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "023-3-e.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2024-6-언매.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2024-6-화작.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2024-6-확통.html"
   },
   {
@@ -815,119 +815,119 @@
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2024-6-y.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2024-6-j.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2024-6-k.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2024-6-sm.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2024-6-s.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2024-6-h.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2024-6-sa.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2024-6-d.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2024-6-sj.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2024-6-m.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2024-6-c.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2024-6-l.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2024-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2024-6-m2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2024-6-c2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2024-6-l2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2024-6-e2.html"
   },
   {
@@ -962,91 +962,91 @@
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "023-10-y.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "023-10-j.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "023-10-k.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "023-10-sm.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "023-10-s.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "023-10-h.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "023-10-sa.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "023-10-d.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "023-10-sj.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "023-10-m.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "023-10-c.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "023-10-l.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "023-10-e.html"
   },
   {
@@ -1081,112 +1081,112 @@
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "022-9-y.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "022-9-j.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "022-9-k.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "022-9-sm.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "022-9-s.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "022-9-h.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "022-9-sa.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "022-9-d.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "022-9-sj.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "022-9-m.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "022-9-c.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "022-9-l.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "9",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "022-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2022-s-언매.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2022-s-화작.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2022-s-확통.html"
   },
   {
@@ -1221,119 +1221,119 @@
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2022-s-y.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2022-s-j.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2022-s-k.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2022-s-sm.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2022-s-s.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2022-s-h.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2022-s-sa.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2022-s-d.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2022-s-sj.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2022-s-m.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2022-s-c.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2022-s-l.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2022-s-e.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2022-s-m2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2022-s-c2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2022-s-l2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2022-s-e2.html"
   },
   {
@@ -1368,119 +1368,119 @@
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2020-6-y.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2020-6-j.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2020-6-k.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2020-6-sm.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2020-6-s.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2020-6-h.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2020-6-sa.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2020-6-d.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2020-6-sj.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2020-6-m.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2020-6-c.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2020-6-l.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2020-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2020-6-m2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2020-6-c2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2020-6-l2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2020-6-e2.html"
   },
   {
@@ -1515,112 +1515,112 @@
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "020-3-y.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "020-3-j.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "020-3-k.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "020-3-sm.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "020-3-s.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "020-3-h.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "020-3-sa.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "020-3-d.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "020-3-sj.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "020-3-m.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "020-3-c.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "020-3-l.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "020-3-e.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2022-6-언매.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2022-6-화작.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2022-6-확통.html"
   },
   {
@@ -1655,119 +1655,119 @@
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2022-6-y.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2022-6-j.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2022-6-k.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2022-6-sm.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2022-6-s.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2022-6-h.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2022-6-sa.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2022-6-d.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2022-6-sj.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2022-6-m.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2022-6-c.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2022-6-l.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2022-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2022-6-m2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2022-6-c2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2022-6-l2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2022-6-e2.html"
   },
   {
@@ -1802,91 +1802,91 @@
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "021-3-y.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "021-3-j.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "021-3-k.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "021-3-sm.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "021-3-s.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "021-3-h.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "021-3-sa.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "021-3-d.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "021-3-sj.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "021-3-m.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "021-3-c.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "021-3-l.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "021-3-e.html"
   },
   {
@@ -1921,91 +1921,91 @@
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "021-10-y.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "021-10-j.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "021-10-k.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "021-10-sm.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "021-10-s.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "021-10-h.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "021-10-sa.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "021-10-d.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "021-10-sj.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "021-10-m.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "021-10-c.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "021-10-l.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "10",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "021-10-e.html"
   },
   {
@@ -2040,91 +2040,91 @@
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "020-10-y.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "020-10-j.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "020-10-k.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "020-10-sm.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "020-10-s.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "020-10-h.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "020-10-sa.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "020-10-d.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "020-10-sj.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "020-10-m.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "020-10-c.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "020-10-l.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "10",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "020-10-e.html"
   },
   {
@@ -2159,91 +2159,91 @@
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "022-6-y.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "022-6-j.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "022-6-k.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "022-6-sm.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "022-6-s.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "022-6-h.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "022-6-sa.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "022-6-d.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "022-6-sj.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "022-6-m.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "022-6-c.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "022-6-l.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "022-6-e.html"
   },
   {
@@ -2278,14 +2278,14 @@
     "grade": "고1",
     "year": "2020",
     "month": "6",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "20-6-sa.html"
   },
   {
     "grade": "고1",
     "year": "2020",
     "month": "6",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "20-6-sc.html"
   },
   {
@@ -2320,14 +2320,14 @@
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "23-9-sa.html"
   },
   {
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "23-9-sc.html"
   },
   {
@@ -2362,14 +2362,14 @@
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "23-6-sa.html"
   },
   {
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "23-6-sc.html"
   },
   {
@@ -2404,112 +2404,112 @@
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "021-6-y.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "021-6-j.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "021-6-k.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "021-6-sm.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "021-6-s.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "021-6-h.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "021-6-sa.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "021-6-d.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "021-6-sj.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "021-6-m.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "021-6-c.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "021-6-l.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "021-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2025-6-언매.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2025-6-화작.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2025-6-확통.html"
   },
   {
@@ -2544,119 +2544,119 @@
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2025-6-y.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2025-6-j.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2025-6-k.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2025-6-sm.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2025-6-s.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2025-6-h.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2025-6-sa.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2025-6-d.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2025-6-sj.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2025-6-m.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2025-6-c.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2025-6-l.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2025-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2025-6-m2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2025-6-c2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2025-6-l2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2025-6-e2.html"
   },
   {
@@ -2691,91 +2691,91 @@
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "025-9-y.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "025-9-j.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "025-9-k.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "025-9-sm.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "025-9-s.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "025-9-h.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "025-9-sa.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "025-9-d.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "025-9-sj.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "025-9-m.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "025-9-c.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "025-9-l.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "9",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "025-9-e.html"
   },
   {
@@ -2810,119 +2810,119 @@
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2021-6-y.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2021-6-j.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2021-6-k.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2021-6-sm.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2021-6-s.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2021-6-h.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2021-6-sa.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2021-6-d.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2021-6-sj.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2021-6-m.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2021-6-c.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2021-6-l.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2021-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2021-6-m2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2021-6-c2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2021-6-l2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2021-6-e2.html"
   },
   {
@@ -2957,35 +2957,35 @@
     "grade": "고1",
     "year": "2020",
     "month": "9",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "20-9-sa.html"
   },
   {
     "grade": "고1",
     "year": "2020",
     "month": "9",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "20-9-sc.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2023-s-언매.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2023-s-화작.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2023-s-확통.html"
   },
   {
@@ -3020,119 +3020,119 @@
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2023-s-y.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2023-s-j.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2023-s-k.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2023-s-sm.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2023-s-s.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2023-s-h.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2023-s-sa.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2023-s-d.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2023-s-sj.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2023-s-m.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2023-s-c.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2023-s-l.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2023-s-e.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2023-s-m2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2023-s-c2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2023-s-l2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2023-s-e2.html"
   },
   {
@@ -3167,119 +3167,119 @@
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2021-s-y.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2021-s-j.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2021-s-k.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2021-s-sm.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2021-s-s.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2021-s-h.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2021-s-sa.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2021-s-d.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2021-s-sj.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2021-s-m.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2021-s-c.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2021-s-l.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2021-s-e.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2021-s-m2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2021-s-c2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2021-s-l2.html"
   },
   {
     "grade": "고3",
     "year": "2021",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2021-s-e2.html"
   },
   {
@@ -3314,91 +3314,91 @@
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "023-9-y.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "023-9-j.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "023-9-k.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "023-9-sm.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "023-9-s.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "023-9-h.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "023-9-sa.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "023-9-d.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "023-9-sj.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "023-9-m.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "023-9-c.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "023-9-l.html"
   },
   {
     "grade": "고2",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "023-9-e.html"
   },
   {
@@ -3433,112 +3433,112 @@
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "024-6-y.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "024-6-j.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "024-6-k.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "024-6-sm.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "024-6-s.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "024-6-h.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "024-6-sa.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "024-6-d.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "024-6-sj.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "024-6-m.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "024-6-c.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "024-6-l.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "024-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2025-s-언매.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2025-s-화작.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2025-s-확통.html"
   },
   {
@@ -3573,119 +3573,119 @@
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2025-s-y.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2025-s-j.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2025-s-k.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2025-s-sm.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2025-s-s.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2025-s-h.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2025-s-sa.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2025-s-d.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2025-s-sj.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2025-s-m.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2025-s-c.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2025-s-l.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2025-s-e.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2025-s-m2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2025-s-c2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2025-s-l2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2025-s-e2.html"
   },
   {
@@ -3720,112 +3720,112 @@
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "024-10-y.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "024-10-j.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "024-10-k.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "024-10-sm.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "024-10-s.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "024-10-h.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "024-10-sa.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "024-10-d.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "024-10-sj.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "024-10-m.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "024-10-c.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "024-10-l.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "10",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "024-10-e.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2026-s-언매.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2026-s-화작.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2026-s-확통.html"
   },
   {
@@ -3860,119 +3860,119 @@
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2026-s-y.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2026-s-j.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2026-s-k.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2026-s-sm.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2026-s-s.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2026-s-h.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2026-s-sa.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2026-s-d.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2026-s-sj.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2026-s-m.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2026-s-c.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2026-s-l.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2026-s-e.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2026-s-m2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2026-s-c2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2026-s-l2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2026-s-e2.html"
   },
   {
@@ -4007,35 +4007,35 @@
     "grade": "고1",
     "year": "2021",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "21-3-sa.html"
   },
   {
     "grade": "고1",
     "year": "2021",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "21-3-sc.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2026-9-언매.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2026-9-화작.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2026-9-확통.html"
   },
   {
@@ -4070,140 +4070,140 @@
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2026-9-y.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2026-9-j.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2026-9-k.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2026-9-sm.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2026-9-s.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2026-9-h.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2026-9-sa.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2026-9-d.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2026-9-sj.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2026-9-m.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2026-9-c.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2026-9-l.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2026-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2026-9-m2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2026-9-c2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2026-9-l2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2026-9-e2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2023-6-언매.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2023-6-화작.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2023-6-확통.html"
   },
   {
@@ -4238,119 +4238,119 @@
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2023-6-y.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2023-6-j.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2023-6-k.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2023-6-sm.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2023-6-s.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2023-6-h.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2023-6-sa.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2023-6-d.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2023-6-sj.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2023-6-m.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2023-6-c.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2023-6-l.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2023-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2023-6-m2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2023-6-c2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2023-6-l2.html"
   },
   {
     "grade": "고3",
     "year": "2023",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2023-6-e2.html"
   },
   {
@@ -4385,14 +4385,14 @@
     "grade": "고1",
     "year": "2025",
     "month": "9",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "25-9-sa.html"
   },
   {
     "grade": "고1",
     "year": "2025",
     "month": "9",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "25-9-sc.html"
   },
   {
@@ -4427,14 +4427,14 @@
     "grade": "고1",
     "year": "2022",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "22-3-sa.html"
   },
   {
     "grade": "고1",
     "year": "2022",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "22-3-sc.html"
   },
   {
@@ -4469,14 +4469,14 @@
     "grade": "고1",
     "year": "2025",
     "month": "10",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "25-10-sa.html"
   },
   {
     "grade": "고1",
     "year": "2025",
     "month": "10",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "25-10-sc.html"
   },
   {
@@ -4511,91 +4511,91 @@
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "024-3-y.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "024-3-j.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "024-3-k.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "024-3-sm.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "024-3-s.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "024-3-h.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "024-3-sa.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "024-3-d.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "024-3-sj.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "024-3-m.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "024-3-c.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "024-3-l.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "024-3-e.html"
   },
   {
@@ -4630,91 +4630,91 @@
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "020-9-y.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "020-9-j.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "020-9-k.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "020-9-sm.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "020-9-s.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "020-9-h.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "020-9-sa.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "020-9-d.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "020-9-sj.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "020-9-m.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "020-9-c.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "020-9-l.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "9",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "020-9-e.html"
   },
   {
@@ -4749,91 +4749,91 @@
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "020-6-y.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "020-6-j.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "020-6-k.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "020-6-sm.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "020-6-s.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "020-6-h.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "020-6-sa.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "020-6-d.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "020-6-sj.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "020-6-m.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "020-6-c.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "020-6-l.html"
   },
   {
     "grade": "고2",
     "year": "2020",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "020-6-e.html"
   },
   {
@@ -4868,14 +4868,14 @@
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "23-3-sa.html"
   },
   {
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "23-3-sc.html"
   },
   {
@@ -4910,112 +4910,112 @@
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "025-3-y.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "025-3-j.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "025-3-k.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "025-3-sm.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "025-3-s.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "025-3-h.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "025-3-sa.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "025-3-d.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "025-3-sj.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "025-3-m.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "025-3-c.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "025-3-l.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "025-3-e.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2024-s-언매.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2024-s-화작.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2024-s-확통.html"
   },
   {
@@ -5050,119 +5050,119 @@
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2024-s-y.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2024-s-j.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2024-s-k.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2024-s-sm.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2024-s-s.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2024-s-h.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2024-s-sa.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2024-s-d.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2024-s-sj.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2024-s-m.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2024-s-c.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2024-s-l.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2024-s-e.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2024-s-m2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2024-s-c2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2024-s-l2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2024-s-e2.html"
   },
   {
@@ -5197,14 +5197,14 @@
     "grade": "고1",
     "year": "2020",
     "month": "10",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "20-10-sa.html"
   },
   {
     "grade": "고1",
     "year": "2020",
     "month": "10",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "20-10-sc.html"
   },
   {
@@ -5239,91 +5239,91 @@
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "021-9-y.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "021-9-j.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "021-9-k.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "021-9-sm.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "021-9-s.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "021-9-h.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "021-9-sa.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "021-9-d.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "021-9-sj.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "021-9-m.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "021-9-c.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "021-9-l.html"
   },
   {
     "grade": "고2",
     "year": "2021",
     "month": "9",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "021-9-e.html"
   },
   {
@@ -5358,112 +5358,112 @@
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "024-9-y.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "024-9-j.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "024-9-k.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "024-9-sm.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "024-9-s.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "024-9-h.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "024-9-sa.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "024-9-d.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "024-9-sj.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "024-9-m.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "024-9-c.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "024-9-l.html"
   },
   {
     "grade": "고2",
     "year": "2024",
     "month": "9",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "024-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2022-9-언매.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2022-9-화작.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2022-9-확통.html"
   },
   {
@@ -5498,119 +5498,119 @@
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2022-9-y.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2022-9-j.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2022-9-k.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2022-9-sm.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2022-9-s.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2022-9-h.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2022-9-sa.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2022-9-d.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2022-9-sj.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2022-9-m.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2022-9-c.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2022-9-l.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2022-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2022-9-m2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2022-9-c2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2022-9-l2.html"
   },
   {
     "grade": "고3",
     "year": "2022",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2022-9-e2.html"
   },
   {
@@ -5645,14 +5645,14 @@
     "grade": "고1",
     "year": "2025",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "25-3-sa.html"
   },
   {
     "grade": "고1",
     "year": "2025",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "25-3-sc.html"
   },
   {
@@ -5687,14 +5687,14 @@
     "grade": "고1",
     "year": "2022",
     "month": "6",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "22-6-sa.html"
   },
   {
     "grade": "고1",
     "year": "2022",
     "month": "6",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "22-6-sc.html"
   },
   {
@@ -5729,91 +5729,91 @@
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "025-6-y.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "025-6-j.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "025-6-k.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "025-6-sm.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "025-6-s.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "025-6-h.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "025-6-sa.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "025-6-d.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "025-6-sj.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "025-6-m.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "025-6-c.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "025-6-l.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "025-6-e.html"
   },
   {
@@ -5848,35 +5848,35 @@
     "grade": "고1",
     "year": "2025",
     "month": "6",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "25-6-sa.html"
   },
   {
     "grade": "고1",
     "year": "2025",
     "month": "6",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "25-6-sc.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2025-9-언매.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2025-9-화작.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2025-9-확통.html"
   },
   {
@@ -5911,119 +5911,119 @@
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2025-9-y.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2025-9-j.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2025-9-k.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2025-9-sm.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2025-9-s.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2025-9-h.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2025-9-sa.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2025-9-d.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2025-9-sj.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2025-9-m.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2025-9-c.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2025-9-l.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2025-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2025-9-m2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2025-9-c2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2025-9-l2.html"
   },
   {
     "grade": "고3",
     "year": "2025",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2025-9-e2.html"
   },
   {
@@ -6058,91 +6058,91 @@
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "025-10-y.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "025-10-j.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "025-10-k.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "025-10-sm.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "025-10-s.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "025-10-h.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "025-10-sa.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "025-10-d.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "025-10-sj.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "025-10-m.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "025-10-c.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "025-10-l.html"
   },
   {
     "grade": "고2",
     "year": "2025",
     "month": "10",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "025-10-e.html"
   },
   {
@@ -6177,14 +6177,14 @@
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "23-10-sa.html"
   },
   {
     "grade": "고1",
     "year": "2023",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "23-10-sc.html"
   },
   {
@@ -6219,14 +6219,14 @@
     "grade": "고1",
     "year": "2021",
     "month": "6",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "21-6-sa.html"
   },
   {
     "grade": "고1",
     "year": "2021",
     "month": "6",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "21-6-sc.html"
   },
   {
@@ -6261,35 +6261,35 @@
     "grade": "고1",
     "year": "2021",
     "month": "9",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "21-9-sa.html"
   },
   {
     "grade": "고1",
     "year": "2021",
     "month": "9",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "21-9-sc.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2024-9-언매.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2024-9-화작.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2024-9-확통.html"
   },
   {
@@ -6324,119 +6324,119 @@
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2024-9-y.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2024-9-j.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2024-9-k.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2024-9-sm.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2024-9-s.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2024-9-h.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2024-9-sa.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2024-9-d.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2024-9-sj.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2024-9-m.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2024-9-c.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2024-9-l.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2024-9-e.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2024-9-m2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2024-9-c2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2024-9-l2.html"
   },
   {
     "grade": "고3",
     "year": "2024",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2024-9-e2.html"
   },
   {
@@ -6471,14 +6471,14 @@
     "grade": "고1",
     "year": "2022",
     "month": "9",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "22-9-sa.html"
   },
   {
     "grade": "고1",
     "year": "2022",
     "month": "9",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "22-9-sc.html"
   },
   {
@@ -6513,14 +6513,14 @@
     "grade": "고1",
     "year": "2021",
     "month": "10",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "21-10-sa.html"
   },
   {
     "grade": "고1",
     "year": "2021",
     "month": "10",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "21-10-sc.html"
   },
   {
@@ -6555,91 +6555,91 @@
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "022-10-y.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "022-10-j.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "022-10-k.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "022-10-sm.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "022-10-s.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "022-10-h.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "022-10-sa.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "022-10-d.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "022-10-sj.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "022-10-m.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "022-10-c.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "022-10-l.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "10",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "022-10-e.html"
   },
   {
@@ -6674,112 +6674,112 @@
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "022-3-y.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "022-3-j.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "022-3-k.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "022-3-sm.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "022-3-s.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "022-3-h.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "022-3-sa.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "022-3-d.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "022-3-sj.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "022-3-m.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "022-3-c.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "022-3-l.html"
   },
   {
     "grade": "고2",
     "year": "2022",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "022-3-e.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "언어와매체",
+    "subject": "언어와매체 (언매)",
     "url": "2026-6-언매.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화법과작문",
+    "subject": "화법과작문 (화작)",
     "url": "2026-6-화작.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "확률과통계",
+    "subject": "확률과통계 (확통)",
     "url": "2026-6-확통.html"
   },
   {
@@ -6814,119 +6814,119 @@
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2026-6-y.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2026-6-j.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2026-6-k.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2026-6-sm.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2026-6-s.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2026-6-h.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2026-6-sa.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2026-6-d.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2026-6-sj.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2026-6-m.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2026-6-c.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2026-6-l.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2026-6-e.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2026-6-m2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2026-6-c2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2026-6-l2.html"
   },
   {
     "grade": "고3",
     "year": "2026",
     "month": "6",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2026-6-e2.html"
   },
   {
@@ -6961,14 +6961,14 @@
     "grade": "고1",
     "year": "2022",
     "month": "10",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "22-10-sa.html"
   },
   {
     "grade": "고1",
     "year": "2022",
     "month": "10",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "22-10-sc.html"
   },
   {
@@ -7003,14 +7003,14 @@
     "grade": "고1",
     "year": "2024",
     "month": "3",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "24-3-sa.html"
   },
   {
     "grade": "고1",
     "year": "2024",
     "month": "3",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "24-3-sc.html"
   },
   {
@@ -7045,14 +7045,14 @@
     "grade": "고1",
     "year": "2024",
     "month": "9",
-    "subject": "사회탐구",
+    "subject": "사회탐구 (사탐)",
     "url": "24-9-sa.html"
   },
   {
     "grade": "고1",
     "year": "2024",
     "month": "9",
-    "subject": "과학탐구",
+    "subject": "과학탐구 (과탐)",
     "url": "24-9-sc.html"
   },
   {
@@ -7087,119 +7087,119 @@
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "윤리와사상",
+    "subject": "윤리와사상 (윤사)",
     "url": "2020-s-y.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "정치와법",
+    "subject": "정치와법 (정법)",
     "url": "2020-s-j.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "경제",
+    "subject": "경제 (경제 / 경)",
     "url": "2020-s-k.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "사회문화",
+    "subject": "사회문화 (사문)",
     "url": "2020-s-sm.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "세계사",
+    "subject": "세계사 (세사)",
     "url": "2020-s-s.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "한국지리",
+    "subject": "한국지리 (한지)",
     "url": "2020-s-h.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "생활과윤리",
+    "subject": "생활과윤리 (생윤)",
     "url": "2020-s-sa.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "동아시아사",
+    "subject": "동아시아사 (동사)",
     "url": "2020-s-d.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "세계지리",
+    "subject": "세계지리 (세지)",
     "url": "2020-s-sj.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "물리학Ⅰ",
+    "subject": "물리학Ⅰ (물리1 / 물1)",
     "url": "2020-s-m.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "화학Ⅰ",
+    "subject": "화학Ⅰ (화학1 / 화1)",
     "url": "2020-s-c.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "생명과학Ⅰ",
+    "subject": "생명과학Ⅰ (생1 / 생명1)",
     "url": "2020-s-l.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "지구과학Ⅰ",
+    "subject": "지구과학Ⅰ (지1 / 지과1)",
     "url": "2020-s-e.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "물리학Ⅱ",
+    "subject": "물리학Ⅱ (물리2 / 물2)",
     "url": "2020-s-m2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "화학Ⅱ",
+    "subject": "화학Ⅱ (화학2 / 화2)",
     "url": "2020-s-c2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "생명과학Ⅱ",
+    "subject": "생명과학Ⅱ (생2 / 생명2)",
     "url": "2020-s-l2.html"
   },
   {
     "grade": "고3",
     "year": "2020",
     "month": "3",
-    "subject": "지구과학Ⅱ",
+    "subject": "지구과학Ⅱ (지2 / 지과2)",
     "url": "2020-s-e2.html"
   }
 ]
