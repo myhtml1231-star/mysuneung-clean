@@ -1541,16 +1541,99 @@
       .replace(/\s+/g, "")
       .trim();
 
+    const HANGUL_BASE = 0xac00;
+    const HANGUL_LAST = 0xd7a3;
+    const CHOSUNG_LIST = [
+      "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ",
+      "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"
+    ];
+
+    const getInitials = (value = "") => {
+      let initials = "";
+      for (const char of value.toString()) {
+        const code = char.charCodeAt(0);
+        if (code < HANGUL_BASE || code > HANGUL_LAST) continue;
+        const chosungIndex = Math.floor((code - HANGUL_BASE) / (21 * 28));
+        const chosung = CHOSUNG_LIST[chosungIndex];
+        if (chosung) {
+          initials += chosung;
+        }
+      }
+      return initials;
+    };
+
+    const subjectKeywordMap = {
+      "사회문화": ["사문"],
+      "생활과윤리": ["생윤"],
+      "윤리와사상": ["윤사"],
+      "정치와법": ["정법"],
+      "세계지리": ["세지"],
+      "한국지리": ["한지"],
+      "동아시아사": ["동사"],
+      "세계사": ["세사"],
+      "한국사": ["국사"],
+      "언어와매체": ["언매"],
+      "화법과작문": ["화작"],
+      "확률과통계": ["확통"],
+      "기하": ["기하"],
+      "미적분": ["미적"],
+      "물리학": ["물리"],
+      "생명과학": ["생과", "생명"],
+      "생명과학Ⅰ": ["생1", "생과1"],
+      "생명과학Ⅱ": ["생2", "생과2"],
+      "화학": ["화학"],
+      "지구과학": ["지과"],
+      "지구과학Ⅰ": ["지1", "지과1"],
+      "지구과학Ⅱ": ["지2", "지과2"],
+      "물리학Ⅰ": ["물1"],
+      "물리학Ⅱ": ["물2"],
+      "화학Ⅰ": ["화1"],
+      "화학Ⅱ": ["화2"],
+      "지구과학1": ["지1", "지과1"],
+      "지구과학2": ["지2", "지과2"],
+      "물리1": ["물1"],
+      "물리2": ["물2"],
+      "화학1": ["화1"],
+      "화학2": ["화2"]
+    };
+
+    const getSubjectKeywords = (subject = "") => {
+      const normalized = subject.toString().trim();
+      const aliases = subjectKeywordMap[normalized] ?? [];
+      const keywords = [normalized, ...aliases];
+      const initials = keywords.map(getInitials).filter(Boolean);
+      return [...keywords, ...initials];
+    };
+
+    const getYearVariants = (year = "") => {
+      const normalized = year.toString();
+      const variants = new Set([normalized]);
+      const trimmed = normalized.replace(/^20/, "");
+      if (trimmed && trimmed !== normalized) {
+        variants.add(trimmed);
+        variants.add(trimmed.padStart(3, "0"));
+      }
+      return Array.from(variants);
+    };
+
+    const getMonthKeywords = (month = "") => {
+      if (month === "수능") {
+        return ["수능", "11", "11월"];
+      }
+      return [month, `${month}월`];
+    };
+
     const buildHaystack = (item) => {
-      const parts = [
-        item.grade,
-        item.year,
-        `${item.year}학년도`,
-        `${item.year}년`,
-        item.month,
-        `${item.month}월`,
-        item.subject
-      ];
+      const parts = [item.grade];
+
+      getYearVariants(item.year).forEach(variant => {
+        parts.push(variant, `${variant}학년도`, `${variant}년`);
+      });
+
+      getMonthKeywords(item.month).forEach(keyword => parts.push(keyword));
+
+      getSubjectKeywords(item.subject).forEach(keyword => parts.push(keyword));
+
       return stripKeywords(parts.join(" "));
     };
 
