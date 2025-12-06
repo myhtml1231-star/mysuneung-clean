@@ -1878,13 +1878,16 @@
       const buildTokens = rawTokens => {
         const tokenSet = new Set();
 
+
         const addToken = (value = "") => {
           const normalized = stripKeywords(value);
+
           if (!normalized) return;
           tokenSet.add(normalized);
 
           const initials = getInitials(normalized);
           if (initials) tokenSet.add(initials);
+
         };
 
         rawTokens.forEach(token => {
@@ -1901,10 +1904,13 @@
             const segments = part.match(/[0-9]+|[가-힣]+/g);
             if (segments) segments.forEach(addToken);
           });
+=======
+
         });
 
         return Array.from(tokenSet);
       };
+
 
       const buildSubjectTokenSet = (subject = "") => {
         const set = new Set();
@@ -1917,6 +1923,8 @@
         });
         return set;
       };
+
+
 
       const tokens = buildTokens(trimmed.split(/\s+/));
 
