@@ -180,12 +180,14 @@
 
 <div class="container">
 
+
   <div style="background:#e8f0fe; border:1px solid #c6d4ff; color:#1a3c8c; padding:14px 16px; border-radius:8px; margin:18px 0; line-height:1.5;">
     <strong>로컬에서 파일을 열어도 동일한 데이터에 연결됩니다.</strong><br>
     이 페이지는 브라우저가 인터넷을 통해 Firebase(위에 선언된 <code>firebaseConfig</code>)에 직접 접속합니다. 그래서
     <u>다른 기기에서 같은 Firebase 프로젝트를 사용</u>하면 질문/답변이 실시간으로 동기화됩니다. 별도 서버를 띄우지 않아도 되지만,
     인터넷 연결이 끊기면 동기화가 되지 않으니 참고하세요.
   </div>
+
 
   <!-- 로그인 화면 -->
   <div class="login-container" id="loginForm">
@@ -201,6 +203,7 @@
       <input type="password" id="adminPassword" placeholder="비밀번호 입력" autocomplete="current-password">
     </div>
 
+
     <button class="btn" id="loginButton" type="button">이메일/비밀번호로 로그인</button>
 
     <button class="btn" id="googleLoginButton" type="button" style="background:#db4437; margin-top:8px;">
@@ -213,11 +216,21 @@
       * Google 로그인 버튼을 써도, ALLOWED_EMAILS에 적힌 이메일이 아니면 자동으로 차단됩니다.
     </p>
 
+    <button class="btn" id="loginButton">로그인</button>
+
+    <p style="margin-top:12px; font-size:13px; color:#666; line-height:1.4;">
+      * Firebase Authentication에 등록된 관리자 계정만 접속할 수 있도록 제한했습니다.<br>
+      * 아래 코드의 <strong>ALLOWED_EMAILS</strong> 배열에 본인 이메일만 넣어두면 됩니다.
+    </p>
+
+
+
     <ul style="margin-top:14px; font-size:13px; color:#555; padding-left:18px; text-align:left; line-height:1.5;">
       <li>로컬에서 열더라도 위 <code>firebaseConfig</code>에 적힌 Firebase 프로젝트로 바로 연결됩니다.</li>
       <li>같은 프로젝트를 쓰는 질문 게시판·수험채팅방과 데이터베이스를 공유해, 다른 기기에서도 동일한 질문과 답변을 봅니다.</li>
       <li>인터넷이 차단되면 동기화가 멈추므로, 접속이 안 되면 네트워크 상태와 Firebase 설정을 확인하세요.</li>
     </ul>
+
   </div>
 
   <!-- 관리자 화면 -->
@@ -268,9 +281,13 @@
   import {
     getAuth,
     onAuthStateChanged,
+
     GoogleAuthProvider,
     signInWithEmailAndPassword,
     signInWithPopup,
+
+    signInWithEmailAndPassword,
+
     signOut
   } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
@@ -295,7 +312,9 @@
   const loginForm = document.getElementById("loginForm");
   const adminPanel = document.getElementById("adminPanel");
   const loginButton = document.getElementById("loginButton");
+
   const googleLoginButton = document.getElementById("googleLoginButton");
+
   const logoutButton = document.getElementById("logoutButton");
 
   const allowedText = document.createElement("p");
@@ -304,7 +323,10 @@
   loginForm.appendChild(allowedText);
 
   loginButton.addEventListener("click", handleAdminLogin);
+
   googleLoginButton.addEventListener("click", handleGoogleLogin);
+
+
   logoutButton.addEventListener("click", handleAdminLogout);
 
   onAuthStateChanged(auth, (user) => {
@@ -348,6 +370,7 @@
     }
   }
 
+
   async function handleGoogleLogin() {
     try {
       const provider = new GoogleAuthProvider();
@@ -364,6 +387,7 @@
       showToast("Google 로그인에 실패했습니다. 팝업 차단을 해제해 주세요.");
     }
   }
+
 
   function handleAdminLogout() {
     signOut(auth);
