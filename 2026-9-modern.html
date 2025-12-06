@@ -12,7 +12,26 @@
         body { font-family: 'Noto Sans KR', sans-serif; }
         .fade-in { animation: fadeIn 0.5s ease-out forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    </style>
+    
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #444;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+
+    .back-btn:hover {
+      background: #e4e4e4;
+      transform: translateY(-2px);
+    }
+</style>
     <script>
         tailwind.config = {
             theme: {
@@ -30,17 +49,10 @@
         <div class="max-w-[1200px] mx-auto px-4 h-16 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm border border-slate-100">
-                    <span class="font-bold text-slate-900">수</span>
+                    <img src="Images/logo.png" alt="logo" class="w-8 h-8 object-contain">
                 </div>
                 <span class="text-xl font-extrabold text-slate-800">수능기출</span>
             </a>
-            <div class="hidden md:flex gap-6 text-sm font-bold text-slate-600">
-                <a href="#" class="hover:text-[#F4B733]">고3</a>
-                <a href="#" class="hover:text-[#F4B733]">고2</a>
-                <a href="#" class="hover:text-[#F4B733]">고1</a>
-                <a href="#" class="text-[#F4B733]">등급컷</a>
-                <a href="#" class="hover:text-[#F4B733]">커뮤니티</a>
-            </div>
             <button class="md:hidden p-2">
                 <i data-lucide="menu"></i>
             </button>
@@ -49,7 +61,7 @@
     <main class="max-w-[1000px] mx-auto px-4 pt-24 pb-20">
         <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12 text-center md:text-left">
             <div class="w-20 h-20 bg-white rounded-2xl shadow-md flex items-center justify-center border border-slate-100">
-                <span class="text-3xl font-black text-slate-900">수</span>
+                <img src="Images/logo.png" alt="logo" class="w-12 h-12 object-contain">
             </div>
             <div>
                 <h1 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight">2026학년도 9월 모의평가 등급컷</h1>
