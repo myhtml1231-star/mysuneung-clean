@@ -541,9 +541,8 @@ header img {
       if (e.target.id === 'detailModal') closeDetailModal();
     });
 
-    document.getElementById('askModal').addEventListener('click', (e) => {
-      if (e.target.id === 'askModal') closeAskModal();
-    });
+    // 질문 작성 모달은 바깥 영역을 클릭해도 닫히지 않도록 처리
+    // (사용자가 실수로 닫히는 것을 방지하고, 우측 상단 X 버튼으로만 종료)
 </script>
 
 <!-- Firestore 연동 스크립트 -->
