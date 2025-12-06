@@ -1435,6 +1435,7 @@
     const normalizer = (value = "") => value.toString().toLowerCase().replace(/\s+/g, "");
 
     const closeSearch = () => {
+      if (!searchResults) return;
       searchResults.classList.remove("open");
       document.querySelector(".search-box")?.setAttribute("aria-expanded", "false");
     };
@@ -1471,6 +1472,7 @@
     }
 
     const openSearch = () => {
+      if (!searchResults) return;
       if (!searchResults.classList.contains("open")) {
         searchResults.classList.add("open");
         document.querySelector(".search-box")?.setAttribute("aria-expanded", "true");
@@ -1478,6 +1480,8 @@
     };
 
     const renderResults = query => {
+      if (!searchResults) return;
+
       const trimmed = query.trim();
       if (!trimmed) {
         searchResults.innerHTML = "";
