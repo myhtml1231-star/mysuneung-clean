@@ -1831,7 +1831,22 @@
         return;
       }
 
-      const tokens = trimmed.split(/\s+/).map(stripKeywords).filter(Boolean);
+      const buildTokens = rawTokens => {
+        const tokenSet = new Set();
+
+        rawTokens.forEach(token => {
+          const normalized = stripKeywords(token);
+          if (!normalized) return;
+          tokenSet.add(normalized);
+
+          const initials = getInitials(normalized);
+          if (initials) tokenSet.add(initials);
+        });
+
+        return Array.from(tokenSet);
+      };
+
+      const tokens = buildTokens(trimmed.split(/\s+/));
 
       if (!tokens.length) {
         searchResults.innerHTML = `<div class="search-result-item" tabindex="0">검색어를 조금 더 구체적으로 입력해주세요.</div>`;
