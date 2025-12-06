@@ -1725,6 +1725,21 @@
       }
     };
 
+    const countTokenMatches = (token = "", haystack = "") => {
+      let count = 0;
+      let start = 0;
+      while (token && start < haystack.length) {
+        const index = haystack.indexOf(token, start);
+        if (index === -1) break;
+        count += token.length;
+        start = index + token.length;
+      }
+      return count;
+    };
+
+    const getMatchScore = (tokens, haystack) => tokens
+      .reduce((score, token) => score + countTokenMatches(token, haystack), 0);
+
     const renderResults = query => {
       const trimmed = query.trim();
       if (!trimmed) {
@@ -1741,10 +1756,16 @@
         return;
       }
 
-      const matched = searchIndex.filter(item => {
-        const haystack = buildHaystack(item);
-        return tokens.some(t => haystack.includes(t));
-      }).slice(0, 10);
+      const matched = searchIndex
+        .map((item, index) => {
+          const haystack = buildHaystack(item);
+          const score = getMatchScore(tokens, haystack);
+          return { item, score, index };
+        })
+        .filter(result => result.score > 0)
+        .sort((a, b) => b.score - a.score || a.index - b.index)
+        .slice(0, 10)
+        .map(result => result.item);
 
       if (!matched.length) {
         searchResults.innerHTML = `<div class="search-result-item" tabindex="0">일치하는 자료가 없어요.</div>`;
