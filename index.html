@@ -123,6 +123,74 @@
       min-width: 190px;
     }
 
+    .quick-panel {
+      background: #fff9ec;
+      border: 1px solid rgba(244, 183, 51, 0.3);
+      border-radius: 16px;
+      padding: 16px;
+      display: none;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+      box-shadow: 0 8px 24px rgba(244, 183, 51, 0.12);
+    }
+
+    .quick-panel.open {
+      display: flex;
+    }
+
+    .quick-panel__label {
+      font-weight: 800;
+      color: #b45309;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .quick-panel__buttons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .quick-chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 183, 51, 0.5);
+      background: white;
+      color: #92400e;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .quick-chip:hover,
+    .quick-chip:focus {
+      background: var(--accent);
+      color: white;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(244, 183, 51, 0.25);
+    }
+
+    .quick-close {
+      margin-left: auto;
+      background: none;
+      border: none;
+      font-size: 16px;
+      color: #92400e;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .quick-close:hover,
+    .quick-close:focus {
+      background: rgba(244, 183, 51, 0.12);
+      outline: none;
+    }
+
     .nav-item.open > .dropdown-panel {
       display: block;
     }
@@ -1147,6 +1215,18 @@
     </div>
   </header>
 
+  <div class="container">
+    <div id="quick-panel" class="quick-panel" role="status" aria-live="polite" aria-hidden="true">
+      <div class="quick-panel__label">고3 · 고2 · 고1 자료, 그리고 검색으로 원하는 기출을 바로 찾을 수 있어요.</div>
+      <div class="quick-panel__buttons">
+        <button class="quick-chip" data-target-grade="고3">고3</button>
+        <button class="quick-chip" data-target-grade="고2">고2</button>
+        <button class="quick-chip" data-target-grade="고1">고1</button>
+      </div>
+      <button id="quick-panel-close" class="quick-close" aria-label="빠른 이동 안내 닫기">닫기</button>
+    </div>
+  </div>
+
   <main>
     <div class="hero">
       <div class="hero-tag">
@@ -1165,7 +1245,7 @@
       </p>
 
       <div class="hero-buttons">
-        <button id="quick-cta" class="btn btn-primary">기출문제 바로가기 →</button>
+        <button id="quick-access-btn" class="btn btn-primary" aria-expanded="false" aria-controls="quick-panel">기출문제 바로가기 →</button>
         <button class="btn btn-secondary">커뮤니티 / 게시판</button>
       </div>
 
@@ -1286,6 +1366,40 @@
       }
     ];
 
+    let navItems = [];
+
+    const ensureNavItems = () => {
+      if (!navItems.length) {
+        navItems = Array.from(document.querySelectorAll(".nav-item"));
+      }
+    };
+
+    const closeNavItem = (nav) => {
+      nav.classList.remove("open");
+      nav.querySelector(".nav-btn")?.setAttribute("aria-expanded", "false");
+      nav.querySelector(".dropdown-panel")?.setAttribute("aria-hidden", "true");
+      nav.querySelectorAll(".year-item.active").forEach(y => y.classList.remove("active"));
+    };
+
+    const openNavItem = (nav) => {
+      ensureNavItems();
+      navItems.forEach(n => {
+        if (n !== nav) closeNavItem(n);
+      });
+      nav.classList.add("open");
+      nav.querySelector(".nav-btn")?.setAttribute("aria-expanded", "true");
+      nav.querySelector(".dropdown-panel")?.setAttribute("aria-hidden", "false");
+    };
+
+    const openNavItemByName = (name) => {
+      ensureNavItems();
+      const target = navItems.find(n => n.dataset.name === name);
+      if (target) {
+        openNavItem(target);
+        target.querySelector(".nav-btn")?.focus();
+      }
+    };
+
     function updateDDay() {
       const targetDate = new Date("2026-11-19T08:40:00");
       const now = new Date();
@@ -1328,7 +1442,7 @@
 
     // Dropdown interactions
     document.addEventListener("DOMContentLoaded", () => {
-      const navItems = document.querySelectorAll(".nav-item");
+      navItems = Array.from(document.querySelectorAll(".nav-item"));
       navItems.forEach(nav => {
         const btn = nav.querySelector(".nav-btn");
         const panel = nav.querySelector(".dropdown-panel");
@@ -1337,27 +1451,13 @@
 
         const openPanel = () => {
           clearTimeout(panelTimer);
-          navItems.forEach(n => {
-            if (n !== nav) {
-              n.classList.remove("open");
-              const otherBtn = n.querySelector(".nav-btn");
-              const otherPanel = n.querySelector(".dropdown-panel");
-              if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
-              if (otherPanel) otherPanel.setAttribute("aria-hidden", "true");
-            }
-          });
-          nav.classList.add("open");
-          btn.setAttribute("aria-expanded", "true");
-          panel.setAttribute("aria-hidden", "false");
+          openNavItem(nav);
         };
 
         const closePanel = (delay = 120) => {
           clearTimeout(panelTimer);
           panelTimer = setTimeout(() => {
-            nav.classList.remove("open");
-            btn.setAttribute("aria-expanded", "false");
-            panel.setAttribute("aria-hidden", "true");
-            panel.querySelectorAll(".year-item.active").forEach(y => y.classList.remove("active"));
+            closeNavItem(nav);
           }, delay);
         };
 
@@ -1422,14 +1522,9 @@
 
       document.addEventListener("keydown", e => {
         if (e.key === "Escape") {
-          navItems.forEach(n => {
-            n.classList.remove("open");
-            const b = n.querySelector(".nav-btn");
-            const p = n.querySelector(".dropdown-panel");
-            if (b) b.setAttribute("aria-expanded", "false");
-            if (p) p.setAttribute("aria-hidden", "true");
-          });
-          document.querySelectorAll(".year-item.active").forEach(y => y.classList.remove("active"));
+          navItems.forEach(closeNavItem);
+          hideQuickPanel();
+          closeSearch();
         }
       });
     });
@@ -1439,7 +1534,25 @@
     const searchResults = document.getElementById("search-results");
     let searchIndex = [];
 
-    const normalizer = (value = "") => value.toString().toLowerCase().replace(/\s+/g, "");
+    const stripKeywords = (value = "") => value
+      .toString()
+      .toLowerCase()
+      .replace(/학년도|년도|학년|년|월|모의고사|모고/g, "")
+      .replace(/\s+/g, "")
+      .trim();
+
+    const buildHaystack = (item) => {
+      const parts = [
+        item.grade,
+        item.year,
+        `${item.year}학년도`,
+        `${item.year}년`,
+        item.month,
+        `${item.month}월`,
+        item.subject
+      ];
+      return stripKeywords(parts.join(" "));
+    };
 
     const closeSearch = () => {
       searchResults.classList.remove("open");
@@ -1448,11 +1561,14 @@
 
     const heroGuide = document.getElementById("hero-guide");
     const heroGuideClose = document.getElementById("hero-guide-close");
-    const quickCTA = document.getElementById("quick-cta");
+    const quickAccessBtn = document.getElementById("quick-access-btn");
+    const quickPanel = document.getElementById("quick-panel");
+    const quickPanelClose = document.getElementById("quick-panel-close");
+    const quickChips = document.querySelectorAll(".quick-chip");
     let heroGuideTimer = null;
 
     const hideHeroGuide = () => {
-      heroGuide.classList.remove("show");
+      heroGuide?.classList.remove("show");
       if (heroGuideTimer) {
         clearTimeout(heroGuideTimer);
         heroGuideTimer = null;
@@ -1460,6 +1576,7 @@
     };
 
     const showHeroGuide = () => {
+      if (!heroGuide) return;
       heroGuide.classList.add("show");
       if (heroGuideTimer) clearTimeout(heroGuideTimer);
       heroGuideTimer = setTimeout(() => {
@@ -1467,11 +1584,52 @@
       }, 8000);
     };
 
-    quickCTA.addEventListener("click", () => {
+    const showQuickPanel = () => {
+      quickPanel?.classList.add("open");
+      quickPanel?.setAttribute("aria-hidden", "false");
+      quickAccessBtn?.setAttribute("aria-expanded", "true");
+    };
+
+    const hideQuickPanel = () => {
+      quickPanel?.classList.remove("open");
+      quickPanel?.setAttribute("aria-hidden", "true");
+      quickAccessBtn?.setAttribute("aria-expanded", "false");
+    };
+
+    const toggleQuickPanel = () => {
+      if (quickPanel?.classList.contains("open")) {
+        hideQuickPanel();
+      } else {
+        showQuickPanel();
+      }
+    };
+
+    quickAccessBtn?.addEventListener("click", () => {
+      toggleQuickPanel();
       showHeroGuide();
     });
 
-    heroGuideClose.addEventListener("click", () => {
+    quickPanelClose?.addEventListener("click", () => {
+      hideQuickPanel();
+    });
+
+    quickChips.forEach(btn => {
+      btn.addEventListener("click", () => {
+        showQuickPanel();
+        openNavItemByName(btn.dataset.targetGrade);
+      });
+    });
+
+    document.addEventListener("click", e => {
+      if (quickPanel && quickPanel.classList.contains("open")) {
+        const clickedInside = quickPanel.contains(e.target) || quickAccessBtn?.contains(e.target);
+        if (!clickedInside) {
+          hideQuickPanel();
+        }
+      }
+    });
+
+    heroGuideClose?.addEventListener("click", () => {
       hideHeroGuide();
     });
 
@@ -1490,10 +1648,17 @@
         return;
       }
 
-      const tokens = trimmed.split(/\s+/).map(normalizer);
+      const tokens = trimmed.split(/\s+/).map(stripKeywords).filter(Boolean);
+
+      if (!tokens.length) {
+        searchResults.innerHTML = `<div class="search-result-item" tabindex="0">검색어를 조금 더 구체적으로 입력해주세요.</div>`;
+        openSearch();
+        return;
+      }
+
       const matched = searchIndex.filter(item => {
-        const haystack = normalizer(`${item.grade} ${item.year} ${item.month} ${item.subject}`);
-        return tokens.every(t => haystack.includes(t));
+        const haystack = buildHaystack(item);
+        return tokens.some(t => haystack.includes(t));
       }).slice(0, 10);
 
       if (!matched.length) {
@@ -1504,11 +1669,13 @@
 
       searchResults.innerHTML = matched.map(item => {
         const monthLabel = item.month === "수능" ? "수능" : `${item.month}월`;
+        const yearNum = Number(item.year);
+        const academicLabel = item.grade === "고3" && Number.isFinite(yearNum) ? ` (${yearNum + 1}학년도)` : "";
         return `
           <a class="search-result-item" href="${item.url}" role="option">
             <div class="search-result-title">
               <span class="search-badge">${item.grade}</span>
-              <span>${item.year} ${monthLabel}</span>
+              <span>${item.year} ${monthLabel}${academicLabel}</span>
             </div>
             <div class="search-result-sub">${item.subject}</div>
           </a>
