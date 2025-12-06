@@ -48,6 +48,15 @@
       z-index: 50;
     }
 
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
     .brand {
       display: flex;
       align-items: center;
@@ -275,6 +284,14 @@
       color: var(--accent);
     }
 
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+      justify-content: flex-end;
+    }
+
     .search-box {
       position: relative;
       display: flex;
@@ -284,7 +301,9 @@
       padding: 8px 16px;
       border-radius: 999px;
       width: 320px;
-      flex-shrink: 0;
+      max-width: 420px;
+      flex: 1;
+      min-width: 240px;
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
     }
 
@@ -607,43 +626,37 @@
     }
 
     .dday-box {
-      position: fixed;
-      right: 40px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: white;
-      border-radius: 20px;
-      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #fff9ec;
+      border-radius: 14px;
+      padding: 10px 14px;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-      border: 1px solid #e5e7eb;
-      width: 180px;
-      text-align: center;
-      animation: fadeInRight 0.7s ease-out 0.3s both;
+      border: 1px solid rgba(244, 183, 51, 0.3);
+      min-width: 180px;
     }
 
     .dday-label {
-      font-size: 11px;
-      font-weight: 600;
-      color: #9ca3af;
-      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #92400e;
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 6px;
     }
 
     .dday-number {
-      font-size: 32px;
+      font-size: 22px;
       font-weight: 900;
-      color: var(--accent);
-      letter-spacing: -1px;
+      color: #b45309;
+      letter-spacing: -0.5px;
     }
 
     .dday-time {
-      font-size: 10px;
-      color: #d1d5db;
+      font-size: 11px;
+      color: #b45309;
       font-family: monospace;
-      margin-top: 8px;
       letter-spacing: 1px;
     }
 
@@ -895,11 +908,19 @@
         gap: 12px;
       }
 
+      .header-actions {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .search-box {
+        flex: 1 1 320px;
+        max-width: none;
+      }
+
       .dday-box {
-        position: static;
-        transform: none;
-        margin-top: 40px;
-        width: 180px;
+        flex: 0 0 auto;
       }
 
       nav.nav {
@@ -915,8 +936,25 @@
     }
 
     @media (max-width: 640px) {
+      .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
       .search-box {
         width: 100%;
+        min-width: 0;
+      }
+
+      .dday-box {
+        width: 100%;
+        justify-content: space-between;
       }
 
       .news-grid {
@@ -935,7 +973,7 @@
 </head>
 <body>
   <header>
-    <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 12px; flex-wrap: wrap;">
+    <div class="container header-bar">
       <div class="brand">
          <img src="Images/logo.png" alt="logo">
         <div class="brand-text">수능기출</div>
@@ -1246,10 +1284,19 @@
         </ul>
       </nav>
 
-      <div class="search-box" aria-expanded="false" aria-haspopup="listbox">
-        <span aria-hidden="true">🔍</span>
-        <input id="search-input" type="text" placeholder="학년·년도·월·과목으로 검색하세요" aria-label="자료 검색" autocomplete="off" />
-        <div id="search-results" class="search-results" role="listbox"></div>
+      <div class="header-actions">
+        <div class="search-box" aria-expanded="false" aria-haspopup="listbox">
+          <span aria-hidden="true">🔍</span>
+          <input id="search-input" type="text" placeholder="학년·년도·월·과목으로 검색하세요" aria-label="자료 검색" autocomplete="off" />
+          <div id="search-results" class="search-results" role="listbox"></div>
+        </div>
+        <div class="dday-box" aria-live="polite">
+          <div>
+            <div class="dday-label">📅 2027학년도 수능</div>
+            <div class="dday-time" id="dday-time">--:--:--</div>
+          </div>
+          <div class="dday-number" id="dday">D-000</div>
+        </div>
       </div>
     </div>
   </header>
@@ -1309,12 +1356,6 @@
           <div>필요한 자료를 찾으신 뒤 검색 결과를 클릭하면 해당 페이지로 이동합니다.</div>
         </div>
         <button id="hero-guide-close" class="hero-guide-close" aria-label="안내 메시지 닫기">×</button>
-      </div>
-
-      <div class="dday-box">
-        <div class="dday-label">📅 2027학년도 수능</div>
-        <div class="dday-number" id="dday">D-348</div>
-       
       </div>
     </div>
 
@@ -1463,8 +1504,11 @@
         const minutes = Math.floor((diff / 1000 / 60) % 60);
         const seconds = Math.floor((diff / 1000) % 60);
 
-        document.getElementById("dday").textContent = `D-${days}`;
-        document.getElementById("dday-time").textContent = 
+        const ddayEl = document.getElementById("dday");
+        const timeEl = document.getElementById("dday-time");
+
+        if (ddayEl) ddayEl.textContent = `D-${days}`;
+        if (timeEl) timeEl.textContent =
           `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
       }
     }
@@ -1834,17 +1878,53 @@
       const buildTokens = rawTokens => {
         const tokenSet = new Set();
 
-        rawTokens.forEach(token => {
-          const normalized = stripKeywords(token);
+
+        const addToken = (value = "") => {
+          const normalized = stripKeywords(value);
+
           if (!normalized) return;
           tokenSet.add(normalized);
 
           const initials = getInitials(normalized);
           if (initials) tokenSet.add(initials);
+
+        };
+
+        rawTokens.forEach(token => {
+          const cleaned = token.replace(/[\-_/.,]+/g, " ");
+          const parts = cleaned.split(/\s+/).filter(Boolean);
+
+          if (!parts.length) {
+            addToken(cleaned);
+            return;
+          }
+
+          parts.forEach(part => {
+            addToken(part);
+            const segments = part.match(/[0-9]+|[가-힣]+/g);
+            if (segments) segments.forEach(addToken);
+          });
+=======
+
         });
 
         return Array.from(tokenSet);
       };
+
+
+      const buildSubjectTokenSet = (subject = "") => {
+        const set = new Set();
+        getSubjectKeywords(subject).forEach(keyword => {
+          const normalized = stripKeywords(keyword);
+          if (!normalized) return;
+          set.add(normalized);
+          const initials = getInitials(normalized);
+          if (initials) set.add(initials);
+        });
+        return set;
+      };
+
+
 
       const tokens = buildTokens(trimmed.split(/\s+/));
 
@@ -1857,8 +1937,10 @@
       const matched = searchIndex
         .map((item, index) => {
           const haystack = buildHaystack(item);
-          const score = getMatchScore(tokens, haystack);
-          return { item, score, index };
+          const subjectTokens = buildSubjectTokenSet(item.subject);
+          const baseScore = getMatchScore(tokens, haystack);
+          const subjectScore = tokens.reduce((score, token) => subjectTokens.has(token) ? score + token.length * 3 : score, 0);
+          return { item, score: baseScore + subjectScore, index };
         })
         .filter(result => result.score > 0)
         .sort((a, b) => b.score - a.score || a.index - b.index)
