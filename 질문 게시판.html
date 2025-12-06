@@ -397,7 +397,6 @@ header img {
 </head>
 <body>
   <header>
-
      <img src="Images/logo.png" alt="logo">
     <h1>질문 & 답변</h1>
   </header>
@@ -479,8 +478,8 @@ header img {
   </div>
   
 
+<!-- UI 보조 스크립트 (Firestore 아님) -->
 <script>
-    let questions = JSON.parse(localStorage.getItem('inquiries') || '[]').filter(q => q.isQuestion === true);
     let currentQuestionId = null;
 
     function togglePasswordField() {
@@ -494,106 +493,6 @@ header img {
       } else {
         passwordGroup.style.display = 'none';
         passwordInput.required = false;
-      }
-    }
-
-    function renderQuestions() {
-      const list = document.getElementById('questionsList');
-      
-      if (questions.length === 0) {
-        list.innerHTML = '<div class="empty-state">아직 질문이 없습니다.</div>';
-        return;
-      }
-
-      list.innerHTML = questions.map((question) => `
-        <div class="question-item" onclick="openDetailModal(${question.id})">
-          <div class="question-left">
-            <div class="question-title ${question.privacy === 'private' ? 'private' : ''}">
-              ${question.privacy === 'private' ? '🔒 비공개 질문' : question.title}
-            </div>
-            <div class="question-meta">
-              <span class="question-author">${question.author || '익명'}</span>
-              <span>${question.date}</span>
-            </div>
-          </div>
-          <div class="question-right">
-            <span class="answer-badge ${question.answer ? 'yes' : 'no'}">
-              ${question.answer ? '✓ 답변완료' : '⏳ 답변대기'}
-            </span>
-            ${question.privacy === 'private' ? '<span class="privacy-badge">[비공개]</span>' : ''}
-          </div>
-        </div>
-      `).join('');
-    }
-
-    function openDetailModal(id) {
-      const question = questions.find(q => q.id === id);
-      if (!question) return;
-
-      currentQuestionId = id;
-
-      document.getElementById('modalTitle').textContent = question.title;
-      document.getElementById('modalAuthor').textContent = `작성자: ${question.author || '익명'}`;
-      document.getElementById('modalDate').textContent = question.date;
-
-      // Check if private
-      if (question.privacy === 'private') {
-        document.getElementById('contentSection').innerHTML = `
-          <div class="modal-privacy-check">
-            <div style="margin-bottom: 15px; color: #6a1b9a;">이 질문은 비공개 질문입니다</div>
-            <div class="password-form">
-              <input type="password" id="privatePassword" placeholder="비밀번호 입력" />
-              <button type="button" class="btn" onclick="verifyPassword(${id})">확인</button>
-            </div>
-          </div>
-        `;
-      } else {
-        document.getElementById('contentSection').innerHTML = `
-          <div class="modal-body">${question.content}</div>
-          <div id="answerSection"></div>
-        `;
-
-        if (question.answer) {
-          document.getElementById('answerSection').innerHTML = `
-            <div style="background: #e8f5e9; padding: 15px; border-radius: 4px; border-left: 3px solid #4caf50;">
-              <div style="font-weight: bold; color: #2e7d32; margin-bottom: 8px;">관리자 답변</div>
-              <div style="color: #1b5e20; font-size: 14px; line-height: 1.6; white-space: pre-wrap;">${question.answer}</div>
-            </div>
-          `;
-        } else {
-          document.getElementById('answerSection').innerHTML = '<div style="color: #999; font-size: 13px;">아직 답변이 없습니다.</div>';
-        }
-      }
-
-      document.getElementById('detailModal').classList.add('active');
-    }
-
-    function verifyPassword(id) {
-      const password = document.getElementById('privatePassword').value.trim();
-      const question = questions.find(q => q.id === id);
-
-      if (!question) return;
-
-      if (password !== question.password) {
-        showToast('비밀번호가 틀렸습니다');
-        return;
-      }
-
-      // Show content
-      document.getElementById('contentSection').innerHTML = `
-        <div class="modal-body">${question.content}</div>
-        <div id="answerSection"></div>
-      `;
-
-      if (question.answer) {
-        document.getElementById('answerSection').innerHTML = `
-          <div style="background: #e8f5e9; padding: 15px; border-radius: 4px; border-left: 3px solid #4caf50;">
-            <div style="font-weight: bold; color: #2e7d32; margin-bottom: 8px;">관리자 답변</div>
-            <div style="color: #1b5e20; font-size: 14px; line-height: 1.6; white-space: pre-wrap;">${question.answer}</div>
-          </div>
-        `;
-      } else {
-        document.getElementById('answerSection').innerHTML = '<div style="color: #999; font-size: 13px;">아직 답변이 없습니다.</div>';
       }
     }
 
@@ -613,59 +512,15 @@ header img {
       document.getElementById('passwordGroup').style.display = 'none';
     }
 
-    function handleAsk(e) {
-      e.preventDefault();
-      
-      const title = document.getElementById('title').value.trim();
-      const author = document.getElementById('author').value.trim() || '익명';
-      const privacy = document.getElementById('privacy').value;
-      const content = document.getElementById('content').value.trim();
-      const password = document.getElementById('password').value.trim();
-
-      if (privacy === 'private' && !password) {
-        showToast('비공개일 때는 비밀번호를 입력하세요');
-        return;
-      }
-
-      if (privacy === 'private' && password.length < 4) {
-        showToast('비밀번호는 4자 이상이어야 합니다');
-        return;
-      }
-
-      const question = {
-        id: Date.now(),
-        title: title,
-        author: author,
-        content: content,
-        privacy: privacy,
-        password: privacy === 'private' ? password : null,
-        date: new Date().toLocaleDateString('ko-KR'),
-        isQuestion: true,
-        answer: null,
-        answered: false
-      };
-
-      questions.unshift(question);
-
-      const allInquiries = JSON.parse(localStorage.getItem('inquiries') || '[]');
-      allInquiries.unshift(question);
-      localStorage.setItem('inquiries', JSON.stringify(allInquiries));
-
-      closeAskModal();
-      renderQuestions();
-      showToast('질문이 등록되었습니다');
-    }
-
     function showToast(message) {
       const toast = document.createElement('div');
       toast.className = 'toast';
       toast.textContent = message;
       document.body.appendChild(toast);
-      
       setTimeout(() => toast.remove(), 2000);
     }
 
-    // Close modals on outside click
+    // 모달 바깥 클릭 시 닫기
     document.getElementById('detailModal').addEventListener('click', (e) => {
       if (e.target.id === 'detailModal') closeDetailModal();
     });
@@ -673,16 +528,174 @@ header img {
     document.getElementById('askModal').addEventListener('click', (e) => {
       if (e.target.id === 'askModal') closeAskModal();
     });
+</script>
 
-    // Watch for updates from admin
-    window.addEventListener('storage', (e) => {
-      if (e.key === 'inquiries') {
-        questions = JSON.parse(e.newValue || '[]').filter(q => q.isQuestion === true);
-        renderQuestions();
-      }
+<!-- Firestore 연동 스크립트 -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { 
+    getFirestore, collection, addDoc, getDocs, getDoc, doc 
+  } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCeEo-XbOdIJSqYRTbA4re3Ot1xWeEjfW0",
+    authDomain: "mysuneung.firebaseapp.com",
+    projectId: "mysuneung",
+    storageBucket: "mysuneung.firebasestorage.app",
+    messagingSenderId: "1047770825934",
+    appId: "1:1047770825934:web:cf4afe0e4331422e043c9f",
+    measurementId: "G-B7Q0KVYYH5"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  console.log("🔥 QnA Firestore 연결 완료");
+
+  // [1] Firestore에서 질문 목록 불러오기
+  async function renderQuestions() {
+    const list = document.getElementById("questionsList");
+    const snap = await getDocs(collection(db, "inquiries"));
+
+    let html = "";
+    const questions = [];
+
+    snap.forEach((docu) => {
+      const q = { id: docu.id, ...docu.data() };
+      questions.push(q);
+
+      html += `
+        <div class="question-item" onclick="openDetailModal('${q.id}')">
+          <div class="question-left">
+            <div class="question-title ${q.privacy === 'private' ? 'private' : ''}">
+              ${q.privacy === 'private' ? '🔒 비공개 질문' : q.title}
+            </div>
+            <div class="question-meta">
+              <span class="question-author">${q.author || '익명'}</span>
+              <span>${q.date}</span>
+            </div>
+          </div>
+          <div class="question-right">
+            <span class="answer-badge ${q.answer ? 'yes' : 'no'}">
+              ${q.answer ? '✓ 답변완료' : '⏳ 답변대기'}
+            </span>
+            ${q.privacy === 'private' ? '<span class="privacy-badge">[비공개]</span>' : ''}
+          </div>
+        </div>
+      `;
     });
 
+    window.__questions = questions;
+    list.innerHTML = html || '<div class="empty-state">아직 질문이 없습니다.</div>';
+  }
+
+  // [2] 질문 상세 보기
+  window.openDetailModal = async function(id) {
+    const ref = doc(db, "inquiries", id);
+    const snap = await getDoc(ref);
+    if (!snap.exists()) return;
+
+    const q = { id, ...snap.data() };
+    window.__currentQuestion = q;
+    window.currentQuestionId = id;
+
+    document.getElementById("modalTitle").textContent = q.title;
+    document.getElementById("modalAuthor").textContent = `작성자: ${q.author || '익명'}`;
+    document.getElementById("modalDate").textContent = q.date;
+
+    if (q.privacy === "private") {
+      document.getElementById("contentSection").innerHTML = `
+        <div class="modal-privacy-check">
+          <div style="margin-bottom: 15px; color: #6a1b9a;">이 질문은 비공개 질문입니다</div>
+          <div class="password-form">
+            <input type="password" id="privatePassword" placeholder="비밀번호 입력" />
+            <button type="button" class="btn" onclick="verifyPassword()">확인</button>
+          </div>
+        </div>
+      `;
+    } else {
+      document.getElementById("contentSection").innerHTML = `
+        <div class="modal-body">${q.content}</div>
+        <div id="answerSection"></div>
+      `;
+
+      document.getElementById("answerSection").innerHTML =
+        q.answer
+          ? `<div style="background:#e8f5e9; padding:15px; border-radius:4px; border-left:3px solid #4caf50;">
+               <div style="font-weight:bold; color:#2e7d32; margin-bottom:8px;">관리자 답변</div>
+               <div style="white-space:pre-wrap; font-size:14px;">${q.answer}</div>
+             </div>`
+          : `<div style="color:#999; font-size:13px;">아직 답변이 없습니다.</div>`;
+    }
+
+    document.getElementById("detailModal").classList.add("active");
+  };
+
+  // [3] 비공개 질문 비밀번호 확인
+  window.verifyPassword = function () {
+    const inputPw = document.getElementById("privatePassword").value.trim();
+    const q = window.__currentQuestion;
+    if (!q) return;
+
+    if (inputPw !== q.password) {
+      window.showToast("비밀번호가 틀렸습니다");
+      return;
+    }
+
+    document.getElementById("contentSection").innerHTML = `
+      <div class="modal-body">${q.content}</div>
+      <div id="answerSection"></div>
+    `;
+
+    document.getElementById("answerSection").innerHTML =
+      q.answer
+        ? `<div style="background:#e8f5e9; padding:15px; border-radius:4px; border-left:3px solid #4caf50;">
+             <div style="font-weight:bold; color:#2e7d32; margin-bottom:8px;">관리자 답변</div>
+             <div style="white-space:pre-wrap; font-size:14px;">${q.answer}</div>
+           </div>`
+        : `<div style="color:#999; font-size:13px;">아직 답변이 없습니다.</div>`;
+  };
+
+  // [4] 질문 등록 (Firestore에 저장)
+  window.handleAsk = async function (e) {
+    e.preventDefault();
+
+    const title = document.getElementById('title').value.trim();
+    const author = document.getElementById('author').value.trim() || '익명';
+    const privacy = document.getElementById('privacy').value;
+    const content = document.getElementById('content').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (!title || !content) {
+      window.showToast("제목과 내용을 입력하세요");
+      return;
+    }
+
+    if (privacy === 'private' && password.length < 4) {
+      window.showToast('비밀번호는 4자 이상이어야 합니다');
+      return;
+    }
+
+    await addDoc(collection(db, "inquiries"), {
+      title,
+      author,
+      content,
+      privacy,
+      password: privacy === "private" ? password : "",
+      date: new Date().toLocaleDateString("ko-KR"),
+      answer: null,
+      answered: false,
+      isQuestion: true
+    });
+
+    window.showToast("질문이 등록되었습니다");
+    closeAskModal();
     renderQuestions();
-  </script>
+  };
+
+  // 최초 로딩
+  renderQuestions();
+</script>
+
 </body>
 </html>
