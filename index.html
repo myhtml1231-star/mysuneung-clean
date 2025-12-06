@@ -202,14 +202,16 @@
     }
 
     .search-box {
+      position: relative;
       display: flex;
       align-items: center;
       gap: 10px;
       background: #f3f4f6;
       padding: 8px 16px;
       border-radius: 999px;
-      width: 280px;
+      width: 320px;
       flex-shrink: 0;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
     }
 
     .search-box input {
@@ -223,6 +225,70 @@
 
     .search-box input::placeholder {
       color: #9ca3af;
+    }
+
+    .search-results {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e5e7eb;
+      max-height: 320px;
+      overflow: auto;
+      display: none;
+      z-index: 120;
+    }
+
+    .search-results.open {
+      display: block;
+    }
+
+    .search-result-item {
+      padding: 12px 14px;
+      border-bottom: 1px solid #f3f4f6;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .search-result-item:last-child {
+      border-bottom: none;
+    }
+
+    .search-result-item:hover,
+    .search-result-item:focus {
+      background: #fff9ec;
+      outline: none;
+    }
+
+    .search-result-title {
+      font-weight: 700;
+      color: #111827;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .search-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(244, 183, 51, 0.12);
+      color: #d97706;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .search-result-sub {
+      font-size: 13px;
+      color: #6b7280;
     }
 
     /* Hero Section */
@@ -998,9 +1064,10 @@
         </ul>
       </nav>
 
-      <div class="search-box">
-        <span>🔍</span>
-        <input type="text" placeholder="검색어를 입력하세요..." />
+      <div class="search-box" aria-expanded="false" aria-haspopup="listbox">
+        <span aria-hidden="true">🔍</span>
+        <input id="search-input" type="text" placeholder="학년·년도·월·과목으로 검색하세요" aria-label="자료 검색" autocomplete="off" />
+        <div id="search-results" class="search-results" role="listbox"></div>
       </div>
     </div>
   </header>
@@ -1280,6 +1347,97 @@
         }
       });
     });
+
+    // 검색 기능
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+    let searchIndex = [];
+
+    const normalizer = (value = "") => value.toString().toLowerCase().replace(/\s+/g, "");
+
+    const closeSearch = () => {
+      searchResults.classList.remove("open");
+      document.querySelector(".search-box")?.setAttribute("aria-expanded", "false");
+    };
+
+    const openSearch = () => {
+      if (!searchResults.classList.contains("open")) {
+        searchResults.classList.add("open");
+        document.querySelector(".search-box")?.setAttribute("aria-expanded", "true");
+      }
+    };
+
+    const renderResults = query => {
+      const trimmed = query.trim();
+      if (!trimmed) {
+        searchResults.innerHTML = "";
+        closeSearch();
+        return;
+      }
+
+      const tokens = trimmed.split(/\s+/).map(normalizer);
+      const matched = searchIndex.filter(item => {
+        const haystack = normalizer(`${item.grade} ${item.year} ${item.month} ${item.subject}`);
+        return tokens.every(t => haystack.includes(t));
+      }).slice(0, 10);
+
+      if (!matched.length) {
+        searchResults.innerHTML = `<div class="search-result-item" tabindex="0">일치하는 자료가 없어요.</div>`;
+        openSearch();
+        return;
+      }
+
+      searchResults.innerHTML = matched.map(item => {
+        const monthLabel = item.month === "수능" ? "수능" : `${item.month}월`;
+        return `
+          <a class="search-result-item" href="${item.url}" role="option">
+            <div class="search-result-title">
+              <span class="search-badge">${item.grade}</span>
+              <span>${item.year} ${monthLabel}</span>
+            </div>
+            <div class="search-result-sub">${item.subject}</div>
+          </a>
+        `;
+      }).join("");
+
+      openSearch();
+    };
+
+    if (searchInput && searchResults) {
+      fetch("search-index.json")
+        .then(res => res.json())
+        .then(data => {
+          searchIndex = data;
+        })
+        .catch(() => {
+          searchResults.innerHTML = `<div class="search-result-item" tabindex="0">검색 인덱스를 불러오지 못했습니다.</div>`;
+        });
+
+      searchInput.addEventListener("input", e => renderResults(e.target.value));
+
+      searchInput.addEventListener("focus", e => {
+        if (e.target.value) {
+          renderResults(e.target.value);
+        }
+      });
+
+      searchInput.addEventListener("keydown", e => {
+        if (e.key === "Escape") {
+          closeSearch();
+        } else if (e.key === "Enter") {
+          const first = searchResults.querySelector("a.search-result-item");
+          if (first) {
+            first.click();
+          }
+        }
+      });
+
+      document.addEventListener("click", e => {
+        if (!document.querySelector(".search-box")?.contains(e.target)) {
+          closeSearch();
+        }
+      });
+    }
 
     updateDDay();
     setInterval(updateDDay, 1000);
