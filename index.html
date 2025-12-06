@@ -524,6 +524,45 @@
       outline: none;
     }
 
+    .visit-stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      gap: 12px;
+      margin: 26px 0 6px;
+      width: min(720px, 100%);
+    }
+
+    .visit-card {
+      background: #fff;
+      border: 1px solid #f1f2f4;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .visit-label {
+      font-weight: 800;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .visit-number {
+      font-size: 32px;
+      font-weight: 900;
+      color: #c27803;
+      letter-spacing: -0.5px;
+    }
+
+    .visit-note {
+      font-size: 13px;
+      color: #6b7280;
+    }
+
     @media (min-width: 640px) {
       .hero-buttons {
         flex-direction: row;
@@ -1249,6 +1288,19 @@
         <button class="btn btn-secondary">커뮤니티 / 게시판</button>
       </div>
 
+      <div class="visit-stats" aria-live="polite">
+        <div class="visit-card">
+          <div class="visit-label">오늘 방문자</div>
+          <div class="visit-number" id="visit-today">-</div>
+          <div class="visit-note">이 브라우저에서 자동 집계됩니다.</div>
+        </div>
+        <div class="visit-card">
+          <div class="visit-label">한 달 누적</div>
+          <div class="visit-number" id="visit-month">-</div>
+          <div class="visit-note" id="visit-month-label">이번 달 누적 방문</div>
+        </div>
+      </div>
+
       <div id="hero-guide" class="hero-guide" role="status" aria-live="polite">
         <div class="hero-guide-icon" aria-hidden="true">ℹ️</div>
         <div class="hero-guide-body">
@@ -1430,6 +1482,35 @@
       document.getElementById("newsModal").classList.remove("active");
     }
 
+    function formatStatNumber(value = 0) {
+      try {
+        return Number(value).toLocaleString("ko-KR");
+      } catch (e) {
+        return value;
+      }
+    }
+
+    function updateVisitorCounters() {
+      const today = new Date();
+      const todayKey = today.toISOString().slice(0, 10);
+      const monthKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
+
+      const saved = JSON.parse(localStorage.getItem("mysuneung_visit_counters") || "{}") || {};
+      let todayCount = saved.lastDate === todayKey ? Number(saved.todayCount || 0) + 1 : 1;
+      let monthCount = saved.lastMonth === monthKey ? Number(saved.monthCount || 0) + 1 : 1;
+
+      const next = { lastDate: todayKey, lastMonth: monthKey, todayCount, monthCount };
+      localStorage.setItem("mysuneung_visit_counters", JSON.stringify(next));
+
+      const todayEl = document.getElementById("visit-today");
+      const monthEl = document.getElementById("visit-month");
+      const monthLabelEl = document.getElementById("visit-month-label");
+
+      if (todayEl) todayEl.textContent = formatStatNumber(todayCount);
+      if (monthEl) monthEl.textContent = formatStatNumber(monthCount);
+      if (monthLabelEl) monthLabelEl.textContent = `${monthKey} 누적 방문`;
+    }
+
     // Close modal on outside click
     document.getElementById("newsModal").addEventListener("click", (e) => {
       if (e.target.id === "newsModal") closeModal();
@@ -1442,6 +1523,8 @@
 
     // Dropdown interactions
     document.addEventListener("DOMContentLoaded", () => {
+      updateVisitorCounters();
+
       navItems = Array.from(document.querySelectorAll(".nav-item"));
       navItems.forEach(nav => {
         const btn = nav.querySelector(".nav-btn");
