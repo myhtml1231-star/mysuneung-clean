@@ -1,838 +1,1288 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>수능기출 - 인덱스</title>
-<style>
-  .brand {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    flex-shrink: 0;        /* ← 줄어들면서 깨지는 문제 해결 */
-    white-space: nowrap;    /* ← 줄바꿈 금지 */
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>수능기출 - 새로운 기준</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-header.topbar {
-    flex-wrap: wrap;
-}
+    :root {
+      --accent: #F4B733;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
 
-@media(max-width: 750px) {
-  .brand {
-    flex-direction: row !important;
-    white-space: nowrap !important;
-    flex-shrink: 0 !important;
-  }
-}
+    body {
+      font-family: "Inter", "Noto Sans KR", sans-serif;
+      background: #ffffff;
+      color: #374151;
+    }
 
-  @media (max-width: 750px) {
-  .dday-wrap {
-    width: 100%;
-    position: relative !important;
-    right: 0 !important;
-    top: 0 !important;
-    margin-top: 10px !important;
-    display: flex;
-    justify-content: center;
-  }
-}
-  :root{
-    --bg: #f8f7fb;
-    --card: #ffffff;
-    --muted: #777;
-    --accent: #F4B733;
-    --radius: 12px;
-    --maxw: 1200px;
-  }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-  *{ box-sizing: border-box; }
-  body{
-    margin: 0;
-    font-family: "Noto Sans KR", "Inter", sans-serif;
-    background: var(--bg);
-    color: #111;
-    -webkit-font-smoothing:antialiased;
-  }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 0;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 50;
+    }
 
-  /* Layout */
-  .site {
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 18px 20px 48px;
-    position: relative;
-  }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
 
-  /* Topbar */
-  .topbar {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    position: relative;
-  }
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 900;
+      font-size: 18px;
+    }
 
-  .brand {
-    display:flex;
-    align-items:center;
-    gap:12px;
-  }
-  .brand img { width:42px; height:auto; display:block; }
-  .brand .brand-title { font-size:18px; font-weight:800; letter-spacing:0.2px; }
+    .brand-text {
+      font-weight: bold;
+      font-size: 18px;
+      color: #111827;
+      white-space: nowrap;
+    }
 
-  /* Nav */
-  nav.nav { flex:1; display:flex; justify-content:center; }
-  .nav-list {
-    display:flex;
-    gap:18px;
-    list-style:none;
-    margin:0;
-    padding:0;
-    align-items:center;
-  }
-  .nav-item {
-    position:relative;
-    font-weight:700;
-    font-size:15px;
-    color:#111;
-    cursor:pointer;
-    padding:8px 6px;
-    user-select:none;
-  }
+    nav.nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
 
-  /* Dropdown panel */
-  .dropdown-panel{
-    position:absolute;
-    top:calc(100% + 8px);
-    left:0;
-    display:none;
-    background:var(--card);
-    padding:12px 14px;
-    border-radius:10px;
-    box-shadow:0 10px 28px rgba(6,10,15,0.08);
-    z-index:90;
-    min-width:180px;
-  }
-  .nav-item.open > .dropdown-panel { display:block; }
+    .nav-list {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
 
-  /* Year menu */
-  .year-menu { margin-bottom:6px; }
-  .year-list { display:flex; flex-direction:column; gap:6px; padding:0; margin:0; }
-  .year-item {
-    position:relative;
-    font-size:14px;
-    color:#333;
-    padding:6px 10px;
-    border-radius:8px;
-    width:fit-content;
-    cursor:pointer;
-  }
-  .year-item:hover { color:var(--accent); background: rgba(244,183,51,0.06); }
+    .nav-item {
+      position: relative;
+      font-weight: 700;
+      font-size: 15px;
+      color: #111827;
+      cursor: pointer;
+      padding: 8px 10px;
+      user-select: none;
+      white-space: nowrap;
+    }
 
-  /* Submenu (6월/9월/수능) */
-  .submenu {
-    position:absolute;
-    top: -6px;
-    left: calc(100% + 8px);
-    background:#fff;
-    padding:8px 12px;
-    border-radius:10px;
-    box-shadow:0 10px 28px rgba(6,10,15,0.08);
-    display:none;
-    flex-direction:column;
-    z-index:200;
-    min-width:96px;
-  }
-  .submenu div { padding:6px 0; font-size:13px; white-space:nowrap; }
-  .submenu a { color:inherit; text-decoration:none; display:block; padding:0 2px; }
-  .submenu div:hover { color:var(--accent); }
+    .nav-btn {
+      background: none;
+      border: none;
+      font: inherit;
+      color: inherit;
+      cursor: pointer;
+      padding: 0;
+    }
 
-  /* JS class to show submenu */
-  .year-item.active > .submenu { display:flex; }
+    .dropdown-panel {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      display: none;
+      background: var(--card);
+      padding: 12px 14px;
+      border-radius: 10px;
+      box-shadow: 0 10px 28px rgba(6, 10, 15, 0.08);
+      z-index: 90;
+      min-width: 190px;
+    }
 
-  /* Dropdown links style */
-  .dropdown-panel a {
-    display:block;
-    padding:8px 10px;
-    font-size:14px;
-    color:#333;
-    text-decoration:none;
-    border-radius:6px;
-    transition: background .12s, color .12s;
-  }
-  .dropdown-panel a:hover { background:#f5f6f7; color:var(--accent); }
+    .nav-item.open > .dropdown-panel {
+      display: block;
+    }
 
-  /* Right controls (search + D-day) - positioned independent */
-  .right-controls {
-    display:flex;
-    align-items:center;
-    gap:12px;
-  }
+    .year-menu {
+      margin-bottom: 6px;
+    }
 
-  .search {
-    display:flex;
-    align-items:center;
-    background:#fff;
-    border-radius:999px;
-    padding:8px 12px;
-    border:1px solid #e6e6e6;
-    gap:8px;
-    min-width:240px;
-    max-width:36vw;
-  }
-  .search input {
-    border:0;
-    outline:0;
-    font-size:14px;
-    background:transparent;
-    width:100%;
-  }
+    .year-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 0;
+      margin: 0;
+    }
 
-  /* D-Day box (fixed inside .site, independent of search) */
-  .dday-box {
-    background: #fff;
-    border-radius: 12px;
-    padding: 10px 14px;
-    text-align: center;
-    box-shadow: 0 6px 18px rgba(6,10,15,0.06);
-    min-width: 140px;
-    display:flex;
-    flex-direction:column;
-    gap:4px;
-    align-items:center;
-    justify-content:center;
-    font-weight:700;
-  }
-  .dday-box .title { font-size:13px; color:#666; font-weight:700; }
-  .dday-box .main { font-size:18px; color:#E63946; font-weight:900; letter-spacing:0.6px; }
-  .dday-box .sub { font-size:12px; color:var(--muted); font-weight:600; }
+    .year-item {
+      position: relative;
+      font-size: 14px;
+      color: #333;
+      padding: 6px 10px;
+      border-radius: 8px;
+      width: fit-content;
+      cursor: pointer;
+      background: transparent;
+      white-space: nowrap;
+    }
 
-  /* place D-day top-right within container */
-  .dday-wrap {
-    position: absolute;
-    top: 18px;
-    right: -250px;
-    z-index: 999;
-  }
+    .year-item:hover {
+      color: var(--accent);
+      background: rgba(244, 183, 51, 0.06);
+    }
 
-  /* hero / logo */
-  .hero { text-align:center; margin-top:18px; margin-bottom:6px; }
-  .logo-box { display:flex; flex-direction:column; align-items:center; gap:8px; }
-  .logo-box img { width:36px; }
-  .logo-box .site-title { font-size:22px; font-weight:800; }
+    .submenu {
+      position: absolute;
+      top: -6px;
+      left: calc(100% + 8px);
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 10px;
+      box-shadow: 0 10px 28px rgba(6, 10, 15, 0.08);
+      display: none;
+      flex-direction: column;
+      z-index: 200;
+      min-width: 120px;
+    }
 
-  /* news grid */
-  .news-wrapper{ display:flex; justify-content:center; }
-  .news-section {
-    width:100%; max-width:920px; margin-top:86px;
-    display:grid; grid-template-columns:repeat(2,1fr); gap:20px;
-  }
-  .news-box { background:#fff; padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(6,10,15,0.04); min-height:140px; }
-  .news-box h2 { margin:0 0 8px 0; font-size:18px; }
-  .news-box p { color:var(--muted); margin:0; font-size:14px; line-height:1.6; }
+    .submenu div {
+      padding: 6px 0;
+      font-size: 13px;
+      white-space: nowrap;
+    }
 
-  /* small screens */
-  @media (max-width:900px){
-  .nav-list{
-    display:flex;         /* ← 모바일에서도 보이게 */
-    gap:16px;
-  }
+    .submenu a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      padding: 0 2px;
+    }
 
-  .search-area{
-    display:flex;         /* ← 모바일에서도 보이게 */
-    width:100%;
-    justify-content:center;
-    margin-top:12px;
-  }
+    .submenu div:hover {
+      color: var(--accent);
+    }
 
-  /* 두 열 → 한 열 */
-  .news-section{
-    grid-template-columns:1fr;
-  }
+    .year-item.active > .submenu {
+      display: flex;
+    }
 
-  .site{
-    padding:16px;
-  }
-}
+    .dropdown-panel a {
+      display: block;
+      padding: 8px 10px;
+      font-size: 14px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background .12s, color .12s;
+      white-space: nowrap;
+    }
 
+    .dropdown-panel a:hover {
+      background: #f5f6f7;
+      color: var(--accent);
+    }
 
-  /* accessibility focus */
-  a:focus { outline: 3px solid rgba(244,183,51,0.25); border-radius:6px; }
-  .nav-item button{ background:none; border:0; font-weight:700; cursor:pointer; padding:8px 6px; font-size:15px; color:inherit; }
-.nav-item, .year-item, .submenu div {
-    white-space: nowrap;
-    word-break: keep-all;
-    cursor: pointer;
-    pointer-events: auto;
-}
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f3f4f6;
+      padding: 8px 16px;
+      border-radius: 999px;
+      width: 280px;
+      flex-shrink: 0;
+    }
 
-* {
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-}
-@media(max-width: 600px) {
-  .brand {
-    flex-direction: row !important;   /* 모바일에서도 가로 유지 */
-    align-items: center;
-  }
-  .brand-title {
-    white-space: nowrap;              /* 세로 줄바꿈 방지 */
-  }
-}
-@media(max-width: 750px) {
-  .dday-wrap {
-    position: static;        /* absolute 제거 */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12px;
-    text-align: center;
-  }
+    .search-box input {
+      border: none;
+      background: transparent;
+      outline: none;
+      width: 100%;
+      font-size: 14px;
+      color: #4b5563;
+    }
 
-  header.topbar {
-    flex-wrap: wrap;         /* 한 줄에 안 들어가면 자동 줄바꿈 */
-  }
-}
+    .search-box input::placeholder {
+      color: #9ca3af;
+    }
 
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 80vh;
+      padding: 60px 24px;
+      position: relative;
+      overflow: hidden;
+    }
 
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1000px;
+      height: 600px;
+      background: linear-gradient(to top right, rgba(255, 200, 87, 0.15), rgba(244, 183, 51, 0.05), rgba(255, 250, 200, 0.1));
+      border-radius: 50%;
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: -1;
+    }
 
-</style>
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(244, 183, 51, 0.1);
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 32px;
+      animation: fadeInDown 0.7s ease-out;
+    }
+
+    .hero-tag::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 24px;
+      color: var(--accent);
+      letter-spacing: -1px;
+      animation: fadeInUp 0.8s ease-out 0.1s both;
+    }
+
+    .hero h1 br {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 48px;
+      }
+
+      .hero h1 br {
+        display: block;
+      }
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #6b7280;
+      max-width: 640px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      animation: fadeInUp 0.8s ease-out 0.3s both;
+    }
+
+    @media (min-width: 640px) {
+      .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .btn {
+      padding: 16px 32px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 8px 16px rgba(244, 183, 51, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: #e5a726;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(244, 183, 51, 0.3);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #111827;
+      border: 1px solid #e5e7eb;
+    }
+
+    .btn-secondary:hover {
+      background: #f9fafb;
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .dday-box {
+      position: fixed;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e5e7eb;
+      width: 180px;
+      text-align: center;
+      animation: fadeInRight 0.7s ease-out 0.3s both;
+    }
+
+    .dday-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: #9ca3af;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .dday-number {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--accent);
+      letter-spacing: -1px;
+    }
+
+    .dday-time {
+      font-size: 10px;
+      color: #d1d5db;
+      font-family: monospace;
+      margin-top: 8px;
+      letter-spacing: 1px;
+    }
+
+    /* News Section */
+    .news-section {
+      margin-top: 80px;
+      margin-bottom: 60px;
+      padding: 0 24px;
+    }
+
+    .news-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #1f2937;
+    }
+
+    .news-icon {
+      font-size: 24px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .news-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .news-card:hover {
+      box-shadow: 0 8px 20px rgba(244, 183, 51, 0.15);
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+
+    .news-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(244, 183, 51, 0.1);
+      color: var(--accent);
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+
+    .news-title {
+      font-weight: bold;
+      font-size: 15px;
+      color: #1f2937;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .news-summary {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 26px;
+    }
+
+    .news-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid #f3f4f6;
+    }
+
+    .news-date {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+    .news-arrow {
+      color: #d1d5db;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+
+    .news-card:hover .news-arrow {
+      color: var(--accent);
+      transform: translateX(2px);
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+      max-height: 80vh;
+      overflow-y: auto;
+      animation: slideUp 0.3s ease-out;
+      position: relative;
+    }
+
+    .modal-header {
+      margin-bottom: 20px;
+    }
+
+    .modal-tag {
+      display: inline-block;
+      padding: 6px 12px;
+      background: rgba(244, 183, 51, 0.1);
+      color: var(--accent);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .modal-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1f2937;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .modal-date {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .modal-body {
+      color: #4b5563;
+      line-height: 1.8;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #9ca3af;
+      transition: all 0.2s;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    .modal-close:hover {
+      background: #f3f4f6;
+      color: #1f2937;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      header {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .dday-box {
+        position: static;
+        transform: none;
+        margin-top: 40px;
+        width: 180px;
+      }
+
+      nav.nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .search-box {
+        width: 100%;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-content {
+        padding: 20px;
+      }
+
+      .modal-title {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="site">
+  <header>
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 12px; flex-wrap: wrap;">
+      <div class="brand">
+        <div class="brand-logo">수</div>
+        <div class="brand-text">수능기출</div>
+      </div>
 
-  <!-- Topbar -->
-  <header class="topbar" role="banner">
-    <!-- brand -->
-    <div class="brand" aria-label="브랜드">
-     <img src="/Images/logo.png" alt="로고">
-
-      <div class="brand-title">수능기출</div>
-    </div>
-
-    <!-- nav -->
-    <nav class="nav" role="navigation" aria-label="주요메뉴">
-      <ul class="nav-list">
-
-        <!-- 고3 -->
-        <li class="nav-item" data-name="고3" tabindex="0">
-          <button class="nav-btn" aria-expanded="false" aria-controls="panel-g3">고3</button>
-          <div id="panel-g3" class="dropdown-panel" aria-hidden="true">
-            <div class="year-menu">
-              <div class="year-list">
-                <div class="year-item" tabindex="0">2026학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2026_6.html">6월</a></div>
-                    <div><a href="2026_9.html">9월</a></div>
-                    <div><a href="2026_s.html">수능</a></div>
+      <nav class="nav" role="navigation" aria-label="주요메뉴">
+        <ul class="nav-list">
+          <!-- 고3 -->
+          <li class="nav-item" data-name="고3" tabindex="0">
+            <button class="nav-btn" aria-expanded="false" aria-controls="panel-g3">고3</button>
+            <div id="panel-g3" class="dropdown-panel" aria-hidden="true">
+              <div class="year-menu">
+                <div class="year-list">
+                  <div class="year-item" tabindex="0">2026학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2026_6.html">6월</a></div>
+                      <div><a href="2026_9.html">9월</a></div>
+                      <div><a href="2026_s.html">수능</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2025학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2025_6.html">6월</a></div>
-                    <div><a href="2025_9.html">9월</a></div>
-                    <div><a href="2025_s.html">수능</a></div>
+                  <div class="year-item" tabindex="0">2025학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2025_6.html">6월</a></div>
+                      <div><a href="2025_9.html">9월</a></div>
+                      <div><a href="2025_s.html">수능</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2024학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2024_6.html">6월</a></div>
-                    <div><a href="2024_9.html">9월</a></div>
-                    <div><a href="2024_s.html">수능</a></div>
+                  <div class="year-item" tabindex="0">2024학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2024_6.html">6월</a></div>
+                      <div><a href="2024_9.html">9월</a></div>
+                      <div><a href="2024_s.html">수능</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2023학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2023_6.html">6월</a></div>
-                    <div><a href="2023_9.html">9월</a></div>
-                    <div><a href="2023_s.html">수능</a></div>
+                  <div class="year-item" tabindex="0">2023학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2023_6.html">6월</a></div>
+                      <div><a href="2023_9.html">9월</a></div>
+                      <div><a href="2023_s.html">수능</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2022학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2022_6.html">6월</a></div>
-                    <div><a href="2022_9.html">9월</a></div>
-                    <div><a href="2022_s.html">수능</a></div>
+                  <div class="year-item" tabindex="0">2022학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2022_6.html">6월</a></div>
+                      <div><a href="2022_9.html">9월</a></div>
+                      <div><a href="2022_s.html">수능</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2021학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2021_6.html">6월</a></div>
-                    <div><a href="2021_9.html">9월</a></div>
-                    <div><a href="2021_s.html">수능</a></div>
+                  <div class="year-item" tabindex="0">2021학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2021_6.html">6월</a></div>
+                      <div><a href="2021_9.html">9월</a></div>
+                      <div><a href="2021_s.html">수능</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2020학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2020_6.html">6월</a></div>
-                    <div><a href="2020_9.html">9월</a></div>
-                    <div><a href="2020_s.html">수능</a></div>
+                  <div class="year-item" tabindex="0">2020학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2020_6.html">6월</a></div>
+                      <div><a href="2020_9.html">9월</a></div>
+                      <div><a href="2020_s.html">수능</a></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- 고2 -->
-        <li class="nav-item" data-name="고2" tabindex="0">
-          <button class="nav-btn" aria-expanded="false" aria-controls="panel-g2">고2</button>
-          <div id="panel-g2" class="dropdown-panel" aria-hidden="true">
-            <div class="year-menu">
-              <div class="year-list">
-                <div class="year-item" tabindex="0">2025학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="025-3.html">3월</a></div>
-                    <div><a href="025-6.html">6월</a></div>
-                    <div><a href="025-9.html">9월</a></div>
-                    <div><a href="025-10.html">10월</a></div>
+          <!-- 고2 -->
+          <li class="nav-item" data-name="고2" tabindex="0">
+            <button class="nav-btn" aria-expanded="false" aria-controls="panel-g2">고2</button>
+            <div id="panel-g2" class="dropdown-panel" aria-hidden="true">
+              <div class="year-menu">
+                <div class="year-list">
+                  <div class="year-item" tabindex="0">2025학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="025-3.html">3월</a></div>
+                      <div><a href="025-6.html">6월</a></div>
+                      <div><a href="025-9.html">9월</a></div>
+                      <div><a href="025-10.html">10월</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2024학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="024-3.html">3월</a></div>
+                      <div><a href="024-6.html">6월</a></div>
+                      <div><a href="024-9.html">9월</a></div>
+                      <div><a href="024-10.html">10월</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2023학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="023-3.html">3월</a></div>
+                      <div><a href="023-6.html">6월</a></div>
+                      <div><a href="023-9.html">9월</a></div>
+                      <div><a href="023-10.html">10월</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2022학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="022-3.html">3월</a></div>
+                      <div><a href="022-6.html">6월</a></div>
+                      <div><a href="022-9.html">9월</a></div>
+                      <div><a href="022-10.html">10월</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2021학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="021-3.html">3월</a></div>
+                      <div><a href="021-6.html">6월</a></div>
+                      <div><a href="021-9.html">9월</a></div>
+                      <div><a href="021-10.html">10월</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2020학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="020-3.html">3월</a></div>
+                      <div><a href="020-6.html">6월</a></div>
+                      <div><a href="020-9.html">9월</a></div>
+                      <div><a href="020-10.html">10월</a></div>
+                    </div>
                   </div>
                 </div>
-                <div class="year-item" tabindex="0">2024학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="024-3.html">3월</a></div>
-                    <div><a href="024-6.html">6월</a></div>
-                    <div><a href="024-9.html">9월</a></div>
-                    <div><a href="024-10.html">10월</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">2023학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="023-3.html">3월</a></div>
-                    <div><a href="023-6.html">6월</a></div>
-                    <div><a href="023-9.html">9월</a></div>
-                    <div><a href="023-10.html">10월</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">2022학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="022-3.html">3월</a></div>
-                    <div><a href="022-6.html">6월</a></div>
-                    <div><a href="022-9.html">9월</a></div>
-                    <div><a href="022-10.html">10월</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">2021학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="021-3.html">3월</a></div>
-                    <div><a href="021-6.html">6월</a></div>
-                    <div><a href="021-9.html">9월</a></div>
-                    <div><a href="021-10.html">10월</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">2020학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="020-3.html">3월</a></div>
-                    <div><a href="020-6.html">6월</a></div>
-                    <div><a href="020-9.html">9월</a></div>
-                    <div><a href="020-10.html">10월</a></div>
-                  </div>
-                </div>
-               
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- 고1 -->
-        <li class="nav-item" data-name="고1" tabindex="0">
-          <button class="nav-btn" aria-expanded="false" aria-controls="panel-g1">고1</button>
-          <div id="panel-g1" class="dropdown-panel" aria-hidden="true">
-            <div class="year-menu">
-              <div class="year-list">
-                <div class="year-item" tabindex="0">2025학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="25-3.html">3월</a></div>
-                    <div><a href="25-6.html">6월</a></div>
-                    <div><a href="25-9.html">9월</a></div>
-                    <div><a href="25-10.html">10월</a></div>
+          <!-- 고1 -->
+          <li class="nav-item" data-name="고1" tabindex="0">
+            <button class="nav-btn" aria-expanded="false" aria-controls="panel-g1">고1</button>
+            <div id="panel-g1" class="dropdown-panel" aria-hidden="true">
+              <div class="year-menu">
+                <div class="year-list">
+                  <div class="year-item" tabindex="0">2025학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="25-3.html">3월</a></div>
+                      <div><a href="25-6.html">6월</a></div>
+                      <div><a href="25-9.html">9월</a></div>
+                      <div><a href="25-10.html">10월</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2024학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="24-3.html">3월</a></div>
-                    <div><a href="24-6.html">6월</a></div>
-                    <div><a href="24-9.html">9월</a></div>
-                    <div><a href="24-10.html">10월</a></div>
+                  <div class="year-item" tabindex="0">2024학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="24-3.html">3월</a></div>
+                      <div><a href="24-6.html">6월</a></div>
+                      <div><a href="24-9.html">9월</a></div>
+                      <div><a href="24-10.html">10월</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2023학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="23-3.html">3월</a></div>
-                    <div><a href="23-6.html">6월</a></div>
-                    <div><a href="23-9.html">9월</a></div>
-                    <div><a href="23-10.html">10월</a></div>
+                  <div class="year-item" tabindex="0">2023학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="23-3.html">3월</a></div>
+                      <div><a href="23-6.html">6월</a></div>
+                      <div><a href="23-9.html">9월</a></div>
+                      <div><a href="23-10.html">10월</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2022학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="22-3.html">3월</a></div>
-                    <div><a href="22-6.html">6월</a></div>
-                    <div><a href="22-9.html">9월</a></div>
+                  <div class="year-item" tabindex="0">2022학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="22-3.html">3월</a></div>
+                      <div><a href="22-6.html">6월</a></div>
+                      <div><a href="22-9.html">9월</a></div>
                       <div><a href="22-10.html">10월</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2021학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="21-3.html">3월</a></div>
-                    <div><a href="21-6.html">6월</a></div>
-                    <div><a href="21-9.html">9월</a></div>
-                    <div><a href="21-10.html">10월</a></div>
+                  <div class="year-item" tabindex="0">2021학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="21-3.html">3월</a></div>
+                      <div><a href="21-6.html">6월</a></div>
+                      <div><a href="21-9.html">9월</a></div>
+                      <div><a href="21-10.html">10월</a></div>
+                    </div>
                   </div>
-                </div>
-                <div class="year-item" tabindex="0">2020학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="20-3.html">3월</a></div>
-                    <div><a href="20-6.html">6월</a></div>
-                    <div><a href="20-9.html">9월</a></div>
-                    <div><a href="20-10.html">10월</a></div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- 등급컷 -->
-        <li class="nav-item" data-name="등급컷" tabindex="0">
-          <button class="nav-btn" aria-expanded="false" aria-controls="panel-cuts">등급컷</button>
-          <div id="panel-cuts" class="dropdown-panel" aria-hidden="true">
-             <div class="year-menu">
-              <div class="year-list">
-                <div class="year-item" tabindex="0">2025학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2025 고3 컷 년도 선택.html">고3(2026학년도)</a></div>
-                    <div><a href="2025 고2 컷 년도 선택.html">고2</a></div>
-                    <div><a href="2025 고1 컷 년도 선택.html">고1</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">2024학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2024 고3 컷 년도 선택.html">고3(2025학년도)</a></div>
-                    <div><a href="2024 고2 컷 년도 선택.html">고2</a></div>
-                    <div><a href="2024 고1 컷 년도 선택.html">고1</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">2023학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2023 고3 컷 년도 선택.html">고3(2024학년도)</a></div>
-                    <div><a href="2023 고2 컷 년도 선택.html">고2</a></div>
-                    <div><a href="2023 고1 컷 년도 선택.html">고1</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">2022학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2022 고3 컷 년도 선택.html">고3(2023학년도)</a></div>
-                    <div><a href="2022 고2 컷 년도 선택.html">고2</a></div>
-                    <div><a href="2022 고1 컷 년도 선택.html">고1</a></div>
-                  </div>
-                </div>
-           <div class="year-item" tabindex="0">2021학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2021 고3 컷 년도 선택.html">고3(2022학년도)</a></div>
-                    <div><a href="2021 고2 컷 년도 선택.html">고2</a></div>
-                    <div><a href="2021 고1 컷 년도 선택.html">고1</a></div>
-                  </div>
-                </div>
-               <div class="year-item" tabindex="0">2020학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2020 고3 컷 년도 선택.html">고3(2021학년도)</a></div>
-                    <div><a href="2020 고2 컷 년도 선택.html">고2</a></div>
-                    <div><a href="2020 고1 컷 년도 선택.html">고1</a></div>
-                  </div>
-                </div>
-               <div class="year-item" tabindex="0">2019학년도
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="2019 고3 컷 년도 선택.html">고3(2020학년도)</a></div>
-                    <div><a href="기다려주세요1.html">고2</a></div>
-                    <div><a href="기다려주세요1.html">고1</a></div>
+                  <div class="year-item" tabindex="0">2020학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="20-3.html">3월</a></div>
+                      <div><a href="20-6.html">6월</a></div>
+                      <div><a href="20-9.html">9월</a></div>
+                      <div><a href="20-10.html">10월</a></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-
-        <!-- 오답률 -->
-        <li class="nav-item" data-name="오답률" tabindex="0">
-          <button class="nav-btn" aria-expanded="false" aria-controls="panel-wrongs">역대 난이도</button>
-          <div id="panel-wrongs" class="dropdown-panel" aria-hidden="true">
-                        <div class="year-menu">
-              <div class="year-list">
-                <div class="year-item" tabindex="0">국어
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="고3 국어 난이도 top10.html">고3</a></div>
-                    <div><a href="고2 국어 난이도 top10.html">고2</a></div>
-                    <div><a href="고1 국어 난이도 top10.html">고1</a></div>
+          <!-- 등급컷 -->
+          <li class="nav-item" data-name="등급컷" tabindex="0">
+            <button class="nav-btn" aria-expanded="false" aria-controls="panel-cuts">등급컷</button>
+            <div id="panel-cuts" class="dropdown-panel" aria-hidden="true">
+              <div class="year-menu">
+                <div class="year-list">
+                  <div class="year-item" tabindex="0">2025학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2025 고3 컷 년도 선택.html">고3(2026학년도)</a></div>
+                      <div><a href="2025 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2025 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2024학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2024 고3 컷 년도 선택.html">고3(2025학년도)</a></div>
+                      <div><a href="2024 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2024 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2023학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2023 고3 컷 년도 선택.html">고3(2024학년도)</a></div>
+                      <div><a href="2023 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2023 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2022학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2022 고3 컷 년도 선택.html">고3(2023학년도)</a></div>
+                      <div><a href="2022 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2022 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2021학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2021 고3 컷 년도 선택.html">고3(2022학년도)</a></div>
+                      <div><a href="2021 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2021 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2020학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2020 고3 컷 년도 선택.html">고3(2021학년도)</a></div>
+                      <div><a href="2020 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2020 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">2019학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2019 고3 컷 년도 선택.html">고3(2020학년도)</a></div>
+                      <div><a href="기다려주세요1.html">고2</a></div>
+                      <div><a href="기다려주세요1.html">고1</a></div>
+                    </div>
                   </div>
                 </div>
-                <div class="year-item" tabindex="0">수학
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="고3 수학 난이도 top10.html">고3</a></div>
-                    <div><a href="고2 수학 난이도 top10.html">고2</a></div>
-                    <div><a href="고1 수학 난이도 top10.html">고1</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">영어
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="고3 영어 난이도 top10.html">고3</a></div>
-                    <div><a href="고2 영어 난이도 top10.html">고2</a></div>
-                    <div><a href="고1 영어 난이도 top10.html">고1</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">한국사
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="고3 한국사 난이도 top10.html">고3</a></div>
-                    <div><a href="고2 한국사 난이도 top10.html">고2</a></div>
-                    <div><a href="고1 한국사 난이도 top10.html">고1</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">과학탐구
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="고3 과탐 난이도top10.html">고3</a></div>
-                    <div><a href="고2 과탐 난이도 top10.html">고2</a></div>
-                    <div><a href="고1 과탐 난이도 top10.html">고1</a></div>
-                  </div>
-                </div>
-                <div class="year-item" tabindex="0">사회탐구
-                  <div class="submenu" aria-hidden="true">
-                    <div><a href="고3 사탐 난이도top10.html">고3</a></div>
-                    <div><a href="고2 사탐 난이도 top10.html">고2</a></div>
-                    <div><a href="고1 사탐 난이도 top10.html">고1</a></div>
-                  </div>
-                </div>
-              
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <!-- 문의사항 -->
-        <li class="nav-item" data-name="문의사항" tabindex="0">
-          <button class="nav-btn" aria-expanded="false" aria-controls="panel-ask">문의사항</button>
-          <div id="panel-ask" class="dropdown-panel" aria-hidden="true">
-            <a href="자주 묻는 질문.html">자주 묻는 질문</a>
-            <a href="질문 게시판.html">질문 게시판</a>
-            <a href="개선요청 창.html">개선 요청</a>
-          </div>
-        </li>
+          <!-- 역대 난이도 -->
+          <li class="nav-item" data-name="오답률" tabindex="0">
+            <button class="nav-btn" aria-expanded="false" aria-controls="panel-wrongs">역대 난이도</button>
+            <div id="panel-wrongs" class="dropdown-panel" aria-hidden="true">
+              <div class="year-menu">
+                <div class="year-list">
+                  <div class="year-item" tabindex="0">국어
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="고3 국어 난이도 top10.html">고3</a></div>
+                      <div><a href="고2 국어 난이도 top10.html">고2</a></div>
+                      <div><a href="고1 국어 난이도 top10.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">수학
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="고3 수학 난이도 top10.html">고3</a></div>
+                      <div><a href="고2 수학 난이도 top10.html">고2</a></div>
+                      <div><a href="고1 수학 난이도 top10.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">영어
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="고3 영어 난이도 top10.html">고3</a></div>
+                      <div><a href="고2 영어 난이도 top10.html">고2</a></div>
+                      <div><a href="고1 영어 난이도 top10.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">한국사
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="고3 한국사 난이도 top10.html">고3</a></div>
+                      <div><a href="고2 한국사 난이도 top10.html">고2</a></div>
+                      <div><a href="고1 한국사 난이도 top10.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">과학탐구
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="고3 과탐 난이도top10.html">고3</a></div>
+                      <div><a href="고2 과탐 난이도 top10.html">고2</a></div>
+                      <div><a href="고1 과탐 난이도 top10.html">고1</a></div>
+                    </div>
+                  </div>
+                  <div class="year-item" tabindex="0">사회탐구
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="고3 사탐 난이도top10.html">고3</a></div>
+                      <div><a href="고2 사탐 난이도 top10.html">고2</a></div>
+                      <div><a href="고1 사탐 난이도 top10.html">고1</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-      </ul>
-    </nav>
+          <!-- 문의사항 -->
+          <li class="nav-item" data-name="문의사항" tabindex="0">
+            <button class="nav-btn" aria-expanded="false" aria-controls="panel-ask">문의사항</button>
+            <div id="panel-ask" class="dropdown-panel" aria-hidden="true">
+              <a href="자주 묻는 질문.html">자주 묻는 질문</a>
+              <a href="질문 게시판.html">질문 게시판</a>
+              <a href="개선요청 창.html">개선 요청</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
 
-    <!-- right controls: search (independent) -->
-    <div class="right-controls" aria-hidden="false">
-      <div class="search" role="search" aria-label="사이트 검색">
+      <div class="search-box">
         <span>🔍</span>
-        <input type="search" placeholder="찾고싶은 자료를 검색하세요..." aria-label="검색어 입력">
+        <input type="text" placeholder="검색어를 입력하세요..." />
       </div>
     </div>
   </header>
 
-  <!-- D-DAY (single box) -->
-  <div class="dday-wrap" aria-live="polite" aria-atomic="true">
-    <div class="dday-box" role="status" aria-label="수능 D-DAY">
-      <div class="title">수능</div>
-      <!-- 사용자가 요청한 대로 메인은 고정된 -367day -->
-      <div class="main" id="dday-main">수능 -367day</div>
-      <!-- 시간만 실시간으로 흘러가도록 함 -->
-      <div class="sub" id="dday-time">남은 시간: --:--:--</div>
-    </div>
-  </div>
-
-  <!-- hero -->
-  <section class="hero" aria-hidden="false">
-    <div class="logo-box" aria-hidden="true">
-      <br><br><br><br>
-      <div class="site-title">수능기출</div>
-    </div>
-  </section>
-
-  <!-- news -->
   <main>
-    <h1 style="text-align:center;font-size:28px;font-weight:800;margin:6px 0 6px 0;">새로운 소식</h1>
-    <div class="news-wrapper" aria-label="뉴스">
-      <div class="news-section">
-        <div class="news-box">
-          <h2>소식 1</h2>
-          <p>사이트 3일내로 다 완성시켜 놓겠습니다 예상(12/5).</p>
+    <div class="hero">
+      <div class="hero-tag">
+        2026학년도 수능 대비 자료 업데이트 완료
+      </div>
+      
+      <h1>
+        수능 기출의<br />
+        새로운 기준
+      </h1>
+
+      <p>
+        역대 모의고사, 수능 기출 문제부터 상세한 해설까지.<br />
+        수험생을 위한 가장 완벽한 아카이브를 만나보세요.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn btn-primary">기출문제 바로가기 →</button>
+        <button class="btn btn-secondary">커뮤니티 / 게시판</button>
+      </div>
+
+      <div class="dday-box">
+        <div class="dday-label">📅 2027학년도 수능</div>
+        <div class="dday-number" id="dday">D-348</div>
+        <div class="dday-time" id="dday-time">00:00:00</div>
+      </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="news-section">
+      <div class="news-header">
+        <span class="news-icon">📰</span>
+        <span>새로운 소식</span>
+      </div>
+
+      <div class="news-grid">
+        <div class="news-card" onclick="openModal(0)">
+          <div>
+            <div class="news-tag">학습법</div>
+            <div class="news-title">2026학년도 수능 대비 학습 전략 가이드</div>
+            <div class="news-summary">겨울방학부터 시작하는 효과적인 학습 계획과 과목별 전략을 알아보세요.</div>
+          </div>
+          <div class="news-footer">
+            <span class="news-date">2025.12.01</span>
+            <span class="news-arrow">→</span>
+          </div>
         </div>
-        <div class="news-box">
-          <h2>소식 2</h2>
-          <p>사이트 3일내로 다 완성시켜 놓겠습니다 예상(12/5)..</p>
+
+        <div class="news-card" onclick="openModal(1)">
+          <div>
+            <div class="news-tag">공지</div>
+            <div class="news-title">평가원, 2026학년도 수능 시행기본계획 발표</div>
+            <div class="news-summary">올해 수능 일정, 출제 방향, 시험 구성에 대한 공식 안내 사항을 확인하세요.</div>
+          </div>
+          <div class="news-footer">
+            <span class="news-date">2025.11.28</span>
+            <span class="news-arrow">→</span>
+          </div>
         </div>
-        <div class="news-box">
-          <h2>소식 3</h2>
-          <p>사이트 3일내로 다 완성시켜 놓겠습니다 예상(12/5)..</p>
+
+        <div class="news-card" onclick="openModal(2)">
+          <div>
+            <div class="news-tag">자료</div>
+            <div class="news-title">12월 모의고사 등급컷 및 해설지 업로드 안내</div>
+            <div class="news-summary">최신 모의고사의 정답, 등급컷, 상세 해설지가 모두 업로드되었습니다.</div>
+          </div>
+          <div class="news-footer">
+            <span class="news-date">2025.11.25</span>
+            <span class="news-arrow">→</span>
+          </div>
         </div>
-        <div class="news-box">
-          <h2>소식 4</h2>
-          <p>사이트 3일내로 다 완성시켜 놓겠습니다 예상(12/5)..</p>
+
+        <div class="news-card" onclick="openModal(3)">
+          <div>
+            <div class="news-tag">칼럼</div>
+            <div class="news-title">수험생 필독! 겨울방학 수학 집중 공략법</div>
+            <div class="news-summary">취약한 부분을 집중 공략하는 방학 기간의 최적 학습 방법을 소개합니다.</div>
+          </div>
+          <div class="news-footer">
+            <span class="news-date">2025.11.20</span>
+            <span class="news-arrow">→</span>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
-</div>
+  <!-- News Modal -->
+  <div id="newsModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div class="modal-header">
+        <div class="modal-tag" id="modalTag"></div>
+        <div class="modal-title" id="modalTitle"></div>
+        <div class="modal-date" id="modalDate"></div>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
 
-<script>
-/* ---------------------------
-  NAV + YEAR submenu 로직
-  - 마우스 hover / 포커스에서 작동
-  - 서브메뉴(6/9/수능)는 year-item active 상태에서 포인터 허용
-----------------------------*/
-document.addEventListener("DOMContentLoaded", () => {
-  // NAV panels
-  const navItems = document.querySelectorAll(".nav-item");
-  navItems.forEach(nav => {
-    const btn = nav.querySelector(".nav-btn");
-    const panel = nav.querySelector(".dropdown-panel");
-    if (!panel || !btn) return;
-    let panelTimer = null;
-
-    const openPanel = () => {
-      clearTimeout(panelTimer);
-      // close others
-      navItems.forEach(n => {
-        if (n !== nav) {
-          n.classList.remove("open");
-          const otherBtn = n.querySelector(".nav-btn");
-          const otherPanel = n.querySelector(".dropdown-panel");
-          if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
-          if (otherPanel) otherPanel.setAttribute("aria-hidden", "true");
-        }
-      });
-      nav.classList.add("open");
-      btn.setAttribute("aria-expanded", "true");
-      panel.setAttribute("aria-hidden", "false");
-    };
-    const closePanel = (delay = 120) => {
-      clearTimeout(panelTimer);
-      panelTimer = setTimeout(() => {
-        nav.classList.remove("open");
-        btn.setAttribute("aria-expanded", "false");
-        panel.setAttribute("aria-hidden", "true");
-        // also remove any active year submenus inside
-        panel.querySelectorAll(".year-item.active").forEach(y => y.classList.remove("active"));
-      }, delay);
-    };
-
-    // mouse interactions
-    nav.addEventListener("mouseenter", openPanel);
-    nav.addEventListener("mouseleave", () => closePanel(120));
-    panel.addEventListener("mouseenter", openPanel);
-    panel.addEventListener("mouseleave", () => closePanel(120));
-
-    // keyboard accessibility: focus opens, leaving focus closes
-    btn.addEventListener("focus", openPanel);
-    panel.addEventListener("focusin", openPanel);
-    panel.addEventListener("focusout", (e) => {
-      const to = e.relatedTarget;
-      if (!nav.contains(to)) closePanel(0);
-    });
-
-    // support click/tap to toggle (for touch)
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (nav.classList.contains("open")) {
-        closePanel(0);
-      } else {
-        openPanel();
+  <script>
+    const newsData = [
+      {
+        tag: "학습법",
+        title: "2026학년도 수능 대비 학습 전략 가이드",
+        date: "2025.12.01",
+        content: "2026학년도 수능을 성공적으로 준비하기 위한 전략적 학습 계획입니다.\n\n【 겨울방학 활용법 】\n• 12월~1월: 기초 개념 완성 및 약점 보충\n• 2월~3월: 기출문제 풀이 및 패턴 학습\n• 4월~8월: 모의고사 중심 고난도 문제 연습\n\n【 과목별 전략 】\n국어: 독서/문학 유형별 정복, 문법 완벽 이해\n수학: 개념부터 고난도까지 단계적 학습\n영어: 어휘 확장 및 장문독해 능력 배양\n\n효율적인 시간 관리와 꾸준한 복습이 성공의 핵심입니다."
+      },
+      {
+        tag: "공지",
+        title: "평가원, 2026학년도 수능 시행기본계획 발표",
+        date: "2025.11.28",
+        content: "한국교육과정평가원에서 2026학년도 대학수학능력시험 시행기본계획을 발표했습니다.\n\n【 시험 일정 】\n시험일: 2026년 11월 19일(목)\n원서접수: 2026년 9월 중순\n\n【 시험 구성 】\n• 국어영역: 객관식 45문항 (100점)\n• 수학영역: 객관식 45문항 + 단답형 5문항 (100점)\n• 영어영역: 객관식 45문항 (100점)\n• 탐구영역: 사회/과학 각 17문항 (50점)\n• 제2언어: 선택과목 (50점)\n\n【 주요 변화 】\n• 출제 범위 및 난이도 조절\n• 신규 유형 도입\n• 채점 방식 개선\n\n자세한 내용은 평가원 공식 웹사이트에서 확인하실 수 있습니다."
+      },
+      {
+        tag: "자료",
+        title: "12월 모의고사 등급컷 및 해설지 업로드 안내",
+        date: "2025.11.25",
+        content: "2025년 12월 대학수학능력시험 모의고사의 모든 자료가 업로드되었습니다.\n\n【 제공 자료 】\n✓ 문제지 (국어, 수학, 영어, 탐구)\n✓ 정답지\n✓ 등급컷\n✓ 상세 해설지\n✓ 채점 기준\n\n【 과목별 등급컷 】\n국어: 8~10등급\n수학: 7~10등급\n영어: 1~9등급\n\n【 활용 방법 】\n• 자신의 성적으로 대학별 합격 가능성 진단\n• 부족한 영역 집중 학습\n• 최근 출제 경향 파악\n\n모든 자료는 본 사이트의 자료실에서 무료로 다운로드하실 수 있습니다."
+      },
+      {
+        tag: "칼럼",
+        title: "수험생 필독! 겨울방학 수학 집중 공략법",
+        date: "2025.11.20",
+        content: "겨울방학은 수능 수학의 성패를 결정하는 중요한 시기입니다.\n\n【 기초 다지기 (12월) 】\n• 단원별 개념 정리\n• 기본 문제 풀이\n• 부족한 부분 체크\n\n【 실전 감각 익히기 (1월) 】\n• 기출문제 풀이\n• 자주 나오는 유형 정복\n• 계산 속도 향상\n\n【 고난도 문제 정복 (2월~) 】\n• 기출 고난도 문제\n• 예상 문제 풀이\n• 모의고사 활용\n\n【 효과적인 학습법 】\n✓ 하루 1시간 이상 꾸준하게 공부\n✓ 틀린 문제는 왜 틀렸는지 분석\n✓ 같은 유형의 문제 반복 풀이\n✓ 계산 과정을 정리하며 풀기\n\n수학은 단기간에 향상될 수 있는 과목입니다. 겨울방학을 최대한 활용하세요!"
       }
+    ];
+
+    function updateDDay() {
+      const targetDate = new Date("2026-11-19T08:40:00");
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById("dday").textContent = `D-${days}`;
+        document.getElementById("dday-time").textContent = 
+          `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      }
+    }
+
+    function openModal(index) {
+      const news = newsData[index];
+      document.getElementById("modalTag").textContent = news.tag;
+      document.getElementById("modalTitle").textContent = news.title;
+      document.getElementById("modalDate").textContent = news.date;
+      document.getElementById("modalBody").innerHTML = news.content.replace(/\n/g, '<br>');
+      document.getElementById("newsModal").classList.add("active");
+    }
+
+    function closeModal() {
+      document.getElementById("newsModal").classList.remove("active");
+    }
+
+    // Close modal on outside click
+    document.getElementById("newsModal").addEventListener("click", (e) => {
+      if (e.target.id === "newsModal") closeModal();
     });
-  });
 
-  // YEAR items + submenus
-  const yearItems = document.querySelectorAll(".year-item");
-  yearItems.forEach(item => {
-    const submenu = item.querySelector(".submenu");
-    if (!submenu) return;
-    let hideTimer = null;
-
-    const open = () => {
-      clearTimeout(hideTimer);
-      // close other year submenus in same dropdown
-      const siblings = item.parentElement.querySelectorAll(".year-item");
-      siblings.forEach(s => { if (s !== item) s.classList.remove("active"); });
-      item.classList.add("active");
-      submenu.setAttribute("aria-hidden", "false");
-    };
-    const close = (delay = 120) => {
-      clearTimeout(hideTimer);
-      hideTimer = setTimeout(() => {
-        if (!item.matches(":hover") && !submenu.matches(":hover") && document.activeElement !== item && !submenu.contains(document.activeElement)) {
-          item.classList.remove("active");
-          submenu.setAttribute("aria-hidden", "true");
-        }
-      }, delay);
-    };
-
-    item.addEventListener("mouseenter", open);
-    item.addEventListener("focusin", open);
-    item.addEventListener("mouseleave", () => close(120));
-    item.addEventListener("focusout", () => close(120));
-
-    submenu.addEventListener("mouseenter", open);
-    submenu.addEventListener("mouseleave", () => close(120));
-    submenu.querySelectorAll("a").forEach(a => {
-      a.addEventListener("focus", open);
-      a.addEventListener("blur", () => close(120));
+    // Close modal on Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
     });
-  });
 
-  // ESC closes everything
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") {
-      navItems.forEach(n => {
-        n.classList.remove("open");
-        const b = n.querySelector(".nav-btn");
-        const p = n.querySelector(".dropdown-panel");
-        if (b) b.setAttribute("aria-expanded", "false");
-        if (p) p.setAttribute("aria-hidden", "true");
+    // Dropdown interactions
+    document.addEventListener("DOMContentLoaded", () => {
+      const navItems = document.querySelectorAll(".nav-item");
+      navItems.forEach(nav => {
+        const btn = nav.querySelector(".nav-btn");
+        const panel = nav.querySelector(".dropdown-panel");
+        if (!panel || !btn) return;
+        let panelTimer = null;
+
+        const openPanel = () => {
+          clearTimeout(panelTimer);
+          navItems.forEach(n => {
+            if (n !== nav) {
+              n.classList.remove("open");
+              const otherBtn = n.querySelector(".nav-btn");
+              const otherPanel = n.querySelector(".dropdown-panel");
+              if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+              if (otherPanel) otherPanel.setAttribute("aria-hidden", "true");
+            }
+          });
+          nav.classList.add("open");
+          btn.setAttribute("aria-expanded", "true");
+          panel.setAttribute("aria-hidden", "false");
+        };
+
+        const closePanel = (delay = 120) => {
+          clearTimeout(panelTimer);
+          panelTimer = setTimeout(() => {
+            nav.classList.remove("open");
+            btn.setAttribute("aria-expanded", "false");
+            panel.setAttribute("aria-hidden", "true");
+            panel.querySelectorAll(".year-item.active").forEach(y => y.classList.remove("active"));
+          }, delay);
+        };
+
+        nav.addEventListener("mouseenter", openPanel);
+        nav.addEventListener("mouseleave", () => closePanel(120));
+        panel.addEventListener("mouseenter", openPanel);
+        panel.addEventListener("mouseleave", () => closePanel(120));
+
+        btn.addEventListener("focus", openPanel);
+        panel.addEventListener("focusin", openPanel);
+        panel.addEventListener("focusout", (e) => {
+          const to = e.relatedTarget;
+          if (!nav.contains(to)) closePanel(0);
+        });
+
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (nav.classList.contains("open")) {
+            closePanel(0);
+          } else {
+            openPanel();
+          }
+        });
       });
-      document.querySelectorAll(".year-item.active").forEach(y => y.classList.remove("active"));
-    }
-  });
-});
 
-/* ---------------------------
-   D-DAY: 메인은 고정된 "-367day"
-   (요청대로) / 아래 남은 시간만 실시간 업데이트
-----------------------------*/
-(function setupDDay() {
-  // 메인 텍스트은 고정 -367day (요청)
-  // 실시간 '남은 시간'은 임의의 목표시간을 사용해 표시 (예: 2026-11-13 00:00 KST)
-  // 사용자가 원하면 TARGET_ISO 값만 바꿔.
-  const TARGET_ISO = "2026-11-13T00:00:00+09:00";
-  const timeEl = document.getElementById("dday-time");
-  function pad(n){ return n < 10 ? "0" + n : n; }
+      const yearItems = document.querySelectorAll(".year-item");
+      yearItems.forEach(item => {
+        const submenu = item.querySelector(".submenu");
+        if (!submenu) return;
+        let hideTimer = null;
 
-  function updateTime() {
-    const now = new Date();
-    const target = new Date(TARGET_ISO);
-    const diff = target.getTime() - now.getTime();
-    const abs = Math.max(0, Math.abs(diff));
-    const days = Math.floor(abs / (1000 * 60 * 60 * 24));
-    const rem = abs % (1000 * 60 * 60 * 24);
-    const hours = Math.floor(rem / (1000 * 60 * 60));
-    const minutes = Math.floor((rem % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((rem % (1000 * 60)) / 1000);
+        const open = () => {
+          clearTimeout(hideTimer);
+          const siblings = item.parentElement.querySelectorAll(".year-item");
+          siblings.forEach(s => { if (s !== item) s.classList.remove("active"); });
+          item.classList.add("active");
+          submenu.setAttribute("aria-hidden", "false");
+        };
 
-    // 미래일 경우 "남은 시간", 과거일 경우 "지난 시간"
-    if (target.getTime() >= now.getTime()) {
-      timeEl.textContent = `남은 시간: ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-    } else {
-      timeEl.textContent = `지난 시간: ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-    }
-  }
+        const close = (delay = 120) => {
+          clearTimeout(hideTimer);
+          hideTimer = setTimeout(() => {
+            if (!item.matches(":hover") && !submenu.matches(":hover") && document.activeElement !== item && !submenu.contains(document.activeElement)) {
+              item.classList.remove("active");
+              submenu.setAttribute("aria-hidden", "true");
+            }
+          }, delay);
+        };
 
-  // 초기 세팅: 메인은 요청대로 고정
-  document.getElementById("dday-main").textContent = "366day";
-  updateTime();
-  setInterval(updateTime, 1000); // 1초마다 업데이트 (시간이 흐르도록)
-})();
-</script>
+        item.addEventListener("mouseenter", open);
+        item.addEventListener("focusin", open);
+        item.addEventListener("mouseleave", () => close(120));
+        item.addEventListener("focusout", () => close(120));
+
+        submenu.addEventListener("mouseenter", open);
+        submenu.addEventListener("mouseleave", () => close(120));
+        submenu.querySelectorAll("a").forEach(a => {
+          a.addEventListener("focus", open);
+          a.addEventListener("blur", () => close(120));
+        });
+      });
+
+      document.addEventListener("keydown", e => {
+        if (e.key === "Escape") {
+          navItems.forEach(n => {
+            n.classList.remove("open");
+            const b = n.querySelector(".nav-btn");
+            const p = n.querySelector(".dropdown-panel");
+            if (b) b.setAttribute("aria-expanded", "false");
+            if (p) p.setAttribute("aria-hidden", "true");
+          });
+          document.querySelectorAll(".year-item.active").forEach(y => y.classList.remove("active"));
+        }
+      });
+    });
+
+    updateDDay();
+    setInterval(updateDDay, 1000);
+  </script>
 </body>
-
-</html> 
+</html>
