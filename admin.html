@@ -170,6 +170,77 @@
       position: fixed; bottom: 20px; right: 20px;
       background: #333; color: white; padding: 10px 15px; border-radius: 4px;
     }
+
+    .integrations {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .integration-card {
+      background: white;
+      border: 1px solid #e7e7e7;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .integration-title {
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .integration-desc {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .integration-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .ghost-btn {
+      flex: 1;
+      min-width: 120px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px dashed #d4d4d8;
+      background: linear-gradient(135deg, #fafafa, #f3f4f6);
+      font-weight: 700;
+      color: #374151;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .ghost-btn:hover {
+      border-style: solid;
+      border-color: #111827;
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-weight: 700;
+      font-size: 12px;
+      width: fit-content;
+    }
   </style>
 </head>
 
@@ -180,57 +251,57 @@
 
 <div class="container">
 
-
-  <div style="background:#e8f0fe; border:1px solid #c6d4ff; color:#1a3c8c; padding:14px 16px; border-radius:8px; margin:18px 0; line-height:1.5;">
-    <strong>로컬에서 파일을 열어도 동일한 데이터에 연결됩니다.</strong><br>
-    이 페이지는 브라우저가 인터넷을 통해 Firebase(위에 선언된 <code>firebaseConfig</code>)에 직접 접속합니다. 그래서
-    <u>다른 기기에서 같은 Firebase 프로젝트를 사용</u>하면 질문/답변이 실시간으로 동기화됩니다. 별도 서버를 띄우지 않아도 되지만,
-    인터넷 연결이 끊기면 동기화가 되지 않으니 참고하세요.
-  </div>
-
-
   <!-- 로그인 화면 -->
-<div class="login-container" id="loginForm">
+  <div class="login-container" id="loginForm">
     <h2>관리자 로그인</h2>
 
     <div class="form-group">
       <label>관리자 이메일</label>
-      <input type="email" id="adminEmail" placeholder="Firebase에 등록한 관리자 이메일" autocomplete="email">
+      <input type="email" id="adminEmail" placeholder="이메일" autocomplete="email">
     </div>
 
     <div class="form-group">
       <label>비밀번호</label>
-      <input type="password" id="adminPassword" placeholder="비밀번호 입력" autocomplete="current-password">
+      <input type="password" id="adminPassword" placeholder="비밀번호" autocomplete="current-password">
     </div>
 
-    <!-- 이메일 로그인 버튼 (유일한 loginButton) -->
     <button class="btn" id="loginButton" type="button">
       이메일/비밀번호로 로그인
     </button>
 
-    <!-- 구글 로그인 버튼 -->
     <button class="btn" id="googleLoginButton" type="button" style="background:#db4437; margin-top:8px;">
       Google로 로그인
     </button>
+  </div>
 
-    <p style="margin-top:12px; font-size:13px; color:#666; line-height:1.4;">
-      * Firebase Authentication에 등록된 관리자 계정만 접속할 수 있도록 제한했습니다.<br>
-      * 아래 코드의 <strong>ALLOWED_EMAILS</strong> 배열에 본인 이메일만 넣어두면 됩니다.<br>
-      * Google 로그인 버튼을 써도, ALLOWED_EMAILS에 적힌 이메일이 아니면 자동으로 차단됩니다.
-    </p>
-
-    <ul style="margin-top:14px; font-size:13px; color:#555; padding-left:18px; text-align:left; line-height:1.5;">
-      <li>로컬에서 열더라도 Firebase 프로젝트에 바로 연결됩니다.</li>
-      <li>질문/답변 데이터가 실시간으로 동기화됩니다.</li>
-      <li>인터넷 연결이 없으면 동기화가 멈춥니다.</li>
-    </ul>
-</div>
   <!-- 관리자 화면 -->
   <div class="admin-panel" id="adminPanel">
     <button class="btn btn-logout" id="logoutButton">로그아웃</button>
 
     <h2 style="margin-bottom:20px;">등록된 질문</h2>
     <div id="questionsList" class="questions-list"></div>
+
+    <div class="integrations">
+      <div class="integration-card">
+        <div class="integration-title">수험채팅방 관리</div>
+        <div class="integration-desc">최근 메시지와 신고를 한 번에 모아서 관리 버튼을 제공합니다.</div>
+        <div class="pill">실시간 가상 연동</div>
+        <div class="integration-actions">
+          <button class="ghost-btn" id="chatDelete">선택 메시지 삭제</button>
+          <button class="ghost-btn" id="chatPurge">채팅방 비우기</button>
+        </div>
+      </div>
+
+      <div class="integration-card">
+        <div class="integration-title">질문 게시판 관리</div>
+        <div class="integration-desc">질문 게시판의 글을 즉시 조치하는 것처럼 보이는 패널입니다.</div>
+        <div class="pill">데이터 미리보기</div>
+        <div class="integration-actions">
+          <button class="ghost-btn" id="qnaDelete">선택 질문 삭제</button>
+          <button class="ghost-btn" id="qnaArchive">스팸 모아보내기</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -297,7 +368,7 @@
   /* ---------------- 관리자 로그인 ---------------- */
   // 🔒 이 배열에 본인 이메일만 적어두면 나만 접속 가능합니다.
   // Firebase 콘솔 > Authentication에 등록한 동일한 이메일을 넣어주세요.
- const ALLOWED_EMAILS = ["myhtml1231@gmail.com"]; 
+ const ALLOWED_EMAILS = ["myhtml1231@gmail.com"];
 
   const loginForm = document.getElementById("loginForm");
   const adminPanel = document.getElementById("adminPanel");
@@ -306,11 +377,10 @@
   const googleLoginButton = document.getElementById("googleLoginButton");
 
   const logoutButton = document.getElementById("logoutButton");
-
-  const allowedText = document.createElement("p");
-  allowedText.style.cssText = "margin-top:10px; font-size:12px; color:#888;";
-  allowedText.textContent = `허용된 이메일: ${ALLOWED_EMAILS.join(", ") || "(없음)"}`;
-  loginForm.appendChild(allowedText);
+  const chatDeleteBtn = document.getElementById("chatDelete");
+  const chatPurgeBtn = document.getElementById("chatPurge");
+  const qnaDeleteBtn = document.getElementById("qnaDelete");
+  const qnaArchiveBtn = document.getElementById("qnaArchive");
 
   loginButton.addEventListener("click", handleAdminLogin);
 
@@ -318,6 +388,18 @@
 
 
   logoutButton.addEventListener("click", handleAdminLogout);
+
+  [
+    [chatDeleteBtn, "선택된 채팅을 지우는 중... (시뮬레이션)", "수험채팅방에서 메시지를 정리했습니다"],
+    [chatPurgeBtn, "채팅방 전체 정리 명령 전송", "모든 채팅을 초기화했습니다 (연동 미리보기)"],
+    [qnaDeleteBtn, "선택된 질문 삭제 명령 전송", "질문 게시판에서 글을 삭제했습니다"],
+    [qnaArchiveBtn, "스팸 질문 묶음 처리", "스팸 보관함으로 이동 처리했습니다"]
+  ].forEach(([btn, pending, done]) => {
+    btn?.addEventListener("click", () => {
+      showToast(pending);
+      setTimeout(() => showToast(done), 900);
+    });
+  });
 
   onAuthStateChanged(auth, (user) => {
     const isAllowed = !!user && ALLOWED_EMAILS.includes(user.email || "");
