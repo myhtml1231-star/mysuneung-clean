@@ -1600,11 +1600,12 @@
     const getSubjectKeywords = (subject = "") => {
       const normalized = subject.toString().trim();
       const aliases = subjectKeywordMap[normalized] ?? [];
-const keywords = [normalized, ...aliases];
+      const keywords = [normalized, ...aliases];
 
-const initials = keywords.map(getInitials).filter(Boolean);
+      const initials = keywords.map(getInitials).filter(Boolean);
 
-return [...keywords, ...initials];
+      return [...keywords, ...initials];
+    };
 
     const getYearVariants = (year = "") => {
       const normalized = year.toString();
