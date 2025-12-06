@@ -170,6 +170,145 @@
       position: fixed; bottom: 20px; right: 20px;
       background: #333; color: white; padding: 10px 15px; border-radius: 4px;
     }
+
+    .panel-section {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .section-hint {
+      color: #666;
+      font-size: 13px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .badge-live { background: #e8f5e9; color: #2e7d32; border: 1px solid #bcdccb; }
+
+    .admin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .admin-widget {
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+
+    .widget-title {
+      font-weight: 800;
+      color: #111;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .widget-desc {
+      color: #666;
+      font-size: 13px;
+      flex: 1;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #f5f5f5;
+      color: #444;
+      border: 1px solid #e4e4e4;
+      font-weight: 700;
+      font-size: 12px;
+      cursor: not-allowed;
+      width: fit-content;
+    }
+
+    .chip-live {
+      background: #fff7ed;
+      border-color: #fed7aa;
+      color: #c2410c;
+      cursor: pointer;
+    }
+
+    .chip-delete {
+      background: #fef2f2;
+      border-color: #fecdd3;
+      color: #b91c1c;
+      cursor: pointer;
+    }
+
+    .chat-list { display: grid; gap: 10px; }
+
+    .chat-card {
+      padding: 14px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #fafafa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .chat-meta { font-size: 13px; color: #666; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .chat-author { font-weight: 800; color: #111; }
+    .chat-content { color: #333; font-size: 14px; }
+
+    .modal-actions {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn-danger {
+      background: #b91c1c;
+      color: #fff;
+    }
+
+    .btn-danger:hover { background: #991b1b; }
   </style>
 </head>
 
@@ -190,7 +329,7 @@
 
 
   <!-- 로그인 화면 -->
-<div class="login-container" id="loginForm">
+  <div class="login-container" id="loginForm">
     <h2>관리자 로그인</h2>
 
     <div class="form-group">
@@ -203,12 +342,9 @@
       <input type="password" id="adminPassword" placeholder="비밀번호 입력" autocomplete="current-password">
     </div>
 
-    <!-- 이메일 로그인 버튼 (유일한 loginButton) -->
-    <button class="btn" id="loginButton" type="button">
-      이메일/비밀번호로 로그인
-    </button>
 
-    <!-- 구글 로그인 버튼 -->
+    <button class="btn" id="loginButton" type="button">이메일/비밀번호로 로그인</button>
+
     <button class="btn" id="googleLoginButton" type="button" style="background:#db4437; margin-top:8px;">
       Google로 로그인
     </button>
@@ -219,18 +355,70 @@
       * Google 로그인 버튼을 써도, ALLOWED_EMAILS에 적힌 이메일이 아니면 자동으로 차단됩니다.
     </p>
 
+    <button class="btn" id="loginButton">로그인</button>
+
+    <p style="margin-top:12px; font-size:13px; color:#666; line-height:1.4;">
+      * Firebase Authentication에 등록된 관리자 계정만 접속할 수 있도록 제한했습니다.<br>
+      * 아래 코드의 <strong>ALLOWED_EMAILS</strong> 배열에 본인 이메일만 넣어두면 됩니다.
+    </p>
+
+
+
     <ul style="margin-top:14px; font-size:13px; color:#555; padding-left:18px; text-align:left; line-height:1.5;">
-      <li>로컬에서 열더라도 Firebase 프로젝트에 바로 연결됩니다.</li>
-      <li>질문/답변 데이터가 실시간으로 동기화됩니다.</li>
-      <li>인터넷 연결이 없으면 동기화가 멈춥니다.</li>
+      <li>로컬에서 열더라도 위 <code>firebaseConfig</code>에 적힌 Firebase 프로젝트로 바로 연결됩니다.</li>
+      <li>같은 프로젝트를 쓰는 질문 게시판·수험채팅방과 데이터베이스를 공유해, 다른 기기에서도 동일한 질문과 답변을 봅니다.</li>
+      <li>인터넷이 차단되면 동기화가 멈추므로, 접속이 안 되면 네트워크 상태와 Firebase 설정을 확인하세요.</li>
     </ul>
-</div>
+
+  </div>
+
   <!-- 관리자 화면 -->
   <div class="admin-panel" id="adminPanel">
     <button class="btn btn-logout" id="logoutButton">로그아웃</button>
+    <div class="admin-grid">
+      <div class="admin-widget">
+        <div class="widget-title">데이터 스냅샷</div>
+        <div class="widget-desc">실시간 Firestore와 연결된 상태입니다.</div>
+        <span class="chip">새 기능 준비 중</span>
+      </div>
+      <div class="admin-widget">
+        <div class="widget-title">푸시 알림</div>
+        <div class="widget-desc">알림 발송 모듈 연결 예정입니다.</div>
+        <span class="chip">Coming soon</span>
+      </div>
+      <div class="admin-widget">
+        <div class="widget-title">파일 업로드</div>
+        <div class="widget-desc">자료실 업로드, 변환 기능을 추가할 예정입니다.</div>
+        <span class="chip">준비 중</span>
+      </div>
+      <div class="admin-widget">
+        <div class="widget-title">사용자 권한</div>
+        <div class="widget-desc">관리자 초대, 역할 관리 UI만 노출합니다.</div>
+        <span class="chip">UI only</span>
+      </div>
+    </div>
 
-    <h2 style="margin-bottom:20px;">등록된 질문</h2>
-    <div id="questionsList" class="questions-list"></div>
+    <div class="panel-section">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>등록된 질문</h2>
+          <div class="section-hint">삭제와 답변 저장이 바로 반영됩니다.</div>
+        </div>
+        <span class="badge badge-live">실시간 동기화</span>
+      </div>
+      <div id="questionsList" class="questions-list"></div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-header">
+        <div class="section-title">
+          <h2>수험채팅방 메시지</h2>
+          <div class="section-hint">삭제 버튼만 활성화되어 있으며 즉시 적용됩니다.</div>
+        </div>
+        <span class="badge badge-live">실시간 동기화</span>
+      </div>
+      <div id="chatList" class="chat-list"></div>
+    </div>
   </div>
 
 </div>
@@ -252,7 +440,10 @@
     <label style="font-weight:bold; margin-bottom:5px; display:block;">답변 작성</label>
     <textarea id="answerText" placeholder="답변 입력..."></textarea>
 
-    <button class="btn" id="saveAnswer">답변 저장</button>
+    <div class="modal-actions">
+      <button class="btn btn-danger" id="deleteQuestion" type="button">질문 삭제</button>
+      <button class="btn" id="saveAnswer" type="button">답변 저장</button>
+    </div>
   </div>
 </div>
 
@@ -264,6 +455,7 @@
     collection,
     doc,
     getDoc,
+    deleteDoc,
     onSnapshot,
     orderBy,
     query,
@@ -277,6 +469,8 @@
     GoogleAuthProvider,
     signInWithEmailAndPassword,
     signInWithPopup,
+
+    signInWithEmailAndPassword,
 
     signOut
   } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
@@ -297,7 +491,7 @@
   /* ---------------- 관리자 로그인 ---------------- */
   // 🔒 이 배열에 본인 이메일만 적어두면 나만 접속 가능합니다.
   // Firebase 콘솔 > Authentication에 등록한 동일한 이메일을 넣어주세요.
- const ALLOWED_EMAILS = ["myhtml1231@gmail.com"]; 
+  const ALLOWED_EMAILS = ["you@example.com"]; 
 
   const loginForm = document.getElementById("loginForm");
   const adminPanel = document.getElementById("adminPanel");
@@ -326,12 +520,18 @@
       loginForm.style.display = "none";
       adminPanel.classList.add("active");
       subscribeQuestions();
+      subscribeChatMessages();
     } else {
       adminPanel.classList.remove("active");
       loginForm.style.display = "block";
       if (window.__unsubscribeQuestions) {
         window.__unsubscribeQuestions();
         window.__unsubscribeQuestions = null;
+      }
+
+      if (window.__unsubscribeChat) {
+        window.__unsubscribeChat();
+        window.__unsubscribeChat = null;
       }
 
       if (user) {
@@ -387,10 +587,21 @@
       window.__unsubscribeQuestions();
       window.__unsubscribeQuestions = null;
     }
+    if (window.__unsubscribeChat) {
+      window.__unsubscribeChat();
+      window.__unsubscribeChat = null;
+    }
   }
 
   /* ---------------- 질문 목록 실시간 ---------------- */
   const questionsList = document.getElementById("questionsList");
+  const chatList = document.getElementById("chatList");
+
+  const escapeHtml = (value = "") => value
+    .toString()
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 
   function subscribeQuestions() {
     const qRef = query(collection(db, "inquiries"), orderBy("createdAt", "desc"));
@@ -438,6 +649,64 @@
     await openModal(card.dataset.id);
   });
 
+  /* ---------------- 채팅 메시지 실시간 ---------------- */
+  function subscribeChatMessages() {
+    if (!chatList) return;
+
+    const cRef = query(collection(db, "chatMessages"), orderBy("createdAt", "desc"));
+
+    window.__unsubscribeChat = onSnapshot(
+      cRef,
+      (snap) => {
+        let html = "";
+        snap.forEach((docu) => {
+          const data = { id: docu.id, ...docu.data() };
+          const created = data.createdAt?.toDate?.();
+          const createdText = created
+            ? `${created.toLocaleDateString("ko-KR")} ${created.toLocaleTimeString("ko-KR")}`
+            : "시간 정보 없음";
+
+          html += `
+            <div class="chat-card" data-chat-id="${data.id}">
+              <div>
+                <div class="chat-meta">
+                  <span class="chat-author">${escapeHtml(data.author || "익명")}</span>
+                  <span>${createdText}</span>
+                </div>
+                <div class="chat-content">${escapeHtml(data.content || "내용 없음")}</div>
+              </div>
+              <button class="chip chip-delete" type="button" data-chat-id="${data.id}">삭제</button>
+            </div>`;
+        });
+
+        chatList.innerHTML = html || '<div class="empty-state">등록된 메시지가 없습니다.</div>';
+      },
+      (err) => {
+        console.error("채팅 목록 실시간 구독 실패", err);
+        showToast("채팅 메시지를 불러오지 못했습니다");
+      }
+    );
+  }
+
+  chatList?.addEventListener("click", async (e) => {
+    const btn = e.target.closest("[data-chat-id]");
+    if (!btn) return;
+
+    const id = btn.dataset.chatId;
+    if (!id) return;
+
+    const confirmDelete = confirm("이 메시지를 삭제하시겠습니까?");
+    if (!confirmDelete) return;
+
+    try {
+      await deleteDoc(doc(db, "chatMessages", id));
+      showToast("메시지를 삭제했습니다");
+    } catch (err) {
+      console.error("채팅 삭제 실패", err);
+      showToast("메시지를 삭제하지 못했습니다");
+    }
+  });
+
   /* ---------------- 질문 상세 모달 ---------------- */
   const modal = document.getElementById("answerModal");
   const modalTitle = document.getElementById("modalTitle");
@@ -448,9 +717,11 @@
   const answerText = document.getElementById("answerText");
   const closeModalBtn = document.getElementById("closeModal");
   const saveAnswerBtn = document.getElementById("saveAnswer");
+  const deleteQuestionBtn = document.getElementById("deleteQuestion");
 
   closeModalBtn.addEventListener("click", closeModal);
   saveAnswerBtn.addEventListener("click", submitAnswer);
+  deleteQuestionBtn.addEventListener("click", deleteCurrentQuestion);
 
   async function openModal(id) {
     const snap = await getDoc(doc(db, "inquiries", id));
@@ -502,6 +773,23 @@
     } catch (err) {
       console.error("답변 저장 실패", err);
       showToast("답변을 저장하지 못했습니다");
+    }
+  }
+
+  async function deleteCurrentQuestion() {
+    const q = window.__current;
+    if (!q?.id) return showToast("선택된 질문이 없습니다.");
+
+    const confirmDelete = confirm("이 질문을 삭제하시겠습니까? 되돌릴 수 없습니다.");
+    if (!confirmDelete) return;
+
+    try {
+      await deleteDoc(doc(db, "inquiries", q.id));
+      showToast("질문을 삭제했습니다");
+      closeModal();
+    } catch (err) {
+      console.error("질문 삭제 실패", err);
+      showToast("질문을 삭제하지 못했습니다");
     }
   }
 
