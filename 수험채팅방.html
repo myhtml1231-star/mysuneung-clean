@@ -418,57 +418,96 @@
     </div>
   </div>
 
-  <script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import {
+      addDoc,
+      collection,
+      getFirestore,
+      onSnapshot,
+      orderBy,
+      query,
+      serverTimestamp
+    } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
-const bannedWords = ["씨발", "바보", "병신"]; // 원하면 확장 가능
+    const firebaseConfig = {
+      apiKey: "AIzaSyCeEo-XbOdIJSqYRTbA4re3Ot1xWeEjfW0",
+      authDomain: "mysuneung.firebaseapp.com",
+      projectId: "mysuneung",
+      storageBucket: "mysuneung.firebasestorage.app",
+      messagingSenderId: "1047770825934",
+      appId: "1:1047770825934:web:cf4afe0e4331422e043c9f",
+      measurementId: "G-B7Q0KVYYH5"
+    };
 
-function containsBannedWords(text) {
-  return bannedWords.some(word => text.includes(word));
-}
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const messagesRef = collection(db, "chatMessages");
 
-function sendMessage() {
-  const content = document.getElementById('messageInput').value.trim();
+    const bannedWords = ["씨발", "바보", "병신"];
 
-  if (containsBannedWords(content)) {
-    showToast("부적절한 표현이 포함되어 전송할 수 없습니다.");
-    return;
-  }
-
-  // 기존 전송 코드 유지 ...
-}
-    let messages = JSON.parse(localStorage.getItem('freeboard_chat') || '[]');
+    let messages = [];
     let currentUser = null;
     let userPasswords = JSON.parse(localStorage.getItem('user_passwords') || '{}');
+    let unsubscribe = null;
+
+    function containsBannedWords(text) {
+      return bannedWords.some(word => text.includes(word));
+    }
+
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = message;
+      document.body.appendChild(toast);
+
+      setTimeout(() => toast.remove(), 2000);
+    }
 
     function renderMessages() {
       const messagesDiv = document.getElementById('messages');
-      
+
       if (messages.length === 0) {
         messagesDiv.innerHTML = '<div class="empty-state">아직 메시지가 없습니다.</div>';
         return;
       }
 
       messagesDiv.innerHTML = messages.map(msg => {
-        const isMe = currentUser && msg.author === currentUser; // ★ 나인지 체크
+        const isMe = currentUser && msg.author === currentUser;
         const messageClass = isMe ? 'message me' : 'message other';
         const meBadge = isMe ? '<span class="badge-me">나</span>' : '';
+
+        const createdAt = msg.createdAt?.toDate ? msg.createdAt.toDate() : new Date();
+        const time = `${String(createdAt.getHours()).padStart(2, '0')}:${String(createdAt.getMinutes()).padStart(2, '0')}`;
+
         return `
           <div class="${messageClass}">
             <div class="message-header">
               <span class="message-author">${msg.author}</span>
               ${meBadge}
-              <span class="message-time">${msg.time}</span>
+              <span class="message-time">${time}</span>
             </div>
             <div class="message-bubble">${msg.content}</div>
           </div>
         `;
       }).join('');
 
-      // Auto scroll to bottom
       messagesDiv.scrollTop = messagesDiv.scrollHeight;
     }
 
-    function handleLogin() {
+    function subscribeMessages() {
+      if (unsubscribe) unsubscribe();
+
+      unsubscribe = onSnapshot(query(messagesRef, orderBy('createdAt', 'asc')), (snap) => {
+        messages = snap.docs.map((docu) => ({ id: docu.id, ...docu.data() }));
+        renderMessages();
+      }, (err) => {
+        console.error('채팅 메시지 불러오기 실패', err);
+        showToast('메시지를 불러오는 중 오류가 발생했습니다');
+      });
+    }
+
+    window.handleLogin = function () {
       const nickname = document.getElementById('nickname').value.trim();
       const password = document.getElementById('password').value.trim();
 
@@ -481,13 +520,11 @@ function sendMessage() {
         return;
       }
 
-      // Check if nickname exists with different password
       if (userPasswords[nickname] && userPasswords[nickname] !== password) {
         showToast('비밀번호가 틀렸습니다');
         return;
       }
 
-      // Register or login
       if (!userPasswords[nickname]) {
         userPasswords[nickname] = password;
         localStorage.setItem('user_passwords', JSON.stringify(userPasswords));
@@ -501,10 +538,10 @@ function sendMessage() {
       document.getElementById('nickname').value = '';
       document.getElementById('password').value = '';
 
-      renderMessages(); // ★ 로그인 후 내/상대 정렬 다시 반영
-    }
+      renderMessages();
+    };
 
-    function handleLogout() {
+    window.handleLogout = function () {
       currentUser = null;
       document.getElementById('loginForm').classList.add('active');
       document.getElementById('chatForm').classList.add('hidden');
@@ -512,66 +549,49 @@ function sendMessage() {
       document.getElementById('password').value = '';
       document.getElementById('messageInput').value = '';
 
-      renderMessages(); // ★ 로그아웃 후 전부 상대 기준으로 보이게
-    }
+      renderMessages();
+    };
 
-function sendMessage() {
-  const content = document.getElementById('messageInput').value.trim();
+    window.sendMessage = async function () {
+      const content = document.getElementById('messageInput').value.trim();
 
-  // 🚨 1) 욕설 감지
-  if (containsBannedWords(content)) {
-    showToast("부적절한 표현이 포함되어 전송할 수 없습니다.");
-    return;
-  }
+      if (containsBannedWords(content)) {
+        showToast("부적절한 표현이 포함되어 전송할 수 없습니다.");
+        return;
+      }
 
-  // 🚨 2) 빈 내용 체크
-  if (!content) {
-    showToast('메시지를 입력하세요');
-    return;
-  }
+      if (!content) {
+        showToast('메시지를 입력하세요');
+        return;
+      }
 
-  // 🚨 3) 로그인 여부 체크
-  if (!currentUser) {
-    showToast('먼저 로그인하세요');
-    return;
-  }
+      if (!currentUser) {
+        showToast('먼저 로그인하세요');
+        return;
+      }
 
-  // 🚨 4) 정상 메시지 전송
-  const now = new Date();
-  const time = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+      try {
+        await addDoc(messagesRef, {
+          author: currentUser,
+          content,
+          createdAt: serverTimestamp()
+        });
 
-  const message = {
-    author: currentUser,
-    content: content,
-    time: time
-  };
+        document.getElementById('messageInput').value = '';
+      } catch (err) {
+        console.error('메시지 전송 실패', err);
+        showToast('메시지 전송 중 오류가 발생했습니다');
+      }
+    };
 
-  messages.push(message);
-  localStorage.setItem('freeboard_chat', JSON.stringify(messages));
-  document.getElementById('messageInput').value = '';
-  renderMessages();
-}
-
-
-    function showToast(message) {
-      const toast = document.createElement('div');
-      toast.className = 'toast';
-      toast.textContent = message;
-      document.body.appendChild(toast);
-      
-      setTimeout(() => toast.remove(), 2000);
-    }
-
-    // Enter key to send
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' && currentUser && document.getElementById('messageInput') === document.activeElement) {
-        sendMessage();
+        window.sendMessage();
       }
     });
 
-    // Init
     document.getElementById('loginForm').classList.add('active');
-    renderMessages();
+    subscribeMessages();
   </script>
 </body>
 </html>
