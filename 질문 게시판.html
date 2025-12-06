@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>질문 & 답변</title>
   <style>
+header img {
+  width: 40px;   /* 원하는 크기로 조절 가능 */
+  height: 40px;
+  object-fit: contain;  /* 이미지 비율 유지 */
+  margin-bottom: 5px;
+}
 
        .back-btn {
       margin-top: 50px;
@@ -391,8 +397,8 @@
 </head>
 <body>
   <header>
-     
-    <div class="logo">수</div>
+
+     <img src="Images/logo.png" alt="logo">
     <h1>질문 & 답변</h1>
   </header>
 
@@ -462,12 +468,18 @@
         <div class="modal-buttons">
           <button type="button" class="btn btn-cancel" onclick="closeAskModal()">취소</button>
           <button type="submit" class="btn" style="flex: 1;">등록하기</button>
+
         </div>
       </form>
     </div>
+  
+</div>
+  <div style="text-align: center; margin: 40px 0;">
+    <a href="index.html" class="back-btn">← 이전 화면으로 돌아가기</a>
   </div>
+  
 
-  <script>
+<script>
     let questions = JSON.parse(localStorage.getItem('inquiries') || '[]').filter(q => q.isQuestion === true);
     let currentQuestionId = null;
 
