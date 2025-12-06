@@ -387,6 +387,75 @@
       animation: fadeInUp 0.8s ease-out 0.3s both;
     }
 
+    .hero-guide {
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid #f3f4f6;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 18px 20px;
+      width: min(620px, 90vw);
+      display: none;
+      gap: 12px;
+      align-items: flex-start;
+      z-index: 10;
+      text-align: left;
+      animation: fadeInUp 0.4s ease;
+    }
+
+    .hero-guide.show {
+      display: flex;
+    }
+
+    .hero-guide-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: rgba(244, 183, 51, 0.14);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: #c27803;
+      flex-shrink: 0;
+    }
+
+    .hero-guide-body {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      color: #374151;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .hero-guide-strong {
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .hero-guide-close {
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: #9ca3af;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 8px;
+      transition: background 0.2s, color 0.2s;
+      align-self: flex-start;
+    }
+
+    .hero-guide-close:hover,
+    .hero-guide-close:focus-visible {
+      background: #f3f4f6;
+      color: #4b5563;
+      outline: none;
+    }
+
     @media (min-width: 640px) {
       .hero-buttons {
         flex-direction: row;
@@ -1096,8 +1165,18 @@
       </p>
 
       <div class="hero-buttons">
-        <button class="btn btn-primary">기출문제 바로가기 →</button>
+        <button id="quick-cta" class="btn btn-primary">기출문제 바로가기 →</button>
         <button class="btn btn-secondary">커뮤니티 / 게시판</button>
+      </div>
+
+      <div id="hero-guide" class="hero-guide" role="status" aria-live="polite">
+        <div class="hero-guide-icon" aria-hidden="true">ℹ️</div>
+        <div class="hero-guide-body">
+          <div class="hero-guide-strong">고3 · 고2 · 고1 기출을 빠르게 찾으세요!</div>
+          <div>상단 탐색 메뉴에서 학년을 선택하거나, 오른쪽 상단 검색창에 원하는 학년·과목을 입력하면 기출문제를 바로 찾을 수 있어요.</div>
+          <div>필요한 자료를 찾으신 뒤 검색 결과를 클릭하면 해당 페이지로 이동합니다.</div>
+        </div>
+        <button id="hero-guide-close" class="hero-guide-close" aria-label="안내 메시지 닫기">×</button>
       </div>
 
       <div class="dday-box">
@@ -1366,6 +1445,35 @@
       searchResults.classList.remove("open");
       document.querySelector(".search-box")?.setAttribute("aria-expanded", "false");
     };
+
+    const heroGuide = document.getElementById("hero-guide");
+    const heroGuideClose = document.getElementById("hero-guide-close");
+    const quickCTA = document.getElementById("quick-cta");
+    let heroGuideTimer = null;
+
+    const hideHeroGuide = () => {
+      heroGuide.classList.remove("show");
+      if (heroGuideTimer) {
+        clearTimeout(heroGuideTimer);
+        heroGuideTimer = null;
+      }
+    };
+
+    const showHeroGuide = () => {
+      heroGuide.classList.add("show");
+      if (heroGuideTimer) clearTimeout(heroGuideTimer);
+      heroGuideTimer = setTimeout(() => {
+        hideHeroGuide();
+      }, 8000);
+    };
+
+    quickCTA.addEventListener("click", () => {
+      showHeroGuide();
+    });
+
+    heroGuideClose.addEventListener("click", () => {
+      hideHeroGuide();
+    });
 
     const openSearch = () => {
       if (!searchResults.classList.contains("open")) {
