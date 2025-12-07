@@ -952,6 +952,9 @@
       .search-box {
         width: 100%;
         min-width: 0;
+        border-radius: 14px;
+        padding: 10px 12px;
+        gap: 8px;
       }
 
       .dday-box {
@@ -1545,15 +1548,18 @@
     };
 
     function updateDDay() {
-      const targetDate = new Date("2026-11-19T08:40:00");
-      const now = new Date();
-      const diff = targetDate - now;
+      const KST_OFFSET = 9 * 60 * 60 * 1000;
+      const targetDate = new Date("2026-11-19T08:40:00+09:00");
+      const kstNow = new Date(Date.now() + KST_OFFSET);
+      const diff = targetDate.getTime() - kstNow.getTime();
 
       if (diff > 0) {
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / 1000 / 60) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
+        const dayMs = 1000 * 60 * 60 * 24;
+        const days = Math.ceil(diff / dayMs);
+        const remainingMs = diff - Math.floor((days - 1) * dayMs);
+        const hours = Math.floor((remainingMs / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((remainingMs / 1000 / 60) % 60);
+        const seconds = Math.floor((remainingMs / 1000) % 60);
 
         const ddayEl = document.getElementById("dday");
         const timeEl = document.getElementById("dday-time");
