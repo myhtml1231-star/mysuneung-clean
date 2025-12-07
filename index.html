@@ -1954,13 +1954,12 @@
 
       searchResults.innerHTML = matched.map(item => {
         const monthLabel = item.month === "수능" ? "수능" : `${item.month}월`;
-        const yearNum = Number(item.year);
-        const academicLabel = item.grade === "고3" && Number.isFinite(yearNum) ? ` (${yearNum + 1}학년도)` : "";
+       
         return `
           <a class="search-result-item" href="${item.url}" role="option">
             <div class="search-result-title">
               <span class="search-badge">${item.grade}</span>
-              <span>${item.year} ${monthLabel}${academicLabel}</span>
+              <span>${item.year} ${monthLabel}</span>
             </div>
             <div class="search-result-sub">${item.subject}</div>
           </a>
