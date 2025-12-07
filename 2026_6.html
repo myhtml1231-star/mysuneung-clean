@@ -234,6 +234,39 @@
 </div>
 
 <script>
+  function updateDDayAndTime() {
+  const now = new Date();
+  const examDate = new Date("2026-11-19T08:40:00+09:00"); // 수능 시작 시간 기준
+
+  // D-Day 계산
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const dayDiff = examDate.getTime() - today.getTime();
+  const days = Math.ceil(dayDiff / (1000 * 60 * 60 * 24));
+  document.getElementById("dday").textContent = `D-${days}`;
+
+  // 남은 시간 계산
+  const diff = examDate.getTime() - now.getTime();
+
+  if (diff <= 0) {
+    document.getElementById("dday-time").textContent = "00:00:00";
+    return;
+  }
+
+  const hours = Math.floor(diff / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById("dday-time").textContent =
+    `${String(hours).padStart(2, '0')}:` +
+    `${String(minutes).padStart(2, '0')}:` +
+    `${String(seconds).padStart(2, '0')}`;
+}
+
+setInterval(updateDDayAndTime, 1000);
+updateDDayAndTime();
+
   // 토글 동작: 클릭, 키보드(Enter/Space) 지원, 외부 클릭으로 닫기
   (function () {
     const items = document.querySelectorAll('.subject-item');
