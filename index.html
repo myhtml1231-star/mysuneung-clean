@@ -1443,7 +1443,7 @@
   </div>
 
   
-    <script type="module">
+<script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
   import { getDatabase, ref, get, update } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
@@ -1463,8 +1463,10 @@
 
   async function updateVisitCounter() {
     const today = new Date();
-    const todayKey = today.toISOString().slice(0, 10);
-    const monthKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
+
+    // 날짜 키 생성
+    const todayKey = today.toISOString().slice(0, 10); // 2025-12-08
+    const monthKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`; // 2025-12
 
     const visitsRef = ref(db, "visits");
     const snapshot = await get(visitsRef);
@@ -1473,9 +1475,17 @@
       ? snapshot.val()
       : { today: 0, month: 0, lastUpdateDate: "", lastUpdateMonth: "" };
 
-    let todayCount = data.lastUpdateDate !== todayKey ? 1 : data.today + 1;
-    let monthCount = data.lastUpdateMonth !== monthKey ? 1 : data.month + 1;
+    // 오늘 방문자 — 날짜가 바뀌면 0으로 초기화
+    let todayCount = data.lastUpdateDate === todayKey
+      ? data.today + 1
+      : 1;
 
+    // 한 달 누적 — 월이 바뀌면 0으로 초기화
+    let monthCount = data.lastUpdateMonth === monthKey
+      ? data.month + 1
+      : 1;
+
+    // Firebase 업데이트
     await update(visitsRef, {
       today: todayCount,
       month: monthCount,
@@ -1483,6 +1493,7 @@
       lastUpdateMonth: monthKey
     });
 
+    // 화면 표시
     document.getElementById("visit-today").textContent = todayCount;
     document.getElementById("visit-month").textContent = monthCount;
     document.getElementById("visit-month-label").textContent = `${monthKey} 누적 방문`;
@@ -1602,21 +1613,48 @@ function updateDDay() {
       }
     }
 
-    function updateVisitorCounters() {
-      const today = new Date();
-      const todayKey = today.toISOString().slice(0, 10);
-      const monthKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
+function updateVisitorCounters() {
+  const today = new Date();
+  const todayKey = today.toISOString().slice(0, 10);
 
-      const saved = JSON.parse(localStorage.getItem("mysuneung_visit_counters") || "{}") || {};
-      let todayCount = saved.lastDate === todayKey ? Number(saved.todayCount || 0) + 1 : 1;
-      let monthCount = saved.lastMonth === monthKey ? Number(saved.monthCount || 0) + 1 : 1;
+  // 저장된 데이터 가져오기
+  const saved = JSON.parse(localStorage.getItem("mysuneung_visitors") || "{}");
 
-      const next = { lastDate: todayKey, lastMonth: monthKey, todayCount, monthCount };
-      localStorage.setItem("mysuneung_visit_counters", JSON.stringify(next));
+  // dailyCounts 객체가 없으면 생성
+  let dailyCounts = saved.dailyCounts || {};
 
-      const todayEl = document.getElementById("visit-today");
-      const monthEl = document.getElementById("visit-month");
-      const monthLabelEl = document.getElementById("visit-month-label");
+  // 오늘 방문 기록이 없으면 1로 초기화
+  if (!dailyCounts[todayKey]) {
+    dailyCounts[todayKey] = 1;
+  } else {
+    dailyCounts[todayKey] += 1;
+  }
+
+  // 최근 30일만 남기기
+  const THIRTY_DAYS = 30;
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - THIRTY_DAYS);
+
+  for (const date in dailyCounts) {
+    if (new Date(date) < cutoff) {
+      delete dailyCounts[date];
+    }
+  }
+
+  // 오늘 방문자 수
+  const todayCount = dailyCounts[todayKey];
+
+  // 최근 30일 누적 방문자 수
+  const monthCount = Object.values(dailyCounts).reduce((a, b) => a + b, 0);
+
+  // 저장
+  localStorage.setItem("mysuneung_visitors", JSON.stringify({ dailyCounts }));
+
+  // 화면 표시
+  document.getElementById("visit-today").textContent = todayCount;
+  document.getElementById("visit-month").textContent = monthCount;
+  document.getElementById("visit-month-label").textContent = `최근 30일 누적 방문`;
+}
 
       if (todayEl) todayEl.textContent = formatStatNumber(todayCount);
       if (monthEl) monthEl.textContent = formatStatNumber(monthCount);
