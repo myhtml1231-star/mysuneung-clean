@@ -296,12 +296,12 @@
       position: relative;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background: #f3f4f6;
-      padding: 8px 16px;
-      border-radius: 999px;
-      width: 320px;
-      max-width: 420px;
+      padding: 6px 12px;
+      border-radius: 16px;
+      width: 260px;
+      max-width: 320px;
       flex: 1;
       min-width: 240px;
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -952,10 +952,14 @@
       .search-box {
         width: 100%;
         min-width: 0;
-        border-radius: 14px;
-        padding: 10px 12px;
-        gap: 8px;
-      }
+codex/optimize-mobile-search-button-shape-tmw1d4
+        border-radius: 12px;
+        padding: 8px 10px;
+        gap: 6px;
+
+       
+ 
+      
 
       .dday-box {
         width: 100%;
@@ -1548,27 +1552,37 @@
     };
 
     function updateDDay() {
-      const KST_OFFSET = 9 * 60 * 60 * 1000;
-      const targetDate = new Date("2026-11-19T08:40:00+09:00");
-      const kstNow = new Date(Date.now() + KST_OFFSET);
-      const diff = targetDate.getTime() - kstNow.getTime();
+codex/optimize-mobile-search-button-shape-tmw1d4
+      const EXAM_DAY_START = new Date("2026-11-19T00:00:00+09:00");
+      const EXAM_START_TIME = new Date("2026-11-19T08:40:00+09:00");
+      const DAY_MS = 1000 * 60 * 60 * 24;
 
-      if (diff > 0) {
-        const dayMs = 1000 * 60 * 60 * 24;
-        const days = Math.ceil(diff / dayMs);
-        const remainingMs = diff - Math.floor((days - 1) * dayMs);
-        const hours = Math.floor((remainingMs / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((remainingMs / 1000 / 60) % 60);
-        const seconds = Math.floor((remainingMs / 1000) % 60);
+      const nowUtc = Date.now();
+      const tzOffsetMs = (9 * 60 + new Date().getTimezoneOffset()) * 60 * 1000;
+      const nowKst = new Date(nowUtc + tzOffsetMs);
 
-        const ddayEl = document.getElementById("dday");
-        const timeEl = document.getElementById("dday-time");
+      const ddayDiff = EXAM_DAY_START.getTime() - nowKst.getTime();
+      const timeDiff = EXAM_START_TIME.getTime() - nowUtc;
 
-        if (ddayEl) ddayEl.textContent = `D-${days}`;
-        if (timeEl) timeEl.textContent =
-          `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      const ddayEl = document.getElementById("dday");
+      const timeEl = document.getElementById("dday-time");
+
+      if (ddayEl) {
+        const days = Math.max(0, Math.ceil(ddayDiff / DAY_MS));
+        ddayEl.textContent = `D-${days}`;
       }
-    }
+
+      if (timeEl) {
+        const remaining = Math.max(0, timeDiff);
+        const hours = Math.floor((remaining / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((remaining / 1000 / 60) % 60);
+        const seconds = Math.floor((remaining / 1000) % 60);
+
+        timeEl.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+      
+      
+    
 
     function openModal(index) {
       const news = newsData[index];
