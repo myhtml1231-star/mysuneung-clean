@@ -475,22 +475,24 @@
     }
 
     .hero-guide {
-      position: absolute;
-      top: 58%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
       background: rgba(255, 255, 255, 0.96);
       border: 1px solid #f3f4f6;
       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
       border-radius: 16px;
       padding: 18px 20px;
-      width: min(620px, 90vw);
+      width: min(720px, 90vw);
+      margin-top: 28px;
       display: none;
       gap: 12px;
       align-items: flex-start;
       z-index: 10;
       text-align: left;
       animation: fadeInUp 0.4s ease;
+      align-self: center;
     }
 
     .hero-guide.show {
