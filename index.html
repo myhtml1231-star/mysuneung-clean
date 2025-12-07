@@ -1577,20 +1577,9 @@ function updateDDay() {
   document.getElementById("dday").textContent = `D-${days}`;
 }
 
-      if (ddayEl) {
-        const days = Math.max(0, Math.ceil(ddayDiff / DAY_MS));
-        ddayEl.textContent = `D-${days}`;
-      }
+     
 
-      if (timeEl) {
-        const remaining = Math.max(0, timeDiff);
-        const hours = Math.floor((remaining / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((remaining / 1000 / 60) % 60);
-        const seconds = Math.floor((remaining / 1000) % 60);
 
-        timeEl.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-      }
-    }
 
     function openModal(index) {
       const news = newsData[index];
@@ -1613,53 +1602,9 @@ function updateDDay() {
       }
     }
 
-function updateVisitorCounters() {
-  const today = new Date();
-  const todayKey = today.toISOString().slice(0, 10);
 
-  // 저장된 데이터 가져오기
-  const saved = JSON.parse(localStorage.getItem("mysuneung_visitors") || "{}");
 
-  // dailyCounts 객체가 없으면 생성
-  let dailyCounts = saved.dailyCounts || {};
 
-  // 오늘 방문 기록이 없으면 1로 초기화
-  if (!dailyCounts[todayKey]) {
-    dailyCounts[todayKey] = 1;
-  } else {
-    dailyCounts[todayKey] += 1;
-  }
-
-  // 최근 30일만 남기기
-  const THIRTY_DAYS = 30;
-  const cutoff = new Date();
-  cutoff.setDate(cutoff.getDate() - THIRTY_DAYS);
-
-  for (const date in dailyCounts) {
-    if (new Date(date) < cutoff) {
-      delete dailyCounts[date];
-    }
-  }
-
-  // 오늘 방문자 수
-  const todayCount = dailyCounts[todayKey];
-
-  // 최근 30일 누적 방문자 수
-  const monthCount = Object.values(dailyCounts).reduce((a, b) => a + b, 0);
-
-  // 저장
-  localStorage.setItem("mysuneung_visitors", JSON.stringify({ dailyCounts }));
-
-  // 화면 표시
-  document.getElementById("visit-today").textContent = todayCount;
-  document.getElementById("visit-month").textContent = monthCount;
-  document.getElementById("visit-month-label").textContent = `최근 30일 누적 방문`;
-}
-
-      if (todayEl) todayEl.textContent = formatStatNumber(todayCount);
-      if (monthEl) monthEl.textContent = formatStatNumber(monthCount);
-      if (monthLabelEl) monthLabelEl.textContent = `${monthKey} 누적 방문`;
-    }
 
     // Close modal on outside click
     document.getElementById("newsModal").addEventListener("click", (e) => {
@@ -1673,7 +1618,7 @@ function updateVisitorCounters() {
 
     // Dropdown interactions
     document.addEventListener("DOMContentLoaded", () => {
-      updateVisitorCounters();
+
 
       navItems = Array.from(document.querySelectorAll(".nav-item"));
       navItems.forEach(nav => {
