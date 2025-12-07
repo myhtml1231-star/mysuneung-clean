@@ -1431,7 +1431,56 @@
     </div>
   </div>
 
-  <script>
+  
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getDatabase, ref, get, update } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCeEo-XbOdIJSqYRTbA4re3Ot1xWeEjfW0",
+    authDomain: "mysuneung.firebaseapp.com",
+    databaseURL: "https://mysuneung-default-rtdb.firebaseio.com",
+    projectId: "mysuneung",
+    storageBucket: "mysuneung.appspot.com",
+    messagingSenderId: "1047770825934",
+    appId: "1:1047770825934:web:cf4afe0e4331422e043c9f",
+    measurementId: "G-B7Q0KVYxx5"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  async function updateVisitCounter() {
+    const today = new Date();
+    const todayKey = today.toISOString().slice(0, 10);
+    const monthKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`;
+
+    const visitsRef = ref(db, "visits");
+    const snapshot = await get(visitsRef);
+
+    let data = snapshot.exists()
+      ? snapshot.val()
+      : { today: 0, month: 0, lastUpdateDate: "", lastUpdateMonth: "" };
+
+    let todayCount = data.lastUpdateDate !== todayKey ? 1 : data.today + 1;
+    let monthCount = data.lastUpdateMonth !== monthKey ? 1 : data.month + 1;
+
+    await update(visitsRef, {
+      today: todayCount,
+      month: monthCount,
+      lastUpdateDate: todayKey,
+      lastUpdateMonth: monthKey
+    });
+
+    document.getElementById("visit-today").textContent = todayCount;
+    document.getElementById("visit-month").textContent = monthCount;
+    document.getElementById("visit-month-label").textContent = `${monthKey} 누적 방문`;
+  }
+
+  updateVisitCounter();
+</script>
+<script>
+    
     const newsData = [
       {
         tag: "학습법",
