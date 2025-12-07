@@ -952,10 +952,14 @@
       .search-box {
         width: 100%;
         min-width: 0;
+codex/optimize-mobile-search-button-shape-tmw1d4
         border-radius: 12px;
         padding: 8px 10px;
         gap: 6px;
-      }
+
+       
+ 
+      
 
       .dday-box {
         width: 100%;
@@ -1548,6 +1552,7 @@
     };
 
     function updateDDay() {
+codex/optimize-mobile-search-button-shape-tmw1d4
       const EXAM_DAY_START = new Date("2026-11-19T00:00:00+09:00");
       const EXAM_START_TIME = new Date("2026-11-19T08:40:00+09:00");
       const DAY_MS = 1000 * 60 * 60 * 24;
@@ -1574,8 +1579,10 @@
         const seconds = Math.floor((remaining / 1000) % 60);
 
         timeEl.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-      }
-    }
+
+      
+      
+    
 
     function openModal(index) {
       const news = newsData[index];
