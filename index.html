@@ -1553,17 +1553,18 @@
       }
     };
 
-    function updateDDay() {
-      const EXAM_DAY_START = new Date("2026-11-12T00:00:00+09:00");
-      const EXAM_START_TIME = new Date("2026-11-12T08:40:00+09:00");
-      const DAY_MS = 1000 * 60 * 60 * 24;
+function updateDDay() {
+  const today = new Date();
+  const examDate = new Date("2026-11-19T00:00:00+09:00");
 
-      const now = new Date();
-      const ddayDiff = EXAM_DAY_START.getTime() - now.getTime();
-      const timeDiff = EXAM_START_TIME.getTime() - now.getTime();
+  today.setHours(0, 0, 0, 0);
+  examDate.setHours(0, 0, 0, 0);
 
-      const ddayEl = document.getElementById("dday");
-      const timeEl = document.getElementById("dday-time");
+  const diff = examDate.getTime() - today.getTime();
+  const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+  document.getElementById("dday").textContent = `D-${days}`;
+}
 
       if (ddayEl) {
         const days = Math.max(0, Math.ceil(ddayDiff / DAY_MS));
