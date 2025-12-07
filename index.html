@@ -1557,12 +1557,9 @@
       const EXAM_START_TIME = new Date("2026-11-19T08:40:00+09:00");
       const DAY_MS = 1000 * 60 * 60 * 24;
 
-      const nowUtc = Date.now();
-      const tzOffsetMs = (9 * 60 + new Date().getTimezoneOffset()) * 60 * 1000;
-      const nowKst = new Date(nowUtc + tzOffsetMs);
-
-      const ddayDiff = EXAM_DAY_START.getTime() - nowKst.getTime();
-      const timeDiff = EXAM_START_TIME.getTime() - nowUtc;
+      const now = new Date();
+      const ddayDiff = EXAM_DAY_START.getTime() - now.getTime();
+      const timeDiff = EXAM_START_TIME.getTime() - now.getTime();
 
       const ddayEl = document.getElementById("dday");
       const timeEl = document.getElementById("dday-time");
