@@ -953,13 +953,14 @@
         width: 100%;
         min-width: 0;
         max-width: 360px;
-        border-radius: 12px;
-        padding: 6px 10px;
-        gap: 6px;
+        border-radius: 10px;
+        padding: 4px 10px;
+        gap: 4px;
       }
 
       .search-box input {
         font-size: 13px;
+        padding: 4px 0;
       }
 
       .dday-box {
@@ -1553,8 +1554,8 @@
     };
 
     function updateDDay() {
-      const EXAM_DAY_START = new Date("2026-11-19T00:00:00+09:00");
-      const EXAM_START_TIME = new Date("2026-11-19T08:40:00+09:00");
+      const EXAM_DAY_START = new Date("2026-11-12T00:00:00+09:00");
+      const EXAM_START_TIME = new Date("2026-11-12T08:40:00+09:00");
       const DAY_MS = 1000 * 60 * 60 * 24;
 
       const now = new Date();
