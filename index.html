@@ -499,21 +499,20 @@
     }
 
     .hero-guide {
-      position: relative;
-      top: auto;
-      left: auto;
-      transform: none;
+      position: absolute;
+      left: 50%;
+      bottom: 32px;
+      transform: translateX(-50%);
       background: rgba(255, 255, 255, 0.96);
       border: 1px solid #f3f4f6;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
       border-radius: 16px;
       padding: 18px 20px;
       width: min(720px, 90vw);
-      margin-top: 28px;
       display: none;
       gap: 12px;
       align-items: flex-start;
-      z-index: 10;
+      z-index: 20;
       text-align: left;
       animation: fadeInUp 0.4s ease;
       align-self: center;
