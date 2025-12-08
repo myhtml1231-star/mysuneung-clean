@@ -11,7 +11,6 @@
       background: #fafafa;
     }
 
-    /* 중앙 전체 컨테이너 */
     .container {
       width: 100%;
       max-width: 900px;
@@ -20,7 +19,6 @@
       text-align: center;
     }
 
-    /* 타이틀 */
     .title {
       font-size: 38px;
       font-weight: 900;
@@ -28,7 +26,6 @@
       color: #333;
     }
 
-    /* 현대적 6분할 그리드 */
     .subject-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -37,7 +34,7 @@
     }
 
     .subject-item {
-      position: relative; /* dropdown 위치를 위해 필요 */
+      position: relative;
     }
 
     .subject-box {
@@ -65,7 +62,6 @@
       box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     }
 
-    /* 드롭다운 (초기 숨김) */
     .dropdown {
       display: none;
       position: absolute;
@@ -98,12 +94,10 @@
       transform: translateY(-2px);
     }
 
-    /* 표시 상태 클래스 */
     .subject-item.open .dropdown {
       display: block;
     }
 
-    /* 화살표 표시 (디자인 변경 없이 미미한 표시) */
     .subject-box .caret {
       margin-left: 8px;
       font-size: 16px;
@@ -111,7 +105,6 @@
       transform: translateY(1px);
     }
 
-    /* 뒤로가기 버튼 */
     .back-btn {
       margin-top: 50px;
       display: inline-block;
@@ -131,7 +124,6 @@
       transform: translateY(-2px);
     }
 
-    /* 간단한 반응형 — 레이아웃 본래 디자인을 유지하도록 보수적으로 적용 */
     @media (max-width: 720px) {
       .subject-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
       .subject-box { padding: 36px 8px; font-size: 20px; }
@@ -142,7 +134,6 @@
       .subject-grid { grid-template-columns: 1fr; }
       .subject-box { padding: 30px 8px; font-size: 20px; }
     }
-
   </style>
 
 </head>
@@ -154,120 +145,81 @@
 
   <div class="subject-grid">
 
-    <!-- 고3(복합) 예시: 국어 (언어와매체 / 독서/문학/화법작문 등) -->
-       <div class="subject-item" data-subject="korean">
+    <!-- 국어 -->
+    <div class="subject-item">
       <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
         국어 <span class="caret">▾</span>
       </div>
-      <div class="dropdown" aria-hidden="true">
-        <!-- 실제 파일 경로로 href 교체 -->
-          <a class="subject-box" href="2026-6-언매.html">언어와매체</a>
-        <a class="subject-box" href="2026-6-화작.html">화법과작문</a>
-    
+      <div class="dropdown">
+        <a href="2026-6-언매.html">언어와매체</a>
+        <a href="2026-6-화작.html">화법과작문</a>
       </div>
     </div>
-    <!-- 수학: 확률과통계 / 미적분 / 기하 -->
-    <div class="subject-item" data-subject="math">
+
+    <!-- 수학 -->
+    <div class="subject-item">
       <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
         수학 <span class="caret">▾</span>
       </div>
-      <div class="dropdown" aria-hidden="true">
-         <a class="subject-box" href="2026-6-확통.html">확률과통계</a>
-         <a class="subject-box" href="2026-6-미적.html">미적분</a>
-         <a class="subject-box" href="2026-6-기하.html">기하</a>
+      <div class="dropdown">
+        <a href="2026-6-확통.html">확률과통계</a>
+        <a href="2026-6-미적.html">미적분</a>
+        <a href="2026-6-기하.html">기하</a>
       </div>
     </div>
 
-    <!-- 영어: 단일 파일(예시) -->
+    <!-- 영어 -->
     <div class="subject-item">
-       <a class="subject-box" href="2026-6-영어.html">영어</a>
+      <a class="subject-box" href="2026-6-영어.html">영어</a>
     </div>
 
-    <!-- 한국사: 단일 파일 -->
+    <!-- 한국사 -->
     <div class="subject-item">
-       <a class="subject-box" href="2026-6-역사.html">한국사</a>
+      <a class="subject-box" href="2026-6-역사.html">한국사</a>
     </div>
 
-    <!-- 사회탐구: 여러 과목 -->
-    <div class="subject-item" data-subject="social">
+    <!-- 사회탐구 -->
+    <div class="subject-item">
       <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
         사회탐구 <span class="caret">▾</span>
       </div>
-<div class="dropdown">
-    <a class="subject-box" href="2026-6-y.html">윤리와사상</a>
-    <a class="subject-box" href="2026-6-j.html">정치와법</a>
-    <a class="subject-box" href="2026-6-k.html">경제</a>
-    <a class="subject-box" href="2026-6-sm.html">사회문화</a>
-    <a class="subject-box" href="2026-6-s.html">세계사</a>
-    <a class="subject-box" href="2026-6-h.html">한국지리</a>
-    <a class="subject-box" href="2026-6-sa.html">생활과윤리</a>
-    <a class="subject-box" href="2026-6-d.html">동아시아사</a>
-    <a class="subject-box" href="2026-6-sj.html">세계지리</a>
-</div>
-</div>
+      <div class="dropdown">
+        <a href="2026-6-y.html">윤리와사상</a>
+        <a href="2026-6-j.html">정치와법</a>
+        <a href="2026-6-k.html">경제</a>
+        <a href="2026-6-sm.html">사회문화</a>
+        <a href="2026-6-s.html">세계사</a>
+        <a href="2026-6-h.html">한국지리</a>
+        <a href="2026-6-sa.html">생활과윤리</a>
+        <a href="2026-6-d.html">동아시아사</a>
+        <a href="2026-6-sj.html">세계지리</a>
+      </div>
+    </div>
 
-
-
-    <!-- 과학탐구: 여러 과목 -->
-    <div class="subject-item" data-subject="science">
+    <!-- 과학탐구 -->
+    <div class="subject-item">
       <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
         과학탐구 <span class="caret">▾</span>
       </div>
-<div class="dropdown">
-    <a class="subject-box" href="2026-6-m.html">물리학Ⅰ</a>
-    <a class="subject-box" href="2026-6-c.html">화학Ⅰ</a>
-    <a class="subject-box" href="2026-6-l.html">생명과학Ⅰ</a>
-    <a class="subject-box" href="2026-6-e.html">지구과학Ⅰ</a>
-    <a class="subject-box" href="2026-6-m2.html">물리학Ⅱ</a>
-    <a class="subject-box" href="2026-6-c2.html">화학Ⅱ</a>
-    <a class="subject-box" href="2026-6-l2.html">생명과학Ⅱ</a>
-    <a class="subject-box" href="2026-6-e2.html">지구과학Ⅱ</a>
-</div>
-</div>
-
+      <div class="dropdown">
+        <a href="2026-6-m.html">물리학Ⅰ</a>
+        <a href="2026-6-c.html">화학Ⅰ</a>
+        <a href="2026-6-l.html">생명과학Ⅰ</a>
+        <a href="2026-6-e.html">지구과학Ⅰ</a>
+        <a href="2026-6-m2.html">물리학Ⅱ</a>
+        <a href="2026-6-c2.html">화학Ⅱ</a>
+        <a href="2026-6-l2.html">생명과학Ⅱ</a>
+        <a href="2026-6-e2.html">지구과학Ⅱ</a>
+      </div>
+    </div>
 
   </div>
 
-  <!-- 뒤로가기 버튼 -->
   <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
 
 </div>
 
 <script>
-  function updateDDayAndTime() {
-  const now = new Date();
-  const examDate = new Date("2026-11-19T08:40:00+09:00"); // 수능 시작 시간 기준
-
-  // D-Day 계산
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  const dayDiff = examDate.getTime() - today.getTime();
-  const days = Math.ceil(dayDiff / (1000 * 60 * 60 * 24));
-  document.getElementById("dday").textContent = `D-${days}`;
-
-  // 남은 시간 계산
-  const diff = examDate.getTime() - now.getTime();
-
-  if (diff <= 0) {
-    document.getElementById("dday-time").textContent = "00:00:00";
-    return;
-  }
-
-  const hours = Math.floor(diff / (1000 * 60 * 60));
-  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-  document.getElementById("dday-time").textContent =
-    `${String(hours).padStart(2, '0')}:` +
-    `${String(minutes).padStart(2, '0')}:` +
-    `${String(seconds).padStart(2, '0')}`;
-}
-
-setInterval(updateDDayAndTime, 1000);
-updateDDayAndTime();
-
-  // 토글 동작: 클릭, 키보드(Enter/Space) 지원, 외부 클릭으로 닫기
   (function () {
     const items = document.querySelectorAll('.subject-item');
 
@@ -277,8 +229,6 @@ updateDDayAndTime();
           it.classList.remove('open');
           const box = it.querySelector('.subject-box');
           if (box) box.setAttribute('aria-expanded', 'false');
-          const dd = it.querySelector('.dropdown');
-          if (dd) dd.setAttribute('aria-hidden', 'true');
         }
       });
     }
@@ -287,52 +237,33 @@ updateDDayAndTime();
       const box = item.querySelector('.subject-box');
       const dropdown = item.querySelector('.dropdown');
 
-      // subject-box가 앵커(a)인 경우(직접 링크)에는 토글 비활성
-      if (!box) return;
+      if (!dropdown) return;
 
-      // 클릭 토글
-      box.addEventListener('click', (e) => {
-        // 만약 내부에 실제 링크(a.subject-box)를 사용하고 싶다면 이 부분 조정
+      box.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
         if (isOpen) {
           item.classList.remove('open');
           box.setAttribute('aria-expanded', 'false');
-          if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
         } else {
           closeAll(item);
           item.classList.add('open');
           box.setAttribute('aria-expanded', 'true');
-          if (dropdown) dropdown.setAttribute('aria-hidden', 'false');
         }
       });
 
-      // 키보드 접근성: Enter / Space 로 열기
       box.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
           box.click();
         }
       });
-
-      // 드롭다운 내부에서 링크 클릭 시 자동으로 닫히도록
-      if (dropdown) {
-        dropdown.addEventListener('click', (e) => {
-          const target = e.target;
-          if (target.tagName.toLowerCase() === 'a') {
-            // 다운로드 링크 클릭했을 때 UI 닫기(브라우저가 다운로드를 처리함)
-            closeAll();
-          }
-        });
-      }
     });
 
-    // 외부 클릭 시 모두 닫기
     document.addEventListener('click', (e) => {
-      const isInside = e.target.closest('.subject-item');
-      if (!isInside) closeAll();
+      const inside = e.target.closest('.subject-item');
+      if (!inside) closeAll();
     });
 
-    // ESC 키로 닫기
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') closeAll();
     });
@@ -342,9 +273,3 @@ updateDDayAndTime();
 
 </body>
 </html>
-
-
-
-
-
-
