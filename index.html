@@ -1007,6 +1007,20 @@
   </style>
 </head>
 <body>
+
+  <!-- 🔥 팝업 배너 -->
+<div id="banner-popup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <button id="popup-close" class="popup-close">×</button>
+
+    <!-- 실제 배너 이미지 -->
+    <img src="Images/banner.png" style="width:100%; border-radius:8px;">
+
+    <!-- 오늘 하루 보지 않기 버튼 -->
+    <button id="today-hide" class="today-btn">오늘 하루 보지 않기</button>
+  </div>
+</div>
+
   <header>
     <div class="container header-bar">
       <div class="brand">
@@ -1553,33 +1567,65 @@
   scheduleVisitRefresh();
 </script>
 <script>
+
+  const popup = document.getElementById("banner-popup");
+const closeBtn = document.getElementById("popup-close");
+const todayBtn = document.getElementById("today-hide");
+
+const KEY = "popup-hide-today";
+
+// 페이지 로드 시
+window.addEventListener("load", () => {
+  const saved = localStorage.getItem(KEY);
+  const today = new Date().toISOString().slice(0,10);
+
+  if (saved !== today) {
+    popup.classList.remove("hidden");
+  }
+});
+
+// X 버튼
+closeBtn.onclick = () => popup.classList.add("hidden");
+
+// 오늘 하루 보지 않기
+todayBtn.onclick = () => {
+  const today = new Date().toISOString().slice(0,10);
+  localStorage.setItem(KEY, today);
+  popup.classList.add("hidden");
+};
+
+// 바깥 클릭하면 닫기
+popup.addEventListener("click", e => {
+  if (e.target === popup) popup.classList.add("hidden");
+});
+
     
-    const newsData = [
-      {
-        tag: "학습법",
-        title: "2027학년도 수능 대비 학습 전략 가이드",
-        date: "2025.12.01",
-        content: "겨울방학부터 시작하는 효과적인 학습 계획과 과목별 전략을 알아보세요."
-      },
-      {
-        tag: "공지",
-        title: "업데이트 중입니다.",
-        date: "2025.11.28",
-        content: "업데이트 중입니다..."
-      },
-      {
-        tag: "자료",
-        title: "업데이트 중입니다.",
-        date: "2025.11.25",
-        content: "모의고사 자료가 나올시 바로 업로드 됩니다."
-      },
-      {
-        tag: "칼럼",
-        title: "수험생 필독! 겨울방학 수학 집중 공략법",
-        date: "2025.11.20",
-        content: "취약한 부분을 집중 공략하는 방학 기간의 최적 학습 방법을 소개합니다."
-      }
-    ];
+  const newsData = [
+  {
+    tag: "학습법",
+    title: "-",
+    date: "-",
+    content: "-"
+  },
+  {
+    tag: "공지",
+    title: "-",
+    date: "-",
+    content: "-"
+  },
+  {
+    tag: "자료",
+    title: "-",
+    date: "-",
+    content: "-"
+  },
+  {
+    tag: "칼럼",
+    title: "-",
+    date: "-",
+    content: "-"
+  }
+];
 
     let navItems = [];
 
