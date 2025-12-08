@@ -5,6 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>수능기출 - 나만의 아카이브</title>
   <style>
+/* 팝업 전체 오버레이 */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* 숨김 처리 */
+.hidden {
+  display: none !important;
+}
+
+/* 팝업 박스 */
+.popup-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* 닫기 버튼 */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #555;
+}
+
+.today-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  background: #f4b733;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
  .error-report-wrapper {
   margin-top: 18px;
@@ -1488,6 +1552,15 @@
       <div class="modal-body" id="modalBody"></div>
     </div>
   </div>
+<script>
+  const KST_OFFSET = 9 * 60 * 60 * 1000;
+
+  function getKstNow() {
+    const now = new Date();
+    const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
+    return new Date(utcTime + KST_OFFSET);
+  }
+</script>
 
   
 <script type="module">
@@ -1508,11 +1581,7 @@
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
 
-  const getKstNow = () => {
-    const now = new Date();
-    const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
-    return new Date(utcTime + 9 * 60 * 60 * 1000);
-  };
+
 
   async function updateVisitCounter() {
     const today = getKstNow();
@@ -1661,13 +1730,7 @@ popup.addEventListener("click", e => {
       }
     };
 
-    const KST_OFFSET = 9 * 60 * 60 * 1000;
 
-    const getKstNow = () => {
-      const now = new Date();
-      const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
-      return new Date(utcTime + KST_OFFSET);
-    };
 
     const getExamDate = (baseDate = getKstNow()) => {
       let year = baseDate.getFullYear();
