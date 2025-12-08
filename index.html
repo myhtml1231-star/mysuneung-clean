@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>수능기출 - 나만의 아카이브</title>
   <style>
+
+ .error-report-wrapper {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.btn-danger {
+  background: #ff4d4d;
+  color: white !important;
+  border: 1px solid #ff3333;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 16px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.btn-danger:hover {
+  background: #e63939;
+  border-color: #d62828;
+  transform: translateY(-2px);
+}
+
     header img {
   width: 40px;   /* 원하는 크기로 조절 가능 */
   height: 40px;
@@ -1345,7 +1369,16 @@
       <div class="hero-buttons">
         <button id="quick-access-btn" class="btn btn-primary" aria-expanded="false" aria-controls="quick-panel">기출문제 바로가기 →</button>
         <button class="btn btn-secondary">커뮤니티 / 게시판</button>
-      </div>
+        
+ </div>
+
+<!-- 🔥 오류 신고 버튼 (가운데 아래 배치) -->
+<div class="error-report-wrapper">
+  <a href="error-report.html" class="btn btn-danger">
+    🚨 오류 신고
+  </a>
+</div>
+
 
       <div class="visit-stats" aria-live="polite">
         <div class="visit-card">
