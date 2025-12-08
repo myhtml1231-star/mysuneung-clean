@@ -499,28 +499,33 @@
     }
 
     .hero-guide {
-      position: relative;
-      top: auto;
-      left: auto;
-      transform: none;
+      position: absolute;
+      left: 50%;
+      bottom: 32px;
+      transform: translateX(-50%);
       background: rgba(255, 255, 255, 0.96);
       border: 1px solid #f3f4f6;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
       border-radius: 16px;
       padding: 18px 20px;
       width: min(720px, 90vw);
-      margin-top: 28px;
       display: none;
       gap: 12px;
       align-items: flex-start;
-      z-index: 10;
+      z-index: 20;
       text-align: left;
       animation: fadeInUp 0.4s ease;
       align-self: center;
+      pointer-events: none;
     }
 
     .hero-guide.show {
       display: flex;
+    }
+
+    .hero-guide-icon,
+    .hero-guide-body {
+      pointer-events: none;
     }
 
     .hero-guide-icon {
@@ -534,6 +539,7 @@
       font-size: 18px;
       color: #c27803;
       flex-shrink: 0;
+      pointer-events: none;
     }
 
     .hero-guide-body {
@@ -560,6 +566,7 @@
       border-radius: 8px;
       transition: background 0.2s, color 0.2s;
       align-self: flex-start;
+      pointer-events: auto;
     }
 
     .hero-guide-close:hover,
@@ -1638,7 +1645,13 @@
 
     const padTime = (value) => String(value).padStart(2, "0");
 
+    const ddayLabel = document.getElementById("dday-label");
+    const ddayNumber = document.getElementById("dday");
+    const ddayTime = document.getElementById("dday-time");
+
     const updateDDay = () => {
+      if (!ddayLabel || !ddayNumber || !ddayTime) return;
+
       const now = getKstNow();
       const { examDate, academicYear } = getExamDate(now);
 
@@ -1649,9 +1662,9 @@
       const minutes = Math.floor((totalSeconds % 3600) / 60);
       const seconds = totalSeconds % 60;
 
-      document.getElementById("dday-label").textContent = `📅 ${academicYear}학년도 수능`;
-      document.getElementById("dday").textContent = diffMs > 0 ? `D-${days}` : "D-DAY";
-      document.getElementById("dday-time").textContent = `${padTime(hours)}:${padTime(minutes)}:${padTime(seconds)}`;
+      ddayLabel.textContent = `📅 ${academicYear}학년도 수능`;
+      ddayNumber.textContent = diffMs > 0 ? `D-${days}` : "D-DAY";
+      ddayTime.textContent = `${padTime(hours)}:${padTime(minutes)}:${padTime(seconds)}`;
 
       const nextTick = 1000 - now.getMilliseconds();
       setTimeout(updateDDay, nextTick);
