@@ -2040,8 +2040,17 @@ popup.addEventListener("click", e => {
       return count;
     };
 
-    const getMatchScore = (tokens, haystack) => tokens
-      .reduce((score, token) => score + countTokenMatches(token, haystack), 0);
+    const isInitialToken = (token = "") => Boolean(token) && token
+      .split("")
+      .every(char => CHOSUNG_LIST.includes(char));
+
+    const toTokenEntries = tokens => tokens.map(value => ({
+      value,
+      isInitial: isInitialToken(value)
+    }));
+
+    const getMatchScore = (tokenEntries, haystack) => tokenEntries
+      .reduce((score, token) => score + countTokenMatches(token.value, haystack), 0);
 
     const renderResults = query => {
       const trimmed = query.trim();
@@ -2102,6 +2111,9 @@ popup.addEventListener("click", e => {
 
 
       const tokens = buildTokens(trimmed.split(/\s+/));
+      const tokenEntries = toTokenEntries(tokens);
+      const syllableTokens = tokenEntries.filter(token => !token.isInitial);
+      const initialTokens = tokenEntries.filter(token => token.isInitial);
 
       if (!tokens.length) {
         searchResults.innerHTML = `<div class="search-result-item" tabindex="0">검색어를 조금 더 구체적으로 입력해주세요.</div>`;
@@ -2113,12 +2125,22 @@ popup.addEventListener("click", e => {
         .map((item, index) => {
           const haystack = buildHaystack(item);
           const subjectTokens = buildSubjectTokenSet(item.subject);
-          const baseScore = getMatchScore(tokens, haystack);
-          const subjectScore = tokens.reduce((score, token) => subjectTokens.has(token) ? score + token.length * 3 : score, 0);
-          return { item, score: baseScore + subjectScore, index };
+
+          const syllableScore = getMatchScore(syllableTokens, haystack);
+          const initialScore = getMatchScore(initialTokens, haystack);
+
+          const subjectScore = tokenEntries.reduce((score, token) => {
+            if (!subjectTokens.has(token.value)) return score;
+            const base = token.value.length * 3;
+            return score + (token.isInitial ? Math.max(1, Math.floor(base * 0.5)) : base);
+          }, 0);
+
+          const totalScore = syllableScore * 3 + initialScore + subjectScore;
+
+          return { item, score: totalScore, syllableScore, initialScore, index };
         })
         .filter(result => result.score > 0)
-        .sort((a, b) => b.score - a.score || a.index - b.index)
+        .sort((a, b) => b.syllableScore - a.syllableScore || b.score - a.score || a.index - b.index)
         .slice(0, 10)
         .map(result => result.item);
 
