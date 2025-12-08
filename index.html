@@ -956,6 +956,7 @@
         border-radius: 10px;
         padding: 4px 10px;
         gap: 4px;
+        flex: 0 0 auto;
       }
 
       .search-box input {
@@ -1303,7 +1304,7 @@
         </div>
         <div class="dday-box" aria-live="polite">
           <div>
-            <div class="dday-label">📅 2027학년도 수능</div>
+            <div class="dday-label" id="dday-label">📅 2027학년도 수능</div>
             <div class="dday-time" id="dday-time">--:--:--</div>
           </div>
           <div class="dday-number" id="dday">D-000</div>
@@ -1461,11 +1462,17 @@
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
 
+  const getKstNow = () => {
+    const now = new Date();
+    const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
+    return new Date(utcTime + 9 * 60 * 60 * 1000);
+  };
+
   async function updateVisitCounter() {
-    const today = new Date();
+    const today = getKstNow();
 
     // 날짜 키 생성
-    const todayKey = today.toISOString().slice(0, 10); // 2025-12-08
+    const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
     const monthKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`; // 2025-12
 
     const visitsRef = ref(db, "visits");
@@ -1480,7 +1487,7 @@
       ? data.today + 1
       : 1;
 
-    // 한 달 누적 — 월이 바뀌면 0으로 초기화
+    // 한 달 누적 — 월이 바뀌면 0으로 초기화 (해당 월의 첫날부터 집계)
     let monthCount = data.lastUpdateMonth === monthKey
       ? data.month + 1
       : 1;
@@ -1499,7 +1506,19 @@
     document.getElementById("visit-month-label").textContent = `${monthKey} 누적 방문`;
   }
 
+  const scheduleVisitRefresh = () => {
+    const now = getKstNow();
+    const remainingSeconds = ((24 - now.getHours()) * 3600) - (now.getMinutes() * 60) - now.getSeconds();
+    const delay = (remainingSeconds * 1000) - now.getMilliseconds();
+
+    setTimeout(() => {
+      updateVisitCounter();
+      scheduleVisitRefresh();
+    }, Math.max(1000, delay));
+  };
+
   updateVisitCounter();
+  scheduleVisitRefresh();
 </script>
 <script>
     
@@ -1564,18 +1583,46 @@
       }
     };
 
-function updateDDay() {
-  const today = new Date();
-  const examDate = new Date("2026-11-19T00:00:00+09:00");
+    const KST_OFFSET = 9 * 60 * 60 * 1000;
 
-  today.setHours(0, 0, 0, 0);
-  examDate.setHours(0, 0, 0, 0);
+    const getKstNow = () => {
+      const now = new Date();
+      const utcTime = now.getTime() + now.getTimezoneOffset() * 60000;
+      return new Date(utcTime + KST_OFFSET);
+    };
 
-  const diff = examDate.getTime() - today.getTime();
-  const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+    const getExamDate = (baseDate = getKstNow()) => {
+      let year = baseDate.getFullYear();
+      let examDate = new Date(Date.UTC(year, 10, 18, 15, 0, 0)); // 11월 19일 00:00 KST
 
-  document.getElementById("dday").textContent = `D-${days}`;
-}
+      if (baseDate > examDate) {
+        year += 1;
+        examDate = new Date(Date.UTC(year, 10, 18, 15, 0, 0));
+      }
+
+      return { examDate, academicYear: examDate.getFullYear() + 1 };
+    };
+
+    const padTime = (value) => String(value).padStart(2, "0");
+
+    const updateDDay = () => {
+      const now = getKstNow();
+      const { examDate, academicYear } = getExamDate(now);
+
+      const diffMs = Math.max(0, examDate.getTime() - now.getTime());
+      const totalSeconds = Math.floor(diffMs / 1000);
+      const days = Math.ceil(diffMs / 86400000);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      document.getElementById("dday-label").textContent = `📅 ${academicYear}학년도 수능`;
+      document.getElementById("dday").textContent = diffMs > 0 ? `D-${days}` : "D-DAY";
+      document.getElementById("dday-time").textContent = `${padTime(hours)}:${padTime(minutes)}:${padTime(seconds)}`;
+
+      const nextTick = 1000 - now.getMilliseconds();
+      setTimeout(updateDDay, nextTick);
+    };
 
      
 
@@ -2057,7 +2104,6 @@ function updateDDay() {
     }
 
     updateDDay();
-    setInterval(updateDDay, 1000);
   </script>
 </body>
 </html>
