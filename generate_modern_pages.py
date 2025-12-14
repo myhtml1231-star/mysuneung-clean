@@ -73,6 +73,16 @@ def parse_file(path: Path):
             diff_text = clean_html(box_match.group('diff'))
             diff = diff_text.split(':', 1)[1].strip() if ':' in diff_text else diff_text
             cut_html = box_match.group('cut')
+            # Skip known placeholder cards that appear when source HTML is missing
+            placeholder_phrases = [
+                "데이터 준비중",
+                "원본 HTML 대기",
+                "기존 등급컷 HTML을 찾는 중",
+                "소스가 확보되면 자동으로 업데이트",
+                "관리자에게 원본 파일을 추가",
+            ]
+            if any(phrase in cut_html for phrase in placeholder_phrases):
+                continue
             lines = [l for l in br_split_re.split(cut_html) if l.strip()]
             rows = []
             for line in lines:
