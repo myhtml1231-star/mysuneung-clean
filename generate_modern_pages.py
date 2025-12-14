@@ -24,12 +24,13 @@ def parse_grade_line(line: str):
     return {'grade': grade, 'desc': desc, 'value': value}
 
 def strip_conflicts(text: str) -> str:
-    """Remove git conflict markers, keeping the upper (HEAD) section.
+    """Remove git conflict markers, keeping the lower (main) section.
 
     Some legacy HTML files were committed with unresolved merge conflict
-    markers (<<<<<<< ======= >>>>>>>). The expected resolution is to keep the
-    first branch. This helper strips the markers and preserves only the upper
-    choice so the parser can continue normally.
+    markers (<<<<<<< ======= >>>>>>>). The expected resolution for these
+    assets is to discard the codex-side changes and keep the main branch's CSS
+    that appears after the ======= divider. This helper strips the markers and
+    preserves only that lower choice so the parser can continue normally.
     """
 
     result = []
@@ -47,9 +48,9 @@ def strip_conflicts(text: str) -> str:
             result.append(text[cursor:])
             break
 
-        # keep content before the conflict and the upper branch only
+        # keep content before the conflict and the lower (main) branch only
         result.append(text[cursor:start])
-        result.append(text[start + len("<<<<<<<"): mid])
+        result.append(text[mid + len("======="): end])
         cursor = end + len(">>>>>>>")
 
     return "".join(result)
