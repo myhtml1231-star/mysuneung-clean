@@ -47,8 +47,13 @@ def parse_file(path: Path):
                 parsed = parse_grade_line(line)
                 if parsed:
                     rows.append(parsed)
+            # Skip placeholder cards that carry no usable grade rows
+            if not rows:
+                continue
             cards.append({'title': sub_title, 'difficulty': diff, 'grades': rows})
-        subjects.append({'name': subject_name, 'cards': cards})
+        # Only keep subjects that yielded real cards
+        if cards:
+            subjects.append({'name': subject_name, 'cards': cards})
     return heading, subjects
 
 def badge_class(grade: str):
