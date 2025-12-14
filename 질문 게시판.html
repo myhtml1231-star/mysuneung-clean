@@ -1,209 +1,743 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>질문 게시판</title>
-
-<style>
-    .back-btn {
-    display: inline-block;
-    padding: 12px 22px;
-    background: #e7e7e7;
-    border-radius: 10px;
-    color: #333 !important;
-    text-decoration: none !important;
-    font-size: 16px;
-    font-weight: 600;
-    border: 1px solid #d4d4d4;
-    margin-top: 30px;
-    transition: 0.2s;
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>질문 & 답변</title>
+  <style>
+header img {
+  width: 40px;   /* 원하는 크기로 조절 가능 */
+  height: 40px;
+  object-fit: contain;  /* 이미지 비율 유지 */
+  margin-bottom: 5px;
 }
 
-.back-btn:hover {
-    background: #F4B733;
-    color: #fff;
-}
+       .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #444;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+
+      .back-btn:hover {
+      background: #e4e4e4;
+      transform: translateY(-2px);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
-        font-family: "Pretendard", sans-serif;
-        background: #f5f7fb;
-        margin: 0;
-        padding: 0;
+      font-family: "Inter", "Noto Sans KR", sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background: #F4B733;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
     }
 
     .container {
-        width: 820px;
-        min-width: 820px;
-        height: 800px;
-        margin: 30px auto;
-        background: #ffffff;
-        padding: 35px 45px;
-        border-radius: 20px;
-        box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
-    /* 제목 + 로고 정렬 */
-    .header {
-        display: flex;
-        align-items: center;       /* ⬅ 로고와 텍스트를 세로로 맞춤 */
-        justify-content: center;   /* ⬅ 전체를 가운데로 */
-        gap: 12px;                 /* ⬅ 간격 */
-        margin-bottom: 25px;
-        text-align: center;
-    }
-
-    .header img {
-        height: 40px;     /* 로고 크기 고정 */
-        width: auto;
-        display: block;
-    }
-
-    .header h2 {
-        font-size: 26px;
-        font-weight: 800;
-        margin: 0;
-        line-height: 1;
-    }
-
-    /* 검색줄 */
+    /* Top Bar */
     .top-bar {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
     }
 
-    .search-box {
-        flex: 1;
-        padding: 15px;
-        border-radius: 10px;
-        border: 1px solid #dcdcdc;
-        background: #fafafa;
-        font-size: 15px;
-        outline: none;
+    .top-bar h2 {
+      font-size: 20px;
+      font-weight: bold;
     }
 
-    .search-btn {
-        padding: 14px 18px;
-        background: #000;
-        border-radius: 12px;
-        border: none;
-        font-size: 15px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
+    .btn-ask {
+      background: #F4B733;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s;
     }
 
-    .ask-btn {
-        margin-top: 18px;
-        display: block;
-        width: fit-content;
-        margin-left: auto;
-        padding: 14px 20px;
-        background: #f3f4f6;
-        border-radius: 12px;
-        border: 1px solid #e2e2e2;
-        text-decoration: none;
-        color: #333;
-        font-weight: 600;
-        white-space: nowrap;
-        transition: 0.2s;
+    .btn-ask:hover {
+      background: #e5a726;
     }
 
-    .list-wrap {
-        max-height: 500px;
-        overflow-y: auto;
-        padding-right: 4px;
+    /* Questions List */
+    .section {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
     }
 
-    .q-box {
-        padding: 18px 15px;
-        border-bottom: 1px solid #e4e4e4;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .notice {
+      margin-bottom: 12px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #fffef5;
+      border: 1px solid #ffe6a7;
+      color: #5a4a1f;
+      font-size: 13px;
+      line-height: 1.5;
     }
 
-    .q-title {
-        font-size: 15px;
-        font-weight: 600;
+    .question-item {
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s;
     }
 
-    .q-meta {
-        font-size: 13px;
-        color: #777;
+    .question-item:hover {
+      background: #fffef5;
     }
-</style>
 
+    .question-item:last-child {
+      border-bottom: none;
+    }
+
+    .question-left {
+      flex: 1;
+    }
+
+    .question-title {
+      font-weight: bold;
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 6px;
+      word-break: break-word;
+    }
+
+    .question-title.private {
+      color: #999;
+      font-style: italic;
+    }
+
+    .question-meta {
+      display: flex;
+      gap: 15px;
+      font-size: 12px;
+      color: #999;
+    }
+
+    .question-author {
+      color: #666;
+    }
+
+    .question-right {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-left: 20px;
+      flex-shrink: 0;
+    }
+
+    .answer-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .answer-badge.no {
+      background: #ffebee;
+      color: #c62828;
+    }
+
+    .answer-badge.yes {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    .privacy-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: bold;
+      background: #f3e5f5;
+      color: #6a1b9a;
+      white-space: nowrap;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #ccc;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      width: 100%;
+      max-width: 700px;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .modal-close {
+      float: right;
+      font-size: 24px;
+      cursor: pointer;
+      color: #999;
+      border: none;
+      background: none;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+    }
+
+    .modal-close:hover {
+      color: #333;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      word-break: break-word;
+    }
+
+    .modal-meta {
+      display: flex;
+      gap: 15px;
+      font-size: 12px;
+      color: #999;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .modal-body {
+      font-size: 14px;
+      color: #4b5563;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+
+    .modal-privacy-check {
+      background: #f3e5f5;
+      padding: 20px;
+      border-radius: 4px;
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .password-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .password-form input {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .password-form input:focus {
+      outline: none;
+      border-color: #F4B733;
+      background: #fffef5;
+    }
+
+    .btn {
+      background: #F4B733;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #e5a726;
+    }
+
+    /* Ask Form Modal */
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 14px;
+      color: #333;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #F4B733;
+      background: #fffef5;
+    }
+
+    .modal-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn-cancel {
+      background: #eee;
+      color: #333;
+      flex: 1;
+    }
+
+    .btn-cancel:hover {
+      background: #ddd;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 13px;
+      z-index: 2000;
+    }
+
+    @media (max-width: 768px) {
+      .question-right {
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 10px;
+      }
+
+      .modal-content {
+        max-width: 95%;
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+     <img src="Images/logo.png" alt="logo">
+    <h1>질문 & 답변</h1>
+  </header>
 
-<div class="container">
-
-    <!-- ⭐ 로고 + 제목 정상 정렬 -->
-    <div class="header">
-        <img src="Images/logo.png" alt="logo">
-        <h2>질문 게시판</h2>
-    </div>
-
+  <div class="container">
+    <!-- Top Bar -->
     <div class="top-bar">
-        <input type="text" id="searchInput" class="search-box" placeholder="질문 검색하기">
-        <button class="search-btn" onclick="searchQuestion()">검색</button>
+      <h2>질문 목록</h2>
+      <button class="btn-ask" onclick="openAskModal()">질문하기</button>
     </div>
 
-    <div class="list-wrap" id="questionList"></div>
+    <div class="notice">
+      로그인 없이 바로 질문할 수 있어요. 비공개로 올릴 때만 비밀번호를 정해 두면 되고,
+      닉네임은 선택사항입니다.
+    </div>
 
-    <a href="질문하기.html" class="ask-btn">질문하기</a>
-    <a href="index.html" class="back-btn">← 이전 화면으로 돌아가기</a>
+    <!-- Questions List -->
+    <div class="section">
+      <div id="questionsList"></div>
+    </div>
+  </div>
 
+  <!-- Question Detail Modal -->
+  <div id="detailModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeDetailModal()">×</button>
+      <div class="modal-title" id="modalTitle"></div>
+      <div class="modal-meta">
+        <span id="modalAuthor"></span>
+        <span id="modalDate"></span>
+      </div>
+      <div id="contentSection">
+        <div class="modal-body" id="modalBody"></div>
+        <div id="answerSection"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ask Modal -->
+  <div id="askModal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeAskModal()">×</button>
+      <h2 style="margin-bottom: 20px;">질문하기</h2>
+      <form id="askForm" onsubmit="handleAsk(event)">
+        <div class="form-group">
+          <label>제목 *</label>
+          <input type="text" id="title" placeholder="제목을 입력하세요" required />
+        </div>
+
+        <div class="form-group">
+          <label>닉네임 (선택사항)</label>
+          <input type="text" id="author" placeholder="닉네임 (선택사항)" />
+        </div>
+
+        <div class="form-group">
+          <label>공개 설정 *</label>
+          <select id="privacy" onchange="togglePasswordField()" required>
+            <option value="public">공개</option>
+            <option value="private">비공개</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="passwordGroup" style="display: none;">
+          <label>비밀번호 (비공개일 때만 필수) *</label>
+          <input type="password" id="password" placeholder="비밀번호 입력 (4자 이상)" />
+        </div>
+
+        <div class="form-group">
+          <label>질문 내용 *</label>
+          <textarea id="content" placeholder="질문 내용을 입력하세요" required></textarea>
+        </div>
+
+        <div class="modal-buttons">
+          <button type="button" class="btn btn-cancel" onclick="closeAskModal()">취소</button>
+          <button type="submit" class="btn" style="flex: 1;">등록하기</button>
+
+        </div>
+      </form>
+    </div>
+  
 </div>
+  <div style="text-align: center; margin: 40px 0;">
+    <a href="index.html" class="back-btn">← 이전 화면으로 돌아가기</a>
+  </div>
+  
 
-
+<!-- UI 보조 스크립트 (Firestore 아님) -->
 <script>
-function loadQuestions(keyword = "") {
-    let list = JSON.parse(localStorage.getItem("questions") || "[]");
+    let currentQuestionId = null;
 
-    list.sort((a, b) => new Date(b.date) - new Date(a.date));
+    function togglePasswordField() {
+      const privacy = document.getElementById('privacy').value;
+      const passwordGroup = document.getElementById('passwordGroup');
+      const passwordInput = document.getElementById('password');
 
-    if (keyword.trim() !== "") {
-        list = list.filter(q => q.title.includes(keyword));
+      if (privacy === 'private') {
+        passwordGroup.style.display = 'block';
+        passwordInput.required = true;
+      } else {
+        passwordGroup.style.display = 'none';
+        passwordInput.required = false;
+      }
     }
 
-    const wrap = document.getElementById("questionList");
-    wrap.innerHTML = "";
-
-    if (list.length === 0) {
-        wrap.innerHTML = "<div style='padding:20px; text-align:center; color:#777;'>등록된 질문이 없습니다.</div>";
-        return;
+    function closeDetailModal() {
+      document.getElementById('detailModal').classList.remove('active');
+      currentQuestionId = null;
     }
 
-    list.forEach(q => {
-        const box = document.createElement("div");
-        box.className = "q-box";
+    function openAskModal() {
+      document.getElementById('askModal').classList.add('active');
+      document.getElementById('title').focus();
+    }
 
-        box.innerHTML = `
-            <div class="q-title">${q.private ? "[비공개]" : "[공개]"} ${q.title}</div>
-            <div class="q-meta">${q.date}</div>
-        `;
+    function closeAskModal() {
+      document.getElementById('askModal').classList.remove('active');
+      document.getElementById('askForm').reset();
+      document.getElementById('passwordGroup').style.display = 'none';
+    }
 
-        wrap.appendChild(box);
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.textContent = message;
+      document.body.appendChild(toast);
+      setTimeout(() => toast.remove(), 2000);
+    }
+
+    // 모달 바깥 클릭 시 닫기
+    document.getElementById('detailModal').addEventListener('click', (e) => {
+      if (e.target.id === 'detailModal') closeDetailModal();
     });
-}
 
-function searchQuestion() {
-    const keyword = document.getElementById("searchInput").value;
-    loadQuestions(keyword);
-}
-
-loadQuestions();
-
-document.getElementById("searchInput").addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        searchQuestion();
-    }
-});
+    // 질문 작성 모달은 바깥 영역을 클릭해도 닫히지 않도록 처리
+    // (사용자가 실수로 닫히는 것을 방지하고, 우측 상단 X 버튼으로만 종료)
 </script>
 
+<!-- Firestore 연동 스크립트 -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import {
+    getFirestore,
+    collection,
+    addDoc,
+    getDoc,
+    doc,
+    onSnapshot,
+    serverTimestamp
+  } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
+  const firebaseConfig = {
+    apiKey: "AIzaSyCeEo-XbOdIJSqYRTbA4re3Ot1xWeEjfW0",
+    authDomain: "mysuneung.firebaseapp.com",
+    projectId: "mysuneung",
+    storageBucket: "mysuneung.firebasestorage.app",
+    messagingSenderId: "1047770825934",
+    appId: "1:1047770825934:web:cf4afe0e4331422e043c9f",
+    measurementId: "G-B7Q0KVYYH5"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  console.log("🔥 QnA Firestore 연결 완료");
+
+  // [1] Firestore에서 질문 목록 실시간 불러오기
+  const inquiriesRef = collection(db, "inquiries");
+
+  function renderQuestionsFromSnapshot(snap) {
+    const list = document.getElementById("questionsList");
+    let html = "";
+    const questions = [];
+
+    snap.forEach((docu) => {
+      const q = { id: docu.id, ...docu.data() };
+      questions.push(q);
+
+      html += `
+        <div class="question-item" onclick="openDetailModal('${q.id}')">
+          <div class="question-left">
+            <div class="question-title ${q.privacy === 'private' ? 'private' : ''}">
+              ${q.privacy === 'private' ? '🔒 비공개 질문' : q.title}
+            </div>
+            <div class="question-meta">
+              <span class="question-author">${q.author || '익명'}</span>
+              <span>${q.date}</span>
+            </div>
+          </div>
+          <div class="question-right">
+            <span class="answer-badge ${q.answer ? 'yes' : 'no'}">
+              ${q.answer ? '✓ 답변완료' : '⏳ 답변대기'}
+            </span>
+            ${q.privacy === 'private' ? '<span class="privacy-badge">[비공개]</span>' : ''}
+          </div>
+        </div>
+      `;
+    });
+
+    window.__questions = questions;
+    list.innerHTML = html || '<div class="empty-state">아직 질문이 없습니다.</div>';
+  }
+
+  onSnapshot(
+    inquiriesRef,
+    (snap) => renderQuestionsFromSnapshot(snap),
+    (err) => {
+      console.error("질문 목록 불러오기 실패", err);
+      document.getElementById("questionsList").innerHTML = '<div class="empty-state">질문을 불러오지 못했습니다.</div>';
+      window.showToast("질문 목록을 불러오는 중 오류가 발생했습니다");
+    }
+  );
+
+  // [2] 질문 상세 보기
+  window.openDetailModal = async function(id) {
+    const ref = doc(db, "inquiries", id);
+    const snap = await getDoc(ref);
+    if (!snap.exists()) return;
+
+    const q = { id, ...snap.data() };
+    window.__currentQuestion = q;
+    window.currentQuestionId = id;
+
+    document.getElementById("modalTitle").textContent = q.title;
+    document.getElementById("modalAuthor").textContent = `작성자: ${q.author || '익명'}`;
+    document.getElementById("modalDate").textContent = q.date;
+
+    if (q.privacy === "private") {
+      document.getElementById("contentSection").innerHTML = `
+        <div class="modal-privacy-check">
+          <div style="margin-bottom: 15px; color: #6a1b9a;">이 질문은 비공개 질문입니다</div>
+          <div class="password-form">
+            <input type="password" id="privatePassword" placeholder="비밀번호 입력" />
+            <button type="button" class="btn" onclick="verifyPassword()">확인</button>
+          </div>
+        </div>
+      `;
+    } else {
+      document.getElementById("contentSection").innerHTML = `
+        <div class="modal-body">${q.content}</div>
+        <div id="answerSection"></div>
+      `;
+
+      document.getElementById("answerSection").innerHTML =
+        q.answer
+          ? `<div style="background:#e8f5e9; padding:15px; border-radius:4px; border-left:3px solid #4caf50;">
+               <div style="font-weight:bold; color:#2e7d32; margin-bottom:8px;">관리자 답변</div>
+               <div style="white-space:pre-wrap; font-size:14px;">${q.answer}</div>
+             </div>`
+          : `<div style="color:#999; font-size:13px;">아직 답변이 없습니다.</div>`;
+    }
+
+    document.getElementById("detailModal").classList.add("active");
+  };
+
+  // [3] 비공개 질문 비밀번호 확인
+  window.verifyPassword = function () {
+    const inputPw = document.getElementById("privatePassword").value.trim();
+    const q = window.__currentQuestion;
+    if (!q) return;
+
+    if (inputPw !== q.password) {
+      window.showToast("비밀번호가 틀렸습니다");
+      return;
+    }
+
+    document.getElementById("contentSection").innerHTML = `
+      <div class="modal-body">${q.content}</div>
+      <div id="answerSection"></div>
+    `;
+
+    document.getElementById("answerSection").innerHTML =
+      q.answer
+        ? `<div style="background:#e8f5e9; padding:15px; border-radius:4px; border-left:3px solid #4caf50;">
+             <div style="font-weight:bold; color:#2e7d32; margin-bottom:8px;">관리자 답변</div>
+             <div style="white-space:pre-wrap; font-size:14px;">${q.answer}</div>
+           </div>`
+        : `<div style="color:#999; font-size:13px;">아직 답변이 없습니다.</div>`;
+  };
+
+  // [4] 질문 등록 (Firestore에 저장)
+  let isSubmitting = false;
+
+  window.handleAsk = async function (e) {
+    e.preventDefault();
+
+    if (isSubmitting) return;
+
+    const title = document.getElementById('title').value.trim();
+    const author = document.getElementById('author').value.trim() || '익명';
+    const privacy = document.getElementById('privacy').value;
+    const content = document.getElementById('content').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (!title || !content) {
+      window.showToast("제목과 내용을 입력하세요");
+      return;
+    }
+
+    if (privacy === 'private' && password.length < 4) {
+      window.showToast('비밀번호는 4자 이상이어야 합니다');
+      return;
+    }
+
+    isSubmitting = true;
+
+    try {
+      await addDoc(inquiriesRef, {
+        title,
+        author,
+        content,
+        privacy,
+        password: privacy === "private" ? password : "",
+        date: new Date().toLocaleDateString("ko-KR"),
+        createdAt: serverTimestamp(),
+        answer: null,
+        answered: false,
+        isQuestion: true
+      });
+
+      window.showToast("질문이 등록되었습니다");
+      closeAskModal();
+    } catch (err) {
+      console.error("질문 등록 실패", err);
+      window.showToast("질문 등록 중 오류가 발생했습니다");
+    } finally {
+      isSubmitting = false;
+    }
+  };
+</script>
+
+<script type="text/javascript" src="https://pl28253455.effectivegatecpm.com/66/05/22/6605223270356af1c1fb471380556d80.js" ></script>
 </body>
 </html>

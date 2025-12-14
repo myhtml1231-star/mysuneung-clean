@@ -1,176 +1,227 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>자주 묻는 질문</title>
 
 <style>
-      .back-btn {
-    display: inline-block;
-    padding: 12px 22px;
-    background: #e7e7e7;
-    border-radius: 10px;
-    color: #333 !important;
-    text-decoration: none !important;
+
+
+  .faq-logo {
+    width: 32px;  /* 크기 조절 가능 */
+    height: 32px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 0 6px;
+    opacity: 0.9; /* 부드럽게 보이도록 */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-bottom: 35px;
+    color: #333;
+  }
+
+  .faq-item {
+    background: white;
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    border: 1px solid #eee;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .faq-question {
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+  }
+
+  .caret {
+    font-size: 18px;
+    transition: transform 0.2s;
+  }
+
+  .faq-item.open .caret {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    margin-top: 14px;
     font-size: 16px;
-    font-weight: 600;
-    border: 1px solid #d4d4d4;
+    color: #555;
+    line-height: 1.6;
+    display: none;
+  }
+
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+
+  /* 질문게시판 이동 버튼 */
+  .move-btn {
+    display: inline-block;
     margin-top: 30px;
+    padding: 14px 26px;
+    background: #F4B733;
+    color: white;
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 12px;
+    text-decoration: none;
     transition: 0.2s;
-}
-    body {
-        margin: 0;
-        font-family: "Noto Sans KR", sans-serif;
-        background: #f5f7fb;
-    }
+  }
 
-    /* 중앙 컨테이너 */
-    .container {
-        max-width: 900px;
-        margin: 50px auto;
-        padding: 20px;
-    }
+  .move-btn:hover {
+    background: #e0a325;
+    transform: translateY(-2px);
+  }
 
-    /* ===== 로고 + 제목 ===== */
-    .title-wrap {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        margin-bottom: 20px;
-        cursor: pointer;
-    }
+  /* Back 버튼 */
+  .back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 26px;
+    font-size: 16px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    color: #444;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+  }
 
-    .title-wrap .logo {
-        width: 45px;
-        height: 45px;
-        object-fit: contain;
-    }
-
-    .title-wrap h2 {
-        font-size: 26px;
-        font-weight: 800;
-        margin: 0;
-    }
-
-    /* 타이틀 */
-    .page-title {
-        font-size: 32px;
-        font-weight: 800;
-        text-align: center;
-        margin: 40px 0;
-    }
-
-    /* FAQ 카드 */
-    .faq-card {
-        background: #fff;
-        border-radius: 14px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        padding: 20px 25px;
-        margin-bottom: 15px;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-
-    .faq-card:hover {
-        background: #f0efff;
-    }
-
-    /* 질문(제목) */
-    .faq-question {
-        font-size: 18px;
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* 답변 */
-    .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        line-height: 1.7;
-        font-size: 15px;
-        margin-top: 10px;
-        color: #444;
-        transition: max-height 0.3s ease;
-    }
-
-    /* 펼쳐졌을 때 */
-    .faq-card.active .faq-answer {
-        max-height: 500px;
-    }
-
-    /* 화살표 */
-    .arrow {
-        font-size: 18px;
-        transition: 0.3s;
-    }
-
-    .faq-card.active .arrow {
-        transform: rotate(180deg);
-    }
-
+  .back-btn:hover {
+    background: #e4e4e4;
+    transform: translateY(-2px);
+  }
 </style>
 </head>
 
 <body>
-
 <div class="container">
+<h1>
+  
+  <img src="Images/logo.png" class="faq-logo" alt="logo">
+  자주 묻는 질문
+</h1>
 
-    <!-- 로고 + 텍스트 (가로 정렬) -->
-    <div class="title-wrap" onclick="location.href='index.html'">
-        <img src="Images/logo.png" class="logo">
-        <h2>질문하기</h2>
+  <!-- FAQ 항목들... (그대로 유지) -->
+
+  <!-- FAQ 1 -->
+  <div class="faq-item">
+    <div class="faq-question">
+      자료는 어디서 가져온 건가요?
+      <span class="caret">▾</span>
     </div>
-
-    <h1 class="page-title">자주 묻는 질문 (FAQ)</h1>
-
-    <!-- FAQ 1 -->
-    <div class="faq-card">
-        <div class="faq-question">
-            회원가입 없이도 이용할 수 있나요?
-            <span class="arrow">▼</span>
-        </div>
-        <div class="faq-answer">
-            네, 기본적인 기능은 회원가입 없이도 이용할 수 있습니다. 다만 게시글 작성 등 일부 기능은 회원가입이 필요합니다.
-        </div>
+    <div class="faq-answer">
+      모든 자료는 교육청/평가원에서 공개한 공식 기출문제를 가져왔으며<br>
+      해설은 EBSi 및 각 교육청에서 제공한 자료를 기반으로 구성되었습니다.
     </div>
+  </div>
 
-    <!-- FAQ 2 -->
-    <div class="faq-card">
-        <div class="faq-question">
-            게시글은 어떻게 작성하나요?
-            <span class="arrow">▼</span>
-        </div>
-        <div class="faq-answer">
-            질문 게시판 페이지에서 하단의 ‘질문하기’ 버튼을 눌러 작성 페이지로 이동할 수 있습니다.
-        </div>
+  <!-- FAQ 2 -->
+  <div class="faq-item">
+    <div class="faq-question">
+      다운로드가 안됨 / 페이지가 안 열림 / 잘못된 정보 / 기능 고장 등 문제가 발생했습니다.
+      <span class="caret">▾</span>
     </div>
+    <div class="faq-answer">
+      다운로드 문제는 우선 브라우저 캐시 삭제 또는 다른 브라우저 사용을 추천드립니다.<br><br>
+      그 외 다른 문제들은 모두 '오류 신고' 메뉴를 통해 제보해주세요.
+    </div>
+  </div>
 
-    <!-- FAQ 3 -->
-    <div class="faq-card">
-        <div class="faq-question">
-            게시글은 언제 승인되나요?
-            <span class="arrow">▼</span>
-        </div>
-        <div class="faq-answer">
-            보통 1~5분 이내에 자동 승인됩니다. 간혹 변동이 있을 수 있습니다.
-        </div>
+  <!-- FAQ 3 -->
+  <div class="faq-item">
+    <div class="faq-question">
+      난이도 측정 기준이 어떻게 되나요?
+      <span class="caret">▾</span>
     </div>
-    <a href="index.html" class="back-btn">← 이전 화면으로 돌아가기</a>
+    <div class="faq-answer">
+      원점수 기준, 표준점수, 체감 난이도를 종합하여 측정했습니다.<br>
+      EBSi, 메가스터디, 종로학원, 대성마이맥, 나무위키 등 여러 사이트를 비교하여<br>
+      가장 근접한 난이도 기준을 사용했습니다.
+    </div>
+  </div>
+
+  <!-- FAQ 4 -->
+  <div class="faq-item">
+    <div class="faq-question">
+      오류 신고 보상 이벤트에 대해 자세히 알고 싶습니다.
+      <span class="caret">▾</span>
+    </div>
+    <div class="faq-answer">
+      메인 화면의 '오류 신고' 버튼을 통해 누구나 제보할 수 있습니다.<br><br>
+      제보 시 닉네임을 입력해주셔야 하며, 3회차 제보 시<br>
+      이메일을 함께 적어주시면 기프트콘을 발송해드립니다.
+    </div>
+  </div>
+  <!-- FAQ 4 -->
+  <div class="faq-item">
+    <div class="faq-question">
+      검색오류도 신고해도 되나요?
+      <span class="caret">▾</span>
+    </div>
+    <div class="faq-answer">
+      예를 들어 고등학교 9학년을 쳐도 표시되는 경우가 있습니다<br><br>
+      이것은 오류가 아닌 키워드 중심으로 검색이 쉽도록 만든 <br>
+      저의 의도입니다. 따라서 오류가 아닌점 양해부탁드립니다.
+    </div>
+  </div>
+
+
+  <!-- FAQ 5 -->
+  <div class="faq-item">
+    <div class="faq-question">
+      자주 묻는 질문에 궁금한 내용이 없습니다.
+      <span class="caret">▾</span>
+    </div>
+    <div class="faq-answer">
+     하단 노란 버튼을 통해 질문게시판으로 이동하신 뒤<br>
+      직접 질문을 남겨주시면 빠르게 답변해드리겠습니다!
+    </div>
+  </div>
+
+
+
+  <!-- 🔥 추가된 질문게시판 이동 버튼 -->
+  <a href="질문 게시판.html" class="move-btn">질문게시판으로 이동</a>
+
+  <!-- 기존 Back 버튼 -->
+  <a href="index.html" class="back-btn">← 이전 화면으로 돌아가기</a>
 
 </div>
 
 <script>
-    // FAQ 클릭 이벤트
-    const cards = document.querySelectorAll(".faq-card");
-
-    cards.forEach(card => {
-        card.addEventListener("click", () => {
-            card.classList.toggle("active");
-        });
+  document.querySelectorAll(".faq-item").forEach(item => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("open");
     });
+  });
 </script>
 
+<script type="text/javascript" src="https://pl28253455.effectivegatecpm.com/66/05/22/6605223270356af1c1fb471380556d80.js" ></script>
 </body>
 </html>
