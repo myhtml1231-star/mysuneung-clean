@@ -23,8 +23,40 @@ def parse_grade_line(line: str):
         desc = ''
     return {'grade': grade, 'desc': desc, 'value': value}
 
+def strip_conflicts(text: str) -> str:
+    """Remove git conflict markers, keeping the upper (HEAD) section.
+
+    Some legacy HTML files were committed with unresolved merge conflict
+    markers (<<<<<<< ======= >>>>>>>). The expected resolution is to keep the
+    first branch. This helper strips the markers and preserves only the upper
+    choice so the parser can continue normally.
+    """
+
+    result = []
+    cursor = 0
+    while True:
+        start = text.find("<<<<<<<", cursor)
+        if start == -1:
+            result.append(text[cursor:])
+            break
+
+        mid = text.find("=======", start)
+        end = text.find(">>>>>>>", mid)
+        if mid == -1 or end == -1:
+            # malformed markers; just stop processing
+            result.append(text[cursor:])
+            break
+
+        # keep content before the conflict and the upper branch only
+        result.append(text[cursor:start])
+        result.append(text[start + len("<<<<<<<"): mid])
+        cursor = end + len(">>>>>>>")
+
+    return "".join(result)
+
+
 def parse_file(path: Path):
-    html = path.read_text(encoding='utf-8')
+    html = strip_conflicts(path.read_text(encoding='utf-8'))
     # title inside .top-year div
     title_match = re.search(r'<div class="top-year">(.*?)</div>', html, re.S)
     heading = clean_html(title_match.group(1)) if title_match else path.stem
