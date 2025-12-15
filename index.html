@@ -1565,7 +1565,95 @@
 </script>
 
   
-<script type="module" src="visit-counter.js"></script>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getDatabase, ref, get, update } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCeEo-XbOdIJSqYRTbA4re3Ot1xWeEjfW0",
+    authDomain: "mysuneung.firebaseapp.com",
+    databaseURL: "https://mysuneung-default-rtdb.firebaseio.com",
+    projectId: "mysuneung",
+    storageBucket: "mysuneung.appspot.com",
+    messagingSenderId: "1047770825934",
+    appId: "1:1047770825934:web:cf4afe0e4331422e043c9f",
+    measurementId: "G-B7Q0KVYxx5"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  const VISIT_LOCAL_STORAGE_KEY = "visit-last-count-date";
+  const VISIT_MONTH_STORAGE_KEY = "visit-last-count-month";
+
+  async function updateVisitCounter() {
+    const today = getKstNow();
+
+    // 날짜 키 생성
+    const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+    const monthKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}`; // 2025-12
+
+    const visitsRef = ref(db, "visits");
+    const snapshot = await get(visitsRef);
+
+    let data = snapshot.exists()
+      ? snapshot.val()
+      : { today: 0, month: 0, lastUpdateDate: "", lastUpdateMonth: "" };
+
+    const lastCountDate = localStorage.getItem(VISIT_LOCAL_STORAGE_KEY);
+    const shouldCountToday = lastCountDate !== todayKey;
+
+    const baseTodayCount = data.lastUpdateDate === todayKey ? data.today : 0;
+    const baseMonthCount = data.lastUpdateMonth === monthKey ? data.month : 0;
+
+    // 오늘 방문자 — 날짜가 바뀌면 0으로 초기화, 같은 사용자는 하루에 1회만 집계
+    const todayCount = baseTodayCount + (shouldCountToday ? 1 : 0);
+
+    // 한 달 누적 — 월이 바뀌면 0으로 초기화 (해당 월의 첫날부터 집계)
+    const monthCount = baseMonthCount + (shouldCountToday ? 1 : 0);
+
+    const shouldUpdate =
+      todayCount !== data.today ||
+      monthCount !== data.month ||
+      data.lastUpdateDate !== todayKey ||
+      data.lastUpdateMonth !== monthKey;
+
+    if (shouldUpdate) {
+      await update(visitsRef, {
+        today: todayCount,
+        month: monthCount,
+        lastUpdateDate: todayKey,
+        lastUpdateMonth: monthKey
+      });
+    }
+
+    if (shouldCountToday) {
+      localStorage.setItem(VISIT_LOCAL_STORAGE_KEY, todayKey);
+      localStorage.setItem(VISIT_MONTH_STORAGE_KEY, monthKey);
+    }
+
+    // 화면 표시
+    document.getElementById("visit-today").textContent = todayCount;
+    document.getElementById("visit-month").textContent = monthCount;
+    document.getElementById("visit-month-label").textContent = `${monthKey} 누적 방문`;
+  }
+
+  const scheduleVisitRefresh = () => {
+    const now = getKstNow();
+    const remainingSeconds = ((24 - now.getHours()) * 3600) - (now.getMinutes() * 60) - now.getSeconds();
+    const delay = (remainingSeconds * 1000) - now.getMilliseconds();
+
+    setTimeout(() => {
+      updateVisitCounter();
+      scheduleVisitRefresh();
+    }, Math.max(1000, delay));
+  };
+
+  updateVisitCounter();
+  scheduleVisitRefresh();
+</script>
+
 <script>
 
   const popup = document.getElementById("banner-popup");
