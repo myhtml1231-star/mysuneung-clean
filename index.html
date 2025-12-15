@@ -1583,7 +1583,8 @@
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
 
-
+  const VISIT_LOCAL_STORAGE_KEY = "visit-last-count-date";
+  const VISIT_MONTH_STORAGE_KEY = "visit-last-count-month";
 
   async function updateVisitCounter() {
     const today = getKstNow();
@@ -1599,23 +1600,37 @@
       ? snapshot.val()
       : { today: 0, month: 0, lastUpdateDate: "", lastUpdateMonth: "" };
 
-    // 오늘 방문자 — 날짜가 바뀌면 0으로 초기화
-    let todayCount = data.lastUpdateDate === todayKey
-      ? data.today + 1
-      : 1;
+    const lastCountDate = localStorage.getItem(VISIT_LOCAL_STORAGE_KEY);
+    const shouldCountToday = lastCountDate !== todayKey;
+
+    const baseTodayCount = data.lastUpdateDate === todayKey ? data.today : 0;
+    const baseMonthCount = data.lastUpdateMonth === monthKey ? data.month : 0;
+
+    // 오늘 방문자 — 날짜가 바뀌면 0으로 초기화, 같은 사용자는 하루에 1회만 집계
+    const todayCount = baseTodayCount + (shouldCountToday ? 1 : 0);
 
     // 한 달 누적 — 월이 바뀌면 0으로 초기화 (해당 월의 첫날부터 집계)
-    let monthCount = data.lastUpdateMonth === monthKey
-      ? data.month + 1
-      : 1;
+    const monthCount = baseMonthCount + (shouldCountToday ? 1 : 0);
 
-    // Firebase 업데이트
-    await update(visitsRef, {
-      today: todayCount,
-      month: monthCount,
-      lastUpdateDate: todayKey,
-      lastUpdateMonth: monthKey
-    });
+    const shouldUpdate =
+      todayCount !== data.today ||
+      monthCount !== data.month ||
+      data.lastUpdateDate !== todayKey ||
+      data.lastUpdateMonth !== monthKey;
+
+    if (shouldUpdate) {
+      await update(visitsRef, {
+        today: todayCount,
+        month: monthCount,
+        lastUpdateDate: todayKey,
+        lastUpdateMonth: monthKey
+      });
+    }
+
+    if (shouldCountToday) {
+      localStorage.setItem(VISIT_LOCAL_STORAGE_KEY, todayKey);
+      localStorage.setItem(VISIT_MONTH_STORAGE_KEY, monthKey);
+    }
 
     // 화면 표시
     document.getElementById("visit-today").textContent = todayCount;
