@@ -2332,6 +2332,10 @@ popup.addEventListener("click", e => {
 
       const months = new Set(getMonthKeywords(item.month).map(stripKeywords));
       const subjects = new Set(getSubjectKeywords(item.subject).map(stripKeywords));
+      const itemCanonicalSubject = SEARCH_ALIASES.get(stripKeywords(item.subject));
+      if (itemCanonicalSubject) {
+        getSubjectKeywords(itemCanonicalSubject).map(stripKeywords).forEach(value => subjects.add(value));
+      }
       const keywords = new Set(
         [item.type || "", item.label || "", item.keywords || ""]
           .join(" ")
@@ -2367,12 +2371,6 @@ popup.addEventListener("click", e => {
       }
       if (token.type === "month") {
         return { score: bestTextMatch(token.value, fields.months), reason: "월" };
-      }
-
-      const canonical = SEARCH_ALIASES.get(token.value);
-      if (canonical) {
-        const keywords = new Set(getSubjectKeywords(canonical).map(stripKeywords));
-        return { score: bestTextMatch(token.value, new Set([...fields.subjects, ...keywords]), true) + 35, reason: "과목" };
       }
 
       const subjectScore = bestTextMatch(token.value, fields.subjects, true);
