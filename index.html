@@ -2351,7 +2351,7 @@ popup.addEventListener("click", e => {
         if (token === value) best = Math.max(best, 100);
         else if (value.startsWith(token) || token.startsWith(value)) best = Math.max(best, 72);
         else if (value.includes(token) || token.includes(value)) best = Math.max(best, 52);
-        else if (allowTypo && token.length >= 2 && value.length >= 2 && levenshtein(token, value) <= 1) best = Math.max(best, 34);
+        else if (allowTypo && token.length >= 3 && value.length >= 3 && levenshtein(token, value) <= 1) best = Math.max(best, 34);
       }
       return best;
     };
