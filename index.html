@@ -475,6 +475,11 @@
       font-weight: 650;
     }
 
+    .search-badge--type {
+      background: #eef2ff;
+      color: #4f46e5;
+    }
+
     .search-result-meta {
       font-size: 11px;
       color: #9ca3af;
@@ -1362,6 +1367,13 @@
             <div id="panel-cuts" class="dropdown-panel" aria-hidden="true">
               <div class="year-menu">
                 <div class="year-list">
+                  <div class="year-item" tabindex="0">2026학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2026 고3 컷 년도 선택.html">고3(2027학년도)</a></div>
+                      <div><a href="2026 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2026 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
                   <div class="year-item" tabindex="0">2025학년도
                     <div class="submenu" aria-hidden="true">
                       <div><a href="2025 고3 컷 년도 선택.html">고3(2026학년도)</a></div>
@@ -1407,8 +1419,8 @@
                   <div class="year-item" tabindex="0">2019학년도
                     <div class="submenu" aria-hidden="true">
                       <div><a href="2019 고3 컷 년도 선택.html">고3(2020학년도)</a></div>
-                      <div><a href="기다려주세요1.html">고2</a></div>
-                      <div><a href="기다려주세요1.html">고1</a></div>
+                      <div><a href="2019 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2019 고1 컷 년도 선택.html">고1</a></div>
                     </div>
                   </div>
                 </div>
@@ -1484,7 +1496,7 @@
       <div class="header-actions">
         <div class="search-box" aria-expanded="false" aria-haspopup="listbox">
           <span aria-hidden="true">🔍</span>
-          <input id="search-input" type="text" placeholder="학년·년도·월·과목으로 검색하세요" aria-label="자료 검색" autocomplete="off" />
+          <input id="search-input" type="text" placeholder="학년·연도·월·과목·등급컷 검색" aria-label="자료 검색" autocomplete="off" />
           <div id="search-results" class="search-results" role="listbox"></div>
         </div>
         <div class="dday-box" aria-live="polite">
@@ -2125,7 +2137,7 @@ popup.addEventListener("click", e => {
     };
 
     const buildHaystack = (item) => {
-      const parts = [item.grade];
+      const parts = [item.grade, item.type || "", item.label || "", item.keywords || ""];
 
       getYearVariants(item.year).forEach(variant => {
         parts.push(variant, `${variant}학년도`, `${variant}년`);
@@ -2320,9 +2332,16 @@ popup.addEventListener("click", e => {
 
       const months = new Set(getMonthKeywords(item.month).map(stripKeywords));
       const subjects = new Set(getSubjectKeywords(item.subject).map(stripKeywords));
-      const all = new Set([...grade, ...years, ...months, ...subjects]);
+      const keywords = new Set(
+        [item.type || "", item.label || "", item.keywords || ""]
+          .join(" ")
+          .split(/\s+/)
+          .map(stripKeywords)
+          .filter(Boolean)
+      );
+      const all = new Set([...grade, ...years, ...months, ...subjects, ...keywords]);
 
-      return { grade, years, months, subjects, all };
+      return { grade, years, months, subjects, keywords, all };
     };
 
     const bestTextMatch = (token, values, allowTypo = false) => {
@@ -2433,14 +2452,16 @@ popup.addEventListener("click", e => {
       searchResults.innerHTML = `
         <div class="search-summary"><b>${matched.length}개</b> 결과 · 입력한 조건을 모두 만족하는 자료부터 표시합니다.</div>
         ${matched.map(({ item, reasons }) => {
-          const monthLabel = item.month === "수능" ? "수능" : `${item.month}월`;
+          const monthLabel = item.month === "수능" ? "수능" : (item.month === "전체" ? "전체 회차" : `${item.month}월`);
+          const resultLabel = item.label || item.subject;
           return `
             <a class="search-result-item" href="${escapeHtml(item.url)}" role="option" aria-selected="false">
               <div class="search-result-title">
                 <span class="search-badge">${escapeHtml(item.grade)}</span>
+                ${item.type ? `<span class="search-badge search-badge--type">${escapeHtml(item.type)}</span>` : ""}
                 <span>${escapeHtml(item.year)} · ${escapeHtml(monthLabel)}</span>
               </div>
-              <div class="search-result-sub">${escapeHtml(item.subject)}</div>
+              <div class="search-result-sub">${escapeHtml(resultLabel)}</div>
               <div class="search-result-meta">${reasons.join(" · ")} 일치</div>
             </a>
           `;
