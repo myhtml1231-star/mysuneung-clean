@@ -7205,6 +7205,314 @@
   {
     "grade": "고3",
     "year": "2027",
+    "month": "3",
+    "subject": "언어와매체",
+    "url": "2027-3-언매.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "화법과작문",
+    "url": "2027-3-화작.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "확률과통계",
+    "url": "2027-3-확통.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "미적분",
+    "url": "2027-3-미적.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "기하",
+    "url": "2027-3-기하.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "영어",
+    "url": "2027-3-영어.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "한국사",
+    "url": "2027-3-역사.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "윤리와사상",
+    "url": "2027-3-y.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "정치와법",
+    "url": "2027-3-j.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "경제",
+    "url": "2027-3-k.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "사회문화",
+    "url": "2027-3-sm.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "세계사",
+    "url": "2027-3-s.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "한국지리",
+    "url": "2027-3-h.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "생활과윤리",
+    "url": "2027-3-sa.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "동아시아사",
+    "url": "2027-3-d.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "세계지리",
+    "url": "2027-3-sj.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "물리학Ⅰ",
+    "url": "2027-3-m.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "화학Ⅰ",
+    "url": "2027-3-c.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "생명과학Ⅰ",
+    "url": "2027-3-l.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "3",
+    "subject": "지구과학Ⅰ",
+    "url": "2027-3-e.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "언어와매체",
+    "url": "2027-5-언매.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "화법과작문",
+    "url": "2027-5-화작.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "확률과통계",
+    "url": "2027-5-확통.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "미적분",
+    "url": "2027-5-미적.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "기하",
+    "url": "2027-5-기하.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "영어",
+    "url": "2027-5-영어.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "한국사",
+    "url": "2027-5-역사.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "윤리와사상",
+    "url": "2027-5-y.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "정치와법",
+    "url": "2027-5-j.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "경제",
+    "url": "2027-5-k.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "사회문화",
+    "url": "2027-5-sm.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "세계사",
+    "url": "2027-5-s.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "한국지리",
+    "url": "2027-5-h.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "생활과윤리",
+    "url": "2027-5-sa.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "동아시아사",
+    "url": "2027-5-d.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "세계지리",
+    "url": "2027-5-sj.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "물리학Ⅰ",
+    "url": "2027-5-m.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "화학Ⅰ",
+    "url": "2027-5-c.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "생명과학Ⅰ",
+    "url": "2027-5-l.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "지구과학Ⅰ",
+    "url": "2027-5-e.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "물리학Ⅱ",
+    "url": "2027-5-m2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "화학Ⅱ",
+    "url": "2027-5-c2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "생명과학Ⅱ",
+    "url": "2027-5-l2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "5",
+    "subject": "지구과학Ⅱ",
+    "url": "2027-5-e2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
     "month": "6",
     "subject": "언어와매체",
     "url": "2027-6-언매.html"
@@ -7369,6 +7677,174 @@
     "month": "6",
     "subject": "지구과학Ⅱ",
     "url": "2027-6-e2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "언어와매체",
+    "url": "2027-7-언매.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "화법과작문",
+    "url": "2027-7-화작.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "확률과통계",
+    "url": "2027-7-확통.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "미적분",
+    "url": "2027-7-미적.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "기하",
+    "url": "2027-7-기하.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "영어",
+    "url": "2027-7-영어.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "한국사",
+    "url": "2027-7-역사.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "윤리와사상",
+    "url": "2027-7-y.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "정치와법",
+    "url": "2027-7-j.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "경제",
+    "url": "2027-7-k.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "사회문화",
+    "url": "2027-7-sm.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "세계사",
+    "url": "2027-7-s.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "한국지리",
+    "url": "2027-7-h.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "생활과윤리",
+    "url": "2027-7-sa.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "동아시아사",
+    "url": "2027-7-d.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "세계지리",
+    "url": "2027-7-sj.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "물리학Ⅰ",
+    "url": "2027-7-m.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "화학Ⅰ",
+    "url": "2027-7-c.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "생명과학Ⅰ",
+    "url": "2027-7-l.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "지구과학Ⅰ",
+    "url": "2027-7-e.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "물리학Ⅱ",
+    "url": "2027-7-m2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "화학Ⅱ",
+    "url": "2027-7-c2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "생명과학Ⅱ",
+    "url": "2027-7-l2.html"
+  },
+  {
+    "grade": "고3",
+    "year": "2027",
+    "month": "7",
+    "subject": "지구과학Ⅱ",
+    "url": "2027-7-e2.html"
   },
   {
     "grade": "고3",
