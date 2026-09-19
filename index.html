@@ -470,8 +470,63 @@
     }
 
     .search-result-sub {
+      font-size: 14px;
+      color: #374151;
+      font-weight: 650;
+    }
+
+    .search-badge--type {
+      background: #eef2ff;
+      color: #4f46e5;
+    }
+
+    .search-result-meta {
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+    .search-summary {
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #6b7280;
+      background: #f9fafb;
+      border-bottom: 1px solid #eef0f2;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    .search-empty {
+      padding: 16px 14px;
       font-size: 13px;
       color: #6b7280;
+      line-height: 1.7;
+    }
+
+    .search-result-item.active,
+    .search-result-item:hover,
+    .search-result-item:focus {
+      background: #fff7df;
+      outline: none;
+    }
+
+    .search-results {
+      max-height: min(430px, 68vh);
+    }
+
+    @media (max-width: 860px) {
+      .search-box {
+        min-width: 180px;
+        width: min(56vw, 320px);
+      }
+      .search-results {
+        position: fixed;
+        top: 72px;
+        left: 12px;
+        right: 12px;
+        width: auto;
+        max-height: 62vh;
+      }
     }
 
     /* Hero Section */
@@ -1312,6 +1367,13 @@
             <div id="panel-cuts" class="dropdown-panel" aria-hidden="true">
               <div class="year-menu">
                 <div class="year-list">
+                  <div class="year-item" tabindex="0">2026학년도
+                    <div class="submenu" aria-hidden="true">
+                      <div><a href="2026 고3 컷 년도 선택.html">고3(2027학년도)</a></div>
+                      <div><a href="2026 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2026 고1 컷 년도 선택.html">고1</a></div>
+                    </div>
+                  </div>
                   <div class="year-item" tabindex="0">2025학년도
                     <div class="submenu" aria-hidden="true">
                       <div><a href="2025 고3 컷 년도 선택.html">고3(2026학년도)</a></div>
@@ -1357,8 +1419,8 @@
                   <div class="year-item" tabindex="0">2019학년도
                     <div class="submenu" aria-hidden="true">
                       <div><a href="2019 고3 컷 년도 선택.html">고3(2020학년도)</a></div>
-                      <div><a href="기다려주세요1.html">고2</a></div>
-                      <div><a href="기다려주세요1.html">고1</a></div>
+                      <div><a href="2019 고2 컷 년도 선택.html">고2</a></div>
+                      <div><a href="2019 고1 컷 년도 선택.html">고1</a></div>
                     </div>
                   </div>
                 </div>
@@ -1434,7 +1496,7 @@
       <div class="header-actions">
         <div class="search-box" aria-expanded="false" aria-haspopup="listbox">
           <span aria-hidden="true">🔍</span>
-          <input id="search-input" type="text" placeholder="학년·년도·월·과목으로 검색하세요" aria-label="자료 검색" autocomplete="off" />
+          <input id="search-input" type="text" placeholder="학년·연도·월·과목·등급컷 검색" aria-label="자료 검색" autocomplete="off" />
           <div id="search-results" class="search-results" role="listbox"></div>
         </div>
         <div class="dday-box" aria-live="polite">
@@ -1969,8 +2031,12 @@ popup.addEventListener("click", e => {
 
     const stripKeywords = (value = "") => value
       .toString()
+      .normalize("NFKC")
       .toLowerCase()
-      .replace(/학년도|년도|학년|년|월|모의고사|모고/g, "")
+      .replace(/Ⅰ/g, "1")
+      .replace(/Ⅱ/g, "2")
+      .replace(/학년도|년도|학년|년|월|모의평가|학력평가|모의고사|모평|학평|모고/g, "")
+      .replace(/[·ㆍ._/\\,\-]+/g, "")
       .replace(/\s+/g, "")
       .trim();
 
@@ -1995,49 +2061,63 @@ popup.addEventListener("click", e => {
       return initials;
     };
 
+    const normalizeSubjectKey = (value = "") => value
+      .toString()
+      .normalize("NFKC")
+      .trim()
+      .replace(/II$/i, "2")
+      .replace(/I$/i, "1")
+      .replace(/Ⅰ/g, "1")
+      .replace(/Ⅱ/g, "2")
+      .replace(/[·ㆍ.\s]/g, "");
+
     const subjectKeywordMap = {
-      "사회문화": ["사문"],
-      "생활과윤리": ["생윤"],
-      "윤리와사상": ["윤사"],
-      "정치와법": ["정법"],
-      "세계지리": ["세지"],
-      "한국지리": ["한지"],
-      "동아시아사": ["동사"],
-      "세계사": ["세사"],
-      "한국사": ["국사"],
-      "언어와매체": ["언매"],
-      "화법과작문": ["화작"],
-      "확률과통계": ["확통"],
+      "국어": ["국어"],
+      "수학": ["수학"],
+      "영어": ["영어"],
+      "한국사": ["한국사", "국사"],
+      "통합사회": ["통합사회", "통사", "사회", "사탐"],
+      "통합과학": ["통합과학", "통과", "과학", "과탐"],
+      "사회문화": ["사회문화", "사문"],
+      "생활과윤리": ["생활과윤리", "생윤"],
+      "윤리와사상": ["윤리와사상", "윤사"],
+      "정치와법": ["정치와법", "정법"],
+      "세계지리": ["세계지리", "세지"],
+      "한국지리": ["한국지리", "한지"],
+      "동아시아사": ["동아시아사", "동사", "동아사"],
+      "세계사": ["세계사", "세사"],
+      "경제": ["경제"],
+      "언어와매체": ["언어와매체", "언매"],
+      "화법과작문": ["화법과작문", "화작"],
+      "확률과통계": ["확률과통계", "확통"],
+      "미적분": ["미적분", "미적"],
       "기하": ["기하"],
-      "미적분": ["미적"],
-      "물리학": ["물리"],
-      "생명과학": ["생과", "생명"],
-      "생명과학Ⅰ": ["생1", "생과1"],
-      "생명과학Ⅱ": ["생2", "생과2"],
+      "물리학": ["물리학", "물리"],
+      "물리학1": ["물리학1", "물리1", "물1", "물리"],
+      "물리학2": ["물리학2", "물리2", "물2"],
       "화학": ["화학"],
-      "지구과학": ["지과"],
-      "지구과학Ⅰ": ["지1", "지과1"],
-      "지구과학Ⅱ": ["지2", "지과2"],
-      "물리학Ⅰ": ["물1"],
-      "물리학Ⅱ": ["물2"],
-      "화학Ⅰ": ["화1"],
-      "화학Ⅱ": ["화2"],
-      "지구과학1": ["지1", "지과1"],
-      "지구과학2": ["지2", "지과2"],
-      "물리1": ["물1"],
-      "물리2": ["물2"],
-      "화학1": ["화1"],
-      "화학2": ["화2"]
+      "화학1": ["화학1", "화1"],
+      "화학2": ["화학2", "화2"],
+      "생명과학": ["생명과학", "생명", "생과"],
+      "생명과학1": ["생명과학1", "생명1", "생과1", "생1"],
+      "생명과학2": ["생명과학2", "생명2", "생과2", "생2"],
+      "지구과학": ["지구과학", "지과"],
+      "지구과학1": ["지구과학1", "지과1", "지1"],
+      "지구과학2": ["지구과학2", "지과2", "지2"]
     };
 
     const getSubjectKeywords = (subject = "") => {
-      const normalized = subject.toString().trim();
-      const aliases = subjectKeywordMap[normalized] ?? [];
-      const keywords = [normalized, ...aliases];
+      const original = subject.toString().trim();
+      const key = normalizeSubjectKey(original);
+      const aliases = subjectKeywordMap[key] ?? [key];
+      const keywords = new Set([original, key, ...aliases]);
 
-      const initials = keywords.map(getInitials).filter(Boolean);
+      [...keywords].forEach(keyword => {
+        const initials = getInitials(keyword);
+        if (initials) keywords.add(initials);
+      });
 
-      return [...keywords, ...initials];
+      return [...keywords].filter(Boolean);
     };
 
     const getYearVariants = (year = "") => {
@@ -2053,13 +2133,13 @@ popup.addEventListener("click", e => {
 
     const getMonthKeywords = (month = "") => {
       if (month === "수능") {
-        return ["수능", "11", "11월"];
+        return ["수능", "본수능", "11", "11월"];
       }
-      return [month, `${month}월`];
+      return [month, `${month}월`, `${month}모`, `${month}평`, `${month}모평`, `${month}학평`];
     };
 
     const buildHaystack = (item) => {
-      const parts = [item.grade];
+      const parts = [item.grade, item.type || "", item.label || "", item.keywords || ""];
 
       getYearVariants(item.year).forEach(variant => {
         parts.push(variant, `${variant}학년도`, `${variant}년`);
@@ -2158,170 +2238,279 @@ popup.addEventListener("click", e => {
       }
     };
 
-    const countTokenMatches = (token = "", haystack = "") => {
-      let count = 0;
-      let start = 0;
-      while (token && start < haystack.length) {
-        const index = haystack.indexOf(token, start);
-        if (index === -1) break;
-        count += token.length;
-        start = index + token.length;
+    const SEARCH_ALIASES = (() => {
+      const map = new Map();
+      Object.entries(subjectKeywordMap).forEach(([canonical, aliases]) => {
+        [canonical, ...aliases].forEach(alias => map.set(stripKeywords(alias), canonical));
+      });
+      return map;
+    })();
+
+    const levenshtein = (a = "", b = "") => {
+      if (a === b) return 0;
+      if (!a.length) return b.length;
+      if (!b.length) return a.length;
+      const prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+      for (let i = 1; i <= a.length; i++) {
+        const cur = [i];
+        for (let j = 1; j <= b.length; j++) {
+          cur[j] = Math.min(
+            cur[j - 1] + 1,
+            prev[j] + 1,
+            prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
+          );
+        }
+        for (let j = 0; j < cur.length; j++) prev[j] = cur[j];
       }
-      return count;
+      return prev[b.length];
     };
 
-    const isInitialToken = (token = "") => Boolean(token) && token
-      .split("")
-      .every(char => CHOSUNG_LIST.includes(char));
+    const tokenizeQuery = (query = "") => {
+      let source = query
+        .normalize("NFKC")
+        .replace(/Ⅰ/g, "1")
+        .replace(/Ⅱ/g, "2")
+        .toLowerCase();
 
-    const toTokenEntries = tokens => tokens.map(value => ({
-      value,
-      isInitial: isInitialToken(value)
-    }));
+      const tokens = [];
+      const take = (regex, type, transform = value => value) => {
+        source = source.replace(regex, (...args) => {
+          const value = transform(args[0], ...args.slice(1));
+          if (value) tokens.push({ value: stripKeywords(value), type, raw: args[0] });
+          return " ";
+        });
+      };
 
-    const getMatchScore = (tokenEntries, haystack) => tokenEntries
-      .reduce((score, token) => score + countTokenMatches(token.value, haystack), 0);
+      take(/고\s*([123])/g, "grade", (_, n) => `고${n}`);
+      take(/(20\d{2})\s*(?:학년도|년도|년)?/g, "year", (_, y) => y);
+      take(/(^|\s)(\d{2})(?=\s|$)/g, "number", (_, lead, n) => n);
+      take(/(\d{1,2})\s*(?:월|모평|학평|모고|모|평)/g, "month", (_, n) => n);
+      take(/수능|본수능/g, "month", () => "수능");
+
+      source
+        .replace(/[\-_/.,·ㆍ]+/g, " ")
+        .split(/\s+/)
+        .filter(Boolean)
+        .forEach(raw => {
+          const value = stripKeywords(raw);
+          if (value) tokens.push({ value, type: "text", raw });
+        });
+
+      // 붙여 쓴 과목 약어도 인식 (예: 26고29평통사)
+      const compact = stripKeywords(query);
+      [...SEARCH_ALIASES.keys()]
+        .filter(alias => alias.length >= 2 && compact.includes(alias))
+        .forEach(alias => {
+          if (!tokens.some(t => t.value === alias)) tokens.push({ value: alias, type: "subject", raw: alias });
+        });
+
+      // 26, 25 같은 두 자리 연도는 13 이상일 때 연도로 간주
+      tokens.forEach(token => {
+        if (token.type === "number" && /^\d{2}$/.test(token.value)) {
+          const n = Number(token.value);
+          token.type = n >= 13 ? "year" : "month";
+        }
+      });
+
+      const seen = new Set();
+      return tokens.filter(token => {
+        const key = `${token.type}:${token.value}`;
+        if (!token.value || seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    };
+
+    const getItemFields = item => {
+      const grade = new Set([stripKeywords(item.grade)]);
+      const years = new Set();
+      getYearVariants(item.year).forEach(v => years.add(stripKeywords(v)));
+
+      // 고3은 학년도와 실제 시행연도 둘 다 검색 가능 (2027학년도 9평 = 2026년 9평)
+      if (item.grade === "고3" && /^20\d{2}$/.test(String(item.year))) {
+        const calendarYear = String(Number(item.year) - 1);
+        getYearVariants(calendarYear).forEach(v => years.add(stripKeywords(v)));
+      }
+
+      const months = new Set(getMonthKeywords(item.month).map(stripKeywords));
+      const subjects = new Set(getSubjectKeywords(item.subject).map(stripKeywords));
+      const itemCanonicalSubject = SEARCH_ALIASES.get(stripKeywords(item.subject));
+      if (itemCanonicalSubject) {
+        getSubjectKeywords(itemCanonicalSubject).map(stripKeywords).forEach(value => subjects.add(value));
+      }
+      const keywords = new Set(
+        [item.type || "", item.label || "", item.keywords || ""]
+          .join(" ")
+          .split(/\s+/)
+          .map(stripKeywords)
+          .filter(Boolean)
+      );
+      const all = new Set([...grade, ...years, ...months, ...subjects, ...keywords]);
+
+      return { grade, years, months, subjects, keywords, all };
+    };
+
+    const bestTextMatch = (token, values, allowTypo = false) => {
+      let best = 0;
+      for (const value of values) {
+        if (!value) continue;
+        if (token === value) best = Math.max(best, 100);
+        else if (value.startsWith(token) || token.startsWith(value)) best = Math.max(best, 72);
+        else if (value.includes(token) || token.includes(value)) best = Math.max(best, 52);
+        else if (allowTypo && token.length >= 3 && value.length >= 3 && levenshtein(token, value) <= 1) best = Math.max(best, 34);
+      }
+      return best;
+    };
+
+    const matchTokenToItem = (token, fields) => {
+      if (token.type === "grade") {
+        return { score: bestTextMatch(token.value, fields.grade), reason: "학년" };
+      }
+      if (token.type === "year") {
+        let value = token.value;
+        if (/^\d{2}$/.test(value)) value = `20${value}`;
+        const normalizedYear = stripKeywords(value);
+        return { score: fields.years.has(normalizedYear) ? 100 : 0, reason: "연도" };
+      }
+      if (token.type === "month") {
+        return { score: bestTextMatch(token.value, fields.months), reason: "월" };
+      }
+
+      const subjectScore = bestTextMatch(token.value, fields.subjects, true);
+      if (subjectScore) return { score: subjectScore + 20, reason: subjectScore <= 34 ? "유사 과목" : "과목" };
+
+      return { score: bestTextMatch(token.value, fields.all, false), reason: "키워드" };
+    };
+
+    const escapeHtml = value => value.toString()
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+
+    let activeSearchIndex = -1;
+
+    const setActiveSearchResult = index => {
+      const links = [...searchResults.querySelectorAll("a.search-result-item")];
+      if (!links.length) {
+        activeSearchIndex = -1;
+        return;
+      }
+      activeSearchIndex = Math.max(0, Math.min(index, links.length - 1));
+      links.forEach((link, i) => {
+        link.classList.toggle("active", i === activeSearchIndex);
+        link.setAttribute("aria-selected", i === activeSearchIndex ? "true" : "false");
+      });
+      links[activeSearchIndex].scrollIntoView({ block: "nearest" });
+    };
 
     const renderResults = query => {
       const trimmed = query.trim();
+      activeSearchIndex = -1;
       if (!trimmed) {
         searchResults.innerHTML = "";
         closeSearch();
         return;
       }
 
-      const buildTokens = rawTokens => {
-        const tokenSet = new Set();
-
-
-        const addToken = (value = "") => {
-          const normalized = stripKeywords(value);
-
-          if (!normalized) return;
-          tokenSet.add(normalized);
-
-          const initials = getInitials(normalized);
-          if (initials) tokenSet.add(initials);
-
-        };
-
-        rawTokens.forEach(token => {
-          const cleaned = token.replace(/[\-_/.,]+/g, " ");
-          const parts = cleaned.split(/\s+/).filter(Boolean);
-
-          if (!parts.length) {
-            addToken(cleaned);
-            return;
-          }
-
-          parts.forEach(part => {
-            addToken(part);
-            const segments = part.match(/[0-9]+|[가-힣]+/g);
-            if (segments) segments.forEach(addToken);
-          });
-
-        });
-
-        return Array.from(tokenSet);
-      };
-
-
-      const buildSubjectTokenSet = (subject = "") => {
-        const set = new Set();
-        getSubjectKeywords(subject).forEach(keyword => {
-          const normalized = stripKeywords(keyword);
-          if (!normalized) return;
-          set.add(normalized);
-          const initials = getInitials(normalized);
-          if (initials) set.add(initials);
-        });
-        return set;
-      };
-
-
-
-      const tokens = buildTokens(trimmed.split(/\s+/));
-      const tokenEntries = toTokenEntries(tokens);
-      const syllableTokens = tokenEntries.filter(token => !token.isInitial);
-      const initialTokens = tokenEntries.filter(token => token.isInitial);
-
+      const tokens = tokenizeQuery(trimmed);
       if (!tokens.length) {
-        searchResults.innerHTML = `<div class="search-result-item" tabindex="0">검색어를 조금 더 구체적으로 입력해주세요.</div>`;
+        searchResults.innerHTML = `<div class="search-empty">검색어를 조금 더 구체적으로 입력해주세요.</div>`;
         openSearch();
         return;
       }
 
       const matched = searchIndex
         .map((item, index) => {
-          const haystack = buildHaystack(item);
-          const subjectTokens = buildSubjectTokenSet(item.subject);
+          const fields = getItemFields(item);
+          const matches = tokens.map(token => matchTokenToItem(token, fields));
+          const allMatched = matches.every(match => match.score > 0);
+          if (!allMatched) return null;
 
-          const syllableScore = getMatchScore(syllableTokens, haystack);
-          const initialScore = getMatchScore(initialTokens, haystack);
-
-          const subjectScore = tokenEntries.reduce((score, token) => {
-            if (!subjectTokens.has(token.value)) return score;
-            const base = token.value.length * 3;
-            return score + (token.isInitial ? Math.max(1, Math.floor(base * 0.5)) : base);
-          }, 0);
-
-          const totalScore = syllableScore * 3 + initialScore + subjectScore;
-
-          return { item, score: totalScore, syllableScore, initialScore, index };
+          const exactCompact = buildHaystack(item).includes(stripKeywords(trimmed)) ? 120 : 0;
+          const score = matches.reduce((sum, match) => sum + match.score, 0) + exactCompact;
+          const reasons = [...new Set(matches.map(match => match.reason))];
+          return { item, score, reasons, index };
         })
-        .filter(result => result.score > 0)
-        .sort((a, b) => b.syllableScore - a.syllableScore || b.score - a.score || a.index - b.index)
-        .slice(0, 10)
-        .map(result => result.item);
+        .filter(Boolean)
+        .sort((a, b) => {
+          const yearA = Number(a.item.year) || 0;
+          const yearB = Number(b.item.year) || 0;
+          return b.score - a.score || yearB - yearA || a.index - b.index;
+        })
+        .slice(0, 20);
 
       if (!matched.length) {
-        searchResults.innerHTML = `<div class="search-result-item" tabindex="0">일치하는 자료가 없어요.</div>`;
+        searchResults.innerHTML = `
+          <div class="search-summary">모든 조건이 일치하는 자료가 없어요.</div>
+          <div class="search-empty">예: <b>고2 2026 9월 영어</b>, <b>26 고3 9평 언매</b>, <b>통사</b>, <b>물1</b></div>
+        `;
         openSearch();
         return;
       }
 
-      searchResults.innerHTML = matched.map(item => {
-        const monthLabel = item.month === "수능" ? "수능" : `${item.month}월`;
-       
-        return `
-          <a class="search-result-item" href="${item.url}" role="option">
-            <div class="search-result-title">
-              <span class="search-badge">${item.grade}</span>
-              <span>${item.year} ${monthLabel}</span>
-            </div>
-            <div class="search-result-sub">${item.subject}</div>
-          </a>
-        `;
-      }).join("");
+      searchResults.innerHTML = `
+        <div class="search-summary"><b>${matched.length}개</b> 결과 · 입력한 조건을 모두 만족하는 자료부터 표시합니다.</div>
+        ${matched.map(({ item, reasons }) => {
+          const monthLabel = item.month === "수능" ? "수능" : (item.month === "전체" ? "전체 회차" : `${item.month}월`);
+          const resultLabel = item.label || item.subject;
+          return `
+            <a class="search-result-item" href="${escapeHtml(item.url)}" role="option" aria-selected="false">
+              <div class="search-result-title">
+                <span class="search-badge">${escapeHtml(item.grade)}</span>
+                ${item.type ? `<span class="search-badge search-badge--type">${escapeHtml(item.type)}</span>` : ""}
+                <span>${escapeHtml(item.year)} · ${escapeHtml(monthLabel)}</span>
+              </div>
+              <div class="search-result-sub">${escapeHtml(resultLabel)}</div>
+              <div class="search-result-meta">${reasons.join(" · ")} 일치</div>
+            </a>
+          `;
+        }).join("")}
+      `;
 
       openSearch();
     };
 
     if (searchInput && searchResults) {
       fetch("search-index.json")
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) throw new Error("search index load failed");
+          return res.json();
+        })
         .then(data => {
           searchIndex = data;
         })
         .catch(() => {
-          searchResults.innerHTML = `<div class="search-result-item" tabindex="0">검색 인덱스를 불러오지 못했습니다.</div>`;
+          searchResults.innerHTML = `<div class="search-empty">검색 인덱스를 불러오지 못했습니다.</div>`;
         });
 
-      searchInput.addEventListener("input", e => renderResults(e.target.value));
+      let searchTimer = null;
+      searchInput.addEventListener("input", e => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => renderResults(e.target.value), 70);
+      });
 
       searchInput.addEventListener("focus", e => {
-        if (e.target.value) {
-          renderResults(e.target.value);
-        }
+        if (e.target.value) renderResults(e.target.value);
       });
 
       searchInput.addEventListener("keydown", e => {
+        const links = [...searchResults.querySelectorAll("a.search-result-item")];
         if (e.key === "Escape") {
           closeSearch();
+          activeSearchIndex = -1;
+        } else if (e.key === "ArrowDown" && links.length) {
+          e.preventDefault();
+          setActiveSearchResult(activeSearchIndex < 0 ? 0 : activeSearchIndex + 1);
+        } else if (e.key === "ArrowUp" && links.length) {
+          e.preventDefault();
+          setActiveSearchResult(activeSearchIndex < 0 ? links.length - 1 : activeSearchIndex - 1);
         } else if (e.key === "Enter") {
-          const first = searchResults.querySelector("a.search-result-item");
-          if (first) {
-            first.click();
+          const target = activeSearchIndex >= 0 ? links[activeSearchIndex] : links[0];
+          if (target) {
+            e.preventDefault();
+            target.click();
           }
         }
       });
@@ -2329,6 +2518,7 @@ popup.addEventListener("click", e => {
       document.addEventListener("click", e => {
         if (!document.querySelector(".search-box")?.contains(e.target)) {
           closeSearch();
+          activeSearchIndex = -1;
         }
       });
     }
