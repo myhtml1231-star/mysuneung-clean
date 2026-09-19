@@ -2064,10 +2064,12 @@ popup.addEventListener("click", e => {
     const normalizeSubjectKey = (value = "") => value
       .toString()
       .normalize("NFKC")
+      .trim()
+      .replace(/II$/i, "2")
+      .replace(/I$/i, "1")
       .replace(/Ⅰ/g, "1")
       .replace(/Ⅱ/g, "2")
-      .replace(/[·ㆍ.\s]/g, "")
-      .trim();
+      .replace(/[·ㆍ.\s]/g, "");
 
     const subjectKeywordMap = {
       "국어": ["국어"],
