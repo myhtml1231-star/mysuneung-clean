@@ -50,6 +50,7 @@
 
     input, textarea {
       width: 100%;
+      box-sizing: border-box;
       margin-top: 8px;
       padding: 12px;
       border: 1px solid #ddd;
@@ -154,56 +155,57 @@
     <a href="index.html" class="back-btn">←이전화면으로 돌아가기</a>
   </div>
 
-  <!-- Firebase 모듈 방식 -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyCeEo-XbOdIJSqYRTbA4re3Ot1xWeEjfW0",
-      authDomain: "mysuneung.firebaseapp.com",
-      databaseURL: "https://mysuneung-default-rtdb.firebaseio.com",
-      projectId: "mysuneung",
-      storageBucket: "mysuneung.appspot.com",
-      messagingSenderId: "1047770825934",
-      appId: "1:1047770825934:web:cf4afe0e4331422e043c9f"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const db = getDatabase(app);
-
+  <script>
     const submitBtn = document.getElementById("submit-btn");
     const nicknameInput = document.getElementById("nickname");
     const contentInput = document.getElementById("content");
     const successBox = document.getElementById("success-box");
+
+    function showResult(message, ok) {
+      successBox.textContent = message;
+      successBox.style.display = "block";
+      successBox.style.background = ok ? "#fff9e6" : "#fff1f1";
+      successBox.style.borderLeftColor = ok ? "#F4B733" : "#dc2626";
+      successBox.style.color = ok ? "#8a6d00" : "#991b1b";
+    }
 
     submitBtn.addEventListener("click", async () => {
       const nickname = nicknameInput.value.trim();
       const content = contentInput.value.trim();
 
       if (!nickname || !content) {
-        alert("닉네임과 오류 내용을 모두 입력해주세요!");
+        showResult("닉네임과 오류 내용을 모두 입력해주세요.", false);
         return;
       }
 
+      submitBtn.disabled = true;
+      submitBtn.textContent = "접수 중...";
+
       try {
-        // 실제 서버(Firebase Realtime DB)에 저장
-        await push(ref(db, "errorReports"), {
-          nickname,
-          content,
-          date: new Date().toISOString()
+        const res = await fetch("/api/report", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            nickname,
+            content,
+            sourcePage: document.referrer || location.href
+          })
         });
 
-        successBox.textContent = "✔ 오류 신고가 정상적으로 접수되었습니다!";
-        successBox.style.display = "block";
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.error || "접수 중 문제가 발생했습니다.");
+
+        showResult("✔ 오류 신고가 정상적으로 접수되었습니다!", true);
         contentInput.value = "";
       } catch (err) {
         console.error(err);
-        alert("오류 신고 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.");
+        showResult(err.message || "오류 신고 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.", false);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "오류 신고 제출하기";
       }
     });
   </script>
-
 
 <script type="module" src="visit-counter.js"></script>
 
