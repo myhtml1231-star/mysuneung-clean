@@ -2367,7 +2367,8 @@ popup.addEventListener("click", e => {
       if (token.type === "year") {
         let value = token.value;
         if (/^\d{2}$/.test(value)) value = `20${value}`;
-        return { score: bestTextMatch(stripKeywords(value), fields.years), reason: "연도" };
+        const normalizedYear = stripKeywords(value);
+        return { score: fields.years.has(normalizedYear) ? 100 : 0, reason: "연도" };
       }
       if (token.type === "month") {
         return { score: bestTextMatch(token.value, fields.months), reason: "월" };
