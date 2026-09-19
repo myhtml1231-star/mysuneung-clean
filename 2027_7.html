@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+  <title>과목선택</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", sans-serif;
+      background: #fafafa;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 38px;
+      font-weight: 900;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .subject-item {
+      position: relative;
+    }
+
+    .subject-box {
+      padding: 45px 10px;
+      background: white;
+      border-radius: 18px;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .subject-box:hover {
+      transform: translateY(-4px);
+      background: #fff8e5;
+      border-color: #F4B733;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      margin-top: 12px;
+      background: white;
+      border-radius: 14px;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      padding: 10px;
+      z-index: 40;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 12px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.15s;
+    }
+
+    .dropdown a:hover {
+      background: #fff8e5;
+      border-color: #F4B733;
+      transform: translateY(-2px);
+    }
+
+    .subject-item.open .dropdown {
+      display: block;
+    }
+
+    .subject-box .caret {
+      margin-left: 8px;
+      font-size: 16px;
+      opacity: 0.85;
+      transform: translateY(1px);
+    }
+
+    .back-btn {
+      margin-top: 50px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #444;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #ddd;
+      transition: 0.2s;
+    }
+
+    .back-btn:hover {
+      background: #e4e4e4;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 720px) {
+      .subject-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+      .subject-box { padding: 36px 8px; font-size: 20px; }
+      .title { font-size: 32px; }
+    }
+
+    @media (max-width: 420px) {
+      .subject-grid { grid-template-columns: 1fr; }
+      .subject-box { padding: 30px 8px; font-size: 20px; }
+    }
+  </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date());
+
+  gtag('config', 'G-B7Q0KVYYH5');
+</script>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="title">2027학년도 고3 7월 학력평가 과목 선택</div>
+
+  <div class="subject-grid">
+
+    <!-- 국어 -->
+    <div class="subject-item">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        국어 <span class="caret">▾</span>
+      </div>
+      <div class="dropdown">
+        <a href="2027-7-언매.html">언어와매체</a>
+        <a href="2027-7-화작.html">화법과작문</a>
+      </div>
+    </div>
+
+    <!-- 수학 -->
+    <div class="subject-item">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        수학 <span class="caret">▾</span>
+      </div>
+      <div class="dropdown">
+        <a href="2027-7-확통.html">확률과통계</a>
+        <a href="2027-7-미적.html">미적분</a>
+        <a href="2027-7-기하.html">기하</a>
+      </div>
+    </div>
+
+    <!-- 영어 -->
+    <div class="subject-item">
+      <a class="subject-box" href="2027-7-영어.html">영어</a>
+    </div>
+
+    <!-- 한국사 -->
+    <div class="subject-item">
+      <a class="subject-box" href="2027-7-역사.html">한국사</a>
+    </div>
+
+    <!-- 사회탐구 -->
+    <div class="subject-item">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        사회탐구 <span class="caret">▾</span>
+      </div>
+      <div class="dropdown">
+        <a href="2027-7-y.html">윤리와사상</a>
+        <a href="2027-7-j.html">정치와법</a>
+        <a href="2027-7-k.html">경제</a>
+        <a href="2027-7-sm.html">사회문화</a>
+        <a href="2027-7-s.html">세계사</a>
+        <a href="2027-7-h.html">한국지리</a>
+        <a href="2027-7-sa.html">생활과윤리</a>
+        <a href="2027-7-d.html">동아시아사</a>
+        <a href="2027-7-sj.html">세계지리</a>
+      </div>
+    </div>
+
+    <!-- 과학탐구 -->
+    <div class="subject-item">
+      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
+        과학탐구 <span class="caret">▾</span>
+      </div>
+      <div class="dropdown">
+        <a href="2027-7-m.html">물리학Ⅰ</a>
+        <a href="2027-7-c.html">화학Ⅰ</a>
+        <a href="2027-7-l.html">생명과학Ⅰ</a>
+        <a href="2027-7-e.html">지구과학Ⅰ</a>
+        <a href="2027-7-m2.html">물리학Ⅱ</a>
+        <a href="2027-7-c2.html">화학Ⅱ</a>
+        <a href="2027-7-l2.html">생명과학Ⅱ</a>
+        <a href="2027-7-e2.html">지구과학Ⅱ</a>
+      </div>
+    </div>
+
+  </div>
+
+  <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
+
+</div>
+
+<script>
+  (function () {
+    const items = document.querySelectorAll('.subject-item');
+
+    function closeAll(except = null) {
+      items.forEach(it => {
+        if (it !== except) {
+          it.classList.remove('open');
+          const box = it.querySelector('.subject-box');
+          if (box) box.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    items.forEach(item => {
+      const box = item.querySelector('.subject-box');
+      const dropdown = item.querySelector('.dropdown');
+
+      if (!dropdown) return;
+
+      box.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        if (isOpen) {
+          item.classList.remove('open');
+          box.setAttribute('aria-expanded', 'false');
+        } else {
+          closeAll(item);
+          item.classList.add('open');
+          box.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      box.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          box.click();
+        }
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      const inside = e.target.closest('.subject-item');
+      if (!inside) closeAll();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAll();
+    });
+
+  })();
+</script>
+
+
+<script type="module" src="visit-counter.js"></script>
+
+</body>
+</html>
