@@ -36,6 +36,24 @@
 .count-seg{display:flex;gap:8px}.count-seg button{flex:1;border:1px solid #d9dee7;background:#fff;border-radius:10px;padding:10px;font-weight:850}.count-seg button.on{background:#fff8e4;border-color:var(--a);box-shadow:inset 0 0 0 1px var(--a)}
 .mode-note{font-size:12px;color:#7d8796;line-height:1.6;margin-top:8px}
 
+
+.passage-tools{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:12px;position:sticky;top:0;background:rgba(255,255,255,.96);padding:7px 0;z-index:8}
+.toolbtn{border:1px solid #dce1e9;background:#fff;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:850;color:#4d5665}
+.toolbtn.on{background:#303745;color:#fff;border-color:#303745}.toolbtn.danger{color:#b74343}
+.reading-stage{position:relative;min-height:100px}.draw-canvas{position:absolute;left:0;top:0;width:100%;height:100%;z-index:6;pointer-events:none;touch-action:none}.draw-canvas.active{pointer-events:auto;cursor:crosshair}
+.qtype{display:inline-block;margin-left:7px;padding:3px 7px;border-radius:999px;background:#f1f3f8;color:#657085;font-size:11px;font-weight:800}
+.original-modal{position:fixed;inset:0;background:rgba(15,20,28,.72);z-index:120;display:flex;align-items:stretch;justify-content:center;padding:18px}
+.original-shell{width:min(980px,100%);height:100%;background:#fff;border-radius:16px;display:flex;flex-direction:column;overflow:hidden}
+.original-head{height:54px;flex:none;display:flex;align-items:center;gap:10px;padding:0 15px;border-bottom:1px solid #e4e7ec;font-weight:900}.original-head .grow{flex:1}
+.original-body{overflow:auto;background:#f1f3f6;padding:18px;text-align:center}.original-body img{display:block;max-width:100%;height:auto;margin:auto;background:#fff;box-shadow:0 4px 22px rgba(0,0,0,.12)}
+.analysis{min-height:100vh;padding:30px;background:#f5f7fb}.analysis-inner{max-width:1180px;margin:auto}.analysis-head{display:flex;gap:12px;align-items:center;margin-bottom:22px}.analysis-head h1{margin:0;font-size:28px}.analysis-head .grow{flex:1}
+.analysis-actions{display:flex;gap:8px}.analysis-actions button{border:1px solid #dce1e9;background:#fff;border-radius:10px;padding:10px 13px;font-weight:850}.analysis-actions .primary{background:#303745;color:#fff;border-color:#303745}
+.score-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.score-card{background:#fff;border:1px solid #e2e6ed;border-radius:15px;padding:18px}.score-card .k{font-size:12px;color:#7b8492;font-weight:800}.score-card .v{font-size:28px;font-weight:950;margin-top:4px}
+.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.analysis-card{background:#fff;border:1px solid #e2e6ed;border-radius:15px;padding:18px}.analysis-card h2{font-size:17px;margin:0 0 14px}.metric-row{margin:12px 0}.metric-top{display:flex;gap:8px;align-items:center;font-size:13px}.metric-top b{flex:1}.metric-bar{height:8px;background:#eef1f5;border-radius:999px;overflow:hidden;margin-top:6px}.metric-fill{height:100%;background:#6579e8;border-radius:999px}.metric-fill.weak{background:#dc6868}.muted{color:#818b99;font-size:12px}
+.wrong-card{grid-column:1/-1}.wrong-list{display:grid;gap:8px}.wrong-item{border:1px solid #e5e8ee;border-radius:11px;padding:11px 13px;display:grid;grid-template-columns:50px 1fr auto;gap:10px;align-items:center;cursor:pointer}.wrong-item:hover{background:#fafbfe}.wrong-no{font-weight:950;color:#c94e4e}.wrong-meta{font-size:12px;color:#727c8b;margin-top:3px}.wrong-answers{font-size:12px;font-weight:850;white-space:nowrap}
+.analysis-empty{color:#788292;font-size:13px;padding:10px 0}
+@media(max-width:760px){.passage-tools{position:static}.analysis{padding:15px}.analysis-head{align-items:flex-start;flex-wrap:wrap}.analysis-actions{width:100%}.analysis-actions button{flex:1}.score-grid{grid-template-columns:1fr 1fr}.analysis-grid{grid-template-columns:1fr}.wrong-card{grid-column:auto}.wrong-item{grid-template-columns:42px 1fr}.wrong-answers{grid-column:2}}
+
 </style>
 </head>
 <body>
@@ -89,17 +107,44 @@
 <section id="app" class="hidden">
 <header class="bar"><div><strong>국어 혼합 CBT</strong><div id="meta" class="meta"></div></div><div class="grow"></div><div id="answered" class="answered">0 / 45 응답</div><div id="timer" class="timer">80:00</div><button id="newExam" class="ghost">새 시험</button></header>
 <main class="layout">
-<section id="passagePane" class="pane passage"><div id="tag" class="tag"></div><div id="reading" class="reading"></div></section>
+<section id="passagePane" class="pane passage">
+<div class="passage-tools">
+  <button class="toolbtn on" data-tool="hand" type="button">손</button>
+  <button class="toolbtn" data-tool="underline" type="button">밑줄</button>
+  <button class="toolbtn" data-tool="highlight" type="button">형광펜</button>
+  <button class="toolbtn" data-tool="pen" type="button">펜</button>
+  <button class="toolbtn" data-tool="eraser" type="button">지우개</button>
+  <button id="undoDraw" class="toolbtn" type="button">↶ 되돌리기</button>
+  <button id="clearDraw" class="toolbtn danger" type="button">필기 지우기</button>
+  <button id="showOriginal" class="toolbtn" type="button">시험지 원문 보기</button>
+</div>
+<div id="tag" class="tag"></div>
+<div id="readingStage" class="reading-stage"><div id="reading" class="reading"></div><canvas id="drawCanvas" class="draw-canvas"></canvas></div>
+</section>
 <section class="pane question"><button id="mobileToggle" class="mobile-toggle">지문 보기</button><div id="resultbar" class="resultbar hidden"></div><div id="qno" class="qno"></div><div id="stem" class="stem"></div><div id="view"></div><div id="qassets"></div><div id="choices" class="choices"></div><div class="nav"><button id="prev">← 이전</button><button id="next" class="next">다음 →</button></div></section>
 <aside class="palette"><div class="ptitle">답안표</div><div id="pgrid" class="pgrid"></div><button id="submit" class="submit">답안 제출</button></aside>
 </main>
 </section>
+<section id="analysis" class="analysis hidden">
+  <div class="analysis-inner">
+    <div class="analysis-head"><h1>학습 분석</h1><div class="grow"></div><div class="analysis-actions"><button id="analysisReview" type="button">오답 다시 보기</button><button id="analysisNew" class="primary" type="button">새 시험 만들기</button></div></div>
+    <div id="scoreGrid" class="score-grid"></div>
+    <div class="analysis-grid">
+      <div class="analysis-card"><h2>이번 시험 · 취약 주제</h2><div id="topicAnalysis"></div></div>
+      <div class="analysis-card"><h2>이번 시험 · 취약 문제 유형</h2><div id="typeAnalysis"></div></div>
+      <div class="analysis-card"><h2>최근 누적 · 취약 주제</h2><div id="historyTopic"></div></div>
+      <div class="analysis-card"><h2>최근 누적 · 취약 문제 유형</h2><div id="historyType"></div></div>
+      <div class="analysis-card wrong-card"><h2>틀린 문제</h2><div id="wrongList" class="wrong-list"></div></div>
+    </div>
+  </div>
+</section>
 <div id="loading" class="loading hidden"><div><div class="spin"></div>문제를 조합하는 중...</div></div>
 <div id="modal" class="modal hidden"><div class="mcard"><h2>답안 제출</h2><p id="modalText"></p><div class="mactions"><button id="cancel">계속 풀기</button><button id="confirm" class="primary">제출하기</button></div></div></div>
+<div id="originalModal" class="original-modal hidden"><div class="original-shell"><div class="original-head"><span id="originalTitle">시험지 원문</span><div class="grow"></div><button id="originalClose" class="ghost" type="button">닫기</button></div><div class="original-body"><img id="originalImg" alt="시험지 원문"></div></div></div>
 <script>
 var YEARS=[2022,2023,2024,2025,2026,2027];
 var selectedYears=new Set(YEARS),selectedCategories=new Set();
-var mode="full",customSetCount=3,exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null,grading=null;
+var mode="full",customSetCount=3,exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null,grading=null,drawTool="hand",annotationData={},activeStroke=null,currentSetId=null;
 
 function $(s){return document.querySelector(s)}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
@@ -192,6 +237,7 @@ function loadExam(e,isNew){
   (e.sections||[]).forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});
   if(flat.length!==e.question_count||flat.length<1||flat.length>45){alert("문항 수 오류");return}
   startedAt=Date.now();
+  loadAnnotationStore();
   if(isNew)persist();
   $("#start").classList.add("hidden");$("#app").classList.remove("hidden");
   $("#resultbar").classList.add("hidden");
@@ -199,8 +245,13 @@ function loadExam(e,isNew){
   buildPalette();render();startTimer()
 }
 
+function isHeaderAsset(a){
+  if(!a||a.page!==1||a.target!=="passage"||!Array.isArray(a.rect)||a.rect.length!==4)return false;
+  var x0=Number(a.rect[0]),y0=Number(a.rect[1]),w=Number(a.rect[2])-x0,h=Number(a.rect[3])-y0;
+  return x0>=330&&x0<=345&&y0>=150&&y0<=158&&w>=160&&w<=170&&h>=40&&h<=45;
+}
 function assetHtml(list){
-  return (list||[]).filter(function(a){return a.url}).map(function(a){return '<img class="asset" src="'+esc(a.url)+'" alt="문항 자료" loading="lazy">'}).join("")
+  return (list||[]).filter(function(a){return a.url&&!isHeaderAsset(a)}).map(function(a){return '<img class="asset" src="'+esc(a.url)+'" alt="문항 자료" loading="lazy">'}).join("")
 }
 function choiceClass(q,c){
   var cls="choice";
@@ -214,13 +265,16 @@ function choiceClass(q,c){
 }
 function render(){
   var item=flat[current],q=item.q,set=item.set;
-  $("#qno").textContent=q.display_no+"번 · "+set.area+" · "+set.category;
+  $("#qno").innerHTML=q.display_no+"번 · "+esc(set.area)+" · "+esc(set.category)+'<span class="qtype">'+esc(q.question_type||"기타")+'</span>';
   $("#stem").textContent=q.stem||"";
   var month=set.source&&set.source.month;
   var round=month===11?"수능":month+"월";
   $("#tag").textContent=set.area+" · "+set.category+" · "+set.source.academic_year+"학년도 "+round+" · 문항 "+set.display_start+"~"+set.display_end;
   var parts=(set.passage&&set.passage.sections)||[];
   $("#reading").innerHTML=parts.map(function(p){return '<div class="part">'+(p.label?'<div class="plabel">'+esc(p.label)+'</div>':"")+'<p>'+esc(p.text)+'</p></div>'}).join("")+assetHtml((set.assets||[]).filter(function(a){return a.target==="passage"}));
+  currentSetId=set.id;
+  $("#reading").querySelectorAll("img").forEach(function(img){img.addEventListener("load",function(){setTimeout(resizeDrawCanvas,30)})});
+  setTimeout(resizeDrawCanvas,30);
   $("#view").innerHTML=q.view_text?'<div class="view"><b>&lt;보기&gt;</b>'+esc(q.view_text)+'</div>':"";
   $("#qassets").innerHTML=assetHtml(q.assets||[]);
   $("#choices").innerHTML=(q.choices||[]).map(function(c){return '<div class="'+choiceClass(q,c)+'" data-v="'+c.index+'"><span class="num">'+c.index+'</span><span>'+(c.text?esc(c.text):"그림의 "+c.marker+" 선택지")+'</span></div>'}).join("");
@@ -267,6 +321,7 @@ function restore(){
       exam=x.exam;answers=x.answers||{};grading=null;current=x.current||0;startedAt=x.startedAt||Date.now();flat=[];
       exam.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});
       if(flat.length!==exam.question_count)return false;
+      loadAnnotationStore();
       $("#start").classList.add("hidden");$("#app").classList.remove("hidden");
       $("#meta").textContent=exam.years.join("·")+"학년도 · "+examLabel(exam);
       buildPalette();render();startTimer();return true
@@ -305,16 +360,145 @@ async function finish(){
     grading={};(data.details||[]).forEach(function(x){grading[x.display_no]=x});
     clearInterval(timerId);$("#modal").classList.add("hidden");$("#resultbar").classList.remove("hidden");
     $("#resultbar").textContent="정답 "+data.correct_count+" / "+data.total_count+" · 정답률 "+data.percent+"% · 미응답 "+data.unanswered_count;
-    localStorage.removeItem("mysuneung-cbt-current");render()
+    saveAttemptHistory(data);
+    localStorage.removeItem("mysuneung-cbt-current");
+    showAnalysis(data)
   }catch(e){alert(e.message)}
   finally{$("#confirm").disabled=false;$("#confirm").textContent="제출하기"}
+}
+
+
+function annotationKey(){return exam?"mysuneung-cbt-annotations-"+exam.id:""}
+function loadAnnotationStore(){
+  annotationData={};
+  if(!exam)return;
+  try{annotationData=JSON.parse(localStorage.getItem(annotationKey()))||{}}catch(e){annotationData={}}
+}
+function saveAnnotationStore(){
+  if(!exam)return;
+  try{localStorage.setItem(annotationKey(),JSON.stringify(annotationData))}catch(e){}
+}
+function setDrawTool(tool){
+  drawTool=tool;activeStroke=null;
+  document.querySelectorAll("[data-tool]").forEach(function(b){b.classList.toggle("on",b.dataset.tool===tool)});
+  $("#drawCanvas").classList.toggle("active",tool!=="hand");
+}
+function resizeDrawCanvas(){
+  var stage=$("#readingStage"),canvas=$("#drawCanvas");
+  if(!stage||!canvas||!currentSetId)return;
+  var w=Math.max(1,stage.clientWidth),h=Math.max(1,$("#reading").scrollHeight);
+  stage.style.minHeight=h+"px";canvas.style.width=w+"px";canvas.style.height=h+"px";
+  var dpr=Math.min(2,window.devicePixelRatio||1);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);
+  canvas.dataset.cssWidth=w;canvas.dataset.cssHeight=h;drawAll()
+}
+function drawStroke(ctx,stroke,w,h){
+  if(!stroke||!stroke.points||!stroke.points.length)return;
+  ctx.save();ctx.lineCap="round";ctx.lineJoin="round";
+  if(stroke.tool==="eraser"){ctx.globalCompositeOperation="destination-out";ctx.lineWidth=26}
+  else if(stroke.tool==="highlight"){ctx.globalCompositeOperation="source-over";ctx.strokeStyle="rgba(255,210,45,.34)";ctx.lineWidth=16}
+  else if(stroke.tool==="underline"){ctx.globalCompositeOperation="source-over";ctx.strokeStyle="rgba(214,52,52,.9)";ctx.lineWidth=2.5}
+  else{ctx.globalCompositeOperation="source-over";ctx.strokeStyle="rgba(37,58,84,.92)";ctx.lineWidth=2.3}
+  ctx.beginPath();
+  stroke.points.forEach(function(pt,i){var x=pt.x*w,y=pt.y*h;if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)});
+  ctx.stroke();ctx.restore()
+}
+function drawAll(){
+  var canvas=$("#drawCanvas");if(!canvas)return;
+  var dpr=Math.min(2,window.devicePixelRatio||1),w=Number(canvas.dataset.cssWidth)||canvas.clientWidth,h=Number(canvas.dataset.cssHeight)||canvas.clientHeight;
+  var ctx=canvas.getContext("2d");ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+  (annotationData[currentSetId]||[]).forEach(function(st){drawStroke(ctx,st,w,h)});
+  if(activeStroke)drawStroke(ctx,activeStroke,w,h)
+}
+function canvasPoint(e){
+  var c=$("#drawCanvas"),r=c.getBoundingClientRect(),w=Number(c.dataset.cssWidth)||r.width,h=Number(c.dataset.cssHeight)||r.height;
+  return {x:Math.max(0,Math.min(1,(e.clientX-r.left)/w)),y:Math.max(0,Math.min(1,(e.clientY-r.top)/h))}
+}
+function initDrawing(){
+  var c=$("#drawCanvas");
+  c.addEventListener("pointerdown",function(e){
+    if(drawTool==="hand")return;e.preventDefault();c.setPointerCapture(e.pointerId);
+    var p=canvasPoint(e);activeStroke={tool:drawTool,points:[p]};drawAll()
+  });
+  c.addEventListener("pointermove",function(e){
+    if(!activeStroke)return;e.preventDefault();var p=canvasPoint(e);
+    if(activeStroke.tool==="underline"){activeStroke.points=[activeStroke.points[0],{x:p.x,y:activeStroke.points[0].y}]}
+    else activeStroke.points.push(p);
+    drawAll()
+  });
+  function endStroke(e){
+    if(!activeStroke)return;
+    (annotationData[currentSetId]||(annotationData[currentSetId]=[])).push(activeStroke);activeStroke=null;saveAnnotationStore();drawAll()
+  }
+  c.addEventListener("pointerup",endStroke);c.addEventListener("pointercancel",endStroke);
+  document.querySelectorAll("[data-tool]").forEach(function(b){b.onclick=function(){setDrawTool(b.dataset.tool)}});
+  $("#undoDraw").onclick=function(){var a=annotationData[currentSetId]||[];if(a.length){a.pop();saveAnnotationStore();drawAll()}};
+  $("#clearDraw").onclick=function(){if(confirm("현재 지문의 필기를 모두 지울까요?")){annotationData[currentSetId]=[];saveAnnotationStore();drawAll()}};
+  window.addEventListener("resize",function(){setTimeout(resizeDrawCanvas,80)});
+}
+function encodePathClient(v){return String(v).split("/").map(encodeURIComponent).join("/")}
+function originalUrlFor(set){
+  if(set&&set.original_url)return set.original_url;
+  if(!set||!set.source)return "";
+  var y=Number(set.source.academic_year),m=Number(set.source.month),folder=m===11?(y+"-S"):(y+"-"+String(m).padStart(2,"0"));
+  var mm=String(set.id||"").match(/(q\d+-\d+)$/);
+  if(!mm)return "";
+  var path=y+"/국어/"+folder+"/"+set.section_code+"/"+mm[1]+"/original.png";
+  return "/cbt-data/originals/"+encodePathClient(path)
+}
+function openOriginal(){
+  var set=flat[current]&&flat[current].set,url=originalUrlFor(set);if(!url)return alert("원문 이미지가 준비되지 않았습니다.");
+  $("#originalTitle").textContent=set.source.academic_year+"학년도 "+(set.source.month===11?"수능":set.source.month+"월")+" · "+set.area+" · "+set.category;
+  $("#originalImg").src=url;$("#originalModal").classList.remove("hidden")
+}
+function statBy(details,key){
+  var m={};(details||[]).forEach(function(d){var k=d[key]||"기타";if(!m[k])m[k]={name:k,total:0,wrong:0,correct:0};m[k].total++;if(d.is_correct)m[k].correct++;else m[k].wrong++});
+  return Object.values(m).map(function(x){x.accuracy=Math.round(x.correct/x.total*100);return x}).sort(function(a,b){return (b.wrong/b.total)-(a.wrong/a.total)||b.total-a.total})
+}
+function metricHtml(rows,limit){
+  rows=rows.filter(function(x){return x.total>0}).slice(0,limit||8);
+  if(!rows.length)return '<div class="analysis-empty">분석할 문항이 없습니다.</div>';
+  return rows.map(function(x){var weak=100-x.accuracy;return '<div class="metric-row"><div class="metric-top"><b>'+esc(x.name)+'</b><span>'+x.correct+'/'+x.total+' 정답 · '+x.accuracy+'%</span></div><div class="metric-bar"><div class="metric-fill '+(x.accuracy<60?'weak':'')+'" style="width:'+Math.max(3,x.accuracy)+'%"></div></div></div>'}).join("")
+}
+function saveAttemptHistory(data){
+  var hist=[];try{hist=JSON.parse(localStorage.getItem("mysuneung-cbt-history"))||[]}catch(e){}
+  hist.unshift({at:Date.now(),mode:exam.mode,categories:exam.categories||[],score:data.correct_count,total:data.total_count,percent:data.percent,details:data.details||[]});
+  hist=hist.slice(0,30);try{localStorage.setItem("mysuneung-cbt-history",JSON.stringify(hist))}catch(e){}
+}
+function getHistoryDetails(){
+  try{return (JSON.parse(localStorage.getItem("mysuneung-cbt-history"))||[]).flatMap(function(x){return x.details||[]})}catch(e){return []}
+}
+function showAnalysis(data){
+  $("#app").classList.add("hidden");$("#analysis").classList.remove("hidden");
+  $("#scoreGrid").innerHTML=[
+    ["정답",data.correct_count+" / "+data.total_count],
+    ["정답률",data.percent+"%"],
+    ["오답",data.wrong_count+"문항"],
+    ["미응답",data.unanswered_count+"문항"]
+  ].map(function(x){return '<div class="score-card"><div class="k">'+x[0]+'</div><div class="v">'+x[1]+'</div></div>'}).join("");
+  $("#topicAnalysis").innerHTML=metricHtml(statBy(data.details,"category"),8);
+  $("#typeAnalysis").innerHTML=metricHtml(statBy(data.details,"question_type"),8);
+  var hd=getHistoryDetails();
+  $("#historyTopic").innerHTML=metricHtml(statBy(hd,"category"),8);
+  $("#historyType").innerHTML=metricHtml(statBy(hd,"question_type"),8);
+  var wrong=(data.details||[]).filter(function(d){return !d.is_correct});
+  $("#wrongList").innerHTML=wrong.length?wrong.map(function(d){
+    var round=d.month===11?"수능":d.month+"월";
+    return '<div class="wrong-item" data-no="'+d.display_no+'"><div class="wrong-no">'+d.display_no+'번</div><div><b>'+esc(d.category)+' · '+esc(d.question_type)+'</b><div class="wrong-meta">'+d.academic_year+'학년도 '+round+' 원문 '+d.original_no+'번</div></div><div class="wrong-answers">선택 '+(d.selected||"-")+' · 정답 '+d.correct_answer+'</div></div>'
+  }).join(""):'<div class="analysis-empty">틀린 문제가 없습니다.</div>';
+  $("#wrongList").querySelectorAll(".wrong-item").forEach(function(el){el.onclick=function(){$("#analysis").classList.add("hidden");$("#app").classList.remove("hidden");go(Number(el.dataset.no)-1)}});
+  window.scrollTo(0,0)
 }
 
 $("#modeFull").onclick=function(){setMode("full")};
 $("#modeCustom").onclick=function(){setMode("custom")};
 $("#generate").onclick=generate;
 $("#newExam").onclick=function(){if(confirm("현재 답안을 지우고 새 시험을 만들까요?")){localStorage.removeItem("mysuneung-cbt-current");location.reload()}};
-$("#mobileToggle").onclick=function(){var p=$("#passagePane"),on=p.classList.toggle("open");$("#mobileToggle").textContent=on?"지문 닫기":"지문 보기"};
+$("#mobileToggle").onclick=function(){var p=$("#passagePane"),on=p.classList.toggle("open");$("#mobileToggle").textContent=on?"지문 닫기":"지문 보기";setTimeout(resizeDrawCanvas,40)};
+$("#showOriginal").onclick=openOriginal;
+$("#originalClose").onclick=function(){$("#originalModal").classList.add("hidden");$("#originalImg").src=""};
+$("#originalModal").onclick=function(e){if(e.target===$("#originalModal")){$("#originalModal").classList.add("hidden");$("#originalImg").src=""}};
+$("#analysisReview").onclick=function(){$("#analysis").classList.add("hidden");$("#app").classList.remove("hidden");render()};
+$("#analysisNew").onclick=function(){localStorage.removeItem("mysuneung-cbt-current");location.reload()};
 $("#submit").onclick=openSubmit;
 $("#cancel").onclick=function(){$("#modal").classList.add("hidden")};
 $("#confirm").onclick=finish;
@@ -325,6 +509,6 @@ document.addEventListener("keydown",function(e){
   if(!grading&&["1","2","3","4","5"].includes(e.key)){answers[flat[current].q.display_no]=Number(e.key);persist();renderChoice();updatePalette()}
 });
 
-initYears();initSetCounts();initCategories();setMode("full");restore();
+initYears();initSetCounts();initCategories();initDrawing();setMode("full");restore();
 </script>
 </body></html>
