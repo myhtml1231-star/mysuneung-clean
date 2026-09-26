@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>국어 CBT 미리보기</title>
+<style>
+:root{--a:#f4b733;--as:#fff7e2;--b:#6673f6;--ink:#171a21;--mut:#6b7280;--line:#e6e9ef;--bg:#f5f7fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,"Noto Sans KR",system-ui,-apple-system,sans-serif}button,select{font:inherit}
+.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.topin{max-width:1440px;margin:auto;display:flex;gap:14px;align-items:center;padding:12px 18px}.brand{font-weight:900;font-size:18px}.source{font-size:13px;color:var(--mut);flex:1}
+select{border:1px solid #d9dde5;border-radius:10px;background:#fff;padding:9px 12px}
+.layout{max-width:1440px;margin:auto;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(420px,.98fr);gap:16px;padding:16px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 5px 18px rgba(18,24,40,.045)}
+.passage{height:calc(100vh - 92px);overflow:auto;padding:28px 34px}.question{height:calc(100vh - 92px);overflow:auto;padding:24px 28px 92px}
+.kicker{font-size:12px;font-weight:800;color:var(--mut);margin-bottom:18px}.sec{font-size:17px;font-weight:900;margin:22px 0 10px;padding-left:10px;border-left:4px solid var(--a)}
+.p,.dialog{font-size:16px;line-height:1.88;letter-spacing:-.01em;margin:0 0 15px;word-break:keep-all}.dialog{background:#fafbfd;border-radius:10px;padding:11px 14px;margin-bottom:8px}
+.visual{display:block;max-width:100%;height:auto;margin:14px auto;border:1px solid #e5e7eb;border-radius:8px}
+.qmeta{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.qnum{font-size:13px;font-weight:900;color:var(--b);background:#eef0ff;border-radius:999px;padding:7px 11px}.prog{font-size:13px;color:var(--mut)}
+.stem{font-size:18px;font-weight:800;line-height:1.65;word-break:keep-all;margin-bottom:18px}.mat{border:1px solid #d8dde6;background:#fafbfc;border-radius:12px;padding:16px 18px;margin:14px 0 20px}.mt{font-size:13px;font-weight:900;margin-bottom:10px}.mb{font-size:15px;line-height:1.75;white-space:pre-wrap;word-break:keep-all}.mat img{display:block;max-width:100%;height:auto;margin:auto;border-radius:6px}
+.choices{display:grid;gap:9px}.choice{width:100%;display:grid;grid-template-columns:34px 1fr;gap:10px;text-align:left;align-items:start;padding:13px 14px;border:1px solid #dfe3ea;border-radius:12px;background:#fff;cursor:pointer}.choice:hover{background:#fcfcfd}.choice.sel{border-color:var(--a);background:var(--as);box-shadow:0 0 0 2px rgba(244,183,51,.12)}.mark{font-size:22px;color:#5b6472}.choice.sel .mark{color:#d89400}.ct{font-size:15.5px;line-height:1.65;word-break:keep-all}
+.nav{position:sticky;bottom:0;margin:26px -28px -92px;padding:13px 20px 16px;background:rgba(255,255,255,.97);border-top:1px solid var(--line);backdrop-filter:blur(10px)}.omr{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:11px}
+.ob{width:34px;height:34px;border-radius:50%;border:1px solid #d8dde6;background:#fff;font-size:13px;font-weight:800;cursor:pointer}.ob.cur{border-color:var(--b);color:var(--b)}.ob.ans{background:var(--a);border-color:var(--a);color:#fff}.acts{display:flex;justify-content:space-between}.nb{border:0;border-radius:10px;padding:10px 17px;font-weight:800;cursor:pointer}.prev{background:#eff1f5}.next{background:#222;color:#fff}
+@media(max-width:900px){.topin{flex-wrap:wrap}.source{order:3;flex-basis:100%}.layout{grid-template-columns:1fr;padding:10px}.passage,.question{height:auto;overflow:visible;padding:22px 18px}.nav{margin:24px -18px -22px}.p,.dialog{font-size:15px}.stem{font-size:17px}.ct{font-size:15px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin"><div class="brand">국어 CBT</div><div id="source" class="source">불러오는 중…</div><select id="setSelect"><option value="2027-03-common-q04-09">2027학년도 3월 · 공통 독서</option><option value="2027-07-lm-q40-43">2027학년도 7월 · 언어와 매체</option></select></div></header>
+<main class="layout">
+<section class="panel passage"><div class="kicker">지문 / 자료</div><div id="passage"></div></section>
+<section class="panel question"><div id="question"></div><div class="nav"><div id="omr" class="omr"></div><div class="acts"><button id="prev" class="nb prev">← 이전</button><button id="next" class="nb next">다음 →</button></div></div></section>
+</main>
+<script>
+var state={data:null,index:0,answers:{}};
+function q(s){return document.querySelector(s)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})}
+function key(){return 'cbt-preview:'+state.data.id}
+function saved(){try{state.answers=JSON.parse(localStorage.getItem(key())||'{}')}catch(e){state.answers={}}}
+function save(){localStorage.setItem(key(),JSON.stringify(state.answers))}
+function passage(){
+ var box=q('#passage');box.innerHTML='';
+ state.data.passage.forEach(function(x){
+  if(x.type==='section')box.insertAdjacentHTML('beforeend','<div class="sec">'+esc(x.text)+'</div>');
+  else if(x.type==='dialogue')box.insertAdjacentHTML('beforeend','<div class="dialog">'+esc(x.text)+'</div>');
+  else if(x.type==='text')box.insertAdjacentHTML('beforeend','<p class="p">'+esc(x.text)+'</p>');
+  else if(x.type==='image')box.insertAdjacentHTML('beforeend','<img class="visual" src="'+esc(x.src)+'" alt="문항 자료">');
+ })
+}
+function material(items){
+ if(!items||!items.length)return '';
+ var out='',open=false;
+ items.forEach(function(x){
+  if(x.type==='label'){if(open)out+='</div>';out+='<div class="mat"><div class="mt">'+esc(x.text)+'</div>';open=true}
+  else if(x.type==='text'){if(!open){out+='<div class="mat">';open=true}out+='<div class="mb">'+esc(x.text)+'</div>'}
+  else if(x.type==='image'){if(!open){out+='<div class="mat">';open=true}out+='<img src="'+esc(x.src)+'" alt="문항 자료">'}
+ });
+ if(open)out+='</div>';return out;
+}
+function question(){
+ var qq=state.data.questions[state.index],no=state.index+1,total=state.data.questions.length,sel=state.answers[no];
+ var h='<div class="qmeta"><span class="qnum">문제 '+no+'</span><span class="prog">'+no+' / '+total+'</span></div>';
+ h+='<div class="stem">'+esc(qq.stem)+'</div>'+material(qq.materials)+'<div class="choices">';
+ qq.choices.forEach(function(c,i){var v=i+1;h+='<button class="choice'+(sel===v?' sel':'')+'" data-v="'+v+'"><span class="mark">'+esc(c.label)+'</span><span class="ct">'+esc(c.text)+'</span></button>'});
+ h+='</div>';q('#question').innerHTML=h;
+ document.querySelectorAll('.choice').forEach(function(b){b.onclick=function(){state.answers[no]=Number(b.dataset.v);save();question();nav()}});nav();
+}
+function nav(){
+ var total=state.data.questions.length,box=q('#omr');box.innerHTML='';
+ for(var i=1;i<=total;i++){var b=document.createElement('button');b.className='ob'+(i===state.index+1?' cur':'')+(state.answers[i]?' ans':'');b.textContent=i;(function(n){b.onclick=function(){state.index=n-1;question();window.scrollTo({top:0,behavior:'smooth'})}})(i);box.appendChild(b)}
+ q('#prev').disabled=state.index===0;q('#prev').style.opacity=state.index===0?'.45':'1';q('#next').textContent=state.index===total-1?'처음으로 ↺':'다음 →';
+}
+q('#prev').onclick=function(){if(state.index>0){state.index--;question()}};
+q('#next').onclick=function(){state.index=state.index===state.data.questions.length-1?0:state.index+1;question()};
+async function load(id){
+ var r=await fetch('data/'+id+'.json',{cache:'no-store'});if(!r.ok)throw new Error('데이터 로드 실패');
+ state.data=await r.json();state.index=0;saved();q('#source').textContent=state.data.academic_year+'학년도 '+state.data.month+'월 · '+state.data.section+' · 새 문항번호';passage();question();
+}
+q('#setSelect').onchange=function(e){load(e.target.value)};
+load(q('#setSelect').value);
+</script>
+</body>
+</html>
