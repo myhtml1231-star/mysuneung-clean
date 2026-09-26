@@ -37,9 +37,52 @@
 .mode-note{font-size:12px;color:#7d8796;line-height:1.6;margin-top:8px}
 
 
-.passage-tools{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:12px;position:sticky;top:0;background:rgba(255,255,255,.96);padding:7px 0;z-index:8}
-.toolbtn{border:1px solid #dce1e9;background:#fff;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:850;color:#4d5665}
-.toolbtn.on{background:#303745;color:#fff;border-color:#303745}.toolbtn.danger{color:#b74343}
+.paint-ribbon{
+  display:flex;align-items:stretch;gap:0;margin:-28px -33px 16px;
+  padding:7px 10px 6px;background:#fbfbfb;border-bottom:1px solid #dedede;
+  position:sticky;top:0;z-index:12;min-height:78px;
+  box-shadow:0 1px 0 rgba(0,0,0,.02);font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,sans-serif
+}
+.paint-quick{display:flex;align-items:flex-start;gap:1px;padding:1px 8px 0 0}
+.paint-quick button,.paint-ribbon button{font-family:inherit}
+.paint-icon-btn{
+  width:30px;height:30px;border:0;background:transparent;border-radius:4px;
+  display:grid;place-items:center;padding:0;color:#4e4e4e
+}
+.paint-icon-btn:hover{background:#e9edf3}.paint-icon-btn:active{background:#dfe5ee}
+.paint-icon-btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.paint-sep{width:1px;background:#dedede;margin:3px 9px 4px}
+.paint-group{display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:0 6px;min-width:62px}
+.paint-group-body{display:flex;align-items:center;justify-content:center;gap:3px;min-height:47px}
+.paint-group-label{font-size:10px;line-height:12px;color:#666;margin-top:2px;user-select:none}
+.paint-tools-grid{display:grid;grid-template-columns:repeat(3,34px);grid-template-rows:34px 34px;gap:1px;margin-top:-8px}
+.paint-tool{
+  border:0;background:transparent;border-radius:4px;padding:3px;display:grid;place-items:center;color:#333;position:relative
+}
+.paint-tool:hover{background:#e9edf3}.paint-tool.on{background:#dce8f7;outline:1px solid #b8cbe4}
+.paint-tool svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.paint-tool .marker-fill{fill:#ffd84d;stroke:#333}.paint-tool .eraser-fill{fill:#f3a6ab;stroke:#333}
+.paint-size{
+  width:58px;border:0;background:transparent;border-radius:4px;padding:4px 5px 2px;color:#333
+}
+.paint-size:hover{background:#e9edf3}
+.paint-size-lines{height:30px;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.paint-size-lines i{display:block;background:#3c3c3c;border-radius:2px;margin:auto}.paint-size-lines i:nth-child(1){width:28px;height:1px}.paint-size-lines i:nth-child(2){width:28px;height:2px}.paint-size-lines i:nth-child(3){width:28px;height:4px}
+.paint-size-text{font-size:10px;margin-top:2px}
+.paint-colors-wrap{display:flex;align-items:center;gap:7px}
+.paint-current-color{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:9px;color:#666}
+.paint-color-current{width:31px;height:31px;border-radius:50%;background:#222;border:2px solid #fff;box-shadow:0 0 0 1px #909090}
+.paint-palette{display:grid;grid-template-columns:repeat(8,18px);grid-template-rows:repeat(2,18px);gap:4px}
+.paint-swatch{width:18px;height:18px;border-radius:50%;border:1px solid #bdbdbd;padding:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}
+.paint-swatch:hover{outline:2px solid #ccd9ea;outline-offset:1px}.paint-swatch.on{outline:2px solid #7fa1cc;outline-offset:1px}
+.paint-ribbon-spacer{flex:1}
+.paint-source-btn{
+  align-self:center;border:1px solid #d1d5da;background:#fff;border-radius:5px;height:34px;padding:0 12px;
+  display:flex;align-items:center;gap:6px;font-size:12px;font-weight:650;color:#333;white-space:nowrap
+}
+.paint-source-btn:hover{background:#f1f4f8}.paint-source-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.7}
+.paint-popover{position:absolute;z-index:40;background:#fff;border:1px solid #d6d9de;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.13);padding:6px;display:grid;gap:2px}
+.paint-popover.hidden{display:none!important}.paint-size-option{border:0;background:#fff;border-radius:4px;padding:7px 10px;display:flex;align-items:center;gap:9px;min-width:110px;font-size:12px}.paint-size-option:hover{background:#edf3fb}.paint-size-option i{display:block;width:44px;background:#333;border-radius:2px}
 .reading-stage{position:relative;min-height:100px}.draw-canvas{position:absolute;left:0;top:0;width:100%;height:100%;z-index:6;pointer-events:none;touch-action:none}.draw-canvas.active{pointer-events:auto;cursor:crosshair}
 .qtype{display:inline-block;margin-left:7px;padding:3px 7px;border-radius:999px;background:#f1f3f8;color:#657085;font-size:11px;font-weight:800}
 .original-modal{position:fixed;inset:0;background:rgba(15,20,28,.72);z-index:120;display:flex;align-items:stretch;justify-content:center;padding:18px}
@@ -52,7 +95,7 @@
 .analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.analysis-card{background:#fff;border:1px solid #e2e6ed;border-radius:15px;padding:18px}.analysis-card h2{font-size:17px;margin:0 0 14px}.metric-row{margin:12px 0}.metric-top{display:flex;gap:8px;align-items:center;font-size:13px}.metric-top b{flex:1}.metric-bar{height:8px;background:#eef1f5;border-radius:999px;overflow:hidden;margin-top:6px}.metric-fill{height:100%;background:#6579e8;border-radius:999px}.metric-fill.weak{background:#dc6868}.muted{color:#818b99;font-size:12px}
 .wrong-card{grid-column:1/-1}.wrong-list{display:grid;gap:8px}.wrong-item{border:1px solid #e5e8ee;border-radius:11px;padding:11px 13px;display:grid;grid-template-columns:50px 1fr auto;gap:10px;align-items:center;cursor:pointer}.wrong-item:hover{background:#fafbfe}.wrong-no{font-weight:950;color:#c94e4e}.wrong-meta{font-size:12px;color:#727c8b;margin-top:3px}.wrong-answers{font-size:12px;font-weight:850;white-space:nowrap}
 .analysis-empty{color:#788292;font-size:13px;padding:10px 0}
-@media(max-width:760px){.passage-tools{position:static}.analysis{padding:15px}.analysis-head{align-items:flex-start;flex-wrap:wrap}.analysis-actions{width:100%}.analysis-actions button{flex:1}.score-grid{grid-template-columns:1fr 1fr}.analysis-grid{grid-template-columns:1fr}.wrong-card{grid-column:auto}.wrong-item{grid-template-columns:42px 1fr}.wrong-answers{grid-column:2}}
+@media(max-width:760px){.paint-ribbon{position:static;margin:-15px -15px 12px;overflow-x:auto;overflow-y:visible;min-height:76px}.paint-ribbon-spacer{min-width:10px}.analysis{padding:15px}.analysis-head{align-items:flex-start;flex-wrap:wrap}.analysis-actions{width:100%}.analysis-actions button{flex:1}.score-grid{grid-template-columns:1fr 1fr}.analysis-grid{grid-template-columns:1fr}.wrong-card{grid-column:auto}.wrong-item{grid-template-columns:42px 1fr}.wrong-answers{grid-column:2}}
 
 </style>
 </head>
@@ -108,15 +151,96 @@
 <header class="bar"><div><strong>국어 혼합 CBT</strong><div id="meta" class="meta"></div></div><div class="grow"></div><div id="answered" class="answered">0 / 45 응답</div><div id="timer" class="timer">80:00</div><button id="newExam" class="ghost">새 시험</button></header>
 <main class="layout">
 <section id="passagePane" class="pane passage">
-<div class="passage-tools">
-  <button class="toolbtn on" data-tool="hand" type="button">손</button>
-  <button class="toolbtn" data-tool="underline" type="button">밑줄</button>
-  <button class="toolbtn" data-tool="highlight" type="button">형광펜</button>
-  <button class="toolbtn" data-tool="pen" type="button">펜</button>
-  <button class="toolbtn" data-tool="eraser" type="button">지우개</button>
-  <button id="undoDraw" class="toolbtn" type="button">↶ 되돌리기</button>
-  <button id="clearDraw" class="toolbtn danger" type="button">필기 지우기</button>
-  <button id="showOriginal" class="toolbtn" type="button">시험지 원문 보기</button>
+<div id="paintRibbon" class="paint-ribbon">
+  <div class="paint-quick">
+    <button id="undoDraw" class="paint-icon-btn" type="button" title="실행 취소" aria-label="실행 취소">
+      <svg viewBox="0 0 24 24"><path d="M9 7 4 12l5 5"/><path d="M5 12h8a6 6 0 0 1 6 6"/></svg>
+    </button>
+    <button id="redoDraw" class="paint-icon-btn" type="button" title="다시 실행" aria-label="다시 실행">
+      <svg viewBox="0 0 24 24"><path d="m15 7 5 5-5 5"/><path d="M19 12h-8a6 6 0 0 0-6 6"/></svg>
+    </button>
+  </div>
+
+  <div class="paint-sep"></div>
+
+  <div class="paint-group">
+    <div class="paint-group-body">
+      <div class="paint-tools-grid">
+        <button class="paint-tool on" data-tool="hand" type="button" title="손 / 스크롤" aria-label="손">
+          <svg viewBox="0 0 24 24"><path d="M8 11V6.5a1.5 1.5 0 0 1 3 0V10"/><path d="M11 10V5a1.5 1.5 0 0 1 3 0v5"/><path d="M14 10V6.2a1.5 1.5 0 0 1 3 0V11"/><path d="M17 11V8.5a1.5 1.5 0 0 1 3 0V14c0 4.5-2.5 7-7 7h-1c-3.1 0-4.4-1.2-5.8-3.8L4 13.3a1.6 1.6 0 0 1 2.7-1.7L8 13"/></svg>
+        </button>
+        <button class="paint-tool" data-tool="pen" type="button" title="연필" aria-label="연필">
+          <svg viewBox="0 0 24 24"><path d="m4 20 4.2-1 10.5-10.5-3.2-3.2L5 15.8 4 20Z"/><path d="m14.7 6.1 3.2 3.2"/><path d="M4 20h4.2"/></svg>
+        </button>
+        <button class="paint-tool" data-tool="highlight" type="button" title="형광펜" aria-label="형광펜">
+          <svg viewBox="0 0 24 24"><path class="marker-fill" d="m7 15 7.8-10 3.7 2.9-7.8 10L7 15Z"/><path d="M6 16 3.5 20h5.2l2-2.1"/><path d="M13.6 6.5 17.3 9.4"/></svg>
+        </button>
+        <button class="paint-tool" data-tool="underline" type="button" title="밑줄" aria-label="밑줄">
+          <svg viewBox="0 0 24 24"><path d="M5 7h14"/><path d="M7 11h10"/><path d="M5 18h14"/></svg>
+        </button>
+        <button class="paint-tool" data-tool="eraser" type="button" title="지우개" aria-label="지우개">
+          <svg viewBox="0 0 24 24"><path class="eraser-fill" d="m4.5 15.5 8.8-9.1a2 2 0 0 1 2.8 0l3.5 3.5a2 2 0 0 1 0 2.8L13 19.5H8.5l-4-4Z"/><path d="m9.5 10.2 5 5"/></svg>
+        </button>
+        <button id="clearDraw" class="paint-tool" type="button" title="모두 지우기" aria-label="모두 지우기">
+          <svg viewBox="0 0 24 24"><path d="M5 7h14"/><path d="M9 7V5h6v2"/><path d="m8 10 .6 9h6.8l.6-9"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="paint-group-label">도구</div>
+  </div>
+
+  <div class="paint-sep"></div>
+
+  <div class="paint-group" style="min-width:66px;position:relative">
+    <div class="paint-group-body">
+      <button id="paintSizeBtn" class="paint-size" type="button" title="선 굵기">
+        <div class="paint-size-lines"><i></i><i></i><i></i></div>
+        <div class="paint-size-text">크기 ▾</div>
+      </button>
+      <div id="paintSizeMenu" class="paint-popover hidden" style="top:43px;left:2px">
+        <button class="paint-size-option" data-size="1.5" type="button"><i style="height:1px"></i>얇게</button>
+        <button class="paint-size-option" data-size="3" type="button"><i style="height:3px"></i>보통</button>
+        <button class="paint-size-option" data-size="6" type="button"><i style="height:6px"></i>굵게</button>
+        <button class="paint-size-option" data-size="10" type="button"><i style="height:10px"></i>매우 굵게</button>
+      </div>
+    </div>
+    <div class="paint-group-label">크기</div>
+  </div>
+
+  <div class="paint-sep"></div>
+
+  <div class="paint-group" style="min-width:196px">
+    <div class="paint-group-body paint-colors-wrap">
+      <div class="paint-current-color"><span id="paintCurrentColor" class="paint-color-current"></span><span>색 1</span></div>
+      <div class="paint-palette">
+        <button class="paint-swatch on" data-color="#202020" style="background:#202020" title="검정"></button>
+        <button class="paint-swatch" data-color="#7a7a7a" style="background:#7a7a7a" title="회색"></button>
+        <button class="paint-swatch" data-color="#d63b3b" style="background:#d63b3b" title="빨강"></button>
+        <button class="paint-swatch" data-color="#ef7c22" style="background:#ef7c22" title="주황"></button>
+        <button class="paint-swatch" data-color="#f4c542" style="background:#f4c542" title="노랑"></button>
+        <button class="paint-swatch" data-color="#46a85b" style="background:#46a85b" title="초록"></button>
+        <button class="paint-swatch" data-color="#338bd4" style="background:#338bd4" title="파랑"></button>
+        <button class="paint-swatch" data-color="#7159c7" style="background:#7159c7" title="보라"></button>
+
+        <button class="paint-swatch" data-color="#ffffff" style="background:#ffffff" title="흰색"></button>
+        <button class="paint-swatch" data-color="#cfcfcf" style="background:#cfcfcf" title="밝은 회색"></button>
+        <button class="paint-swatch" data-color="#f2a1a1" style="background:#f2a1a1" title="연한 빨강"></button>
+        <button class="paint-swatch" data-color="#f8b67a" style="background:#f8b67a" title="연한 주황"></button>
+        <button class="paint-swatch" data-color="#ffe783" style="background:#ffe783" title="연한 노랑"></button>
+        <button class="paint-swatch" data-color="#9ad3a4" style="background:#9ad3a4" title="연한 초록"></button>
+        <button class="paint-swatch" data-color="#9bc8ee" style="background:#9bc8ee" title="연한 파랑"></button>
+        <button class="paint-swatch" data-color="#b5a8e8" style="background:#b5a8e8" title="연한 보라"></button>
+      </div>
+    </div>
+    <div class="paint-group-label">색</div>
+  </div>
+
+  <div class="paint-ribbon-spacer"></div>
+
+  <button id="showOriginal" class="paint-source-btn" type="button">
+    <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M7 8h10M7 11h10M7 14h7"/></svg>
+    시험지 원문 보기
+  </button>
 </div>
 <div id="tag" class="tag"></div>
 <div id="readingStage" class="reading-stage"><div id="reading" class="reading"></div><canvas id="drawCanvas" class="draw-canvas"></canvas></div>
@@ -144,7 +268,7 @@
 <script>
 var YEARS=[2022,2023,2024,2025,2026,2027];
 var selectedYears=new Set(YEARS),selectedCategories=new Set();
-var mode="full",customSetCount=3,exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null,grading=null,drawTool="hand",annotationData={},activeStroke=null,currentSetId=null;
+var mode="full",customSetCount=3,exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null,grading=null,drawTool="hand",drawColor="#202020",drawSize=3,annotationData={},redoData={},activeStroke=null,currentSetId=null;
 
 function $(s){return document.querySelector(s)}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
@@ -380,7 +504,7 @@ function saveAnnotationStore(){
 }
 function setDrawTool(tool){
   drawTool=tool;activeStroke=null;
-  document.querySelectorAll("[data-tool]").forEach(function(b){b.classList.toggle("on",b.dataset.tool===tool)});
+  document.querySelectorAll(".paint-tool[data-tool]").forEach(function(b){b.classList.toggle("on",b.dataset.tool===tool)});
   $("#drawCanvas").classList.toggle("active",tool!=="hand");
 }
 function resizeDrawCanvas(){
@@ -394,10 +518,11 @@ function resizeDrawCanvas(){
 function drawStroke(ctx,stroke,w,h){
   if(!stroke||!stroke.points||!stroke.points.length)return;
   ctx.save();ctx.lineCap="round";ctx.lineJoin="round";
-  if(stroke.tool==="eraser"){ctx.globalCompositeOperation="destination-out";ctx.lineWidth=26}
-  else if(stroke.tool==="highlight"){ctx.globalCompositeOperation="source-over";ctx.strokeStyle="rgba(255,210,45,.34)";ctx.lineWidth=16}
-  else if(stroke.tool==="underline"){ctx.globalCompositeOperation="source-over";ctx.strokeStyle="rgba(214,52,52,.9)";ctx.lineWidth=2.5}
-  else{ctx.globalCompositeOperation="source-over";ctx.strokeStyle="rgba(37,58,84,.92)";ctx.lineWidth=2.3}
+  var size=Number(stroke.size)||3,color=stroke.color||"#202020";
+  if(stroke.tool==="eraser"){ctx.globalCompositeOperation="destination-out";ctx.lineWidth=Math.max(18,size*6)}
+  else if(stroke.tool==="highlight"){ctx.globalCompositeOperation="source-over";ctx.globalAlpha=.28;ctx.strokeStyle=color;ctx.lineWidth=Math.max(12,size*4)}
+  else if(stroke.tool==="underline"){ctx.globalCompositeOperation="source-over";ctx.strokeStyle=color;ctx.lineWidth=Math.max(1.5,size*.85)}
+  else{ctx.globalCompositeOperation="source-over";ctx.strokeStyle=color;ctx.lineWidth=size}
   ctx.beginPath();
   stroke.points.forEach(function(pt,i){var x=pt.x*w,y=pt.y*h;if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)});
   ctx.stroke();ctx.restore()
@@ -417,7 +542,7 @@ function initDrawing(){
   var c=$("#drawCanvas");
   c.addEventListener("pointerdown",function(e){
     if(drawTool==="hand")return;e.preventDefault();c.setPointerCapture(e.pointerId);
-    var p=canvasPoint(e);activeStroke={tool:drawTool,points:[p]};drawAll()
+    var p=canvasPoint(e);activeStroke={tool:drawTool,color:drawColor,size:drawSize,points:[p]};redoData[currentSetId]=[];drawAll()
   });
   c.addEventListener("pointermove",function(e){
     if(!activeStroke)return;e.preventDefault();var p=canvasPoint(e);
@@ -430,9 +555,24 @@ function initDrawing(){
     (annotationData[currentSetId]||(annotationData[currentSetId]=[])).push(activeStroke);activeStroke=null;saveAnnotationStore();drawAll()
   }
   c.addEventListener("pointerup",endStroke);c.addEventListener("pointercancel",endStroke);
-  document.querySelectorAll("[data-tool]").forEach(function(b){b.onclick=function(){setDrawTool(b.dataset.tool)}});
-  $("#undoDraw").onclick=function(){var a=annotationData[currentSetId]||[];if(a.length){a.pop();saveAnnotationStore();drawAll()}};
-  $("#clearDraw").onclick=function(){if(confirm("현재 지문의 필기를 모두 지울까요?")){annotationData[currentSetId]=[];saveAnnotationStore();drawAll()}};
+  document.querySelectorAll(".paint-tool[data-tool]").forEach(function(b){b.onclick=function(){setDrawTool(b.dataset.tool)}});
+  document.querySelectorAll(".paint-swatch").forEach(function(b){b.onclick=function(){
+    drawColor=b.dataset.color;$("#paintCurrentColor").style.background=drawColor;
+    document.querySelectorAll(".paint-swatch").forEach(function(x){x.classList.toggle("on",x===b)})
+  }});
+  $("#paintSizeBtn").onclick=function(e){e.stopPropagation();$("#paintSizeMenu").classList.toggle("hidden")};
+  document.querySelectorAll(".paint-size-option").forEach(function(b){b.onclick=function(e){
+    e.stopPropagation();drawSize=Number(b.dataset.size)||3;$("#paintSizeMenu").classList.add("hidden")
+  }});
+  document.addEventListener("click",function(e){if(!e.target.closest("#paintSizeBtn")&&!e.target.closest("#paintSizeMenu"))$("#paintSizeMenu").classList.add("hidden")});
+  $("#undoDraw").onclick=function(){
+    var a=annotationData[currentSetId]||[];if(a.length){var st=a.pop();(redoData[currentSetId]||(redoData[currentSetId]=[])).push(st);saveAnnotationStore();drawAll()}
+  };
+  $("#redoDraw").onclick=function(){
+    var r=redoData[currentSetId]||[];if(r.length){var st=r.pop();(annotationData[currentSetId]||(annotationData[currentSetId]=[])).push(st);saveAnnotationStore();drawAll()}
+  };
+  $("#clearDraw").onclick=function(){if(confirm("현재 지문의 필기를 모두 지울까요?")){annotationData[currentSetId]=[];redoData[currentSetId]=[];saveAnnotationStore();drawAll()}};
+  $("#paintCurrentColor").style.background=drawColor;
   window.addEventListener("resize",function(){setTimeout(resizeDrawCanvas,80)});
 }
 function encodePathClient(v){return String(v).split("/").map(encodeURIComponent).join("/")}
