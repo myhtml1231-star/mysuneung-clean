@@ -10,7 +10,14 @@
 .start{min-height:100vh;display:grid;place-items:center;padding:22px}.card{width:min(680px,100%);background:#fff;border:1px solid var(--line);border-radius:23px;padding:32px;box-shadow:0 18px 55px rgba(30,40,60,.08)}.brand{font-weight:900}.brand:before{content:"";display:inline-block;width:13px;height:13px;background:var(--a);border-radius:4px;margin-right:9px}.card h1{font-size:32px;margin:24px 0 10px;letter-spacing:-.04em}.desc{line-height:1.7;color:var(--muted)}.setting{padding:19px 0;border-top:1px solid #edf0f4}.title{font-size:14px;font-weight:900;margin-bottom:10px}.seg{display:grid;grid-template-columns:1fr 1fr;gap:9px}.seg input{position:absolute;opacity:0}.seg label{display:block;text-align:center;padding:13px;border:1px solid #d9dee7;border-radius:12px;font-weight:800;cursor:pointer}.seg input:checked+label{border-color:var(--a);background:#fff8e4;box-shadow:inset 0 0 0 1px var(--a)}.years{display:flex;gap:7px;flex-wrap:wrap}.year{border:1px solid #d9dee7;background:#fff;border-radius:999px;padding:8px 12px;font-weight:700;color:#4f5968}.year.on{background:#303745;color:#fff;border-color:#303745}.generate{width:100%;border:0;border-radius:14px;padding:16px;font-size:17px;font-weight:900;background:linear-gradient(135deg,#f5b533,#ffca58);color:#282d35}.hint{font-size:12px;text-align:center;color:#9098a5;margin-top:11px}
 .bar{height:64px;display:flex;align-items:center;gap:13px;padding:0 17px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.bar strong{font-size:16px}.meta{font-size:11px;color:var(--muted)}.grow{flex:1}.answered{font-size:12px;color:var(--muted)}.timer{font-weight:900;font-size:20px;font-variant-numeric:tabular-nums;padding:7px 11px;background:#f3f5f8;border-radius:9px}.timer.warn{color:var(--bad);background:#fff0f0}.ghost{border:1px solid #dce1e9;background:#fff;border-radius:9px;padding:8px 11px;font-weight:800}
 .layout{height:calc(100vh - 64px);max-width:1600px;margin:auto;display:grid;grid-template-columns:minmax(360px,1.05fr) minmax(380px,.95fr) 190px}.pane{background:#fff;overflow:auto}.passage{padding:28px 33px;border-right:1px solid var(--line)}.question{padding:28px 33px}.palette{padding:16px 13px;border-left:1px solid var(--line);background:#fafbfc;overflow:auto}.tag{display:inline-block;padding:6px 9px;border-radius:999px;background:#f2f4f7;color:#667085;font-size:11px;font-weight:800;margin-bottom:17px}.reading{font-family:"Noto Serif KR","Batang","AppleMyungjo",serif;font-size:17px;line-height:1.95;word-break:keep-all}.reading .part{margin-bottom:22px}.reading .plabel{font-weight:900;margin-bottom:7px}.reading p{margin:0;text-align:justify;text-indent:1em}.asset{display:block;max-width:100%;height:auto;margin:18px auto;border-radius:7px}.mobile-toggle{display:none;width:100%;padding:10px;border:1px solid #dce1e9;background:#fff;border-radius:11px;font-weight:800;margin-bottom:12px}
-.qno{font-size:13px;font-weight:900;color:var(--blue);margin-bottom:9px}.stem{font-size:18px;font-weight:750;line-height:1.65;word-break:keep-all;white-space:pre-wrap}.view{margin:17px 0;padding:16px 18px;border:1px solid #d9dee7;background:#fafbfc;border-radius:11px;line-height:1.75;white-space:pre-wrap}.view b{display:block;text-align:center;margin-bottom:7px}.choices{display:grid;gap:8px;margin-top:19px}.choice{display:grid;grid-template-columns:30px 1fr;gap:9px;align-items:start;padding:11px 13px;border:1px solid #dfe4eb;border-radius:12px;line-height:1.6;cursor:pointer}.choice:hover{background:#fafbff}.choice.sel{border-color:#6579e8;background:#f1f4ff;box-shadow:0 0 0 1px #6579e8}.num{width:27px;height:27px;display:grid;place-items:center;border:1px solid #cbd1dc;border-radius:50%;font-weight:900}.choice.sel .num{background:#6579e8;color:#fff;border-color:#6579e8}.nav{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:27px}.nav button{padding:12px;border:1px solid #dce1e9;background:#fff;border-radius:11px;font-weight:900}.nav .next{background:#303745;color:#fff;border-color:#303745}.ptitle{font-size:12px;font-weight:900;color:#697386;margin-bottom:10px}.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.qb{aspect-ratio:1;border:1px solid #dce1e9;background:#fff;border-radius:7px;font-size:12px;font-weight:800;color:#555}.qb.done{background:#eef2ff;color:#4c61d6;border-color:#bac4f4}.qb.now{outline:2px solid var(--a);outline-offset:1px}.submit{width:100%;margin-top:18px;padding:11px;border:0;border-radius:10px;background:#303745;color:#fff;font-weight:900}.loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(245,247,251,.93);z-index:99;font-weight:900}.spin{width:38px;height:38px;margin:0 auto 13px;border:4px solid #e1e5eb;border-top-color:var(--a);border-radius:50%;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}.modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(20,25,35,.45);z-index:90;padding:20px}.mcard{width:min(450px,100%);padding:25px;background:#fff;border-radius:19px}.mcard h2{margin:0 0 9px}.mcard p{color:var(--muted);line-height:1.6}.mactions{display:flex;gap:8px}.mactions button{flex:1;padding:11px;border:1px solid #dce1e9;background:#fff;border-radius:10px;font-weight:900}.mactions .primary{background:#303745;color:#fff}
+.qno{font-size:13px;font-weight:900;color:var(--blue);margin-bottom:9px}.stem{font-size:18px;font-weight:750;line-height:1.65;word-break:keep-all;white-space:pre-wrap}.view{margin:17px 0;padding:16px 18px;border:1px solid #d9dee7;background:#fafbfc;border-radius:11px;line-height:1.75;white-space:pre-wrap}.view b{display:block;text-align:center;margin-bottom:7px}.choices{display:grid;gap:8px;margin-top:19px}.choice{display:grid;grid-template-columns:30px 1fr;gap:9px;align-items:start;padding:11px 13px;border:1px solid #dfe4eb;border-radius:12px;line-height:1.6;cursor:pointer}.choice:hover{background:#fafbff}.choice.sel{border-color:#6579e8;background:#f1f4ff;box-shadow:0 0 0 1px #6579e8}.num{width:27px;height:27px;display:grid;place-items:center;border:1px solid #cbd1dc;border-radius:50%;font-weight:900}.choice.sel .num{background:#6579e8;color:#fff;border-color:#6579e8}
+.choice.correct{border-color:#4aa475;background:#eefaf3;box-shadow:0 0 0 1px #4aa475}
+.choice.correct .num{background:#31966a;color:#fff;border-color:#31966a}
+.choice.wrong{border-color:#df6a6a;background:#fff2f2;box-shadow:0 0 0 1px #df6a6a}
+.choice.wrong .num{background:#d95252;color:#fff;border-color:#d95252}.nav{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:27px}.nav button{padding:12px;border:1px solid #dce1e9;background:#fff;border-radius:11px;font-weight:900}.nav .next{background:#303745;color:#fff;border-color:#303745}.ptitle{font-size:12px;font-weight:900;color:#697386;margin-bottom:10px}.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.qb{aspect-ratio:1;border:1px solid #dce1e9;background:#fff;border-radius:7px;font-size:12px;font-weight:800;color:#555}.qb.done{background:#eef2ff;color:#4c61d6;border-color:#bac4f4}.qb.now{outline:2px solid var(--a);outline-offset:1px}
+.qb.correct{background:#eaf8f0;color:#217b52;border-color:#a8dac0}
+.qb.wrong{background:#fff0f0;color:#b23b3b;border-color:#eab3b3}
+.resultbar{margin-bottom:14px;padding:12px 14px;border-radius:11px;background:#eef6ff;border:1px solid #cddcf5;font-weight:900;color:#344b78}.submit{width:100%;margin-top:18px;padding:11px;border:0;border-radius:10px;background:#303745;color:#fff;font-weight:900}.loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(245,247,251,.93);z-index:99;font-weight:900}.spin{width:38px;height:38px;margin:0 auto 13px;border:4px solid #e1e5eb;border-top-color:var(--a);border-radius:50%;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}.modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(20,25,35,.45);z-index:90;padding:20px}.mcard{width:min(450px,100%);padding:25px;background:#fff;border-radius:19px}.mcard h2{margin:0 0 9px}.mcard p{color:var(--muted);line-height:1.6}.mactions{display:flex;gap:8px}.mactions button{flex:1;padding:11px;border:1px solid #dce1e9;background:#fff;border-radius:10px;font-weight:900}.mactions .primary{background:#303745;color:#fff}
 @media(max-width:1050px){.layout{grid-template-columns:1fr 1fr}.palette{position:fixed;left:0;right:0;bottom:0;z-index:15;max-height:165px;border-left:0;border-top:1px solid var(--line);padding:9px 13px}.ptitle{display:none}.pgrid{grid-template-columns:repeat(15,1fr);gap:4px}.qb{height:27px;aspect-ratio:auto}.submit{display:none}.pane{padding-bottom:175px}}
 @media(max-width:760px){.bar{height:auto;min-height:58px;padding:8px 11px;flex-wrap:wrap}.meta,.answered{display:none}.layout{display:block;height:auto}.pane{overflow:visible}.passage{display:none;padding:15px;border:0}.passage.open{display:block}.question{padding:15px 15px 190px}.mobile-toggle{display:block}.reading{font-size:16px;line-height:1.85}.stem{font-size:17px}.pgrid{grid-template-columns:repeat(9,1fr)}.palette{max-height:185px}.timer{font-size:17px}}
 </style>
@@ -34,32 +41,90 @@
 <header class="bar"><div><strong>국어 혼합 CBT</strong><div id="meta" class="meta"></div></div><div class="grow"></div><div id="answered" class="answered">0 / 45 응답</div><div id="timer" class="timer">80:00</div><button id="newExam" class="ghost">새 시험</button></header>
 <main class="layout">
 <section id="passagePane" class="pane passage"><div id="tag" class="tag"></div><div id="reading" class="reading"></div></section>
-<section class="pane question"><button id="mobileToggle" class="mobile-toggle">지문 보기</button><div id="qno" class="qno"></div><div id="stem" class="stem"></div><div id="view"></div><div id="qassets"></div><div id="choices" class="choices"></div><div class="nav"><button id="prev">← 이전</button><button id="next" class="next">다음 →</button></div></section>
+<section class="pane question"><button id="mobileToggle" class="mobile-toggle">지문 보기</button><div id="resultbar" class="resultbar hidden"></div><div id="qno" class="qno"></div><div id="stem" class="stem"></div><div id="view"></div><div id="qassets"></div><div id="choices" class="choices"></div><div class="nav"><button id="prev">← 이전</button><button id="next" class="next">다음 →</button></div></section>
 <aside class="palette"><div class="ptitle">답안표</div><div id="pgrid" class="pgrid"></div><button id="submit" class="submit">답안 제출</button></aside>
 </main>
 </section>
 <div id="loading" class="loading hidden"><div><div class="spin"></div>문제를 조합하는 중...</div></div>
 <div id="modal" class="modal hidden"><div class="mcard"><h2>답안 제출</h2><p id="modalText"></p><div class="mactions"><button id="cancel">계속 풀기</button><button id="confirm" class="primary">제출하기</button></div></div></div>
 <script>
-var YEARS=[2022,2023,2024,2025,2026,2027],selectedYears=new Set(YEARS),exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null;
+var YEARS=[2022,2023,2024,2025,2026,2027],selectedYears=new Set(YEARS),exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null,grading=null;
 function $(s){return document.querySelector(s)}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
 function initYears(){var box=$("#years");YEARS.forEach(function(y){var b=document.createElement("button");b.className="year on";b.textContent=y+"학년도";b.onclick=function(){if(selectedYears.has(y)){if(selectedYears.size===1)return;selectedYears.delete(y);b.classList.remove("on")}else{selectedYears.add(y);b.classList.add("on")}};box.appendChild(b)})}
 async function generate(){ $("#loading").classList.remove("hidden");try{var choice=document.querySelector('input[name="choice"]:checked').value;var res=await fetch("/api/cbt/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({choice:choice,years:Array.from(selectedYears)})});var data=await res.json();if(!res.ok)throw new Error(data.error||"생성 실패");loadExam(data.exam,true)}catch(e){alert(e.message)}finally{$("#loading").classList.add("hidden")}}
-function loadExam(e,isNew){exam=e;flat=[];answers={};current=0;e.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});if(flat.length!==45){alert("문항 수 오류");return}startedAt=Date.now();if(isNew)persist();$("#start").classList.add("hidden");$("#app").classList.remove("hidden");$("#meta").textContent=e.years.join("·")+"학년도 · "+(e.choice==="lm"?"언어와 매체":"화법과 작문")+" · 45문항";buildPalette();render();startTimer()}
+function loadExam(e,isNew){exam=e;flat=[];answers={};grading=null;current=0;e.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});if(flat.length!==45){alert("문항 수 오류");return}startedAt=Date.now();if(isNew)persist();$("#start").classList.add("hidden");$("#app").classList.remove("hidden");$("#meta").textContent=e.years.join("·")+"학년도 · "+(e.choice==="lm"?"언어와 매체":"화법과 작문")+" · 45문항";buildPalette();render();startTimer()}
 function assetHtml(list){return (list||[]).filter(function(a){return a.url}).map(function(a){return '<img class="asset" src="'+esc(a.url)+'" alt="문항 자료" loading="lazy">'}).join("")}
-function render(){var item=flat[current],q=item.q,set=item.set;$("#qno").textContent=q.display_no+"번 · "+(q.display_no<=34?"공통":exam.choice==="lm"?"언어와 매체":"화법과 작문");$("#stem").textContent=q.stem||"";$("#tag").textContent="문항 "+set.display_start+"~"+set.display_end+" 지문";var parts=(set.passage&&set.passage.sections)||[];$("#reading").innerHTML=parts.map(function(p){return '<div class="part">'+(p.label?'<div class="plabel">'+esc(p.label)+'</div>':"")+'<p>'+esc(p.text)+'</p></div>'}).join("")+assetHtml((set.assets||[]).filter(function(a){return a.target==="passage"}));$("#view").innerHTML=q.view_text?'<div class="view"><b>&lt;보기&gt;</b>'+esc(q.view_text)+'</div>':"";$("#qassets").innerHTML=assetHtml(q.assets||[]);$("#choices").innerHTML=(q.choices||[]).map(function(c){return '<div class="choice '+(answers[q.display_no]===c.index?"sel":"")+'" data-v="'+c.index+'"><span class="num">'+c.index+'</span><span>'+(c.text?esc(c.text):"그림의 "+c.marker+" 선택지")+'</span></div>'}).join("");document.querySelectorAll(".choice").forEach(function(el){el.onclick=function(){answers[q.display_no]=Number(el.dataset.v);persist();renderChoice();updatePalette()}});$("#prev").disabled=current===0;$("#next").textContent=current===44?"답안 확인":"다음 →";$("#next").onclick=function(){current===44?openSubmit():go(current+1)};$("#prev").onclick=function(){go(current-1)};updatePalette();$("#passagePane").scrollTop=0}
-function renderChoice(){var n=flat[current].q.display_no;document.querySelectorAll(".choice").forEach(function(el){el.classList.toggle("sel",answers[n]===Number(el.dataset.v))})}
+function choiceClass(q,c){
+ var cls="choice";
+ if(answers[q.display_no]===c.index)cls+=" sel";
+ if(grading){
+   var g=grading[q.display_no];
+   if(g&&c.index===g.correct_answer)cls+=" correct";
+   if(g&&answers[q.display_no]===c.index&&c.index!==g.correct_answer)cls+=" wrong";
+ }
+ return cls
+}
+function render(){
+ var item=flat[current],q=item.q,set=item.set;
+ $("#qno").textContent=q.display_no+"번 · "+(q.display_no<=34?"공통":exam.choice==="lm"?"언어와 매체":"화법과 작문");
+ $("#stem").textContent=q.stem||"";
+ $("#tag").textContent="문항 "+set.display_start+"~"+set.display_end+" 지문";
+ var parts=(set.passage&&set.passage.sections)||[];
+ $("#reading").innerHTML=parts.map(function(p){return '<div class="part">'+(p.label?'<div class="plabel">'+esc(p.label)+'</div>':"")+'<p>'+esc(p.text)+'</p></div>'}).join("")+assetHtml((set.assets||[]).filter(function(a){return a.target==="passage"}));
+ $("#view").innerHTML=q.view_text?'<div class="view"><b>&lt;보기&gt;</b>'+esc(q.view_text)+'</div>':"";
+ $("#qassets").innerHTML=assetHtml(q.assets||[]);
+ $("#choices").innerHTML=(q.choices||[]).map(function(c){return '<div class="'+choiceClass(q,c)+'" data-v="'+c.index+'"><span class="num">'+c.index+'</span><span>'+(c.text?esc(c.text):"그림의 "+c.marker+" 선택지")+'</span></div>'}).join("");
+ document.querySelectorAll(".choice").forEach(function(el){el.onclick=function(){if(grading)return;answers[q.display_no]=Number(el.dataset.v);persist();renderChoice();updatePalette()}});
+ $("#prev").disabled=current===0;
+ $("#next").textContent=current===44?(grading?"처음으로":"답안 확인"):"다음 →";
+ $("#next").onclick=function(){if(current===44){grading?go(0):openSubmit()}else go(current+1)};
+ $("#prev").onclick=function(){go(current-1)};
+ if(grading){
+   var g=grading[q.display_no];
+   $("#qno").textContent+=" · "+(g&&g.is_correct?"정답":"오답");
+ }
+ updatePalette();$("#passagePane").scrollTop=0
+}
+function renderChoice(){render()}
 function go(i){current=Math.max(0,Math.min(44,i));$("#passagePane").classList.remove("open");$("#mobileToggle").textContent="지문 보기";persist();render()}
 function buildPalette(){var p=$("#pgrid");p.innerHTML="";for(var i=1;i<=45;i++){var b=document.createElement("button");b.className="qb";b.textContent=i;(function(n){b.onclick=function(){go(n-1)}})(i);p.appendChild(b)}}
-function updatePalette(){document.querySelectorAll(".qb").forEach(function(b,i){b.classList.toggle("done",!!answers[i+1]);b.classList.toggle("now",i===current)});$("#answered").textContent=Object.keys(answers).length+" / 45 응답"}
+function updatePalette(){document.querySelectorAll(".qb").forEach(function(b,i){var n=i+1;b.classList.toggle("done",!!answers[n]&&!grading);b.classList.toggle("now",i===current);b.classList.toggle("correct",!!grading&&!!grading[n]&&grading[n].is_correct);b.classList.toggle("wrong",!!grading&&!!grading[n]&&!grading[n].is_correct)});$("#answered").textContent=Object.keys(answers).length+" / 45 응답"}
 function persist(){if(!exam)return;try{localStorage.setItem("mysuneung-cbt-current",JSON.stringify({exam:exam,answers:answers,current:current,startedAt:startedAt}))}catch(e){}}
-function restore(){try{var x=JSON.parse(localStorage.getItem("mysuneung-cbt-current"));if(x&&x.exam&&x.exam.question_count===45){exam=x.exam;answers=x.answers||{};current=x.current||0;startedAt=x.startedAt||Date.now();flat=[];exam.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});$("#start").classList.add("hidden");$("#app").classList.remove("hidden");$("#meta").textContent=exam.years.join("·")+"학년도 · "+(exam.choice==="lm"?"언어와 매체":"화법과 작문")+" · 45문항";buildPalette();render();startTimer();return true}}catch(e){}return false}
+function restore(){try{var x=JSON.parse(localStorage.getItem("mysuneung-cbt-current"));if(x&&x.exam&&x.exam.question_count===45){exam=x.exam;answers=x.answers||{};grading=null;current=x.current||0;startedAt=x.startedAt||Date.now();flat=[];exam.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});$("#start").classList.add("hidden");$("#app").classList.remove("hidden");$("#meta").textContent=exam.years.join("·")+"학년도 · "+(exam.choice==="lm"?"언어와 매체":"화법과 작문")+" · 45문항";buildPalette();render();startTimer();return true}}catch(e){}return false}
 function startTimer(){clearInterval(timerId);var total=exam.time_limit_seconds||4800;function tick(){var elapsed=Math.floor((Date.now()-startedAt)/1000),left=Math.max(0,total-elapsed),m=Math.floor(left/60),s=left%60;$("#timer").textContent=m+":"+String(s).padStart(2,"0");$("#timer").classList.toggle("warn",left<=600);if(left===0){clearInterval(timerId);openSubmit()}}tick();timerId=setInterval(tick,1000)}
 function openSubmit(){var n=Object.keys(answers).length;$("#modalText").textContent=n===45?"45문항 모두 응답했습니다. 제출할까요?":"현재 "+n+"문항 응답, "+(45-n)+"문항이 미응답입니다. 그래도 제출할까요?";$("#modal").classList.remove("hidden")}
-function finish(){clearInterval(timerId);$("#modal").classList.add("hidden");var n=Object.keys(answers).length;alert("답안이 제출되었습니다.\\n응답 "+n+"문항 / 미응답 "+(45-n)+"문항\\n\\n정답·채점 데이터는 다음 단계에서 연결됩니다.");localStorage.removeItem("mysuneung-cbt-current")}
+async function finish(){
+ var refs=[];
+ exam.sections.forEach(function(set){
+   (set.questions||[]).forEach(function(q){
+     refs.push({
+       display_no:q.display_no,
+       academic_year:set.source.academic_year,
+       month:set.source.month,
+       section_code:set.section_code,
+       original_no:q.original_no
+     })
+   })
+ });
+ $("#confirm").disabled=true;$("#confirm").textContent="채점 중...";
+ try{
+   var res=await fetch("/api/cbt/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({refs:refs,answers:answers})});
+   var data=await res.json();
+   if(!res.ok)throw new Error(data.error||"채점 실패");
+   grading={};
+   (data.details||[]).forEach(function(x){grading[x.display_no]=x});
+   clearInterval(timerId);
+   $("#modal").classList.add("hidden");
+   $("#resultbar").classList.remove("hidden");
+   $("#resultbar").textContent="정답 "+data.correct_count+" / 45 · 정답률 "+data.percent+"% · 미응답 "+data.unanswered_count;
+   localStorage.removeItem("mysuneung-cbt-current");
+   render();
+ }catch(e){alert(e.message)}
+ finally{$("#confirm").disabled=false;$("#confirm").textContent="제출하기"}
+}
 $("#generate").onclick=generate;$("#newExam").onclick=function(){if(confirm("현재 답안을 지우고 새 시험을 만들까요?")){localStorage.removeItem("mysuneung-cbt-current");location.reload()}};$("#mobileToggle").onclick=function(){var p=$("#passagePane"),on=p.classList.toggle("open");$("#mobileToggle").textContent=on?"지문 닫기":"지문 보기"};$("#submit").onclick=openSubmit;$("#cancel").onclick=function(){$("#modal").classList.add("hidden")};$("#confirm").onclick=finish;
-document.addEventListener("keydown",function(e){if($("#app").classList.contains("hidden"))return;if(e.key==="ArrowRight"&&current<44)go(current+1);if(e.key==="ArrowLeft"&&current>0)go(current-1);if(["1","2","3","4","5"].includes(e.key)){answers[flat[current].q.display_no]=Number(e.key);persist();renderChoice();updatePalette()}});
+document.addEventListener("keydown",function(e){if($("#app").classList.contains("hidden"))return;if(e.key==="ArrowRight"&&current<44)go(current+1);if(e.key==="ArrowLeft"&&current>0)go(current-1);if(!grading&&["1","2","3","4","5"].includes(e.key)){answers[flat[current].q.display_no]=Number(e.key);persist();renderChoice();updatePalette()}});
 initYears();restore();
 </script>
 </body></html>
