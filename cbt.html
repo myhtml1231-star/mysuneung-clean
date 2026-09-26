@@ -399,6 +399,12 @@ function isHeaderAsset(a){
 function assetHtml(list){
   return (list||[]).filter(function(a){return a.url&&!isHeaderAsset(a)}).map(function(a){return '<img class="asset" src="'+esc(a.url)+'" alt="문항 자료" loading="lazy">'}).join("")
 }
+function hasUnsafeDisplayText(value){
+  if(typeof value==="string")return /[\uE000-\uF8FF\uFFFD]/.test(value);
+  if(Array.isArray(value))return value.some(hasUnsafeDisplayText);
+  if(value&&typeof value==="object")return Object.values(value).some(hasUnsafeDisplayText);
+  return false
+}
 function choiceClass(q,c){
   var cls="choice";
   if(answers[q.display_no]===c.index)cls+=" sel";
@@ -410,7 +416,7 @@ function choiceClass(q,c){
   return cls
 }
 function render(){
-  var item=flat[current],q=item.q,set=item.set,imageMode=!!set.force_image_render;
+  var item=flat[current],q=item.q,set=item.set,imageMode=!!set.force_image_render||hasUnsafeDisplayText(set.passage)||hasUnsafeDisplayText(q);
   $("#qno").innerHTML=q.display_no+"번 · "+esc(set.area)+" · "+esc(set.category)+'<span class="qtype">'+esc(q.question_type||"기타")+'</span>';
   var month=set.source&&set.source.month;
   var round=month===11?"수능":month+"월";
