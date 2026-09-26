@@ -1,0 +1,3065 @@
+{
+  "schema_version": 1,
+  "units": {
+    "2022-S-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2022-S-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2022-S-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2022,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2022-S-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2022-S-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2022-S-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2022-S-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2022,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2022-S-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2022,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2022-S-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2022,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2022-S-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-S-common-q28-31": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-S-common-q24-27": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-S-common-q14-17": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-S-common-q18-23": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-S-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-S-common-q10-13": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-S-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2022,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2022-09-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2022-09-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2022-09-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2022,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2022-09-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2022-09-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2022-09-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2022-09-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2022,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2022-09-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2022,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2022-09-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2022,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2022-09-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-09-common-q28-31": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-09-common-q14-17": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-09-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-09-common-q04-09": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-09-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-09-common-q10-13": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-09-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2022,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2022-06-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2022-06-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2022-06-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2022,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2022-06-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2022-06-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2022-06-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2022,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2022-06-lm-q40-42": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2022-06-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2022,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2022-06-lm-q43-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2022,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2022-06-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2022-06-common-q28-31": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2022-06-common-q14-17": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2022-06-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2022-06-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2022-06-common-q18-21": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2022-06-common-q10-13": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2022-06-common-q32-34": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2022,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-S-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2023-S-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2023-S-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2023,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2023-S-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2023-S-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2023-S-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2023-S-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2023,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2023-S-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2023,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2023-S-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2023,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2023-S-common-q31-34": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-S-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-S-common-q14-17": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-S-common-q27-30": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-S-common-q22-26": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-S-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-S-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-S-common-q10-13": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2023,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2023-06-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2023-06-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2023-06-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2023,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2023-06-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2023-06-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2023-06-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2023-06-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2023,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2023-06-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2023,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2023-06-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2023,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2023-06-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-06-common-q28-31": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-06-common-q14-17": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-06-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-06-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-06-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-06-common-q10-13": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-06-common-q32-34": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2023,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2023-09-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2023-09-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2023-09-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2023,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2023-09-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2023-09-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2023-09-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2023,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2023-09-lm-q40-42": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2023-09-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2023,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2023-09-lm-q43-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2023,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2023-09-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2023-09-common-q28-31": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2023-09-common-q14-17": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2023-09-common-q22-27": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2023-09-common-q04-09": {
+      "area": "비문학",
+      "category": "예술",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2023-09-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2023-09-common-q10-13": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2023-09-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2023,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2024,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2024-09-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2024,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2024-09-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2024,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2024-09-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2024-09-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2024-09-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2024-09-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2024,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2024-09-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2024,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2024-09-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2024,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2024-09-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-common-q28-31": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-common-q12-17": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-common-q04-07": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-common-q08-11": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-09-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2024,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2024-06-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2024,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2024-06-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2024,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2024-06-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2024,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2024-06-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2024-06-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2024-06-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2024-06-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2024,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2024-06-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2024,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2024-06-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2024,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2024-06-common-q31-34": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-06-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-06-common-q27-30": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-06-common-q12-17": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-06-common-q22-26": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-06-common-q04-07": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-06-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-06-common-q08-11": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2024,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2024-S-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2024,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2024-S-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2024,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2024-S-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2024,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2024-S-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2024-S-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2024-S-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2024,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2024-S-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2024,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2024-S-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2024,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2024-S-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2024,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2024-S-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2024-S-common-q28-31": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2024-S-common-q12-17": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2024-S-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2024-S-common-q04-07": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2024-S-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2024-S-common-q08-11": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2024-S-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2024,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-06-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2025-06-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2025-06-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2025,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2025-06-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2025-06-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2025-06-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2025-06-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2025,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2025-06-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2025,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2025-06-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2025,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2025-06-common-q31-34": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-06-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-06-common-q27-30": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-06-common-q12-17": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-06-common-q22-26": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-06-common-q04-07": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-06-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-06-common-q08-11": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2025,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2025-09-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2025-09-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2025-09-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2025,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2025-09-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2025-09-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2025-09-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2025-09-lm-q40-42": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2025-09-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2025,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2025-09-lm-q43-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2025-09-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-09-common-q28-31": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-09-common-q12-17": {
+      "area": "비문학",
+      "category": "예술",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-09-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-09-common-q04-07": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-09-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-09-common-q08-11": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-09-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2025,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2025-S-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2025-S-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2025,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2025-S-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2025,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2025-S-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2025-S-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2025-S-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2025,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2025-S-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2025,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2025-S-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2025,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2025-S-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2025,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2025-S-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-S-common-q28-31": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-S-common-q14-17": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-S-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-S-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-S-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-S-common-q10-13": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2025-S-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2025,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2026,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2026-S-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2026,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2026-S-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2026,
+      "month": 11,
+      "section_code": "hw"
+    },
+    "2026-S-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2026-S-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2026-S-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2026-S-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2026,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2026-S-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2026,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2026-S-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2026,
+      "month": 11,
+      "section_code": "lm"
+    },
+    "2026-S-common-q31-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-common-q14-17": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-common-q27-30": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-common-q22-26": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-common-q04-09": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-common-q18-21": {
+      "area": "문학",
+      "category": "판소리·민속극",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-S-common-q10-13": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2026,
+      "month": 11,
+      "section_code": "common"
+    },
+    "2026-06-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2026,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2026-06-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2026,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2026-06-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2026,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2026-06-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2026-06-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2026-06-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2026-06-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2026,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2026-06-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2026,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2026-06-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2026,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2026-06-common-q31-34": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-06-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-06-common-q14-17": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-06-common-q27-30": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-06-common-q22-26": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-06-common-q04-09": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-06-common-q18-21": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-06-common-q10-13": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2026,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2026-09-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2026,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2026-09-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2026,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2026-09-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2026,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2026-09-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2026-09-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2026-09-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2026,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2026-09-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2026,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2026-09-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2026,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2026-09-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2026,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2026-09-common-q31-34": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2026-09-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2026-09-common-q14-17": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2026-09-common-q27-30": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2026-09-common-q22-26": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2026-09-common-q04-09": {
+      "area": "비문학",
+      "category": "예술",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2026-09-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2026-09-common-q10-13": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2026,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-03-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 3,
+      "section_code": "hw"
+    },
+    "2027-03-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 3,
+      "section_code": "hw"
+    },
+    "2027-03-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2027,
+      "month": 3,
+      "section_code": "hw"
+    },
+    "2027-03-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 3,
+      "section_code": "lm"
+    },
+    "2027-03-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 3,
+      "section_code": "lm"
+    },
+    "2027-03-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 3,
+      "section_code": "lm"
+    },
+    "2027-03-lm-q40-42": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 3,
+      "section_code": "lm"
+    },
+    "2027-03-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 3,
+      "section_code": "lm"
+    },
+    "2027-03-lm-q43-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 3,
+      "section_code": "lm"
+    },
+    "2027-03-common-q31-34": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-03-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-03-common-q18-22": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-03-common-q14-17": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-03-common-q27-30": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-03-common-q23-26": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-03-common-q04-09": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-03-common-q10-13": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 3,
+      "section_code": "common"
+    },
+    "2027-05-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 5,
+      "section_code": "hw"
+    },
+    "2027-05-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 5,
+      "section_code": "hw"
+    },
+    "2027-05-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2027,
+      "month": 5,
+      "section_code": "hw"
+    },
+    "2027-05-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 5,
+      "section_code": "lm"
+    },
+    "2027-05-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 5,
+      "section_code": "lm"
+    },
+    "2027-05-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 5,
+      "section_code": "lm"
+    },
+    "2027-05-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2027,
+      "month": 5,
+      "section_code": "lm"
+    },
+    "2027-05-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 5,
+      "section_code": "lm"
+    },
+    "2027-05-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 5,
+      "section_code": "lm"
+    },
+    "2027-05-common-q31-34": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-05-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-05-common-q14-17": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-05-common-q27-30": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-05-common-q22-26": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 5,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-05-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-05-common-q18-21": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-05-common-q10-13": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 5,
+      "section_code": "common"
+    },
+    "2027-09-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2027-09-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2027-09-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2027,
+      "month": 9,
+      "section_code": "hw"
+    },
+    "2027-09-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2027-09-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2027-09-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2027-09-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2027,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2027-09-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2027-09-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 9,
+      "section_code": "lm"
+    },
+    "2027-09-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-09-common-q28-31": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-09-common-q14-17": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-09-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-09-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-09-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-09-common-q10-13": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-09-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2027,
+      "month": 9,
+      "section_code": "common"
+    },
+    "2027-07-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 7,
+      "section_code": "hw"
+    },
+    "2027-07-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 7,
+      "section_code": "hw"
+    },
+    "2027-07-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2027,
+      "month": 7,
+      "section_code": "hw"
+    },
+    "2027-07-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 7,
+      "section_code": "lm"
+    },
+    "2027-07-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 7,
+      "section_code": "lm"
+    },
+    "2027-07-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 7,
+      "section_code": "lm"
+    },
+    "2027-07-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2027,
+      "month": 7,
+      "section_code": "lm"
+    },
+    "2027-07-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 7,
+      "section_code": "lm"
+    },
+    "2027-07-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 7,
+      "section_code": "lm"
+    },
+    "2027-07-common-q22-25": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-07-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-07-common-q14-17": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-07-common-q26-31": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-07-common-q04-09": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-07-common-q18-21": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-07-common-q10-13": {
+      "area": "비문학",
+      "category": "기술",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-07-common-q32-34": {
+      "area": "문학",
+      "category": "현대시",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2027,
+      "month": 7,
+      "section_code": "common"
+    },
+    "2027-06-hw-q35-37": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2027-06-hw-q43-45": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 3,
+      "year": 2027,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2027-06-hw-q38-42": {
+      "area": "선택",
+      "category": "화법과 작문",
+      "order_group": 4,
+      "question_count": 5,
+      "year": 2027,
+      "month": 6,
+      "section_code": "hw"
+    },
+    "2027-06-lm-q39-39": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2027-06-lm-q38-38": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2027-06-lm-q37-37": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 1,
+      "year": 2027,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2027-06-lm-q40-43": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 4,
+      "year": 2027,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2027-06-lm-q44-45": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2027-06-lm-q35-36": {
+      "area": "선택",
+      "category": "언어와 매체",
+      "order_group": 4,
+      "question_count": 2,
+      "year": 2027,
+      "month": 6,
+      "section_code": "lm"
+    },
+    "2027-06-common-q01-03": {
+      "area": "독서론",
+      "category": "독서론",
+      "order_group": 1,
+      "question_count": 3,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2027-06-common-q28-31": {
+      "area": "문학",
+      "category": "고전소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2027-06-common-q14-17": {
+      "area": "비문학",
+      "category": "과학",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2027-06-common-q22-27": {
+      "area": "문학",
+      "category": "복합문학",
+      "order_group": 3,
+      "question_count": 6,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2027-06-common-q04-09": {
+      "area": "비문학",
+      "category": "인문",
+      "order_group": 2,
+      "question_count": 6,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2027-06-common-q18-21": {
+      "area": "문학",
+      "category": "현대소설",
+      "order_group": 3,
+      "question_count": 4,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2027-06-common-q10-13": {
+      "area": "비문학",
+      "category": "사회",
+      "order_group": 2,
+      "question_count": 4,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    },
+    "2027-06-common-q32-34": {
+      "area": "문학",
+      "category": "고전시가",
+      "order_group": 3,
+      "question_count": 3,
+      "year": 2027,
+      "month": 6,
+      "section_code": "common"
+    }
+  }
+}
