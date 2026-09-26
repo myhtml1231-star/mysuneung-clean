@@ -20,6 +20,22 @@
 .resultbar{margin-bottom:14px;padding:12px 14px;border-radius:11px;background:#eef6ff;border:1px solid #cddcf5;font-weight:900;color:#344b78}.submit{width:100%;margin-top:18px;padding:11px;border:0;border-radius:10px;background:#303745;color:#fff;font-weight:900}.loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(245,247,251,.93);z-index:99;font-weight:900}.spin{width:38px;height:38px;margin:0 auto 13px;border:4px solid #e1e5eb;border-top-color:var(--a);border-radius:50%;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}.modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(20,25,35,.45);z-index:90;padding:20px}.mcard{width:min(450px,100%);padding:25px;background:#fff;border-radius:19px}.mcard h2{margin:0 0 9px}.mcard p{color:var(--muted);line-height:1.6}.mactions{display:flex;gap:8px}.mactions button{flex:1;padding:11px;border:1px solid #dce1e9;background:#fff;border-radius:10px;font-weight:900}.mactions .primary{background:#303745;color:#fff}
 @media(max-width:1050px){.layout{grid-template-columns:1fr 1fr}.palette{position:fixed;left:0;right:0;bottom:0;z-index:15;max-height:165px;border-left:0;border-top:1px solid var(--line);padding:9px 13px}.ptitle{display:none}.pgrid{grid-template-columns:repeat(15,1fr);gap:4px}.qb{height:27px;aspect-ratio:auto}.submit{display:none}.pane{padding-bottom:175px}}
 @media(max-width:760px){.bar{height:auto;min-height:58px;padding:8px 11px;flex-wrap:wrap}.meta,.answered{display:none}.layout{display:block;height:auto}.pane{overflow:visible}.passage{display:none;padding:15px;border:0}.passage.open{display:block}.question{padding:15px 15px 190px}.mobile-toggle{display:block}.reading{font-size:16px;line-height:1.85}.stem{font-size:17px}.pgrid{grid-template-columns:repeat(9,1fr)}.palette{max-height:185px}.timer{font-size:17px}}
+
+.mode-seg{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.mode-seg button{border:1px solid #d9dee7;background:#fff;border-radius:12px;padding:13px;font-weight:900;color:#4d5665}
+.mode-seg button.on{background:#303745;color:#fff;border-color:#303745}
+.composition{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:12px 14px;background:#f7f8fb;border:1px solid #e7eaf0;border-radius:12px;font-size:13px;color:#5f6978;font-weight:750}
+.composition b{color:#303745}.arrow{color:#b3bac5}
+.category-groups{display:grid;gap:13px}
+.category-group{display:grid;gap:7px}
+.category-name{font-size:12px;color:#7a8494;font-weight:900}
+.category-chips{display:flex;flex-wrap:wrap;gap:7px}
+.cat{border:1px solid #d9dee7;background:#fff;color:#4e5867;border-radius:999px;padding:8px 12px;font-weight:800;font-size:13px}
+.cat.on{background:#303745;color:#fff;border-color:#303745}
+.cat small{opacity:.65;font-size:10px;margin-left:4px}
+.count-seg{display:flex;gap:8px}.count-seg button{flex:1;border:1px solid #d9dee7;background:#fff;border-radius:10px;padding:10px;font-weight:850}.count-seg button.on{background:#fff8e4;border-color:var(--a);box-shadow:inset 0 0 0 1px var(--a)}
+.mode-note{font-size:12px;color:#7d8796;line-height:1.6;margin-top:8px}
+
 </style>
 </head>
 <body>
@@ -27,14 +43,47 @@
 <div class="card">
 <div class="brand">수능 기출 CBT</div>
 <h1>국어 혼합 모의고사</h1>
-<p class="desc">여러 시행년도의 지문 세트를 섞어 매번 새로운 시험을 만듭니다. 한 지문에 딸린 문항은 절대 쪼개지지 않습니다.</p>
-<div class="setting"><div class="title">선택과목</div><div class="seg">
-<div><input id="hw" type="radio" name="choice" value="hw" checked><label for="hw">화법과 작문</label></div>
-<div><input id="lm" type="radio" name="choice" value="lm"><label for="lm">언어와 매체</label></div>
-</div></div>
+<p class="desc">지문 세트를 섞어 새로운 시험을 만듭니다. 수능 구성은 실제 영역 순서와 문항 비율을 그대로 유지하고, 맞춤 유형에서는 원하는 범주만 골라 집중해서 풀 수 있습니다.</p>
+
+<div class="setting">
+  <div class="title">출제 방식</div>
+  <div class="mode-seg">
+    <button id="modeFull" class="on" type="button">수능 구성</button>
+    <button id="modeCustom" type="button">맞춤 유형</button>
+  </div>
+</div>
+
+<div id="fullSettings">
+  <div class="setting">
+    <div class="title">수능 구성</div>
+    <div class="composition"><b>독서론 3</b><span class="arrow">→</span><b>비문학 14</b><span class="arrow">→</span><b>문학 17</b><span class="arrow">→</span><b>선택 11</b></div>
+    <div class="mode-note">지문 세트 내부 문항은 유지하면서 위 순서로 총 45문항을 구성합니다.</div>
+  </div>
+  <div class="setting"><div class="title">선택과목</div><div class="seg">
+    <div><input id="hw" type="radio" name="choice" value="hw" checked><label for="hw">화법과 작문</label></div>
+    <div><input id="lm" type="radio" name="choice" value="lm"><label for="lm">언어와 매체</label></div>
+  </div></div>
+</div>
+
+<div id="customSettings" class="hidden">
+  <div class="setting">
+    <div class="title">풀고 싶은 범주</div>
+    <div id="categoryGroups" class="category-groups"><div class="mode-note">분류 정보를 불러오는 중...</div></div>
+  </div>
+  <div class="setting">
+    <div class="title">지문 세트 수</div>
+    <div id="setCounts" class="count-seg">
+      <button data-count="1" type="button">1세트</button>
+      <button data-count="3" type="button" class="on">3세트</button>
+      <button data-count="5" type="button">5세트</button>
+    </div>
+    <div class="mode-note">선택한 범주에서 지문 단위로 뽑습니다. 여러 범주를 선택하고 세트 수가 충분하면 각 범주를 최소 1세트 포함합니다.</div>
+  </div>
+</div>
+
 <div class="setting"><div class="title">출제 학년도</div><div id="years" class="years"></div></div>
-<button id="generate" class="generate">새 45문항 만들기</button>
-<div class="hint">공통 34 + 선택 11 · 80분 · 답안 자동저장</div>
+<button id="generate" class="generate">수능 구성 45문항 만들기</button>
+<div id="startHint" class="hint">독서론 → 비문학 → 문학 → 선택 · 80분 · 답안 자동저장</div>
 </div>
 </section>
 <section id="app" class="hidden">
@@ -48,83 +97,234 @@
 <div id="loading" class="loading hidden"><div><div class="spin"></div>문제를 조합하는 중...</div></div>
 <div id="modal" class="modal hidden"><div class="mcard"><h2>답안 제출</h2><p id="modalText"></p><div class="mactions"><button id="cancel">계속 풀기</button><button id="confirm" class="primary">제출하기</button></div></div></div>
 <script>
-var YEARS=[2022,2023,2024,2025,2026,2027],selectedYears=new Set(YEARS),exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null,grading=null;
+var YEARS=[2022,2023,2024,2025,2026,2027];
+var selectedYears=new Set(YEARS),selectedCategories=new Set();
+var mode="full",customSetCount=3,exam=null,flat=[],current=0,answers={},startedAt=0,timerId=null,grading=null;
+
 function $(s){return document.querySelector(s)}
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(m){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]})}
-function initYears(){var box=$("#years");YEARS.forEach(function(y){var b=document.createElement("button");b.className="year on";b.textContent=y+"학년도";b.onclick=function(){if(selectedYears.has(y)){if(selectedYears.size===1)return;selectedYears.delete(y);b.classList.remove("on")}else{selectedYears.add(y);b.classList.add("on")}};box.appendChild(b)})}
-async function generate(){ $("#loading").classList.remove("hidden");try{var choice=document.querySelector('input[name="choice"]:checked').value;var res=await fetch("/api/cbt/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({choice:choice,years:Array.from(selectedYears)})});var data=await res.json();if(!res.ok)throw new Error(data.error||"생성 실패");loadExam(data.exam,true)}catch(e){alert(e.message)}finally{$("#loading").classList.add("hidden")}}
-function loadExam(e,isNew){exam=e;flat=[];answers={};grading=null;current=0;e.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});if(flat.length!==45){alert("문항 수 오류");return}startedAt=Date.now();if(isNew)persist();$("#start").classList.add("hidden");$("#app").classList.remove("hidden");$("#meta").textContent=e.years.join("·")+"학년도 · "+(e.choice==="lm"?"언어와 매체":"화법과 작문")+" · 45문항";buildPalette();render();startTimer()}
-function assetHtml(list){return (list||[]).filter(function(a){return a.url}).map(function(a){return '<img class="asset" src="'+esc(a.url)+'" alt="문항 자료" loading="lazy">'}).join("")}
+
+function initYears(){
+  var box=$("#years");
+  YEARS.forEach(function(y){
+    var b=document.createElement("button");b.className="year on";b.textContent=y+"학년도";
+    b.onclick=function(){
+      if(selectedYears.has(y)){if(selectedYears.size===1)return;selectedYears.delete(y);b.classList.remove("on")}
+      else{selectedYears.add(y);b.classList.add("on")}
+    };
+    box.appendChild(b)
+  })
+}
+
+async function initCategories(){
+  try{
+    var res=await fetch("/api/cbt/categories");
+    var data=await res.json();
+    if(!res.ok)throw new Error(data.error||"분류 로드 실패");
+    var box=$("#categoryGroups");box.innerHTML="";
+    (data.groups||[]).forEach(function(group){
+      var wrap=document.createElement("div");wrap.className="category-group";
+      var title=document.createElement("div");title.className="category-name";title.textContent=group.area;
+      var chips=document.createElement("div");chips.className="category-chips";
+      (group.categories||[]).forEach(function(item){
+        var b=document.createElement("button");b.type="button";b.className="cat";b.dataset.category=item.name;
+        b.innerHTML=esc(item.name)+'<small>'+item.unit_count+'세트</small>';
+        b.onclick=function(){
+          var name=b.dataset.category;
+          if(selectedCategories.has(name)){selectedCategories.delete(name);b.classList.remove("on")}
+          else{selectedCategories.add(name);b.classList.add("on")}
+        };
+        chips.appendChild(b)
+      });
+      wrap.appendChild(title);wrap.appendChild(chips);box.appendChild(wrap)
+    })
+  }catch(e){
+    $("#categoryGroups").innerHTML='<div class="mode-note">분류 정보를 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.</div>'
+  }
+}
+
+function setMode(next){
+  mode=next;
+  $("#modeFull").classList.toggle("on",mode==="full");
+  $("#modeCustom").classList.toggle("on",mode==="custom");
+  $("#fullSettings").classList.toggle("hidden",mode!=="full");
+  $("#customSettings").classList.toggle("hidden",mode!=="custom");
+  $("#generate").textContent=mode==="full"?"수능 구성 45문항 만들기":"맞춤 문제 만들기";
+  $("#startHint").textContent=mode==="full"
+    ?"독서론 3 → 비문학 14 → 문학 17 → 선택 11 · 80분 · 답안 자동저장"
+    :"선택한 범주만 출제 · 지문 세트 유지 · 문항 수에 맞춰 제한시간 자동 설정";
+}
+
+function initSetCounts(){
+  $("#setCounts").querySelectorAll("button").forEach(function(b){
+    b.onclick=function(){
+      customSetCount=Number(b.dataset.count);
+      $("#setCounts").querySelectorAll("button").forEach(function(x){x.classList.toggle("on",x===b)})
+    }
+  })
+}
+
+async function generate(){
+  $("#loading").classList.remove("hidden");
+  try{
+    var body={mode:mode,years:Array.from(selectedYears)};
+    if(mode==="full") body.choice=document.querySelector('input[name="choice"]:checked').value;
+    else{
+      if(!selectedCategories.size)throw new Error("풀고 싶은 범주를 하나 이상 선택해주세요.");
+      body.categories=Array.from(selectedCategories);
+      body.set_count=customSetCount;
+    }
+    var res=await fetch("/api/cbt/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+    var data=await res.json();
+    if(!res.ok)throw new Error(data.error||"생성 실패");
+    loadExam(data.exam,true)
+  }catch(e){alert(e.message)}
+  finally{$("#loading").classList.add("hidden")}
+}
+
+function examLabel(e){
+  if(e.mode==="custom")return "맞춤 · "+(e.categories||[]).join("·")+" · "+e.question_count+"문항";
+  return "수능 구성 · "+(e.choice==="lm"?"언어와 매체":"화법과 작문")+" · 45문항";
+}
+
+function loadExam(e,isNew){
+  exam=e;flat=[];answers={};grading=null;current=0;
+  (e.sections||[]).forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});
+  if(flat.length!==e.question_count||flat.length<1||flat.length>45){alert("문항 수 오류");return}
+  startedAt=Date.now();
+  if(isNew)persist();
+  $("#start").classList.add("hidden");$("#app").classList.remove("hidden");
+  $("#resultbar").classList.add("hidden");
+  $("#meta").textContent=e.years.join("·")+"학년도 · "+examLabel(e);
+  buildPalette();render();startTimer()
+}
+
+function assetHtml(list){
+  return (list||[]).filter(function(a){return a.url}).map(function(a){return '<img class="asset" src="'+esc(a.url)+'" alt="문항 자료" loading="lazy">'}).join("")
+}
 function choiceClass(q,c){
- var cls="choice";
- if(answers[q.display_no]===c.index)cls+=" sel";
- if(grading){
-   var g=grading[q.display_no];
-   if(g&&c.index===g.correct_answer)cls+=" correct";
-   if(g&&answers[q.display_no]===c.index&&c.index!==g.correct_answer)cls+=" wrong";
- }
- return cls
+  var cls="choice";
+  if(answers[q.display_no]===c.index)cls+=" sel";
+  if(grading){
+    var g=grading[q.display_no];
+    if(g&&c.index===g.correct_answer)cls+=" correct";
+    if(g&&answers[q.display_no]===c.index&&c.index!==g.correct_answer)cls+=" wrong";
+  }
+  return cls
 }
 function render(){
- var item=flat[current],q=item.q,set=item.set;
- $("#qno").textContent=q.display_no+"번 · "+(q.display_no<=34?"공통":exam.choice==="lm"?"언어와 매체":"화법과 작문");
- $("#stem").textContent=q.stem||"";
- $("#tag").textContent="문항 "+set.display_start+"~"+set.display_end+" 지문";
- var parts=(set.passage&&set.passage.sections)||[];
- $("#reading").innerHTML=parts.map(function(p){return '<div class="part">'+(p.label?'<div class="plabel">'+esc(p.label)+'</div>':"")+'<p>'+esc(p.text)+'</p></div>'}).join("")+assetHtml((set.assets||[]).filter(function(a){return a.target==="passage"}));
- $("#view").innerHTML=q.view_text?'<div class="view"><b>&lt;보기&gt;</b>'+esc(q.view_text)+'</div>':"";
- $("#qassets").innerHTML=assetHtml(q.assets||[]);
- $("#choices").innerHTML=(q.choices||[]).map(function(c){return '<div class="'+choiceClass(q,c)+'" data-v="'+c.index+'"><span class="num">'+c.index+'</span><span>'+(c.text?esc(c.text):"그림의 "+c.marker+" 선택지")+'</span></div>'}).join("");
- document.querySelectorAll(".choice").forEach(function(el){el.onclick=function(){if(grading)return;answers[q.display_no]=Number(el.dataset.v);persist();renderChoice();updatePalette()}});
- $("#prev").disabled=current===0;
- $("#next").textContent=current===44?(grading?"처음으로":"답안 확인"):"다음 →";
- $("#next").onclick=function(){if(current===44){grading?go(0):openSubmit()}else go(current+1)};
- $("#prev").onclick=function(){go(current-1)};
- if(grading){
-   var g=grading[q.display_no];
-   $("#qno").textContent+=" · "+(g&&g.is_correct?"정답":"오답");
- }
- updatePalette();$("#passagePane").scrollTop=0
+  var item=flat[current],q=item.q,set=item.set;
+  $("#qno").textContent=q.display_no+"번 · "+set.area+" · "+set.category;
+  $("#stem").textContent=q.stem||"";
+  var month=set.source&&set.source.month;
+  var round=month===11?"수능":month+"월";
+  $("#tag").textContent=set.area+" · "+set.category+" · "+set.source.academic_year+"학년도 "+round+" · 문항 "+set.display_start+"~"+set.display_end;
+  var parts=(set.passage&&set.passage.sections)||[];
+  $("#reading").innerHTML=parts.map(function(p){return '<div class="part">'+(p.label?'<div class="plabel">'+esc(p.label)+'</div>':"")+'<p>'+esc(p.text)+'</p></div>'}).join("")+assetHtml((set.assets||[]).filter(function(a){return a.target==="passage"}));
+  $("#view").innerHTML=q.view_text?'<div class="view"><b>&lt;보기&gt;</b>'+esc(q.view_text)+'</div>':"";
+  $("#qassets").innerHTML=assetHtml(q.assets||[]);
+  $("#choices").innerHTML=(q.choices||[]).map(function(c){return '<div class="'+choiceClass(q,c)+'" data-v="'+c.index+'"><span class="num">'+c.index+'</span><span>'+(c.text?esc(c.text):"그림의 "+c.marker+" 선택지")+'</span></div>'}).join("");
+  document.querySelectorAll(".choice").forEach(function(el){el.onclick=function(){if(grading)return;answers[q.display_no]=Number(el.dataset.v);persist();renderChoice();updatePalette()}});
+  var last=flat.length-1;
+  $("#prev").disabled=current===0;
+  $("#next").textContent=current===last?(grading?"처음으로":"답안 확인"):"다음 →";
+  $("#next").onclick=function(){if(current===last){grading?go(0):openSubmit()}else go(current+1)};
+  $("#prev").onclick=function(){go(current-1)};
+  if(grading){var g=grading[q.display_no];$("#qno").textContent+=" · "+(g&&g.is_correct?"정답":"오답")}
+  updatePalette();$("#passagePane").scrollTop=0
 }
 function renderChoice(){render()}
-function go(i){current=Math.max(0,Math.min(44,i));$("#passagePane").classList.remove("open");$("#mobileToggle").textContent="지문 보기";persist();render()}
-function buildPalette(){var p=$("#pgrid");p.innerHTML="";for(var i=1;i<=45;i++){var b=document.createElement("button");b.className="qb";b.textContent=i;(function(n){b.onclick=function(){go(n-1)}})(i);p.appendChild(b)}}
-function updatePalette(){document.querySelectorAll(".qb").forEach(function(b,i){var n=i+1;b.classList.toggle("done",!!answers[n]&&!grading);b.classList.toggle("now",i===current);b.classList.toggle("correct",!!grading&&!!grading[n]&&grading[n].is_correct);b.classList.toggle("wrong",!!grading&&!!grading[n]&&!grading[n].is_correct)});$("#answered").textContent=Object.keys(answers).length+" / 45 응답"}
-function persist(){if(!exam)return;try{localStorage.setItem("mysuneung-cbt-current",JSON.stringify({exam:exam,answers:answers,current:current,startedAt:startedAt}))}catch(e){}}
-function restore(){try{var x=JSON.parse(localStorage.getItem("mysuneung-cbt-current"));if(x&&x.exam&&x.exam.question_count===45){exam=x.exam;answers=x.answers||{};grading=null;current=x.current||0;startedAt=x.startedAt||Date.now();flat=[];exam.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});$("#start").classList.add("hidden");$("#app").classList.remove("hidden");$("#meta").textContent=exam.years.join("·")+"학년도 · "+(exam.choice==="lm"?"언어와 매체":"화법과 작문")+" · 45문항";buildPalette();render();startTimer();return true}}catch(e){}return false}
-function startTimer(){clearInterval(timerId);var total=exam.time_limit_seconds||4800;function tick(){var elapsed=Math.floor((Date.now()-startedAt)/1000),left=Math.max(0,total-elapsed),m=Math.floor(left/60),s=left%60;$("#timer").textContent=m+":"+String(s).padStart(2,"0");$("#timer").classList.toggle("warn",left<=600);if(left===0){clearInterval(timerId);openSubmit()}}tick();timerId=setInterval(tick,1000)}
-function openSubmit(){var n=Object.keys(answers).length;$("#modalText").textContent=n===45?"45문항 모두 응답했습니다. 제출할까요?":"현재 "+n+"문항 응답, "+(45-n)+"문항이 미응답입니다. 그래도 제출할까요?";$("#modal").classList.remove("hidden")}
-async function finish(){
- var refs=[];
- exam.sections.forEach(function(set){
-   (set.questions||[]).forEach(function(q){
-     refs.push({
-       display_no:q.display_no,
-       academic_year:set.source.academic_year,
-       month:set.source.month,
-       section_code:set.section_code,
-       original_no:q.original_no
-     })
-   })
- });
- $("#confirm").disabled=true;$("#confirm").textContent="채점 중...";
- try{
-   var res=await fetch("/api/cbt/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({refs:refs,answers:answers})});
-   var data=await res.json();
-   if(!res.ok)throw new Error(data.error||"채점 실패");
-   grading={};
-   (data.details||[]).forEach(function(x){grading[x.display_no]=x});
-   clearInterval(timerId);
-   $("#modal").classList.add("hidden");
-   $("#resultbar").classList.remove("hidden");
-   $("#resultbar").textContent="정답 "+data.correct_count+" / 45 · 정답률 "+data.percent+"% · 미응답 "+data.unanswered_count;
-   localStorage.removeItem("mysuneung-cbt-current");
-   render();
- }catch(e){alert(e.message)}
- finally{$("#confirm").disabled=false;$("#confirm").textContent="제출하기"}
+function go(i){
+  current=Math.max(0,Math.min(flat.length-1,i));
+  $("#passagePane").classList.remove("open");$("#mobileToggle").textContent="지문 보기";
+  persist();render()
 }
-$("#generate").onclick=generate;$("#newExam").onclick=function(){if(confirm("현재 답안을 지우고 새 시험을 만들까요?")){localStorage.removeItem("mysuneung-cbt-current");location.reload()}};$("#mobileToggle").onclick=function(){var p=$("#passagePane"),on=p.classList.toggle("open");$("#mobileToggle").textContent=on?"지문 닫기":"지문 보기"};$("#submit").onclick=openSubmit;$("#cancel").onclick=function(){$("#modal").classList.add("hidden")};$("#confirm").onclick=finish;
-document.addEventListener("keydown",function(e){if($("#app").classList.contains("hidden"))return;if(e.key==="ArrowRight"&&current<44)go(current+1);if(e.key==="ArrowLeft"&&current>0)go(current-1);if(!grading&&["1","2","3","4","5"].includes(e.key)){answers[flat[current].q.display_no]=Number(e.key);persist();renderChoice();updatePalette()}});
-initYears();restore();
+function buildPalette(){
+  var p=$("#pgrid");p.innerHTML="";
+  for(var i=1;i<=flat.length;i++){
+    var b=document.createElement("button");b.className="qb";b.textContent=i;
+    (function(n){b.onclick=function(){go(n-1)}})(i);p.appendChild(b)
+  }
+}
+function updatePalette(){
+  document.querySelectorAll(".qb").forEach(function(b,i){
+    var n=i+1;
+    b.classList.toggle("done",!!answers[n]&&!grading);
+    b.classList.toggle("now",i===current);
+    b.classList.toggle("correct",!!grading&&!!grading[n]&&grading[n].is_correct);
+    b.classList.toggle("wrong",!!grading&&!!grading[n]&&!grading[n].is_correct)
+  });
+  $("#answered").textContent=Object.keys(answers).length+" / "+flat.length+" 응답"
+}
+function persist(){
+  if(!exam)return;
+  try{localStorage.setItem("mysuneung-cbt-current",JSON.stringify({exam:exam,answers:answers,current:current,startedAt:startedAt}))}catch(e){}
+}
+function restore(){
+  try{
+    var x=JSON.parse(localStorage.getItem("mysuneung-cbt-current"));
+    if(x&&x.exam&&x.exam.question_count>=1&&x.exam.question_count<=45){
+      exam=x.exam;answers=x.answers||{};grading=null;current=x.current||0;startedAt=x.startedAt||Date.now();flat=[];
+      exam.sections.forEach(function(set){(set.questions||[]).forEach(function(q){flat.push({q:q,set:set})})});
+      if(flat.length!==exam.question_count)return false;
+      $("#start").classList.add("hidden");$("#app").classList.remove("hidden");
+      $("#meta").textContent=exam.years.join("·")+"학년도 · "+examLabel(exam);
+      buildPalette();render();startTimer();return true
+    }
+  }catch(e){}
+  return false
+}
+function startTimer(){
+  clearInterval(timerId);var total=exam.time_limit_seconds||4800;
+  function tick(){
+    var elapsed=Math.floor((Date.now()-startedAt)/1000),left=Math.max(0,total-elapsed),m=Math.floor(left/60),s=left%60;
+    $("#timer").textContent=m+":"+String(s).padStart(2,"0");
+    $("#timer").classList.toggle("warn",left<=Math.min(600,Math.floor(total*.15)));
+    if(left===0){clearInterval(timerId);openSubmit()}
+  }
+  tick();timerId=setInterval(tick,1000)
+}
+function openSubmit(){
+  var n=Object.keys(answers).length,total=flat.length;
+  $("#modalText").textContent=n===total
+    ?total+"문항 모두 응답했습니다. 제출할까요?"
+    :"현재 "+n+"문항 응답, "+(total-n)+"문항이 미응답입니다. 그래도 제출할까요?";
+  $("#modal").classList.remove("hidden")
+}
+async function finish(){
+  var refs=[];
+  exam.sections.forEach(function(set){
+    (set.questions||[]).forEach(function(q){
+      refs.push({display_no:q.display_no,academic_year:set.source.academic_year,month:set.source.month,section_code:set.section_code,original_no:q.original_no})
+    })
+  });
+  $("#confirm").disabled=true;$("#confirm").textContent="채점 중...";
+  try{
+    var res=await fetch("/api/cbt/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({refs:refs,answers:answers})});
+    var data=await res.json();if(!res.ok)throw new Error(data.error||"채점 실패");
+    grading={};(data.details||[]).forEach(function(x){grading[x.display_no]=x});
+    clearInterval(timerId);$("#modal").classList.add("hidden");$("#resultbar").classList.remove("hidden");
+    $("#resultbar").textContent="정답 "+data.correct_count+" / "+data.total_count+" · 정답률 "+data.percent+"% · 미응답 "+data.unanswered_count;
+    localStorage.removeItem("mysuneung-cbt-current");render()
+  }catch(e){alert(e.message)}
+  finally{$("#confirm").disabled=false;$("#confirm").textContent="제출하기"}
+}
+
+$("#modeFull").onclick=function(){setMode("full")};
+$("#modeCustom").onclick=function(){setMode("custom")};
+$("#generate").onclick=generate;
+$("#newExam").onclick=function(){if(confirm("현재 답안을 지우고 새 시험을 만들까요?")){localStorage.removeItem("mysuneung-cbt-current");location.reload()}};
+$("#mobileToggle").onclick=function(){var p=$("#passagePane"),on=p.classList.toggle("open");$("#mobileToggle").textContent=on?"지문 닫기":"지문 보기"};
+$("#submit").onclick=openSubmit;
+$("#cancel").onclick=function(){$("#modal").classList.add("hidden")};
+$("#confirm").onclick=finish;
+document.addEventListener("keydown",function(e){
+  if($("#app").classList.contains("hidden"))return;
+  if(e.key==="ArrowRight"&&current<flat.length-1)go(current+1);
+  if(e.key==="ArrowLeft"&&current>0)go(current-1);
+  if(!grading&&["1","2","3","4","5"].includes(e.key)){answers[flat[current].q.display_no]=Number(e.key);persist();renderChoice();updatePalette()}
+});
+
+initYears();initSetCounts();initCategories();setMode("full");restore();
 </script>
 </body></html>
