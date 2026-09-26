@@ -416,7 +416,7 @@ function choiceClass(q,c){
   return cls
 }
 function render(){
-  var item=flat[current],q=item.q,set=item.set,imageMode=!!set.force_image_render||hasUnsafeDisplayText(set.passage)||hasUnsafeDisplayText(q);
+  var item=flat[current],q=item.q,set=item.set,imageMode=!!set.force_image_render||!!q.force_image_render||hasUnsafeDisplayText(set.passage)||hasUnsafeDisplayText(q);
   $("#qno").innerHTML=q.display_no+"번 · "+esc(set.area)+" · "+esc(set.category)+'<span class="qtype">'+esc(q.question_type||"기타")+'</span>';
   var month=set.source&&set.source.month;
   var round=month===11?"수능":month+"월";
@@ -424,7 +424,7 @@ function render(){
   var parts=(set.passage&&set.passage.sections)||[];
   if(imageMode){
     $("#reading").innerHTML='<img class="source-image-fallback" src="'+esc(set.original_url)+'" alt="시험지 원문 이미지">';
-    $("#stem").innerHTML='<div class="image-render-note">특수 문자 원문은 깨짐 없이 보이도록 왼쪽에 시험지 원문 그대로 표시합니다.</div>원문에서 '+q.original_no+'번 문항을 확인한 뒤 답을 선택하세요.';
+    $("#stem").innerHTML='<div class="image-render-note">구조화 변환이 정확하지 않을 수 있는 문항은 왼쪽에 시험지 원문 그대로 표시합니다.</div>원문에서 '+q.original_no+'번 문항을 확인한 뒤 답을 선택하세요.';
     $("#view").innerHTML="";
     $("#qassets").innerHTML="";
   }else{
