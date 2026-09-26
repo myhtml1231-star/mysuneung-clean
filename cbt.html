@@ -518,6 +518,9 @@ function savedPaintDockPosition(){
   }catch(e){}
   return null
 }
+function savePaintDockPosition(left,top){
+  try{localStorage.setItem("mysuneung-cbt-paint-dock",JSON.stringify({left:left,top:top}))}catch(e){}
+}
 function placePaintDock(){
   var dock=$("#paintDock");if(!dock)return;
   var p=savedPaintDockPosition();
@@ -526,7 +529,8 @@ function placePaintDock(){
     p={left:pane.left+10,top:pane.top+10}
   }
   p=clampPaintDock(p.left,p.top);
-  dock.style.left=p.left+"px";dock.style.top=p.top+"px";dock.style.right="auto";dock.style.bottom="auto"
+  dock.style.left=p.left+"px";dock.style.top=p.top+"px";dock.style.right="auto";dock.style.bottom="auto";
+  savePaintDockPosition(p.left,p.top)
 }
 function setPaintCollapsed(on){
   paintCollapsed=!!on;
@@ -553,7 +557,8 @@ function initPaintDock(){
     if(Math.abs(dx)+Math.abs(dy)>5)drag.moved=true;
     if(!drag.moved)return;
     var p=clampPaintDock(drag.left+dx,drag.top+dy);
-    dock.style.left=p.left+"px";dock.style.top=p.top+"px"
+    dock.style.left=p.left+"px";dock.style.top=p.top+"px";
+    savePaintDockPosition(p.left,p.top)
   });
   function finishDockDrag(e,cancelled){
     if(!drag||drag.id!==e.pointerId)return;
@@ -561,7 +566,7 @@ function initPaintDock(){
     try{dock.releasePointerCapture(e.pointerId)}catch(err){}
     if(moved){
       var r=dock.getBoundingClientRect();
-      try{localStorage.setItem("mysuneung-cbt-paint-dock",JSON.stringify({left:r.left,top:r.top}))}catch(err){}
+      savePaintDockPosition(r.left,r.top)
     }else if(!cancelled)setPaintCollapsed(false)
   }
   dock.addEventListener("pointerup",function(e){finishDockDrag(e,false)});
