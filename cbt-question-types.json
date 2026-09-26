@@ -8960,6 +8960,5406 @@
       "category": "고전시가",
       "unit_id": "2027-06-common-q32-34",
       "original_no": 34
+    },
+    "2017-11-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q01-02",
+      "original_no": 1
+    },
+    "2017-11-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q01-02",
+      "original_no": 2
+    },
+    "2017-11-full-12": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-S-full-q12-12",
+      "original_no": 12
+    },
+    "2017-11-full-13": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-S-full-q13-13",
+      "original_no": 13
+    },
+    "2017-11-full-33": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-S-full-q33-36",
+      "original_no": 33
+    },
+    "2017-11-full-34": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-S-full-q33-36",
+      "original_no": 34
+    },
+    "2017-11-full-35": {
+      "type": "이유·전제 추론",
+      "skill": "이유·전제 추론",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-S-full-q33-36",
+      "original_no": 35
+    },
+    "2017-11-full-36": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-S-full-q33-36",
+      "original_no": 36
+    },
+    "2017-11-full-06": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q06-08",
+      "original_no": 6
+    },
+    "2017-11-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q06-08",
+      "original_no": 7
+    },
+    "2017-11-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q06-08",
+      "original_no": 8
+    },
+    "2017-11-full-11": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-S-full-q11-11",
+      "original_no": 11
+    },
+    "2017-11-full-21": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-S-full-q21-26",
+      "original_no": 21
+    },
+    "2017-11-full-22": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-S-full-q21-26",
+      "original_no": 22
+    },
+    "2017-11-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-S-full-q21-26",
+      "original_no": 23
+    },
+    "2017-11-full-24": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-S-full-q21-26",
+      "original_no": 24
+    },
+    "2017-11-full-25": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-S-full-q21-26",
+      "original_no": 25
+    },
+    "2017-11-full-26": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-S-full-q21-26",
+      "original_no": 26
+    },
+    "2017-11-full-16": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-S-full-q16-20",
+      "original_no": 16
+    },
+    "2017-11-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-S-full-q16-20",
+      "original_no": 17
+    },
+    "2017-11-full-18": {
+      "type": "관점·주장",
+      "skill": "관점·주장",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-S-full-q16-20",
+      "original_no": 18
+    },
+    "2017-11-full-19": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-S-full-q16-20",
+      "original_no": 19
+    },
+    "2017-11-full-20": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-S-full-q16-20",
+      "original_no": 20
+    },
+    "2017-11-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-S-full-q43-45",
+      "original_no": 43
+    },
+    "2017-11-full-44": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-S-full-q43-45",
+      "original_no": 44
+    },
+    "2017-11-full-45": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-S-full-q43-45",
+      "original_no": 45
+    },
+    "2017-11-full-37": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-S-full-q37-42",
+      "original_no": 37
+    },
+    "2017-11-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-S-full-q37-42",
+      "original_no": 38
+    },
+    "2017-11-full-39": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-S-full-q37-42",
+      "original_no": 39
+    },
+    "2017-11-full-40": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-S-full-q37-42",
+      "original_no": 40
+    },
+    "2017-11-full-41": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-S-full-q37-42",
+      "original_no": 41
+    },
+    "2017-11-full-42": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-S-full-q37-42",
+      "original_no": 42
+    },
+    "2017-11-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-S-full-q27-32",
+      "original_no": 27
+    },
+    "2017-11-full-28": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-S-full-q27-32",
+      "original_no": 28
+    },
+    "2017-11-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-S-full-q27-32",
+      "original_no": 29
+    },
+    "2017-11-full-30": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-S-full-q27-32",
+      "original_no": 30
+    },
+    "2017-11-full-31": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-S-full-q27-32",
+      "original_no": 31
+    },
+    "2017-11-full-32": {
+      "type": "인물·사건",
+      "skill": "인물·사건",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-S-full-q27-32",
+      "original_no": 32
+    },
+    "2017-11-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-S-full-q14-15",
+      "original_no": 14
+    },
+    "2017-11-full-15": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-S-full-q14-15",
+      "original_no": 15
+    },
+    "2017-11-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q03-05",
+      "original_no": 3
+    },
+    "2017-11-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q03-05",
+      "original_no": 4
+    },
+    "2017-11-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q03-05",
+      "original_no": 5
+    },
+    "2017-11-full-09": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q09-10",
+      "original_no": 9
+    },
+    "2017-11-full-10": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-S-full-q09-10",
+      "original_no": 10
+    },
+    "2017-06-full-01": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q01-02",
+      "original_no": 1
+    },
+    "2017-06-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q01-02",
+      "original_no": 2
+    },
+    "2017-06-full-13": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-06-full-q13-13",
+      "original_no": 13
+    },
+    "2017-06-full-06": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q06-07",
+      "original_no": 6
+    },
+    "2017-06-full-07": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q06-07",
+      "original_no": 7
+    },
+    "2017-06-full-25": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-06-full-q25-27",
+      "original_no": 25
+    },
+    "2017-06-full-26": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-06-full-q25-27",
+      "original_no": 26
+    },
+    "2017-06-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-06-full-q25-27",
+      "original_no": 27
+    },
+    "2017-06-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-06-full-q43-45",
+      "original_no": 43
+    },
+    "2017-06-full-44": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-06-full-q43-45",
+      "original_no": 44
+    },
+    "2017-06-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-06-full-q43-45",
+      "original_no": 45
+    },
+    "2017-06-full-16": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-06-full-q16-19",
+      "original_no": 16
+    },
+    "2017-06-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-06-full-q16-19",
+      "original_no": 17
+    },
+    "2017-06-full-18": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-06-full-q16-19",
+      "original_no": 18
+    },
+    "2017-06-full-19": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-06-full-q16-19",
+      "original_no": 19
+    },
+    "2017-06-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-06-full-q34-38",
+      "original_no": 34
+    },
+    "2017-06-full-35": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-06-full-q34-38",
+      "original_no": 35
+    },
+    "2017-06-full-36": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-06-full-q34-38",
+      "original_no": 36
+    },
+    "2017-06-full-37": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-06-full-q34-38",
+      "original_no": 37
+    },
+    "2017-06-full-38": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-06-full-q34-38",
+      "original_no": 38
+    },
+    "2017-06-full-28": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2017-06-full-q28-33",
+      "original_no": 28
+    },
+    "2017-06-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2017-06-full-q28-33",
+      "original_no": 29
+    },
+    "2017-06-full-30": {
+      "type": "관점·주장",
+      "skill": "관점·주장",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2017-06-full-q28-33",
+      "original_no": 30
+    },
+    "2017-06-full-31": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2017-06-full-q28-33",
+      "original_no": 31
+    },
+    "2017-06-full-32": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2017-06-full-q28-33",
+      "original_no": 32
+    },
+    "2017-06-full-33": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2017-06-full-q28-33",
+      "original_no": 33
+    },
+    "2017-06-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-06-full-q14-14",
+      "original_no": 14
+    },
+    "2017-06-full-08": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q08-10",
+      "original_no": 8
+    },
+    "2017-06-full-09": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q08-10",
+      "original_no": 9
+    },
+    "2017-06-full-10": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q08-10",
+      "original_no": 10
+    },
+    "2017-06-full-20": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-06-full-q20-24",
+      "original_no": 20
+    },
+    "2017-06-full-21": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-06-full-q20-24",
+      "original_no": 21
+    },
+    "2017-06-full-22": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-06-full-q20-24",
+      "original_no": 22
+    },
+    "2017-06-full-23": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-06-full-q20-24",
+      "original_no": 23
+    },
+    "2017-06-full-24": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2017-06-full-q20-24",
+      "original_no": 24
+    },
+    "2017-06-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q03-05",
+      "original_no": 3
+    },
+    "2017-06-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q03-05",
+      "original_no": 4
+    },
+    "2017-06-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-06-full-q03-05",
+      "original_no": 5
+    },
+    "2017-06-full-15": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-06-full-q15-15",
+      "original_no": 15
+    },
+    "2017-06-full-11": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-06-full-q11-12",
+      "original_no": 11
+    },
+    "2017-06-full-12": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-06-full-q11-12",
+      "original_no": 12
+    },
+    "2017-06-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2017-06-full-q39-42",
+      "original_no": 39
+    },
+    "2017-06-full-40": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2017-06-full-q39-42",
+      "original_no": 40
+    },
+    "2017-06-full-41": {
+      "type": "인물·사건",
+      "skill": "인물·사건",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2017-06-full-q39-42",
+      "original_no": 41
+    },
+    "2017-06-full-42": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2017-06-full-q39-42",
+      "original_no": 42
+    },
+    "2017-09-full-01": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q01-02",
+      "original_no": 1
+    },
+    "2017-09-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q01-02",
+      "original_no": 2
+    },
+    "2017-09-full-31": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-09-full-q31-34",
+      "original_no": 31
+    },
+    "2017-09-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-09-full-q31-34",
+      "original_no": 32
+    },
+    "2017-09-full-33": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-09-full-q31-34",
+      "original_no": 33
+    },
+    "2017-09-full-34": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2017-09-full-q31-34",
+      "original_no": 34
+    },
+    "2017-09-full-13": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-09-full-q13-13",
+      "original_no": 13
+    },
+    "2017-09-full-06": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q06-08",
+      "original_no": 6
+    },
+    "2017-09-full-07": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q06-08",
+      "original_no": 7
+    },
+    "2017-09-full-08": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q06-08",
+      "original_no": 8
+    },
+    "2017-09-full-40": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-09-full-q40-45",
+      "original_no": 40
+    },
+    "2017-09-full-41": {
+      "type": "인물·사건",
+      "skill": "인물·사건",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-09-full-q40-45",
+      "original_no": 41
+    },
+    "2017-09-full-42": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-09-full-q40-45",
+      "original_no": 42
+    },
+    "2017-09-full-43": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-09-full-q40-45",
+      "original_no": 43
+    },
+    "2017-09-full-44": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-09-full-q40-45",
+      "original_no": 44
+    },
+    "2017-09-full-45": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2017-09-full-q40-45",
+      "original_no": 45
+    },
+    "2017-09-full-35": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-09-full-q35-39",
+      "original_no": 35
+    },
+    "2017-09-full-36": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-09-full-q35-39",
+      "original_no": 36
+    },
+    "2017-09-full-37": {
+      "type": "어휘",
+      "skill": "어휘",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-09-full-q35-39",
+      "original_no": 37
+    },
+    "2017-09-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-09-full-q35-39",
+      "original_no": 38
+    },
+    "2017-09-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2017-09-full-q35-39",
+      "original_no": 39
+    },
+    "2017-09-full-16": {
+      "type": "표현상 특징",
+      "skill": "표현상 특징",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-09-full-q16-18",
+      "original_no": 16
+    },
+    "2017-09-full-17": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-09-full-q16-18",
+      "original_no": 17
+    },
+    "2017-09-full-18": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2017-09-full-q16-18",
+      "original_no": 18
+    },
+    "2017-09-full-25": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2017-09-full-q25-30",
+      "original_no": 25
+    },
+    "2017-09-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2017-09-full-q25-30",
+      "original_no": 26
+    },
+    "2017-09-full-27": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2017-09-full-q25-30",
+      "original_no": 27
+    },
+    "2017-09-full-28": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2017-09-full-q25-30",
+      "original_no": 28
+    },
+    "2017-09-full-29": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2017-09-full-q25-30",
+      "original_no": 29
+    },
+    "2017-09-full-30": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2017-09-full-q25-30",
+      "original_no": 30
+    },
+    "2017-09-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-09-full-q14-14",
+      "original_no": 14
+    },
+    "2017-09-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q03-05",
+      "original_no": 3
+    },
+    "2017-09-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q03-05",
+      "original_no": 4
+    },
+    "2017-09-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q03-05",
+      "original_no": 5
+    },
+    "2017-09-full-15": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-09-full-q15-15",
+      "original_no": 15
+    },
+    "2017-09-full-21": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-09-full-q21-24",
+      "original_no": 21
+    },
+    "2017-09-full-22": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-09-full-q21-24",
+      "original_no": 22
+    },
+    "2017-09-full-23": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-09-full-q21-24",
+      "original_no": 23
+    },
+    "2017-09-full-24": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2017-09-full-q21-24",
+      "original_no": 24
+    },
+    "2017-09-full-19": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-09-full-q19-20",
+      "original_no": 19
+    },
+    "2017-09-full-20": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2017-09-full-q19-20",
+      "original_no": 20
+    },
+    "2017-09-full-11": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-09-full-q11-12",
+      "original_no": 11
+    },
+    "2017-09-full-12": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2017-09-full-q11-12",
+      "original_no": 12
+    },
+    "2017-09-full-09": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q09-10",
+      "original_no": 9
+    },
+    "2017-09-full-10": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2017-09-full-q09-10",
+      "original_no": 10
+    },
+    "2018-11-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q01-03",
+      "original_no": 1
+    },
+    "2018-11-full-02": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q01-03",
+      "original_no": 2
+    },
+    "2018-11-full-03": {
+      "type": "청중 반응",
+      "skill": "청중 반응",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q01-03",
+      "original_no": 3
+    },
+    "2018-11-full-13": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-S-full-q13-13",
+      "original_no": 13
+    },
+    "2018-11-full-33": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-S-full-q33-37",
+      "original_no": 33
+    },
+    "2018-11-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-S-full-q33-37",
+      "original_no": 34
+    },
+    "2018-11-full-35": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-S-full-q33-37",
+      "original_no": 35
+    },
+    "2018-11-full-36": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-S-full-q33-37",
+      "original_no": 36
+    },
+    "2018-11-full-37": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-S-full-q33-37",
+      "original_no": 37
+    },
+    "2018-11-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-S-full-q43-45",
+      "original_no": 43
+    },
+    "2018-11-full-44": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-S-full-q43-45",
+      "original_no": 44
+    },
+    "2018-11-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-S-full-q43-45",
+      "original_no": 45
+    },
+    "2018-11-full-16": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-S-full-q16-19",
+      "original_no": 16
+    },
+    "2018-11-full-17": {
+      "type": "관점·주장",
+      "skill": "관점·주장",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-S-full-q16-19",
+      "original_no": 17
+    },
+    "2018-11-full-18": {
+      "type": "이유·전제 추론",
+      "skill": "이유·전제 추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-S-full-q16-19",
+      "original_no": 18
+    },
+    "2018-11-full-19": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-S-full-q16-19",
+      "original_no": 19
+    },
+    "2018-11-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-S-full-q23-26",
+      "original_no": 23
+    },
+    "2018-11-full-24": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-S-full-q23-26",
+      "original_no": 24
+    },
+    "2018-11-full-25": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-S-full-q23-26",
+      "original_no": 25
+    },
+    "2018-11-full-26": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-S-full-q23-26",
+      "original_no": 26
+    },
+    "2018-11-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q04-07",
+      "original_no": 4
+    },
+    "2018-11-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q04-07",
+      "original_no": 5
+    },
+    "2018-11-full-06": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q04-07",
+      "original_no": 6
+    },
+    "2018-11-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q04-07",
+      "original_no": 7
+    },
+    "2018-11-full-20": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2018-S-full-q20-22",
+      "original_no": 20
+    },
+    "2018-11-full-21": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2018-S-full-q20-22",
+      "original_no": 21
+    },
+    "2018-11-full-22": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2018-S-full-q20-22",
+      "original_no": 22
+    },
+    "2018-11-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-S-full-q27-32",
+      "original_no": 27
+    },
+    "2018-11-full-28": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-S-full-q27-32",
+      "original_no": 28
+    },
+    "2018-11-full-29": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-S-full-q27-32",
+      "original_no": 29
+    },
+    "2018-11-full-30": {
+      "type": "자료·도표",
+      "skill": "자료·도표",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-S-full-q27-32",
+      "original_no": 30
+    },
+    "2018-11-full-31": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-S-full-q27-32",
+      "original_no": 31
+    },
+    "2018-11-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-S-full-q27-32",
+      "original_no": 32
+    },
+    "2018-11-full-14": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-S-full-q14-14",
+      "original_no": 14
+    },
+    "2018-11-full-08": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q08-10",
+      "original_no": 8
+    },
+    "2018-11-full-09": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q08-10",
+      "original_no": 9
+    },
+    "2018-11-full-10": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-S-full-q08-10",
+      "original_no": 10
+    },
+    "2018-11-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-S-full-q38-42",
+      "original_no": 38
+    },
+    "2018-11-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-S-full-q38-42",
+      "original_no": 39
+    },
+    "2018-11-full-40": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-S-full-q38-42",
+      "original_no": 40
+    },
+    "2018-11-full-41": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-S-full-q38-42",
+      "original_no": 41
+    },
+    "2018-11-full-42": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-S-full-q38-42",
+      "original_no": 42
+    },
+    "2018-11-full-15": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-S-full-q15-15",
+      "original_no": 15
+    },
+    "2018-11-full-11": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-S-full-q11-12",
+      "original_no": 11
+    },
+    "2018-11-full-12": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-S-full-q11-12",
+      "original_no": 12
+    },
+    "2018-06-full-22": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-06-full-q22-25",
+      "original_no": 22
+    },
+    "2018-06-full-23": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-06-full-q22-25",
+      "original_no": 23
+    },
+    "2018-06-full-24": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-06-full-q22-25",
+      "original_no": 24
+    },
+    "2018-06-full-25": {
+      "type": "어휘",
+      "skill": "어휘",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-06-full-q22-25",
+      "original_no": 25
+    },
+    "2018-06-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q01-03",
+      "original_no": 1
+    },
+    "2018-06-full-02": {
+      "type": "청중 반응",
+      "skill": "청중 반응",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q01-03",
+      "original_no": 2
+    },
+    "2018-06-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q01-03",
+      "original_no": 3
+    },
+    "2018-06-full-30": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-06-full-q30-34",
+      "original_no": 30
+    },
+    "2018-06-full-31": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-06-full-q30-34",
+      "original_no": 31
+    },
+    "2018-06-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-06-full-q30-34",
+      "original_no": 32
+    },
+    "2018-06-full-33": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-06-full-q30-34",
+      "original_no": 33
+    },
+    "2018-06-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2018-06-full-q30-34",
+      "original_no": 34
+    },
+    "2018-06-full-13": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-06-full-q13-13",
+      "original_no": 13
+    },
+    "2018-06-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-06-full-q39-41",
+      "original_no": 39
+    },
+    "2018-06-full-40": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-06-full-q39-41",
+      "original_no": 40
+    },
+    "2018-06-full-41": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-06-full-q39-41",
+      "original_no": 41
+    },
+    "2018-06-full-35": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-06-full-q35-38",
+      "original_no": 35
+    },
+    "2018-06-full-36": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-06-full-q35-38",
+      "original_no": 36
+    },
+    "2018-06-full-37": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-06-full-q35-38",
+      "original_no": 37
+    },
+    "2018-06-full-38": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2018-06-full-q35-38",
+      "original_no": 38
+    },
+    "2018-06-full-26": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-06-full-q26-29",
+      "original_no": 26
+    },
+    "2018-06-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-06-full-q26-29",
+      "original_no": 27
+    },
+    "2018-06-full-28": {
+      "type": "표현상 특징",
+      "skill": "표현상 특징",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-06-full-q26-29",
+      "original_no": 28
+    },
+    "2018-06-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-06-full-q26-29",
+      "original_no": 29
+    },
+    "2018-06-full-16": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-06-full-q16-21",
+      "original_no": 16
+    },
+    "2018-06-full-17": {
+      "type": "관점·주장",
+      "skill": "관점·주장",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-06-full-q16-21",
+      "original_no": 17
+    },
+    "2018-06-full-18": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-06-full-q16-21",
+      "original_no": 18
+    },
+    "2018-06-full-19": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-06-full-q16-21",
+      "original_no": 19
+    },
+    "2018-06-full-20": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-06-full-q16-21",
+      "original_no": 20
+    },
+    "2018-06-full-21": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2018-06-full-q16-21",
+      "original_no": 21
+    },
+    "2018-06-full-42": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-06-full-q42-45",
+      "original_no": 42
+    },
+    "2018-06-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-06-full-q42-45",
+      "original_no": 43
+    },
+    "2018-06-full-44": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-06-full-q42-45",
+      "original_no": 44
+    },
+    "2018-06-full-45": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2018-06-full-q42-45",
+      "original_no": 45
+    },
+    "2018-06-full-04": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q04-07",
+      "original_no": 4
+    },
+    "2018-06-full-05": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q04-07",
+      "original_no": 5
+    },
+    "2018-06-full-06": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q04-07",
+      "original_no": 6
+    },
+    "2018-06-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q04-07",
+      "original_no": 7
+    },
+    "2018-06-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-06-full-q14-14",
+      "original_no": 14
+    },
+    "2018-06-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q08-10",
+      "original_no": 8
+    },
+    "2018-06-full-09": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q08-10",
+      "original_no": 9
+    },
+    "2018-06-full-10": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-06-full-q08-10",
+      "original_no": 10
+    },
+    "2018-06-full-15": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-06-full-q15-15",
+      "original_no": 15
+    },
+    "2018-06-full-11": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-06-full-q11-12",
+      "original_no": 11
+    },
+    "2018-06-full-12": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-06-full-q11-12",
+      "original_no": 12
+    },
+    "2018-09-full-01": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q01-03",
+      "original_no": 1
+    },
+    "2018-09-full-02": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q01-03",
+      "original_no": 2
+    },
+    "2018-09-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q01-03",
+      "original_no": 3
+    },
+    "2018-09-full-13": {
+      "type": "문장",
+      "skill": "문장",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-09-full-q13-13",
+      "original_no": 13
+    },
+    "2018-09-full-33": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q33-37",
+      "original_no": 33
+    },
+    "2018-09-full-34": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q33-37",
+      "original_no": 34
+    },
+    "2018-09-full-35": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q33-37",
+      "original_no": 35
+    },
+    "2018-09-full-36": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q33-37",
+      "original_no": 36
+    },
+    "2018-09-full-37": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q33-37",
+      "original_no": 37
+    },
+    "2018-09-full-43": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-09-full-q43-45",
+      "original_no": 43
+    },
+    "2018-09-full-44": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-09-full-q43-45",
+      "original_no": 44
+    },
+    "2018-09-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2018-09-full-q43-45",
+      "original_no": 45
+    },
+    "2018-09-full-16": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2018-09-full-q16-19",
+      "original_no": 16
+    },
+    "2018-09-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2018-09-full-q16-19",
+      "original_no": 17
+    },
+    "2018-09-full-18": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2018-09-full-q16-19",
+      "original_no": 18
+    },
+    "2018-09-full-19": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2018-09-full-q16-19",
+      "original_no": 19
+    },
+    "2018-09-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q23-26",
+      "original_no": 23
+    },
+    "2018-09-full-24": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q23-26",
+      "original_no": 24
+    },
+    "2018-09-full-25": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q23-26",
+      "original_no": 25
+    },
+    "2018-09-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2018-09-full-q23-26",
+      "original_no": 26
+    },
+    "2018-09-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q04-07",
+      "original_no": 4
+    },
+    "2018-09-full-05": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q04-07",
+      "original_no": 5
+    },
+    "2018-09-full-06": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q04-07",
+      "original_no": 6
+    },
+    "2018-09-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q04-07",
+      "original_no": 7
+    },
+    "2018-09-full-20": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2018-09-full-q20-22",
+      "original_no": 20
+    },
+    "2018-09-full-21": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2018-09-full-q20-22",
+      "original_no": 21
+    },
+    "2018-09-full-22": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2018-09-full-q20-22",
+      "original_no": 22
+    },
+    "2018-09-full-27": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2018-09-full-q27-32",
+      "original_no": 27
+    },
+    "2018-09-full-28": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2018-09-full-q27-32",
+      "original_no": 28
+    },
+    "2018-09-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2018-09-full-q27-32",
+      "original_no": 29
+    },
+    "2018-09-full-30": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2018-09-full-q27-32",
+      "original_no": 30
+    },
+    "2018-09-full-31": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2018-09-full-q27-32",
+      "original_no": 31
+    },
+    "2018-09-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2018-09-full-q27-32",
+      "original_no": 32
+    },
+    "2018-09-full-14": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-09-full-q14-14",
+      "original_no": 14
+    },
+    "2018-09-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q08-10",
+      "original_no": 8
+    },
+    "2018-09-full-09": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q08-10",
+      "original_no": 9
+    },
+    "2018-09-full-10": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2018-09-full-q08-10",
+      "original_no": 10
+    },
+    "2018-09-full-38": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-09-full-q38-42",
+      "original_no": 38
+    },
+    "2018-09-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-09-full-q38-42",
+      "original_no": 39
+    },
+    "2018-09-full-40": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-09-full-q38-42",
+      "original_no": 40
+    },
+    "2018-09-full-41": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-09-full-q38-42",
+      "original_no": 41
+    },
+    "2018-09-full-42": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2018-09-full-q38-42",
+      "original_no": 42
+    },
+    "2018-09-full-15": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-09-full-q15-15",
+      "original_no": 15
+    },
+    "2018-09-full-11": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-09-full-q11-12",
+      "original_no": 11
+    },
+    "2018-09-full-12": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2018-09-full-q11-12",
+      "original_no": 12
+    },
+    "2019-09-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q01-02",
+      "original_no": 1
+    },
+    "2019-09-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q01-02",
+      "original_no": 2
+    },
+    "2019-09-full-13": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-09-full-q13-13",
+      "original_no": 13
+    },
+    "2019-09-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q03-07",
+      "original_no": 3
+    },
+    "2019-09-full-04": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q03-07",
+      "original_no": 4
+    },
+    "2019-09-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q03-07",
+      "original_no": 5
+    },
+    "2019-09-full-06": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q03-07",
+      "original_no": 6
+    },
+    "2019-09-full-07": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q03-07",
+      "original_no": 7
+    },
+    "2019-09-full-33": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-09-full-q33-38",
+      "original_no": 33
+    },
+    "2019-09-full-34": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-09-full-q33-38",
+      "original_no": 34
+    },
+    "2019-09-full-35": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-09-full-q33-38",
+      "original_no": 35
+    },
+    "2019-09-full-36": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-09-full-q33-38",
+      "original_no": 36
+    },
+    "2019-09-full-37": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-09-full-q33-38",
+      "original_no": 37
+    },
+    "2019-09-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-09-full-q33-38",
+      "original_no": 38
+    },
+    "2019-09-full-39": {
+      "type": "인물·사건",
+      "skill": "인물·사건",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q39-41",
+      "original_no": 39
+    },
+    "2019-09-full-40": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q39-41",
+      "original_no": 40
+    },
+    "2019-09-full-41": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q39-41",
+      "original_no": 41
+    },
+    "2019-09-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-09-full-q26-28",
+      "original_no": 26
+    },
+    "2019-09-full-27": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-09-full-q26-28",
+      "original_no": 27
+    },
+    "2019-09-full-28": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-09-full-q26-28",
+      "original_no": 28
+    },
+    "2019-09-full-16": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q16-20",
+      "original_no": 16
+    },
+    "2019-09-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q16-20",
+      "original_no": 17
+    },
+    "2019-09-full-18": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q16-20",
+      "original_no": 18
+    },
+    "2019-09-full-19": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q16-20",
+      "original_no": 19
+    },
+    "2019-09-full-20": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-09-full-q16-20",
+      "original_no": 20
+    },
+    "2019-09-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2019-09-full-q29-32",
+      "original_no": 29
+    },
+    "2019-09-full-30": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2019-09-full-q29-32",
+      "original_no": 30
+    },
+    "2019-09-full-31": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2019-09-full-q29-32",
+      "original_no": 31
+    },
+    "2019-09-full-32": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2019-09-full-q29-32",
+      "original_no": 32
+    },
+    "2019-09-full-42": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2019-09-full-q42-45",
+      "original_no": 42
+    },
+    "2019-09-full-43": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2019-09-full-q42-45",
+      "original_no": 43
+    },
+    "2019-09-full-44": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2019-09-full-q42-45",
+      "original_no": 44
+    },
+    "2019-09-full-45": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2019-09-full-q42-45",
+      "original_no": 45
+    },
+    "2019-09-full-14": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-09-full-q14-14",
+      "original_no": 14
+    },
+    "2019-09-full-08": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q08-10",
+      "original_no": 8
+    },
+    "2019-09-full-09": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q08-10",
+      "original_no": 9
+    },
+    "2019-09-full-10": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-09-full-q08-10",
+      "original_no": 10
+    },
+    "2019-09-full-15": {
+      "type": "문장",
+      "skill": "문장",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-09-full-q15-15",
+      "original_no": 15
+    },
+    "2019-09-full-11": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-09-full-q11-12",
+      "original_no": 11
+    },
+    "2019-09-full-12": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-09-full-q11-12",
+      "original_no": 12
+    },
+    "2019-09-full-21": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-09-full-q21-25",
+      "original_no": 21
+    },
+    "2019-09-full-22": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-09-full-q21-25",
+      "original_no": 22
+    },
+    "2019-09-full-23": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-09-full-q21-25",
+      "original_no": 23
+    },
+    "2019-09-full-24": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-09-full-q21-25",
+      "original_no": 24
+    },
+    "2019-09-full-25": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-09-full-q21-25",
+      "original_no": 25
+    },
+    "2019-11-full-12": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-S-full-q12-13",
+      "original_no": 12
+    },
+    "2019-11-full-13": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-S-full-q12-13",
+      "original_no": 13
+    },
+    "2019-11-full-01": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q01-03",
+      "original_no": 1
+    },
+    "2019-11-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q01-03",
+      "original_no": 2
+    },
+    "2019-11-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q01-03",
+      "original_no": 3
+    },
+    "2019-11-full-36": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-S-full-q36-38",
+      "original_no": 36
+    },
+    "2019-11-full-37": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-S-full-q36-38",
+      "original_no": 37
+    },
+    "2019-11-full-38": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-S-full-q36-38",
+      "original_no": 38
+    },
+    "2019-11-full-11": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-S-full-q11-11",
+      "original_no": 11
+    },
+    "2019-11-full-21": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-S-full-q21-26",
+      "original_no": 21
+    },
+    "2019-11-full-22": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-S-full-q21-26",
+      "original_no": 22
+    },
+    "2019-11-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-S-full-q21-26",
+      "original_no": 23
+    },
+    "2019-11-full-24": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-S-full-q21-26",
+      "original_no": 24
+    },
+    "2019-11-full-25": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-S-full-q21-26",
+      "original_no": 25
+    },
+    "2019-11-full-26": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-S-full-q21-26",
+      "original_no": 26
+    },
+    "2019-11-full-16": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-S-full-q16-20",
+      "original_no": 16
+    },
+    "2019-11-full-17": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-S-full-q16-20",
+      "original_no": 17
+    },
+    "2019-11-full-18": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-S-full-q16-20",
+      "original_no": 18
+    },
+    "2019-11-full-19": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-S-full-q16-20",
+      "original_no": 19
+    },
+    "2019-11-full-20": {
+      "type": "어휘",
+      "skill": "어휘",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-S-full-q16-20",
+      "original_no": 20
+    },
+    "2019-11-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2019-S-full-q43-45",
+      "original_no": 43
+    },
+    "2019-11-full-44": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2019-S-full-q43-45",
+      "original_no": 44
+    },
+    "2019-11-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2019-S-full-q43-45",
+      "original_no": 45
+    },
+    "2019-11-full-04": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q04-07",
+      "original_no": 4
+    },
+    "2019-11-full-05": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q04-07",
+      "original_no": 5
+    },
+    "2019-11-full-06": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q04-07",
+      "original_no": 6
+    },
+    "2019-11-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q04-07",
+      "original_no": 7
+    },
+    "2019-11-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q27-32",
+      "original_no": 27
+    },
+    "2019-11-full-28": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q27-32",
+      "original_no": 28
+    },
+    "2019-11-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q27-32",
+      "original_no": 29
+    },
+    "2019-11-full-30": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q27-32",
+      "original_no": 30
+    },
+    "2019-11-full-31": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q27-32",
+      "original_no": 31
+    },
+    "2019-11-full-32": {
+      "type": "어휘",
+      "skill": "어휘",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q27-32",
+      "original_no": 32
+    },
+    "2019-11-full-14": {
+      "type": "문장",
+      "skill": "문장",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-S-full-q14-14",
+      "original_no": 14
+    },
+    "2019-11-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q08-10",
+      "original_no": 8
+    },
+    "2019-11-full-09": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q08-10",
+      "original_no": 9
+    },
+    "2019-11-full-10": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-S-full-q08-10",
+      "original_no": 10
+    },
+    "2019-11-full-33": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2019-S-full-q33-35",
+      "original_no": 33
+    },
+    "2019-11-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2019-S-full-q33-35",
+      "original_no": 34
+    },
+    "2019-11-full-35": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2019-S-full-q33-35",
+      "original_no": 35
+    },
+    "2019-11-full-15": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-S-full-q15-15",
+      "original_no": 15
+    },
+    "2019-11-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q39-42",
+      "original_no": 39
+    },
+    "2019-11-full-40": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q39-42",
+      "original_no": 40
+    },
+    "2019-11-full-41": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q39-42",
+      "original_no": 41
+    },
+    "2019-11-full-42": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-S-full-q39-42",
+      "original_no": 42
+    },
+    "2019-06-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q01-03",
+      "original_no": 1
+    },
+    "2019-06-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q01-03",
+      "original_no": 2
+    },
+    "2019-06-full-03": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q01-03",
+      "original_no": 3
+    },
+    "2019-06-full-13": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-06-full-q13-13",
+      "original_no": 13
+    },
+    "2019-06-full-27": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-06-full-q27-31",
+      "original_no": 27
+    },
+    "2019-06-full-28": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-06-full-q27-31",
+      "original_no": 28
+    },
+    "2019-06-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-06-full-q27-31",
+      "original_no": 29
+    },
+    "2019-06-full-30": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-06-full-q27-31",
+      "original_no": 30
+    },
+    "2019-06-full-31": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2019-06-full-q27-31",
+      "original_no": 31
+    },
+    "2019-06-full-35": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2019-06-full-q35-38",
+      "original_no": 35
+    },
+    "2019-06-full-36": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2019-06-full-q35-38",
+      "original_no": 36
+    },
+    "2019-06-full-37": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2019-06-full-q35-38",
+      "original_no": 37
+    },
+    "2019-06-full-38": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2019-06-full-q35-38",
+      "original_no": 38
+    },
+    "2019-06-full-43": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2019-06-full-q43-45",
+      "original_no": 43
+    },
+    "2019-06-full-44": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2019-06-full-q43-45",
+      "original_no": 44
+    },
+    "2019-06-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2019-06-full-q43-45",
+      "original_no": 45
+    },
+    "2019-06-full-16": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-06-full-q16-21",
+      "original_no": 16
+    },
+    "2019-06-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-06-full-q16-21",
+      "original_no": 17
+    },
+    "2019-06-full-18": {
+      "type": "이유·전제 추론",
+      "skill": "이유·전제 추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-06-full-q16-21",
+      "original_no": 18
+    },
+    "2019-06-full-19": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-06-full-q16-21",
+      "original_no": 19
+    },
+    "2019-06-full-20": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-06-full-q16-21",
+      "original_no": 20
+    },
+    "2019-06-full-21": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2019-06-full-q16-21",
+      "original_no": 21
+    },
+    "2019-06-full-22": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-06-full-q22-26",
+      "original_no": 22
+    },
+    "2019-06-full-23": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-06-full-q22-26",
+      "original_no": 23
+    },
+    "2019-06-full-24": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-06-full-q22-26",
+      "original_no": 24
+    },
+    "2019-06-full-25": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-06-full-q22-26",
+      "original_no": 25
+    },
+    "2019-06-full-26": {
+      "type": "어휘",
+      "skill": "어휘",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2019-06-full-q22-26",
+      "original_no": 26
+    },
+    "2019-06-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q04-07",
+      "original_no": 4
+    },
+    "2019-06-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q04-07",
+      "original_no": 5
+    },
+    "2019-06-full-06": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q04-07",
+      "original_no": 6
+    },
+    "2019-06-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q04-07",
+      "original_no": 7
+    },
+    "2019-06-full-14": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-06-full-q14-14",
+      "original_no": 14
+    },
+    "2019-06-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q08-10",
+      "original_no": 8
+    },
+    "2019-06-full-09": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q08-10",
+      "original_no": 9
+    },
+    "2019-06-full-10": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2019-06-full-q08-10",
+      "original_no": 10
+    },
+    "2019-06-full-15": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-06-full-q15-15",
+      "original_no": 15
+    },
+    "2019-06-full-11": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-06-full-q11-12",
+      "original_no": 11
+    },
+    "2019-06-full-12": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2019-06-full-q11-12",
+      "original_no": 12
+    },
+    "2019-06-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2019-06-full-q32-34",
+      "original_no": 32
+    },
+    "2019-06-full-33": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2019-06-full-q32-34",
+      "original_no": 33
+    },
+    "2019-06-full-34": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2019-06-full-q32-34",
+      "original_no": 34
+    },
+    "2019-06-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-06-full-q39-42",
+      "original_no": 39
+    },
+    "2019-06-full-40": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-06-full-q39-42",
+      "original_no": 40
+    },
+    "2019-06-full-41": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-06-full-q39-42",
+      "original_no": 41
+    },
+    "2019-06-full-42": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2019-06-full-q39-42",
+      "original_no": 42
+    },
+    "2020-06-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q01-03",
+      "original_no": 1
+    },
+    "2020-06-full-02": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q01-03",
+      "original_no": 2
+    },
+    "2020-06-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q01-03",
+      "original_no": 3
+    },
+    "2020-06-full-13": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-06-full-q13-13",
+      "original_no": 13
+    },
+    "2020-06-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-06-full-q27-31",
+      "original_no": 27
+    },
+    "2020-06-full-28": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-06-full-q27-31",
+      "original_no": 28
+    },
+    "2020-06-full-29": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-06-full-q27-31",
+      "original_no": 29
+    },
+    "2020-06-full-30": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-06-full-q27-31",
+      "original_no": 30
+    },
+    "2020-06-full-31": {
+      "type": "어휘",
+      "skill": "어휘",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-06-full-q27-31",
+      "original_no": 31
+    },
+    "2020-06-full-32": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-06-full-q32-36",
+      "original_no": 32
+    },
+    "2020-06-full-33": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-06-full-q32-36",
+      "original_no": 33
+    },
+    "2020-06-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-06-full-q32-36",
+      "original_no": 34
+    },
+    "2020-06-full-35": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-06-full-q32-36",
+      "original_no": 35
+    },
+    "2020-06-full-36": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-06-full-q32-36",
+      "original_no": 36
+    },
+    "2020-06-full-19": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-06-full-q19-22",
+      "original_no": 19
+    },
+    "2020-06-full-20": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-06-full-q19-22",
+      "original_no": 20
+    },
+    "2020-06-full-21": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-06-full-q19-22",
+      "original_no": 21
+    },
+    "2020-06-full-22": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-06-full-q19-22",
+      "original_no": 22
+    },
+    "2020-06-full-16": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-06-full-q16-18",
+      "original_no": 16
+    },
+    "2020-06-full-17": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-06-full-q16-18",
+      "original_no": 17
+    },
+    "2020-06-full-18": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-06-full-q16-18",
+      "original_no": 18
+    },
+    "2020-06-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-06-full-q43-45",
+      "original_no": 43
+    },
+    "2020-06-full-44": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-06-full-q43-45",
+      "original_no": 44
+    },
+    "2020-06-full-45": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-06-full-q43-45",
+      "original_no": 45
+    },
+    "2020-06-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-06-full-q23-26",
+      "original_no": 23
+    },
+    "2020-06-full-24": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-06-full-q23-26",
+      "original_no": 24
+    },
+    "2020-06-full-25": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-06-full-q23-26",
+      "original_no": 25
+    },
+    "2020-06-full-26": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-06-full-q23-26",
+      "original_no": 26
+    },
+    "2020-06-full-37": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-06-full-q37-42",
+      "original_no": 37
+    },
+    "2020-06-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-06-full-q37-42",
+      "original_no": 38
+    },
+    "2020-06-full-39": {
+      "type": "이유·전제 추론",
+      "skill": "이유·전제 추론",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-06-full-q37-42",
+      "original_no": 39
+    },
+    "2020-06-full-40": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-06-full-q37-42",
+      "original_no": 40
+    },
+    "2020-06-full-41": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-06-full-q37-42",
+      "original_no": 41
+    },
+    "2020-06-full-42": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-06-full-q37-42",
+      "original_no": 42
+    },
+    "2020-06-full-04": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q04-07",
+      "original_no": 4
+    },
+    "2020-06-full-05": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q04-07",
+      "original_no": 5
+    },
+    "2020-06-full-06": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q04-07",
+      "original_no": 6
+    },
+    "2020-06-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q04-07",
+      "original_no": 7
+    },
+    "2020-06-full-14": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-06-full-q14-14",
+      "original_no": 14
+    },
+    "2020-06-full-08": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q08-10",
+      "original_no": 8
+    },
+    "2020-06-full-09": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q08-10",
+      "original_no": 9
+    },
+    "2020-06-full-10": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-06-full-q08-10",
+      "original_no": 10
+    },
+    "2020-06-full-15": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-06-full-q15-15",
+      "original_no": 15
+    },
+    "2020-06-full-11": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-06-full-q11-12",
+      "original_no": 11
+    },
+    "2020-06-full-12": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-06-full-q11-12",
+      "original_no": 12
+    },
+    "2020-11-full-01": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q01-03",
+      "original_no": 1
+    },
+    "2020-11-full-02": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q01-03",
+      "original_no": 2
+    },
+    "2020-11-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q01-03",
+      "original_no": 3
+    },
+    "2020-11-full-13": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-S-full-q13-13",
+      "original_no": 13
+    },
+    "2020-11-full-30": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-S-full-q30-32",
+      "original_no": 30
+    },
+    "2020-11-full-31": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-S-full-q30-32",
+      "original_no": 31
+    },
+    "2020-11-full-32": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-S-full-q30-32",
+      "original_no": 32
+    },
+    "2020-11-full-33": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-S-full-q33-36",
+      "original_no": 33
+    },
+    "2020-11-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-S-full-q33-36",
+      "original_no": 34
+    },
+    "2020-11-full-35": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-S-full-q33-36",
+      "original_no": 35
+    },
+    "2020-11-full-36": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-S-full-q33-36",
+      "original_no": 36
+    },
+    "2020-11-full-16": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-S-full-q16-20",
+      "original_no": 16
+    },
+    "2020-11-full-17": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-S-full-q16-20",
+      "original_no": 17
+    },
+    "2020-11-full-18": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-S-full-q16-20",
+      "original_no": 18
+    },
+    "2020-11-full-19": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-S-full-q16-20",
+      "original_no": 19
+    },
+    "2020-11-full-20": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-S-full-q16-20",
+      "original_no": 20
+    },
+    "2020-11-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-S-full-q43-45",
+      "original_no": 43
+    },
+    "2020-11-full-44": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-S-full-q43-45",
+      "original_no": 44
+    },
+    "2020-11-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-S-full-q43-45",
+      "original_no": 45
+    },
+    "2020-11-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-S-full-q26-29",
+      "original_no": 26
+    },
+    "2020-11-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-S-full-q26-29",
+      "original_no": 27
+    },
+    "2020-11-full-28": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-S-full-q26-29",
+      "original_no": 28
+    },
+    "2020-11-full-29": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2020-S-full-q26-29",
+      "original_no": 29
+    },
+    "2020-11-full-37": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-S-full-q37-42",
+      "original_no": 37
+    },
+    "2020-11-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-S-full-q37-42",
+      "original_no": 38
+    },
+    "2020-11-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-S-full-q37-42",
+      "original_no": 39
+    },
+    "2020-11-full-40": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-S-full-q37-42",
+      "original_no": 40
+    },
+    "2020-11-full-41": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-S-full-q37-42",
+      "original_no": 41
+    },
+    "2020-11-full-42": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-S-full-q37-42",
+      "original_no": 42
+    },
+    "2020-11-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q04-07",
+      "original_no": 4
+    },
+    "2020-11-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q04-07",
+      "original_no": 5
+    },
+    "2020-11-full-06": {
+      "type": "청중 반응",
+      "skill": "청중 반응",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q04-07",
+      "original_no": 6
+    },
+    "2020-11-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q04-07",
+      "original_no": 7
+    },
+    "2020-11-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-S-full-q14-14",
+      "original_no": 14
+    },
+    "2020-11-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q08-10",
+      "original_no": 8
+    },
+    "2020-11-full-09": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q08-10",
+      "original_no": 9
+    },
+    "2020-11-full-10": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-S-full-q08-10",
+      "original_no": 10
+    },
+    "2020-11-full-15": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-S-full-q15-15",
+      "original_no": 15
+    },
+    "2020-11-full-11": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-S-full-q11-12",
+      "original_no": 11
+    },
+    "2020-11-full-12": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-S-full-q11-12",
+      "original_no": 12
+    },
+    "2020-11-full-21": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-S-full-q21-25",
+      "original_no": 21
+    },
+    "2020-11-full-22": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-S-full-q21-25",
+      "original_no": 22
+    },
+    "2020-11-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-S-full-q21-25",
+      "original_no": 23
+    },
+    "2020-11-full-24": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-S-full-q21-25",
+      "original_no": 24
+    },
+    "2020-11-full-25": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2020-S-full-q21-25",
+      "original_no": 25
+    },
+    "2020-09-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q01-03",
+      "original_no": 1
+    },
+    "2020-09-full-02": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q01-03",
+      "original_no": 2
+    },
+    "2020-09-full-03": {
+      "type": "청중 반응",
+      "skill": "청중 반응",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q01-03",
+      "original_no": 3
+    },
+    "2020-09-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q04-05",
+      "original_no": 4
+    },
+    "2020-09-full-05": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q04-05",
+      "original_no": 5
+    },
+    "2020-09-full-13": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-09-full-q13-13",
+      "original_no": 13
+    },
+    "2020-09-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2020-09-full-q38-41",
+      "original_no": 38
+    },
+    "2020-09-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2020-09-full-q38-41",
+      "original_no": 39
+    },
+    "2020-09-full-40": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2020-09-full-q38-41",
+      "original_no": 40
+    },
+    "2020-09-full-41": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2020-09-full-q38-41",
+      "original_no": 41
+    },
+    "2020-09-full-27": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-09-full-q27-31",
+      "original_no": 27
+    },
+    "2020-09-full-28": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-09-full-q27-31",
+      "original_no": 28
+    },
+    "2020-09-full-29": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-09-full-q27-31",
+      "original_no": 29
+    },
+    "2020-09-full-30": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-09-full-q27-31",
+      "original_no": 30
+    },
+    "2020-09-full-31": {
+      "type": "어휘",
+      "skill": "어휘",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2020-09-full-q27-31",
+      "original_no": 31
+    },
+    "2020-09-full-06": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q06-07",
+      "original_no": 6
+    },
+    "2020-09-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q06-07",
+      "original_no": 7
+    },
+    "2020-09-full-21": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-09-full-q21-26",
+      "original_no": 21
+    },
+    "2020-09-full-22": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-09-full-q21-26",
+      "original_no": 22
+    },
+    "2020-09-full-23": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-09-full-q21-26",
+      "original_no": 23
+    },
+    "2020-09-full-24": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-09-full-q21-26",
+      "original_no": 24
+    },
+    "2020-09-full-25": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-09-full-q21-26",
+      "original_no": 25
+    },
+    "2020-09-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2020-09-full-q21-26",
+      "original_no": 26
+    },
+    "2020-09-full-35": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-09-full-q35-37",
+      "original_no": 35
+    },
+    "2020-09-full-36": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-09-full-q35-37",
+      "original_no": 36
+    },
+    "2020-09-full-37": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2020-09-full-q35-37",
+      "original_no": 37
+    },
+    "2020-09-full-16": {
+      "type": "작품 비교",
+      "skill": "작품 비교",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2020-09-full-q16-20",
+      "original_no": 16
+    },
+    "2020-09-full-17": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2020-09-full-q16-20",
+      "original_no": 17
+    },
+    "2020-09-full-18": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2020-09-full-q16-20",
+      "original_no": 18
+    },
+    "2020-09-full-19": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2020-09-full-q16-20",
+      "original_no": 19
+    },
+    "2020-09-full-20": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2020-09-full-q16-20",
+      "original_no": 20
+    },
+    "2020-09-full-42": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-09-full-q42-45",
+      "original_no": 42
+    },
+    "2020-09-full-43": {
+      "type": "시어·구절 의미",
+      "skill": "시어·구절 의미",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-09-full-q42-45",
+      "original_no": 43
+    },
+    "2020-09-full-44": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-09-full-q42-45",
+      "original_no": 44
+    },
+    "2020-09-full-45": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2020-09-full-q42-45",
+      "original_no": 45
+    },
+    "2020-09-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-09-full-q14-14",
+      "original_no": 14
+    },
+    "2020-09-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q08-10",
+      "original_no": 8
+    },
+    "2020-09-full-09": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q08-10",
+      "original_no": 9
+    },
+    "2020-09-full-10": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2020-09-full-q08-10",
+      "original_no": 10
+    },
+    "2020-09-full-15": {
+      "type": "문장",
+      "skill": "문장",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-09-full-q15-15",
+      "original_no": 15
+    },
+    "2020-09-full-11": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-09-full-q11-12",
+      "original_no": 11
+    },
+    "2020-09-full-12": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2020-09-full-q11-12",
+      "original_no": 12
+    },
+    "2020-09-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-09-full-q32-34",
+      "original_no": 32
+    },
+    "2020-09-full-33": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-09-full-q32-34",
+      "original_no": 33
+    },
+    "2020-09-full-34": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2020-09-full-q32-34",
+      "original_no": 34
+    },
+    "2021-09-full-12": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-09-full-q12-13",
+      "original_no": 12
+    },
+    "2021-09-full-13": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-09-full-q12-13",
+      "original_no": 13
+    },
+    "2021-09-full-31": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2021-09-full-q31-33",
+      "original_no": 31
+    },
+    "2021-09-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2021-09-full-q31-33",
+      "original_no": 32
+    },
+    "2021-09-full-33": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2021-09-full-q31-33",
+      "original_no": 33
+    },
+    "2021-09-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q01-03",
+      "original_no": 1
+    },
+    "2021-09-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q01-03",
+      "original_no": 2
+    },
+    "2021-09-full-03": {
+      "type": "청중 반응",
+      "skill": "청중 반응",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q01-03",
+      "original_no": 3
+    },
+    "2021-09-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-09-full-q26-30",
+      "original_no": 26
+    },
+    "2021-09-full-27": {
+      "type": "이유·전제 추론",
+      "skill": "이유·전제 추론",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-09-full-q26-30",
+      "original_no": 27
+    },
+    "2021-09-full-28": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-09-full-q26-30",
+      "original_no": 28
+    },
+    "2021-09-full-29": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-09-full-q26-30",
+      "original_no": 29
+    },
+    "2021-09-full-30": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-09-full-q26-30",
+      "original_no": 30
+    },
+    "2021-09-full-11": {
+      "type": "음운",
+      "skill": "음운",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-09-full-q11-11",
+      "original_no": 11
+    },
+    "2021-09-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-09-full-q43-45",
+      "original_no": 43
+    },
+    "2021-09-full-44": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-09-full-q43-45",
+      "original_no": 44
+    },
+    "2021-09-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-09-full-q43-45",
+      "original_no": 45
+    },
+    "2021-09-full-16": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-09-full-q16-19",
+      "original_no": 16
+    },
+    "2021-09-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-09-full-q16-19",
+      "original_no": 17
+    },
+    "2021-09-full-18": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-09-full-q16-19",
+      "original_no": 18
+    },
+    "2021-09-full-19": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-09-full-q16-19",
+      "original_no": 19
+    },
+    "2021-09-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q04-07",
+      "original_no": 4
+    },
+    "2021-09-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q04-07",
+      "original_no": 5
+    },
+    "2021-09-full-06": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q04-07",
+      "original_no": 6
+    },
+    "2021-09-full-07": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q04-07",
+      "original_no": 7
+    },
+    "2021-09-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2021-09-full-q34-37",
+      "original_no": 34
+    },
+    "2021-09-full-35": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2021-09-full-q34-37",
+      "original_no": 35
+    },
+    "2021-09-full-36": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2021-09-full-q34-37",
+      "original_no": 36
+    },
+    "2021-09-full-37": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "과학",
+      "unit_id": "2021-09-full-q34-37",
+      "original_no": 37
+    },
+    "2021-09-full-20": {
+      "type": "전개 방식",
+      "skill": "전개 방식",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2021-09-full-q20-25",
+      "original_no": 20
+    },
+    "2021-09-full-21": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2021-09-full-q20-25",
+      "original_no": 21
+    },
+    "2021-09-full-22": {
+      "type": "관점·주장",
+      "skill": "관점·주장",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2021-09-full-q20-25",
+      "original_no": 22
+    },
+    "2021-09-full-23": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2021-09-full-q20-25",
+      "original_no": 23
+    },
+    "2021-09-full-24": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2021-09-full-q20-25",
+      "original_no": 24
+    },
+    "2021-09-full-25": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "예술",
+      "unit_id": "2021-09-full-q20-25",
+      "original_no": 25
+    },
+    "2021-09-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-09-full-q14-14",
+      "original_no": 14
+    },
+    "2021-09-full-08": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q08-10",
+      "original_no": 8
+    },
+    "2021-09-full-09": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q08-10",
+      "original_no": 9
+    },
+    "2021-09-full-10": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-09-full-q08-10",
+      "original_no": 10
+    },
+    "2021-09-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-09-full-q38-42",
+      "original_no": 38
+    },
+    "2021-09-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-09-full-q38-42",
+      "original_no": 39
+    },
+    "2021-09-full-40": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-09-full-q38-42",
+      "original_no": 40
+    },
+    "2021-09-full-41": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-09-full-q38-42",
+      "original_no": 41
+    },
+    "2021-09-full-42": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-09-full-q38-42",
+      "original_no": 42
+    },
+    "2021-09-full-15": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-09-full-q15-15",
+      "original_no": 15
+    },
+    "2021-06-full-22": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-06-full-q22-24",
+      "original_no": 22
+    },
+    "2021-06-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-06-full-q22-24",
+      "original_no": 23
+    },
+    "2021-06-full-24": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-06-full-q22-24",
+      "original_no": 24
+    },
+    "2021-06-full-01": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q01-03",
+      "original_no": 1
+    },
+    "2021-06-full-02": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q01-03",
+      "original_no": 2
+    },
+    "2021-06-full-03": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q01-03",
+      "original_no": 3
+    },
+    "2021-06-full-13": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-06-full-q13-13",
+      "original_no": 13
+    },
+    "2021-06-full-41": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-06-full-q41-45",
+      "original_no": 41
+    },
+    "2021-06-full-42": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-06-full-q41-45",
+      "original_no": 42
+    },
+    "2021-06-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-06-full-q41-45",
+      "original_no": 43
+    },
+    "2021-06-full-44": {
+      "type": "인물·사건",
+      "skill": "인물·사건",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-06-full-q41-45",
+      "original_no": 44
+    },
+    "2021-06-full-45": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-06-full-q41-45",
+      "original_no": 45
+    },
+    "2021-06-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2021-06-full-q38-40",
+      "original_no": 38
+    },
+    "2021-06-full-39": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2021-06-full-q38-40",
+      "original_no": 39
+    },
+    "2021-06-full-40": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전시가",
+      "unit_id": "2021-06-full-q38-40",
+      "original_no": 40
+    },
+    "2021-06-full-25": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-06-full-q25-28",
+      "original_no": 25
+    },
+    "2021-06-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-06-full-q25-28",
+      "original_no": 26
+    },
+    "2021-06-full-27": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-06-full-q25-28",
+      "original_no": 27
+    },
+    "2021-06-full-28": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-06-full-q25-28",
+      "original_no": 28
+    },
+    "2021-06-full-29": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-06-full-q29-33",
+      "original_no": 29
+    },
+    "2021-06-full-30": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-06-full-q29-33",
+      "original_no": 30
+    },
+    "2021-06-full-31": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-06-full-q29-33",
+      "original_no": 31
+    },
+    "2021-06-full-32": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-06-full-q29-33",
+      "original_no": 32
+    },
+    "2021-06-full-33": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-06-full-q29-33",
+      "original_no": 33
+    },
+    "2021-06-full-16": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-06-full-q16-21",
+      "original_no": 16
+    },
+    "2021-06-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-06-full-q16-21",
+      "original_no": 17
+    },
+    "2021-06-full-18": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-06-full-q16-21",
+      "original_no": 18
+    },
+    "2021-06-full-19": {
+      "type": "비교·대응",
+      "skill": "비교·대응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-06-full-q16-21",
+      "original_no": 19
+    },
+    "2021-06-full-20": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-06-full-q16-21",
+      "original_no": 20
+    },
+    "2021-06-full-21": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-06-full-q16-21",
+      "original_no": 21
+    },
+    "2021-06-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q04-07",
+      "original_no": 4
+    },
+    "2021-06-full-05": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q04-07",
+      "original_no": 5
+    },
+    "2021-06-full-06": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q04-07",
+      "original_no": 6
+    },
+    "2021-06-full-07": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q04-07",
+      "original_no": 7
+    },
+    "2021-06-full-34": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-06-full-q34-37",
+      "original_no": 34
+    },
+    "2021-06-full-35": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-06-full-q34-37",
+      "original_no": 35
+    },
+    "2021-06-full-36": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-06-full-q34-37",
+      "original_no": 36
+    },
+    "2021-06-full-37": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-06-full-q34-37",
+      "original_no": 37
+    },
+    "2021-06-full-14": {
+      "type": "문장",
+      "skill": "문장",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-06-full-q14-14",
+      "original_no": 14
+    },
+    "2021-06-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q08-10",
+      "original_no": 8
+    },
+    "2021-06-full-09": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q08-10",
+      "original_no": 9
+    },
+    "2021-06-full-10": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-06-full-q08-10",
+      "original_no": 10
+    },
+    "2021-06-full-15": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-06-full-q15-15",
+      "original_no": 15
+    },
+    "2021-06-full-11": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-06-full-q11-12",
+      "original_no": 11
+    },
+    "2021-06-full-12": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-06-full-q11-12",
+      "original_no": 12
+    },
+    "2021-11-full-22": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-S-full-q22-25",
+      "original_no": 22
+    },
+    "2021-11-full-23": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-S-full-q22-25",
+      "original_no": 23
+    },
+    "2021-11-full-24": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-S-full-q22-25",
+      "original_no": 24
+    },
+    "2021-11-full-25": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대소설",
+      "unit_id": "2021-S-full-q22-25",
+      "original_no": 25
+    },
+    "2021-11-full-31": {
+      "type": "서술상 특징",
+      "skill": "서술상 특징",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2021-S-full-q31-33",
+      "original_no": 31
+    },
+    "2021-11-full-32": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2021-S-full-q31-33",
+      "original_no": 32
+    },
+    "2021-11-full-33": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "고전소설",
+      "unit_id": "2021-S-full-q31-33",
+      "original_no": 33
+    },
+    "2021-11-full-01": {
+      "type": "말하기 방식",
+      "skill": "말하기 방식",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q01-03",
+      "original_no": 1
+    },
+    "2021-11-full-02": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q01-03",
+      "original_no": 2
+    },
+    "2021-11-full-03": {
+      "type": "청중 반응",
+      "skill": "청중 반응",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q01-03",
+      "original_no": 3
+    },
+    "2021-11-full-13": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-S-full-q13-13",
+      "original_no": 13
+    },
+    "2021-11-full-26": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-S-full-q26-30",
+      "original_no": 26
+    },
+    "2021-11-full-27": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-S-full-q26-30",
+      "original_no": 27
+    },
+    "2021-11-full-28": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-S-full-q26-30",
+      "original_no": 28
+    },
+    "2021-11-full-29": {
+      "type": "<보기> 적용",
+      "skill": "<보기> 적용",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-S-full-q26-30",
+      "original_no": 29
+    },
+    "2021-11-full-30": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "사회",
+      "unit_id": "2021-S-full-q26-30",
+      "original_no": 30
+    },
+    "2021-11-full-43": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-S-full-q43-45",
+      "original_no": 43
+    },
+    "2021-11-full-44": {
+      "type": "밑줄 문제",
+      "skill": "밑줄 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-S-full-q43-45",
+      "original_no": 44
+    },
+    "2021-11-full-45": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "현대시",
+      "unit_id": "2021-S-full-q43-45",
+      "original_no": 45
+    },
+    "2021-11-full-16": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-S-full-q16-21",
+      "original_no": 16
+    },
+    "2021-11-full-17": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-S-full-q16-21",
+      "original_no": 17
+    },
+    "2021-11-full-18": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-S-full-q16-21",
+      "original_no": 18
+    },
+    "2021-11-full-19": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-S-full-q16-21",
+      "original_no": 19
+    },
+    "2021-11-full-20": {
+      "type": "반론·반응",
+      "skill": "반론·반응",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-S-full-q16-21",
+      "original_no": 20
+    },
+    "2021-11-full-21": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "인문",
+      "unit_id": "2021-S-full-q16-21",
+      "original_no": 21
+    },
+    "2021-11-full-04": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q04-07",
+      "original_no": 4
+    },
+    "2021-11-full-05": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q04-07",
+      "original_no": 5
+    },
+    "2021-11-full-06": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q04-07",
+      "original_no": 6
+    },
+    "2021-11-full-07": {
+      "type": "화작 통합",
+      "skill": "화작 통합",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q04-07",
+      "original_no": 7
+    },
+    "2021-11-full-34": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-S-full-q34-37",
+      "original_no": 34
+    },
+    "2021-11-full-35": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-S-full-q34-37",
+      "original_no": 35
+    },
+    "2021-11-full-36": {
+      "type": "추론",
+      "skill": "추론",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-S-full-q34-37",
+      "original_no": 36
+    },
+    "2021-11-full-37": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "비문학",
+      "category": "기술",
+      "unit_id": "2021-S-full-q34-37",
+      "original_no": 37
+    },
+    "2021-11-full-14": {
+      "type": "단어",
+      "skill": "단어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-S-full-q14-14",
+      "original_no": 14
+    },
+    "2021-11-full-08": {
+      "type": "작문 계획",
+      "skill": "작문 계획",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q08-10",
+      "original_no": 8
+    },
+    "2021-11-full-09": {
+      "type": "자료 활용",
+      "skill": "자료 활용",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q08-10",
+      "original_no": 9
+    },
+    "2021-11-full-10": {
+      "type": "고쳐쓰기",
+      "skill": "고쳐쓰기",
+      "area": "선택",
+      "category": "화법과 작문",
+      "unit_id": "2021-S-full-q08-10",
+      "original_no": 10
+    },
+    "2021-11-full-38": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-S-full-q38-42",
+      "original_no": 38
+    },
+    "2021-11-full-39": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-S-full-q38-42",
+      "original_no": 39
+    },
+    "2021-11-full-40": {
+      "type": "<보기> 문제",
+      "skill": "<보기> 문제",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-S-full-q38-42",
+      "original_no": 40
+    },
+    "2021-11-full-41": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-S-full-q38-42",
+      "original_no": 41
+    },
+    "2021-11-full-42": {
+      "type": "내용일치",
+      "skill": "내용일치",
+      "area": "문학",
+      "category": "복합문학",
+      "unit_id": "2021-S-full-q38-42",
+      "original_no": 42
+    },
+    "2021-11-full-15": {
+      "type": "중세국어",
+      "skill": "중세국어",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-S-full-q15-15",
+      "original_no": 15
+    },
+    "2021-11-full-11": {
+      "type": "문장",
+      "skill": "문장",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-S-full-q11-12",
+      "original_no": 11
+    },
+    "2021-11-full-12": {
+      "type": "문장",
+      "skill": "문장",
+      "area": "선택",
+      "category": "언어와 매체",
+      "unit_id": "2021-S-full-q11-12",
+      "original_no": 12
     }
   }
 }
