@@ -388,6 +388,8 @@ function loadExam(e,isNew){
   if(isNew)persist();
   $("#start").classList.add("hidden");$("#app").classList.remove("hidden");
   $("#resultbar").classList.add("hidden");
+  if(paintCollapsed)setTimeout(placePaintDock,0);
+  else if($("#paintRibbon").classList.contains("floating"))setTimeout(placePaintRibbonAtSaved,0);
   buildPalette();render();startTimer()
 }
 
@@ -487,6 +489,8 @@ function restore(){
       if(flat.length!==exam.question_count)return false;
       loadAnnotationStore();
       $("#start").classList.add("hidden");$("#app").classList.remove("hidden");
+      if(paintCollapsed)setTimeout(placePaintDock,0);
+      else if($("#paintRibbon").classList.contains("floating"))setTimeout(placePaintRibbonAtSaved,0);
       buildPalette();render();startTimer();return true
     }
   }catch(e){}
@@ -615,7 +619,7 @@ function setPaintCollapsed(on){
   if(paintCollapsed){
     ribbon.classList.remove("floating");
     ribbon.style.left="";ribbon.style.top="";ribbon.style.right="";ribbon.style.bottom="";
-    updatePaintDock();requestAnimationFrame(placePaintDock)
+    updatePaintDock();placePaintDock();requestAnimationFrame(placePaintDock)
   }else placePaintRibbonAtSaved()
 }
 function initPaintDock(){
