@@ -1,13 +1,9 @@
-import {initializeApp,getApps} from 'firebase/app';
-import {getAuth,onAuthStateChanged} from 'firebase/auth';
-import firebaseConfig from '../public/account-assets/firebase-config.json';
-
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=ms=>ms?new Intl.DateTimeFormat('ko-KR',{dateStyle:'medium',timeStyle:'short'}).format(new Date(Number(ms)||ms)):'—';
 const fmtDay=s=>{try{return new Intl.DateTimeFormat('ko-KR',{month:'numeric',day:'numeric'}).format(new Date(s+'T12:00:00+09:00'));}catch{return s;}};
 const account=window.MSNAccount;
-const state={view:'overview',accounts:{offset:0,limit:30,total:0,rows:[]},learning:null,inquiries:[],chat:[],reports:[],firebaseUser:null,communityReady:false};
+const state={view:'overview',accounts:{offset:0,limit:30,total:0,rows:[]},learning:null,inquiries:[],chat:[],reports:[],communityReady:false};
 const viewMeta={
  overview:['운영 개요','가입·로그인·학습·커뮤니티 상태를 한눈에 확인합니다.'],
  accounts:['회원','가입 계정, 실제 로그인 이력과 이용 상태를 관리합니다.'],
@@ -23,17 +19,7 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 function empty(msg){return '<div class="empty">'+esc(msg)+'</div>';}
 function qs(o){const p=new URLSearchParams();for(const [k,v] of Object.entries(o))if(v!==''&&v!==undefined&&v!==null)p.set(k,v);return p.toString();}
 async function api(path,body){return account.api('admin/'+path,body);}
-async function ensureFirebase(){
- if(state.firebaseUser)return state.firebaseUser;
- const app=getApps()[0]||initializeApp(firebaseConfig),auth=getAuth(app);
- const user=await new Promise(resolve=>{const done=setTimeout(()=>resolve(auth.currentUser),2500);const off=onAuthStateChanged(auth,u=>{clearTimeout(done);off();resolve(u);});});
- if(!user)throw Object.assign(Error('커뮤니티 관리를 위해 다시 로그인해 주세요.'),{code:'COMMUNITY_REAUTH_REQUIRED'});
- state.firebaseUser=user;return user;
-}
-async function communityApi(path,extra={}){
- const u=await ensureFirebase(),id_token=await u.getIdToken(false);
- return api(path,{id_token,...extra});
-}
+async function communityApi(path,extra){return extra===undefined?api(path):api(path,extra);}
 function communityState(ok,msg){
  state.communityReady=ok;const el=$('#communityState');el.classList.toggle('ok',ok);el.classList.toggle('bad',!ok);el.querySelector('span').textContent=msg;
  $('#communityReconnect').classList.toggle('hidden',ok);
@@ -72,14 +58,14 @@ function renderActivity(days){
 }
 async function loadOverviewCommunity(){
  try{
-  const [iq,ch]=await Promise.all([communityApi('community/inquiries/query',{limit:20}),communityApi('community/chat/query',{limit:5})]);
-  state.inquiries=iq.inquiries||[];state.chat=ch.messages||[];communityState(true,'기존 문의·채팅 연결됨');
+  const [iq,ch]=await Promise.all([communityApi('community/inquiries?limit=20'),communityApi('community/chat?limit=5')]);
+  state.inquiries=iq.inquiries||[];state.chat=ch.messages||[];communityState(true,'문의·채팅 서버 연결됨');
   const pending=state.inquiries.filter(x=>!x.answered).slice(0,4);
   $('#overviewInquiry').innerHTML=pending.length?pending.map(i=>`<button class="mini-item mini-button" data-inquiry="${esc(i.id)}"><b>${esc(i.title||'(제목 없음)')}</b><p>${esc((i.content||'').slice(0,90))}</p><span class="item-meta">${esc(i.author)} · ${esc(fmt(i.created_at))}</span></button>`).join(''):empty('답변을 기다리는 문의가 없습니다.');
   $('#overviewChat').innerHTML=state.chat.length?state.chat.slice(0,4).map(m=>`<div class="mini-item"><b>${esc(m.author)}</b><p>${esc((m.content||'').slice(0,110))}</p><span class="item-meta">${esc(fmt(m.created_at))}</span></div>`).join(''):empty('최근 채팅이 없습니다.');
  }catch(e){
-  communityState(false,e.code==='COMMUNITY_FORBIDDEN'?'Firebase 관리 권한 확인 필요':'커뮤니티 재인증 필요');
-  $('#overviewInquiry').innerHTML=empty('재인증 후 기존 문의를 불러올 수 있습니다.');$('#overviewChat').innerHTML=empty('재인증 후 기존 채팅을 불러올 수 있습니다.');
+  communityState(false,'커뮤니티 서버 연결 확인 필요');
+  $('#overviewInquiry').innerHTML=empty('커뮤니티 서버 연결을 확인해 주세요.');$('#overviewChat').innerHTML=empty('커뮤니티 서버 연결을 확인해 주세요.');
  }
 }
 async function loadAccounts(){
@@ -110,7 +96,7 @@ function filterInquiries(){
  $('#inquiryCount').textContent=rows.length;$('#inquiryList').innerHTML=rows.length?rows.map(i=>`<article class="community-item"><div><b>${esc(i.privacy==='private'?'🔒 비공개 문의':i.title||'(제목 없음)')}</b><p>${esc((i.content||'').slice(0,180))}</p><div class="item-meta"><span>${esc(i.author)}</span><span>${esc(fmt(i.created_at))}</span><span class="pill ${i.answered?'':'soft'}">${i.answered?'답변 완료':'답변 대기'}</span></div></div><button data-inquiry="${esc(i.id)}">열기</button></article>`).join(''):empty('해당 문의가 없습니다.');
 }
 async function loadInquiries(force=true){
- if(force){const d=await communityApi('community/inquiries/query',{limit:100});state.inquiries=d.inquiries||[];communityState(true,'기존 문의·채팅 연결됨');}filterInquiries();
+ if(force){const d=await communityApi('community/inquiries?limit=100');state.inquiries=d.inquiries||[];communityState(true,'문의·채팅 서버 연결됨');}filterInquiries();
 }
 function openInquiry(id){
  const i=state.inquiries.find(x=>x.id===id);if(!i)return;
@@ -120,7 +106,7 @@ function filterChat(){
  const q=$('#chatSearch').value.trim().toLowerCase(),rows=state.chat.filter(x=>!q||[x.author,x.content].some(v=>String(v||'').toLowerCase().includes(q)));
  $('#chatCount').textContent=rows.length;$('#chatList').innerHTML=rows.length?rows.map(m=>`<article class="community-item"><div><b>${esc(m.author)}</b><p>${esc(m.content||'')}</p><div class="item-meta">${esc(fmt(m.created_at))}</div></div><button class="danger" data-chat-delete="${esc(m.id)}">삭제</button></article>`).join(''):empty('해당 메시지가 없습니다.');
 }
-async function loadChat(force=true){if(force){const d=await communityApi('community/chat/query',{limit:100});state.chat=d.messages||[];communityState(true,'기존 문의·채팅 연결됨');}filterChat();}
+async function loadChat(force=true){if(force){const d=await communityApi('community/chat?limit=100');state.chat=d.messages||[];communityState(true,'문의·채팅 서버 연결됨');}filterChat();}
 async function loadReports(){
  const d=await api('reports?'+qs({q:$('#reportSearch').value.trim(),status:$('#reportFilter').value}));state.reports=d.reports||[];$('#reportCount').textContent=d.stats?.total||state.reports.length;
  $('#reportList').innerHTML=state.reports.length?state.reports.map(r=>`<article class="community-item"><div><b>${esc(r.nickname||'익명')} · 오류 신고</b><p>${esc((r.content||'').slice(0,180))}</p><div class="item-meta"><span>${esc(fmt(r.created_at))}</span><span>${esc(r.source_page||'')}</span><span class="pill soft">${esc({pending:'대기',in_progress:'처리중',resolved:'해결'}[r.status]||r.status)}</span></div></div><button data-report="${r.id}">열기</button></article>`).join(''):empty('오류 신고가 없습니다.');
@@ -140,7 +126,7 @@ async function refresh(){await loadView(state.view);toast('새로고침했습니
 function debounce(fn){clearTimeout(debounceTimer);debounceTimer=setTimeout(()=>fn().catch(e=>toast(e.message)),250);}
 function bind(){
  $$('.admin-nav button').forEach(b=>b.onclick=()=>go(b.dataset.view));$$('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
- $('#refreshAll').onclick=()=>refresh().catch(e=>toast(e.message));$('#communityReconnect').onclick=()=>location.href='/auth?returnTo=%2Fadmin';
+ $('#refreshAll').onclick=()=>refresh().catch(e=>toast(e.message));$('#communityReconnect').onclick=()=>refresh().catch(e=>toast(e.message));
  $('#accountSearch').oninput=()=>{state.accounts.offset=0;debounce(loadAccounts)};$('#accountStatus').onchange=()=>{state.accounts.offset=0;loadAccounts().catch(e=>toast(e.message));};
  $('#accountsPrev').onclick=()=>{state.accounts.offset=Math.max(0,state.accounts.offset-state.accounts.limit);loadAccounts().catch(e=>toast(e.message));};
  $('#accountsNext').onclick=()=>{state.accounts.offset+=state.accounts.limit;loadAccounts().catch(e=>toast(e.message));};

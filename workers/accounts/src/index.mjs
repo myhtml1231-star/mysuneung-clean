@@ -1,10 +1,11 @@
 import {authorizeBridge,exchangeBridge} from './bridge.mjs';
-import { HttpError,fail,randomToken,hash,cookie,cookieHeader,SESSION_COOKIE,LOGIN_COOKIE,CONSENT_VERSION,sessionCSRF,originGuard,readBody,verifyIdentity,verifyIdentityAccess,privateJSON,sessionFor,rateLimit } from './security.mjs';
+import { HttpError,fail,randomToken,hash,cookie,cookieHeader,SESSION_COOKIE,LOGIN_COOKIE,CONSENT_VERSION,sessionCSRF,originGuard,readBody,verifyIdentity,privateJSON,sessionFor,rateLimit } from './security.mjs';
 import { KINDS,text,integer,applyOperations,pullRecords,pack,reconstruct } from './records.mjs';
 import firebaseConfig from '../public/account-assets/firebase-config.json';
 import {handleVisit} from './visits.mjs';
 import {handleAdminRoute} from './admin.mjs';
-export const VERSION='2026-09-29.accounts.v1.3';
+import {handleCommunity} from './community.mjs';
+export const VERSION='2026-09-29.accounts.v1.4';
 export const CLIENT_REVISION='accounts-ui-20260927-r5';
 const publicUser=s=>({id:s.account_id||s.id,name:s.display_name,email:s.email,consent_version:s.consent_version,provider:s.auth_provider||'google.com'});
 const pageHeaders={
@@ -23,6 +24,7 @@ export function createHandler(deps={}){
   const url=new URL(request.url);
   if(url.hostname==='www.mysuneung.com')return Response.redirect('https://mysuneung.com'+url.pathname+url.search,308);
   if(url.pathname==='/api/visit')return handleVisit(request,env,externalFetch);
+  if(url.pathname.startsWith('/api/community/'))return handleCommunity(request,env);
   if(url.pathname.startsWith('/api/account/')){
    try{
     const route=url.pathname.slice('/api/account/'.length),method=request.method;
@@ -66,7 +68,7 @@ export function createHandler(deps={}){
     }
     const write=!['GET','HEAD'].includes(method);const s=await sessionFor(request,env,write);
     await rateLimit(request,env,'authenticated',360,300,s.account_id);
-    if(route.startsWith('admin/'))return await handleAdminRoute(request,env,s,route.slice(6),method,{fetch:externalFetch,verifyAccess:deps.verifyIdentityAccess||verifyIdentityAccess});
+    if(route.startsWith('admin/'))return await handleAdminRoute(request,env,s,route.slice(6),method);
     if(route==='connect/authorize'&&method==='POST')return await authorizeBridge(request,env,s);
     if(route==='logout'&&method==='POST'){
      const b=await readBody(request,2000);await env.DB.prepare(b.all===true?'DELETE FROM account_sessions WHERE account_id=?':'DELETE FROM account_sessions WHERE token_hash=?').bind(b.all===true?s.account_id:s.token_hash).run();return privateJSON({ok:true},200,{'Set-Cookie':clearCookie()});
@@ -106,6 +108,11 @@ export function createHandler(deps={}){
    }
   }
   if(url.pathname==='/admin.html'||decodeURIComponent(url.pathname)==='/관리자 패널.html')return Response.redirect('https://mysuneung.com/admin',308);
+  const decodedPath=decodeURIComponent(url.pathname);
+  if(decodedPath==='/질문 게시판.html'||decodedPath==='/수험채팅방.html'){
+   const file=decodedPath==='/질문 게시판.html'?'community-inquiries.html':'community-chat.html';
+   const r=await env.ASSETS.fetch(new Request(new URL('/account-assets/'+file,url)));const h=new Headers(r.headers);for(const [k,v] of Object.entries(pageHeaders))h.set(k,v);return new Response(r.body,{status:r.status,headers:h});
+  }
   if(url.pathname==='/auth'||url.pathname==='/my'||url.pathname==='/admin'||url.pathname==='/account/privacy'||url.pathname==='/account/terms'||url.pathname==='/account/connect'){
    const file=url.pathname==='/account/connect'?'connect.html':url.pathname==='/auth'?'auth.html':url.pathname==='/my'?'workspace.html':url.pathname==='/admin'?'admin.html':url.pathname.endsWith('privacy')?'privacy.html':'terms.html';
    const r=await env.ASSETS.fetch(new Request(new URL('/account-assets/'+file,url)));const h=new Headers(r.headers);for(const [k,v] of Object.entries(pageHeaders))h.set(k,v);return new Response(r.body,{status:r.status,headers:h});
@@ -121,7 +128,7 @@ export function createHandler(deps={}){
   // App-specific /mixed-cbt routes remain with their existing Worker and get the same script in its R2 HTML.
   return new HTMLRewriter().on('head',{element(e){e.append('<script src="/account-assets/visit.js?v=visitor-v2" data-visit-source="main" defer></script><script src="/account-assets/store.js?v=accounts-ui-20260927-r5" defer></script><script src="/account-assets/navigation.js?v=accounts-ui-20260927-r5" defer></script>',{html:true});}}).transform(new Response(response.body,{status:response.status,headers:h}));
  },
- async scheduled(event,env){const now=Date.now();await env.DB.batch([env.DB.prepare('DELETE FROM account_sessions WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_rate_limits WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_bridge_codes WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM visitor_daily WHERE first_seen<?').bind(now-45*86400000),env.DB.prepare('DELETE FROM account_login_events WHERE logged_in_at<?').bind(now-180*86400000),env.DB.prepare('DELETE FROM admin_audit WHERE created_at<?').bind(now-365*86400000)]);}
+ async scheduled(event,env){const now=Date.now();await env.DB.batch([env.DB.prepare('DELETE FROM account_sessions WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_rate_limits WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_bridge_codes WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM visitor_daily WHERE first_seen<?').bind(now-45*86400000),env.DB.prepare('DELETE FROM account_login_events WHERE logged_in_at<?').bind(now-180*86400000),env.DB.prepare('DELETE FROM admin_audit WHERE created_at<?').bind(now-365*86400000),env.DB.prepare('DELETE FROM community_chat_sessions WHERE expires_at<?').bind(now)]);}
  };
 }
 export default createHandler();

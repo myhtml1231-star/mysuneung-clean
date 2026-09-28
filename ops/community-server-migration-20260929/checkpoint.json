@@ -1,0 +1,29 @@
+{
+  "stage": "deployed-live-verified",
+  "goal": "move legacy inquiries/chat to server D1, fix admin visibility, remove plaintext private passwords",
+  "production_changed": true,
+  "legacy_counts": {
+    "inquiries": 2,
+    "chat_messages": 18
+  },
+  "started_at": "2026-09-29T07:30:00+09:00",
+  "updated_at": "2026-09-28T22:44:17.540483+00:00",
+  "account_worker_release": "2026-09-29.accounts.v1.4",
+  "account_worker_version": "bd2ff705-42b3-49f0-a9a1-fcb56ca02ed8",
+  "migration": "0007_community.sql",
+  "d1_counts": {
+    "inquiries": 2,
+    "private_hashed": 1,
+    "chat_messages": 18
+  },
+  "legacy_firestore_counts": {
+    "inquiries": 0,
+    "chatMessages": 0
+  },
+  "live_dom": {
+    "inquiry_items": 2,
+    "private_badges": 1,
+    "chat_messages": 18
+  },
+  "admin_firebase_dependency_removed": true
+}

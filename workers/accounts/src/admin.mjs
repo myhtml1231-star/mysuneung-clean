@@ -5,7 +5,6 @@ const DEFAULT_ADMIN_HASHES=new Set([
  '8a2156da2b182b6e55de37c99e02dee8d093bddff8d2c040bd8d274658dbc7e3'
 ]);
 const DAY=86400000;
-const FS_COLLECTIONS=new Set(['inquiries','chatMessages']);
 
 async function adminHashes(env){
  const extra=String(env.ADMIN_EMAIL_HASHES||'').split(',').map(x=>x.trim()).filter(Boolean);
@@ -22,7 +21,6 @@ async function assertAdmin(s,env){
 const safeJSON=v=>{try{return JSON.parse(v);}catch{return null;}};
 const pct=(a,b)=>b?Math.round(a/b*100):0;
 const isoDay=ms=>new Date(ms+9*3600000).toISOString().slice(0,10);
-const validDocId=id=>/^[A-Za-z0-9_-]{1,200}$/.test(id||'');
 
 function typeRows(map,minTotal=1){
  return [...map.values()].filter(x=>x.total>=minTotal).map(x=>({...x,accuracy:pct(x.correct,x.total)}))
@@ -137,55 +135,18 @@ async function auditList(request,env){
  return {logs:rows.map(x=>({...x,detail:safeJSON(x.detail)||{}}))};
 }
 
-function fromFS(v){
- if(!v||typeof v!=='object')return null;
- if('stringValue'in v)return v.stringValue;
- if('booleanValue'in v)return !!v.booleanValue;
- if('integerValue'in v)return Number(v.integerValue);
- if('doubleValue'in v)return Number(v.doubleValue);
- if('timestampValue'in v)return v.timestampValue;
- if('nullValue'in v)return null;
- if('arrayValue'in v)return (v.arrayValue.values||[]).map(fromFS);
- if('mapValue'in v)return Object.fromEntries(Object.entries(v.mapValue.fields||{}).map(([k,x])=>[k,fromFS(x)]));
- return null;
+async function adminInquiries(request,env){
+ const u=new URL(request.url),limit=integer(u.searchParams.get('limit'),1,200,100);
+ const rows=(await env.DB.prepare(`SELECT id,title,author,content,privacy,date_label,created_at,answer,answered,answered_at,source
+  FROM community_inquiries ORDER BY created_at DESC LIMIT ?`).bind(limit).all()).results||[];
+ return rows.map(x=>({id:x.id,title:x.title,author:x.author||'익명',content:x.content,privacy:x.privacy,date:x.date_label||'',created_at:x.created_at,answer:x.answer||'',answered:!!x.answered,answered_at:x.answered_at||null,source:x.source}));
 }
-function fsDoc(d){
- const fields=Object.fromEntries(Object.entries(d.fields||{}).map(([k,v])=>[k,fromFS(v)]));
- return {id:String(d.name||'').split('/').pop(),create_time:d.createTime||null,update_time:d.updateTime||null,...fields};
-}
-async function communityToken(body,env,s,deps){
- const token=body?.id_token,identity=await deps.verifyAccess(token,env);
- if(identity.uid!==s.firebase_uid||String(identity.email).toLowerCase()!==String(s.email).toLowerCase())fail(403,'IDENTITY_MISMATCH','현재 관리자 계정으로 다시 로그인해 주세요.');
- return token;
-}
-function fsBase(env){return 'https://firestore.googleapis.com/v1/projects/'+encodeURIComponent(env.FIREBASE_PROJECT_ID||'mysuneung')+'/databases/(default)/documents';}
-async function fsRequest(env,deps,token,path,opt={}){
- const r=await deps.fetch(fsBase(env)+path,{method:opt.method||'GET',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:opt.body?JSON.stringify(opt.body):undefined});
- let data=null;try{data=await r.json();}catch{}
- if(!r.ok){
-  if(r.status===401)fail(401,'COMMUNITY_REAUTH_REQUIRED','커뮤니티 관리를 위해 다시 로그인해 주세요.');
-  if(r.status===403)fail(403,'COMMUNITY_FORBIDDEN','기존 문의·채팅 데이터에 대한 Firebase 관리자 권한을 확인해 주세요.');
-  if(r.status===404)fail(404,'COMMUNITY_NOT_FOUND','항목을 찾지 못했습니다.');
-  fail(502,'COMMUNITY_UNAVAILABLE','기존 문의·채팅 데이터에 연결하지 못했습니다.');
- }
- return data||{};
-}
-async function listCommunity(collection,token,env,deps,limit=100){
- if(!FS_COLLECTIONS.has(collection))fail(400,'BAD_COLLECTION','지원하지 않는 커뮤니티 데이터입니다.');
- const q=new URLSearchParams({pageSize:String(Math.min(100,Math.max(1,limit))),orderBy:'createdAt desc'});
- const data=await fsRequest(env,deps,token,'/'+collection+'?'+q.toString());
- return (data.documents||[]).map(fsDoc);
-}
-function publicInquiry(x){return {id:x.id,title:text(x.title,300),author:text(x.author,100)||'익명',content:text(x.content,5000),privacy:x.privacy==='private'?'private':'public',date:text(x.date,80),created_at:x.createdAt||x.create_time||null,answer:text(x.answer,5000),answered:!!(x.answer||x.answered),answered_at:x.answeredAt||null};}
-function publicChat(x){return {id:x.id,author:text(x.author,100)||'익명',content:text(x.content,2000),created_at:x.createdAt||x.create_time||null};}
-async function answerInquiry(id,answer,token,env,deps){
- if(!validDocId(id))fail(400,'BAD_DOCUMENT','문의 번호가 올바르지 않습니다.');
- const q=new URLSearchParams();for(const f of ['answer','answered','answeredAt'])q.append('updateMask.fieldPaths',f);
- return fsRequest(env,deps,token,'/inquiries/'+encodeURIComponent(id)+'?'+q.toString(),{method:'PATCH',body:{fields:{answer:{stringValue:answer},answered:{booleanValue:true},answeredAt:{timestampValue:new Date().toISOString()}}}});
-}
-async function deleteCommunity(collection,id,token,env,deps){
- if(!FS_COLLECTIONS.has(collection)||!validDocId(id))fail(400,'BAD_DOCUMENT','항목 번호가 올바르지 않습니다.');
- return fsRequest(env,deps,token,'/'+collection+'/'+encodeURIComponent(id),{method:'DELETE'});
+async function adminChat(request,env){
+ const u=new URL(request.url),limit=integer(u.searchParams.get('limit'),1,300,120);
+ const rows=(await env.DB.prepare(`SELECT m.id,m.user_id,m.author,m.content,m.created_at,m.source,u.disabled AS user_disabled
+  FROM community_chat_messages m LEFT JOIN community_chat_users u ON u.id=m.user_id
+  ORDER BY m.created_at DESC LIMIT ?`).bind(limit).all()).results||[];
+ return rows.map(x=>({...x,user_disabled:!!x.user_disabled}));
 }
 async function reportsList(request,env){
  if(!env.REPORTS)fail(503,'REPORTS_UNAVAILABLE','오류 신고 저장소가 연결되지 않았습니다.');
@@ -198,7 +159,7 @@ async function reportsList(request,env){
  return {reports:rows,stats:stats||{}};
 }
 
-export async function handleAdminRoute(request,env,s,subroute,method,deps={fetch,verifyAccess:null}){
+export async function handleAdminRoute(request,env,s,subroute,method){
  const admin=await assertAdmin(s,env);
  if(subroute==='me'&&method==='GET')return privateJSON({ok:true,admin});
  if(subroute==='summary'&&method==='GET')return privateJSON({ok:true,...await summary(env)});
@@ -229,31 +190,25 @@ export async function handleAdminRoute(request,env,s,subroute,method,deps={fetch
   return privateJSON({ok:true,id:target.id,sessions:Number(out.meta?.changes||0)});
  }
 
- if(subroute==='community/inquiries/query'&&method==='POST'){
-  const body=await readBody(request,16000),token=await communityToken(body,env,s,deps);
-  const rows=(await listCommunity('inquiries',token,env,deps,integer(body.limit,1,100,100))).map(publicInquiry);
-  return privateJSON({ok:true,inquiries:rows});
- }
- if(subroute==='community/chat/query'&&method==='POST'){
-  const body=await readBody(request,16000),token=await communityToken(body,env,s,deps);
-  const rows=(await listCommunity('chatMessages',token,env,deps,integer(body.limit,1,100,100))).map(publicChat);
-  return privateJSON({ok:true,messages:rows});
- }
- const answer=subroute.match(/^community\/inquiries\/([A-Za-z0-9_-]{1,200})\/answer$/);
+ if(subroute==='community/inquiries'&&method==='GET')return privateJSON({ok:true,inquiries:await adminInquiries(request,env)});
+ if(subroute==='community/chat'&&method==='GET')return privateJSON({ok:true,messages:await adminChat(request,env)});
+ const answer=subroute.match(/^community\/inquiries\/([-a-zA-Z0-9_.:]{1,160})\/answer$/);
  if(answer&&method==='POST'){
-  const body=await readBody(request,24000),token=await communityToken(body,env,s,deps),value=text(body.answer,5000);
-  if(!value)fail(400,'ANSWER_REQUIRED','답변을 입력해 주세요.');
-  await answerInquiry(answer[1],value,token,env,deps);await audit(env,admin,'inquiry_answer','',{document_id:answer[1]});
-  return privateJSON({ok:true});
+  const body=await readBody(request,12000),value=text(body.answer,5000);if(!value)fail(400,'ANSWER_REQUIRED','답변을 입력해 주세요.');
+  const out=await env.DB.prepare('UPDATE community_inquiries SET answer=?,answered=1,answered_at=? WHERE id=?').bind(value,Date.now(),answer[1]).run();
+  if(!Number(out.meta?.changes||0))fail(404,'INQUIRY_NOT_FOUND','문의를 찾지 못했습니다.');
+  await audit(env,admin,'inquiry_answer','',{document_id:answer[1]});return privateJSON({ok:true});
  }
- const delInquiry=subroute.match(/^community\/inquiries\/([A-Za-z0-9_-]{1,200})\/delete$/);
+ const delInquiry=subroute.match(/^community\/inquiries\/([-a-zA-Z0-9_.:]{1,160})\/delete$/);
  if(delInquiry&&method==='POST'){
-  const body=await readBody(request,16000),token=await communityToken(body,env,s,deps);await deleteCommunity('inquiries',delInquiry[1],token,env,deps);
+  const out=await env.DB.prepare('DELETE FROM community_inquiries WHERE id=?').bind(delInquiry[1]).run();
+  if(!Number(out.meta?.changes||0))fail(404,'INQUIRY_NOT_FOUND','문의를 찾지 못했습니다.');
   await audit(env,admin,'inquiry_delete','',{document_id:delInquiry[1]});return privateJSON({ok:true});
  }
- const delChat=subroute.match(/^community\/chat\/([A-Za-z0-9_-]{1,200})\/delete$/);
+ const delChat=subroute.match(/^community\/chat\/([-a-zA-Z0-9_.:]{1,160})\/delete$/);
  if(delChat&&method==='POST'){
-  const body=await readBody(request,16000),token=await communityToken(body,env,s,deps);await deleteCommunity('chatMessages',delChat[1],token,env,deps);
+  const out=await env.DB.prepare('DELETE FROM community_chat_messages WHERE id=?').bind(delChat[1]).run();
+  if(!Number(out.meta?.changes||0))fail(404,'CHAT_NOT_FOUND','채팅 메시지를 찾지 못했습니다.');
   await audit(env,admin,'chat_delete','',{document_id:delChat[1]});return privateJSON({ok:true});
  }
 

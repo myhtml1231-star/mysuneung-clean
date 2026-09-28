@@ -1,0 +1,30 @@
+{
+  "account_worker_version": "bd2ff705-42b3-49f0-a9a1-fcb56ca02ed8",
+  "account_release": "2026-09-29.accounts.v1.4",
+  "d1": {
+    "inquiries": 2,
+    "private_inquiries": 1,
+    "private_passwords_hashed": 1,
+    "chat_messages": 18
+  },
+  "legacy_firestore_after_migration": {
+    "inquiries": 0,
+    "chatMessages": 0
+  },
+  "live_public_api": {
+    "inquiries": 2,
+    "chat_messages": 18,
+    "private_titles_hidden": true,
+    "credential_fields_exposed": false
+  },
+  "live_dom": {
+    "inquiry_items": 2,
+    "private_badges": 1,
+    "chat_messages": 18
+  },
+  "admin_client": {
+    "firebase_references": 0,
+    "server_community_references": 2
+  },
+  "admin_asset_revision": "admin-20260929-v3"
+}

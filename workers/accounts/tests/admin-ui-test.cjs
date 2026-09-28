@@ -11,7 +11,11 @@ const api={
  '/api/account/admin/activity?days=14':{ok:true,days:Array.from({length:14},(_,i)=>({day:new Date(now-(13-i)*86400000).toISOString().slice(0,10),logins:i%5,users:i%4,signups:i%3===0?1:0,visitors:8+i}))},
  '/api/account/admin/learning':{ok:true,priority_types:[{label:'독서 · <보기> 적용',total:8,wrong:4,accuracy:50}],users:[{account_id:'u1',name:'학생',email:'u@example.invalid',attempts:5,distinct_questions:40,recent_accuracy:72,weaknesses:[{question_type:'<보기> 적용'}],latest_at:now}]},
  '/api/account/admin/audit?limit=100':{ok:true,logs:[{id:1,action:'account_disable',target_email:'u@example.invalid',admin_email:'admin@example.invalid',detail:{reason:'test'},created_at:now}]},
- '/api/account/admin/reports':{ok:true,reports:[{id:1,nickname:'테스터',content:'버튼 오류가 있습니다.',source_page:'/mixed-cbt',status:'pending',admin_note:'',created_at:new Date(now).toISOString()}],stats:{total:1,pending:1,in_progress:0,resolved:0}}
+ '/api/account/admin/reports':{ok:true,reports:[{id:1,nickname:'테스터',content:'버튼 오류가 있습니다.',source_page:'/mixed-cbt',status:'pending',admin_note:'',created_at:new Date(now).toISOString()}],stats:{total:1,pending:1,in_progress:0,resolved:0}},
+ '/api/account/admin/community/inquiries?limit=20':{ok:true,inquiries:[{id:'q1',title:'기존 문의',author:'학생',content:'기존 문의 내용',privacy:'private',answered:false,created_at:now-30000}]},
+ '/api/account/admin/community/chat?limit=5':{ok:true,messages:[{id:'c1',author:'채팅학생',content:'기존 채팅 내용',created_at:now-20000}]},
+ '/api/account/admin/community/inquiries?limit=100':{ok:true,inquiries:[{id:'q1',title:'기존 문의',author:'학생',content:'기존 문의 내용',privacy:'private',answered:false,created_at:now-30000}]},
+ '/api/account/admin/community/chat?limit=100':{ok:true,messages:[{id:'c1',author:'채팅학생',content:'기존 채팅 내용',created_at:now-20000}]}
 };
 const accountList={ok:true,total:2,limit:30,offset:0,accounts:[
  {id:'u1',email:'u@example.invalid',display_name:'학생',auth_provider:'password',disabled:false,created_at:now-7*86400000,last_login_at:now-10000,login_count:4,attempt_count:5,session_count:1},
@@ -40,10 +44,12 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.$eval('#metricAccounts',e=>e.textContent),'3');assert.equal(await page.$$eval('.admin-nav button',x=>x.length),7);assert.equal(await page.$eval('#metricLoginsToday',e=>e.textContent),'4');
   await page.screenshot({path:path.join(shots,'admin-fullservice-1440.png'),fullPage:false});
   await page.click('[data-view="accounts"]');await page.waitForFunction(()=>document.querySelectorAll('#accountRows tr').length===2);await page.click('#accountRows tr');await page.waitForFunction(()=>document.querySelector('#accountDialog').open);assert.match(await page.$eval('#accountDetail',e=>e.textContent),/최근 로그인/);await page.keyboard.press('Escape');
+  await page.click('[data-view="inquiries"]');await page.waitForFunction(()=>document.querySelectorAll('#inquiryList .community-item').length===1);assert.match(await page.$eval('#inquiryList',e=>e.textContent),/기존 문의/);
+  await page.click('[data-view="chat"]');await page.waitForFunction(()=>document.querySelectorAll('#chatList .community-item').length===1);assert.match(await page.$eval('#chatList',e=>e.textContent),/기존 채팅 내용/);
   await page.click('[data-view="reports"]');await page.waitForFunction(()=>document.querySelectorAll('#reportList .community-item').length===1);assert.match(await page.$eval('#reportList',e=>e.textContent),/버튼 오류/);
   await page.setViewport({width:390,height:844});await page.click('[data-view="overview"]');await new Promise(r=>setTimeout(r,100));const size=await page.evaluate(()=>({doc:document.documentElement.scrollWidth,body:document.body.scrollWidth,w:innerWidth}));assert.ok(size.doc<=392&&size.body<=392,JSON.stringify(size));
   await page.screenshot({path:path.join(shots,'admin-fullservice-390.png'),fullPage:false});assert.deepEqual(errors,[]);
-  fs.writeFileSync(path.join(shots,'admin-ui-tests.json'),JSON.stringify({passed:6,tests:['overview metrics and seven views render','real login metric renders','account list and detail render','error reports render','390px no document overflow','no page errors'],shots:['admin-fullservice-1440.png','admin-fullservice-390.png']},null,2));
-  console.log('ADMIN_UI_PASS 6');
+  fs.writeFileSync(path.join(shots,'admin-ui-tests.json'),JSON.stringify({passed:8,tests:['overview metrics and seven views render','real login metric renders','account list and detail render','migrated inquiry renders without Firebase reauth','migrated chat renders without Firebase reauth','error reports render','390px no document overflow','no page errors'],shots:['admin-fullservice-1440.png','admin-fullservice-390.png']},null,2));
+  console.log('ADMIN_UI_PASS 8');
  }finally{await browser.close();server.close();}
 })().catch(e=>{console.error(e);server.close();process.exitCode=1;});

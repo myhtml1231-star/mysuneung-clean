@@ -7,7 +7,7 @@
 <title>운영 관리 · 수능기출</title>
 <link rel="stylesheet" href="/account-assets/admin.css?v=admin-20260929-v2">
 <script defer src="/account-assets/store.js?v=accounts-ui-20260927-r5"></script>
-<script defer src="/account-assets/admin.js?v=admin-20260929-v2"></script>
+<script defer src="/account-assets/admin.js?v=admin-20260929-v3"></script>
 </head>
 <body>
 <div class="admin-shell">
@@ -23,8 +23,8 @@
       <button data-view="audit"><span>≡</span>운영 로그</button>
     </nav>
     <div class="admin-side-foot">
-      <span id="communityState" class="status-dot"><i></i><span>커뮤니티 연결 확인 중</span></span>
-      <button id="communityReconnect" class="side-link hidden" type="button">커뮤니티 재인증</button>
+      <span id="communityState" class="status-dot"><i></i><span>문의·채팅 서버 확인 중</span></span>
+      <button id="communityReconnect" class="side-link hidden" type="button">다시 불러오기</button>
       <a href="/my">내 학습실</a>
     </div>
   </aside>
@@ -89,7 +89,7 @@
 
       <section class="view" data-panel="inquiries">
         <div class="toolbar"><label class="search"><span>⌕</span><input id="inquirySearch" type="search" placeholder="제목·내용·작성자 검색"></label><select id="inquiryFilter"><option value="all">전체 문의</option><option value="pending">답변 대기</option><option value="answered">답변 완료</option></select></div>
-        <section class="panel"><div class="panel-head"><div><h2>문의사항</h2><p>기존 질문 게시판 Firestore 데이터 · 비공개 비밀번호는 관리자 화면에 표시하지 않습니다.</p></div><span id="inquiryCount" class="count-badge">—</span></div><div id="inquiryList" class="community-list"></div></section>
+        <section class="panel"><div class="panel-head"><div><h2>문의사항</h2><p>서버 D1 데이터 · 기존 문의를 이관했으며 비공개 비밀번호 원문은 저장하지 않습니다.</p></div><span id="inquiryCount" class="count-badge">—</span></div><div id="inquiryList" class="community-list"></div></section>
       </section>
 
       <section class="view" data-panel="reports">
@@ -99,7 +99,7 @@
 
       <section class="view" data-panel="chat">
         <div class="toolbar"><label class="search"><span>⌕</span><input id="chatSearch" type="search" placeholder="작성자·메시지 검색"></label></div>
-        <section class="panel"><div class="panel-head"><div><h2>수험 채팅</h2><p>기존 수험채팅방 최근 100개 메시지</p></div><span id="chatCount" class="count-badge">—</span></div><div id="chatList" class="community-list"></div></section>
+        <section class="panel"><div class="panel-head"><div><h2>수험 채팅</h2><p>서버 D1 최근 100개 메시지 · 기존 채팅 이관 포함</p></div><span id="chatCount" class="count-badge">—</span></div><div id="chatList" class="community-list"></div></section>
       </section>
 
       <section class="view" data-panel="audit">

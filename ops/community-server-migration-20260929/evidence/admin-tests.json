@@ -1,0 +1,16 @@
+{
+  "passed": 11,
+  "tests": [
+    "successful login creates durable login events",
+    "non-admin account is blocked from all admin data",
+    "admin summary distinguishes login events, unique users, sessions and accounts",
+    "account list and detail expose login history without session secrets",
+    "admin cannot disable own account",
+    "admin can disable a member and immediately revoke member sessions",
+    "admin reads migrated inquiry and chat directly from server DB without Firebase token",
+    "inquiry answer and delete plus chat delete are server DB operations and audited",
+    "error reports are listed and updated through existing reports database",
+    "admin audit omits private community content",
+    "admin assets are served with no-store page protection and bundled client"
+  ]
+}

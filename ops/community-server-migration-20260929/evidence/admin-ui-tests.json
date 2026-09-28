@@ -1,0 +1,17 @@
+{
+  "passed": 8,
+  "tests": [
+    "overview metrics and seven views render",
+    "real login metric renders",
+    "account list and detail render",
+    "migrated inquiry renders without Firebase reauth",
+    "migrated chat renders without Firebase reauth",
+    "error reports render",
+    "390px no document overflow",
+    "no page errors"
+  ],
+  "shots": [
+    "admin-fullservice-1440.png",
+    "admin-fullservice-390.png"
+  ]
+}

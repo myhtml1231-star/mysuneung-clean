@@ -1,0 +1,14 @@
+{
+  "passed": 9,
+  "tests": [
+    "private inquiry password is hashed server-side and never stored as plaintext",
+    "public inquiry list hides private title, content and credential fields",
+    "private inquiry detail stays locked until correct password is verified",
+    "public inquiry does not require password",
+    "chat nickname credential is hashed and returned as HttpOnly session cookie",
+    "chat nickname password is shared server-side rather than localStorage-only",
+    "chat send requires valid chat session and message list returns saved messages",
+    "chat logout revokes server session",
+    "community pages are served by Account Worker and do not load Firebase SDK"
+  ]
+}
