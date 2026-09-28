@@ -1,0 +1,13 @@
+universitypredict.com {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:8080
+}
+
+www.universitypredict.com {
+	redir https://universitypredict.com{uri} permanent
+}
+
+3-36-80-42.sslip.io {
+	encode zstd gzip
+	reverse_proxy 127.0.0.1:8080
+}

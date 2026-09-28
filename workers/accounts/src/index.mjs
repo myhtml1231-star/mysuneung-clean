@@ -2,6 +2,7 @@ import {authorizeBridge,exchangeBridge} from './bridge.mjs';
 import { HttpError,fail,randomToken,hash,cookie,cookieHeader,SESSION_COOKIE,LOGIN_COOKIE,CONSENT_VERSION,sessionCSRF,originGuard,readBody,verifyIdentity,privateJSON,sessionFor,rateLimit } from './security.mjs';
 import { KINDS,text,integer,applyOperations,pullRecords,pack,reconstruct } from './records.mjs';
 import firebaseConfig from '../public/account-assets/firebase-config.json';
+import {handleVisit} from './visits.mjs';
 export const VERSION='2026-09-27.accounts.v1.2';
 export const CLIENT_REVISION='accounts-ui-20260927-r5';
 const publicUser=s=>({id:s.account_id||s.id,name:s.display_name,email:s.email,consent_version:s.consent_version,provider:s.auth_provider||'google.com'});
@@ -20,6 +21,7 @@ export function createHandler(deps={}){
  async fetch(request,env,ctx){
   const url=new URL(request.url);
   if(url.hostname==='www.mysuneung.com')return Response.redirect('https://mysuneung.com'+url.pathname+url.search,308);
+  if(url.pathname==='/api/visit')return handleVisit(request,env,externalFetch);
   if(url.pathname.startsWith('/api/account/')){
    try{
     const route=url.pathname.slice('/api/account/'.length),method=request.method;
@@ -112,9 +114,9 @@ export function createHandler(deps={}){
   if(request.method!=='GET'||!(response.headers.get('Content-Type')||'').includes('text/html')||response.status>=400)return response;
   const h=new Headers(response.headers);h.delete('Content-Length');h.delete('ETag');h.delete('Last-Modified');h.set('Cache-Control','public, max-age=60');
   // App-specific /mixed-cbt routes remain with their existing Worker and get the same script in its R2 HTML.
-  return new HTMLRewriter().on('head',{element(e){e.append('<script src="/account-assets/store.js?v=accounts-ui-20260927-r5" defer></script><script src="/account-assets/navigation.js?v=accounts-ui-20260927-r5" defer></script>',{html:true});}}).transform(new Response(response.body,{status:response.status,headers:h}));
+  return new HTMLRewriter().on('head',{element(e){e.append('<script src="/account-assets/visit.js?v=visitor-v2" data-visit-source="main" defer></script><script src="/account-assets/store.js?v=accounts-ui-20260927-r5" defer></script><script src="/account-assets/navigation.js?v=accounts-ui-20260927-r5" defer></script>',{html:true});}}).transform(new Response(response.body,{status:response.status,headers:h}));
  },
- async scheduled(event,env){await env.DB.batch([env.DB.prepare('DELETE FROM account_sessions WHERE expires_at<?').bind(Date.now()),env.DB.prepare('DELETE FROM account_rate_limits WHERE expires_at<?').bind(Date.now()),env.DB.prepare('DELETE FROM account_bridge_codes WHERE expires_at<?').bind(Date.now())]);}
+ async scheduled(event,env){const now=Date.now();await env.DB.batch([env.DB.prepare('DELETE FROM account_sessions WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_rate_limits WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_bridge_codes WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM visitor_daily WHERE first_seen<?').bind(now-45*86400000)]);}
  };
 }
 export default createHandler();
