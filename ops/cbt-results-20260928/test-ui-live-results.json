@@ -1,0 +1,69 @@
+{
+  "at": "2026-09-28T10:24:16.665Z",
+  "base": "https://mysuneung.com",
+  "tests": [
+    {
+      "name": "candidate scripts and real guest account adapter initialize",
+      "pass": true
+    },
+    {
+      "name": "real UI answer clicks, server grading, summary counts and unanswered separation",
+      "pass": true
+    },
+    {
+      "name": "summary limits priorities to three and does not expose notes or bulk statistics",
+      "pass": true
+    },
+    {
+      "name": "three result tabs fit 320/390/800/1024/1440 pixels",
+      "pass": true
+    },
+    {
+      "name": "self-reported cause changes actionable advice; escaped private notes save",
+      "pass": true
+    },
+    {
+      "name": "switching tabs preserves saved notes",
+      "pass": true
+    },
+    {
+      "name": "original question and annotation renderer returns to unchanged result",
+      "pass": true
+    },
+    {
+      "name": "transfer starts intact unseen passages from another exam; notes not sent",
+      "pass": true
+    },
+    {
+      "name": "history and reason survive page reload",
+      "pass": true
+    },
+    {
+      "name": "official EBS question-book mapping and image preview loads",
+      "pass": true,
+      "previews": 2
+    },
+    {
+      "name": "unlinked neighboring question is not labeled as EBS-linked",
+      "pass": true
+    },
+    {
+      "name": "keyboard navigation and active tab semantics",
+      "pass": true
+    },
+    {
+      "name": "perfect, all-unanswered and empty histories do not invent weaknesses",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "shots": [
+    "live-results-summary-390.png",
+    "live-results-questions-390.png",
+    "live-results-study-390.png",
+    "live-results-summary-1440.png",
+    "live-results-questions-1440.png",
+    "live-results-study-1440.png",
+    "live-results-ebs-preview-1440.png"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "at": "2026-09-28T10:17:53.809Z",
+  "version": "2026-09-27.learning.v1",
+  "tests": 17,
+  "generation_cases": 69,
+  "results": [
+    {
+      "name": "five distinct answered items enable reinforcement",
+      "pass": true
+    },
+    {
+      "name": "four items do not diagnose a weakness",
+      "pass": true
+    },
+    {
+      "name": "unanswered kept outside the error-rate denominator",
+      "pass": true
+    },
+    {
+      "name": "latest response wins without duplicate weighting",
+      "pass": true
+    },
+    {
+      "name": "same label is not merged across reading/literature",
+      "pass": true
+    },
+    {
+      "name": "pending types count in topics, not type profiles",
+      "pass": true
+    },
+    {
+      "name": "no cognitive reason inferred from errors",
+      "pass": true
+    },
+    {
+      "name": "self-report preserved with source, bounded note",
+      "pass": true
+    },
+    {
+      "name": "future/unknown reference/malformed history ignored",
+      "pass": true
+    },
+    {
+      "name": "invalid and fractional selected answers are unanswered",
+      "pass": true
+    },
+    {
+      "name": "exact subset never splits units or duplicates them",
+      "pass": true
+    },
+    {
+      "name": "weighted priority increases target selection reproducibly",
+      "pass": true
+    },
+    {
+      "name": "metadata complete, versioned and contains no answers",
+      "pass": true
+    },
+    {
+      "name": "36 full/legacy/mixed compositions incl language5+media6",
+      "pass": true,
+      "cases": 36
+    },
+    {
+      "name": "targeted practice preserves full passage sets for every supported type",
+      "pass": true,
+      "cases": 33
+    },
+    {
+      "name": "no silent unrelated-target fallback; cold start explained",
+      "pass": true
+    },
+    {
+      "name": "grading metadata, fractional-answer handling, duplicate-source rejection",
+      "pass": true
+    }
+  ]
+}

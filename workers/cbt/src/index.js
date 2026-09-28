@@ -1,3 +1,4 @@
+import * as Study from "./study-core.mjs";
 import * as Learning from "./learning-core.mjs";
 const LEARNING_DATA_KEY = "learning/question-types-20260927-v1.json";
 let learningMetadataCache = null;
@@ -226,10 +227,19 @@ async function generateExam(request, env) {
     let setCount = Number(body.set_count);
     if (!Number.isInteger(setCount)) setCount = 3;
     setCount = Math.max(1, Math.min(5, setCount));
+    if(learning.transfer){
+      pool=Study.transferCandidates(pool,learning.index,learning.profile?.details,learning.sourceKeys,await getQuestionTypes(env));
+      if(!pool.length)return json({error:'이 범위에는 아직 보지 않은 다른 회차 기출이 없습니다. 같은 문제로 대체하지 않았습니다.',code:'NO_FRESH_TRANSFER'},400);
+    }
     if (learning.targets.length) {
       const missing=learning.targets.filter(id=>!pool.some(r=>(learning.index.get(r.id)||[]).some(q=>q.eligible&&q.type_id===id)));
       if(missing.length)return json({error:"선택한 학년도·범주에 해당 유형이 없습니다: "+missing.join(", ")},400);
-      selected = Learning.selectTargetSets(pool,learning.targets,setCount,learning.index,learning.recent,Math.random,learning.weights);
+      selected = learning.transfer?Study.selectTransferSets(pool,learning.targets,setCount,learning.index):Learning.selectTargetSets(pool,learning.targets,setCount,learning.index,learning.recent,Math.random,learning.weights);
+      if(learning.transfer){
+        const uncovered=learning.targets.filter(t=>!selected.some(r=>(learning.index.get(r.id)||[]).some(q=>q.eligible&&q.type_id===t)));
+        if(uncovered.length)return json({error:'모든 선택 유형을 담을 새 기출이 부족합니다. 유형 수를 줄여 주세요.',code:'INSUFFICIENT_TARGET_COVERAGE'},400);
+        learning.requestedSets=setCount;
+      }
       if (!selected.length) return json({error:"선택한 학년도·범주에 분류 근거가 확인된 해당 유형이 없습니다. 학년도를 넓혀 주세요."},400);
     } else if (learning.active) {
       selected = pickWeightedCustom(pool, selectedCategories, setCount, learning);
@@ -543,7 +553,7 @@ async function learningMeta(env) {
       type_group:g,type_id:m.type_id||g+'::'+m.type,analysis_eligible:m.analysis_eligible===true,review_status:m.review_status||'needs_review',
       taxonomy_version:Learning.LEARNING_VERSION,original_url:rows.has(m.unit_id)?"/cbt-data/originals/"+encodePath(rows.get(m.unit_id).key.replace(/unit\.json$/,"original.png")):null,review_note:m.evidence?.adjudication||m.evidence?.matched||'추가 맥락 확인 필요'};
   }
-  learningMetadataCache={ok:true,version:Learning.LEARNING_VERSION,questions,groups,
+  learningMetadataCache={ok:true,version:Learning.LEARNING_VERSION,study_version:Study.STUDY_VERSION,questions,groups,
     summary:{total:Object.keys(t).length,statuses,pending:Object.values(t).filter(m=>!m.analysis_eligible).length},
     reasons:Learning.REASONS,min_evidence:Learning.MIN_EVIDENCE};
   return learningMetadataCache;
@@ -552,15 +562,23 @@ async function prepareLearning(body,taxonomy,env) {
   const empty={requested:false,active:false,targets:[],weights:{},recent:new Set(),index:Learning.unitTypeIndex(taxonomy),profile:null};
   if(body.strategy && !['balanced','weakness'].includes(body.strategy))return {...empty,error:'지원하지 않는 추천 방식입니다.'};
   const ids=body.type_ids ?? [];
+  const transfer=body.practice_mode==='transfer';
+  if(body.practice_mode!==undefined&&!transfer)return {...empty,error:'지원하지 않는 보완 출제 방식입니다.'};
+  if(transfer&&body.mode!=='custom')return {...empty,error:'새 기출 보완은 맞춤 풀이에서 시작해 주세요.'};
   if(!Array.isArray(ids)||ids.length>3||ids.some(x=>typeof x!=='string'||x.length>100))return {...empty,error:'유형 선택은 3개 이하로 지정해 주세요.'};
   const valid=new Set(Object.values(taxonomy).filter(m=>m.analysis_eligible).map(m=>m.type_id));
   if(ids.some(id=>!valid.has(id)))return {...empty,error:'분류 근거가 확인되지 않은 유형입니다.'};
   if(body.recent_attempts!==undefined && (!Array.isArray(body.recent_attempts)||body.recent_attempts.length>30))return {...empty,error:'최근 학습 기록은 30회까지 보낼 수 있습니다.'};
   const attempts=body.recent_attempts||[];
   if(attempts.some(a=>!a||!Array.isArray(a.details)||a.details.length>45))return {...empty,error:'학습 기록의 문항 수가 올바르지 않습니다.'};
+  const sourceKeys=body.source_question_keys??[];
+  if(transfer&&(!ids.length||!Array.isArray(sourceKeys)||!sourceKeys.length||sourceKeys.length>45||sourceKeys.some(k=>typeof k!=='string'||!taxonomy[k]||!ids.includes(taxonomy[k].type_id))))return {...empty,error:'보완의 기준이 될 문항 출처와 유형을 확인해 주세요.'};
   const requested=body.strategy==='weakness';
-  const profile=Learning.buildProfile(attempts,taxonomy,await getAnswers(env));
-  return {...empty,requested,active:requested&&Object.keys(profile.weights).length>0,targets:[...new Set(ids)],
+  const officialAnswers=await getAnswers(env);
+  const profile=Learning.buildProfile(attempts,taxonomy,officialAnswers);
+  const evidence=Study.studyEvidence(attempts,taxonomy,officialAnswers);
+  profile.weights=Object.fromEntries(evidence.types.filter(r=>r.reinforce).map(r=>[r.key,1+Math.min(3,r.error_rate*3)]));
+  return {...empty,requested,transfer,sourceKeys:transfer?[...new Set(sourceKeys)]:[],active:requested&&Object.keys(profile.weights).length>0,targets:[...new Set(ids)],
     weights:requested?profile.weights:{},recent:new Set(profile.recent_units),profile};
 }
 function pickWeightedCustom(pool,categories,count,l) {
@@ -579,6 +597,9 @@ function describeSelection(selected,l,legacy) {
   const note=strategy==='targeted'?'선택 유형이 포함된 지문 세트입니다. 같은 지문의 다른 유형도 함께 출제됩니다.':
     strategy==='weakness'?(legacy?'이전 체제 한 회차를 유지하면서 최근 보완 유형을 반영했습니다.':'문항 구성과 지문 세트를 유지하며 최근 보완 유형의 선택 비중을 높였습니다.'):
     l.requested?'선택 범위에서 추천에 쓸 기록이 부족하여 균형 출제로 구성했습니다.':'균형 출제';
-  return {strategy,requested:l.requested,targets:[...wanted],matched_questions:matched,total_questions:total,repeated_recent_sets:repeats,
-    min_evidence:Learning.MIN_EVIDENCE,excluded_types:l.profile?.excluded_types||0,note};
+  return {strategy,practice_mode:l.transfer?'transfer':null,source_question_keys:l.transfer?l.sourceKeys:[],
+    selected_sets:selected.length,requested_sets:l.requestedSets||null,study_version:Study.STUDY_VERSION,
+    requested:l.requested,targets:[...wanted],matched_questions:matched,total_questions:total,repeated_recent_sets:repeats,
+    min_evidence:Learning.MIN_EVIDENCE,excluded_types:l.profile?.excluded_types||0,
+    note:l.transfer?'최근 30회에 없는 다른 회차 기출 '+selected.length+'지문'+(selected.length<l.requestedSets?' · 조건에 맞는 새 지문만 출제':''):note};
 }

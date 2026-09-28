@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-28T10:24:26.987Z",
+  "base": "https://mysuneung.com",
+  "tests": [
+    "missing taxonomy preserves score, keeps question visible and suppresses unsupported type practice",
+    "cumulative grade also preserves missing-taxonomy questions",
+    "summary remains authoritative when detailed rows are absent",
+    "keyboard focus survives question selection",
+    "study path buttons focus and navigate to method, verified EBS or fresh-practice sections",
+    "mobile remains within viewport with no script errors",
+    "standard save and reload preserve unclassified graded records"
+  ],
+  "errors": []
+}

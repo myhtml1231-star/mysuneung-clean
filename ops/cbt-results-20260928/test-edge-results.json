@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-28T10:19:08.806Z",
+  "tests": [
+    "account-lock removes private results and closes the workspace",
+    "metadata failure preserves the score and never creates a false analysis",
+    "corrupted history remains untouched",
+    "all original non-results inline renderer and ink scripts remain byte-identical"
+  ]
+}
