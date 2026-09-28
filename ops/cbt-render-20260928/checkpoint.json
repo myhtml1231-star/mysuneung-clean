@@ -1,0 +1,49 @@
+{
+  "updated_at": "2026-09-28T14:17:48.708539",
+  "phase": "completed",
+  "scope": [
+    "source headers footers page marks check notices",
+    "duplicate score-only view and text artifacts",
+    "list dialogue paired choices",
+    "question annotation storage and drawing"
+  ],
+  "baseline": "work-20260928-resume-r3",
+  "next": "Complete. Further changes must preserve existing record data and use backup/cbt.html or deployed.html as reference.",
+  "renderer": "content_helpers.js",
+  "annotation": "ink.js",
+  "account_schema": "question fields inside existing annotation records, no DB migration",
+  "resume": "source-unit-checkpoints.jsonl persists each completed set; build_sources.py resumes automatically",
+  "full_audit": [
+    {
+      "width": 1440,
+      "done": true,
+      "questions": 1795,
+      "issues": [],
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "done": true,
+      "questions": 1795,
+      "issues": [],
+      "pageErrors": []
+    }
+  ],
+  "content_ink_checks": 16,
+  "regression_checks": 19,
+  "account_sync_preview_checks": 7,
+  "candidate_sha256": "80cbca272bc4a8ff92e810c9b835d9cab0f851f78fb5163e019a22a9e5b8b004",
+  "deployed_at": "2026-09-28T14:22:05.750891",
+  "deployed_sha256": "80cbca272bc4a8ff92e810c9b835d9cab0f851f78fb5163e019a22a9e5b8b004",
+  "media_verified": 2963,
+  "account_worker_version": "01d10b91-117c-4ad1-a11f-3b3bc9d2b766",
+  "completed_at": "2026-09-28T14:26:22.273935",
+  "live_ui_checks": 10,
+  "delivery": {
+    "url": "https://mysuneung.com/cbt-data/learning/reports/cbt-content-r4-20260928-screenshots.zip",
+    "bytes": 3102945,
+    "files": 10,
+    "sha256": "c5dbff6ce9028e75e3925a34d736d6b1290b962d44cb79dfa01a66cda8d92163",
+    "http_status": 200
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "created_at": "2026-09-28T14:21:24.121180",
+  "candidate_sha256": "80cbca272bc4a8ff92e810c9b835d9cab0f851f78fb5163e019a22a9e5b8b004",
+  "account_worker_version": "01d10b91-117c-4ad1-a11f-3b3bc9d2b766",
+  "question_audits": [
+    {
+      "width": 1440,
+      "done": true,
+      "questions": 1795,
+      "issues": [],
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "done": true,
+      "questions": 1795,
+      "issues": [],
+      "pageErrors": []
+    }
+  ],
+  "source_build": {
+    "stats": {
+      "page_footer": 1974,
+      "passage_sets": 239,
+      "question_sources": 791,
+      "answer_sheet_notice": 131,
+      "page_header": 120
+    },
+    "files": 2963,
+    "bytes": 230128424,
+    "errors": []
+  },
+  "content_ink_tests": {
+    "ok": true,
+    "checks": [
+      "score badge and no score-only duplicate view",
+      "source-confirmed book quotation glyphs",
+      "dialogue turns separated",
+      "A B choice columns preserve pairing",
+      "old Hangul decoded source",
+      "real pointer drawing on choices does not select an answer",
+      "question-only undo redo",
+      "question navigation isolates and restores ink",
+      "local persisted ink round trip",
+      "resizer keeps question ink anchored to its choice",
+      "hand mode permits answer selection",
+      "private ink state cleared on account lock",
+      "responsive question toolbar and matrix 1024",
+      "responsive question toolbar and matrix 800",
+      "responsive question toolbar and matrix 390",
+      "responsive question toolbar and matrix 360"
+    ]
+  },
+  "sync_preview_tests": {
+    "ok": true,
+    "checks": [
+      "existing storage adapter saves left/right/eraser through actual account API",
+      "second browser restores question number, anchor and eraser without data loss",
+      "separate user cannot see annotation record",
+      "My Study preview separates passage and question ink",
+      "question preview selector and count are correct",
+      "passage preview remains backward compatible",
+      "account export preserves right-pane annotation metadata"
+    ]
+  },
+  "cleanup_ui_tests": {
+    "checks": [
+      "old Hangul question lower choices and final crop",
+      "last exam page original inline does not append exam-administration block",
+      "five Korean letter labels separated without changing wording",
+      "answer clicking does not reload cleaned sources",
+      "mobile list layout"
+    ]
+  },
+  "regression_tests": {
+    "ok": true,
+    "checks": [
+      "handwriting box labels and boundaries",
+      "answer selection preserves passage DOM / scroll / no image request",
+      "divider drag 280",
+      "divider drag 360",
+      "divider drag 430",
+      "divider drag 545",
+      "divider drag 740",
+      "divider keyboard min / narrow icon button",
+      "divider keyboard max / full label button",
+      "divider saved ratio restored",
+      "divider reset",
+      "novel source decoded / canvas budget",
+      "drawing toolbar drag / reopen position / active tool / strokes",
+      "full original inline only",
+      "responsive / last choice reachable 1024",
+      "responsive / last choice reachable 800",
+      "responsive / last choice reachable 390",
+      "responsive / last choice reachable 360",
+      "injected image 404 / bounded retry / no broken icon / retry action"
+    ]
+  },
+  "scope_notes": [
+    "No source PDF altered. Printed furniture excluded from CBT crop; a single source attribution retained in page chrome.",
+    "No question or answer bank overwritten. Display-only normalization maps verified title quotation glyphs.",
+    "Question strokes stay in existing account records; no database migration or user-data deletion.",
+    "Exhaustive tests are automated; selected source crops and UI states visually inspected."
+  ],
+  "delivery": {
+    "url": "https://mysuneung.com/cbt-data/learning/reports/cbt-content-r4-20260928-screenshots.zip",
+    "bytes": 3102945,
+    "files": 10,
+    "sha256": "c5dbff6ce9028e75e3925a34d736d6b1290b962d44cb79dfa01a66cda8d92163",
+    "http_status": 200
+  },
+  "live_ui": {
+    "production": true,
+    "files": [
+      "01_clean_question_end.png",
+      "02_single_view_score_badge.png",
+      "03_list_line_breaks.png",
+      "04_dialogue_paragraphs.png",
+      "05_paired_answer_columns.png",
+      "06_book_title_symbols.png",
+      "07_clean_last_page.png",
+      "08_both_panes_pen.png",
+      "09_resized_question_annotations.png",
+      "10_mobile_question_tools.png"
+    ],
+    "checks": [
+      "Clean original image through last choice; printed footer removed",
+      "One view and separate score badge",
+      "Five labelled lines",
+      "Speaker turns",
+      "A/B aligned choices",
+      "Book title brackets",
+      "End of paper without administrative notice",
+      "Real pointer pen/highlighter on question and passage, no answer click",
+      "Resize and anchored question notes",
+      "Mobile question toolbar and wrapping"
+    ]
+  },
+  "media_verification": {
+    "total": 2963,
+    "verified": 2963,
+    "errors": [],
+    "remaining": 0
+  },
+  "backend_generate": "GENERATIONS 21 PROBLEMS 0",
+  "backend_grade": "CASES 18 PROBLEMS 0",
+  "deployed_sha256": "80cbca272bc4a8ff92e810c9b835d9cab0f851f78fb5163e019a22a9e5b8b004"
+}

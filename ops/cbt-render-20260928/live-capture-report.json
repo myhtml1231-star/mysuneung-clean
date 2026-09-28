@@ -1,0 +1,27 @@
+{
+  "production": true,
+  "files": [
+    "01_clean_question_end.png",
+    "02_single_view_score_badge.png",
+    "03_list_line_breaks.png",
+    "04_dialogue_paragraphs.png",
+    "05_paired_answer_columns.png",
+    "06_book_title_symbols.png",
+    "07_clean_last_page.png",
+    "08_both_panes_pen.png",
+    "09_resized_question_annotations.png",
+    "10_mobile_question_tools.png"
+  ],
+  "checks": [
+    "Clean original image through last choice; printed footer removed",
+    "One view and separate score badge",
+    "Five labelled lines",
+    "Speaker turns",
+    "A/B aligned choices",
+    "Book title brackets",
+    "End of paper without administrative notice",
+    "Real pointer pen/highlighter on question and passage, no answer click",
+    "Resize and anchored question notes",
+    "Mobile question toolbar and wrapping"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "checks": [
+    "handwriting box labels and boundaries",
+    "answer selection preserves passage DOM / scroll / no image request",
+    "divider drag 280",
+    "divider drag 360",
+    "divider drag 430",
+    "divider drag 545",
+    "divider drag 740",
+    "divider keyboard min / narrow icon button",
+    "divider keyboard max / full label button",
+    "divider saved ratio restored",
+    "divider reset",
+    "novel source decoded / canvas budget",
+    "drawing toolbar drag / reopen position / active tool / strokes",
+    "full original inline only",
+    "responsive / last choice reachable 1024",
+    "responsive / last choice reachable 800",
+    "responsive / last choice reachable 390",
+    "responsive / last choice reachable 360",
+    "injected image 404 / bounded retry / no broken icon / retry action"
+  ]
+}

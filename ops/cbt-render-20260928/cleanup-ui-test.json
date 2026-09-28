@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "old Hangul question lower choices and final crop",
+    "last exam page original inline does not append exam-administration block",
+    "five Korean letter labels separated without changing wording",
+    "answer clicking does not reload cleaned sources",
+    "mobile list layout"
+  ]
+}

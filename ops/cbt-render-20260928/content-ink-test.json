@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "checks": [
+    "score badge and no score-only duplicate view",
+    "source-confirmed book quotation glyphs",
+    "dialogue turns separated",
+    "A B choice columns preserve pairing",
+    "old Hangul decoded source",
+    "real pointer drawing on choices does not select an answer",
+    "question-only undo redo",
+    "question navigation isolates and restores ink",
+    "local persisted ink round trip",
+    "resizer keeps question ink anchored to its choice",
+    "hand mode permits answer selection",
+    "private ink state cleared on account lock",
+    "responsive question toolbar and matrix 1024",
+    "responsive question toolbar and matrix 800",
+    "responsive question toolbar and matrix 390",
+    "responsive question toolbar and matrix 360"
+  ]
+}

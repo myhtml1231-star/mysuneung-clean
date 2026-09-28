@@ -1,0 +1,22 @@
+const fs=require('fs'),path=require('path'),assert=require('node:assert/strict');
+const {browser,page,load,images,metrics,W}=require('./browser-lib.cjs');const OUT=W+'/release-shots';fs.mkdirSync(OUT,{recursive:true});const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function shot(p,name){await pause(140);await images(p);assert.deepEqual((await metrics(p)).bad,[]);await p.screenshot({path:OUT+'/'+name+'.png'});console.log('CAPTURE',name)}
+async function ink(p,points,tool='pen',color=null){await p.evaluate(({tool,color})=>{setDrawTool(tool);if(color)drawColor=color},{tool,color});await p.mouse.move(points[0][0],points[0][1]);await p.mouse.down();for(const point of points.slice(1))await p.mouse.move(point[0],point[1],{steps:5});await p.mouse.up();await pause(100)}
+(async()=>{const b=await browser(),report=[];try{
+ const p=await page(b,1440,1040,{live:true});await p.waitForFunction(()=>window.CBT_RENDER_DATA?.version==='20260928-content-r4'&&document.querySelector('#questionCanvas'));
+ await load(p,'2023-S-lm-q37-37',37);await images(p);await p.$eval('#choices',e=>e.scrollIntoView({block:'end'}));await shot(p,'01_clean_question_end');report.push('Clean original image through last choice; printed footer removed');
+ await load(p,'2026-09-common-q01-03',3);await images(p);await shot(p,'02_single_view_score_badge');assert.equal(await p.$$eval('#qassets .exam-box',x=>x.length),1);report.push('One view and separate score badge');
+ await load(p,'2026-06-common-q14-17',16);await images(p);await shot(p,'03_list_line_breaks');assert.equal(await p.$$eval('.exam-labelled-row',x=>x.length),5);report.push('Five labelled lines');
+ await load(p,'2026-06-common-q14-17',17);await images(p);await shot(p,'04_dialogue_paragraphs');assert.equal(await p.$$eval('[data-box-layout=dialogue] .exam-labelled-row',x=>x.length),3);report.push('Speaker turns');
+ await load(p,'2023-06-common-q14-17',15);await images(p);await shot(p,'05_paired_answer_columns');assert.equal(await p.$$eval('.choice-cell',x=>x.length),10);report.push('A/B aligned choices');
+ await load(p,'2023-S-common-q04-09',8);await images(p);await shot(p,'06_book_title_symbols');assert.ok(await p.$eval('#stem',e=>e.textContent.includes('『임원경제지』')));report.push('Book title brackets');
+ await load(p,'2022-06-hw-q43-45',45);await images(p);await p.click('#showOriginal');await p.waitForFunction(()=>[...document.querySelectorAll('#inlineOriginal .source-frame')].every(x=>x.dataset.sourceState==='loaded'));await p.$eval('#passageScroll',e=>e.scrollTop=e.scrollHeight);await shot(p,'07_clean_last_page');report.push('End of paper without administrative notice');
+ await load(p,'2026-06-common-q14-17',16);await images(p);await pause(200);
+ const qbox=await (await p.$('.exam-labelled-row:nth-child(2)')).boundingBox();await ink(p,[[qbox.x+28,qbox.y+qbox.height*.8],[qbox.x+210,qbox.y+qbox.height*.8]],'highlight','#f6c845');
+ const choice=await (await p.$('#choices .choice:nth-child(3)')).boundingBox();await ink(p,[[choice.x+50,choice.y+choice.height*.65],[choice.x+155,choice.y+choice.height*.68],[choice.x+270,choice.y+choice.height*.65]],'pen','#276bc1');
+ const reading=await (await p.$('#readingStage')).boundingBox();await ink(p,[[reading.x+40,reading.y+90],[reading.x+190,reading.y+94]],'pen','#276bc1');await shot(p,'08_both_panes_pen');
+ const data=await p.evaluate(()=>annotationData[currentSetId]);assert.ok(data.some(s=>s.surface==='question'));assert.ok(data.some(s=>!s.surface));assert.equal(await p.evaluate(()=>Object.keys(answers).length),0);report.push('Real pointer pen/highlighter on question and passage, no answer click');
+ await p.evaluate(()=>setDrawTool('hand'));await p.focus('#passageResizer');await p.keyboard.press('Home');await pause(160);await shot(p,'09_resized_question_annotations');report.push('Resize and anchored question notes');assert.deepEqual(p.testErrors,[]);await p.close();
+ const m=await page(b,390,844,{live:true});await load(m,'2026-06-common-q14-17',16);await images(m);await pause(120);await m.screenshot({path:OUT+'/10_mobile_question_tools.png',fullPage:true});assert.deepEqual((await metrics(m)).bad,[]);report.push('Mobile question toolbar and wrapping');await m.close();
+ const files=fs.readdirSync(OUT).filter(x=>x.endsWith('.png')).sort();fs.writeFileSync(W+'/live-capture-report.json',JSON.stringify({production:true,files,checks:report},null,2));console.log('LIVE_PASS',report.length,files.length);
+}finally{await b.close()}})().catch(e=>{console.error(e);process.exit(1)});

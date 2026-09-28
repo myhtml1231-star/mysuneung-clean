@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "checks": [
+    "existing storage adapter saves left/right/eraser through actual account API",
+    "second browser restores question number, anchor and eraser without data loss",
+    "separate user cannot see annotation record",
+    "My Study preview separates passage and question ink",
+    "question preview selector and count are correct",
+    "passage preview remains backward compatible",
+    "account export preserves right-pane annotation metadata"
+  ]
+}
