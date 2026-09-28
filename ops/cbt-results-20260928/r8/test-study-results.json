@@ -1,0 +1,77 @@
+{
+  "at": "2026-09-28T14:53:50.439Z",
+  "version": "2026-09-28.results.r5.1",
+  "tests": 17,
+  "generation_cases": 33,
+  "results": [
+    {
+      "name": "33 exact supported types have three specific study steps",
+      "pass": true
+    },
+    {
+      "name": "five distinct first responses trigger evidence, four do not",
+      "pass": true
+    },
+    {
+      "name": "same-question corrections do not erase first-response errors or certify transfer",
+      "pass": true
+    },
+    {
+      "name": "three new correct answers, two other sessions and delay confirm improvement",
+      "pass": true
+    },
+    {
+      "name": "immediate success alone is not delayed verification",
+      "pass": true
+    },
+    {
+      "name": "a single other exam session is not enough",
+      "pass": true
+    },
+    {
+      "name": "a subsequent error reopens an improvement check",
+      "pass": true
+    },
+    {
+      "name": "duplicate attempts or duplicate question entries do not inflate first evidence",
+      "pass": true
+    },
+    {
+      "name": "unanswered is not a cognitive weakness",
+      "pass": true
+    },
+    {
+      "name": "pending taxonomy gets generic method and no type diagnosis",
+      "pass": true
+    },
+    {
+      "name": "server authoritative answers defeat forged correctness",
+      "pass": true
+    },
+    {
+      "name": "future timestamps and malformed sources ignored",
+      "pass": true
+    },
+    {
+      "name": "every self-reported reason has a concrete tip; no inferred cause",
+      "pass": true
+    },
+    {
+      "name": "129 EBS canonical links across five verified exams; unlinked neighbors excluded",
+      "pass": true
+    },
+    {
+      "name": "all 33 type transfer requests produce untouched whole passages from other sessions",
+      "pass": true,
+      "cases": 33
+    },
+    {
+      "name": "malformed transfer source/mode rejected",
+      "pass": true
+    },
+    {
+      "name": "exhausted new passages never fall back to seen items",
+      "pass": true
+    }
+  ]
+}

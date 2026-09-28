@@ -1,0 +1,44 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';
+import * as S from './study-core.mjs';import * as L from './learning-core.mjs';
+import {env,taxonomy,answers,catalog,DIR} from './test-env.mjs';import worker from './worker-test.mjs';
+const results=[];const test=(name,fn)=>{fn();results.push({name,pass:true});};const now=Date.now(),DAY=86400000;
+const target='독서::내용일치',keys=Object.keys(taxonomy).filter(k=>taxonomy[k].analysis_eligible&&taxonomy[k].type_id===target);
+const detail=(k,ok=true)=>{const [y,m,sec,no]=k.split('-');return {academic_year:+y,month:+m,section_code:sec,original_no:+no,selected:ok?answers[k]:answers[k]%5+1,correct_answer:answers[k],is_correct:!ok};};
+const ks=keys.slice(0,5),a={id:'origin',at:now-5*DAY,details:ks.map(k=>detail(k,false))};
+const ev=h=>S.studyEvidence(h,taxonomy,answers,now),row=h=>ev(h).types.find(r=>r.key===target);
+const originSessions=new Set(ks.map(k=>k.slice(0,7)));let other=keys.filter(k=>!originSessions.has(k.slice(0,7)));
+const second=other.find(k=>k.slice(0,7)!==other[0].slice(0,7));const extra=[other[0],second,other.find(k=>k!==other[0]&&k!==second)];assert.equal(new Set(extra).size,3);
+const b={id:'later',at:now-2*DAY,details:extra.map(k=>detail(k))};
+test('33 exact supported types have three specific study steps',()=>{const types=new Set(Object.values(taxonomy).filter(x=>x.analysis_eligible).map(x=>x.type_id));assert.equal(types.size,33);for(const t of types){assert.equal(S.studyMethod(t).steps.length,3,t);assert.equal(S.studyMethod(t).specific,true,t);}});
+test('five distinct first responses trigger evidence, four do not',()=>{assert.equal(row([a]).reinforce,true);assert.equal(row([{...a,details:a.details.slice(0,4)}]).reinforce,false);});
+test('same-question corrections do not erase first-response errors or certify transfer',()=>{const r=row([{id:'retry',at:now,details:ks.map(k=>detail(k))},a]);assert.equal(r.wrong,5);assert.equal(r.answered,5);assert.equal(r.verification_correct,0);assert.equal(r.state,'needs_review');});
+test('three new correct answers, two other sessions and delay confirm improvement',()=>{const r=row([b,a]);assert.equal(r.state,'verified');assert.equal(r.verification_correct,3);assert.equal(r.reinforce,false);assert.equal(r.due_at,b.at+3*DAY);});
+test('immediate success alone is not delayed verification',()=>{assert.notEqual(row([{...b,at:a.at+1000},a]).state,'verified');});
+test('a single other exam session is not enough',()=>{const same=other.filter(k=>k.slice(0,7)===extra[0].slice(0,7)).slice(0,3);assert.equal(same.length,3);assert.notEqual(row([{...b,details:same.map(k=>detail(k))},a]).state,'verified');});
+test('a subsequent error reopens an improvement check',()=>{const r=row([{id:'relapse',at:now-1000,details:[detail(extra[0],false)]},b,a]);assert.notEqual(r.state,'verified');assert.equal(r.verification_correct,0);});
+test('duplicate attempts or duplicate question entries do not inflate first evidence',()=>{assert.equal(ev([a,a]).events.length,5);assert.equal(ev([{...a,details:a.details.concat(a.details)}]).events.length,5);});
+test('unanswered is not a cognitive weakness',()=>{const r=row([{...a,details:ks.map(k=>({...detail(k),selected:null}))}]);assert.equal(r.answered,0);assert.equal(r.wrong,0);assert.equal(r.had_errors,false);});
+test('pending taxonomy gets generic method and no type diagnosis',()=>{const k=Object.keys(taxonomy).find(k=>!taxonomy[k].analysis_eligible);const e=ev([{...a,details:[detail(k,false)]}]);assert.equal(e.types.length,0);assert.equal(e.excluded,1);assert.equal(S.studyMethod(taxonomy[k].type_id,'condition',false).specific,false);});
+test('server authoritative answers defeat forged correctness',()=>{const r=row([{...a,details:a.details.map(d=>({...d,is_correct:true,correct_answer:d.selected}))}]);assert.equal(r.wrong,5);});
+test('future timestamps and malformed sources ignored',()=>{assert.equal(ev([{...a,at:now+DAY},{id:'bad',at:now,details:[{selected:2}]}]).first.length,0);});
+test('every self-reported reason has a concrete tip; no inferred cause',()=>{for(const [r] of L.REASONS)assert.ok(S.studyMethod(target,r).tip.length>20);assert.match(S.studyMethod(target).tip,/근거|비교/);});
+const ebs=JSON.parse(fs.readFileSync(path.join(DIR,'ebs-links.json')));
+test('129 EBS canonical links across five verified exams; unlinked neighbors excluded',()=>{assert.equal(Object.keys(ebs.questions).length,129);assert.equal(ebs.coverage.length,5);assert.equal(Object.keys(ebs.questions).filter(k=>k.startsWith('2026-11-')).length,26);for(const [k,v] of Object.entries(ebs.questions)){assert.ok(taxonomy[k]);assert.ok(ebs.coverage.includes(k.slice(0,7)));assert.ok(v.location);assert.match(v.source_url,/datNo=(127090|127095|127091|127089|127087)/);}for(const n of [4,7,9,13,15,24,26,27,28,29,30,33])assert.equal(ebs.questions['2026-11-common-'+String(n).padStart(2,'0')],undefined);assert.equal(ebs.questions['2026-11-lm-36'].location,'205쪽 / 35번');});
+const request=async body=>{const r=await worker.fetch(new Request('https://mysuneung.com/api/cbt/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}),env);return{status:r.status,data:await r.json()};};
+const allYears=Array.from({length:11},(_,i)=>2017+i);let gen=0;
+for(const id of new Set(Object.values(taxonomy).filter(m=>m.analysis_eligible).map(m=>m.type_id))){
+ const source=Object.keys(taxonomy).find(k=>taxonomy[k].analysis_eligible&&taxonomy[k].type_id===id),origin=taxonomy[source];
+ const body={mode:'custom',years:allYears,categories:[...new Set(Object.values(taxonomy).filter(m=>m.type_id===id).map(m=>m.category))],type_ids:[id],set_count:2,practice_mode:'transfer',source_question_keys:[source],recent_attempts:[{id:'t',at:now-1000,details:[detail(source,false)]}]};
+ const r=await request(body);assert.equal(r.status,200,id+JSON.stringify(r));assert.equal(r.data.exam.learning.practice_mode,'transfer');const e=r.data.exam;
+ assert.ok(e.sections.length>0&&e.sections.length<=2,id);for(const s of e.sections){assert.notEqual(s.id,origin.unit_id);assert.ok(s.questions.every(q=>!q.question_key.startsWith(source.slice(0,7))));assert.ok(s.questions.some(q=>q.analysis_eligible&&q.type_id===id));const c=catalog.find(c=>c.id===s.id);assert.equal(s.questions.length,c.question_count);}
+ gen++;
+}
+results.push({name:'all 33 type transfer requests produce untouched whole passages from other sessions',pass:true,cases:gen});
+const body={mode:'custom',years:allYears,categories:[...new Set(keys.map(k=>taxonomy[k].category))],type_ids:[target],practice_mode:'transfer',source_question_keys:[ks[0]],set_count:2,recent_attempts:[a]};
+let r=await request({...body,source_question_keys:['fake']});assert.equal(r.status,400);
+r=await request({...body,mode:'full'});assert.equal(r.status,400);
+r=await request({...body,practice_mode:'made-up'});assert.equal(r.status,400);
+results.push({name:'malformed transfer source/mode rejected',pass:true});
+const idx=L.unitTypeIndex(taxonomy),seen=Object.keys(taxonomy).map(k=>({unit_id:taxonomy[k].unit_id}));
+test('exhausted new passages never fall back to seen items',()=>{assert.equal(S.transferCandidates(catalog,idx,seen,[ks[0]],taxonomy).length,0);});
+fs.writeFileSync(path.join(DIR,'test-study-results.json'),JSON.stringify({at:new Date().toISOString(),version:S.STUDY_VERSION,tests:results.length,generation_cases:gen,results},null,2));console.log('PASS',results.length,'study tests;',gen,'transfer generation cases');

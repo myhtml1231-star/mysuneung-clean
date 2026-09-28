@@ -3,13 +3,14 @@ import { HttpError,fail,randomToken,hash,cookie,cookieHeader,SESSION_COOKIE,LOGI
 import { KINDS,text,integer,applyOperations,pullRecords,pack,reconstruct } from './records.mjs';
 import firebaseConfig from '../public/account-assets/firebase-config.json';
 import {handleVisit} from './visits.mjs';
+import {handleAdminRoute} from './admin.mjs';
 export const VERSION='2026-09-27.accounts.v1.2';
 export const CLIENT_REVISION='accounts-ui-20260927-r5';
 const publicUser=s=>({id:s.account_id||s.id,name:s.display_name,email:s.email,consent_version:s.consent_version,provider:s.auth_provider||'google.com'});
 const pageHeaders={
  'Cache-Control':'no-store, private, max-age=0','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','X-Frame-Options':'DENY',
  'Cross-Origin-Opener-Policy':'same-origin-allow-popups',
- 'Content-Security-Policy':"default-src 'self'; script-src 'self' https://apis.google.com; style-src 'self'; img-src 'self' data:; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com; frame-src https://mysuneung.firebaseapp.com https://accounts.google.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'",
+ 'Content-Security-Policy':"default-src 'self'; script-src 'self' https://apis.google.com; style-src 'self'; img-src 'self' data:; connect-src 'self' https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://firestore.googleapis.com; frame-src https://mysuneung.firebaseapp.com https://accounts.google.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'",
  'Permissions-Policy':'camera=(), microphone=(), geolocation=()'
 };
 function clearCookie(){return cookieHeader(SESSION_COOKIE,'',0);}
@@ -63,6 +64,7 @@ export function createHandler(deps={}){
     }
     const write=!['GET','HEAD'].includes(method);const s=await sessionFor(request,env,write);
     await rateLimit(request,env,'authenticated',360,300,s.account_id);
+    if(route.startsWith('admin/'))return await handleAdminRoute(request,env,s,route.slice(6),method);
     if(route==='connect/authorize'&&method==='POST')return await authorizeBridge(request,env,s);
     if(route==='logout'&&method==='POST'){
      const b=await readBody(request,2000);await env.DB.prepare(b.all===true?'DELETE FROM account_sessions WHERE account_id=?':'DELETE FROM account_sessions WHERE token_hash=?').bind(b.all===true?s.account_id:s.token_hash).run();return privateJSON({ok:true},200,{'Set-Cookie':clearCookie()});
@@ -101,8 +103,9 @@ export function createHandler(deps={}){
     console.error('ACCOUNT_REQUEST_FAILED',e?.name||'Error');return privateJSON({ok:false,code:'TEMPORARY_FAILURE',error:'계정 서버에 일시적인 문제가 있습니다. 저장 대기 중인 기록은 이 기기에 남겨 둡니다.'},503);
    }
   }
-  if(url.pathname==='/auth'||url.pathname==='/my'||url.pathname==='/account/privacy'||url.pathname==='/account/terms'||url.pathname==='/account/connect'){
-   const file=url.pathname==='/account/connect'?'connect.html':url.pathname==='/auth'?'auth.html':url.pathname==='/my'?'workspace.html':url.pathname.endsWith('privacy')?'privacy.html':'terms.html';
+  if(url.pathname==='/admin.html'||decodeURIComponent(url.pathname)==='/관리자 패널.html')return Response.redirect('https://mysuneung.com/admin',308);
+  if(url.pathname==='/auth'||url.pathname==='/my'||url.pathname==='/admin'||url.pathname==='/account/privacy'||url.pathname==='/account/terms'||url.pathname==='/account/connect'){
+   const file=url.pathname==='/account/connect'?'connect.html':url.pathname==='/auth'?'auth.html':url.pathname==='/my'?'workspace.html':url.pathname==='/admin'?'admin.html':url.pathname.endsWith('privacy')?'privacy.html':'terms.html';
    const r=await env.ASSETS.fetch(new Request(new URL('/account-assets/'+file,url)));const h=new Headers(r.headers);for(const [k,v] of Object.entries(pageHeaders))h.set(k,v);return new Response(r.body,{status:r.status,headers:h});
   }
   if(url.pathname.startsWith('/account-assets/')){

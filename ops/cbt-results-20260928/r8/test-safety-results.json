@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-28T14:53:50.950Z",
+  "tests": [
+    {
+      "name": "missing classification keeps graded question and recalculates correctness",
+      "pass": true
+    },
+    {
+      "name": "authoritative grade totals survive unavailable detailed rows",
+      "pass": true
+    },
+    {
+      "name": "invalid summary counts do not override valid detail counts",
+      "pass": true
+    },
+    {
+      "name": "missing or invalid answer is never synthesized",
+      "pass": true
+    },
+    {
+      "name": "new passages across two other exam sessions still verify improvement",
+      "pass": true
+    },
+    {
+      "name": "unanswered sibling exposes passage and prevents false new-passage mastery",
+      "pass": true
+    }
+  ]
+}

@@ -395,6 +395,162 @@
 
 #r5Report .r5-tab{transition:color .12s}
 
+/* Results r8 — action-first summary. */
+#analysis{background:#f8fafc;padding-top:34px}
+#r5Report{--accent:#3182f6;--ink:#191f28;--muted:#6b7684;--line:#e5eaf0;--soft:#f7f8fa}
+#r5Report .r5-head{margin-bottom:20px}
+#r5Report .r5-eyebrow{letter-spacing:0;color:#6b7684;font-size:12px}
+#r5Report .r5-hero{display:block;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible;margin-bottom:22px}
+#r5Report .r8-score-card{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:14px}
+#r5Report .r8-score-main,#r5Report .r8-focus{border:1px solid var(--line);border-radius:20px;background:#fff;padding:27px 30px}
+#r5Report .r8-score-main{display:grid;gap:14px}
+#r5Report .r8-kicker{display:block;color:#7b8794;font-size:12px;font-weight:700;margin-bottom:7px}
+#r5Report .r8-score-main>div:first-of-type{display:flex;align-items:flex-end;gap:13px}
+#r5Report .r8-score-number{font-size:48px;line-height:1;font-weight:800;letter-spacing:-2.4px;font-variant-numeric:tabular-nums}
+#r5Report .r8-score-number small{font-size:19px;letter-spacing:0;margin-left:2px}
+#r5Report .r8-score-count{font-size:13px;color:var(--muted);padding-bottom:4px}
+#r5Report .r8-score-pills{display:flex;flex-wrap:wrap;gap:7px}
+#r5Report .r8-score-pills span{padding:7px 10px;border-radius:9px;background:#f4f6f8;color:#68727f;font-size:12px}
+#r5Report .r8-score-pills b{color:#28323f;margin-left:3px}
+#r5Report .r8-score-pills .wrong{background:#fff1f3;color:#aa5260}
+#r5Report .r8-score-pills .wrong b{color:#c04459}
+#r5Report .r8-focus{background:#eef6ff;border-color:#dcecff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+#r5Report .r8-focus .r8-kicker{color:#3977c5}
+#r5Report .r8-focus h2{font-size:21px;letter-spacing:-.6px;margin-bottom:6px}
+#r5Report .r8-focus p{font-size:13px;color:#5f7085;line-height:1.65;margin-bottom:15px}
+#r5Report .r8-focus .r5-primary{border-radius:11px}
+#r5Report .r5-tabs{margin-bottom:22px;gap:23px}
+#r5Report .r5-tab{font-size:14px;min-height:46px;padding-bottom:13px}
+#r5Report .r8-summary-grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(245px,.8fr);gap:14px}
+#r5Report .r8-section-label{font-size:12px;font-weight:750;color:#7b8794;margin-bottom:17px}
+#r5Report .r8-today{padding:25px 26px}
+#r5Report .r8-today-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+#r5Report .r8-today-head h2{font-size:21px;margin:8px 0 4px}
+#r5Report .r8-today-head .r5-primary{flex:0 0 auto}
+#r5Report .r8-route{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:22px}
+#r5Report .r8-route>div{padding:15px 14px;border-radius:13px;background:#f7f9fb;border:1px solid #eef1f5}
+#r5Report .r8-route span{width:23px;height:23px;display:grid;place-items:center;border-radius:50%;background:#e8f2ff;color:#2d74cc;font-size:11px;font-weight:800;margin-bottom:10px}
+#r5Report .r8-route b{display:block;font-size:13px;margin-bottom:5px}
+#r5Report .r8-route small{display:block;font-size:11px;color:#7a8592;line-height:1.55}
+#r5Report .r8-result-mini{padding:25px 22px}
+#r5Report .r8-mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:3px 0 18px}
+#r5Report .r8-mini-stats>div{text-align:center;padding:12px 4px;border-radius:12px;background:#f7f9fb}
+#r5Report .r8-mini-stats b{display:block;font-size:21px}
+#r5Report .r8-mini-stats span{display:block;color:#7b8794;font-size:10px;margin-top:3px}
+#r5Report .r8-result-mini>button{width:100%}
+#r5Report .r8-result-mini .r8-due{margin-top:7px;color:var(--accent);background:#f1f7ff;border-color:#e1edff}
+#r5Report .r8-secondary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+#r5Report .r8-fold{margin:0!important;border:1px solid var(--line);border-radius:13px;background:#fff;color:var(--ink)!important;overflow:hidden}
+#r5Report .r8-fold>summary{padding:14px 17px!important;font-size:12px;font-weight:650;cursor:pointer;list-style:none}
+#r5Report .r8-fold>summary::-webkit-details-marker{display:none}
+#r5Report .r8-fold>summary:after{content:'+';float:right;color:#8b95a1;font-size:16px;font-weight:400}
+#r5Report .r8-fold[open]>summary:after{content:'−'}
+#r5Report .r8-weak-list,#r5Report .r8-topic-list{padding:0 10px 10px}
+#r5Report .r8-weak-list button{width:100%;border:0;border-top:1px solid #f0f2f5;border-radius:0;display:flex;justify-content:space-between;text-align:left;padding:11px 7px;min-height:0}
+#r5Report .r8-weak-list button:hover{background:#f8fafc}
+#r5Report .r8-weak-list span small{display:block;color:#8b95a1;font-size:10px}
+#r5Report .r8-weak-list span b{display:block;font-size:12px;margin-top:2px}
+#r5Report .r8-weak-list em{font-style:normal;color:#8b95a1;font-size:11px;white-space:nowrap}
+#r5Report .r8-topic-row{display:grid;grid-template-columns:65px 48px minmax(0,1fr);align-items:center;gap:8px;padding:10px 7px;border-top:1px solid #f0f2f5;font-size:11px}
+#r5Report .r8-topic-row b{font-size:11px;text-align:right;color:#657182}
+#r5Report .r8-topic-row i{height:5px;border-radius:4px;background:#edf1f5;overflow:hidden}
+#r5Report .r8-topic-row em{display:block;height:100%;border-radius:4px;background:#6ea8f5}
+@media(max-width:800px){
+ #r5Report .r8-score-card,#r5Report .r8-summary-grid{grid-template-columns:1fr}
+ #r5Report .r8-score-main,#r5Report .r8-focus{padding:22px 23px;border-radius:17px}
+ #r5Report .r8-score-main{grid-template-columns:1fr auto;align-items:end}
+ #r5Report .r8-score-main>.r8-kicker{grid-column:1/-1;margin-bottom:-5px}
+ #r5Report .r8-score-pills{justify-content:flex-end}
+ #r5Report .r8-summary-grid{gap:10px}
+ #r5Report .r8-secondary{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+ #analysis{padding:20px 14px 36px}
+ #r5Report .r5-head{margin-bottom:16px}
+ #r5Report .r5-head .r5-actions button:first-child{display:none}
+ #r5Report .r8-score-main{display:block}
+ #r5Report .r8-score-number{font-size:43px}
+ #r5Report .r8-score-pills{justify-content:flex-start;margin-top:14px}
+ #r5Report .r8-focus h2{font-size:19px}
+ #r5Report .r8-route{grid-template-columns:1fr;gap:6px}
+ #r5Report .r8-route>div{display:grid;grid-template-columns:26px 1fr;column-gap:9px;padding:11px 12px}
+ #r5Report .r8-route span{grid-row:1/3;margin:0}
+ #r5Report .r8-route b{margin:1px 0 2px}
+ #r5Report .r8-today{padding:20px 18px}
+ #r5Report .r8-today-head{display:block}
+ #r5Report .r8-today-head .r5-primary{width:100%;margin-top:14px}
+ #r5Report .r8-result-mini{padding:20px 18px}
+}
+
+/* r8.1: score is score-only; weakness appears once in today's action card. */
+#r5Report .r8-score-only{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(240px,1.25fr) auto;align-items:center;gap:28px;border:1px solid var(--line);border-radius:20px;background:#fff;padding:25px 30px}
+#r5Report .r8-score-line{display:flex;align-items:flex-end;gap:12px}
+#r5Report .r8-score-only .r8-score-pills{justify-content:flex-start}
+#r5Report .r8-score-detail{white-space:nowrap;background:#f7f9fb}
+@media(max-width:800px){
+ #r5Report .r8-score-only{grid-template-columns:1fr auto;gap:16px;padding:22px 23px;border-radius:17px}
+ #r5Report .r8-score-only>div:first-child{grid-column:1}
+ #r5Report .r8-score-only .r8-score-pills{grid-column:1/-1;grid-row:2}
+ #r5Report .r8-score-detail{grid-column:2;grid-row:1}
+}
+@media(max-width:560px){
+ #r5Report .r8-score-only{display:block}
+ #r5Report .r8-score-detail{width:100%;margin-top:14px}
+}
+#r5Report .r8-analysis-fallback{display:flex;flex-direction:column;gap:5px}
+#r5Report .r8-analysis-fallback b{font-size:18px}
+#r5Report .r8-analysis-fallback span{font-size:13px;color:var(--muted)}
+
+/* r8 focused weakness study */
+#r5Report .r8-study-shell{max-width:900px;margin:0 auto;display:grid;gap:14px}
+#r5Report .r8-study-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding:4px 2px 3px}
+#r5Report .r8-study-head h2{font-size:27px;letter-spacing:-1px;margin:9px 0 5px}
+#r5Report .r8-study-head p{font-size:13px;color:var(--muted)}
+#r5Report .r8-study-switch{width:260px;flex:0 0 auto}
+#r5Report .r8-study-switch>span,#r5Report .r8-example-switch>span{display:block;font-size:11px;font-weight:700;color:#7b8794;margin-bottom:5px}
+#r5Report .r8-study-switch select,#r5Report .r8-example-switch select{margin:0;background:#fff}
+#r5Report .r8-study-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#r5Report .r8-study-path button{display:grid;grid-template-columns:28px minmax(0,1fr);gap:9px;align-items:start;text-align:left;padding:14px 13px;min-height:74px;background:#fff;border-radius:13px}
+#r5Report .r8-study-path button>b{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#eaf3ff;color:#3478d0;font-size:11px}
+#r5Report .r8-study-path strong{display:block;font-size:13px;margin:1px 0 3px}
+#r5Report .r8-study-path small{display:block;color:#7b8794;font-size:10.5px;line-height:1.5;font-weight:500}
+#r5Report .r8-study-card{padding:27px 30px}
+#r5Report .r8-example-switch{display:block;max-width:360px;margin:0 0 20px auto}
+#r5Report .r8-study-card .r5-detail-head{margin-bottom:14px}
+#r5Report .r8-study-card .r5-detail-head h2{font-size:19px;margin-top:6px}
+#r5Report .r8-study-card .r5-answer{margin:14px 0 22px}
+#r5Report .r8-study-card .r5-method{border-top:1px solid var(--line);padding-top:22px;margin-top:0}
+#r5Report .r8-study-card .r5-method h3{font-size:17px}
+#r5Report .r8-study-card .r5-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#r5Report .r8-study-card .r5-steps li{display:block;padding:14px 13px;border:1px solid #edf0f4;border-radius:12px;background:#fafbfc;font-size:12px;line-height:1.65}
+#r5Report .r8-study-card .r5-steps li:before{margin-bottom:9px}
+#r5Report .r8-reason{margin-top:18px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+#r5Report .r8-reason>summary{cursor:pointer;list-style:none;padding:13px 15px;font-size:12px;font-weight:700;color:#5d6977}
+#r5Report .r8-reason>summary::-webkit-details-marker{display:none}
+#r5Report .r8-reason>summary:after{content:'+';float:right;font-size:16px;color:#8b95a1;font-weight:400}
+#r5Report .r8-reason[open]>summary:after{content:'−'}
+#r5Report .r8-reason .learn-reason-editor{margin:0;padding:4px 15px 16px;border-top:1px solid #f0f2f5}
+#r5Report .r8-study-card .r5-ebs{margin-top:18px;background:#f4faf7;border-color:#e3eee8}
+#r5Report .r8-study-card .r5-transfer{margin-top:18px;padding:20px;border:1px solid #dceaff;border-radius:13px;background:#f3f8ff}
+#r5Report .r8-study-card .r5-transfer h3{font-size:16px}
+#r5Report .r8-study-card .r5-transfer p{margin:6px 0 13px}
+#r5Report .r8-study-card .r5-progress{margin:18px 0 0}
+#r5Report .r8-study-card>details.r5-fold:last-child{margin-top:14px}
+@media(max-width:740px){
+ #r5Report .r8-study-shell{gap:10px}
+ #r5Report .r8-study-head{display:block}
+ #r5Report .r8-study-head h2{font-size:23px}
+ #r5Report .r8-study-switch{width:100%;margin-top:15px}
+ #r5Report .r8-study-path{grid-template-columns:1fr;gap:6px}
+ #r5Report .r8-study-path button{min-height:0;padding:11px 12px}
+ #r5Report .r8-study-card{padding:20px 18px}
+ #r5Report .r8-example-switch{max-width:none;margin:0 0 17px}
+ #r5Report .r8-study-card .r5-steps{grid-template-columns:1fr;gap:6px}
+ #r5Report .r8-study-card .r5-steps li{display:grid;grid-template-columns:25px 1fr;gap:9px;padding:11px 12px}
+ #r5Report .r8-study-card .r5-steps li:before{margin:0}
+ #r5Report .r8-study-card .r5-transfer{padding:16px}
+}
+
 </style>
 </head>
 <body>
@@ -1823,9 +1979,9 @@ function mountResults(){
  if($('#r5Report'))return;
  const el=document.createElement('div');el.id='r5Report';el.innerHTML=`
  <div id="r5Alert" class="r5-alert" role="alert" hidden></div>
- <header class="r5-head"><div><div class="r5-eyebrow">MY SUNEUNG · LEARNING REPORT</div><h1 id="r5Title">채점 결과</h1><p class="r5-muted" id="r5Meta"></p></div><div class="r5-actions"><button type="button" data-r5-action="history">누적 기록</button><button type="button" data-r5-action="new">새 시험</button></div></header>
+ <header class="r5-head"><div><div class="r5-eyebrow">학습 리포트</div><h1 id="r5Title">채점 결과</h1><p class="r5-muted" id="r5Meta"></p></div><div class="r5-actions"><button type="button" data-r5-action="history">누적 기록</button><button type="button" data-r5-action="new">새 시험</button></div></header>
  <div class="r5-hero" id="r5Hero"></div>
- <nav class="r5-tabs" role="tablist" aria-label="채점 결과 메뉴">${[['summary','결과 요약'],['questions','문항별 채점'],['study','취약점 보완']].map(([id,name])=>'<button type="button" id="r5Tab-'+id+'" class="r5-tab" role="tab" aria-controls="r5Panel-'+id+'" aria-selected="'+(id==='summary')+'" tabindex="'+(id==='summary'?0:-1)+'" data-r5-tab="'+id+'">'+name+'</button>').join('')}</nav>
+ <nav class="r5-tabs" role="tablist" aria-label="채점 결과 메뉴">${[['summary','채점 결과'],['questions','문항별'],['study','취약점 보완']].map(([id,name])=>'<button type="button" id="r5Tab-'+id+'" class="r5-tab" role="tab" aria-controls="r5Panel-'+id+'" aria-selected="'+(id==='summary')+'" tabindex="'+(id==='summary'?0:-1)+'" data-r5-tab="'+id+'">'+name+'</button>').join('')}</nav>
  ${['summary','questions','study'].map(id=>'<section id="r5Panel-'+id+'" role="tabpanel" aria-labelledby="r5Tab-'+id+'" tabindex="0"'+(id==='summary'?'':' hidden')+'></section>').join('')}
  <footer class="r5-footer"><details class="r5-fold"><summary>분석 기준 · 출처</summary><p id="r5Criteria"></p><p>보완 확인은 마지막 오답 이후 다른 회차의 새 문항을 3개 이상, 2개 회차 이상에서 맞히고 하루 뒤 확인까지 포함한 경우입니다. 서비스의 학습 기준이며, 완전한 숙달을 보장하는 진단이 아닙니다. 확인 뒤 3일 후 재점검을 제안합니다.</p><p>공부법은 유형별 풀이 절차이며 개별 문항의 공식 해설이 아닙니다. 오답 원인은 직접 선택한 내용만 반영합니다. EBS 연계는 공식 분석표의 해당 문항과 교재 위치를 확인한 항목만 표시합니다. 현재 확인 범위: 2026학년도 6월·9월·수능, 2027학년도 6월·9월의 129문항.</p><p>정답률은 정답 문항 수 ÷ 전체 문항 수입니다. 배점을 적용한 원점수·등급·백분위로 환산하지 않습니다.</p></details><button type="button" class="r5-quiet" data-r5-action="export">기록 내보내기 ↗</button></footer>`;
  $('#analysis .analysis-inner').append(el);
@@ -1861,7 +2017,8 @@ function drawAnalysis(data){
  if(total!==R5.ds.length)notice('채점 결과는 유지했습니다. 일부 문항의 상세 정보를 확인하지 못했습니다.');
  $('#r5Title').textContent=data?'채점 결과':'누적 학습 기록';
  $('#r5Meta').textContent=data?'국어 · '+(window.exam?.mode==='full'?'실전 모의고사':'맞춤 풀이')+' · '+total+'문항':'최근 '+R5.evidence.attempts+'회 · 서로 다른 '+total+'문항의 최신 답변';
- $('#r5Hero').innerHTML='<div class="r5-score"><div class="r5-score-main"><span>전체 문항 정답률</span><b class="r5-number">'+(percent===null?'—':percent)+'<small>%</small></b><span>'+right+' / '+total+'문항</span></div><div class="r5-counts"><div><b>'+right+'</b><span>정답</span></div><div class="is-wrong"><b>'+wrong+'</b><span>오답</span></div><div><b>'+blank+'</b><span>미응답</span></div></div></div><div class="r5-next">'+(top?'<span class="r5-eyebrow">'+(data&&R5.ds.some(d=>d.type_id===top.key&&!d.is_correct)?'먼저 살펴볼 유형':'누적 기록에서 살펴볼 유형')+'</span><h2>'+esc(top.group+' · '+top.label)+'</h2><p class="r5-muted">'+(top.answered<5?'아직은 확인 단계 · 누적 첫 응답 '+top.answered+'문항':'누적 첫 응답 '+top.answered+'문항 중 '+top.wrong+'문항 오답')+'</p><button type="button" class="r5-primary" data-r5-type="'+esc(top.key)+'">보완 학습 시작 <span aria-hidden="true">→</span></button>':'<span class="r5-eyebrow">'+(blank?'놓친 문항 확인':'다음 학습')+'</span><h2>'+(blank?'미응답 '+blank+'문항이 있어요':total?'이번 풀이를 마쳤어요':'첫 풀이를 시작해 보세요')+'</h2><p class="r5-muted">'+(blank?'미응답은 취약 유형으로 단정하지 않습니다.':total?'문항별 결과에서 근거를 다시 확인하세요.':'풀이 기록이 쌓이면 보완할 유형을 보여드립니다.')+'</p><button type="button" class="r5-primary" data-r5-action="'+(total?'answers':'new')+'">'+(total?'문항별 결과 보기':'문제 풀기')+' →</button>')+'</div>';
+ const blankPill=blank?'<span>미응답 <b>'+blank+'</b></span>':'';
+ $('#r5Hero').innerHTML='<div class="r8-score-only"><div><span class="r8-kicker">정답률</span><div class="r8-score-line"><b class="r8-score-number">'+(percent===null?'—':percent)+'<small>%</small></b><span class="r8-score-count">'+right+' / '+total+'문항</span></div></div><div class="r8-score-pills"><span>정답 <b>'+right+'</b></span><span class="wrong">오답 <b>'+wrong+'</b></span>'+blankPill+'</div><button type="button" class="r8-score-detail" data-r5-action="answers">문항별 보기 →</button></div>';
  $('#r5Criteria').textContent='최근 30회 안에서 문항별 첫 응답으로 보완 대상을 찾습니다. 첫 응답 5문항 이상 · 오답 2문항 이상 · 오답률 40% 이상일 때 우선 보완으로 표시합니다. 미응답은 오답률에서 제외합니다. 재풀이 '+R5.evidence.repeat_responses+'건은 새 문항 성과로 세지 않았으며, 분류 검토 중 '+r5LatestDetails().filter(d=>!d.analysis_eligible).length+'문항은 유형별 분석에서 제외했습니다.';
  if(currentAttempt?.persisted===false)notice('이번 결과를 기기에 저장하지 못했습니다. 기록 내보내기로 먼저 보관해 주세요.');
  r5Switch(R5.tab);if(fresh)window.scrollTo({top:0,behavior:'instant'});
@@ -1872,10 +2029,12 @@ function r5Switch(tab){
  if(tab==='summary')renderR5Summary();else if(tab==='questions')renderR5Questions();else renderR5Study();
 }
 function renderR5Summary(){
- const types=r5Types(),items=types.filter(r=>r.state!=='verified').slice(0,3),topics={};
+ const types=r5Types(),active=types.filter(r=>r.state!=='verified'),top=active[0]||types[0],others=active.slice(1),topics={};
  for(const d of R5.ds){const g=d.type_group||'기타';if(!topics[g])topics[g]={total:0,right:0};topics[g].total++;if(d.is_correct)topics[g].right++;}
- const recent=types.filter(r=>r.due_at&&r.due_at<=Date.now());
- $('#r5Panel-summary').innerHTML='<div class="r5-summary-grid"><div><div class="r5-section-head"><h2>먼저 보완할 유형</h2><span class="r5-muted">최근 30회 첫 응답 기준</span></div><div class="r5-surface">'+(items.length?items.map((r,i)=>'<article class="r5-priority"><span class="r5-rank">0'+(i+1)+'</span><div><span class="r5-tag">'+esc(r.group)+'</span> '+r5Badge(r)+'<h3>'+esc(r.label)+'</h3><p class="r5-muted">첫 응답 '+r.answered+'문항 · 오답 '+r.wrong+(r.repeat_wrong?' · 반복 오답 '+r.repeat_wrong:'')+'</p></div><button type="button" data-r5-type="'+esc(r.key)+'">보완 →</button></article>').join(''):r5Empty('지금은 우선 보완할 유형이 없어요',R5.ds.length?'오답 여부와 분류 근거를 확인한 문항만 분석합니다.':'첫 시험을 제출하면 분석이 시작됩니다.'))+'</div></div><aside><div class="r5-section-head"><h2>'+(latest?'이번 풀이':'누적 기록')+' 영역별 정답</h2></div><div class="r5-surface">'+(Object.entries(topics).map(([g,t])=>'<div class="r5-topic"><div><b>'+esc(g)+'</b><span class="r5-muted">'+t.right+' / '+t.total+'문항</span></div><div class="r5-bar" role="img" aria-label="'+esc(g)+' '+t.total+'문항 중 '+t.right+'문항 정답"><i style="width:'+Math.round(t.right/t.total*100)+'%"></i></div></div>').join('')||'<p class="r5-muted">아직 풀이 기록이 없습니다.</p>')+'<div class="r5-again"><h3>'+(recent.length?'다시 확인할 유형 '+recent.length+'개':'새 기출로 확인하기')+'</h3><p class="r5-muted">'+(recent.length?'지난 오답의 보완 시점이 되었어요.':'같은 문제 재풀이는 새 문항 성과와 분리합니다.')+'</p><button type="button" data-r5-tab="study">보완 기록 보기 →</button></div></div></aside></div>';
+ const example=top?r5Examples(top.key)[0]:null,hasEbs=!!(example&&EBS?.questions?.[example.question_key]),recent=types.filter(r=>r.due_at&&r.due_at<=Date.now());
+ const route=top?'<div class="r8-route"><div><span>1</span><b>틀린 근거 확인</b><small>내 답과 정답이 갈린 지점만 다시 봅니다.</small></div><div><span>2</span><b>'+(hasEbs?'EBS 연계 확인':'같은 유형 정리')+'</b><small>'+(hasEbs?'확인된 연계 자료만 바로 연결합니다.':'유형별 풀이 순서를 짧게 다시 확인합니다.')+'</small></div><div><span>3</span><b>새 기출에 적용</b><small>같은 문제 재풀이가 아닌 다른 회차로 확인합니다.</small></div></div>':'';
+ const topicRows=Object.entries(topics).map(([g,t])=>'<div class="r8-topic-row"><span>'+esc(g)+'</span><b>'+t.right+' / '+t.total+'</b><i><em style="width:'+Math.round(t.right/t.total*100)+'%"></em></i></div>').join('');
+ $('#r5Panel-summary').innerHTML='<div class="r8-summary-grid"><section class="r5-surface r8-today"><div class="r8-section-label">오늘 할 것</div>'+(top?'<div class="r8-today-head"><div><span class="r5-tag">'+esc(top.group)+'</span> '+r5Badge(top)+'<h2>'+esc(top.label)+'</h2><p class="r5-muted">첫 응답 '+top.answered+'문항 · 오답 '+top.wrong+'문항</p></div><button type="button" class="r5-primary" data-r5-type="'+esc(top.key)+'">복습 시작 →</button></div>'+route:r5Empty('지금 바로 보완할 유형은 없어요','문항별 채점에서 틀린 근거만 확인해 주세요.'))+'</section><aside class="r5-surface r8-result-mini"><div class="r8-section-label">이번 결과</div><div class="r8-mini-stats"><div><b>'+R5.ds.filter(d=>d.selected!==null&&!d.is_correct).length+'</b><span>오답</span></div><div><b>'+R5.ds.filter(d=>d.selected===null).length+'</b><span>미응답</span></div><div><b>'+active.length+'</b><span>확인할 유형</span></div></div><button type="button" data-r5-tab="questions">문항별 채점 보기</button>'+(recent.length?'<button type="button" class="r8-due" data-r5-tab="study">재점검 '+recent.length+'개 →</button>':'')+'</aside></div><div class="r8-secondary">'+(others.length?'<details class="r8-fold"><summary>다른 보완 유형 <b>'+others.length+'개</b></summary><div class="r8-weak-list">'+others.slice(0,8).map(r=>'<button type="button" data-r5-type="'+esc(r.key)+'"><span><small>'+esc(r.group)+'</small><b>'+esc(r.label)+'</b></span><em>오답 '+r.wrong+' / '+r.answered+'</em></button>').join('')+'</div></details>':'')+(topicRows?'<details class="r8-fold"><summary>영역별 정답 보기</summary><div class="r8-topic-list">'+topicRows+'</div></details>':'')+'</div>';
 }
 function r5Status(d){return d.selected===null?['blank','—','미응답']:d.is_correct?['right','O','정답']:['wrong','X','오답'];}
 function renderR5Questions(){
@@ -1890,20 +2049,25 @@ function r5Examples(type){
  const seen=new Set();return all.filter(d=>{if(seen.has(d.question_key))return false;seen.add(d.question_key);return true;});
 }
 function renderR5Study(){
- const types=r5Types();if(!types.length){$('#r5Panel-study').innerHTML='<div class="r5-surface">'+r5Empty('보완할 유형을 확인하고 있어요','확인된 오답 유형이 없습니다. 미응답은 문항별 채점에서 먼저 확인하세요.')+'<div class="r5-actions"><button type="button" data-r5-tab="questions">문항별 채점 보기</button></div></div>';return;}
+ const types=r5Types();
+ if(!types.length){$('#r5Panel-study').innerHTML='<div class="r5-surface">'+r5Empty('보완할 유형을 확인하고 있어요','확인된 오답 유형이 없습니다. 미응답은 문항별 채점에서 먼저 확인하세요.')+'<div class="r5-actions"><button type="button" data-r5-tab="questions">문항별 채점 보기</button></div></div>';return;}
  if(!types.some(r=>r.key===R5.type))R5.type=types[0].key;
- const row=types.find(r=>r.key===R5.type),examples=r5Examples(R5.type);if(!examples.some(d=>d.question_key===R5.key))R5.key=examples[0]?.question_key;
- const d=examples.find(d=>d.question_key===R5.key);
- const nav=r=>'<button type="button" class="r5-type-option" data-r5-type="'+esc(r.key)+'" aria-pressed="'+(R5.type===r.key)+'"><span class="r5-tag">'+esc(r.group)+'</span> '+r5Badge(r)+'<b>'+esc(r.label)+'</b><small>첫 응답 '+r.answered+'문항 · 오답 '+r.wrong+'</small></button>';
- $('#r5Panel-study').innerHTML='<div class="r5-study-layout"><aside class="r5-surface"><div class="r5-section-head"><h2>보완할 유형</h2><span class="r5-muted">'+types.length+'개</span></div><label class="r5-mobile-type" for="r5TypeSelect"><span class="r5-muted">유형 선택</span><select id="r5TypeSelect">'+types.map(r=>'<option value="'+esc(r.key)+'"'+(r.key===R5.type?' selected':'')+'>'+esc(r.group+' · '+r.label)+'</option>').join('')+'</select></label><div class="r5-type-desktop"><div class="r5-type-nav">'+types.slice(0,6).map(nav).join('')+'</div>'+(types.length>6?'<details class="r5-fold"><summary>나머지 '+(types.length-6)+'개 유형</summary><div class="r5-type-nav">'+types.slice(6).map(nav).join('')+'</div></details>':'')+'</div></aside><div class="r5-surface" id="r5StudyDetail"><div class="r5-plan" aria-label="보완 학습 순서"><button type="button" data-r5-jump="method"><b>01</b><span>근거·공부법 확인</span></button><button type="button" data-r5-jump="'+(EBS.questions[d?.question_key]?'ebs':'transfer')+'"><b>02</b><span>'+(EBS.questions[d?.question_key]?'EBS 연계 복습':'새 기출에 적용')+'</span></button><button type="button" data-r5-jump="'+(EBS.questions[d?.question_key]?'transfer':'progress')+'"><b>03</b><span>'+(EBS.questions[d?.question_key]?'새 기출에 적용':'다음 날 재점검')+'</span></button></div>'+(examples.length>1?'<label class="r5-muted" for="r5Example">복습할 오답<select id="r5Example">'+examples.map(q=>'<option value="'+esc(q.question_key)+'"'+(q.question_key===R5.key?' selected':'')+'>'+esc(sourceName(q))+'</option>').join('')+'</select></label>':'')+(d?r5Detail(d,true):r5Empty('복습 문항을 확인하지 못했습니다.','새 풀이 기록에서 다시 확인해 주세요.'))+r5Progress(row)+'</div></div>';
+ const row=types.find(r=>r.key===R5.type),examples=r5Examples(R5.type);
+ if(!examples.some(d=>d.question_key===R5.key))R5.key=examples[0]?.question_key;
+ const d=examples.find(d=>d.question_key===R5.key),hasEbs=!!EBS?.questions?.[d?.question_key];
+ const evidence=row.answered<5?'아직 확인 단계 · 첫 응답 '+row.answered+'문항 중 '+row.wrong+'문항 오답':'첫 응답 '+row.answered+'문항 중 '+row.wrong+'문항 오답'+(row.repeat_wrong?' · 반복 오답 '+row.repeat_wrong+'회':'');
+ const typeSelect='<label class="r8-study-switch"><span>다른 유형</span><select id="r5TypeSelect">'+types.map(r=>'<option value="'+esc(r.key)+'"'+(r.key===R5.type?' selected':'')+'>'+esc(r.group+' · '+r.label)+'</option>').join('')+'</select></label>';
+ const exampleSelect=examples.length>1?'<label class="r8-example-switch" for="r5Example"><span>다른 오답</span><select id="r5Example">'+examples.map(q=>'<option value="'+esc(q.question_key)+'"'+(q.question_key===R5.key?' selected':'')+'>'+esc(sourceName(q))+'</option>').join('')+'</select></label>':'';
+ const path='<div class="r8-study-path" aria-label="보완 학습 순서"><button type="button" data-r5-jump="method"><b>1</b><span><strong>틀린 근거 정리</strong><small>다음에 확인할 기준만 남깁니다.</small></span></button>'+(hasEbs?'<button type="button" data-r5-jump="ebs"><b>2</b><span><strong>EBS 연계 복습</strong><small>확인된 공식 연계 자료만 봅니다.</small></span></button>':'<button type="button" data-r5-jump="transfer"><b>2</b><span><strong>새 기출에 적용</strong><small>같은 유형을 다른 회차에서 확인합니다.</small></span></button>')+(hasEbs?'<button type="button" data-r5-jump="transfer"><b>3</b><span><strong>새 기출에 적용</strong><small>같은 문제 재풀이와 분리합니다.</small></span></button>':'<button type="button" data-r5-jump="progress"><b>3</b><span><strong>다시 확인</strong><small>새 문항 결과로 보완 여부를 봅니다.</small></span></button>')+'</div>';
+ $('#r5Panel-study').innerHTML='<div class="r8-study-shell"><header class="r8-study-head"><div><div class="r8-section-label">우선 보완</div><span class="r5-tag">'+esc(row.group)+'</span> '+r5Badge(row)+'<h2>'+esc(row.label)+'</h2><p>'+esc(evidence)+'</p></div>'+typeSelect+'</header>'+path+'<section class="r5-surface r8-study-card" id="r5StudyDetail">'+exampleSelect+(d?r5Detail(d,true):r5Empty('복습 문항을 확인하지 못했습니다.','새 풀이 기록에서 다시 확인해 주세요.'))+r5Progress(row)+'</section></div>';
 }
 function r5Progress(r){
  if(!r?.had_errors)return '';
  return '<div class="r5-progress"><strong>'+(r.state==='verified'?'새 기출에서 보완을 확인했어요':r.verification_correct?'보완 효과를 확인하고 있어요':'다른 회차에서도 풀리는지 확인해요')+'</strong>마지막 오답 이후 새 문항 '+r.verification_correct+'개 정답 · '+r.verification_exams+'개 회차'+(r.verification_correct&&!r.verification_delayed?' · 하루 뒤 확인 필요':'')+'<br>'+(r.due_at<=Date.now()?'오늘 다시 확인하기':'다음 확인 권장일 '+r5Date(r.due_at))+'</div>';
 }
 function r5SafeEbs(url){try{const u=new URL(url);return u.protocol==='https:'&&(u.hostname==='ebsi.co.kr'||u.hostname.endsWith('.ebsi.co.kr'))?u.href:null;}catch{return null;}}
-function r5Ebs(d){
- const link=EBS?.questions?.[d.question_key];if(!link)return '<p class="r5-muted" style="margin-top:20px;font-size:12px">'+(EBS?.coverage?.includes(d.question_key.slice(0,7))?'공식 연계표에 표시된 연계 교재가 없습니다.':'이 문항의 EBS 연계 자료는 아직 확인되지 않았습니다.')+'</p>';
+function r5Ebs(d,quiet){
+ const link=EBS?.questions?.[d.question_key];if(!link)return quiet?'':'<p class="r5-muted" style="margin-top:20px;font-size:12px">'+(EBS?.coverage?.includes(d.question_key.slice(0,7))?'공식 연계표에 표시된 연계 교재가 없습니다.':'이 문항의 EBS 연계 자료는 아직 확인되지 않았습니다.')+'</p>';
  const url=r5SafeEbs(link.source_url);if(!url)return '';
  const imgs=(link.previews||[]).filter(i=>r5SafeEbs(i.url));
  return '<div class="r5-ebs"><span class="r5-tag">EBS 공식 연계</span><h3>'+esc(link.book)+'</h3><p>'+esc(link.location)+'</p>'+(imgs.length?'<button type="button" data-r5-ebs="'+esc(d.question_key)+'" aria-expanded="false">연계 지문 바로 보기 <span aria-hidden="true">⌄</span></button><div class="r5-ebs-preview" hidden>'+imgs.map(i=>'<figure style="margin:16px 0"><figcaption class="r5-muted">'+esc(i.label)+'</figcaption><img loading="lazy" referrerpolicy="no-referrer" src="'+esc(i.url)+'" alt="'+esc(i.label)+'" style="max-width:100%;height:auto;display:block;margin-top:10px"><p hidden>미리보기를 불러오지 못했습니다. 아래 EBS 공식 자료에서 확인해 주세요.</p></figure>').join('')+'<p>공식 분석에 실린 교재 발췌입니다. 교재 전체와 정답 해설이 포함된 자료는 아닙니다.</p></div>':'')+'<p style="margin:12px 0 0"><a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">EBS 연계표·출처 확인 ↗</a></p></div>';
@@ -1912,7 +2076,7 @@ function r5Detail(d,study){
  const owner=d.attempt_id||currentAttempt?.id,reason=reasonFor(d,owner),method=S.studyMethod(d.type_id,reason.code,d.analysis_eligible),st=r5Status(d),m=meta.questions[d.question_key];
  const title=d.analysis_eligible?d.question_type:'문항 근거 확인';
  const savedOwner=owner&&!!m&&readHistory().some(a=>a.id===owner);
- return '<header class="r5-detail-head"><div><span class="r5-tag">'+esc(d.type_group)+'</span> <span class="r5-tag '+(d.is_correct?'ok':'')+'">'+st[2]+'</span><h2>'+esc(title)+'</h2><p class="r5-muted">'+esc(sourceName(d))+'</p></div><button type="button" data-learn-review="'+esc(d.question_key)+'">문제 원문 ↗</button></header><div class="r5-answer"><span>내 답 <b>'+(d.selected===null?'—':d.selected)+'</b></span><span>정답 <b class="right">'+d.correct_answer+'</b></span></div>'+(d.selected===null?'<p class="r5-muted">미응답만으로 개념 부족이나 시간 부족을 판단하지 않습니다.</p>':'')+'<section class="r5-method"><h3>'+(study?'이렇게 공부해 보세요':'다시 볼 때 확인할 순서')+'</h3><ol class="r5-steps">'+method.steps.map(t=>'<li>'+esc(t)+'</li>').join('')+'</ol></section>'+(!d.is_correct&&savedOwner?'<div class="learn-reason-editor" data-attempt="'+esc(owner)+'" data-key="'+esc(d.question_key)+'"><label>내가 확인한 이유 <span class="r5-muted">선택</span><select class="learn-select learn-reason-select" aria-label="내가 확인한 오답 이유">'+L.REASONS.map(([k,v])=>'<option value="'+k+'"'+(reason.code===k?' selected':'')+'>'+esc(v)+'</option>').join('')+'</select></label><div class="r5-tip" role="status">'+esc(method.tip)+'</div><details class="r5-fold"><summary>나의 복습 메모'+(reason.note?' · 기록 있음':'')+'</summary><textarea class="learn-reason-note" maxlength="500" aria-label="복습 메모" placeholder="놓친 근거와 다음에 확인할 행동 한 가지">'+esc(reason.note)+'</textarea><button type="button" data-learn-save="1">메모 저장</button></details><span class="learn-save-state" role="status"></span></div>':'')+r5Ebs(d)+(d.analysis_eligible?'<section class="r5-transfer"><h3>같은 유형, 다른 기출</h3><p>다른 회차의 새 지문 최대 2개 · 최근 30회 풀이 제외. 지문에 딸린 문항도 함께 풉니다.</p><button type="button" class="r5-primary" data-r5-transfer="'+esc(d.type_id)+'" data-r5-origin="'+esc(d.question_key)+'">새 기출로 보완하기 →</button></section>':'<p class="r5-muted" style="margin-top:20px">유형 분류 검토 중으로 자동 보완 출제에서 제외합니다.</p>')+'<details class="r5-fold"><summary>문항 분류 근거</summary><p>'+esc(reviewNames[m?.review_status]||'분류 검토 중')+' · '+esc(m?.review_note||'추가 검토 필요')+'</p></details>';
+ return '<header class="r5-detail-head"><div><span class="r5-tag">'+esc(d.type_group)+'</span> <span class="r5-tag '+(d.is_correct?'ok':'')+'">'+st[2]+'</span><h2>'+esc(study?'틀린 문제 확인':title)+'</h2><p class="r5-muted">'+esc(sourceName(d))+'</p></div><button type="button" data-learn-review="'+esc(d.question_key)+'">문제 원문 ↗</button></header><div class="r5-answer"><span>내 답 <b>'+(d.selected===null?'—':d.selected)+'</b></span><span>정답 <b class="right">'+d.correct_answer+'</b></span></div>'+(d.selected===null?'<p class="r5-muted">미응답만으로 개념 부족이나 시간 부족을 판단하지 않습니다.</p>':'')+'<section class="r5-method"><h3>'+(study?'이렇게 공부해 보세요':'다시 볼 때 확인할 순서')+'</h3><ol class="r5-steps">'+method.steps.map(t=>'<li>'+esc(t)+'</li>').join('')+'</ol></section>'+(!d.is_correct&&savedOwner?'<details class="r8-reason"><summary>왜 틀렸는지 기록'+(reason.code&&reason.code!=='unknown'?' · '+esc(L.REASONS.find(x=>x[0]===reason.code)?.[1]||'기록 있음'):'')+'</summary><div class="learn-reason-editor" data-attempt="'+esc(owner)+'" data-key="'+esc(d.question_key)+'"><label>가장 가까운 이유<select class="learn-select learn-reason-select" aria-label="내가 확인한 오답 이유">'+L.REASONS.map(([k,v])=>'<option value="'+k+'"'+(reason.code===k?' selected':'')+'>'+esc(v)+'</option>').join('')+'</select></label><div class="r5-tip" role="status">'+esc(method.tip)+'</div><details class="r5-fold"><summary>복습 메모'+(reason.note?' · 기록 있음':'')+'</summary><textarea class="learn-reason-note" maxlength="500" aria-label="복습 메모" placeholder="놓친 근거와 다음에 확인할 행동 한 가지">'+esc(reason.note)+'</textarea><button type="button" data-learn-save="1">메모 저장</button></details><span class="learn-save-state" role="status"></span></div></details>':'')+r5Ebs(d,study)+(d.analysis_eligible?'<section class="r5-transfer"><h3>같은 유형, 다른 기출</h3><p>다른 회차의 새 지문 최대 2개 · 최근 30회 풀이 제외. 지문에 딸린 문항도 함께 풉니다.</p><button type="button" class="r5-primary" data-r5-transfer="'+esc(d.type_id)+'" data-r5-origin="'+esc(d.question_key)+'">새 기출로 보완하기 →</button></section>':'<p class="r5-muted" style="margin-top:20px">유형 분류 검토 중으로 자동 보완 출제에서 제외합니다.</p>')+'<details class="r5-fold"><summary>문항 분류 근거</summary><p>'+esc(reviewNames[m?.review_status]||'분류 검토 중')+' · '+esc(m?.review_note||'추가 검토 필요')+'</p></details>';
 }
 function renderReasonStats(){
  document.querySelectorAll('#r5Report .learn-reason-editor').forEach(editor=>{const d=meta.questions[editor.dataset.key],code=editor.querySelector('select').value;editor.querySelector('.r5-tip').textContent=S.studyMethod(d?.type_id,code,d?.analysis_eligible).tip;});
@@ -1933,7 +2097,7 @@ async function showLearningAnalysis(data){
  latest=data;historyView=false;$('#app').classList.add('hidden');$('#analysis').classList.remove('hidden');$('#analysisReview').disabled=false;mountResults();
  try{await ensureMeta();drawAnalysis(data);}catch(e){
   R5.evidence=null;R5.identity=null;for(const id of ['summary','questions','study'])$('#r5Panel-'+id).innerHTML='';
-  $('#r5Hero').innerHTML='<div class="r5-score"><div><span class="r5-muted">채점 결과</span><b class="r5-number">'+esc(data.percent)+'<small>%</small></b><p>정답 '+esc(data.correct_count)+' / '+esc(data.total_count)+' · 미응답 '+esc(data.unanswered_count)+'</p></div></div>';
+  $('#r5Hero').innerHTML='<div class="r5-surface r8-analysis-fallback"><b>채점은 완료되었어요.</b><span>상세 분석을 불러오지 못했습니다. 잠시 후 다시 확인해 주세요.</span></div>';
   notice('채점은 완료되었습니다. 분석 정보를 불러오지 못했습니다. '+e.message);
  }
 }

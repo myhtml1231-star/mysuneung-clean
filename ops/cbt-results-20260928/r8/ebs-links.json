@@ -1,0 +1,1641 @@
+{
+  "version": "2026-09-28",
+  "coverage": [
+    "2026-06",
+    "2026-09",
+    "2026-11",
+    "2027-06",
+    "2027-09"
+  ],
+  "questions": {
+    "2026-11-common-01": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "278-280쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113160458619.png",
+          "label": "EBS 수능특강 독서 278~280쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-02": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "278-280쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113160458619.png",
+          "label": "EBS 수능특강 독서 278~280쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-03": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "278-280쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113160458619.png",
+          "label": "EBS 수능특강 독서 278~280쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-05": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "244-248, 267-271쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113160812914.png",
+          "label": "EBS 수능특강 독서 244~248쪽 지문"
+        },
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113161954173.png",
+          "label": "EBS 수능특강 독서 267~271쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-06": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "244-248, 267-271쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113160812914.png",
+          "label": "EBS 수능특강 독서 244~248쪽 지문"
+        },
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113161954173.png",
+          "label": "EBS 수능특강 독서 267~271쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-08": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "244-248, 267-271쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113160812914.png",
+          "label": "EBS 수능특강 독서 244~248쪽 지문"
+        },
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113161954173.png",
+          "label": "EBS 수능특강 독서 267~271쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-10": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "186-188쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162208697.png",
+          "label": "EBS 수능특강 독서 186~188쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-11": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "186-188쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162208697.png",
+          "label": "EBS 수능특강 독서 186~188쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-12": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "186-188쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162208697.png",
+          "label": "EBS 수능특강 독서 186~188쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-14": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "98-101쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162352145.png",
+          "label": "EBS 수능특강 독서 98~101쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-16": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "98-101쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162352145.png",
+          "label": "EBS 수능특강 독서 98~101쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-17": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "98-101쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162352145.png",
+          "label": "EBS 수능특강 독서 98~101쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-18": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "141-145쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162621371.png",
+          "label": "EBS 수능특강 문학 141~145쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-19": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "141-145쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162621371.png",
+          "label": "EBS 수능특강 문학 141~145쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-20": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "141-145쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162621371.png",
+          "label": "EBS 수능특강 문학 141~145쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-21": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "141-145쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162621371.png",
+          "label": "EBS 수능특강 문학 141~145쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-22": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "272-276쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162749382.png",
+          "label": "EBS 수능특강 문학 272~276쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-23": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "272-276쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162749382.png",
+          "label": "EBS 수능특강 문학 272~276쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-25": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "272-276쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113162749382.png",
+          "label": "EBS 수능특강 문학 272~276쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-31": {
+      "book": "2026 수능완성 국어영역 독서·문학·화법과 작문(언어와 매체)",
+      "location": "60-63쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113163542904.png",
+          "label": "EBS 수능완성 독서·문학·화법과 작문(언어와 매체) 60~63쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-32": {
+      "book": "2026 수능완성 국어영역 독서·문학·화법과 작문(언어와 매체)",
+      "location": "60-63쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113163542904.png",
+          "label": "EBS 수능완성 독서·문학·화법과 작문(언어와 매체) 60~63쪽 지문"
+        }
+      ]
+    },
+    "2026-11-common-34": {
+      "book": "2026 수능완성 국어영역 독서·문학·화법과 작문(언어와 매체)",
+      "location": "60-63쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20251113163542904.png",
+          "label": "EBS 수능완성 독서·문학·화법과 작문(언어와 매체) 60~63쪽 지문"
+        }
+      ]
+    },
+    "2026-11-hw-40": {
+      "book": "2026 수능특강 국어영역 화법과 작문",
+      "location": "98-100쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11
+    },
+    "2026-11-hw-42": {
+      "book": "2026 수능특강 국어영역 화법과 작문",
+      "location": "98-100쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11
+    },
+    "2026-11-lm-36": {
+      "book": "2026 수능완성 국어영역 독서·문학·언어와 매체",
+      "location": "205쪽 / 35번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11
+    },
+    "2026-11-lm-39": {
+      "book": "2026 수능특강 국어영역 언어와 매체",
+      "location": "62쪽 / 3번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127090&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 11
+    },
+    "2027-09-common-04": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "88-92쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_02.png",
+          "label": "EBS 수능특강 독서 88~92쪽 지문"
+        }
+      ]
+    },
+    "2027-09-common-05": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "88-92쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_02.png",
+          "label": "EBS 수능특강 독서 88~92쪽 지문"
+        }
+      ]
+    },
+    "2027-09-common-07": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "88-92쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_02.png",
+          "label": "EBS 수능특강 독서 88~92쪽 지문"
+        }
+      ]
+    },
+    "2027-09-common-08": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "88-92쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_02.png",
+          "label": "EBS 수능특강 독서 88~92쪽 지문"
+        }
+      ]
+    },
+    "2027-09-common-10": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "17-19쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_04.png",
+          "label": "EBS 수능특강 독서 17~19쪽 지문"
+        }
+      ]
+    },
+    "2027-09-common-11": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "17-19쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_04.png",
+          "label": "EBS 수능특강 독서 17~19쪽 지문"
+        }
+      ]
+    },
+    "2027-09-common-12": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "17-19쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_04.png",
+          "label": "EBS 수능특강 독서 17~19쪽 지문"
+        }
+      ]
+    },
+    "2027-09-common-14": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "109-113쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-15": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "109-113쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-16": {
+      "book": "2027 수능 특강 국어영역 독서",
+      "location": "109-113쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-18": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "322-325쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-19": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "322-325쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-20": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "322-325쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-21": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "322-325쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-22": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "298-302쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_06.png",
+          "label": "EBS 수능특강 문학 298~302쪽 작품"
+        }
+      ]
+    },
+    "2027-09-common-24": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "298-302쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_06.png",
+          "label": "EBS 수능특강 문학 298~302쪽 작품"
+        }
+      ]
+    },
+    "2027-09-common-27": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "298-302쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-32": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "67-70쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-33": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "67-70쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-common-34": {
+      "book": "2027 수능 특강 국어영역 문학",
+      "location": "67-70쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-hw-35": {
+      "book": "2027 수능 특강 국어영역 화법과 작문",
+      "location": "41-42쪽 / 1번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-hw-42": {
+      "book": "2027 수능 완성 국어영역 독서·문학·화법과 작문",
+      "location": "100-102쪽 / 3번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-hw-45": {
+      "book": "2027 수능 완성 국어영역 독서·문학·화법과 작문",
+      "location": "264쪽 / 44번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2026/0902_fullservice/images/cAnaly/kor/01_08.png",
+          "label": "EBS 수능완성 독서·문학·화법과 작문 264쪽 44번"
+        }
+      ]
+    },
+    "2027-09-lm-36": {
+      "book": "2027 수능 특강 국어영역 언어와 매체",
+      "location": "71쪽 / 6번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-lm-38": {
+      "book": "2027 수능 특강 국어영역 언어와 매체",
+      "location": "13쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9
+    },
+    "2027-09-lm-39": {
+      "book": "2027 수능 특강 국어영역 언어와 매체",
+      "location": "25-27쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127095&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 9,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260902164455068.png",
+          "label": "EBS 수능특강 언어와 매체 25~27쪽 개념"
+        }
+      ]
+    },
+    "2027-06-common-01": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "9-10쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604173906898.jpg",
+          "label": "EBS 수능특강 독서 9~10쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-02": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "9-10쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604173906898.jpg",
+          "label": "EBS 수능특강 독서 9~10쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-03": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "9-10쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604173906898.jpg",
+          "label": "EBS 수능특강 독서 9~10쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-04": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "38-40쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174350677.jpg",
+          "label": "EBS 수능특강 독서 38~40쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-07": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "38-40쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174350677.jpg",
+          "label": "EBS 수능특강 독서 38~40쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-08": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "38-40쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174350677.jpg",
+          "label": "EBS 수능특강 독서 38~40쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-10": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "114-117쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174736707.jpg",
+          "label": "EBS 수능특강 독서 114~117쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-11": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "114-117쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174736707.jpg",
+          "label": "EBS 수능특강 독서 114~117쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-12": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "114-117쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174736707.jpg",
+          "label": "EBS 수능특강 독서 114~117쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-14": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "31-33쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174742571.jpg",
+          "label": "EBS 수능특강 독서 31~33쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-15": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "31-33쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174742571.jpg",
+          "label": "EBS 수능특강 독서 31~33쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-16": {
+      "book": "2027 수능특강 국어영역 독서",
+      "location": "31-33쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174742571.jpg",
+          "label": "EBS 수능특강 독서 31~33쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-18": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "177-180쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174749009.jpg",
+          "label": "EBS 수능특강 문학 177~180쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-19": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "177-180쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174749009.jpg",
+          "label": "EBS 수능특강 문학 177~180쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-20": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "177-180쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174749009.jpg",
+          "label": "EBS 수능특강 문학 177~180쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-21": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "177-180쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174749009.jpg",
+          "label": "EBS 수능특강 문학 177~180쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-22": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "106-108쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174757006.jpg",
+          "label": "EBS 수능특강 문학 106~108쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-24": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "106-108쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174757006.jpg",
+          "label": "EBS 수능특강 문학 106~108쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-26": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "106-108쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174757006.jpg",
+          "label": "EBS 수능특강 문학 106~108쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-27": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "106-108쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604174757006.jpg",
+          "label": "EBS 수능특강 문학 106~108쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-32": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "48-50, 55-57쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604175440741.jpg",
+          "label": "EBS 수능특강 문학 48~50쪽 지문"
+        }
+      ]
+    },
+    "2027-06-common-34": {
+      "book": "2027 수능특강 국어영역 문학",
+      "location": "48-50, 55-57쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://lwdw.ebsi.co.kr/UpDown/upload_files/20260604175440741.jpg",
+          "label": "EBS 수능특강 문학 48~50쪽 지문"
+        }
+      ]
+    },
+    "2027-06-hw-36": {
+      "book": "2027 수능특강 국어영역 화법과 작문",
+      "location": "49쪽 / 2번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6
+    },
+    "2027-06-hw-45": {
+      "book": "2027 수능특강 국어영역 화법과 작문",
+      "location": "113쪽 / 6번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6
+    },
+    "2027-06-lm-35": {
+      "book": "2027 수능특강 국어영역 언어와 매체",
+      "location": "95쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6
+    },
+    "2027-06-lm-36": {
+      "book": "2027 수능특강 국어영역 언어와 매체",
+      "location": "95쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127091&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2027,
+      "exam_month": 6
+    },
+    "2026-09-common-03": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "47-48쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-04": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "49-51쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-05": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "49-51쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-06": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "49-51쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-07": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "49-51쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-08": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "49-51쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-14": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "213-215쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-15": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "213-215쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-18": {
+      "book": "2026 수능완성 국어영역 독서·문학·화법과 작문",
+      "location": "253-254쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-19": {
+      "book": "2026 수능완성 국어영역 독서·문학·화법과 작문",
+      "location": "253-254쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-20": {
+      "book": "2026 수능완성 국어영역 독서·문학·화법과 작문",
+      "location": "253-254쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-21": {
+      "book": "2026 수능완성 국어영역 독서·문학·화법과 작문",
+      "location": "253-254쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-22": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "267-271쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-24": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "267-271쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-26": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "267-271쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-27": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "49-50. 255-261쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-28": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "49-50. 255-261쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-29": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "49-50. 255-261쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-30": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "49-50. 255-261쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-common-34": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "155-158쪽 / 4번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-hw-36": {
+      "book": "2026 수능특강 국어영역 화법과 작문",
+      "location": "159-160쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-hw-37": {
+      "book": "2026 수능특강 국어영역 화법과 작문",
+      "location": "159-160쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-hw-45": {
+      "book": "2026 수능특강 국어영역 화법과 작문",
+      "location": "21쪽 / 4번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-lm-38": {
+      "book": "2026 수능완성 국어영역 독서·문학·언어와 매체",
+      "location": "206쪽 / 37번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-lm-39": {
+      "book": "2026 수능완성 국어영역 독서·문학·언어와 매체",
+      "location": "177-178쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-09-lm-42": {
+      "book": "2026 수능특강 언어와 매체",
+      "location": "163쪽 / 3번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127089&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 9
+    },
+    "2026-06-common-04": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "131-134쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img02.jpg",
+          "label": "EBS 수능특강 독서 131~134쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-06": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "131-134쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img02.jpg",
+          "label": "EBS 수능특강 독서 131~134쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-07": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "131-134쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img02.jpg",
+          "label": "EBS 수능특강 독서 131~134쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-08": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "131-134쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img02.jpg",
+          "label": "EBS 수능특강 독서 131~134쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-10": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "249-252쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img04.jpg",
+          "label": "EBS 수능특강 독서 249~252쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-11": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "249-252쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img04.jpg",
+          "label": "EBS 수능특강 독서 249~252쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-12": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "249-252쪽 / 4번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img04.jpg",
+          "label": "EBS 수능특강 독서 249~252쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-14": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "73-76쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img06.jpg",
+          "label": "EBS 수능특강 독서 73~76쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-15": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "73-76쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img06.jpg",
+          "label": "EBS 수능특강 독서 73~76쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-16": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "73-76쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img06.jpg",
+          "label": "EBS 수능특강 독서 73~76쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-17": {
+      "book": "2026 수능특강 국어영역 독서",
+      "location": "73-76쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img06.jpg",
+          "label": "EBS 수능특강 독서 73~76쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-22": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "64-66쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img08.jpg",
+          "label": "EBS 수능특강 문학 64~66쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-23": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "64-66쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img08.jpg",
+          "label": "EBS 수능특강 문학 64~66쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-26": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "64-66쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img08.jpg",
+          "label": "EBS 수능특강 문학 64~66쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-27": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "117-120쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img10.jpg",
+          "label": "EBS 수능특강 문학 117~120쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-28": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "117-120쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img10.jpg",
+          "label": "EBS 수능특강 문학 117~120쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-29": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "117-120쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img10.jpg",
+          "label": "EBS 수능특강 문학 117~120쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-30": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "117-120쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img10.jpg",
+          "label": "EBS 수능특강 문학 117~120쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-31": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "92-94쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img12.jpg",
+          "label": "EBS 수능특강 문학 92~94쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-33": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "92-94쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img12.jpg",
+          "label": "EBS 수능특강 문학 92~94쪽 지문"
+        }
+      ]
+    },
+    "2026-06-common-34": {
+      "book": "2026 수능특강 국어영역 문학",
+      "location": "92-94쪽",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6,
+      "previews": [
+        {
+          "url": "https://www.ebsi.co.kr/ebs/public_hsp/html/html_working/hakpyeongFull/2025/0604_fullservice/images/cAnaly/kor/img12.jpg",
+          "label": "EBS 수능특강 문학 92~94쪽 지문"
+        }
+      ]
+    },
+    "2026-06-hw-38": {
+      "book": "2026 수능특강 국어영역 화법과 작문",
+      "location": "194-199쪽 / 1번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6
+    },
+    "2026-06-hw-40": {
+      "book": "2026 수능특강 국어영역 화법과 작문",
+      "location": "194-199쪽 / 5번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6
+    },
+    "2026-06-lm-36": {
+      "book": "2026 수능특강 국어영역 언어와 매체",
+      "location": "60쪽 / 5번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6
+    },
+    "2026-06-lm-38": {
+      "book": "2026 수능특강 국어영역 언어와 매체",
+      "location": "69쪽 / 3번",
+      "relation": "공식 연계",
+      "source_url": "https://www.ebsi.co.kr/ebs/ent/enta/retrieveEntAnlyStrdDataVw.ebs?bbsCd=B114&datNo=127087&cookieGradeVal=high3#content-1",
+      "verified_at": "2026-09-28",
+      "exam_year": 2026,
+      "exam_month": 6
+    }
+  }
+}
