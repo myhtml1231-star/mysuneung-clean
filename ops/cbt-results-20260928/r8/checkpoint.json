@@ -1,7 +1,7 @@
 {
   "stage": 6,
   "status": "deployed_live_verified",
-  "updated_at": "2026-09-28T15:05:08.074373+00:00",
+  "updated_at": "2026-09-28T15:08:00.063895+00:00",
   "source": "/Users/shbj/Downloads/mysuneung-cbt-worker/work-20260928-results-r5-1",
   "working": "/Users/shbj/Downloads/mysuneung-cbt-worker/work-20260928-results-r8",
   "completed": [
@@ -34,11 +34,11 @@
     "live EBS study check passed",
     "live full 45-question score/review/transfer flow passed",
     "visitor-v2 preserved in CBT HTML",
-    "universitypredict service normalized to systemd and verified"
+    "universitypredict service normalized to systemd and verified",
+    "git main synced at c9a36dcc743c7d7ca1bd1d003c9533e6068f7ee4"
   ],
-  "next": [
-    "sync git"
-  ],
+  "next": [],
   "candidate_sha256": "6666df0423931d908770a5a81c33e3ffbe50e1ef80928be3c32b4a00d4f04b95",
-  "live_sha256": "6666df0423931d908770a5a81c33e3ffbe50e1ef80928be3c32b4a00d4f04b95"
+  "live_sha256": "6666df0423931d908770a5a81c33e3ffbe50e1ef80928be3c32b4a00d4f04b95",
+  "git_commit": "c9a36dcc743c7d7ca1bd1d003c9533e6068f7ee4"
 }
