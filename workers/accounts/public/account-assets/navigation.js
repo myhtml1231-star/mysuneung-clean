@@ -10,14 +10,9 @@ if(wrapper){wrapper.style.cssText='list-style:none;display:inline-flex;align-ite
 const sh=host.attachShadow({mode:'open'});
 
 if(publicNav){
-  sh.innerHTML='<style>:host{display:inline-flex;align-items:center;list-style:none;flex:none}a{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:7px 12px;border:1px solid #e5e7eb;border-radius:9px;background:#fff;color:#374151;text-decoration:none;font:700 14px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;white-space:nowrap;box-sizing:border-box}a:hover{background:#fff9ec;border-color:#f0d698;color:#a75d08}a:focus-visible{outline:3px solid #f7d98b;outline-offset:2px}@media(max-width:640px){a{font-size:13px;padding:7px 10px}}</style><a href="/auth"><span>로그인</span></a>';
+  wrapper.className='nav-item account-nav-item';
+  sh.innerHTML='<style>:host{display:inline-flex;align-items:center;list-style:none;flex:none}a{display:inline-flex;align-items:center;justify-content:center;padding:0;border:0;background:transparent;color:#111827;text-decoration:none;font:700 15px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;white-space:nowrap;box-sizing:border-box}a:hover{color:#b06a08}a:focus-visible{outline:3px solid #f7d98b;outline-offset:2px}@media(max-width:640px){a{font-size:14px}}</style><a href="/auth"><span>로그인</span></a>';
   publicNav.append(wrapper);
-  // Account UI must not participate in the search / D-day flex group.
-  // If that group wraps on desktop, keep the original search + D-day aligned right.
-  const style=document.createElement('style');
-  style.dataset.msnHeaderFix='';
-  style.textContent='@media (min-width:1025px){.header-bar>.header-actions{margin-left:auto!important;justify-content:flex-end!important}}';
-  document.head.append(style);
 }else{
   sh.innerHTML='<style>:host{display:inline-flex;flex:none;max-width:100%;vertical-align:middle}a{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:#fff;border:1px solid #dfe4eb;color:#334155;border-radius:9px;font:700 12px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;padding:8px 12px;white-space:nowrap}a:hover{background:#f8fafc}a:focus-visible{outline:3px solid #b9d6ff;outline-offset:2px}</style><a href="/auth"><span>로그인</span></a>';
   if(document.querySelector('#app .bar')){
