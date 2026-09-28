@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/account-assets/account.css?v=accounts-ui-20260928-policy">
+<title>개인정보 안내 · 수능기출</title>
+</head>
+<body class="policy-body">
+<header class="policy-topbar">
+  <a class="brand" href="/my"><span class="brand-mark">M</span><span>수능기출 <small>MY STUDY</small></span></a>
+  <a class="quiet-link" href="/auth">로그인 화면</a>
+</header>
+<main class="policy-page">
+  <section class="policy-hero">
+    <span class="policy-kicker">PRIVACY</span>
+    <h1>개인정보 안내</h1>
+    <p class="policy-version">버전 2026-09-27.accounts.v1 · 적용일 2026년 9월 27일</p>
+    <div class="policy-summary"><b>어떤 정보가 왜 저장되는지 먼저 알려드려요.</b><span>기출 열람과 비로그인 CBT는 계정 없이도 이용할 수 있고, 계정 기능에 필요한 정보만 동기화해요.</span></div>
+  </section>
+
+  <div class="policy-grid privacy-grid">
+    <section class="policy-card"><div class="policy-number">1</div><div><h2>왜 처리하나요?</h2><p>기출 보관함, CBT 풀이·오답 메모·진행 상태·필기, 관심 대학과 입시 메모를 같은 계정으로 여러 기기에서 이어 보기 위해 사용해요.</p><ul><li>현재 계정 가입은 만 14세 이상으로 제한해요.</li><li>로그인하지 않아도 기출 열람과 비로그인 CBT는 사용할 수 있어요.</li></ul></div></section>
+    <section class="policy-card"><div class="policy-number">2</div><div><h2>어떤 정보를 저장하나요?</h2><p>계정 식별 정보와 사용자가 직접 만든 학습 기록을 저장해요.</p><ul><li>로그인 이메일·표시 이름·동의 버전과 시각</li><li>기출 링크·자료명·열어 본 시각</li><li>CBT 답변·채점 결과·오답 이유·메모·필기·진행 상태</li><li>직접 저장한 대학·학과·전형·출처·입시 메모</li></ul></div></section>
+  </div>
+
+  <section class="privacy-table-card">
+    <h2>정보별 이용 목적</h2>
+    <div class="privacy-table-wrap">
+      <table>
+        <thead><tr><th>정보</th><th>어디에 쓰나요?</th></tr></thead>
+        <tbody>
+          <tr><td>Firebase 사용자 식별자, 이메일, 표시 이름, 동의·계정 시각</td><td>계정 식별과 동기화에 사용해요. 비밀번호 인증은 Firebase Authentication이 처리하며 회원 DB에는 비밀번호를 저장하지 않아요.</td></tr>
+          <tr><td>기출 링크·자료명·열람 시각</td><td>기출 보관함에서 다시 열기 위해 사용해요. 개인 기기의 파일 자체를 업로드하지 않아요.</td></tr>
+          <tr><td>CBT 답변·채점·오답 메모·필기·진행 상태</td><td>이어 풀기와 복습에 사용하고, 개별 기록이나 계정을 삭제할 때까지 보관해요.</td></tr>
+          <tr><td>대학·학과·전형·출처·입시 메모</td><td>관심 대학 기록을 기기 사이에 동기화해요. 외부 대학 예측 결과 전체를 자동 수집하지 않아요.</td></tr>
+          <tr><td>세션 해시·브라우저/OS 범주·생성/만료 시각</td><td>로그인 유지와 기기 로그아웃에 사용해요. 기본 8시간, 로그인 유지 선택 시 7일이에요.</td></tr>
+          <tr><td>과도한 요청 방지용 임시 해시</td><td>남용 방지를 위해 IP를 비밀 값과 시간 창 단위로 해시하며 원본 IP를 이 테이블에 저장하지 않아요.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="policy-grid">
+    <section class="policy-card"><div class="policy-number">3</div><div><h2>어디에서 처리되나요?</h2><p>로그인 인증은 Google Firebase Authentication, 회원 기록은 Cloudflare D1, 공통 기출 원문은 기존 Cloudflare R2를 사용해요.</p><ul><li>회원 데이터는 공개 R2 경로에 저장하지 않아요.</li><li>Google·Cloudflare 인프라에서 국외 처리가 발생할 수 있어요.</li><li>D1의 지역 선호 설정은 한국 내 저장을 보장하는 설정이 아니에요.</li></ul></div></section>
+    <section class="policy-card"><div class="policy-number">4</div><div><h2>기기에는 무엇이 남나요?</h2><p>계정별 브라우저 저장 공간에 동기화용 사본과 전송 대기 기록을 둘 수 있어요.</p><ul><li>정상 로그아웃하면 해당 계정용 기기 사본을 정리하고 서버 기록은 유지해요.</li><li>공용 PC에서는 로그인 유지를 선택하지 말아 주세요.</li><li>비로그인 기록은 로그인만으로 자동 업로드하지 않고 사용자가 선택해 가져와요.</li></ul></div></section>
+    <section class="policy-card"><div class="policy-number">5</div><div><h2>내 기록을 관리할 수 있나요?</h2><p>내 학습실에서 기록을 열람·수정·내보내기·삭제할 수 있어요.</p><ul><li>기기 간 삭제 전파를 위해 내용 없는 삭제 표시가 잠시 남을 수 있어요.</li><li>계정 삭제 시 다시 본인 확인을 하고 이 사이트의 계정·회원 기록을 삭제해요.</li><li>Google 계정 자체를 삭제하는 기능은 아니에요.</li></ul></div></section>
+    <section class="policy-card"><div class="policy-number">6</div><div><h2>문의와 동의</h2><p>필수 안내에 동의하지 않으면 계정·동기화 기능은 사용할 수 없지만, 비로그인 기능은 계속 이용할 수 있어요.</p><ul><li>타인의 개인정보나 민감한 정보를 메모에 입력하지 말아 주세요.</li><li>계정 문의는 <a href="/질문%20게시판.html">사이트 문의사항</a>으로 전달할 수 있어요.</li><li>universitypredict.com을 연결하면 명시적으로 저장한 관심·비교 목록과 입시 메모만 함께 이용해요.</li></ul></div></section>
+  </div>
+
+  <div class="privacy-provider-links"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase 개인정보·보안 안내 ↗</a><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare 개인정보 안내 ↗</a></div>
+  <div class="policy-actions"><a class="button primary" href="/auth">← 로그인 화면으로</a><a class="button" href="/account/terms">이용약관 보기</a><a class="button" href="/my#settings">계정 설정</a></div>
+</main>
+</body>
+</html>

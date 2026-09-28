@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {sanitize,resetMetadataForTests} from '../src/records.mjs';
+import {makeEnv} from './fixtures.mjs';
+const env=makeEnv();resetMetadataForTests();
+const old={tool:'pen',color:'#112233',size:3,points:[{x:.1,y:.2},{x:.3,y:.4}]};
+const q={...old,surface:'question',question_no:37,anchor:{id:'choice-2',x:.1,y:.2,w:.7,h:.1}};
+const data={exam_id:'test-ink',unit_id:'2023-S-lm-q37-37',strokes:[old,q,{...q,tool:'eraser'}]};
+const out=await sanitize('annotation',data,'test',env);
+assert.deepEqual(out.strokes[0],old);assert.deepEqual(out.strokes[1],q);assert.equal(out.strokes[2].tool,'eraser');
+for(const bad of [{...q,question_no:38},{...q,surface:'foreign'},{...q,anchor:{...q.anchor,id:'<script>'}},{...q,anchor:{...q.anchor,w:0}},{...q,points:[{x:1.1,y:0}]},{...q,anchor:{...q.anchor,x:.8}}])await assert.rejects(()=>sanitize('annotation',{...data,strokes:[bad]},'test',env));
+const again=await sanitize('annotation',JSON.parse(JSON.stringify(out)),'test',env);assert.deepEqual(again,out);
+console.log('PASS question ink: legacy, question binding, anchors, eraser, invalid references, JSON round trip (11 checks)');
+env.DB.raw.close();

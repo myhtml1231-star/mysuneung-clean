@@ -1,0 +1,35 @@
+name = "mysuneung-accounts"
+main = "src/index.mjs"
+compatibility_date = "2026-09-19"
+account_id = "8ca84f021b7a0f52cd48b650a0f5e1e9"
+workers_dev = false
+
+[vars]
+SITE_ORIGIN = "https://mysuneung.com"
+FIREBASE_PROJECT_ID = "mysuneung"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+html_handling = "none"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mysuneung-accounts"
+database_id = "c134acb2-e4a6-4887-bd6f-f8bba724afe9"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "CBT"
+bucket_name = "mysuneung-cbt"
+
+[[routes]]
+pattern = "mysuneung.com/*"
+zone_name = "mysuneung.com"
+[[routes]]
+pattern = "www.mysuneung.com/*"
+zone_name = "mysuneung.com"
+
+[triggers]
+crons = ["17 19 * * *"]

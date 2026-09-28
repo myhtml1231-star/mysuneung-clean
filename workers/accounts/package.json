@@ -1,0 +1,24 @@
+{
+  "name": "mysuneung-account-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "npm run build && node tests/security-test.mjs && node tests/api-test.mjs && node tests/bridge-test.mjs && node tests/entry-test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "0.28.2",
+    "firebase": "12.19.0",
+    "jose": "6.2.12",
+    "miniflare": "5.20260925.0-alpha"
+  },
+  "private": true,
+  "type": "module"
+}

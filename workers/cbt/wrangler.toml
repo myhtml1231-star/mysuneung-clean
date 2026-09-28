@@ -1,0 +1,33 @@
+name = "mysuneung-cbt-api"
+main = "src/index.js"
+compatibility_date = "2026-09-19"
+account_id = "8ca84f021b7a0f52cd48b650a0f5e1e9"
+workers_dev = false
+
+[[r2_buckets]]
+binding = "CBT"
+bucket_name = "mysuneung-cbt"
+
+[[routes]]
+pattern = "mysuneung.com/api/cbt/*"
+zone_name = "mysuneung.com"
+
+[[routes]]
+pattern = "mysuneung.com/cbt-data/*"
+zone_name = "mysuneung.com"
+
+[[routes]]
+pattern = "mysuneung.com/mixed-cbt*"
+zone_name = "mysuneung.com"
+
+[[routes]]
+pattern = "www.mysuneung.com/api/cbt/*"
+zone_name = "mysuneung.com"
+
+[[routes]]
+pattern = "www.mysuneung.com/cbt-data/*"
+zone_name = "mysuneung.com"
+
+[[routes]]
+pattern = "www.mysuneung.com/mixed-cbt*"
+zone_name = "mysuneung.com"
