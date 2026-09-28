@@ -1,0 +1,15 @@
+{
+  "passed": 6,
+  "tests": [
+    "overview metrics and seven views render",
+    "real login metric renders",
+    "account list and detail render",
+    "error reports render",
+    "390px no document overflow",
+    "no page errors"
+  ],
+  "shots": [
+    "admin-fullservice-1440.png",
+    "admin-fullservice-390.png"
+  ]
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>운영 관리 · 수능기출</title>
+<link rel="stylesheet" href="/account-assets/admin.css?v=admin-20260929-v2">
+<script defer src="/account-assets/store.js?v=accounts-ui-20260927-r5"></script>
+<script defer src="/account-assets/admin.js?v=admin-20260929-v2"></script>
+</head>
+<body>
+<div class="admin-shell">
+  <aside class="admin-side">
+    <a class="admin-brand" href="/"><span class="admin-mark">M</span><span>수능기출<small>ADMIN</small></span></a>
+    <nav class="admin-nav" aria-label="관리 메뉴">
+      <button class="active" data-view="overview"><span>⌂</span>운영 개요</button>
+      <button data-view="accounts"><span>◎</span>회원</button>
+      <button data-view="learning"><span>↗</span>학습 분석</button>
+      <button data-view="inquiries"><span>?</span>문의</button>
+      <button data-view="reports"><span>!</span>오류 신고</button>
+      <button data-view="chat"><span>♧</span>수험 채팅</button>
+      <button data-view="audit"><span>≡</span>운영 로그</button>
+    </nav>
+    <div class="admin-side-foot">
+      <span id="communityState" class="status-dot"><i></i><span>커뮤니티 연결 확인 중</span></span>
+      <button id="communityReconnect" class="side-link hidden" type="button">커뮤니티 재인증</button>
+      <a href="/my">내 학습실</a>
+    </div>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-top">
+      <div><h1 id="viewTitle">운영 개요</h1><p id="viewDesc">가입·로그인·학습·커뮤니티 상태를 한눈에 확인합니다.</p></div>
+      <div class="admin-user"><span id="adminName"></span><button id="refreshAll" type="button">새로고침</button></div>
+    </header>
+
+    <div id="adminGate" class="gate">
+      <div class="gate-card"><div class="spinner"></div><h2>관리자 권한 확인 중</h2><p>로그인 상태와 운영 권한을 확인하고 있습니다.</p><div id="gateAction"></div></div>
+    </div>
+
+    <div id="adminContent" class="hidden">
+      <section class="view active" data-panel="overview">
+        <div class="metric-grid metric-six">
+          <article class="metric"><span>가입 회원</span><strong id="metricAccounts">—</strong><small id="metricDisabled"></small></article>
+          <article class="metric"><span>오늘 로그인</span><strong id="metricLoginsToday">—</strong><small id="metricLoginUsersToday">실제 로그인 이벤트</small></article>
+          <article class="metric"><span>7일 로그인 회원</span><strong id="metricLoginUsers7">—</strong><small>중복 제외</small></article>
+          <article class="metric"><span>현재 로그인 기기</span><strong id="metricSessions">—</strong><small>만료 전 세션</small></article>
+          <article class="metric"><span>오늘 방문자</span><strong id="metricVisitorsToday">—</strong><small>사이트 전체</small></article>
+          <article class="metric"><span>최근 7일 CBT</span><strong id="metricAttempts7">—</strong><small id="metricAttempts">전체 —회</small></article>
+        </div>
+
+        <section class="panel">
+          <div class="panel-head"><div><h2>14일 활동</h2><p id="trackingHint">로그인 이벤트와 방문·가입 흐름</p></div></div>
+          <div id="activityChart" class="activity-chart"></div>
+          <div class="activity-legend"><span><i class="login"></i>로그인</span><span><i class="visitor"></i>방문자</span><span><i class="signup"></i>가입</span></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head"><div><h2>먼저 볼 취약유형</h2><p>서로 다른 문항의 첫 응답 기준 · 근거 5문항 이상</p></div><button data-go="learning">전체 보기</button></div>
+          <div id="overviewWeakness" class="weak-list"></div>
+        </section>
+
+        <div class="two-col">
+          <section class="panel compact"><div class="panel-head"><div><h2>답변 대기 문의</h2><p>기존 질문 게시판 포함</p></div><button data-go="inquiries">관리</button></div><div id="overviewInquiry" class="mini-list"></div></section>
+          <section class="panel compact"><div class="panel-head"><div><h2>최근 수험 채팅</h2><p>기존 채팅방 메시지</p></div><button data-go="chat">관리</button></div><div id="overviewChat" class="mini-list"></div></section>
+        </div>
+      </section>
+
+      <section class="view" data-panel="accounts">
+        <div class="toolbar"><label class="search"><span>⌕</span><input id="accountSearch" type="search" placeholder="이름 또는 이메일 검색"></label><select id="accountStatus"><option value="all">전체 회원</option><option value="active">이용 중</option><option value="disabled">이용 정지</option></select></div>
+        <section class="panel table-panel">
+          <div class="panel-head"><div><h2>회원 계정</h2><p id="accountCount">—</p></div></div>
+          <div class="table-wrap"><table><thead><tr><th>회원</th><th>가입</th><th>최근 로그인</th><th>로그인</th><th>CBT</th><th>기기</th><th>상태</th></tr></thead><tbody id="accountRows"></tbody></table></div>
+          <div class="pager"><button id="accountsPrev">이전</button><span id="accountsPage"></span><button id="accountsNext">다음</button></div>
+        </section>
+      </section>
+
+      <section class="view" data-panel="learning">
+        <section class="panel">
+          <div class="panel-head"><div><h2>유형별 취약 신호</h2><p>반복 풀이를 제외한 첫 응답 기준입니다.</p></div></div>
+          <div id="learningTypes" class="weak-list expanded"></div>
+        </section>
+        <section class="panel">
+          <div class="panel-head"><div><h2>회원별 학습 현황</h2><p>근거가 충분한 취약유형만 표시합니다.</p></div></div>
+          <div class="table-wrap"><table><thead><tr><th>회원</th><th>CBT</th><th>서로 다른 문항</th><th>최근 정확도</th><th>우선 취약유형</th><th>최근 활동</th></tr></thead><tbody id="learningUsers"></tbody></table></div>
+        </section>
+      </section>
+
+      <section class="view" data-panel="inquiries">
+        <div class="toolbar"><label class="search"><span>⌕</span><input id="inquirySearch" type="search" placeholder="제목·내용·작성자 검색"></label><select id="inquiryFilter"><option value="all">전체 문의</option><option value="pending">답변 대기</option><option value="answered">답변 완료</option></select></div>
+        <section class="panel"><div class="panel-head"><div><h2>문의사항</h2><p>기존 질문 게시판 Firestore 데이터 · 비공개 비밀번호는 관리자 화면에 표시하지 않습니다.</p></div><span id="inquiryCount" class="count-badge">—</span></div><div id="inquiryList" class="community-list"></div></section>
+      </section>
+
+      <section class="view" data-panel="reports">
+        <div class="toolbar"><label class="search"><span>⌕</span><input id="reportSearch" type="search" placeholder="닉네임·내용·페이지·메모 검색"></label><select id="reportFilter"><option value="">전체 신고</option><option value="pending">대기</option><option value="in_progress">처리중</option><option value="resolved">해결</option></select></div>
+        <section class="panel"><div class="panel-head"><div><h2>오류 신고</h2><p>기존 관리자 페이지에서 관리하던 오류 신고</p></div><span id="reportCount" class="count-badge">—</span></div><div id="reportList" class="community-list"></div></section>
+      </section>
+
+      <section class="view" data-panel="chat">
+        <div class="toolbar"><label class="search"><span>⌕</span><input id="chatSearch" type="search" placeholder="작성자·메시지 검색"></label></div>
+        <section class="panel"><div class="panel-head"><div><h2>수험 채팅</h2><p>기존 수험채팅방 최근 100개 메시지</p></div><span id="chatCount" class="count-badge">—</span></div><div id="chatList" class="community-list"></div></section>
+      </section>
+
+      <section class="view" data-panel="audit">
+        <section class="panel"><div class="panel-head"><div><h2>운영 로그</h2><p>회원 상태·세션·문의·채팅·오류 신고 변경 기록</p></div></div><div id="auditList" class="audit-list"></div></section>
+      </section>
+    </div>
+  </main>
+</div>
+
+<dialog id="accountDialog" class="detail-dialog"><form method="dialog"><button class="dialog-close" aria-label="닫기">×</button></form><div id="accountDetail"></div></dialog>
+<dialog id="contentDialog" class="detail-dialog"><form method="dialog"><button class="dialog-close" aria-label="닫기">×</button></form><div id="contentDetail"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

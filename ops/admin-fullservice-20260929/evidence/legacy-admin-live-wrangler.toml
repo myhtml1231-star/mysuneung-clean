@@ -1,0 +1,24 @@
+name = "mysuneung-admin"
+main = "src/index.js"
+compatibility_date = "2026-09-19"
+account_id = "8ca84f021b7a0f52cd48b650a0f5e1e9"
+workers_dev = false
+
+[[rules]]
+type = "Text"
+globs = ["**/*.html"]
+fallthrough = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mysuneung-admin"
+database_id = "b2412d72-836b-4849-97b5-210c1a11b8f7"
+migrations_dir = "migrations"
+
+[[routes]]
+pattern = "mysuneung.com/api/report*"
+zone_name = "mysuneung.com"
+
+[[routes]]
+pattern = "www.mysuneung.com/api/report*"
+zone_name = "mysuneung.com"

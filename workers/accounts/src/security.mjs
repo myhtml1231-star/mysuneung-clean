@@ -26,18 +26,21 @@ export async function readBody(req,max=512*1024){
  try{const out=new Uint8Array(size);let n=0;for(const x of chunks){out.set(x,n);n+=x.length;}const j=JSON.parse(new TextDecoder().decode(out));if(!j||typeof j!=='object'||Array.isArray(j))throw Error();return j;}catch(e){if(e instanceof HttpError)throw e;fail(400,'BAD_JSON','요청 형식을 확인해 주세요.');}
 }
 const googleKeys=createRemoteJWKSet(new URL('https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com'),{timeoutDuration:8000,cooldownDuration:30000,cacheMaxAge:3600000});
-export async function verifyIdentity(token,env,keyset=googleKeys){
+async function identityClaims(token,env,keyset,recent){
  if(typeof token!=='string'||token.length>12000)fail(401,'LOGIN_REQUIRED','다시 로그인해 주세요.');
  let p;
  try{({payload:p}=await jwtVerify(token,keyset,{algorithms:['RS256'],audience:env.FIREBASE_PROJECT_ID||'mysuneung',issuer:'https://securetoken.google.com/'+(env.FIREBASE_PROJECT_ID||'mysuneung'),clockTolerance:5,requiredClaims:['exp','iat','auth_time','sub','aud','iss']}));}
  catch{fail(401,'INVALID_IDENTITY','로그인 정보를 확인하지 못했습니다. 다시 로그인해 주세요.');}
  const now=Math.floor(Date.now()/1000);
- if(typeof p.sub!=='string'||!p.sub||p.sub.length>128||typeof p.auth_time!=='number'||p.auth_time>now+5||now-p.auth_time>300||typeof p.iat!=='number'||p.iat>now+5)fail(401,'RECENT_LOGIN_REQUIRED','보안을 위해 다시 로그인해 주세요.');
+ if(typeof p.sub!=='string'||!p.sub||p.sub.length>128||typeof p.auth_time!=='number'||p.auth_time>now+5||typeof p.iat!=='number'||p.iat>now+5)fail(401,'INVALID_IDENTITY','로그인 정보를 확인하지 못했습니다. 다시 로그인해 주세요.');
+ if(recent&&now-p.auth_time>300)fail(401,'RECENT_LOGIN_REQUIRED','보안을 위해 다시 로그인해 주세요.');
  const provider=p.firebase?.sign_in_provider;
  if(!['google.com','password'].includes(provider)||typeof p.email!=='string'||p.email.length>254)fail(403,'PROVIDER_NOT_ALLOWED','지원하는 로그인 방법을 선택해 주세요.');
  if(p.email_verified!==true)fail(403,'EMAIL_NOT_VERIFIED','이메일을 인증한 뒤 다시 로그인해 주세요.');
  return {uid:p.sub,email:p.email,name:typeof p.name==='string'?p.name.slice(0,40):'수험생',auth_time:p.auth_time,provider};
 }
+export const verifyIdentity=(token,env,keyset=googleKeys)=>identityClaims(token,env,keyset,true);
+export const verifyIdentityAccess=(token,env,keyset=googleKeys)=>identityClaims(token,env,keyset,false);
 export function privateJSON(data,status=200,extra={}){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store, private, max-age=0','Pragma':'no-cache','Vary':'Cookie','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer',...extra}});}
 export async function sessionFor(req,env,write=false){
  const token=cookie(req,SESSION_COOKIE);if(!token||!/^[-\w]{43}$/.test(token))fail(401,'LOGIN_REQUIRED','로그인이 필요합니다.');

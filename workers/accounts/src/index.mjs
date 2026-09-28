@@ -1,10 +1,10 @@
 import {authorizeBridge,exchangeBridge} from './bridge.mjs';
-import { HttpError,fail,randomToken,hash,cookie,cookieHeader,SESSION_COOKIE,LOGIN_COOKIE,CONSENT_VERSION,sessionCSRF,originGuard,readBody,verifyIdentity,privateJSON,sessionFor,rateLimit } from './security.mjs';
+import { HttpError,fail,randomToken,hash,cookie,cookieHeader,SESSION_COOKIE,LOGIN_COOKIE,CONSENT_VERSION,sessionCSRF,originGuard,readBody,verifyIdentity,verifyIdentityAccess,privateJSON,sessionFor,rateLimit } from './security.mjs';
 import { KINDS,text,integer,applyOperations,pullRecords,pack,reconstruct } from './records.mjs';
 import firebaseConfig from '../public/account-assets/firebase-config.json';
 import {handleVisit} from './visits.mjs';
 import {handleAdminRoute} from './admin.mjs';
-export const VERSION='2026-09-27.accounts.v1.2';
+export const VERSION='2026-09-29.accounts.v1.3';
 export const CLIENT_REVISION='accounts-ui-20260927-r5';
 const publicUser=s=>({id:s.account_id||s.id,name:s.display_name,email:s.email,consent_version:s.consent_version,provider:s.auth_provider||'google.com'});
 const pageHeaders={
@@ -55,7 +55,9 @@ export function createHandler(deps={}){
      const token=randomToken(),h=await hash(token),life=body.remember===true?7*86400000:8*3600000,now=Date.now(),old=cookie(request,SESSION_COOKIE);
      const statements=[env.DB.prepare('DELETE FROM account_sessions WHERE account_id=? AND expires_at<=?').bind(a.id,now)];
      if(old)statements.push(env.DB.prepare('DELETE FROM account_sessions WHERE token_hash=?').bind(await hash(old)));
-     statements.push(env.DB.prepare('INSERT INTO account_sessions(token_hash,account_id,created_at,expires_at,auth_time,device_label) VALUES(?,?,?,?,?,?)').bind(h,a.id,now,now+life,identity.auth_time,deviceLabel(request)));
+     const label=deviceLabel(request);
+     statements.push(env.DB.prepare('INSERT INTO account_sessions(token_hash,account_id,created_at,expires_at,auth_time,device_label) VALUES(?,?,?,?,?,?)').bind(h,a.id,now,now+life,identity.auth_time,label));
+     statements.push(env.DB.prepare("INSERT INTO account_login_events(account_id,logged_in_at,auth_provider,device_label,session_expires_at,source) VALUES(?,?,?,?,?,'login')").bind(a.id,now,identity.provider,label,now+life));
      statements.push(env.DB.prepare('DELETE FROM account_sessions WHERE account_id=? AND token_hash NOT IN (SELECT token_hash FROM account_sessions WHERE account_id=? ORDER BY created_at DESC LIMIT 10)').bind(a.id,a.id));
      await env.DB.batch(statements);
      const headers=new Headers({'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store, private','Vary':'Cookie','X-Content-Type-Options':'nosniff'});
@@ -64,7 +66,7 @@ export function createHandler(deps={}){
     }
     const write=!['GET','HEAD'].includes(method);const s=await sessionFor(request,env,write);
     await rateLimit(request,env,'authenticated',360,300,s.account_id);
-    if(route.startsWith('admin/'))return await handleAdminRoute(request,env,s,route.slice(6),method);
+    if(route.startsWith('admin/'))return await handleAdminRoute(request,env,s,route.slice(6),method,{fetch:externalFetch,verifyAccess:deps.verifyIdentityAccess||verifyIdentityAccess});
     if(route==='connect/authorize'&&method==='POST')return await authorizeBridge(request,env,s);
     if(route==='logout'&&method==='POST'){
      const b=await readBody(request,2000);await env.DB.prepare(b.all===true?'DELETE FROM account_sessions WHERE account_id=?':'DELETE FROM account_sessions WHERE token_hash=?').bind(b.all===true?s.account_id:s.token_hash).run();return privateJSON({ok:true},200,{'Set-Cookie':clearCookie()});
@@ -119,7 +121,7 @@ export function createHandler(deps={}){
   // App-specific /mixed-cbt routes remain with their existing Worker and get the same script in its R2 HTML.
   return new HTMLRewriter().on('head',{element(e){e.append('<script src="/account-assets/visit.js?v=visitor-v2" data-visit-source="main" defer></script><script src="/account-assets/store.js?v=accounts-ui-20260927-r5" defer></script><script src="/account-assets/navigation.js?v=accounts-ui-20260927-r5" defer></script>',{html:true});}}).transform(new Response(response.body,{status:response.status,headers:h}));
  },
- async scheduled(event,env){const now=Date.now();await env.DB.batch([env.DB.prepare('DELETE FROM account_sessions WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_rate_limits WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_bridge_codes WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM visitor_daily WHERE first_seen<?').bind(now-45*86400000)]);}
+ async scheduled(event,env){const now=Date.now();await env.DB.batch([env.DB.prepare('DELETE FROM account_sessions WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_rate_limits WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM account_bridge_codes WHERE expires_at<?').bind(now),env.DB.prepare('DELETE FROM visitor_daily WHERE first_seen<?').bind(now-45*86400000),env.DB.prepare('DELETE FROM account_login_events WHERE logged_in_at<?').bind(now-180*86400000),env.DB.prepare('DELETE FROM admin_audit WHERE created_at<?').bind(now-365*86400000)]);}
  };
 }
 export default createHandler();

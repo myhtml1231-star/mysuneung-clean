@@ -3,3 +3,4 @@
 **/.dev.vars
 **/.env
 **/*.pem
+accounts/reports/

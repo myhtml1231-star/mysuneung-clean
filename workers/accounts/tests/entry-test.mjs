@@ -4,7 +4,7 @@ import {createHandler} from '../reports/worker-check.mjs';
 import {makeEnv,ROOT} from './fixtures.mjs';
 const env=makeEnv(),handler=createHandler(),tests=[];
 try{
- for(const path of ['/api/account/health','/api/account/config','/api/account/session','/auth','/my','/account/connect','/account/privacy','/account/terms','/account-assets/store.js?v=accounts-ui-20260927-r5']){
+ for(const path of ['/api/account/health','/api/account/config','/api/account/session','/auth','/my','/account/connect','/account/privacy','/account/terms','/admin','/account-assets/store.js?v=accounts-ui-20260927-r5','/account-assets/admin.js?v=admin-20260929-v2','/account-assets/admin.css?v=admin-20260929-v2']){
   const r=await handler.fetch(new Request('https://mysuneung.com'+path),env);assert.equal(r.status,200,path);
   if(path==='/api/account/health'){const d=await r.json();assert.equal(d.ready,true);assert.equal(d.client_revision,'accounts-ui-20260927-r5');}
   if(!path.startsWith('/account-assets/'))assert.match(r.headers.get('cache-control'),/no-store/);

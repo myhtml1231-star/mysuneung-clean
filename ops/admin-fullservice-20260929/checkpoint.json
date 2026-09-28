@@ -1,0 +1,41 @@
+{
+  "stage": "deployed-live-verified",
+  "goal": "full admin service: real login activity, account management, legacy inquiries/chat, error reports and audit",
+  "production_changed": true,
+  "started_at": "2026-09-29T00:20:00+09:00",
+  "updated_at": "2026-09-28T15:43:42.583473+00:00",
+  "tests": {
+    "account_regression": "pass",
+    "admin_backend": 11,
+    "admin_ui": 6
+  },
+  "admin_roles": 1,
+  "backfilled_login_events": 1,
+  "account_worker_release": "2026-09-29.accounts.v1.3",
+  "account_worker_version": "142f57b1-1588-48ad-915a-365e8d2798f0",
+  "report_worker_version": "659cb272-e8a3-4d95-a222-31a4e8e01add",
+  "migrations": [
+    "0004_admin.sql",
+    "0005_login_events.sql",
+    "0006_admin_roles.sql"
+  ],
+  "current_counts": {
+    "accounts": 1,
+    "active_sessions": 1,
+    "admin_owners": 1,
+    "login_events": 1,
+    "legacy_inquiries": 2,
+    "legacy_chat_messages": 18,
+    "reports": 0
+  },
+  "live_checks": [
+    "new /admin served",
+    "old admin route removed",
+    "admin.js 200",
+    "admin.css 200",
+    "unauth admin API 401",
+    "legacy /api/report route preserved",
+    "health v1.3"
+  ],
+  "security_followup": "Legacy public Firestore inquiry documents contain a password field readable by the public client. New admin API omits it; migrate private inquiry authentication server-side."
+}

@@ -20,6 +20,11 @@ database_name = "mysuneung-accounts"
 database_id = "c134acb2-e4a6-4887-bd6f-f8bba724afe9"
 migrations_dir = "migrations"
 
+[[d1_databases]]
+binding = "REPORTS"
+database_name = "mysuneung-admin"
+database_id = "b2412d72-836b-4849-97b5-210c1a11b8f7"
+
 [[r2_buckets]]
 binding = "CBT"
 bucket_name = "mysuneung-cbt"

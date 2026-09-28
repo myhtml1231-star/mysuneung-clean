@@ -18,7 +18,7 @@ export function mountAuthFlow({loadConfig,initialize,popup,loginEmail,registerEm
   'EMAIL_NOT_VERIFIED':'이메일 인증을 마친 뒤 다시 눌러 주세요.'
  };
  function say(s,target='#authMessage'){ $(target).textContent=s||''; }
- function destination(){try{const u=new URL(params.get('returnTo')||'/my',location.origin);if(u.origin===location.origin&&['/my','/mixed-cbt','/account/connect'].includes(u.pathname))return u.pathname+u.search+u.hash;}catch{}return '/my';}
+ function destination(){try{const u=new URL(params.get('returnTo')||'/my',location.origin);if(u.origin===location.origin&&['/my','/mixed-cbt','/account/connect','/admin'].includes(u.pathname))return u.pathname+u.search+u.hash;}catch{}return '/my';}
  const show=(s,on)=>$(s).classList.toggle('hidden',!on);
  function clearErrors(){for(const id of ['email','password','passwordConfirm','consent'])$('#'+id+'Error').textContent='';for(const e of document.querySelectorAll('[aria-invalid]'))e.removeAttribute('aria-invalid');say('');say('','#verifyMessage');}
  function enable(){
@@ -123,7 +123,7 @@ export function mountAuthFlow({loadConfig,initialize,popup,loginEmail,registerEm
  async function boot(){
   busyState(true);try{await fresh(true);await initialize(config.firebase);await account.ready;
    if(deleting){if(!account.info().user){show('#loginRecovery',true);$('#loginRecovery').href='/auth?returnTo='+encodeURIComponent('/my#settings');throw Error('계정 삭제 전에 로그인해 주세요.');}setStage('delete');$('#email').value=account.info().user.email;}
-   else if(account.info().user){const u=account.info().user;$('#signedName').textContent=u.name+'님';$('#signedEmail').textContent=u.email;$('#signedAvatar').textContent=u.name.slice(0,1);$('#signedContinue').href=destination();$('#signedContinue').textContent=destination().startsWith('/mixed-cbt')?'풀던 문제로 돌아가기':destination().startsWith('/account/connect')?'관심 대학 연결하기':'내 공부 보러 가기';setStage('signed');}
+   else if(account.info().user){const u=account.info().user;$('#signedName').textContent=u.name+'님';$('#signedEmail').textContent=u.email;$('#signedAvatar').textContent=u.name.slice(0,1);$('#signedContinue').href=destination();$('#signedContinue').textContent=destination().startsWith('/mixed-cbt')?'풀던 문제로 돌아가기':destination().startsWith('/account/connect')?'관심 대학 연결하기':destination().startsWith('/admin')?'관리자 페이지로 이동':'내 공부 보러 가기';setStage('signed');}
    else setStage(params.get('mode')==='signup'?'register':params.get('mode')==='reset'?'reset':'login');
    if(params.get('verified')==='1')say('이메일 인증을 마쳤다면 로그인해 주세요.');if(params.get('deleted')==='1')say('계정과 학습 기록을 삭제했어요.');
   }catch(e){config=null;error(e);show('#authRetry',true);}finally{busyState(false);}

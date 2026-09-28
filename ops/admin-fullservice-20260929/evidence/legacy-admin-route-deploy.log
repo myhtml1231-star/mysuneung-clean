@@ -1,0 +1,14 @@
+
+ ⛅️ wrangler 4.142.0 (update available 4.143.0)
+───────────────────────────────────────────────
+Total Upload: 23.62 KiB / gzip: 7.88 KiB
+Worker Startup Time: 2 ms
+Your Worker has access to the following bindings:
+Binding                       Resource
+env.DB (mysuneung-admin)      D1 Database
+
+Uploaded mysuneung-admin (2.41 sec)
+Deployed mysuneung-admin triggers (2.00 sec)
+  mysuneung.com/api/report* (zone name: mysuneung.com)
+  www.mysuneung.com/api/report* (zone name: mysuneung.com)
+Current Version ID: 659cb272-e8a3-4d95-a222-31a4e8e01add
