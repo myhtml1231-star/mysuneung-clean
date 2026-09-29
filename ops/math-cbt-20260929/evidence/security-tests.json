@@ -1,0 +1,22 @@
+{
+  "tests": [
+    "valid recent signed Google identity",
+    "wrong audience",
+    "wrong issuer",
+    "expired token",
+    "future iat",
+    "old authentication",
+    "unverified email",
+    "anonymous provider",
+    "empty subject",
+    "missing expiration rejected",
+    "tampered signature rejected",
+    "token is random, hash is irreversible-length and csrf independent",
+    "duplicate session cookies rejected",
+    "cross-site and missing-origin writes denied",
+    "same-origin write accepted",
+    "oversized body rejected even without content-length",
+    "arrays and malformed JSON rejected"
+  ],
+  "passed": 17
+}

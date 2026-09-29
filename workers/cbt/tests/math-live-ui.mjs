@@ -1,0 +1,25 @@
+import fs from 'node:fs';import path from 'node:path';import assert from 'node:assert/strict';import {createRequire} from 'node:module';import {loadMathBank} from '../src/math-core.mjs';
+const require=createRequire(import.meta.url),puppeteer=require('/Users/shbj/Downloads/mysuneung-cbt-worker/node_modules/puppeteer-core'),bank=loadMathBank(),out=new URL('../../../ops/math-cbt-20260929/evidence/',import.meta.url).pathname;
+const browser=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox']}),errors=[],checks=[];
+try{
+ const p=await browser.newPage();p.setDefaultTimeout(25000);p.on('pageerror',e=>errors.push(String(e)));p.on('dialog',d=>d.accept());
+ await p.setViewport({width:1440,height:1000});await p.goto('https://mysuneung.com/mixed-cbt',{waitUntil:'domcontentloaded'});await p.waitForSelector('.cbt-subject-nav a');assert.match(await p.$eval('.cbt-subject-nav a',e=>e.href),/subject=math/);checks.push('Korean entry has math tab');
+ await p.click('.cbt-subject-nav a');await p.waitForFunction(()=>document.querySelectorAll('#years .year').length===14&&!!window.CBTLearningUI);
+ assert.equal(await p.$eval('#start h1',e=>e.textContent),'수학 혼합 모의고사');await p.screenshot({path:path.join(out,'live-math-start-1440.png')});checks.push('live subject navigation and 14 years');
+ await p.click('#generate');await p.waitForFunction(()=>window.flat?.length===30&&!document.querySelector('#app').classList.contains('hidden'));
+ await p.waitForFunction(()=>{const im=document.querySelector('#qassets img');return im?.complete&&im.naturalWidth>0;});assert.equal(await p.evaluate(()=>exam.max_score),100);checks.push('live original image and 30/100 exam');
+ const pen=await p.$('[data-tool="pen"]');await pen.click();const cv=await p.$('#drawCanvas');const r=await cv.boundingBox();assert.ok(r.width>100&&r.height>100);
+ await p.mouse.move(r.x+65,r.y+110);await p.mouse.down();await p.mouse.move(r.x+135,r.y+145,{steps:12});await p.mouse.up();
+ const ink=await p.$eval('#drawCanvas',e=>{const d=e.getContext('2d').getImageData(0,0,e.width,e.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false;});assert.equal(ink,true);checks.push('actual pointer drawing on math note canvas');
+ await p.screenshot({path:path.join(out,'live-math-solving-1440.png')});
+ await p.evaluate(()=>go(15));await p.waitForSelector('#math-answer');await p.type('#math-answer','0');assert.equal(await p.evaluate(()=>answers[16]),0);checks.push('numeric zero entered as an answered value');
+ await p.reload({waitUntil:'domcontentloaded'});await p.waitForFunction(()=>window.flat?.length===30);await p.evaluate(()=>go(15));assert.equal(await p.$eval('#math-answer',e=>e.value),'0');checks.push('live draft restore retains zero');
+ const refs=await p.evaluate(()=>flat.map(it=>({...it.q,academic_year:it.set.source.academic_year,month:it.set.source.month,section_code:it.set.section_code})));const a=Object.fromEntries(refs.map(q=>[q.display_no,bank.questions[q.question_key].correct_answer]));a[1]=a[1]===5?1:a[1]+1;delete a[2];
+ await p.evaluate(x=>{answers=x;render();},a);await p.click('#submit');await p.waitForSelector('#modal:not(.hidden)');await p.click('#confirm');await p.waitForFunction(()=>document.querySelector('#r5Report')&&!document.querySelector('#analysis').classList.contains('hidden'));
+ const hero=await p.$eval('#r5Hero',e=>e.textContent);assert.match(hero,/96점/);assert.match(hero,/28 \/ 30문항/);checks.push('live weighted result 96 points with one wrong and one unanswered');
+ await p.screenshot({path:path.join(out,'live-math-results-1440.png')});await p.click('[data-r5-action="answers"]');await p.waitForSelector('.r5-ebs a');assert.match(await p.$eval('.r5-ebs a',e=>e.href),/wdown\.ebsi.co.kr/);checks.push('official EBS solution on graded question');
+ await p.setViewport({width:390,height:844});await p.screenshot({path:path.join(out,'live-math-results-390.png')});assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));checks.push('live 390px report no horizontal overflow');
+ await p.click('[data-r5-transfer]');await p.waitForFunction(()=>window.exam?.learning?.practice_mode==='transfer'&&!document.querySelector('#app').classList.contains('hidden'));const fresh=await p.evaluate(()=>({keys:flat.map(x=>x.q.question_key),n:flat.length}));assert.ok(fresh.n>=1&&fresh.n<=2);for(const k of fresh.keys){assert.ok(!refs.some(q=>q.question_key===k));assert.notEqual(k.slice(0,7),refs[0].question_key.slice(0,7));}checks.push('live report launches fresh other-session transfer questions');
+ await p.waitForFunction(()=>{const im=document.querySelector('#qassets img');return im?.complete&&im.naturalWidth>0;});await p.screenshot({path:path.join(out,'live-math-transfer-390.png')});
+ assert.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'live-browser.json'),JSON.stringify({passed:checks.length,checks,errors,verified_at:new Date().toISOString()},null,2));console.log('LIVE_MATH_BROWSER_PASS',checks.length);
+}catch(e){console.error(e);console.log('PAGE_ERRORS',errors);process.exitCode=1;}finally{await browser.close();}

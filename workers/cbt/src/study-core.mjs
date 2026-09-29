@@ -103,9 +103,9 @@ export function gradedDetails(details,taxonomy={}){
  return (Array.isArray(details)?details:[]).map(raw=>{
   if(!raw||typeof raw!=='object')return null;
   const canonical=canonicalDetail(raw,taxonomy);if(canonical)return canonical;
-  const key=questionKey(raw),correct=answerValue(raw.correct_answer);
+  const key=questionKey(raw),kind=key&&/-m(A|B|ga|na|common|prob|calc|geom)-/.test(key)&&raw.answer_type==='numeric'?'numeric':'mcq',correct=answerValue(raw.correct_answer,kind);
   if(!key||correct===null)return null;
-  const selected=answerValue(raw.selected);
+  const selected=answerValue(raw.selected,kind);
   return {...raw,question_key:key,selected,correct_answer:correct,is_correct:selected!==null&&selected===correct,
    type_group:'분류 확인 중',question_type:'분류 검토 중',type_id:null,analysis_eligible:false,review_status:'needs_review'};
  }).filter(Boolean);

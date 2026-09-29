@@ -5,7 +5,7 @@ import firebaseConfig from '../public/account-assets/firebase-config.json';
 import {handleVisit} from './visits.mjs';
 import {handleAdminRoute} from './admin.mjs';
 import {handleCommunity} from './community.mjs';
-export const VERSION='2026-09-29.accounts.v1.4';
+export const VERSION='2026-09-29.accounts.v1.5';
 export const CLIENT_REVISION='accounts-ui-20260927-r5';
 const publicUser=s=>({id:s.account_id||s.id,name:s.display_name,email:s.email,consent_version:s.consent_version,provider:s.auth_provider||'google.com'});
 const pageHeaders={
@@ -117,8 +117,9 @@ export function createHandler(deps={}){
    const file=url.pathname==='/account/connect'?'connect.html':url.pathname==='/auth'?'auth.html':url.pathname==='/my'?'workspace.html':url.pathname==='/admin'?'admin.html':url.pathname.endsWith('privacy')?'privacy.html':'terms.html';
    const r=await env.ASSETS.fetch(new Request(new URL('/account-assets/'+file,url)));const h=new Headers(r.headers);for(const [k,v] of Object.entries(pageHeaders))h.set(k,v);return new Response(r.body,{status:r.status,headers:h});
   }
+  if(url.pathname.startsWith('/workers/cbt/data/math-')||url.pathname.startsWith('/workers/accounts/reports/'))return new Response('Not found',{status:404,headers:{'Cache-Control':'no-store'}});
   if(url.pathname.startsWith('/account-assets/')){
-   const r=await env.ASSETS.fetch(request),h=new Headers(r.headers);h.set('X-Content-Type-Options','nosniff');h.set('Cache-Control',url.pathname.endsWith('.js')?'no-cache, max-age=0':'public, max-age=300');return new Response(r.body,{status:r.status,headers:h});
+   const r=await env.ASSETS.fetch(request),h=new Headers(r.headers);h.set('X-Content-Type-Options','nosniff');h.set('Cache-Control',url.pathname.startsWith('/account-assets/math/questions/')?'public, max-age=31536000, immutable':url.pathname.endsWith('.js')?'no-cache, max-age=0':'public, max-age=300');return new Response(r.body,{status:r.status,headers:h});
   }
   // Transparent public-page integration. Do not forward private session cookies to the static origin.
   const forwarded=new Request(request);if((request.headers.get('Accept')||'').includes('text/html')||url.pathname.endsWith('.html')||url.pathname==='/'){forwarded.headers.delete('If-None-Match');forwarded.headers.delete('If-Modified-Since');}const cookies=(forwarded.headers.get('Cookie')||'').split(';').filter(c=>!c.trim().startsWith('__Host-msn-')).join(';');if(cookies.trim())forwarded.headers.set('Cookie',cookies);else forwarded.headers.delete('Cookie');

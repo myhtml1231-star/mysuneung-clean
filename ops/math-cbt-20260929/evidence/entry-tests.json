@@ -1,0 +1,19 @@
+{
+  "scope": "isolated module tests",
+  "tests": [
+    "/api/account/health responds with expected privacy headers",
+    "/api/account/config responds with expected privacy headers",
+    "/api/account/session responds with expected privacy headers",
+    "/auth responds with expected privacy headers",
+    "/my responds with expected privacy headers",
+    "/account/connect responds with expected privacy headers",
+    "/account/privacy responds with expected privacy headers",
+    "/account/terms responds with expected privacy headers",
+    "/admin responds with expected privacy headers",
+    "/account-assets/store.js?v=accounts-ui-20260927-r5 responds with expected privacy headers",
+    "/account-assets/admin.js?v=admin-20260929-v2 responds with expected privacy headers",
+    "/account-assets/admin.css?v=admin-20260929-v2 responds with expected privacy headers",
+    "CBT and workspace share the same versioned account store"
+  ],
+  "errors": []
+}

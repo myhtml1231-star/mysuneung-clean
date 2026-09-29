@@ -7,12 +7,17 @@ export const REASONS = Object.freeze([
  ['over_inference','과도한 추론'],['concept','개념·어휘 부족'],['application','보기 적용 어려움'],
  ['prompt','발문 오독'],['time','시간 부족'],['selection','선택 실수'],['other','기타']
 ]);
-export function answerValue(v) { const n=Number(v); return (typeof v==='number'||typeof v==='string')&&v!==null && v!=='' && Number.isInteger(n) && n>=1 && n<=5 ? n : null; }
+export function answerValue(v,kind='mcq') {
+ if(typeof v!=='number'&&typeof v!=='string')return null;
+ if(typeof v==='string'&&(kind==='numeric'?!/^[0-9]{1,3}$/.test(v):v===''))return null;
+ const n=Number(v);return Number.isInteger(n)&&n>=(kind==='numeric'?0:1)&&n<=(kind==='numeric'?999:5)?n:null;
+}
 export function questionKey(d) {
  if(!d || typeof d!=='object') return null;
  const s=d.source||d, y=Number(d.academic_year??s.academic_year??d.year),m=Number(d.month??s.month),no=Number(d.original_no);
- const sec=d.section_code;
- if(!Number.isInteger(y)||y<2017||y>2027||![3,5,6,7,9,11].includes(m)||!Number.isInteger(no)||no<1||no>45||!['common','hw','lm','full'].includes(sec))return null;
+ const sec=d.section_code,math=['mA','mB','mga','mna','mcommon','mprob','mcalc','mgeom'].includes(sec);
+ if(!Number.isInteger(y)||y<(math?2014:2017)||y>2027||![3,5,6,7,9,11].includes(m)||!Number.isInteger(no)||no<1||no>(math?30:45)||(!math&&!['common','hw','lm','full'].includes(sec)))return null;
+ if(math&&((['mA','mB'].includes(sec)&&y>2016)||(['mga','mna'].includes(sec)&&(y<2017||y>2021))||(['mcommon','mprob','mcalc','mgeom'].includes(sec)&&y<2022)))return null;
  return `${y}-${String(m).padStart(2,'0')}-${sec}-${String(no).padStart(2,'0')}`;
 }
 export function typeGroup(m) {
@@ -21,9 +26,10 @@ export function typeGroup(m) {
 export function canonicalDetail(d,taxonomy,answers) {
  const key=questionKey(d),m=key && taxonomy[key];
  if(!key||!m)return null;
- const selected=answerValue(d.selected),correct=answers ? answerValue(answers[key]) : answerValue(d.correct_answer);
+ const kind=m.answer_type==='numeric'?'numeric':'mcq';
+ const selected=answerValue(d.selected,kind),correct=answers ? answerValue(answers[key],kind) : answerValue(d.correct_answer,kind);
  if(correct===null)return null;
- return {...d,question_key:key,selected,correct_answer:correct,is_correct:selected!==null&&selected===correct,
+ return {...d,question_key:key,selected,correct_answer:correct,is_correct:selected!==null&&selected===correct,answer_type:kind,subject:m.subject||d.subject||'korean',points:m.points??d.points,
  question_type:m.type,skill:m.type,type_group:typeGroup(m),type_id:m.type_id||typeGroup(m)+'::'+m.type,
  area:m.area,category:m.category,unit_id:m.unit_id,review_status:m.review_status||'needs_review',
  analysis_eligible:m.analysis_eligible===true,taxonomy_version:m.taxonomy_version||LEARNING_VERSION};

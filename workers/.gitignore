@@ -4,3 +4,10 @@
 **/.env
 **/*.pem
 accounts/reports/
+
+accounts/public/account-assets/math/
+
+cbt/data/math-bank.json
+cbt/math/__pycache__/
+cbt/math/scripts/__pycache__/
+cbt/math/browser-core.bundle.js

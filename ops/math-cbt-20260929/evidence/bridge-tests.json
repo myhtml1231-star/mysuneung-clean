@@ -1,0 +1,16 @@
+{
+  "passed": 11,
+  "tests": [
+    "S256 matches known RFC7636 challenge",
+    "authorization requires signed account and csrf",
+    "unknown client cannot choose a redirect",
+    "browser-origin token exchange denied",
+    "code alone is insufficient; incorrect verifier cannot consume valid code",
+    "single-use code works once and token maps to authorizing user",
+    "expired bridge rejected",
+    "revoking parent session invalidates outstanding link",
+    "favorite and comparison collections are validated and isolated",
+    "comparison cap and duplicate university codes enforced",
+    "all-session revoke includes linked university browser"
+  ]
+}

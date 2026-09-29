@@ -1,0 +1,23 @@
+{
+  "passed": 16,
+  "generated_full_exams": 350,
+  "official_forms": 108,
+  "checks": [
+    "all 108 official paper variants have 30 questions, 100 points, 21 MC and 9 numeric",
+    "44 sessions, all 14 academic years, 2360 canonical questions, modern common deduplicated",
+    "every canonical question has original image/source URLs, source page, points and valid answer",
+    "canonical grading produces 100/100 for every official paper",
+    "350 full generated exams preserve composition and era",
+    "numeric zero is a valid answered value and not blank, but not necessarily a correct answer",
+    "MC values and explicit blank counts are strict",
+    "forged keys, duplicate refs, duplicate display numbers and mixed eras are rejected",
+    "custom selection respects cohort, selected track, category and requested count",
+    "metadata and ungraded exam payloads contain no answer keys",
+    "pending classification items still grade but cannot create type diagnosis",
+    "same problem replay cannot erase first incorrect evidence",
+    "fresh transfer excludes the source session, every seen question, and shared source units",
+    "reference counts and modified scoring flags are ignored in favor of bank points",
+    "area or maximum alone does not fabricate a calculus diagnosis",
+    "여러 가지 수열 is not confused with 지수 after whitespace normalization"
+  ]
+}

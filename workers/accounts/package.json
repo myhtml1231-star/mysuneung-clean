@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "node build.mjs",
-    "test": "npm run build && node tests/security-test.mjs && node tests/api-test.mjs && node tests/bridge-test.mjs && node tests/admin-test.mjs && node tests/community-test.mjs && node tests/entry-test.mjs && node tests/question-ink-test.mjs && node tests/visit-test.mjs"
+    "test": "npm run build && node tests/security-test.mjs && node tests/api-test.mjs && node tests/math-account-test.mjs && node tests/bridge-test.mjs && node tests/admin-test.mjs && node tests/community-test.mjs && node tests/entry-test.mjs && node tests/question-ink-test.mjs && node tests/visit-test.mjs"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,2180 @@
+{
+  "problem_layouts": {
+    "2014-09-A": {
+      "sha256": "d6159cad3e0f79408c0cf41ecaff9e461ed3d6191a157b5a34062f91c0eca2b2",
+      "questions": [
+        {
+          "no": 1,
+          "page": 1,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 193.66,
+          "rect": [
+            58.331557128906255,
+            193.66,
+            293.4434455566406,
+            427.736
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 2,
+          "page": 1,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 435.314,
+          "rect": [
+            58.331557128906255,
+            435.314,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 3,
+          "page": 1,
+          "col": 1,
+          "x": 304.752625,
+          "y": 159.98,
+          "rect": [
+            304.752625,
+            159.98,
+            536.2931936035156,
+            427.736
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 4,
+          "page": 1,
+          "col": 1,
+          "x": 304.752625,
+          "y": 435.314,
+          "rect": [
+            304.752625,
+            435.314,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 5,
+          "page": 2,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            400.792
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 6,
+          "page": 2,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 408.37,
+          "rect": [
+            58.331557128906255,
+            408.37,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 7,
+          "page": 2,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 8,
+          "page": 3,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 9,
+          "page": 3,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 10,
+          "page": 4,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            361.218
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 11,
+          "page": 4,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 368.796,
+          "rect": [
+            58.331557128906255,
+            368.796,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 12,
+          "page": 4,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 13,
+          "page": 5,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf",
+          "shared_group": "13-14"
+        },
+        {
+          "no": 14,
+          "page": 5,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf",
+          "shared_group": "13-14",
+          "prepend_parts": [
+            {
+              "page": 5,
+              "rect": [
+                58.331557128906255,
+                109.46000000000001,
+                293.4434455566406,
+                357.008
+              ]
+            }
+          ]
+        },
+        {
+          "no": 15,
+          "page": 6,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 16,
+          "page": 6,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 17,
+          "page": 7,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 18,
+          "page": 7,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 19,
+          "page": 8,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 20,
+          "page": 8,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 21,
+          "page": 9,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 22,
+          "page": 9,
+          "col": 1,
+          "x": 304.752625,
+          "y": 141.45600000000002,
+          "rect": [
+            304.752625,
+            141.45600000000002,
+            536.2931936035156,
+            455.52200000000005
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 23,
+          "page": 9,
+          "col": 1,
+          "x": 304.752625,
+          "y": 463.1,
+          "rect": [
+            304.752625,
+            463.1,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 24,
+          "page": 10,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            417.632
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 25,
+          "page": 10,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 425.21,
+          "rect": [
+            58.331557128906255,
+            425.21,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 26,
+          "page": 10,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 27,
+          "page": 11,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 28,
+          "page": 11,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 29,
+          "page": 12,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 30,
+          "page": 12,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            682.0200000000001
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        }
+      ]
+    },
+    "2014-09-B": {
+      "sha256": "f2920cdf0c795db4ee4d57f91d7f29087fe663a1431b2987f616f4c647a90fa0",
+      "questions": [
+        {
+          "no": 1,
+          "page": 1,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 193.66,
+          "rect": [
+            58.331557128906255,
+            193.66,
+            293.4434455566406,
+            448.786
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 2,
+          "page": 1,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 456.36400000000003,
+          "rect": [
+            58.331557128906255,
+            456.36400000000003,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 3,
+          "page": 1,
+          "col": 1,
+          "x": 304.752625,
+          "y": 159.98,
+          "rect": [
+            304.752625,
+            159.98,
+            536.2931936035156,
+            448.786
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 4,
+          "page": 1,
+          "col": 1,
+          "x": 304.752625,
+          "y": 456.36400000000003,
+          "rect": [
+            304.752625,
+            456.36400000000003,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 5,
+          "page": 2,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            441.208
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 6,
+          "page": 2,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 448.786,
+          "rect": [
+            58.331557128906255,
+            448.786,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 7,
+          "page": 2,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 8,
+          "page": 3,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            367.112
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 9,
+          "page": 3,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 374.69,
+          "rect": [
+            58.331557128906255,
+            374.69,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 10,
+          "page": 3,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 11,
+          "page": 4,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 12,
+          "page": 4,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 13,
+          "page": 5,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf",
+          "shared_group": "13-14"
+        },
+        {
+          "no": 14,
+          "page": 5,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf",
+          "shared_group": "13-14",
+          "prepend_parts": [
+            {
+              "page": 5,
+              "rect": [
+                58.331557128906255,
+                109.46000000000001,
+                293.4434455566406,
+                332.59000000000003
+              ]
+            }
+          ]
+        },
+        {
+          "no": 15,
+          "page": 6,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 16,
+          "page": 6,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 17,
+          "page": 7,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 18,
+          "page": 7,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 19,
+          "page": 8,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 20,
+          "page": 8,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 21,
+          "page": 9,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 22,
+          "page": 9,
+          "col": 1,
+          "x": 304.752625,
+          "y": 141.45600000000002,
+          "rect": [
+            304.752625,
+            141.45600000000002,
+            536.2931936035156,
+            405.002
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 23,
+          "page": 9,
+          "col": 1,
+          "x": 304.752625,
+          "y": 412.58,
+          "rect": [
+            304.752625,
+            412.58,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 24,
+          "page": 10,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            341.01
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 25,
+          "page": 10,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 348.58799999999997,
+          "rect": [
+            58.331557128906255,
+            348.58799999999997,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 26,
+          "page": 10,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 27,
+          "page": 11,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 28,
+          "page": 11,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 29,
+          "page": 12,
+          "col": 0,
+          "x": 58.331557128906255,
+          "y": 109.46000000000001,
+          "rect": [
+            58.331557128906255,
+            109.46000000000001,
+            293.4434455566406,
+            751.064
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 30,
+          "page": 12,
+          "col": 1,
+          "x": 304.752625,
+          "y": 109.46000000000001,
+          "rect": [
+            304.752625,
+            109.46000000000001,
+            536.2931936035156,
+            682.0200000000001
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        }
+      ]
+    },
+    "2021-11-ga": {
+      "sha256": "fb1c489d07fb949b31f162a891e0dacb5988923f3b10800492192eaa81153e5e",
+      "questions": [
+        {
+          "no": 1,
+          "page": 1,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 193.64161010742188,
+          "rect": [
+            58.34136071777344,
+            193.64161010742188,
+            293.49276361083986,
+            468.94946447753904
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 2,
+          "page": 1,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 476.5267448730468,
+          "rect": [
+            58.34136071777344,
+            476.5267448730468,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 3,
+          "page": 1,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 159.96480834960937,
+          "rect": [
+            304.80384375,
+            159.96480834960937,
+            536.3833265991211,
+            430.2211424560547
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 4,
+          "page": 1,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 437.7984228515625,
+          "rect": [
+            304.80384375,
+            437.7984228515625,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 5,
+          "page": 2,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            403.27970104980466
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 6,
+          "page": 2,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 410.8569814453125,
+          "rect": [
+            58.34136071777344,
+            410.8569814453125,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 7,
+          "page": 2,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 8,
+          "page": 3,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            367.07713916015626
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 9,
+          "page": 3,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 374.65441955566405,
+          "rect": [
+            58.34136071777344,
+            374.65441955566405,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 10,
+          "page": 3,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 11,
+          "page": 4,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 12,
+          "page": 4,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 13,
+          "page": 5,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 14,
+          "page": 5,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 15,
+          "page": 6,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 16,
+          "page": 6,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 17,
+          "page": 7,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 18,
+          "page": 7,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 19,
+          "page": 8,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 20,
+          "page": 8,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 21,
+          "page": 9,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 22,
+          "page": 9,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 141.4425673828125,
+          "rect": [
+            304.80384375,
+            141.4425673828125,
+            536.3833265991211,
+            433.58882263183597
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 23,
+          "page": 9,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 441.16610302734375,
+          "rect": [
+            304.80384375,
+            441.16610302734375,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 24,
+          "page": 10,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            533.7773078613282
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 25,
+          "page": 10,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 541.354588256836,
+          "rect": [
+            58.34136071777344,
+            541.354588256836,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 26,
+          "page": 10,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 27,
+          "page": 11,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 28,
+          "page": 11,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 29,
+          "page": 12,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 30,
+          "page": 12,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            681.9552355957031
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        }
+      ]
+    },
+    "2021-11-na": {
+      "sha256": "2f7b6145e53d1bf2f99060b6f3fb74bfd0bd7aacd69dc1346562f0ebd2831fa7",
+      "questions": [
+        {
+          "no": 1,
+          "page": 1,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 193.64161010742188,
+          "rect": [
+            58.34136071777344,
+            193.64161010742188,
+            293.49276361083986,
+            451.2691435546875
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 2,
+          "page": 1,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 458.84642395019534,
+          "rect": [
+            58.34136071777344,
+            458.84642395019534,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 3,
+          "page": 1,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 159.96480834960937,
+          "rect": [
+            304.80384375,
+            159.96480834960937,
+            536.3833265991211,
+            451.2691435546875
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 4,
+          "page": 1,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 458.84642395019534,
+          "rect": [
+            304.80384375,
+            458.84642395019534,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 5,
+          "page": 2,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            451.2691435546875
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 6,
+          "page": 2,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 458.84642395019534,
+          "rect": [
+            58.34136071777344,
+            458.84642395019534,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 7,
+          "page": 2,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 8,
+          "page": 3,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            429.37922241210936
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 9,
+          "page": 3,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 436.9565028076172,
+          "rect": [
+            58.34136071777344,
+            436.9565028076172,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 10,
+          "page": 3,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 11,
+          "page": 4,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 12,
+          "page": 4,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 13,
+          "page": 5,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 14,
+          "page": 5,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 15,
+          "page": 6,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 16,
+          "page": 6,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 17,
+          "page": 7,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 18,
+          "page": 7,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 19,
+          "page": 8,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 20,
+          "page": 8,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 21,
+          "page": 9,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 22,
+          "page": 9,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 141.4425673828125,
+          "rect": [
+            304.80384375,
+            141.4425673828125,
+            536.3833265991211,
+            433.58882263183597
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 23,
+          "page": 9,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 441.16610302734375,
+          "rect": [
+            304.80384375,
+            441.16610302734375,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 24,
+          "page": 10,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            417.592341796875
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 25,
+          "page": 10,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 425.1696221923828,
+          "rect": [
+            58.34136071777344,
+            425.1696221923828,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 26,
+          "page": 10,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 27,
+          "page": 11,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 28,
+          "page": 11,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 29,
+          "page": 12,
+          "col": 0,
+          "x": 58.34136071777344,
+          "y": 109.44960571289063,
+          "rect": [
+            58.34136071777344,
+            109.44960571289063,
+            293.49276361083986,
+            750.9926791992187
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        },
+        {
+          "no": 30,
+          "page": 12,
+          "col": 1,
+          "x": 304.80384375,
+          "y": 109.44960571289063,
+          "rect": [
+            304.80384375,
+            109.44960571289063,
+            536.3833265991211,
+            681.9552355957031
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf"
+        }
+      ]
+    }
+  },
+  "solution_keys": {
+    "2017-11-ga": {
+      "sha256": "ce3060530378859a7df7a407667571e328fd2e33c5b2bd241ce835187b05436f",
+      "page": 1,
+      "answers": [
+        5,
+        2,
+        5,
+        4,
+        3,
+        5,
+        1,
+        1,
+        2,
+        3,
+        4,
+        4,
+        3,
+        1,
+        4,
+        2,
+        2,
+        3,
+        1,
+        5,
+        4,
+        10,
+        6,
+        16,
+        7,
+        11,
+        32,
+        12,
+        19,
+        216
+      ],
+      "evidence": "Original EBS answer table visually read; no OCR"
+    },
+    "2021-06-ga": {
+      "sha256": "108c934eadc3154014a2cd93e01c5c46cae80bb4b0149665ae0b289e8f3676d8",
+      "page": 1,
+      "answers": [
+        5,
+        2,
+        4,
+        3,
+        1,
+        3,
+        2,
+        1,
+        4,
+        5,
+        3,
+        1,
+        2,
+        1,
+        4,
+        3,
+        2,
+        5,
+        4,
+        1,
+        4,
+        24,
+        21,
+        33,
+        4,
+        7,
+        46,
+        15,
+        114,
+        331
+      ],
+      "evidence": "Original EBS answer table visually read; no OCR"
+    }
+  },
+  "adjudications": [
+    {
+      "form": "2016-11-B",
+      "question": 9,
+      "answer": 3,
+      "evidence": "Original question choice 3 is 9/4; answer table is 3; solution computes 9/4 but printed circle 4 is inconsistent."
+    },
+    {
+      "form": "2024-09-geom",
+      "question": 28,
+      "answer": 1,
+      "evidence": "EBS solution prints derived value 6, not a choice number; original choice 1 is 6 and answer table is 1."
+    }
+  ]
+}

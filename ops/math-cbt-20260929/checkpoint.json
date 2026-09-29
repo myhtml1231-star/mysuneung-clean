@@ -1,0 +1,24 @@
+{
+  "stage": "deployed-verified-complete",
+  "production_changed": true,
+  "scope": "2014-2027 academic years; preserve Korean CBT; official question/answer verification",
+  "started_at": "2026-09-28T23:46:54.162925+00:00",
+  "question_count": 2360,
+  "forms": 108,
+  "sessions": 44,
+  "pdfs": 216,
+  "pending_taxonomy": 89,
+  "updated_at": "2026-09-29T00:55:22.273474+00:00",
+  "account_worker": "c1e3af52-22ac-4ac8-a7d8-d392ad632b16",
+  "cbt_worker": "d794306f-1bf7-4683-86f4-6990f688c04f",
+  "tests": {
+    "math_core": 16,
+    "generated_full_exams": 350,
+    "math_ui": 14,
+    "math_account": 9,
+    "live_api": 11,
+    "live_browser": 10,
+    "original_images": 2360
+  },
+  "finished_at": "2026-09-29T01:07:46.305263+00:00"
+}

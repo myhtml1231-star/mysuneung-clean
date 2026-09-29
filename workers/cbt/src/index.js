@@ -1,3 +1,4 @@
+import {handleMath} from './math-core.mjs';
 import * as Study from "./study-core.mjs";
 import * as Learning from "./learning-core.mjs";
 const LEARNING_DATA_KEY = "learning/question-types-20260927-v1.json";
@@ -19,7 +20,7 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === "/mixed-cbt" || url.pathname === "/mixed-cbt/" || url.pathname === "/mixed-cbt.html") {
-      const obj = await env.CBT.get("app/cbt.html");
+      const obj = await env.CBT.get(url.searchParams.get("subject")==="math"?"app/math.html":"app/cbt.html");
       if (!obj) return new Response("CBT app missing", { status: 500 });
       return new Response(obj.body, {
         headers: {
@@ -29,6 +30,8 @@ export default {
         }
       });
     }
+
+    if (url.pathname.startsWith("/api/cbt/math/")) return handleMath(request,env);
 
     if (url.pathname === "/api/cbt/health") {
       return json({ ok: true, service: "mysuneung-cbt", grading: true, taxonomy: true, learning_version: Learning.LEARNING_VERSION });

@@ -1,0 +1,208 @@
+{
+  "academic_years": [
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027
+  ],
+  "exam_sessions": 44,
+  "forms": 108,
+  "question_references": 3240,
+  "distinct_questions": 2360,
+  "common_duplicates_removed": 880,
+  "pending_taxonomy": 89,
+  "periods": [
+    {
+      "year": 2014,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "year": 2015,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "year": 2016,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "year": 2017,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "ga",
+        "na"
+      ]
+    },
+    {
+      "year": 2018,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "ga",
+        "na"
+      ]
+    },
+    {
+      "year": 2019,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "ga",
+        "na"
+      ]
+    },
+    {
+      "year": 2020,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "ga",
+        "na"
+      ]
+    },
+    {
+      "year": 2021,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "ga",
+        "na"
+      ]
+    },
+    {
+      "year": 2022,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "calc",
+        "geom",
+        "prob"
+      ]
+    },
+    {
+      "year": 2023,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "calc",
+        "geom",
+        "prob"
+      ]
+    },
+    {
+      "year": 2024,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "calc",
+        "geom",
+        "prob"
+      ]
+    },
+    {
+      "year": 2025,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "calc",
+        "geom",
+        "prob"
+      ]
+    },
+    {
+      "year": 2026,
+      "months": [
+        6,
+        9,
+        11
+      ],
+      "tracks": [
+        "calc",
+        "geom",
+        "prob"
+      ]
+    },
+    {
+      "year": 2027,
+      "months": [
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "tracks": [
+        "calc",
+        "geom",
+        "prob"
+      ]
+    }
+  ],
+  "not_published": [
+    "2027학년도 수능"
+  ],
+  "source": "EBSi 공개 기출 문제·해설 PDF",
+  "scope_note": "2014–2026학년도 6·9월 평가원 및 수능, 2027 대비 공개된 3·5·6·7·9월. 2027 수능 제외.",
+  "textbook_links_verified": 0
+}

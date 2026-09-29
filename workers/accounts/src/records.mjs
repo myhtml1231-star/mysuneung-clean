@@ -1,3 +1,4 @@
+import {isMathRecord,sanitizeMath,mathReferenceKey,mathDrawingMetadata,reconstructMath} from './math-records.mjs';
 import { fail, hash } from './security.mjs';
 export const KINDS=['download','attempt','draft','university','annotation','university_state'];
 const REASONS=new Set(['unknown','condition','target','causality','category','sequence','over_inference','concept','application','prompt','time','selection','other']);
@@ -11,6 +12,7 @@ export function safeURL(value,download=false){
  u.hash='';return u.href;
 }
 export function refKey(d){
+ const math=mathReferenceKey(d);if(math)return math;
  const s=d?.source||d||{},year=Number(d?.academic_year??s.academic_year),month=Number(d?.month??s.month),no=Number(d?.original_no),sec=d?.section_code;
  if(!Number.isInteger(year)||year<2017||year>2027||![3,5,6,7,9,11].includes(month)||!Number.isInteger(no)||no<1||no>45||!['common','hw','lm','full'].includes(sec))return null;
  return `${year}-${String(month).padStart(2,'0')}-${sec}-${String(no).padStart(2,'0')}`;
@@ -40,6 +42,7 @@ export async function sanitize(kind,d,id,env){
   const status=['관심','조사 중','지원 검토','비교 완료'].includes(d.status)?d.status:'관심';
   return {name,university_code:/^\d{7}$/.test(d.university_code||'')?d.university_code:null,department:text(d.department,120),admission_year:integer(d.admission_year,2020,2040,new Date().getFullYear()+1),track:text(d.track,100),status,source_url:d.source_url?safeURL(d.source_url):'',note:text(d.note,5000),checked_at:date(d.checked_at),tags:Array.isArray(d.tags)?d.tags.filter(t=>typeof t==='string').slice(0,8).map(t=>text(t,24)):[],created_at:date(d.created_at),source_kind:'user_research_note'};
  }
+ if((kind==='attempt'||kind==='draft')&&isMathRecord(d))return sanitizeMath(kind,d,id);
  if(kind==='attempt'||kind==='draft'){
   const raw=d.details||d.refs;if(!Array.isArray(raw)||!raw.length||raw.length>45)fail(400,'BAD_QUESTIONS','CBT 기록은 1~45문항으로 저장해야 합니다.');
   const meta=await cbtData(env),seen=new Set();let details=[];
@@ -53,7 +56,7 @@ export async function sanitize(kind,d,id,env){
   return {id,at:date(d.at),mode,choice:['hw','lm'].includes(d.choice)?d.choice:null,years:[...new Set(details.map(q=>q.academic_year))],categories:[...new Set(details.map(q=>q.category))],details,...(kind==='attempt'?{score:correct,total:details.length,percent:Math.round(correct/details.length*100),unanswered,reasons}:{current:integer(d.current,0,details.length-1,0),startedAt:date(d.startedAt),time_limit_seconds:integer(d.time_limit_seconds,60,10800,mode==='full'?4800:1800)}),schema_version:3};
  }
  if(kind==='annotation'){
-  const exam_id=text(d.exam_id,150),unit_id=text(d.unit_id,150);const meta=await cbtData(env);if(!exam_id||!meta.rows.has(unit_id)||!Array.isArray(d.strokes)||d.strokes.length>500)fail(400,'BAD_DRAWING','필기 데이터 크기나 원문 출처를 확인해 주세요.');
+  const exam_id=text(d.exam_id,150),unit_id=text(d.unit_id,150);const mathMeta=mathDrawingMetadata(),meta=mathMeta.rows.has(unit_id)?mathMeta:await cbtData(env);if(!exam_id||!meta.rows.has(unit_id)||!Array.isArray(d.strokes)||d.strokes.length>500)fail(400,'BAD_DRAWING','필기 데이터 크기나 원문 출처를 확인해 주세요.');
   let points=0;
   const strokes=d.strokes.map(s=>{
    if(!s||!['pen','highlight','underline','eraser'].includes(s.tool)||!Array.isArray(s.points))fail(400,'BAD_DRAWING','필기 데이터가 올바르지 않습니다.');
@@ -112,6 +115,7 @@ function unsafe(v){if(typeof v==='string')return /[\uE000-\uF8FF\uFFFD]/.test(v)
 function header(a){if(a?.page!==1||a?.target!=='passage'||!Array.isArray(a.rect)||a.rect.length!==4)return false;const [x,y,x1,y1]=a.rect;return x>=330&&x<=345&&y>=150&&y<=158&&x1-x>=160&&x1-x<=170&&y1-y>=40&&y1-y<=45;}
 const encPath=p=>p.split('/').map(encodeURIComponent).join('/');
 export async function reconstruct(env,record){
+ if(isMathRecord(record.data))return reconstructMath(record);
  const d=record.data,meta=await cbtData(env),ids=[...new Set(d.details.map(q=>meta.types[q.question_key]?.unit_id))];
  if(ids.some(id=>!meta.rows.has(id)))fail(404,'SOURCE_MISSING','원문을 찾지 못했습니다. 기록 자체는 보관되어 있습니다.');
  let start=1;const sections=[];

@@ -1,0 +1,14 @@
+{
+  "passed": 9,
+  "tests": [
+    "math account save recomputes actual points, correctness and canonical subject",
+    "math replay returns canonical images and restores numeric zero without embedding solutions in the exam",
+    "math drafts retain position, remaining source list and zero; answer keys omitted",
+    "cross-account math replay and records never leak",
+    "math annotation attaches to canonical original question and preserves anchor",
+    "legacy 2014 and 2021 math sources are accepted without broadening Korean reference ranges",
+    "mixed-subject references and nonnumeric answers are rejected without saving partial data",
+    "repeated legitimate logins in the same millisecond remain independent events",
+    "generated private bank path is not publicly served"
+  ]
+}

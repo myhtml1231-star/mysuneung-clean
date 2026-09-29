@@ -14,7 +14,7 @@ const editingReason=()=>document.activeElement?.closest('.learn-reason-editor');
 function refreshHistory(){
  if(editingReason()){historyRefreshPending=true;return;}
  historyRefreshPending=false;
- if(window.CBTLearningUI)window.dispatchEvent(new StorageEvent('storage',{key:'mysuneung-cbt-learning-history-v2'}));
+ if(window.CBTLearningUI)window.dispatchEvent(new StorageEvent('storage',{key:new URLSearchParams(location.search).get('subject')==='math'?'mysuneung-math-cbt-learning-history-v2':'mysuneung-cbt-learning-history-v2'}));
 }
 window.addEventListener('msn-cbt-history-updated',refreshHistory);
 document.addEventListener('focusin',e=>{
@@ -32,6 +32,7 @@ if(!A.info().user){note.textContent='이 풀이 기록을 보려면 저장한 �
 $('#loading')?.classList.remove('hidden');
 try{
  const kind=params.get('kind')==='draft'?'draft':'attempt';const d=await A.api('replay/'+encodeURIComponent(id)+'?kind='+kind);
+ const math=d.exam.subject==='수학';if(math!==(params.get('subject')==='math')){const dest=new URL(location.href);if(math)dest.searchParams.set('subject','math');else dest.searchParams.delete('subject');location.replace(dest.href);return;}
  if(params.get('practice')==='1'){
   d.exam.id=crypto.randomUUID();window.loadExam(d.exam,true);return;
  }
@@ -42,13 +43,13 @@ try{
  }else{
   window.grading=Object.fromEntries(d.saved.details.map(q=>[q.display_no,q]));window.render();
   const count=d.saved.details.length,correct=d.saved.details.filter(q=>q.is_correct).length,unanswered=d.saved.details.filter(q=>q.selected===null).length;
-  await window.showAnalysis({ok:true,total_count:count,correct_count:correct,unanswered_count:unanswered,wrong_count:count-correct-unanswered,percent:Math.round(correct/count*100),details:d.saved.details});
+  await window.showAnalysis({ok:true,total_count:count,correct_count:correct,unanswered_count:unanswered,wrong_count:count-correct-unanswered,percent:Math.round(correct/count*100),raw_score:d.saved.raw_score,max_score:d.saved.max_score,details:d.saved.details});
   const focus=params.get('question');
-  if(focus&&/^20\d{2}-\d{2}-(common|hw|lm|full)-\d{2}$/.test(focus)){
+  if(focus&&/^20\d{2}-\d{2}-(common|hw|lm|full|mA|mB|mga|mna|mcommon|mprob|mcalc|mgeom)-\d{2}$/.test(focus)){
    const at=window.flat.findIndex(x=>x.q.question_key===focus);
    if(at>=0){$('#analysis').classList.add('hidden');$('#app').classList.remove('hidden');$('#learnReturn')?.classList.remove('hidden');window.go(at);}
   }
-  const area=$('#learnStatus');if(area){const a=document.createElement('a');a.href='/mixed-cbt?accountReplay='+encodeURIComponent(id)+'&kind=attempt&practice=1';a.textContent='같은 문제를 새 답안으로 다시 풀기 →';a.style.cssText='display:block;font-size:13px;color:#4763a1;margin:12px 0';area.after(a);}
+  const area=$('#learnStatus');if(area){const a=document.createElement('a');a.href='/mixed-cbt?'+(math?'subject=math&':'')+'accountReplay='+encodeURIComponent(id)+'&kind=attempt&practice=1';a.textContent='같은 문제를 새 답안으로 다시 풀기 →';a.style.cssText='display:block;font-size:13px;color:#4763a1;margin:12px 0';area.after(a);}
  }
 }catch(e){note.textContent=e.message;start.classList.remove('hidden');}
 finally{$('#loading')?.classList.add('hidden');}

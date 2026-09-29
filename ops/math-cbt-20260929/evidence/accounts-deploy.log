@@ -1,0 +1,30 @@
+
+ ⛅️ wrangler 4.142.0 (update available 4.143.0)
+───────────────────────────────────────────────
+🌀 Building list of assets...
+✨ Read 2386 files from the assets directory /Users/shbj/Downloads/mysuneung-site-index/workers/accounts/public
+🌀 Starting asset upload...
+🌀 Found 2 new or modified static assets to upload. Proceeding with upload...
++ /account-assets/store.js
++ /account-assets/workspace.js
+Uploaded 1 of 2 assets
+Uploaded 2 of 2 assets
+✨ Success! Uploaded 2 files (2381 already uploaded) (1.27 sec)
+
+Total Upload: 3044.66 KiB / gzip: 243.82 KiB
+Worker Startup Time: 7 ms
+Your Worker has access to the following bindings:
+Binding                                                Resource
+env.DB (mysuneung-accounts)                            D1 Database
+env.REPORTS (mysuneung-admin)                          D1 Database
+env.CBT (mysuneung-cbt)                                R2 Bucket
+env.ASSETS                                             Assets
+env.SITE_ORIGIN ("https://mysuneung.com")              Environment Variable
+env.FIREBASE_PROJECT_ID ("mysuneung")                  Environment Variable
+
+Uploaded mysuneung-accounts (6.81 sec)
+Deployed mysuneung-accounts triggers (2.27 sec)
+  mysuneung.com/* (zone name: mysuneung.com)
+  www.mysuneung.com/* (zone name: mysuneung.com)
+  schedule: 17 19 * * *
+Current Version ID: c1e3af52-22ac-4ac8-a7d8-d392ad632b16

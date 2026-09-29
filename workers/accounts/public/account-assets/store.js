@@ -2,7 +2,9 @@
 (function(){
 'use strict';if(window.MSNAccount)return;
 const ls=window.localStorage,EVENT='msn-account-change',PREFIX='msn:v1:',HIST='mysuneung-cbt-learning-history-v2',CURRENT='mysuneung-cbt-current';
-const sensitive=k=>k==='admissionFavoriteUniversities'||k==='admissionCompareUniversities'||k===CURRENT||k===HIST||k==='mysuneung-cbt-history'||k.startsWith('mysuneung-cbt-annotations-');
+const MATH_HIST='mysuneung-math-cbt-learning-history-v2',MATH_CURRENT='mysuneung-math-cbt-current';
+const mathAttempt=a=>a?.subject==='수학'||(a?.details||[]).some(q=>/^m(A|B|ga|na|common|prob|calc|geom)$/.test(q.section_code||''));
+const sensitive=k=>k==='mysuneung-math-cbt-history'||k===MATH_HIST||k===MATH_CURRENT||k==='admissionFavoriteUniversities'||k==='admissionCompareUniversities'||k===CURRENT||k===HIST||k==='mysuneung-cbt-history'||k.startsWith('mysuneung-cbt-annotations-');
 const stable=x=>JSON.stringify(sort(x));function sort(x){if(Array.isArray(x))return x.map(sort);if(x&&typeof x==='object')return Object.fromEntries(Object.keys(x).sort().map(k=>[k,sort(x[k])]));return x;}
 const clone=x=>JSON.parse(JSON.stringify(x));
 function read(k,fallback=null){try{const s=ls.getItem(k);return s===null?fallback:JSON.parse(s);}catch{return fallback;}}
@@ -75,9 +77,11 @@ function projectCBT(){
  if(!user)return;
  suppress=true;let historyChanged=false;
  try{
-  const history=list('attempt').map(r=>r.data).sort((a,b)=>b.at-a.at).slice(0,30);
-  const serialized=JSON.stringify(history);historyChanged=ls.getItem(scoped(HIST))!==serialized;
-  if(historyChanged)ls.setItem(scoped(HIST),serialized);
+  const allHistory=list('attempt').map(r=>r.data).sort((a,b)=>b.at-a.at);
+  for(const [key,math] of [[HIST,false],[MATH_HIST,true]]){
+   const history=allHistory.filter(a=>mathAttempt(a)===math).slice(0,30),serialized=JSON.stringify(history);
+   if(ls.getItem(scoped(key))!==serialized){historyChanged=true;ls.setItem(scoped(key),serialized);}
+  }
   const grouped={};for(const r of list('annotation')){const a=r.data;if(!grouped[a.exam_id])grouped[a.exam_id]={};grouped[a.exam_id][a.unit_id]=a.strokes;}
   const projectionPrefix=active()+'cbt:mysuneung-cbt-annotations-';
   const stale=[];for(let i=0;i<ls.length;i++){const k=ls.key(i);if(k?.startsWith(projectionPrefix)&&!grouped[k.slice(projectionPrefix.length)])stale.push(k);}
@@ -145,7 +149,8 @@ function resolve(kind,id,choice){
 }
 function legacyGuest(){
  let attempts=read(HIST);if(!Array.isArray(attempts))attempts=read('mysuneung-cbt-history',[]);if(!Array.isArray(attempts))attempts=[];
- return {attempts:attempts.filter(x=>x&&Array.isArray(x.details)).slice(0,100),downloads:enumerate(namespace(null)+'record:download:').filter(r=>!r.deleted),universities:enumerate(namespace(null)+'record:university:').filter(r=>!r.deleted),current:read(CURRENT)};
+ const mh=read(MATH_HIST,read('mysuneung-math-cbt-history',[]));if(Array.isArray(mh))attempts=attempts.concat(mh);
+ return {mathCurrent:read(MATH_CURRENT),attempts:attempts.filter(x=>x&&Array.isArray(x.details)).slice(0,100),downloads:enumerate(namespace(null)+'record:download:').filter(r=>!r.deleted),universities:enumerate(namespace(null)+'record:university:').filter(r=>!r.deleted),current:read(CURRENT)};
 }
 async function importGuest(selected){
  if(!user||locked)throw Error('로그인이 필요합니다.');const g=legacyGuest(),owner=user.id;
@@ -162,20 +167,21 @@ async function importGuest(selected){
  if(selected.downloads)for(const r of g.downloads)imported('download',r.id,r.data);
  if(selected.universities)for(const r of g.universities)imported('university',r.id,r.data);
  if(selected.current&&g.current?.exam)captureDraft(g.current,imported);
- const exams=new Set();if(selected.attempts)g.attempts.forEach(a=>a.id&&exams.add(a.id));if(selected.current&&g.current?.exam?.id)exams.add(g.current.exam.id);
+ if(selected.current&&g.mathCurrent?.exam)captureDraft(g.mathCurrent,imported);
+ const exams=new Set();if(selected.attempts)g.attempts.forEach(a=>a.id&&exams.add(a.id));if(selected.current&&g.current?.exam?.id)exams.add(g.current.exam.id);if(selected.current&&g.mathCurrent?.exam?.id)exams.add(g.mathCurrent.exam.id);
  for(const id of exams){const drawings=read('mysuneung-cbt-annotations-'+id,{});for(const [unit_id,strokes] of Object.entries(drawings||{}))imported('annotation',id+'.'+unit_id,{exam_id:id,unit_id,strokes});}
  await flush();return info();
 }
 function captureDraft(x,saver=save){
  if(!x?.exam?.id||!x.exam.sections)return;const e=x.exam;
  const details=e.sections.flatMap(s=>(s.questions||[]).map(q=>({academic_year:s.source.academic_year,month:s.source.month,section_code:s.section_code,original_no:q.original_no,selected:x.answers?.[q.display_no]??null})));
- saver('draft',e.id,{id:e.id,at:Date.now(),mode:e.mode,choice:e.choice,details,current:x.current||0,startedAt:x.startedAt,time_limit_seconds:e.time_limit_seconds});
+ saver('draft',e.id,{id:e.id,subject:e.subject,at:Date.now(),mode:e.mode,choice:e.choice,details,current:x.current||0,startedAt:x.startedAt,time_limit_seconds:e.time_limit_seconds});
 }
 function onCBTWrite(key,value,previous){
  if(suppress||!user)return;
  try{
-  if(key===HIST){const hs=JSON.parse(value);if(Array.isArray(hs))for(const a of hs)if(a?.id&&a.details)save('attempt',a.id,a);}
-  else if(key===CURRENT){if(value!==null)captureDraft(JSON.parse(value));else {const x=previous&&JSON.parse(previous);if(x?.exam?.id){const r=read(cacheKey(user.id,'draft',x.exam.id));if(r)save('draft',x.exam.id,{},true);}}}
+  if(key===HIST||key===MATH_HIST){const hs=JSON.parse(value);if(Array.isArray(hs))for(const a of hs)if(a?.id&&a.details)save('attempt',a.id,a);}
+  else if(key===CURRENT||key===MATH_CURRENT){if(value!==null)captureDraft(JSON.parse(value));else {const x=previous&&JSON.parse(previous);if(x?.exam?.id){const r=read(cacheKey(user.id,'draft',x.exam.id));if(r)save('draft',x.exam.id,{},true);}}}
   else if(key.startsWith('mysuneung-cbt-annotations-')&&value!==null){const id=key.slice('mysuneung-cbt-annotations-'.length),units=JSON.parse(value);for(const [uid,strokes] of Object.entries(units||{}))save('annotation',id+'.'+uid,{exam_id:id,unit_id:uid,strokes:strokes.map(s=>({...s,points:s.points.map(p=>({x:Math.round(p.x*100000)/100000,y:Math.round(p.y*100000)/100000}))}))});}
  }catch(e){setState('error','기기에는 저장했지만 계정 동기화 대기 중입니다: '+e.message);}
 }

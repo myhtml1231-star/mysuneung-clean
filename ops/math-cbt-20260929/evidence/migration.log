@@ -1,0 +1,22 @@
+
+ ⛅️ wrangler 4.142.0 (update available 4.143.0)
+───────────────────────────────────────────────
+Resource location: remote
+
+Migrations to be applied:
+┌─────────────────────────────────┐
+│ name                            │
+├─────────────────────────────────┤
+│ 0008_login_event_timestamps.sql │
+└─────────────────────────────────┘
+? About to apply 1 migration(s)
+Your database may not be available to serve requests during the migration, continue?
+🤖 Using fallback value in non-interactive context: yes
+🌀 Executing on remote database mysuneung-accounts (c134acb2-e4a6-4887-bd6f-f8bba724afe9):
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+🚣 Executed 2 commands in 0.69ms
+┌─────────────────────────────────┬────────┐
+│ name                            │ status │
+├─────────────────────────────────┼────────┤
+│ 0008_login_event_timestamps.sql │ ✅     │
+└─────────────────────────────────┴────────┘

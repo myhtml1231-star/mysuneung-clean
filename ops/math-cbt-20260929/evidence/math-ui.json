@@ -1,0 +1,20 @@
+{
+  "passed": 14,
+  "checks": [
+    "14-year settings",
+    "full generation",
+    "original formula images",
+    "100 points",
+    "100 minutes",
+    "numeric zero input",
+    "zero palette state",
+    "zero restore",
+    "no answers in exam",
+    "weighted grading",
+    "EBS official solutions",
+    "390px report no overflow",
+    "legacy shared stem",
+    "separate math history"
+  ],
+  "errors": []
+}

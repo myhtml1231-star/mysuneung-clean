@@ -1,0 +1,30 @@
+{
+  "passed": 25,
+  "tests": [
+    "unauthenticated private records denied",
+    "new account consent mandatory",
+    "verified identity creates secure session, no auth secrets returned",
+    "session and owned profile reads no-store",
+    "wrong/missing csrf rejected",
+    "stale-tab account owner mismatch rejected",
+    "record create + durable idempotent retry",
+    "one account never reads another record or replay",
+    "body-specified owner rejected",
+    "optimistic edit conflict preserves prior version",
+    "explicit resolution uses current version and retains normal future edits",
+    "invalid batch not partially applied",
+    "URL schemes, credential URLs and external download hosts rejected",
+    "download is an opened link, not a claimed disk save",
+    "attempt grade is recomputed, fabricated totals ignored",
+    "attempt source keys must exist and must be distinct",
+    "canonical replay restores existing source/QC and answers",
+    "draft saves state without exposing answer keys",
+    "annotation coordinates and size limits enforced",
+    "tombstone propagates by cursor and does not resurrect stale edit",
+    "cross-account duplicate record IDs do not collide",
+    "logout revokes current session server-side",
+    "all devices logout revokes an older cookie",
+    "delete requires matching fresh identity and confirmation",
+    "account deletion cascades sessions, records and sync log"
+  ]
+}
