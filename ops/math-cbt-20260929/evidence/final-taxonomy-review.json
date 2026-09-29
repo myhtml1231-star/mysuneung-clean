@@ -1,0 +1,12 @@
+{
+  "reviewed_questions": 89,
+  "scope": "Previously pending KICE/CSAT and 2027 source questions in the 2014-2027 math bank",
+  "method": "Each previously pending question was manually classified from its official EBS solution objective when available and the original problem/solution context. Empty objective fields were classified from the official problem source.",
+  "pending_after_review": 0,
+  "manual_review_total": 2929,
+  "basis_counts": {
+    "official_solution_objective_and_problem": 54,
+    "official_problem_text_missing_solution_objective": 35
+  },
+  "objective_text_mismatches": 0
+}

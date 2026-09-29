@@ -1,5 +1,5 @@
 {
-  "stage": "education-office-2014-complete-live-verified",
+  "stage": "final-v9-live-verified",
   "production_changed": true,
   "scope": "2014-2027 math; KICE plus high3 education-office 2014-2027 bounded coverage",
   "started_at": "2026-09-28T23:46:54.162925+00:00",
@@ -7,10 +7,10 @@
   "forms": 232,
   "sessions": 96,
   "pdfs": 464,
-  "pending_taxonomy": 89,
-  "updated_at": "2026-09-29T00:55:22.273474+00:00",
+  "pending_taxonomy": 0,
+  "updated_at": "2026-09-29T07:08:58.924528+00:00",
   "account_worker": "0026c712-0781-4fdc-8a0a-10f3eb3e075b",
-  "cbt_worker": "c22417ba-4d17-46c7-ba10-665546a2d2b4",
+  "cbt_worker": "e2114a32-8bdf-4ad7-9e23-e1cbd5613e04",
   "tests": {
     "math_core": 21,
     "generated_full_exams": 350,
@@ -26,13 +26,17 @@
   "education_office_sessions": 55,
   "education_office_unique": 2978,
   "education_office_new_manual_review": 368,
-  "math_version": "2026-09-29.math.v8",
-  "math_bank_sha256": "d6a20e546676ddba8e0ae4a38a477e518ad2cd3f945a1739c95f1e5b2708b66a",
+  "math_version": "2026-09-29.math.v9",
+  "math_bank_sha256": "fc87025cdb9880623b2c71b938a3577ba27839a815f7b944ca8a14feafd197f0",
   "education_office_forms": 133,
-  "education_office_manual_review": 2840,
+  "education_office_manual_review": 2841,
   "latest_batch_unique": 240,
   "special": {
     "image_only_manual_layout_forms": 2,
     "official_all_correct_questions": 1
-  }
+  },
+  "final_non_education_manual_review": 88,
+  "total_manual_taxonomy_review": 2929,
+  "final_live_verified": true,
+  "final_review_finished_at": "2026-09-29T07:16:48.597311+00:00"
 }

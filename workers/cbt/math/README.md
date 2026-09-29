@@ -25,13 +25,13 @@ Education-office coverage is **55 sessions, 133 variants and 2,978 unique questi
 
 ## Per-question review
 
-Academic 2014–2026 education-office reviewed batches contain **2,840 manually reviewed unique questions**.
+Academic 2014–2026 education-office reviewed batches contain **2,840 manually reviewed unique questions**. One additional 2027 education-office question plus 88 KICE/CSAT-source questions from the former pending set were manually reviewed in the final pass, for **2,929 total manual reviews and 0 pending taxonomy items**.
 
 - 2,671 questions: official EBS solution `[출제의도]`, reviewed question by question
 - 169 questions: official problem text/rendered source because the solution objective text is missing or corrupt
 - all decisions are stored in `edu-taxonomy-review.json`
 - 2027 education-office questions retain their prior official-objective mapping
-- older pending taxonomy elsewhere in the bank remains gradeable but excluded from automatic type diagnosis/transfer
+- the former 89 pending taxonomy items have been manually resolved; pending taxonomy is now 0
 
 OCR is not used to reconstruct problem text. Legacy PDF answer/layout irregularities use explicit parser rules or SHA-256-locked adjudications.
 
@@ -74,5 +74,5 @@ Full exam: 30 questions, 100 points, 100 minutes, 21 multiple-choice + 9 numeric
 7. Deploy account assets, CBT Worker and R2 `app/math.html`.
 8. Run live API/browser checks.
 
-Current data version: `2026-09-29.math.v8`
-Bank SHA-256: `d6a20e546676ddba8e0ae4a38a477e518ad2cd3f945a1739c95f1e5b2708b66a`
+Current data version: `2026-09-29.math.v9`
+Bank SHA-256: `fc87025cdb9880623b2c71b938a3577ba27839a815f7b944ca8a14feafd197f0`

@@ -1,0 +1,37 @@
+최종 제출 사진 목록
+
+00-contact-sheet.png
+- 아래 11개 핵심 화면을 한 장으로 모은 합본.
+
+01-home-header-desktop.png
+- 운영 홈 PC. 로그인 메뉴와 메뉴 하단 중앙 대형 검색창.
+
+02-home-header-mobile.png
+- 운영 홈 모바일. 메뉴 아래 검색창과 D-day 포함.
+
+03-math-start-desktop.png
+- 운영 수학 CBT 시작 화면. 연도/출처/선택과목 설정.
+
+04-math-solving-handwriting-desktop.png
+- 운영 수학 풀이 화면. 왼쪽 문제 원문, 오른쪽 손필기 영역.
+
+05-math-keyboard-note-desktop.png
+- 운영 수학 풀이 화면. 이동 가능한 키보드 텍스트 노트 팝업.
+
+06-math-results-desktop.png
+- 운영 수학 채점 결과/문항별 분석 화면.
+
+07-math-results-mobile.png
+- 모바일 수학 채점 결과 화면.
+
+08-inquiries-desktop-redacted.png
+- 운영 문의 화면. 사용자 작성 정보는 제출본에서 흐림 처리.
+
+09-chat-desktop-redacted.png
+- 운영 수험채팅 화면. 사용자 작성 정보는 제출본에서 흐림 처리.
+
+10-admin-fullservice-desktop.png
+- 관리자 Full Service PC 검증 화면. 실제 사용자 데이터가 아닌 테스트 데이터.
+
+11-admin-fullservice-mobile.png
+- 관리자 Full Service 모바일 검증 화면. 실제 사용자 데이터가 아닌 테스트 데이터.

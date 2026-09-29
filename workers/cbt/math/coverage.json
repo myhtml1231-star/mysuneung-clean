@@ -20,8 +20,8 @@
   "question_references": 6960,
   "distinct_questions": 5200,
   "common_duplicates_removed": 1760,
-  "pending_taxonomy": 89,
-  "manual_taxonomy_reviewed": 2840,
+  "pending_taxonomy": 0,
+  "manual_taxonomy_reviewed": 2929,
   "education_office_sessions": 55,
   "periods": [
     {
