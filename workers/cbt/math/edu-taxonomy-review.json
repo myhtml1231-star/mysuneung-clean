@@ -1,8 +1,1928 @@
 {
-  "scope": "2015-2026 academic-year high3 education-office reviewed batches; 2027 education-office retains prior source-objective mapping",
-  "reviewed_questions": 2600,
-  "method": "Every reviewed-batch question was judged individually from the official EBS solution [출제의도] when reliable; missing/corrupt objective text was reviewed from the official problem source. Modern shared common questions are reviewed once per session.",
+  "scope": "2014-2026 academic-year high3 education-office reviewed batches; 2027 education-office retains prior source-objective mapping",
+  "reviewed_questions": 2840,
+  "method": "Every reviewed-batch question was judged individually from the official EBS solution [출제의도] when available; missing objective text was reviewed from the official problem text/rendered source. Modern shared common questions are reviewed once per session.",
   "entries": {
+    "2014-03-mA-01": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의 성질을 알고, 로그의 값을 계산한",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-02": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의 곱셈과 뺄셈의 뜻을 알고, 이를 계산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-03": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "수렴하는 수열의 극한에 관한 성질을 알 고, 이를 계산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-04": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등비수열의 일반항을 이해하고, 항의 값 을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-05": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "지수의 성질을 이해하고, 지수방정식의 해를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-06": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한등비급수를 이해하고, 무한급수의 합 을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-07": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "그래프의 각 꼭짓점 사이의 연결 관계를 나타내는 행렬을 이해한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-08": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등차수열과 계차수열을 이해하고, 항의 값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-09": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬을 이용하여 전력량 요금에 대한 실 생활 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-10": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "지수함수의 그래프를 이해하고, 직선의 기울기를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-11": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "지수함수의 그래프를 이용하여 수열의 극한에 대한 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-12": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "지수법칙을 이해하고, 이를 이용하여 주 어진 값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-13": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한급수의 수렴과 일반항의 극한의 관 계를 이해하고, 극한값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-14": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "로그함수의 그래프를 이용하여 삼각형 의 넓이에 대한 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-15": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "계차수열의 성질을 이용하여 일반항을 구할 수 있음을 증명한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-16": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "도형의 닮음비를 이용하여 무한등비급 수 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-17": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수열의 합과 일반항과의 관계를 이해하 고, 수열의 합을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-18": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "이차함수와 지수함수의 합성함수의 최 3 대ㆍ최소를 이해한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-19": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "주어진 수열의 규칙성을 추론하여 두 항의 차를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-20": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의 연산을 이해하고, 주어진 조건에 맞는 행렬의 성질을 추론한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-21": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "이차함수와 원의 접선을 이용하여 수열 의 극한값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-22": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의 성질을 이용하여 로그방정식의 해를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-23": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "이차정사각행렬의 역행렬을 알고, 이를 계산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-24": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "합의 기호 의 성질을 이해한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-25": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한등비수열의 수렴조건을 이해한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-26": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그방정식으로 표현된 관계식을 이용 하여 실생활 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-27": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "상용로그의 지표를 이해하고, 주어진 식 을 만족시키는 자연수를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-28": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬로 표현된 연립일차방정식과 직선 의 방정식을 이용하여 해를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-29": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "지수함수의 그래프를 이용하여 주어진 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mA-30": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등차수열의 합에 대한 성질을 이용하여 조건에 맞는 자연수를 추측한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-01": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의 성질을 이용하여 로그의 뺄셈을 계산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-02": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "삼차함수의 도함수를 이용하여 미분계수 를 계산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-03": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "치환을 이용하여 지수함수의 극한값을 계 산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-04": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "삼각함수의 배각공식을 이용하여 삼각함 수의 값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-05": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "거듭제곱근의 뜻을 이해하여 지수방정식 의 해를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-06": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한급수와 수열의 극한 사이의 관계를 이용하여 극한값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-07": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "역행렬의 성질을 이용하여 행렬의 성분을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-08": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "다항함수의 극한의 성질을 이용하여 함숫 값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-09": {
+      "topic": "derivative_methods",
+      "type": "여러 가지 미분법",
+      "type_group": "미적분",
+      "objective": "합성함수의 미분법을 이용하여 미분계수 를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-10": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-11": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-12": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "그래프와 행렬 사이의 관계와 경로의 뜻을 이해하여 그래프의 변을 찾는다. 조건 (나)에서 ACEDBA 가 그래프  의 경로이므로 AC  CE  ED  DB  BA 는 그래프  의 변이다. 또, ABCE 는 그래프  의 경로가 아니므로 BC 는 변 이 아니다. A E B C D 126 조건 (가)에서 그래프  의 변의 개수는 이므  2 로 위 그래프에 BC 가 아닌 한 개의 변이 추가되어야 한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-13": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "지수함수의 그래프를 이용하여 직선의 기울기를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-14": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "함수의 미분법을 이용하여 넓이의 순간 변화율을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-15": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-16": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-17": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "분수방정식을 세워 속력에 관한 실생활 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-18": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "삼각함수의 덧셈정리를 이용하여 삼각 함수의 값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-19": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "미분법을 이용하여 극솟값을 가질 조건 을 찾는다. sin  2  sin  이므로  2  2 2  ′ 2 sin  cos  2  2 sin  cos  이고 2 2  ″ 2 2 sin  cos  2 cos  sin  2  3 sin 4 cos  이다. 이때 함수  는  에서 극솟값을 가지므로  ′ 0  ″ 0 이어야 한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-20": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "주어진 함수와 도함수를 이용하여 함수 의 극한값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-21": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "도형의 성질과 삼각함수의 극한의 성질 을 이용하여 극한값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-22": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등비수열의 일반항을 이용하여 항의 값 을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-23": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "무리방정식의 해를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-24": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "분수부등식이 특정 해를 가질 조건을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-25": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "역행렬의 성질을 이용하여 행렬의 성분 의 합을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-26": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-27": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "수열의 합과 일반항의 관계를 이용하여 수열의 극한값을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-28": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "원의 성질과 삼각함수의 배각공식을 이 용하여 삼각방정식의 해를 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-29": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등차수열의 합과 이차함수의 성질을 이 용하여 문제를 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-03-mB-30": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "이차함수의 성질을 이용하여 합성함수 가 불연속일 조건을 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-01": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "지수법칙을알고계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-02": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의실수배의뜻을알고계산하기 6  2 3 ",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-03": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한등비수열의극한이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-04": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의연속의뜻이해하기         함수  가모든실수  에서연속이려면 2 에서 A 3  , B   ,      연속이어야한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-05": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등차수열의일반항이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-06": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한등비수열의수렴이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-07": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "지수부등식이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-08": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의뜻을알고이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-09": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그부등식이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-10": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-11": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의극한이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-12": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등비중항이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-13": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의극한이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-14": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등비수열의합을이용하여문제해결하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-15": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-16": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의연산을활용하여추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-17": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬을이용하여문제해결하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-18": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한급수를활용하여추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-19": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "지수함수의그래프의대칭이동과평행",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-20": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수열의귀납적정의를이해하여추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-21": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-22": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-23": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "연립방정식과행렬이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-24": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "로그함수의그래프의성질이해하기   B C  C B 이고 1 1  1 함수  log  는밑이 1 점B 은∆B C D 의무게중심이므로  1    3    가증가할때  가감소한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-25": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-26": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-27": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "알고리즘과순서도를이해하여추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-28": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의정의를이해하여문제해결하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-29": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mA-30": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-01": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-02": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "삼각함수의배각의공식이해하기 O",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-03": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "함수의미분계수계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-04": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "일차변환의성질이해하기   sin 21",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-05": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "함수의극댓값극솟값이해하기 ,",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-06": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "일차변환과행렬사이의관계이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-07": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-08": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "삼각방정식의실근의개수구하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-09": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-10": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-11": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-12": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-13": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "분수함수의정적분이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-14": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-15": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의연속의정의를활용하여추론하기 ]",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-16": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-17": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-18": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "무리방정식이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-19": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "수열의극한값추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-20": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분의성질을활용하여추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-21": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "미분법을활용하여문제해결하기 해결하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-22": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그부등식의정의이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-23": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등차수열의일반항이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-24": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "분수부등식을활용하여문제해결하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-25": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "삼각함수의극한을활용하여문제해결하기 ]",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-26": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-27": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "삼각함수의덧셈정리를활용하여문제",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-28": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "접선의방정식을활용하여문제해결하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-29": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분과무한급수의관계이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-04-mB-30": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "도함수를활용하여추론하기  ′ 1 sin ≥0 이므로  는실수전체의집 cos × 합에서증가한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-01": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-02": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-03": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "수열의 극한 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-04": {
+      "topic": "probability",
+      "type": "확률",
+      "type_group": "확률·통계",
+      "objective": "확률의 기본 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-05": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-06": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "수열의 극한 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-07": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "접선의 방정식 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-08": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의 연속성 추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-09": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "무한급수와 정적분의 관계 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-10": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한급수와 나머지 정리를 이용하",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-11": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "도함수를 이용하여 속도와 위치",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-12": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-13": {
+      "topic": "counting",
+      "type": "순열·조합",
+      "type_group": "확률·통계",
+      "objective": "등차수열과 조합을 이용하여 수학",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-14": {
+      "topic": "counting",
+      "type": "순열·조합",
+      "type_group": "확률·통계",
+      "objective": "중복 조합을 이용하여 수학 외적",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-15": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수학적 귀납법을 이용하여 증명과 정 추론하기 2 1× 4 3× 6 5×⋯× 2 21≤  31 1 ⋯(★) (i) 1일 때 2 1≤ 4 1 이므로 (★)이 성립한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-16": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수열의 규칙성 추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-17": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-18": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의 성질 추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-19": {
+      "topic": "conditional",
+      "type": "조건부확률·독립",
+      "type_group": "확률·통계",
+      "objective": "조건부 확률을 이용하여 수학 외적",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-20": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의 성질을 이용하여 수학 외적",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-21": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "부정적분을 이용하여 수학 내적 문",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-22": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의 극한 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-23": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "그래프와 행렬의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-24": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "함수의 미분가능성 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-25": {
+      "topic": "binomial_theorem",
+      "type": "이항정리",
+      "type_group": "확률·통계",
+      "objective": "이항계수의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-26": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수열의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-27": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수열의 성질을 이용하여 수학 외적",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-28": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의 연속성 이해하기 함수 가 모든 실수에서 연속이 되기 위해서는 2에서 연속이 되어야 하므로 lim →2 22를 만족하여야 한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-29": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "상용로그의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mA-30": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한급수를 이용하여 수학 내적 문",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-01": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-02": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의 극한값 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-03": {
+      "topic": "space",
+      "type": "공간도형·좌표",
+      "type_group": "기하",
+      "objective": "공간좌표의 내분점 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-04": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-05": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "삼각함수의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-06": {
+      "topic": "probability",
+      "type": "확률",
+      "type_group": "확률·통계",
+      "objective": "확률의 기본 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-07": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "일차변환의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-08": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "무리방정식의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-09": {
+      "topic": "conditional",
+      "type": "조건부확률·독립",
+      "type_group": "확률·통계",
+      "objective": "조건부 확률과 역행렬의 성질을",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-10": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "일차변환의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-11": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의 성질을 이용하여 수학 외",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-12": {
+      "topic": "derivative_methods",
+      "type": "여러 가지 미분법",
+      "type_group": "미적분",
+      "objective": "합성함수의 미분법 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-13": {
+      "topic": "projection",
+      "type": "정사영",
+      "type_group": "기하",
+      "objective": "정사영을 이용하여 수학 내적",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-14": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분을 이용하여 수학 내적 문",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-15": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수학적 귀납법을 이용하여 증명과 정 추론하기 2 1× 4 3× 6 5×⋯× 2 21≤  31 1 ⋯(★) (i) 1일 때 2 1≤ 4 1 이므로 (★)이 성립한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-16": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의 연속성 추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-17": {
+      "topic": "probability",
+      "type": "확률",
+      "type_group": "확률·통계",
+      "objective": "확률을 이용하여 수학 외적 문제",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-18": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "도함수를 이용하여 그래프의 개형 추론하기 에 대한 증감표를 작성하면  -  - 0 +  +  +  + 0 - + 0 - 0 + ′ - + + - +  ↘ 극소 ↗ ↗ 극대 ↘ 극소 ↗ ㄱ. 는 열린 구간 0에서 증가한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-19": {
+      "topic": "space",
+      "type": "공간도형·좌표",
+      "type_group": "기하",
+      "objective": "공간도형의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-20": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의 성질 추론하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-21": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "삼각함수의 극한을 이용하여 수",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-22": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "미분계수 계산하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-23": {
+      "topic": "binomial_theorem",
+      "type": "이항정리",
+      "type_group": "확률·통계",
+      "objective": "이항계수의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-24": {
+      "topic": "conic",
+      "type": "이차곡선",
+      "type_group": "기하",
+      "objective": "쌍곡선의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-25": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "계차수열 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-26": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-27": {
+      "topic": "counting",
+      "type": "순열·조합",
+      "type_group": "확률·통계",
+      "objective": "원순열을 이용하여 수학 외적",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-28": {
+      "topic": "conic",
+      "type": "이차곡선",
+      "type_group": "기하",
+      "objective": "타원의 성질 이해하기",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-29": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "무한급수를 이용하여 수학 내적 문",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-07-mB-30": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의 성질을 이용하여 수학 내적",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-01": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그를계산하여값을구한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-02": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬을계산하여성분의합을구한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-03": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "수열의극한을계산한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-04": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분의값을계산한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-05": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "그래프를나타내는행렬의성질을이해하  ′   0 여값을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-06": {
+      "topic": "binomial_theorem",
+      "type": "이항정리",
+      "type_group": "확률·통계",
+      "objective": "이항정리를이해하고항의계수를구한",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-07": {
+      "topic": "probability",
+      "type": "확률",
+      "type_group": "확률·통계",
+      "objective": "서로배반인두사건의확률의덧셈정리 log   log  1 , log 2 1   를이해하고값을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-08": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "미분계수의정의를이해하고극한값을구 한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-09": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-10": {
+      "topic": "counting",
+      "type": "순열·조합",
+      "type_group": "확률·통계",
+      "objective": "중복조합을이해하고경우의수를구한",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-11": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-12": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-13": {
+      "topic": "exp_log_functions",
+      "type": "지수함수·로그함수",
+      "type_group": "대수",
+      "objective": "지수함수와로그함수의그래프를이해 3 ∴ P   ∪   하고주어진값을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-14": {
+      "topic": "random",
+      "type": "확률변수·분포",
+      "type_group": "확률·통계",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-15": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "수열의일반항을추론한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-16": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "주어진함수의그래프에서극한과연속 을추측한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-17": {
+      "topic": "estimation",
+      "type": "통계적 추정",
+      "type_group": "확률·통계",
+      "objective": "실생활과관련하여모평균에대한신뢰 구간을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-18": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "주어진도형을통해함수의극한값을 ∴ 12 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-19": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "주어진도형에서무한등비급수의합을 0 2  추측하여구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-20": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "미분계수를이용하여접선의방정식의 수열    의공차를  라하면  성질을알고주어진값을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-21": {
+      "topic": "integral_application",
+      "type": "적분의 활용",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-22": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등차수열의일반항을계산한다",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-23": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-24": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-25": {
+      "topic": "probability",
+      "type": "확률",
+      "type_group": "확률·통계",
+      "objective": "확률의정의를이해하고확률의값을 않는다즉이차항의계수는 . , 0 이므로 구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-26": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "삼차함수의그래프를이용하여미분계 수를구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-27": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "상용로그의지표와가수의성질을이해 하고방정식의해의개수를구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-28": {
+      "topic": "integral_application",
+      "type": "적분의 활용",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-29": {
+      "topic": "functions",
+      "type": "함수·그래프",
+      "type_group": "대수",
+      "objective": "함수의그래프를이용하여주어진방정 식의해의합을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mA-30": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "두수열의일반항사이의관계를추측 하여주어진조건에맞는값을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-01": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "역행렬의성분의합을계산한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-02": {
+      "topic": "derivative",
+      "type": "미분계수·도함수",
+      "type_group": "미적분",
+      "objective": "도함수를이용하여미분계수를계산한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-03": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "삼각함수의덧셈정리를이용하여값을계",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-04": {
+      "topic": "conditional",
+      "type": "조건부확률·독립",
+      "type_group": "확률·통계",
+      "objective": "확률의덧셈정리를이용하여조건부확률 →0 을계산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-05": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "등차수열의성질을이해하고일반항을구 생수 1 병의무게를확률변수 한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-06": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-07": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "정적분의성질을이해하고함숫값을구한  P   ≥15",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-08": {
+      "topic": "counting",
+      "type": "순열·조합",
+      "type_group": "확률·통계",
+      "objective": "중복조합을이해하고경우의수를구한 ∴    ( 참 ) 다. 2 2 ㄴ .      에서   1 2 2 에넣은공의수를각각  ,    2 1 0   2 2    2   01 2 2 21   1 , 20 에서 0 , 1 또는 0 , 1 1 개와 4 개로 따라서조건을만족시키는행렬  는 P 6 3 2 01 01   또는   으로 2 개이다 . ( 참 )  10   1 0  2 2 ㄷ .      에서    216312 이다. 2 2    2    2 2      2   2 2    , 2 2 0 이면   에서 0 또는 1 1 1 2 1 2 1 ≠0 이면  이므로  에서   3 2 0     , , 을일렬로 2 4 2 4 36 을만족시키는실수  는존재하지않는다. 그러므로조건을만족시키는행렬  는 3 , 1 , 00 10   또는   로 2 개이다 . ( 참 )  00   01  33  2 12. A 형 15 번과같음 . 1 , 2 , 13. [ 출제의도 ] 수열의성질을이해하고수열의극한값 33 을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-09": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의극한의성질을이해하고극한값을 산한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-10": {
+      "topic": "estimation",
+      "type": "통계적 추정",
+      "type_group": "확률·통계",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-11": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "행렬의곱셈을이용하여명제의참거 ∴ 1  짓을추론한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-12": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-13": {
+      "topic": "series",
+      "type": "수열의 극한·급수",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-14": {
+      "topic": "integral_application",
+      "type": "적분의 활용",
+      "type_group": "미적분",
+      "objective": "정적분을이해하고곡선과직선으로둘 러싸인부분의넓이를구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-15": {
+      "topic": "projection",
+      "type": "정사영",
+      "type_group": "기하",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-16": {
+      "topic": "space",
+      "type": "공간도형·좌표",
+      "type_group": "기하",
+      "objective": "쌍곡선의정의를이해하고선분의길이 18. [ 출제의도 ] 삼수선의정리를이해하고선분의길이 를구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-17": {
+      "topic": "algebra",
+      "type": "방정식·부등식",
+      "type_group": "대수",
+      "objective": "함수의그래프를추측하여분수방정식 의해의개수를구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-18": {
+      "topic": "space",
+      "type": "공간도형·좌표",
+      "type_group": "기하",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-19": {
+      "topic": "trigonometry",
+      "type": "삼각함수",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-20": {
+      "topic": "integral",
+      "type": "부정적분·정적분",
+      "type_group": "미적분",
+      "objective": "무한급수와관련된문제를정적분의정 의를이용하여해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-21": {
+      "topic": "vector",
+      "type": "벡터",
+      "type_group": "기하",
+      "objective": "벡터와관련된문제를도형을이용하여  ⊥ NI 이다. 해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-22": {
+      "topic": "binomial_theorem",
+      "type": "이항정리",
+      "type_group": "확률·통계",
+      "objective": "이항정리를이용하여값을계산한다 .",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-23": {
+      "topic": "binomial",
+      "type": "이항분포",
+      "type_group": "확률·통계",
+      "objective": "이항분포를이해하고확률변수의평균 50 이다즉 . , 삼각형 을구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-24": {
+      "topic": "matrix",
+      "type": "행렬·일차변환",
+      "type_group": "이전 교육과정",
+      "objective": "합성변환을이해하고옮겨진점의좌표   2  PA  54  0   를구한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-25": {
+      "topic": "limits",
+      "type": "함수의 극한·연속",
+      "type_group": "미적분",
+      "objective": "함수의연속을이해하고함숫값을구한 2 3 3   2  2 2 다. 3 3 2 5   2 에서   2 합성함수 ∘ 가 실수 전체에서 연속이므로 3 4 4   3 2 에서도연속이어야한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-26": {
+      "topic": "exp_log",
+      "type": "지수·로그",
+      "type_group": "대수",
+      "objective": "로그의성질과등차수열의성질을이용 하여문제를해결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-27": {
+      "topic": "conic",
+      "type": "이차곡선",
+      "type_group": "기하",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-28": {
+      "topic": "sequence",
+      "type": "수열·수학적 귀납법",
+      "type_group": "대수",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-29": {
+      "topic": "space",
+      "type": "공간도형·좌표",
+      "type_group": "기하",
+      "objective": "공간벡터의성질을이용하여문제를해 결한다.",
+      "review_basis": "manual_review_of_official_EBS_solution_objective",
+      "review_status": "manual_question_review"
+    },
+    "2014-10-mB-30": {
+      "topic": "derivative_application",
+      "type": "미분의 활용",
+      "type_group": "미적분",
+      "objective": "",
+      "review_basis": "manual_review_of_official_problem_text_due_missing_solution_objective",
+      "review_status": "manual_question_review"
+    },
     "2015-03-mA-01": {
       "topic": "exp_log",
       "type": "지수·로그",

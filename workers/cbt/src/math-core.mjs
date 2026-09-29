@@ -2,7 +2,7 @@
 import * as Learning from './learning-core.mjs';
 import * as Study from './study-core.mjs';
 import MATH_BANK from '../data/math-bank.json' with {type:'json'};
-export const MATH_VERSION='2026-09-29.math.v7';
+export const MATH_VERSION='2026-09-29.math.v8';
 export const TRACKS=Object.freeze({A:'수학 A형',B:'수학 B형',ga:'수학 가형',na:'수학 나형',prob:'확률과 통계',calc:'미적분',geom:'기하'});
 
 export class MathInputError extends Error{constructor(message,code='INVALID_MATH_REQUEST',status=400){super(message);this.code=code;this.status=status;}}

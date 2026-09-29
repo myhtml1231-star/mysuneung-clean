@@ -1,118 +1,12 @@
 
- ⛅️ wrangler 4.142.0
-────────────────────
+ ⛅️ wrangler 4.142.0 (update available 4.143.0)
+───────────────────────────────────────────────
 🌀 Building list of assets...
-✨ Read 4986 files from the assets directory /Users/shbj/Downloads/mysuneung-site-index/workers/accounts/public
+✨ Read 5226 files from the assets directory /Users/shbj/Downloads/mysuneung-site-index/workers/accounts/public
 🌀 Starting asset upload...
-🌀 Found 479 new or modified static assets to upload. Proceeding with upload...
-+ /account-assets/math/questions/2015-10-mB-01-fc3e8e5e77b9.webp
-+ /account-assets/math/questions/2015-10-mA-03-91baa3575349.webp
-+ /account-assets/math/questions/2015-10-mA-01-7e2ca19d7058.webp
-+ /account-assets/math/questions/2015-10-mB-03-0946f8b08d20.webp
-+ /account-assets/math/questions/2016-10-mA-01-8e0646d069f0.webp
-+ /account-assets/math/questions/2016-07-mA-22-8c619ad981fd.webp
-+ /account-assets/math/questions/2015-07-mA-01-945fd51a8520.webp
-+ /account-assets/math/questions/2016-07-mA-25-595fa549506e.webp
-+ /account-assets/math/questions/2016-10-mB-02-b7bde66d50e3.webp
-+ /account-assets/math/questions/2016-07-mA-03-14ee01d0182d.webp
-+ /account-assets/math/questions/2015-07-mB-01-58c36d92d19b.webp
-+ /account-assets/math/questions/2016-04-mA-22-3ee4fc01cecb.webp
-+ /account-assets/math/questions/2015-10-mB-23-9492655281d2.webp
-+ /account-assets/math/questions/2016-04-mB-02-0ba2c3596f72.webp
-+ /account-assets/math/questions/2016-03-mA-03-c1409f4a1b28.webp
-+ /account-assets/math/questions/2016-04-mB-23-e25bff466c74.webp
-+ /account-assets/math/questions/2015-07-mA-23-403fdb79cedf.webp
-+ /account-assets/math/questions/2016-10-mB-03-fd7cf4cd636e.webp
-+ /account-assets/math/questions/2015-03-mA-03-44bf3078d47e.webp
-+ /account-assets/math/questions/2016-10-mB-24-c0cc7bc7bce3.webp
-+ /account-assets/math/questions/2015-10-mA-04-64c52ddceda8.webp
-+ /account-assets/math/questions/2015-10-mA-07-4cd0aeec25da.webp
-+ /account-assets/math/questions/2015-10-mA-30-700c44a06605.webp
-+ /account-assets/math/questions/2016-03-mB-24-8c35bc887f85.webp
-+ /account-assets/math/questions/2015-04-mA-24-761f31121948.webp
-+ /account-assets/math/questions/2016-10-mA-25-f5a23841d005.webp
-+ /account-assets/math/questions/2015-10-mA-25-0dd795f49b00.webp
-+ /account-assets/math/questions/2015-10-mA-24-76dc55e9790a.webp
-+ /account-assets/math/questions/2015-03-mA-23-81e7c216518e.webp
-+ /account-assets/math/questions/2015-04-mB-23-355c32a3bb5c.webp
-+ /account-assets/math/questions/2015-07-mA-22-92b68d404659.webp
-+ /account-assets/math/questions/2016-03-mA-06-8d07f7adea2b.webp
-+ /account-assets/math/questions/2015-03-mB-01-7535d21e37f2.webp
-+ /account-assets/math/questions/2016-04-mB-24-8afc3d6038ae.webp
-+ /account-assets/math/questions/2015-07-mA-03-41ea9512609d.webp
-+ /account-assets/math/questions/2016-04-mA-07-173954f6c7f3.webp
-+ /account-assets/math/questions/2015-10-mB-25-08715a39ae01.webp
-+ /account-assets/math/questions/2015-07-mB-05-029bc8c7f382.webp
-+ /account-assets/math/questions/2015-04-mB-15-9bfd415076d6.webp
-+ /account-assets/math/questions/2016-10-mA-02-5cda2cc4c9b0.webp
-+ /account-assets/math/questions/2016-04-mA-15-bfa5c8bc4c4c.webp
-+ /account-assets/math/questions/2015-04-mA-06-c7fe5c49750c.webp
-+ /account-assets/math/questions/2016-03-mA-29-2520feb19780.webp
-+ /account-assets/math/questions/2015-03-mA-11-723d4f1bd8de.webp
-+ /account-assets/math/questions/2016-03-mA-02-9ce607d26c3f.webp
-+ /account-assets/math/questions/2015-04-mA-02-703f95c80ae6.webp
-+ /account-assets/math/questions/2015-03-mA-09-cb6e36845c05.webp
-+ /account-assets/math/questions/2016-04-mB-08-72874596fd34.webp
-+ /account-assets/math/questions/2015-07-mB-02-6311da9623cc.webp
-+ /account-assets/math/questions/2016-07-mA-06-f81d727ad140.webp
-+ /account-assets/math/questions/2015-10-mB-10-8309beaf230e.webp
-+ /account-assets/math/questions/2016-07-mA-10-c5ab6324fda6.webp
-+ /account-assets/math/questions/2015-07-mA-25-e86975a46f1b.webp
-+ /account-assets/math/questions/2016-10-mA-10-12c1ce7aee1a.webp
-+ /account-assets/math/questions/2016-03-mB-08-6c0c1b630ab5.webp
-+ /account-assets/math/questions/2016-03-mA-26-7115ba2b779c.webp
-+ /account-assets/math/questions/2015-04-mB-25-3309f13d254a.webp
-+ /account-assets/math/questions/2015-03-mB-10-2006b1295979.webp
-+ /account-assets/math/questions/2015-07-mA-06-9fd61cbf8321.webp
-+ /account-assets/math/questions/2016-10-mB-25-42a63700341b.webp
-+ /account-assets/math/questions/2015-04-mA-17-ca7a02894f0f.webp
-+ /account-assets/math/questions/2016-03-mB-05-507903aae5ac.webp
-+ /account-assets/math/questions/2016-07-mA-12-41bd9e38272b.webp
-+ /account-assets/math/questions/2015-10-mB-18-d7c43bdab2a2.webp
-+ /account-assets/math/questions/2015-03-mA-29-599e150279ec.webp
-+ /account-assets/math/questions/2015-07-mB-23-5dd9bc4ff596.webp
-+ /account-assets/math/questions/2015-07-mA-07-376efc08aaf6.webp
-+ /account-assets/math/questions/2015-03-mA-08-a43254ad3c1e.webp
-+ /account-assets/math/questions/2016-03-mA-17-5ec782b9f8d5.webp
-+ /account-assets/math/questions/2016-07-mA-15-0187ed019e40.webp
-+ /account-assets/math/questions/2015-04-mA-23-62653c87f2fd.webp
-+ /account-assets/math/questions/2015-10-mA-08-f46a35a8f6cf.webp
-+ /account-assets/math/questions/2015-07-mB-09-28a1b56c6d60.webp
-+ /account-assets/math/questions/2016-10-mB-08-ac5d376977c5.webp
-+ /account-assets/math/questions/2015-10-mA-17-99af90081177.webp
-+ /account-assets/math/questions/2016-03-mA-09-8d252baca482.webp
-+ /account-assets/math/questions/2016-04-mA-28-bc91d64005f3.webp
-+ /account-assets/math/questions/2016-07-mB-11-80c3980a6a25.webp
-+ /account-assets/math/questions/2016-07-mB-07-ae02de62fb35.webp
-+ /account-assets/math/questions/2016-03-mA-21-673cca3a9c4d.webp
-+ /account-assets/math/questions/2015-10-mB-14-083b0182471d.webp
-+ /account-assets/math/questions/2015-03-mA-20-5974276cef38.webp
-+ /account-assets/math/questions/2015-03-mA-18-cdbb2c99a3bd.webp
-+ /account-assets/math/questions/2015-07-mA-19-4ae9b487e5b0.webp
-+ /account-assets/math/questions/2016-07-mA-19-d2efaf4fbc9d.webp
-+ /account-assets/math/questions/2016-07-mB-28-501a73407648.webp
-+ /account-assets/math/questions/2015-04-mB-30-7cfc570eea8e.webp
-+ /account-assets/math/questions/2016-04-mB-27-7d4792a9c859.webp
-+ /account-assets/math/questions/2016-10-mA-18-f1a6f196aa2f.webp
-+ /account-assets/math/questions/2016-10-mA-29-a2ef5ed8276b.webp
-+ /account-assets/math/questions/2015-10-mA-26-1e340c3aa821.webp
-+ /account-assets/math/questions/2016-07-mA-29-7aae4ba2c19c.webp
-+ /account-assets/math/questions/2015-10-mB-29-09ed0a0a6b7d.webp
-+ /account-assets/math/questions/2015-10-mA-11-fbf3c8e821ab.webp
-+ /account-assets/math/questions/2015-10-mA-13-faffea505476.webp
-+ /account-assets/math/questions/2016-10-mA-09-cf560330aa4b.webp
-+ /account-assets/math/questions/2016-10-mA-04-8a16266c58c7.webp
-+ /account-assets/math/questions/2015-10-mB-17-4383855691d0.webp
-+ /account-assets/math/questions/2016-04-mB-21-a16e38c30d06.webp
-+ /account-assets/math/questions/2016-07-mA-18-3cbb17d6cfe2.webp
-   (truncating changed assets log, set `WRANGLER_LOG=debug` environment variable to see full diff)
-Uploaded 159 of 479 assets
-Uploaded 319 of 479 assets
-Uploaded 479 of 479 assets
-✨ Success! Uploaded 479 files (4504 already uploaded) (3.13 sec)
-
-Total Upload: 7073.34 KiB / gzip: 472.09 KiB
-Worker Startup Time: 20 ms
+No updated asset files to upload. Proceeding with deployment...
+Total Upload: 7401.10 KiB / gzip: 491.36 KiB
+Worker Startup Time: 11 ms
 Your Worker has access to the following bindings:
 Binding                                                Resource
 env.DB (mysuneung-accounts)                            D1 Database
@@ -122,9 +16,9 @@ env.ASSETS                                             Assets
 env.SITE_ORIGIN ("https://mysuneung.com")              Environment Variable
 env.FIREBASE_PROJECT_ID ("mysuneung")                  Environment Variable
 
-Uploaded mysuneung-accounts (14.92 sec)
-Deployed mysuneung-accounts triggers (2.25 sec)
+Uploaded mysuneung-accounts (12.92 sec)
+Deployed mysuneung-accounts triggers (7.60 sec)
   mysuneung.com/* (zone name: mysuneung.com)
   www.mysuneung.com/* (zone name: mysuneung.com)
   schedule: 17 19 * * *
-Current Version ID: f9caa9dc-839d-48fb-87df-c3d123853b5a
+Current Version ID: 0026c712-0781-4fdc-8a0a-10f3eb3e075b

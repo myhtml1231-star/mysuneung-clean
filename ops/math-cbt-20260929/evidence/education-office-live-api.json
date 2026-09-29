@@ -1,14 +1,14 @@
 {
   "coverage": {
-    "version": "2026-09-29.math.v7",
-    "distinct_questions": 4960,
-    "forms": 224,
-    "exam_sessions": 92,
-    "education_office_sessions": 51,
-    "manual_taxonomy_reviewed": 2600,
+    "version": "2026-09-29.math.v8",
+    "distinct_questions": 5200,
+    "forms": 232,
+    "exam_sessions": 96,
+    "education_office_sessions": 55,
+    "manual_taxonomy_reviewed": 2840,
     "pending_taxonomy": 89
   },
-  "generated_2015_A": {
+  "generated_2014_A": {
     "source_family": "education_office",
     "question_count": 30,
     "max_score": 100,
@@ -16,10 +16,10 @@
       "education_office"
     ],
     "years": [
-      2015
+      2014
     ]
   },
-  "generated_2016_B": {
+  "generated_2014_B": {
     "source_family": "education_office",
     "question_count": 30,
     "max_score": 100,
@@ -27,14 +27,14 @@
       "education_office"
     ],
     "years": [
-      2016
+      2014
     ]
   },
   "question_check": {
-    "question_key": "2015-04-mB-08",
-    "source_label": "2015학년도 4월 전국연합학력평가 · 경기도교육청 · 수학 B형",
+    "question_key": "2014-10-mB-30",
+    "source_label": "2014학년도 10월 전국연합학력평가 · 서울특별시교육청 · 수학 B형",
     "area": "미적분",
-    "category": "미분계수·도함수"
+    "category": "미분의 활용"
   },
   "ungraded_answer_fields_exposed": false
 }

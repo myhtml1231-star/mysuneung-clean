@@ -37,18 +37,18 @@
       "education_office"
     ],
     "months": [
-      7,
-      10,
       3,
       5,
-      4
+      10,
+      4,
+      7
     ],
     "years": [
+      2024,
       2027,
       2025,
-      2022,
       2026,
-      2024,
+      2022,
       2023
     ]
   },
@@ -58,15 +58,15 @@
     "score": 100,
     "n": 30,
     "years": [
-      2015
+      2014
     ],
     "families": [
       "education_office"
     ],
     "sessions": [
-      "2015-10"
+      "2014-03"
     ]
   },
-  "category_count": 23,
+  "category_count": 21,
   "errors": []
 }

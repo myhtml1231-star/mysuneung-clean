@@ -7,7 +7,7 @@ import fitz,json,re,hashlib,collections,sys,io
 ROOT=Path.home()/'Downloads/mysuneung-math-cbt-20260929'
 REPO=Path(__file__).resolve().parents[4]
 ASSETS=ROOT/'assets';ASSETS.mkdir(exist_ok=True)
-VERSION='2026-09-29.math.v7'
+VERSION='2026-09-29.math.v8'
 TRACK={'A':'수학 A형','B':'수학 B형','ga':'수학 가형','na':'수학 나형','prob':'확률과 통계','calc':'미적분','geom':'기하'}
 # Rules refer exclusively to the source's stated objective, never to a guessed answer or student behavior.
 TOPICS=[
@@ -65,7 +65,7 @@ def render_question(doc,q):
 
 def main():
     forms=json.loads((ROOT/'parsed-forms.json').read_text());errors=json.loads((ROOT/'parse-errors.json').read_text())
-    if errors or len(forms)!=224:raise ValueError('Cannot publish an incomplete or ambiguous source bank: '+str(errors))
+    if errors or len(forms)!=232:raise ValueError('Cannot publish an incomplete or ambiguous source bank: '+str(errors))
     questions={};outforms=[];provenance=[];assets=[];dup=0
     for form in forms:
         fid=form['id'];year=form['academic_year'];month=form['month'];track=form['track'];era=curriculum(year)
@@ -97,7 +97,7 @@ def main():
             review=json.loads((REPO/'workers/cbt/math/edu-taxonomy-review.json').read_text())['entries'].get(key) if is_edu else None
             if review:
                 tax={'type':review['type'],'type_id':'math-'+era+'-'+review['topic'],'type_group':review['type_group'],'area':review['type_group'],'category':review['type'],'analysis_eligible':True,'review_status':review['review_status'],'topic':review['topic']}
-            elif is_edu and year in [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]:
+            elif is_edu and year in [2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026]:
                 raise ValueError('Missing manual education-office taxonomy '+key)
             else:tax=classify(objectives,era)
             provider=form.get('provider') or ('교육청' if is_edu else '한국교육과정평가원')
@@ -111,7 +111,7 @@ def main():
         outforms.append({k:v for k,v in form.items() if k not in ['questions','title','listing_params'] }|{'question_keys':keys,'curriculum':era,'exam_family':'education_office' if normalized_edu else 'kice','provider':normalized_provider})
         print('BUILT',fid,'questions',len(questions),flush=True)
     years=sorted(set(f['academic_year'] for f in forms))
-    coverage={'academic_years':years,'exam_sessions':len(set((f['academic_year'],f['month'],f.get('exam_family','kice')) for f in outforms)),'forms':len(forms),'question_references':len(forms)*30,'distinct_questions':len(questions),'common_duplicates_removed':dup,'pending_taxonomy':sum(not q['analysis_eligible'] for q in questions.values()),'manual_taxonomy_reviewed':sum(q.get('review_status')=='manual_question_review' for q in questions.values()),'education_office_sessions':len(set((f['academic_year'],f['month']) for f in outforms if f.get('exam_family')=='education_office')),'periods':[{'year':y,'months':sorted(set(f['month'] for f in forms if f['academic_year']==y)),'tracks':sorted(set(f['track'] for f in forms if f['academic_year']==y))} for y in years],'not_published':['2027학년도 수능'],'source':'EBSi 공개 기출 문제·해설 PDF','scope_note':'2014–2026학년도 평가원 6·9월 및 수능 + 2015~2016학년도 고3 교육청 3·4·7·10월 A/B형 + 2017~2021학년도 고3 교육청 3·4·7·10월 가/나형 + 2022학년도 고3 교육청 3·4·7·10월 공통·선택 + 2023~2026학년도 고3 교육청 각 4회차 + 2027 대비 교육청 3·5·7월 및 평가원 6·9월. 2027 수능 제외.','textbook_links_verified':0}
+    coverage={'academic_years':years,'exam_sessions':len(set((f['academic_year'],f['month'],f.get('exam_family','kice')) for f in outforms)),'forms':len(forms),'question_references':len(forms)*30,'distinct_questions':len(questions),'common_duplicates_removed':dup,'pending_taxonomy':sum(not q['analysis_eligible'] for q in questions.values()),'manual_taxonomy_reviewed':sum(q.get('review_status')=='manual_question_review' for q in questions.values()),'education_office_sessions':len(set((f['academic_year'],f['month']) for f in outforms if f.get('exam_family')=='education_office')),'periods':[{'year':y,'months':sorted(set(f['month'] for f in forms if f['academic_year']==y)),'tracks':sorted(set(f['track'] for f in forms if f['academic_year']==y))} for y in years],'not_published':['2027학년도 수능'],'source':'EBSi 공개 기출 문제·해설 PDF','scope_note':'2014~2016학년도 고3 교육청 3·4·7·10월 A/B형 + 2017~2021학년도 고3 교육청 3·4·7·10월 가/나형 + 2022학년도 고3 교육청 3·4·7·10월 공통·선택 + 2023~2026학년도 고3 교육청 각 4회차 + 평가원·수능 2014~2026 + 2027 대비 교육청 3·5·7월 및 평가원 6·9월. 2027 수능 제외.','textbook_links_verified':0}
     bank={'version':VERSION,'years':years,'coverage':coverage,'forms':outforms,'questions':questions}
     path=REPO/'workers/cbt/data/math-bank.json';path.write_text(json.dumps(bank,ensure_ascii=False,separators=(',',':')))
     (ROOT/'assets-manifest.json').write_text(json.dumps(assets,ensure_ascii=False,indent=2))
