@@ -2085,6 +2085,1038 @@
           "layout_evidence": "visual_review_of_original_pdf"
         }
       ]
+    },
+    "2021-05-ga-edu": {
+      "sha256": "f0aa5163d660904a6258d7d4e7faea1c38d0258604c8bd4cf4a668977bfb3d15",
+      "questions": [
+        {
+          "no": 1,
+          "page": 1,
+          "col": 0,
+          "x": 82.4,
+          "y": 235,
+          "rect": [
+            82.4,
+            235,
+            414.6,
+            326
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 2,
+          "page": 1,
+          "col": 0,
+          "x": 82.4,
+          "y": 618,
+          "rect": [
+            82.4,
+            618,
+            414.6,
+            1061.5
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 3,
+          "page": 1,
+          "col": 1,
+          "x": 430.6,
+          "y": 190,
+          "rect": [
+            430.6,
+            190,
+            756.9,
+            276
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 4,
+          "page": 1,
+          "col": 1,
+          "x": 430.6,
+          "y": 628,
+          "rect": [
+            430.6,
+            628,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 5,
+          "page": 2,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            281
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 6,
+          "page": 2,
+          "col": 0,
+          "x": 82.4,
+          "y": 622,
+          "rect": [
+            82.4,
+            622,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 7,
+          "page": 2,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 8,
+          "page": 3,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            242
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 9,
+          "page": 3,
+          "col": 0,
+          "x": 82.4,
+          "y": 620,
+          "rect": [
+            82.4,
+            620,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 10,
+          "page": 3,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 11,
+          "page": 4,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 12,
+          "page": 4,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 13,
+          "page": 5,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 14,
+          "page": 5,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 15,
+          "page": 6,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 16,
+          "page": 6,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 17,
+          "page": 7,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 18,
+          "page": 7,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 19,
+          "page": 8,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 20,
+          "page": 8,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 21,
+          "page": 9,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 22,
+          "page": 9,
+          "col": 1,
+          "x": 430.6,
+          "y": 200,
+          "rect": [
+            430.6,
+            200,
+            756.9,
+            228
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 23,
+          "page": 9,
+          "col": 1,
+          "x": 430.6,
+          "y": 589,
+          "rect": [
+            430.6,
+            589,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 24,
+          "page": 10,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            224
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 25,
+          "page": 10,
+          "col": 0,
+          "x": 82.4,
+          "y": 598,
+          "rect": [
+            82.4,
+            598,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 26,
+          "page": 10,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 27,
+          "page": 11,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 28,
+          "page": 11,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 29,
+          "page": 12,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 30,
+          "page": 12,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        }
+      ],
+      "evidence": "Image-only official EBS problem PDF; all 12 pages visually reviewed, no OCR."
+    },
+    "2021-05-na-edu": {
+      "sha256": "b81c2e43173b8903e8944545879841f811e902d29809375a4ec625041e0ea449",
+      "questions": [
+        {
+          "no": 1,
+          "page": 1,
+          "col": 0,
+          "x": 82.4,
+          "y": 235,
+          "rect": [
+            82.4,
+            235,
+            414.6,
+            326
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 2,
+          "page": 1,
+          "col": 0,
+          "x": 82.4,
+          "y": 634,
+          "rect": [
+            82.4,
+            634,
+            414.6,
+            1061.5
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 3,
+          "page": 1,
+          "col": 1,
+          "x": 430.6,
+          "y": 190,
+          "rect": [
+            430.6,
+            190,
+            756.9,
+            276
+          ],
+          "points": 2,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 4,
+          "page": 1,
+          "col": 1,
+          "x": 430.6,
+          "y": 629,
+          "rect": [
+            430.6,
+            629,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 5,
+          "page": 2,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            313
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 6,
+          "page": 2,
+          "col": 0,
+          "x": 82.4,
+          "y": 632,
+          "rect": [
+            82.4,
+            632,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 7,
+          "page": 2,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 8,
+          "page": 3,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            293
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 9,
+          "page": 3,
+          "col": 0,
+          "x": 82.4,
+          "y": 626,
+          "rect": [
+            82.4,
+            626,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 10,
+          "page": 3,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 11,
+          "page": 4,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 12,
+          "page": 4,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 13,
+          "page": 5,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 14,
+          "page": 5,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 15,
+          "page": 6,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 16,
+          "page": 6,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 17,
+          "page": 7,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 18,
+          "page": 7,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 19,
+          "page": 8,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 20,
+          "page": 8,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 21,
+          "page": 9,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "mcq",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 22,
+          "page": 9,
+          "col": 1,
+          "x": 430.6,
+          "y": 200,
+          "rect": [
+            430.6,
+            200,
+            756.9,
+            227
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 23,
+          "page": 9,
+          "col": 1,
+          "x": 430.6,
+          "y": 621,
+          "rect": [
+            430.6,
+            621,
+            756.9,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 24,
+          "page": 10,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            208
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 25,
+          "page": 10,
+          "col": 0,
+          "x": 82.4,
+          "y": 631,
+          "rect": [
+            82.4,
+            631,
+            414.6,
+            1061.5
+          ],
+          "points": 3,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 26,
+          "page": 10,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 27,
+          "page": 11,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 28,
+          "page": 11,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 29,
+          "page": 12,
+          "col": 0,
+          "x": 82.4,
+          "y": 158,
+          "rect": [
+            82.4,
+            158,
+            414.6,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        },
+        {
+          "no": 30,
+          "page": 12,
+          "col": 1,
+          "x": 430.6,
+          "y": 158,
+          "rect": [
+            430.6,
+            158,
+            756.9,
+            1061.5
+          ],
+          "points": 4,
+          "answer_type": "numeric",
+          "text": "",
+          "layout_evidence": "visual_review_of_original_pdf; image-only source; page/column/question boundaries and printed points reviewed"
+        }
+      ],
+      "evidence": "Image-only official EBS problem PDF; all 12 pages visually reviewed, no OCR."
     }
   },
   "solution_keys": {
@@ -2287,6 +3319,20 @@
       "answer": 384,
       "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
       "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2021-10-na-edu",
+      "question": 15,
+      "answer": 1,
+      "accepted_answers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sha256": "aef2af2f892148d969fec87bf545f1d382893a9a39756c102f98aa086cff5ab9",
+      "evidence": "Official EBS solution answer table prints \"-\" for question 15 and states: 서울시교육청 결정(2020.10.30)에 따라 모두 정답 처리. answer=1 is only a canonical storage representative; grading accepts all five choices."
     }
   ]
 }

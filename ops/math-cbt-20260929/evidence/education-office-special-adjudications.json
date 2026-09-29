@@ -1,0 +1,30 @@
+{
+  "image_only_problem_layouts": [
+    {
+      "form": "2021-05-ga-edu",
+      "sha256": "f0aa5163d660904a6258d7d4e7faea1c38d0258604c8bd4cf4a668977bfb3d15",
+      "question_count": 30,
+      "evidence": "Image-only official EBS problem PDF; all 12 pages visually reviewed, no OCR."
+    },
+    {
+      "form": "2021-05-na-edu",
+      "sha256": "b81c2e43173b8903e8944545879841f811e902d29809375a4ec625041e0ea449",
+      "question_count": 30,
+      "evidence": "Image-only official EBS problem PDF; all 12 pages visually reviewed, no OCR."
+    }
+  ],
+  "all_correct_adjudication": {
+    "form": "2021-10-na-edu",
+    "question": 15,
+    "answer": 1,
+    "accepted_answers": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sha256": "aef2af2f892148d969fec87bf545f1d382893a9a39756c102f98aa086cff5ab9",
+    "evidence": "Official EBS solution answer table prints \"-\" for question 15 and states: 서울시교육청 결정(2020.10.30)에 따라 모두 정답 처리. answer=1 is only a canonical storage representative; grading accepts all five choices."
+  }
+}

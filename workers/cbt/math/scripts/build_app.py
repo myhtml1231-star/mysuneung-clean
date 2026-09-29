@@ -25,6 +25,12 @@ base=base.replace('var YEARS=[2017,','var YEARS=[2014,2015,2016,2017,')
 base=base.replace('/api/cbt/','/api/cbt/math/').replace('mysuneung-cbt-current','mysuneung-math-cbt-current').replace('mysuneung-cbt-history','mysuneung-math-cbt-history')
 base=base.replace('var body={mode:mode,years:Array.from(selectedYears)};','var body={mode:mode,years:Array.from(selectedYears),source_family:window.mathSourceScope()};')
 base=base.replace('<=45','<=30').replace('>45','>30').replace('||4800','||6000')
+base=base.replace('if(g&&c.index===g.correct_answer)cls+=" correct";','if(g&&(Array.isArray(g.accepted_answers)?g.accepted_answers.includes(c.index):c.index===g.correct_answer))cls+=" correct";')
+base=base.replace('if(g&&answers[q.display_no]===c.index&&c.index!==g.correct_answer)cls+=" wrong";','if(g&&answers[q.display_no]===c.index&&!(Array.isArray(g.accepted_answers)?g.accepted_answers.includes(c.index):c.index===g.correct_answer))cls+=" wrong";')
+old_wrong='''<div class="wrong-answers">선택 '+(d.selected||"-")+' · 정답 '+d.correct_answer+'</div>'''
+new_wrong='''<div class="wrong-answers">선택 '+(d.selected||"-")+' · 정답 '+(Array.isArray(d.accepted_answers)&&d.accepted_answers.length>1?'모두 정답':d.correct_answer)+'</div>'''
+assert old_wrong in base;base=base.replace(old_wrong,new_wrong)
+
 base=base.replace('국어 CBT','수학 CBT').replace('지문 보기','풀이 노트 보기').replace('지문 접기','풀이 노트 접기').replace('국어 혼합 CBT','수학 혼합 CBT').replace('2017~2021학년도는 이전 30문항 체제 기출입니다. 이전 학년도만 고르면 실제 한 회차 30문항 구성으로 출제됩니다.','2014–2016 A/B형 · 2017–2021 가/나형 · 2022–2027 공통·선택. 서로 다른 체제를 섞지 않습니다.').replace('0 / 45 응답','0 / 30 응답').replace('80:00','100:00').replace('지문 보기','풀이 노트 보기').replace('지문 접기','풀이 노트 접기')
 anchor='window.MSNAccount.ready.then('
 pos=base.rfind(anchor)
@@ -69,6 +75,9 @@ ui=replacefun(ui,'r5Ebs',"""function r5Ebs(d,quiet){
 ui=ui.replace('EBS 연계 확인','EBS 해설 확인').replace('EBS 연계 복습','EBS 해설 복습').replace('확인된 연계 자료만 바로 연결합니다.','같은 문항의 공식 해설을 연결합니다.').replace('확인된 공식 연계 자료만 봅니다.','풀이와 적용 조건을 대조합니다.')
 ui=ui.replace('선택한 유형이 포함된 지문 세트를 출제합니다. 같은 지문의 다른 유형도 함께 포함되며 선택한 학년도·범주 안에서만 찾습니다.','선택한 학년도·과목·범주의 문항만 출제합니다. 공통 자료가 있는 문항은 자료를 함께 표시합니다.')
 ui=ui.replace('취약 유형 3세트 연습','취약 유형 연습').replace('취약 유형 반영 45문항','취약 유형 보완').replace('새 지문','새 문항').replace('다른 지문','다른 문항')
+old_detail='''<span>정답 <b class="right">'+d.correct_answer+'</b></span>'''
+new_detail='''<span>정답 <b class="right">'+(Array.isArray(d.accepted_answers)&&d.accepted_answers.length>1?'모두 정답':d.correct_answer)+'</b></span>'''
+assert old_detail in ui;ui=ui.replace(old_detail,new_detail)
 # Use actual weighted raw score for a graded math exam; history retains accuracy as a different metric.
 score=""" const mathMax=data?Number(data.max_score??R5.ds.reduce((n,d)=>n+(d.points||0),0)):0;
  const mathScore=data?Number(data.raw_score??R5.ds.reduce((n,d)=>n+(d.is_correct?d.points||0:0),0)):null;
@@ -108,7 +117,7 @@ yearbox=soup.select_one('#years');yearbox.insert_before(BeautifulSoup('<div clas
 custom=soup.select_one('#setCounts');custom.find_previous_sibling(class_='title').string='문항 수';custom.clear()
 for n in [1,3,5,10,20,30]:custom.append(BeautifulSoup('<button type="button" data-count="'+str(n)+'"'+(' class="on"' if n==3 else '')+'>'+str(n)+'문항</button>','html.parser'))
 custom.find_next_sibling(class_='mode-note').string='선택 범주의 기출에서 뽑습니다. 공통문항은 선택과목이 달라도 중복 집계하지 않습니다.'
-cover=BeautifulSoup('<details class="learn-policy math-coverage"><summary>수록 범위·출처</summary><p>평가원·수능: 2014–2026학년도 6·9월 및 수능. 교육청: 2023학년도 3·4·7·10월, 2024학년도 3·4·7·10월(4월 학평은 EBS 검색 회차 5월), 2025·2026학년도 3·5·7·10월, 2027학년도 3·5·7월. 2027학년도 평가원 6·9월도 포함하며 아직 시행되지 않은 2027 수능은 제외합니다.</p><p>총 60회차 · 156종 시험지 · 공통문항 중복 제외 3,096문항. 2023~2026학년도 교육청 고유 736문항은 각 문항의 EBS 공식 해설 [출제의도]를 문항별로 확인해 유형을 판정했습니다. 수식·도형은 EBS 공개 문제 PDF 원문을 표시합니다.</p></details>','html.parser')
+cover=BeautifulSoup('<details class="learn-policy math-coverage"><summary>수록 범위·출처</summary><p>평가원·수능: 2014–2026학년도 6·9월 및 수능. 교육청: 2021학년도 3·4·7·10월 가/나형, 2022학년도 3·4·7·10월 공통·선택, 2023~2026학년도 각 4회차, 2027학년도 3·5·7월. 코로나 일정 변경·EBS 검색 회차와 실제 시험명 월이 다른 경우는 실제 시험명을 따로 표시합니다.</p><p>총 68회차 · 176종 시험지 · 공통문항 중복 제외 3,520문항. 2021~2026학년도 교육청 고유 1,160문항은 EBS 공식 해설 [출제의도]를 문항별로 확인해 유형을 판정했습니다. 수식·도형은 EBS 공개 문제 PDF 원문을 표시합니다.</p></details>','html.parser')
 soup.select_one('#generate').insert_before(cover)
 css=soup.new_tag('style');css['data-math-ui']='v1';css.string='''
 .math-subject-nav{display:flex;justify-content:center;gap:8px;margin:14px 0 22px}.math-source-seg{display:flex;flex-wrap:wrap}.math-source-seg>div{flex:1 1 30%}.math-source-seg>div.disabled{opacity:.38}.math-source-seg input:disabled+label{cursor:not-allowed}.math-subject-nav a{text-decoration:none;color:inherit}.math-active{background:#303747!important;color:#fff!important}.math-eras{margin:0 0 14px}.math-coverage{margin:18px 0}.math-notebook{min-height:650px;position:relative;background-image:linear-gradient(#edf0f4 1px,transparent 1px),linear-gradient(90deg,#edf0f4 1px,transparent 1px);background-size:24px 24px}.math-note-label{display:block;padding:12px;background:#fff;color:#98a2b3;font-size:12px}.math-short-answer{margin-top:14px;width:100%}.math-short-answer label{font-size:14px;font-weight:700}.math-answer-row{display:flex;gap:12px;margin-top:10px;align-items:center}.math-answer-row input{width:170px;max-width:65%;border:1px solid #c9d2df;border-radius:12px;font-family:inherit;font-weight:700;font-size:24px;line-height:1.4;padding:12px;text-align:center;background:#fff;color:#202b3c}.math-answer-row input:focus{outline:2px solid #91bafb;outline-offset:2px}.math-short-answer p{font-size:12px;color:#8994a4;margin-top:8px}.math-short-answer #math-answer-error{color:#ba344c}.math-answer-row input[aria-invalid=true]{border-color:#ba344c}.math-short-answer input[readonly]{background:#f4f6f9}.math-coverage p{font-size:12px;line-height:1.8}#choiceSetting .seg{display:flex;flex-wrap:wrap}#choiceSetting .seg>div:not(.hidden){flex:1 1 28%}@media(max-width:640px){.math-eras{flex-wrap:wrap}.math-notebook{min-height:450px}.math-short-answer input{font-size:20px}#setCounts{flex-wrap:wrap}}

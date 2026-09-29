@@ -77,16 +77,16 @@ def solparse(path,track):
             if p is not None and (not run or (int(p[1])==int(run[-1][1])+1 and p.start()-run[-1].end()<80)):
                 run.append(p);continue
             if len(run)>=8 and int(run[0][1]) in [1,23] and int(run[-1][1]) in [22,30]:
-                table_groups.append({'page':pi+1,'values':{int(x[1]):av(x[2]) for x in run}})
+                table_groups.append({'page':pi+1,'values':{int(x[1]):(None if x[2]=='-' else av(x[2])) for x in run}})
             run=[p] if p else []
         # No-dot answer tables: recognize a full consecutive 1..22 or 23..30 run only.
-        npat=re.compile(r'(?<![0-9.])(\d{1,2})\s+([①②③④⑤]|[0-9]{1,3})(?![0-9.])')
+        npat=re.compile(r'(?<![0-9.])(\d{1,2})\s+([①②③④⑤]|[0-9]{1,3}|-)(?![0-9.])')
         pairs=list(npat.finditer(t));run=[]
         for pm in pairs+[None]:
             if pm is not None and (not run or (int(pm[1])==int(run[-1][1])+1 and pm.start()-run[-1].end()<30)):
                 run.append(pm);continue
-            if len(run) in [8,22] and int(run[0][1]) in [1,23] and int(run[-1][1]) in [22,30]:
-                table_groups.append({'page':pi+1,'values':{int(x[1]):av(x[2]) for x in run}})
+            if len(run) in [8,22,30] and int(run[0][1]) in [1,23] and int(run[-1][1]) in [22,30]:
+                table_groups.append({'page':pi+1,'values':{int(x[1]):(None if x[2]=='-' else av(x[2])) for x in run}})
             run=[pm] if pm else []
     # Assign table identities by the verified question sequence / section order.
     dedup={}
@@ -123,7 +123,7 @@ def solparse(path,track):
         if next_table:content=content[:next_table.start()]
         ans=[av(m[1]) for m in A.finditer(content) if (m.start()==0 or content[m.start()-1] not in '해정')]
         # A following section title ending in 정답 is not the previous question's answer.
-        if re.match(r'202[3-7]-07',path.name) and q==22:ans=[]
+        if re.match(r'202[2-7]-07',path.name) and q==22:ans=[]
         # A missing heading means this span contains another question. Grade only from the independent answer table.
         if idx+1<len(heads) and int(heads[idx+1][1])!=q+1 and q not in [22,30]:ans=[]
         if path.name=='2016-11-B-solution.pdf' and q==9:ans=[]  # adjudicated from problem + table; see manual-review.json
@@ -150,7 +150,9 @@ def solparse(path,track):
         for pi,t in enumerate(texts):
             if offset+len(t)>=h.start():page=pi+1;break
             offset+=len(t)+1
-        result[q]={'answer':answer,'objective':objective,'solution_page':page,'answer_evidence':('visually_verified_official_answer_table' if used_adjudication else 'table_and_solution' if inline is not None and tab is not None else 'answer_table' if tab is not None else 'explicit_solution_answer')}
+        result[q]={'answer':answer,'objective':objective,'solution_page':page,'answer_evidence':('official_all_answers_accepted' if used_adjudication and adjudications[q].get('accepted_answers') else 'visually_verified_official_answer_table' if used_adjudication else 'table_and_solution' if inline is not None and tab is not None else 'answer_table' if tab is not None else 'explicit_solution_answer')}
+        if used_adjudication and adjudications[q].get('accepted_answers'):
+            result[q]['accepted_answers']=adjudications[q]['accepted_answers']
     for q in range(1,31):
         if q in result:continue
         choices=[tb for tb in tables if q in tb['values'] and (q<=22 or tb['section'] in ['common',track])]
@@ -192,6 +194,8 @@ def positions(path):
             rect=fitz.Rect(left,m['y']-7,right,bottom)
             txt=norm(p.get_text(clip=rect))
             points=re.findall(r'\[\s*([234])\s*점\s*\]',txt)
+            if not points:
+                points=re.findall(r'\[\s*([234])\s*\]',txt)
             if len(points)!=1:raise ValueError(f'points q{m["no"]}: {points} page {pi+1} rect {rect}')
             circles=re.findall('[①②③④⑤]',txt)
             typ='mcq' if circles else 'numeric'

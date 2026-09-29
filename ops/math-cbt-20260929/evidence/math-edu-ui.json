@@ -1,5 +1,5 @@
 {
-  "passed": 10,
+  "passed": 14,
   "full": {
     "source_family": "education_office",
     "score": 100,
@@ -37,18 +37,33 @@
       "education_office"
     ],
     "months": [
-      7,
-      5,
-      10,
       3,
-      4
+      10,
+      7,
+      5
     ],
     "years": [
-      2024,
-      2026,
       2025,
+      2026,
+      2022,
       2023,
+      2024,
       2027
+    ]
+  },
+  "legacy": {
+    "source_family": "education_office",
+    "choice": "na",
+    "score": 100,
+    "n": 30,
+    "years": [
+      2021
+    ],
+    "families": [
+      "education_office"
+    ],
+    "sessions": [
+      "2021-07"
     ]
   },
   "category_count": 23,

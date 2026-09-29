@@ -17,7 +17,7 @@ if not CALENDARS or not MONTHS: raise SystemExit('calendar years and months are 
 (ROOT/'listings').mkdir(parents=True,exist_ok=True)
 BASE='https://wdown.ebsi.co.kr/W61001/01exam'
 API='https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperListAjax.ajax'
-TRACK={'140119':'prob','140120':'calc','140121':'geom'}
+TRACK={'61001':'ga','61007':'na','140119':'prob','140120':'calc','140121':'geom'}
 PROVIDER={'서울':'서울특별시교육청','경기':'경기도교육청','인천':'인천광역시교육청','경남':'경상남도교육청'}
 
 def curl(url,dest,post=None):
@@ -30,7 +30,8 @@ def curl(url,dest,post=None):
 def listing(calendar):
     path=ROOT/'listings'/f'{calendar}.html'
     month_list=','.join(f'{m:02d}' for m in MONTHS)
-    params={'targetCd':'D300','yearList':calendar,'monthList':month_list,'arOrd':'2','subjIdList':'140119,140120,140121','sort':'recent','pageSize':250}
+    subj='mathPast' if calendar<2021 else '140119,140120,140121'
+    params={'targetCd':'D300','yearList':calendar,'monthList':month_list,'arOrd':'2','subjIdList':subj,'sort':'recent','pageSize':250}
     curl(API,path,urlencode(params))
     soup=BeautifulSoup(path.read_text(),'html.parser')
     rows=[]
@@ -51,7 +52,8 @@ def listing(calendar):
         ha=re.findall(r"'([^']*)'",h.get('onclick','')) if h else []
         pm=re.search(r'학평\(([^)]+)\)',title)
         provider=PROVIDER.get(pm[1],pm[1]+'교육청' if pm else '교육청') if pm else '교육청'
-        day=a[2][:8]
+        delayed=re.search(r'_(\d{1,2})\.(\d{1,2})\s*시행',title)
+        day=f'{calendar}{int(delayed[1]):02d}{int(delayed[2]):02d}' if delayed else a[2][:8]
         academic=calendar+1
         rid=f'{academic}-{month:02}-{track}-edu'
         rows.append({
@@ -61,7 +63,8 @@ def listing(calendar):
             'listing_url':API,'listing_params':params,'paper_id':a[-1]
         })
     rows.sort(key=lambda x:x['id'])
-    if len(rows)!=12: raise ValueError(f'{calendar}: expected 12 high3 math rows, got {len(rows)}')
+    expected=8 if calendar<2021 else 12
+    if len(rows)!=expected: raise ValueError(f'{calendar}: expected {expected} high3 math rows, got {len(rows)}')
     return rows
 
 rows=[]

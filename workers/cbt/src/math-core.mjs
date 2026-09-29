@@ -2,7 +2,7 @@
 import * as Learning from './learning-core.mjs';
 import * as Study from './study-core.mjs';
 import MATH_BANK from '../data/math-bank.json' with {type:'json'};
-export const MATH_VERSION='2026-09-29.math.v3';
+export const MATH_VERSION='2026-09-29.math.v4';
 export const TRACKS=Object.freeze({A:'수학 A형',B:'수학 B형',ga:'수학 가형',na:'수학 나형',prob:'확률과 통계',calc:'미적분',geom:'기하'});
 
 export class MathInputError extends Error{constructor(message,code='INVALID_MATH_REQUEST',status=400){super(message);this.code=code;this.status=status;}}
@@ -66,9 +66,9 @@ export function mathGrade(bank,refs,answers={},options={}){
   seen.add(key);displaySeen.add(display);
   const raw=options.embedded?ref.selected:answers[display];const selected=Learning.answerValue(raw,q.answer_type);
   if(raw!==undefined&&raw!==null&&raw!==''&&selected===null)fail('객관식은 1~5, 단답형은 0~999의 정수로 입력해 주세요.','INVALID_MATH_ANSWER');
-  const is_correct=selected!==null&&selected===q.correct_answer;max+=q.points;if(is_correct)points+=q.points;
+  const accepted=Array.isArray(q.accepted_answers)?q.accepted_answers:[];const is_correct=selected!==null&&(accepted.includes(selected)||selected===q.correct_answer);max+=q.points;if(is_correct)points+=q.points;
   return {subject:'수학',display_no:display,question_key:key,academic_year:q.academic_year,month:q.month,section_code:q.section_code,original_no:q.original_no,unit_id:q.unit_id,
-   selected,correct_answer:q.correct_answer,is_correct,answer_type:q.answer_type,points:q.points,earned_points:is_correct?q.points:0,
+   selected,correct_answer:q.correct_answer,accepted_answers:accepted.length?accepted:undefined,is_correct,answer_type:q.answer_type,points:q.points,earned_points:is_correct?q.points:0,
    area:q.area,category:q.category,type_group:q.type_group,type_id:q.type_id,question_type:q.type,skill:q.type,
    review_status:q.review_status,analysis_eligible:q.analysis_eligible===true,taxonomy_version:MATH_VERSION,
    source_label:q.source_label,exam_family:q.exam_family||'kice',provider:q.provider||'',source:{academic_year:q.academic_year,month:q.month,section:q.source_label,exam_family:q.exam_family||'kice',provider:q.provider||''},original_url:q.image.src,

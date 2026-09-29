@@ -2,8 +2,8 @@
   "passed": 10,
   "checks": [
     "Korean entry has math tab",
-    "live subject navigation, 14 years and education-office source selector",
-    "live 2023-2024 education-office-only original-image 30/100 exam",
+    "live 2021 na education-office source selector",
+    "live 2021 na education-office intact original-image 30/100 exam",
     "actual pointer drawing on movable math note popup",
     "numeric zero entered as an answered value",
     "live draft restore retains zero",
@@ -13,5 +13,5 @@
     "live report launches fresh other-session education-office transfer questions"
   ],
   "errors": [],
-  "verified_at": "2026-09-29T02:49:49.528Z"
+  "verified_at": "2026-09-29T03:26:05.066Z"
 }

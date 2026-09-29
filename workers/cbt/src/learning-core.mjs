@@ -30,7 +30,9 @@ export function canonicalDetail(d,taxonomy,answers) {
  const kind=m.answer_type==='numeric'?'numeric':'mcq';
  const selected=answerValue(d.selected,kind),correct=answers ? answerValue(answers[key],kind) : answerValue(d.correct_answer,kind);
  if(correct===null)return null;
- return {...d,question_key:key,selected,correct_answer:correct,is_correct:selected!==null&&selected===correct,answer_type:kind,subject:m.subject||d.subject||'korean',points:m.points??d.points,
+ const accepted=Array.isArray(d.accepted_answers)?[...new Set(d.accepted_answers.map(v=>answerValue(v,kind)).filter(v=>v!==null))]:[];
+ const is_correct=selected!==null&&(accepted.includes(selected)||selected===correct);
+ return {...d,question_key:key,selected,correct_answer:correct,accepted_answers:accepted.length?accepted:undefined,is_correct,answer_type:kind,subject:m.subject||d.subject||'korean',points:m.points??d.points,
  question_type:m.type,skill:m.type,type_group:typeGroup(m),type_id:m.type_id||typeGroup(m)+'::'+m.type,
  area:m.area,category:m.category,unit_id:m.unit_id,review_status:m.review_status||'needs_review',
  analysis_eligible:m.analysis_eligible===true,taxonomy_version:m.taxonomy_version||LEARNING_VERSION};
