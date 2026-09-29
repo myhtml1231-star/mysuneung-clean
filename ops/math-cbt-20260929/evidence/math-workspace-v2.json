@@ -1,0 +1,28 @@
+{
+  "passed": 10,
+  "layout": {
+    "passage": "none",
+    "qLeft": 0,
+    "qWidth": 1250,
+    "palLeft": 1250,
+    "imgWidth": 1000,
+    "ribbonParent": "BODY",
+    "noteButton": true
+  },
+  "before": {
+    "left": 700,
+    "top": 84,
+    "width": 520,
+    "height": 470
+  },
+  "after": {
+    "left": 580,
+    "top": 154
+  },
+  "mobile": {
+    "scroll": 390,
+    "width": 390,
+    "note": 374
+  },
+  "errors": []
+}

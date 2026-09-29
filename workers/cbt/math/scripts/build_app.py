@@ -108,6 +108,39 @@ for node in list(soup.find_all(string=True)):
   if text!=str(node):node.replace_with(text)
 for sc in soup.find_all('script',src=True):
  if any(x in sc['src'] for x in ['/store.js','/cbt-account.js']):sc['src']=sc['src'].split('?')[0]+'?v=math-20260929-v1'
+
+workspace_css=soup.new_tag('style');workspace_css['data-math-workspace']='v2';workspace_css.string=r"""
+#passagePane,#passageResizer,#mobileToggle{display:none!important}
+@media(min-width:961px){
+ .layout,.layout.passage-collapsed{grid-template-columns:minmax(0,1fr) 190px!important;max-width:1680px}
+ #questionPane{grid-column:1!important;padding:30px 44px 36px!important;overflow:auto}
+ .palette{grid-column:2!important}
+ #questionBody,#questionPane .nav,#questionPane .source-credit{max-width:1080px;margin-left:0;margin-right:auto}
+ #qassets .source-frame{max-width:960px!important;margin:20px 0!important}
+ #qassets .source-frame .managed-source{margin-left:0!important;margin-right:auto!important}
+}
+@media(min-width:1200px){#questionPane{padding-left:58px!important}#qassets .source-frame{max-width:1000px!important}}
+#paintRibbon.math-global-ribbon{z-index:72}
+#paintRibbon .math-note-ribbon-button{grid-column:5;grid-row:1;margin-right:42px}
+#paintRibbon #showOriginal.hidden{display:none!important}
+.math-note-button{font-size:17px!important;font-weight:800}
+.math-note-popup{position:fixed;z-index:86;left:40px;top:84px;width:520px;height:470px;min-width:300px;min-height:260px;max-width:calc(100vw - 16px);max-height:calc(100vh - 16px);display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:#fff;border:1px solid #cfd8e6;border-radius:14px;box-shadow:0 18px 55px rgba(24,39,67,.24);overflow:hidden;resize:both}
+.math-note-popup.hidden{display:none!important}
+.math-note-header{height:auto;min-height:48px;display:flex;align-items:center;gap:10px;padding:8px 9px 8px 14px;background:#f8fafc;border-bottom:1px solid #dfe6ef;cursor:move;touch-action:none;user-select:none}
+.math-note-header strong{font-size:14px;white-space:nowrap}.math-note-tools,.math-note-actions{display:flex;align-items:center;gap:3px}.math-note-tools{flex:1}.math-note-tools button,.math-note-actions button{border:0;background:#fff;border-radius:7px;min-width:31px;height:31px;padding:0 7px;color:#42526a;font-weight:800;box-shadow:inset 0 0 0 1px #e1e7ef}.math-note-tools button:hover,.math-note-actions button:hover,.math-note-tools button.on{background:#eaf2ff;color:#245fc6}.math-note-color{width:31px;height:31px;border-radius:7px;background:#fff;box-shadow:inset 0 0 0 1px #e1e7ef;display:grid;place-items:center;overflow:hidden}.math-note-color input{width:34px;height:34px;border:0;padding:0;background:transparent;cursor:pointer}
+.math-note-canvas-wrap{position:relative;min-height:0;overflow:hidden;background-color:#fff;background-image:linear-gradient(#e8edf4 1px,transparent 1px),linear-gradient(90deg,#e8edf4 1px,transparent 1px);background-size:24px 24px}
+#mathNoteCanvas{display:block;width:100%;height:100%;touch-action:none}.math-note-canvas-wrap #mathNoteCanvas.active{cursor:crosshair}
+.math-note-resize-hint{font-size:10px;color:#98a2b3;padding:5px 9px;text-align:right;background:#fafbfc;border-top:1px solid #edf0f4}
+@media(max-width:960px){
+ .layout,.layout.passage-collapsed{display:block!important}.question{padding:14px 14px calc(var(--cbt-palette-height,64px) + 28px)!important}
+ #qassets .source-frame{max-width:100%!important;margin:16px 0!important}
+ #paintRibbon.math-global-ribbon{max-width:calc(100vw - 12px)!important}
+ .math-note-popup{width:min(92vw,440px);height:min(62vh,470px);min-width:280px}
+
+}
+"""
+soup.head.append(workspace_css)
+
 app=ROOT/'workers/cbt/app/math.html';app.write_text(str(soup))
 # Catch syntax errors for every generated inline script.
 for i,sc in enumerate(soup.find_all('script')):

@@ -8,10 +8,10 @@ try{
  assert.equal(await p.$eval('#start h1',e=>e.textContent),'수학 혼합 모의고사');await p.screenshot({path:path.join(out,'live-math-start-1440.png')});checks.push('live subject navigation and 14 years');
  await p.click('#generate');await p.waitForFunction(()=>window.flat?.length===30&&!document.querySelector('#app').classList.contains('hidden'));
  await p.waitForFunction(()=>{const im=document.querySelector('#qassets img');return im?.complete&&im.naturalWidth>0;});assert.equal(await p.evaluate(()=>exam.max_score),100);checks.push('live original image and 30/100 exam');
- const pen=await p.$('[data-tool="pen"]');await pen.click();const cv=await p.$('#drawCanvas');const r=await cv.boundingBox();assert.ok(r.width>100&&r.height>100);
+ await p.click('#mathNoteToggle');await p.waitForSelector('#mathNotePopup:not(.hidden)');await p.click('.math-note-tool[data-note-tool="pen"]');const cv=await p.$('#mathNoteCanvas');const r=await cv.boundingBox();assert.ok(r.width>100&&r.height>100);
  await p.mouse.move(r.x+65,r.y+110);await p.mouse.down();await p.mouse.move(r.x+135,r.y+145,{steps:12});await p.mouse.up();
- const ink=await p.$eval('#drawCanvas',e=>{const d=e.getContext('2d').getImageData(0,0,e.width,e.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false;});assert.equal(ink,true);checks.push('actual pointer drawing on math note canvas');
- await p.screenshot({path:path.join(out,'live-math-solving-1440.png')});
+ const ink=await p.$eval('#mathNoteCanvas',e=>{const d=e.getContext('2d').getImageData(0,0,e.width,e.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false;});assert.equal(ink,true);assert.ok(await p.evaluate(()=>Object.keys(localStorage).some(k=>k.startsWith('mysuneung-math-note-v2:'))));checks.push('actual pointer drawing on movable math note popup');
+ await p.screenshot({path:path.join(out,'live-math-solving-1440.png')});await p.click('#mathNoteClose');
  await p.evaluate(()=>go(15));await p.waitForSelector('#math-answer');await p.type('#math-answer','0');assert.equal(await p.evaluate(()=>answers[16]),0);checks.push('numeric zero entered as an answered value');
  await p.reload({waitUntil:'domcontentloaded'});await p.waitForFunction(()=>window.flat?.length===30);await p.evaluate(()=>go(15));assert.equal(await p.$eval('#math-answer',e=>e.value),'0');checks.push('live draft restore retains zero');
  const refs=await p.evaluate(()=>flat.map(it=>({...it.q,academic_year:it.set.source.academic_year,month:it.set.source.month,section_code:it.set.section_code})));const a=Object.fromEntries(refs.map(q=>[q.display_no,bank.questions[q.question_key].correct_answer]));a[1]=a[1]===5?1:a[1]+1;delete a[2];
