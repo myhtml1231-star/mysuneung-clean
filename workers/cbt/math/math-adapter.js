@@ -10,9 +10,9 @@ refreshYearModeUi=function(){
  var valid=era==='ab'?['A','B']:era==='gana'?['ga','na']:['prob','calc','geom'];
  var c=mathChoice();if(!valid.includes(c))c=valid[0];
  document.querySelectorAll('input[name="choice"]').forEach(function(r){r.checked=r.value===c;r.parentElement.classList.toggle('hidden',!valid.includes(r.value));});
- var edu=document.querySelector('input[name="sourceFamily"][value="education_office"]'),canEdu=(era==='current'&&[...selectedYears].some(y=>y>=2022))||(era==='gana'&&selectedYears.has(2021));
+ var edu=document.querySelector('input[name="sourceFamily"][value="education_office"]'),canEdu=(era==='current'&&[...selectedYears].some(y=>y>=2022))||(era==='gana'&&[...selectedYears].some(y=>y>=2019));
  if(edu){edu.disabled=!canEdu;edu.parentElement.classList.toggle('disabled',!canEdu);if(!canEdu&&mathSourceScope()==='education_office')document.querySelector('input[name="sourceFamily"][value="all"]').checked=true;}
- var source=mathSourceScope(),hint=$('#sourceHint');if(hint)hint.textContent=source==='education_office'?'교육청 고3 전국연합만 출제 · 2021~2026학년도 각 4회차 + 2027학년도 3·5·7월':source==='kice'?'평가원 6·9월과 수능만 출제합니다.':'평가원·수능과 수록된 교육청 기출을 함께 사용합니다.';
+ var source=mathSourceScope(),hint=$('#sourceHint');if(hint)hint.textContent=source==='education_office'?'교육청 고3 전국연합만 출제 · 2019~2026학년도 각 4회차 + 2027학년도 3·5·7월':source==='kice'?'평가원 6·9월과 수능만 출제합니다.':'평가원·수능과 수록된 교육청 기출을 함께 사용합니다.';
  $('#choiceSetting').classList.remove('hidden');$('#currentComposition').classList.toggle('hidden',legacy);$('#legacyComposition').classList.toggle('hidden',!legacy);
  $('#compositionNote').textContent=legacy?'이전 체제는 같은 회차 30문항을 그대로 출제합니다.':'공통 22문항 + 선택 8문항 · 원래 문항 위치와 배점을 유지합니다.';
  $('#startHint').textContent=mode==='full'?'30문항 · 객관식 21 + 단답형 9 · 100분 · 100점':'선택 범주 1~30문항 · 공통 자료 보존 · 문항 수에 맞춰 시간 설정';

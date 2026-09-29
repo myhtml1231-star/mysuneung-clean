@@ -2,54 +2,75 @@
 
 Entry: `/mixed-cbt?subject=math`.
 
-## Source coverage
+## Current coverage
 
-The bank contains **176 official paper variants, 68 source sessions and 3,520 distinct questions** after deduplicating the modern common section from 5,280 paper-question references.
+The canonical bank contains **4,000 unique questions**, **192 paper variants** and **76 source sessions**.
 
-- 2014–2016: KICE June, September and CSAT, A/B forms.
-- 2017–2021: KICE June, September and CSAT, ga/na forms.
-- 2022–2026: KICE June, September and CSAT, probability/statistics, calculus and geometry.
-- Education office, academic 2021: high3 March/April/July/October, ga/na.
-- Education office, academic 2022: high3 March/April/July/October, common + probability/statistics/calculus/geometry.
-- Education office, academic 2023–2026: four high3 sessions per year.
-- Academic 2027: education-office March/May/July plus KICE June/September. The 2027 CSAT is not included before administration.
+KICE:
+- 2014–2016: June, September, CSAT; A/B
+- 2017–2021: June, September, CSAT; ga/na
+- 2022–2026: June, September, CSAT; common + probability/statistics/calculus/geometry
+- 2027 preparation: June and September
 
-Education-office coverage is **27 sessions, 77 paper variants and 1,298 unique questions**. Academic 2021–2026 reviewed batches contribute **1,160 manually reviewed unique questions**. The previously included 2027 education-office questions retain their prior source-objective mapping.
+Education office:
+- 2019–2021: high3 March/April/July/October; ga/na
+- 2022: high3 March/April/July/October; common + electives
+- 2023: March/April/July/October
+- 2024: March/April/July/October; the April Gyeonggi paper keeps EBS listing month 5 internally
+- 2025–2026: March/May/July/October
+- 2027: March/May/July
 
-## Per-question taxonomy review
+Education-office coverage is **35 sessions, 93 variants and 1,778 unique questions**.
 
-Academic 2021–2026 education-office questions were reviewed question by question against the official EBS solution `[출제의도]`. Modern common 1–22 is reviewed once per session; elective 23–30 is reviewed independently. Legacy ga/na papers are reviewed as full 30-question papers. The decisions are stored in `edu-taxonomy-review.json` with `review_status=manual_question_review`.
+## Manual taxonomy review
 
-The broader bank still has 89 older pending taxonomy items. They are gradeable but excluded from type diagnosis and automatic type transfer.
+Academic 2019–2026 education-office reviewed batches contain **1,640 manually reviewed unique questions**.
 
-## Special official-source adjudications
+- 1,550: question-by-question review against official EBS solution `[출제의도]`
+- 90: 2019 March ga and October ga/na, whose solution objective text layer is unavailable; classified question by question from the official problem text/rendered source
+- All review decisions are stored in `edu-taxonomy-review.json`
+- Older pending taxonomy elsewhere in the bank remains gradeable but excluded from automatic type diagnosis/transfer
 
-Academic 2021 April Gyeonggi ga/na problem PDFs are image-only. OCR is not used. All 12 pages were visually reviewed and SHA-256-locked manual page/column/question crops are stored in `manual-review.json`.
+Legacy PDF irregularities use SHA-256-locked manual adjudication in `manual-review.json`; OCR is not used to reconstruct problem text.
 
-Academic 2021 October na question 15 was officially treated as **all answers correct** by the Seoul Metropolitan Office of Education. The bank stores a canonical representative only for internal schema compatibility and `accepted_answers=[1,2,3,4,5]`. Server grading accepts every choice, attempt canonicalization preserves that result, and the result UI displays `모두 정답`. The accepted-answer rule is not exposed before grading.
+## Solving workspace
 
-For delayed 2020 high3 exams, EBS listing month and the actual exam-name month are kept separately. Academic 2021 March is internally the EBS April listing slot and has actual administration date 2020-04-24; academic 2021 April is internally the EBS May listing slot and has date 2020-05-21.
+Desktop:
+- left: large original problem
+- right: handwriting scratchpad using pen/highlighter/eraser
+- far right: answer palette when width allows
+- keyboard note: separate movable/resizable typed-text popup; saved per question automatically
 
-## Generation and UI rules
+Mobile:
+- problem first
+- `필기장 보기` opens the handwriting workspace
+- typed note popup stays inside the viewport
 
-The solving workspace is problem-first: the original problem is large on the left, the answer palette stays on the right, and the solution notebook is a movable/resizable drawing popup.
+Direct ink on the problem remains available.
 
-Full papers are 30 questions, 100 points and 100 minutes. Modern papers preserve common 22 + elective 8, original slots and point values. Legacy papers use one intact original 30-question paper. Numeric zero is valid and distinct from blank.
+## Generation and grading
 
-The start screen has `전체 / 평가원·수능 / 교육청`. The server validates `source_family`. Education-office source selection works for academic 2021 ga/na and academic 2022+ current-format papers. `교육청 기출로 양치기` selects a fresh same-type question from another education-office session while excluding the source session, seen questions and shared source units.
+Full exam: 30 questions, 100 points, 100 minutes, 21 multiple-choice + 9 numeric.
 
-## Rebuild and validation
+- Legacy A/B and ga/na full exams preserve one intact original paper.
+- Modern exams preserve common 22 + elective 8, original slots and points.
+- `source_family` can be `all`, `kice` or `education_office`.
+- Education-office-only generation is server-validated.
+- Numeric zero is a valid answer and differs from blank.
+- Official multi-answer adjudications such as 2021 October na Q15 are graded server-side and are not exposed before submission.
 
-Run from repository root. OCR is not used.
+`교육청 기출로 양치기` chooses a fresh other-session question of the same reviewed type while excluding the source session, seen questions and shared-source units.
 
-1. Collect official EBS problem/solution PDFs.
-2. Parse question positions, answers and official objectives; publishing fails on unresolved conflicts.
-3. Add SHA-locked manual adjudication only when the official PDF structure requires it.
-4. Complete manual taxonomy review for each new unique education-office question.
-5. Build bank and app.
-6. Run core, UI, education-office UI, notebook, Korean safety and account regressions.
-7. Verify all original image assets before deployment.
-8. Deploy account assets, then CBT Worker, then R2 `app/math.html`, and finally run live API/browser tests.
+## Rebuild
 
-Current data version: `2026-09-29.math.v4`.
-Current bank SHA-256: `12428dcef55cd8febc1f3e26dcf5cf577b3caf0b13455ecb3454f414842bf736`.
+1. Collect official sources with the math collection scripts.
+2. Parse them; unresolved answer/point/layout conflicts block publishing.
+3. Complete per-question entries in `edu-taxonomy-review.json`.
+4. Merge only verified forms into the main staging set.
+5. Run `build_bank.py` then `build_app.py`.
+6. Run math core/UI/education-office/workspace tests and Korean safety regression.
+7. Deploy account assets first, then CBT Worker, then R2 `app/math.html`.
+8. Run live API/browser checks.
+
+Current data version: `2026-09-29.math.v5`
+Bank SHA-256: `254a0bf291774cf066c407af999d414628d93e96a43bf21d0787048dd644080c`

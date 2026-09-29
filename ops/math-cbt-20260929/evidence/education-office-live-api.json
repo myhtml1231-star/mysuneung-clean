@@ -1,82 +1,34 @@
 {
   "coverage": {
-    "version": "2026-09-29.math.v4",
-    "distinct_questions": 3520,
-    "forms": 176,
-    "exam_sessions": 68,
-    "education_office_sessions": 27,
-    "manual_taxonomy_reviewed": 1160,
+    "version": "2026-09-29.math.v5",
+    "distinct_questions": 4000,
+    "forms": 192,
+    "exam_sessions": 76,
+    "education_office_sessions": 35,
+    "manual_taxonomy_reviewed": 1640,
     "pending_taxonomy": 89
   },
-  "generated": {
-    "2021-ga": {
-      "source_family": "education_office",
-      "question_count": 30,
-      "max_score": 100,
-      "academic_years": [
-        2021
-      ],
-      "section_families": [
-        "education_office"
-      ],
-      "session_count": 1,
-      "answer_keys_exposed": false
-    },
-    "2021-na": {
-      "source_family": "education_office",
-      "question_count": 30,
-      "max_score": 100,
-      "academic_years": [
-        2021
-      ],
-      "section_families": [
-        "education_office"
-      ],
-      "session_count": 1,
-      "answer_keys_exposed": false
-    },
-    "2022-calc": {
-      "source_family": "education_office",
-      "question_count": 30,
-      "max_score": 100,
-      "academic_years": [
-        2022
-      ],
-      "section_families": [
-        "education_office"
-      ],
-      "session_count": 4,
-      "answer_keys_exposed": false
-    }
-  },
-  "delayed_schedule_checks": [
-    {
-      "question_key": "2021-04-mga-01",
-      "listing_month": 4,
-      "official_exam_month": 3,
-      "administered_date": "20200424",
-      "source_label": "2021학년도 3월 전국연합학력평가 · 서울특별시교육청 · 수학 가형"
-    },
-    {
-      "question_key": "2021-05-mna-01",
-      "listing_month": 5,
-      "official_exam_month": 4,
-      "administered_date": "20200521",
-      "source_label": "2021학년도 4월 전국연합학력평가 · 경기도교육청 · 수학 나형"
-    }
-  ],
-  "all_correct_adjudication": {
-    "question_key": "2021-10-mna-15",
-    "submitted_choice": 5,
-    "accepted_answers": [
-      1,
-      2,
-      3,
-      4,
-      5
+  "generated_2019_ga": {
+    "source_family": "education_office",
+    "question_count": 30,
+    "max_score": 100,
+    "families": [
+      "education_office"
     ],
-    "is_correct": true,
-    "earned_points": 4,
-    "points": 4
-  }
+    "years": [
+      2019
+    ]
+  },
+  "generated_2020_na": {
+    "source_family": "education_office",
+    "question_count": 30,
+    "max_score": 100,
+    "families": [
+      "education_office"
+    ],
+    "years": [
+      2020
+    ]
+  },
+  "ungraded_answer_fields_exposed": false
 }

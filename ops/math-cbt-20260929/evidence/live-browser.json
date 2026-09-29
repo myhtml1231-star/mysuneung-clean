@@ -2,8 +2,8 @@
   "passed": 12,
   "checks": [
     "Korean entry has math tab",
-    "live 2021 na education-office source selector",
-    "live 2021 na education-office intact original-image 30/100 exam",
+    "live 2019 ga education-office source selector",
+    "live 2019 ga education-office intact original-image 30/100 exam",
     "live problem-left and handwriting-right workspace",
     "actual pointer handwriting on right scratchpad",
     "movable keyboard note autosaves typed text",
@@ -15,5 +15,5 @@
     "live report launches fresh other-session education-office transfer questions"
   ],
   "errors": [],
-  "verified_at": "2026-09-29T03:54:53.754Z"
+  "verified_at": "2026-09-29T04:08:06.389Z"
 }
