@@ -15,14 +15,14 @@
     2026,
     2027
   ],
-  "exam_sessions": 76,
-  "forms": 192,
-  "question_references": 5760,
-  "distinct_questions": 4000,
+  "exam_sessions": 84,
+  "forms": 208,
+  "question_references": 6240,
+  "distinct_questions": 4480,
   "common_duplicates_removed": 1760,
   "pending_taxonomy": 89,
-  "manual_taxonomy_reviewed": 1640,
-  "education_office_sessions": 35,
+  "manual_taxonomy_reviewed": 2120,
+  "education_office_sessions": 43,
   "periods": [
     {
       "year": 2014,
@@ -63,8 +63,12 @@
     {
       "year": 2017,
       "months": [
+        3,
+        4,
         6,
+        7,
         9,
+        10,
         11
       ],
       "tracks": [
@@ -75,8 +79,12 @@
     {
       "year": 2018,
       "months": [
+        3,
+        4,
         6,
+        7,
         9,
+        10,
         11
       ],
       "tracks": [
@@ -237,6 +245,6 @@
     "2027학년도 수능"
   ],
   "source": "EBSi 공개 기출 문제·해설 PDF",
-  "scope_note": "2014–2026학년도 평가원 6·9월 및 수능 + 2019~2021학년도 고3 교육청 3·4·7·10월 가/나형 + 2022학년도 고3 교육청 3·4·7·10월 공통·선택 + 2023~2026학년도 고3 교육청 각 4회차 + 2027 대비 교육청 3·5·7월 및 평가원 6·9월. 2027 수능 제외.",
+  "scope_note": "2014–2026학년도 평가원 6·9월 및 수능 + 2017~2021학년도 고3 교육청 3·4·7·10월 가/나형 + 2022학년도 고3 교육청 3·4·7·10월 공통·선택 + 2023~2026학년도 고3 교육청 각 4회차 + 2027 대비 교육청 3·5·7월 및 평가원 6·9월. 2027 수능 제외.",
   "textbook_links_verified": 0
 }

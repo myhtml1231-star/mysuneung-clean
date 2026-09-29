@@ -2,117 +2,117 @@
  ⛅️ wrangler 4.142.0 (update available 4.143.0)
 ───────────────────────────────────────────────
 🌀 Building list of assets...
-✨ Read 4026 files from the assets directory /Users/shbj/Downloads/mysuneung-site-index/workers/accounts/public
+✨ Read 4506 files from the assets directory /Users/shbj/Downloads/mysuneung-site-index/workers/accounts/public
 🌀 Starting asset upload...
 🌀 Found 479 new or modified static assets to upload. Proceeding with upload...
-+ /account-assets/math/questions/2020-07-mna-22-ee8ffafefc5e.webp
-+ /account-assets/math/questions/2019-10-mna-22-d2e8942b95ee.webp
-+ /account-assets/math/questions/2020-03-mna-22-340173ab0883.webp
-+ /account-assets/math/questions/2020-07-mga-23-5fecfd15fbc1.webp
-+ /account-assets/math/questions/2020-07-mna-01-d4782146e35d.webp
-+ /account-assets/math/questions/2020-07-mna-24-1491257fef45.webp
-+ /account-assets/math/questions/2020-10-mga-02-f5b9bf923c15.webp
-+ /account-assets/math/questions/2019-03-mna-12-30fd36a8850c.webp
-+ /account-assets/math/questions/2020-10-mna-22-a59846a9ca45.webp
-+ /account-assets/math/questions/2020-04-mga-23-5cd94f959b60.webp
-+ /account-assets/math/questions/2019-07-mna-22-df2ba471d30f.webp
-+ /account-assets/math/questions/2020-03-mga-23-5ebd49d79529.webp
-+ /account-assets/math/questions/2020-07-mga-02-50198fb43c9f.webp
-+ /account-assets/math/questions/2020-07-mna-05-29c022b78cff.webp
-+ /account-assets/math/questions/2019-03-mga-01-5a54a0e8a097.webp
-+ /account-assets/math/questions/2019-03-mna-01-0191dee257ae.webp
-+ /account-assets/math/questions/2019-10-mna-08-083ea734f7c5.webp
-+ /account-assets/math/questions/2020-04-mna-06-db7c5adb4f81.webp
-+ /account-assets/math/questions/2019-04-mna-03-c5c14754a245.webp
-+ /account-assets/math/questions/2020-03-mna-10-fc2f5e28badd.webp
-+ /account-assets/math/questions/2020-03-mna-02-37989d4412a1.webp
-+ /account-assets/math/questions/2020-04-mna-25-c502d08308c3.webp
-+ /account-assets/math/questions/2020-10-mna-23-4b0f7286d46a.webp
-+ /account-assets/math/questions/2019-03-mna-05-57be25888d10.webp
-+ /account-assets/math/questions/2019-04-mna-25-60a3c00a376e.webp
-+ /account-assets/math/questions/2020-04-mna-26-9067bda61cf9.webp
-+ /account-assets/math/questions/2019-03-mna-09-8b47d7c719be.webp
-+ /account-assets/math/questions/2020-04-mga-04-d4d2370432c9.webp
-+ /account-assets/math/questions/2019-07-mga-09-67eaab8d939f.webp
-+ /account-assets/math/questions/2019-10-mna-03-dec6420fd1c4.webp
-+ /account-assets/math/questions/2019-10-mga-01-db695db04e7f.webp
-+ /account-assets/math/questions/2020-03-mna-06-7ef7419b4605.webp
-+ /account-assets/math/questions/2019-03-mna-07-751022627fcc.webp
-+ /account-assets/math/questions/2019-04-mga-06-b2f92e81e855.webp
-+ /account-assets/math/questions/2020-04-mna-08-9ea803a93ab1.webp
-+ /account-assets/math/questions/2020-10-mna-02-08ec58752421.webp
-+ /account-assets/math/questions/2020-03-mna-05-137aeb8d4fd6.webp
-+ /account-assets/math/questions/2020-03-mna-24-ada53e3ba3b0.webp
-+ /account-assets/math/questions/2019-04-mga-22-c194a029cc61.webp
-+ /account-assets/math/questions/2020-10-mga-24-d38b8101f034.webp
-+ /account-assets/math/questions/2020-07-mga-04-a109ca49f65d.webp
-+ /account-assets/math/questions/2020-07-mga-05-9aef01c4f9f0.webp
-+ /account-assets/math/questions/2020-03-mna-25-2e1fba809287.webp
-+ /account-assets/math/questions/2019-10-mga-04-6b651b933e52.webp
-+ /account-assets/math/questions/2020-03-mna-07-e38d14741f2d.webp
-+ /account-assets/math/questions/2019-07-mga-25-2cc881904f90.webp
-+ /account-assets/math/questions/2020-04-mga-07-7ed0901254e8.webp
-+ /account-assets/math/questions/2019-03-mga-22-6c34e3f7505c.webp
-+ /account-assets/math/questions/2019-03-mna-24-969424c34003.webp
-+ /account-assets/math/questions/2019-10-mga-10-423b28317561.webp
-+ /account-assets/math/questions/2020-03-mga-07-c4bc6c53ab70.webp
-+ /account-assets/math/questions/2019-10-mga-11-af75a5a40c33.webp
-+ /account-assets/math/questions/2020-03-mga-26-c6be0414f399.webp
-+ /account-assets/math/questions/2020-04-mna-29-c9551cbc8c59.webp
-+ /account-assets/math/questions/2019-03-mga-10-207872217e39.webp
-+ /account-assets/math/questions/2020-04-mna-09-db338e01418c.webp
-+ /account-assets/math/questions/2019-10-mga-06-7cc1f6449445.webp
-+ /account-assets/math/questions/2020-10-mna-04-7f3ddbc48680.webp
-+ /account-assets/math/questions/2019-03-mga-25-c59c2e157be3.webp
-+ /account-assets/math/questions/2020-10-mga-07-ac09a895f348.webp
-+ /account-assets/math/questions/2019-04-mna-04-b9c2cfd0a768.webp
-+ /account-assets/math/questions/2020-03-mga-08-b3bb84bbdea0.webp
-+ /account-assets/math/questions/2019-04-mna-22-f88d3248c90b.webp
-+ /account-assets/math/questions/2019-07-mga-24-799d0ccbcde1.webp
-+ /account-assets/math/questions/2020-10-mga-29-23cfae053530.webp
-+ /account-assets/math/questions/2020-04-mna-11-cbb47c363de8.webp
-+ /account-assets/math/questions/2020-07-mna-09-90fa0414b4f2.webp
-+ /account-assets/math/questions/2019-04-mna-24-ae5234ff5bda.webp
-+ /account-assets/math/questions/2019-07-mga-01-81b512a841e1.webp
-+ /account-assets/math/questions/2020-04-mga-14-036f8aa4e778.webp
-+ /account-assets/math/questions/2019-07-mna-11-9b315da8a546.webp
-+ /account-assets/math/questions/2020-04-mga-08-c1c366ba7836.webp
-+ /account-assets/math/questions/2019-03-mna-15-d08d4837a239.webp
-+ /account-assets/math/questions/2019-10-mna-07-d51cfa5df652.webp
-+ /account-assets/math/questions/2019-10-mna-17-a9e10ec0779c.webp
-+ /account-assets/math/questions/2020-10-mna-27-0f251e894485.webp
-+ /account-assets/math/questions/2019-03-mna-10-062941f381e2.webp
-+ /account-assets/math/questions/2020-07-mna-17-6d45d20cad33.webp
-+ /account-assets/math/questions/2020-10-mna-29-9135f9cf9f8d.webp
-+ /account-assets/math/questions/2019-04-mga-09-d62a15c2fc4b.webp
-+ /account-assets/math/questions/2019-07-mna-13-8d5b34428fe0.webp
-+ /account-assets/math/questions/2020-04-mga-12-0f5aedad7498.webp
-+ /account-assets/math/questions/2019-04-mga-11-524b25a4ec11.webp
-+ /account-assets/math/questions/2020-04-mga-13-828928a0e7f3.webp
-+ /account-assets/math/questions/2020-04-mga-24-0a028b9a8c8f.webp
-+ /account-assets/math/questions/2019-07-mna-09-fb570cd8950f.webp
-+ /account-assets/math/questions/2019-03-mga-28-bd0684184d9d.webp
-+ /account-assets/math/questions/2020-10-mga-12-60295d092036.webp
-+ /account-assets/math/questions/2020-03-mna-15-f7014557acdc.webp
-+ /account-assets/math/questions/2019-04-mna-17-f47ec5b96562.webp
-+ /account-assets/math/questions/2020-07-mga-07-eb3bf21fc4fe.webp
-+ /account-assets/math/questions/2020-04-mna-15-9437822b3787.webp
-+ /account-assets/math/questions/2019-07-mna-06-228cccd5fdaa.webp
-+ /account-assets/math/questions/2019-03-mga-06-3aee62b39a71.webp
-+ /account-assets/math/questions/2019-07-mna-15-d0a993f0f278.webp
-+ /account-assets/math/questions/2019-07-mna-12-6c2a9078322e.webp
-+ /account-assets/math/questions/2019-07-mga-03-7d82e7dd19e0.webp
-+ /account-assets/math/questions/2020-10-mga-30-90502a818d34.webp
-+ /account-assets/math/questions/2020-04-mna-07-85bb548750bc.webp
-+ /account-assets/math/questions/2019-10-mna-13-900b7871a9a5.webp
++ /account-assets/math/questions/2018-04-mga-22-842f010ef964.webp
++ /account-assets/math/questions/2017-03-mna-22-3513ec286537.webp
++ /account-assets/math/questions/2017-04-mna-23-55c0ede5f2a8.webp
++ /account-assets/math/questions/2018-04-mna-01-4fdd2f3b8377.webp
++ /account-assets/math/questions/2017-04-mna-01-432b3b3c7817.webp
++ /account-assets/math/questions/2018-04-mna-22-6082c1a2d7e8.webp
++ /account-assets/math/questions/2018-10-mga-01-ddb3e479bae5.webp
++ /account-assets/math/questions/2018-10-mga-02-f23f341a1c67.webp
++ /account-assets/math/questions/2017-07-mga-24-eb9c9858b43a.webp
++ /account-assets/math/questions/2018-10-mna-22-642b284e70f9.webp
++ /account-assets/math/questions/2017-07-mna-23-31cc3a2d5fd6.webp
++ /account-assets/math/questions/2018-04-mna-03-f56beb17c5bd.webp
++ /account-assets/math/questions/2017-03-mga-01-9c6b4565f4e5.webp
++ /account-assets/math/questions/2018-03-mna-03-a20441952206.webp
++ /account-assets/math/questions/2018-04-mga-01-f243c533e564.webp
++ /account-assets/math/questions/2017-04-mna-03-6b52a5d5bcf5.webp
++ /account-assets/math/questions/2017-04-mga-22-14068beb6d0e.webp
++ /account-assets/math/questions/2018-04-mga-23-8ce43f0f38f6.webp
++ /account-assets/math/questions/2018-07-mna-09-146fcdbe9758.webp
++ /account-assets/math/questions/2017-10-mna-03-6233ed79a942.webp
++ /account-assets/math/questions/2018-10-mga-10-48f1cf7aceb7.webp
++ /account-assets/math/questions/2018-03-mga-23-7de2fdb0485f.webp
++ /account-assets/math/questions/2017-04-mna-25-d9bb1cde0d5a.webp
++ /account-assets/math/questions/2018-04-mga-04-59365bd13486.webp
++ /account-assets/math/questions/2017-10-mga-04-3b6028999a67.webp
++ /account-assets/math/questions/2018-03-mga-22-ec2b1f14d4f2.webp
++ /account-assets/math/questions/2018-07-mna-22-df7b70ba355b.webp
++ /account-assets/math/questions/2018-10-mga-23-9398a56ab0c5.webp
++ /account-assets/math/questions/2017-10-mna-04-7925aa6e842a.webp
++ /account-assets/math/questions/2018-03-mga-08-cef7cb9dbb6b.webp
++ /account-assets/math/questions/2018-07-mna-06-70f02655ef9e.webp
++ /account-assets/math/questions/2017-04-mna-04-8264f1bb8563.webp
++ /account-assets/math/questions/2018-10-mna-25-f4503bf91bb8.webp
++ /account-assets/math/questions/2018-04-mga-05-96b0416ff31c.webp
++ /account-assets/math/questions/2018-04-mna-27-cd8ef65a2244.webp
++ /account-assets/math/questions/2018-07-mga-27-e8c5bd7df219.webp
++ /account-assets/math/questions/2018-07-mna-25-fee32e831870.webp
++ /account-assets/math/questions/2018-07-mga-01-7b384fae11ee.webp
++ /account-assets/math/questions/2017-10-mna-02-d842dc6bbd21.webp
++ /account-assets/math/questions/2017-10-mna-25-8b9815587d4a.webp
++ /account-assets/math/questions/2018-04-mga-13-7f2eb248826d.webp
++ /account-assets/math/questions/2017-04-mna-11-c032316b8e70.webp
++ /account-assets/math/questions/2017-03-mga-28-80cb3d68664a.webp
++ /account-assets/math/questions/2017-07-mna-26-e030d7f37f1e.webp
++ /account-assets/math/questions/2018-07-mga-11-5db564272e2e.webp
++ /account-assets/math/questions/2018-03-mna-07-18dbe6575d52.webp
++ /account-assets/math/questions/2018-04-mna-05-5b6164b0231b.webp
++ /account-assets/math/questions/2018-07-mga-03-85cfbd7a50a5.webp
++ /account-assets/math/questions/2018-03-mga-09-c4faf0d6ba04.webp
++ /account-assets/math/questions/2017-10-mga-11-b98e9b5d3cf5.webp
++ /account-assets/math/questions/2018-03-mga-06-5b5624512a21.webp
++ /account-assets/math/questions/2018-07-mga-25-8a44867098ad.webp
++ /account-assets/math/questions/2018-07-mna-26-77b4ec1b68e9.webp
++ /account-assets/math/questions/2018-04-mna-13-051a2946b40f.webp
++ /account-assets/math/questions/2018-03-mna-11-1179602dbd93.webp
++ /account-assets/math/questions/2018-10-mga-06-3f0305cadaf1.webp
++ /account-assets/math/questions/2017-04-mna-24-6d4cd605d6be.webp
++ /account-assets/math/questions/2017-04-mga-05-59dc67e08350.webp
++ /account-assets/math/questions/2017-04-mna-06-53ea7af84137.webp
++ /account-assets/math/questions/2018-07-mna-28-665d6c8e9857.webp
++ /account-assets/math/questions/2018-07-mga-10-6ba888002307.webp
++ /account-assets/math/questions/2017-03-mna-09-11c02d8262ff.webp
++ /account-assets/math/questions/2017-07-mna-20-6c9215b785c1.webp
++ /account-assets/math/questions/2018-10-mna-06-dfa4a65c7563.webp
++ /account-assets/math/questions/2017-10-mna-27-90f91b0e7011.webp
++ /account-assets/math/questions/2017-03-mna-20-528e2e8a1408.webp
++ /account-assets/math/questions/2018-07-mga-09-de957a6211b1.webp
++ /account-assets/math/questions/2018-10-mna-04-fced4bd270e4.webp
++ /account-assets/math/questions/2018-04-mga-26-f16d571b9df3.webp
++ /account-assets/math/questions/2017-10-mga-06-906735c92e19.webp
++ /account-assets/math/questions/2017-03-mga-08-d6d2a83a9724.webp
++ /account-assets/math/questions/2018-03-mga-05-dac66f04b058.webp
++ /account-assets/math/questions/2017-07-mga-05-97ed3ef35fc0.webp
++ /account-assets/math/questions/2018-10-mna-16-9d768440f8d2.webp
++ /account-assets/math/questions/2018-07-mga-07-c906f563ab6f.webp
++ /account-assets/math/questions/2018-04-mga-07-f4d70c2e082d.webp
++ /account-assets/math/questions/2017-03-mga-06-d2d3b1b70d1e.webp
++ /account-assets/math/questions/2017-10-mna-13-edd531fe0e0c.webp
++ /account-assets/math/questions/2018-07-mga-08-127a6f9992c1.webp
++ /account-assets/math/questions/2018-07-mga-16-3e341e5012ed.webp
++ /account-assets/math/questions/2018-10-mna-09-a1308dac7f72.webp
++ /account-assets/math/questions/2017-10-mga-05-0a9e6abdfd48.webp
++ /account-assets/math/questions/2017-07-mga-09-f502f6f2dd6a.webp
++ /account-assets/math/questions/2018-03-mna-26-c748e69d41f8.webp
++ /account-assets/math/questions/2018-07-mna-17-8a975b609730.webp
++ /account-assets/math/questions/2017-03-mga-10-7e7009041b33.webp
++ /account-assets/math/questions/2018-03-mna-20-522a3394c169.webp
++ /account-assets/math/questions/2018-07-mna-27-239ca5308628.webp
++ /account-assets/math/questions/2018-03-mna-13-1231a50eca9e.webp
++ /account-assets/math/questions/2017-04-mna-12-75b4c368c1de.webp
++ /account-assets/math/questions/2018-10-mna-11-2f271a704d9d.webp
++ /account-assets/math/questions/2017-03-mga-29-dbc4bd06ba6d.webp
++ /account-assets/math/questions/2017-03-mga-19-1771d11964de.webp
++ /account-assets/math/questions/2017-04-mna-19-3e6617f6b265.webp
++ /account-assets/math/questions/2018-07-mna-13-e6889eb499d3.webp
++ /account-assets/math/questions/2018-03-mna-06-e16d9596c9bc.webp
++ /account-assets/math/questions/2018-07-mna-10-98fa8ae98d03.webp
++ /account-assets/math/questions/2018-03-mga-28-98974b26a2e6.webp
++ /account-assets/math/questions/2017-03-mna-19-35f0db7361e7.webp
++ /account-assets/math/questions/2017-04-mna-17-48d5651c1699.webp
    (truncating changed assets log, set `WRANGLER_LOG=debug` environment variable to see full diff)
 Uploaded 160 of 479 assets
 Uploaded 319 of 479 assets
 Uploaded 479 of 479 assets
-✨ Success! Uploaded 479 files (3544 already uploaded) (6.30 sec)
+✨ Success! Uploaded 479 files (4024 already uploaded) (2.35 sec)
 
-Total Upload: 5735.91 KiB / gzip: 395.17 KiB
-Worker Startup Time: 12 ms
+Total Upload: 6411.48 KiB / gzip: 435.10 KiB
+Worker Startup Time: 13 ms
 Your Worker has access to the following bindings:
 Binding                                                Resource
 env.DB (mysuneung-accounts)                            D1 Database
@@ -122,9 +122,9 @@ env.ASSETS                                             Assets
 env.SITE_ORIGIN ("https://mysuneung.com")              Environment Variable
 env.FIREBASE_PROJECT_ID ("mysuneung")                  Environment Variable
 
-Uploaded mysuneung-accounts (24.06 sec)
-Deployed mysuneung-accounts triggers (2.70 sec)
+Uploaded mysuneung-accounts (16.79 sec)
+Deployed mysuneung-accounts triggers (2.33 sec)
   mysuneung.com/* (zone name: mysuneung.com)
   www.mysuneung.com/* (zone name: mysuneung.com)
   schedule: 17 19 * * *
-Current Version ID: d70fd73c-8767-4d8d-8c76-a526ea70cf72
+Current Version ID: 7a2788de-db42-4043-9f21-7fcb3a4f97b0

@@ -1,14 +1,14 @@
 {
   "coverage": {
-    "version": "2026-09-29.math.v5",
-    "distinct_questions": 4000,
-    "forms": 192,
-    "exam_sessions": 76,
-    "education_office_sessions": 35,
-    "manual_taxonomy_reviewed": 1640,
+    "version": "2026-09-29.math.v6",
+    "distinct_questions": 4480,
+    "forms": 208,
+    "exam_sessions": 84,
+    "education_office_sessions": 43,
+    "manual_taxonomy_reviewed": 2120,
     "pending_taxonomy": 89
   },
-  "generated_2019_ga": {
+  "generated_2017_ga": {
     "source_family": "education_office",
     "question_count": 30,
     "max_score": 100,
@@ -16,10 +16,10 @@
       "education_office"
     ],
     "years": [
-      2019
+      2017
     ]
   },
-  "generated_2020_na": {
+  "generated_2018_na": {
     "source_family": "education_office",
     "question_count": 30,
     "max_score": 100,
@@ -27,7 +27,7 @@
       "education_office"
     ],
     "years": [
-      2020
+      2018
     ]
   },
   "ungraded_answer_fields_exposed": false
