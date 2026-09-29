@@ -52,8 +52,13 @@ def layout_text(p):
     return t
 
 def solparse(path,track):
-    manual=json.loads((Path(__file__).parents[1]/'manual-review.json').read_text());manual_key=manual['solution_keys'].get(path.name.removesuffix('-solution.pdf'))
-    if manual_key and hashlib.sha256(path.read_bytes()).hexdigest()!=manual_key['sha256']:raise ValueError('manual key source changed')
+    manual=json.loads((Path(__file__).parents[1]/'manual-review.json').read_text())
+    form_id=path.name.removesuffix('-solution.pdf');source_sha=hashlib.sha256(path.read_bytes()).hexdigest()
+    manual_key=manual['solution_keys'].get(form_id)
+    adjudications={int(a['question']):a for a in manual.get('adjudications',[]) if a.get('form')==form_id}
+    if manual_key and source_sha!=manual_key['sha256']:raise ValueError('manual key source changed')
+    for a in adjudications.values():
+        if a.get('sha256') and source_sha!=a['sha256']:raise ValueError('adjudication source changed')
     doc=fitz.open(path);rawtexts=[norm(p.get_text()) for p in doc];layouttexts=[layout_text(p) for p in doc]
     rawfull='\n'.join(rawtexts);rawhs=[int(m[1]) for m in H.finditer(rawfull)]
     expected1=list(range(1,31));expected2=list(range(1,23))+list(range(23,31))*3
@@ -118,7 +123,7 @@ def solparse(path,track):
         if next_table:content=content[:next_table.start()]
         ans=[av(m[1]) for m in A.finditer(content) if (m.start()==0 or content[m.start()-1] not in '해정')]
         # A following section title ending in 정답 is not the previous question's answer.
-        if (path.name.startswith('2027-07') or path.name.startswith('2025-07') or path.name.startswith('2026-07')) and q==22:ans=[]
+        if re.match(r'202[3-7]-07',path.name) and q==22:ans=[]
         # A missing heading means this span contains another question. Grade only from the independent answer table.
         if idx+1<len(heads) and int(heads[idx+1][1])!=q+1 and q not in [22,30]:ans=[]
         if path.name=='2016-11-B-solution.pdf' and q==9:ans=[]  # adjudicated from problem + table; see manual-review.json
@@ -127,10 +132,14 @@ def solparse(path,track):
         unique=set(ans)
         table=[tb['values'][q] for tb in tables if q in tb['values'] and (q<=22 or tb['section'] in ['common',track])]
         tv=set(table)
-        if len(unique)>1 or len(tv)>1:conflicts.append({'q':q,'inline':ans,'table':table})
         inline=next(iter(unique)) if len(unique)==1 else None;tab=next(iter(tv)) if len(tv)==1 else None
-        if inline is not None and tab is not None and inline!=tab:conflicts.append({'q':q,'inline':inline,'table':tab})
-        answer=tab if tab is not None else inline
+        used_adjudication=q in adjudications
+        if used_adjudication:
+            answer=adjudications[q]['answer']
+        else:
+            if len(unique)>1 or len(tv)>1:conflicts.append({'q':q,'inline':ans,'table':table})
+            if inline is not None and tab is not None and inline!=tab:conflicts.append({'q':q,'inline':inline,'table':tab})
+            answer=tab if tab is not None else inline
         if answer is None:continue
         objective=content.split('정답풀이')[0].split('정답 풀이')[0]
         end=re.search(r'\?|한다\s*\.',objective)
@@ -141,7 +150,7 @@ def solparse(path,track):
         for pi,t in enumerate(texts):
             if offset+len(t)>=h.start():page=pi+1;break
             offset+=len(t)+1
-        result[q]={'answer':answer,'objective':objective,'solution_page':page,'answer_evidence':('table_and_solution' if inline is not None and tab is not None else 'answer_table' if tab is not None else 'explicit_solution_answer')}
+        result[q]={'answer':answer,'objective':objective,'solution_page':page,'answer_evidence':('visually_verified_official_answer_table' if used_adjudication else 'table_and_solution' if inline is not None and tab is not None else 'answer_table' if tab is not None else 'explicit_solution_answer')}
     for q in range(1,31):
         if q in result:continue
         choices=[tb for tb in tables if q in tb['values'] and (q<=22 or tb['section'] in ['common',track])]

@@ -1,14 +1,14 @@
 {
   "passed": 19,
   "generated_full_exams": 350,
-  "official_forms": 132,
+  "official_forms": 156,
   "checks": [
-    "all 132 official paper variants have 30 questions, 100 points, 21 MC and 9 numeric",
-    "52 sessions, all 14 academic years, 2728 canonical questions, modern common deduplicated",
+    "all 156 official paper variants have 30 questions, 100 points, 21 MC and 9 numeric",
+    "60 sessions, all 14 academic years, 3096 canonical questions, modern common deduplicated",
     "every canonical question has original image/source URLs, source page, points and valid answer",
     "canonical grading produces 100/100 for every official paper",
     "350 full generated exams preserve composition and era",
-    "education-office batch has 11 sessions and all 368 newly reviewed questions are analysis eligible",
+    "education-office bank has 19 sessions and all 736 reviewed questions are analysis eligible",
     "source-family filters keep education-office and KICE exams separate",
     "education-office transfer practice uses a fresh other-session question of the same reviewed type",
     "numeric zero is a valid answered value and not blank, but not necessarily a correct answer",

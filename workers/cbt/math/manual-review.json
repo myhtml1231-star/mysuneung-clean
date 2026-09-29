@@ -2175,6 +2175,118 @@
       "question": 28,
       "answer": 1,
       "evidence": "EBS solution prints derived value 6, not a choice number; original choice 1 is 6 and answer table is 1."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 28,
+      "answer": 1,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4 shows calculus question 28 as choice 1; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 23,
+      "answer": 2,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4 shows geometry question 23 as choice 2; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 23,
+      "answer": 2,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 24,
+      "answer": 5,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 25,
+      "answer": 4,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 26,
+      "answer": 3,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 27,
+      "answer": 1,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 29,
+      "answer": 28,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-calc-edu",
+      "question": 30,
+      "answer": 80,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 24,
+      "answer": 5,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 25,
+      "answer": 4,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 26,
+      "answer": 3,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 27,
+      "answer": 1,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 28,
+      "answer": 4,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 29,
+      "answer": 128,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
+    },
+    {
+      "form": "2023-03-geom-edu",
+      "question": 30,
+      "answer": 384,
+      "sha256": "216ef7f281d8169083fcc33144da96646c8464b9d1e8d00652930ae95b756342",
+      "evidence": "Official EBS elective answer table on solution page 4; visually reviewed from native PDF, no OCR."
     }
   ]
 }

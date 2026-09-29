@@ -1,5 +1,7 @@
-"""Collect the bounded 2025-2026 academic-year high3 education-office math batch from official EBS listings.
-This intentionally handles only calendar 2024/2025 March/May/July/October so the batch stays reviewable.
+"""Collect a bounded high3 education-office math batch from official EBS listings.
+Usage:
+  python3 collect_edu_batch.py <root> [calendar_years_csv] [months_csv]
+Defaults preserve the first reviewed batch: calendar 2024,2025 and months 03,05,07,10.
 """
 from pathlib import Path
 from urllib.parse import urlencode, quote
@@ -8,6 +10,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import subprocess,re,json,hashlib,fitz,sys
 
 ROOT=Path(sys.argv[1]) if len(sys.argv)>1 else Path.home()/'Downloads/mysuneung-math-edu-2025-2026'
+CALENDARS=[int(x) for x in (sys.argv[2] if len(sys.argv)>2 else '2024,2025').split(',') if x]
+MONTHS=[int(x) for x in (sys.argv[3] if len(sys.argv)>3 else '03,05,07,10').split(',') if x]
+if not CALENDARS or not MONTHS: raise SystemExit('calendar years and months are required')
 (ROOT/'sources').mkdir(parents=True,exist_ok=True)
 (ROOT/'listings').mkdir(parents=True,exist_ok=True)
 BASE='https://wdown.ebsi.co.kr/W61001/01exam'
@@ -24,19 +29,24 @@ def curl(url,dest,post=None):
 
 def listing(calendar):
     path=ROOT/'listings'/f'{calendar}.html'
-    params={'targetCd':'D300','yearList':calendar,'monthList':'03,05,07,10','arOrd':'2','subjIdList':'140119,140120,140121','sort':'recent','pageSize':200}
+    month_list=','.join(f'{m:02d}' for m in MONTHS)
+    params={'targetCd':'D300','yearList':calendar,'monthList':month_list,'arOrd':'2','subjIdList':'140119,140120,140121','sort':'recent','pageSize':250}
     curl(API,path,urlencode(params))
     soup=BeautifulSoup(path.read_text(),'html.parser')
     rows=[]
+    allowed='|'.join(str(m) for m in sorted(set(MONTHS)))
     for b in soup.select('[onclick^="goDownLoadP("]'):
         a=re.findall(r"'([^']*)'",b.get('onclick',''))
         if len(a)<8 or a[6]=='1': continue
         wrap=b.find_parent('div',class_='qus_box') or b.parent
         title=wrap.get_text(' ',strip=True)
-        hm=re.search(rf'{calendar}\s+(3|5|7|10)월',title)
-        if not hm: raise ValueError('canonical month missing '+title[:120])
+        if '고3' not in title or '학평' not in title: continue
+        hm=re.search(rf'{calendar}\s+({allowed})월',title)
+        if not hm: continue
         month=int(hm[1]);track=TRACK.get(a[5])
         if not track: continue
+        named_month=re.search(r'고3\s+(\d+)월\s+학평',title)
+        official_exam_month=int(named_month[1]) if named_month else month
         h=wrap.select_one('[onclick^="goDownLoadH("]')
         ha=re.findall(r"'([^']*)'",h.get('onclick','')) if h else []
         pm=re.search(r'학평\(([^)]+)\)',title)
@@ -45,17 +55,17 @@ def listing(calendar):
         academic=calendar+1
         rid=f'{academic}-{month:02}-{track}-edu'
         rows.append({
-            'id':rid,'academic_year':academic,'month':month,'administered_date':day,'track':track,'form':'standard',
+            'id':rid,'academic_year':academic,'month':month,'official_exam_month':official_exam_month,'administered_date':day,'track':track,'form':'standard',
             'provider':provider,'exam_family':'education_office','title':title,
             'problem_url':BASE+a[0],'solution_url':BASE+ha[0] if ha else None,
             'listing_url':API,'listing_params':params,'paper_id':a[-1]
         })
     rows.sort(key=lambda x:x['id'])
-    if len(rows)!=12: raise ValueError(f'{calendar}: expected 12 rows, got {len(rows)}')
+    if len(rows)!=12: raise ValueError(f'{calendar}: expected 12 high3 math rows, got {len(rows)}')
     return rows
 
 rows=[]
-for y in [2024,2025]: rows.extend(listing(y))
+for y in CALENDARS: rows.extend(listing(y))
 ids=[r['id'] for r in rows]
 if len(ids)!=len(set(ids)): raise ValueError('duplicate ids')
 (ROOT/'source-manifest.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2))
@@ -79,4 +89,4 @@ with ThreadPoolExecutor(max_workers=6) as pool:
 (ROOT/'download-report.json').write_text(json.dumps(results,ensure_ascii=False,indent=2))
 failed=[x for x in results if not x['ok']]
 if failed: raise SystemExit('download failures '+json.dumps(failed,ensure_ascii=False))
-print('DONE',len(rows),'forms',len(results),'pdfs')
+print('DONE',len(rows),'forms',len(results),'pdfs','calendars',CALENDARS,'months',MONTHS)

@@ -1,28 +1,32 @@
 {
   "coverage": {
-    "version": "2026-09-29.math.v2",
-    "distinct_questions": 2728,
-    "forms": 132,
-    "exam_sessions": 52,
-    "education_office_sessions": 11,
-    "manual_taxonomy_reviewed": 368,
+    "version": "2026-09-29.math.v3",
+    "distinct_questions": 3096,
+    "forms": 156,
+    "exam_sessions": 60,
+    "education_office_sessions": 19,
+    "manual_taxonomy_reviewed": 736,
     "pending_taxonomy": 89
   },
-  "generated": {
+  "generated_2023_2024": {
     "source_family": "education_office",
     "question_count": 30,
     "max_score": 100,
+    "academic_years": [
+      2023,
+      2024
+    ],
     "section_families": [
       "education_office"
-    ],
-    "providers": [
-      "경기도교육청",
-      "교육청",
-      "서울특별시교육청",
-      "인천광역시교육청"
     ]
   },
-  "category_groups": 3,
-  "category_count": 18,
+  "april_display_check": {
+    "question_key": "2024-05-mcommon-01",
+    "listing_month": 5,
+    "official_exam_month": 4,
+    "source_label": "2024학년도 4월 전국연합학력평가 · 경기도교육청"
+  },
+  "category_groups": 2,
+  "category_count": 13,
   "answer_keys_exposed": false
 }

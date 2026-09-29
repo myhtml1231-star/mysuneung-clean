@@ -6,12 +6,12 @@ const errors=[];const server=http.createServer(async(req,res)=>{try{const u=new 
 await new Promise(r=>server.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+server.address().port;const browser=await puppeteer.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--no-sandbox']});
 try{const p=await browser.newPage();p.setDefaultTimeout(20000);p.on('pageerror',e=>errors.push(String(e)));await p.setRequestInterception(true);p.on('request',async r=>{const u=new URL(r.url());if(u.origin===base){r.continue();return;}if(u.hostname==='mysuneung.com'&&u.pathname.startsWith('/account-assets/')){const f=path.join(assets,u.pathname);if(fs.existsSync(f)){await r.respond({status:200,contentType:f.endsWith('.webp')?'image/webp':'application/javascript',body:fs.readFileSync(f)});return;}}r.abort();});
  await p.setViewport({width:1440,height:1000});await p.goto(base+'/mixed-cbt?subject=math',{waitUntil:'domcontentloaded'});await p.waitForFunction(()=>window.CBTLearningUI&&document.querySelectorAll('#years .year').length===14&&document.querySelectorAll('input[name="sourceFamily"]').length===3);
- assert.match(await p.$eval('.math-coverage',e=>e.textContent),/2,728문항/);assert.match(await p.$eval('.math-coverage',e=>e.textContent),/368문항/);
+ assert.match(await p.$eval('.math-coverage',e=>e.textContent),/3,096문항/);assert.match(await p.$eval('.math-coverage',e=>e.textContent),/736문항/);
  await p.click('#math-source-edu');await p.waitForFunction(()=>document.querySelector('#sourceHint').textContent.includes('교육청 고3 전국연합'));
  assert.equal(await p.$eval('#generate',e=>e.textContent),'교육청 30문항 만들기');
  await p.click('#generate');await p.waitForFunction(()=>window.flat?.length===30&&!document.querySelector('#app').classList.contains('hidden'));
  const full=await p.evaluate(()=>({source_family:exam.source_family,score:exam.max_score,n:flat.length,sources:flat.map(x=>x.set.source.exam_family),months:[...new Set(flat.map(x=>x.set.source.month))],years:[...new Set(flat.map(x=>x.set.source.academic_year))]}));
- assert.equal(full.source_family,'education_office');assert.equal(full.n,30);assert.equal(full.score,100);assert.ok(full.sources.every(x=>x==='education_office'));assert.ok(full.years.every(y=>y>=2025));
+ assert.equal(full.source_family,'education_office');assert.equal(full.n,30);assert.equal(full.score,100);assert.ok(full.sources.every(x=>x==='education_office'));assert.ok(full.years.every(y=>y>=2023));
  await p.screenshot({path:path.join(out,'math-edu-full-1440.png')});
  await p.evaluate(()=>{MSNStorage.removeItem('mysuneung-math-cbt-current');location.reload()});await p.waitForFunction(()=>document.querySelectorAll('input[name="sourceFamily"]').length===3&&document.querySelectorAll('#categoryGroups .cat').length>0);
  await p.click('#modeCustom');await p.click('#math-source-edu');await p.waitForFunction(()=>document.querySelectorAll('#categoryGroups .cat').length>0);

@@ -2,7 +2,7 @@
 import * as Learning from './learning-core.mjs';
 import * as Study from './study-core.mjs';
 import MATH_BANK from '../data/math-bank.json' with {type:'json'};
-export const MATH_VERSION='2026-09-29.math.v2';
+export const MATH_VERSION='2026-09-29.math.v3';
 export const TRACKS=Object.freeze({A:'수학 A형',B:'수학 B형',ga:'수학 가형',na:'수학 나형',prob:'확률과 통계',calc:'미적분',geom:'기하'});
 
 export class MathInputError extends Error{constructor(message,code='INVALID_MATH_REQUEST',status=400){super(message);this.code=code;this.status=status;}}
@@ -42,7 +42,7 @@ export function mathUnit(q,display=1){
   question_type:q.type,skill:q.type,type_group:q.type_group,type_id:q.type_id,review_status:q.review_status,analysis_eligible:q.analysis_eligible===true,
   taxonomy_version:MATH_VERSION,qc:{unsafe_glyph:true},assets:[],original_url:original};
  return {id:q.unit_id,section_code:q.section_code,area:q.area,category:q.category,display_start:display,display_end:display,
-  source:{academic_year:q.academic_year,month:q.month,exam_type:q.exam_type,exam_family:q.exam_family||'kice',provider:q.provider||'',section:q.source_label,original_questions:[q.original_no],area:q.area,category:q.category,administered_date:q.administered_date},
+  source:{academic_year:q.academic_year,month:q.month,exam_type:q.exam_type,exam_family:q.exam_family||'kice',provider:q.provider||'',section:q.source_label,original_questions:[q.original_no],area:q.area,category:q.category,administered_date:q.administered_date,official_exam_month:q.official_exam_month??q.month},
   passage:{sections:[]},questions:[question],assets:[],force_image_render:true,original_url:original,
   problem_url:q.problem_url,problem_page:q.problem_page,
   render_meta:{original:original,originalParts:[im],questions:{[q.original_no]:{full:[im],parts:[im],render_mode:'full',allow_text:false}},passage:[]}};

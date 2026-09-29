@@ -7,7 +7,7 @@ import fitz,json,re,hashlib,collections,sys,io
 ROOT=Path.home()/'Downloads/mysuneung-math-cbt-20260929'
 REPO=Path(__file__).resolve().parents[4]
 ASSETS=ROOT/'assets';ASSETS.mkdir(exist_ok=True)
-VERSION='2026-09-29.math.v2'
+VERSION='2026-09-29.math.v3'
 TRACK={'A':'수학 A형','B':'수학 B형','ga':'수학 가형','na':'수학 나형','prob':'확률과 통계','calc':'미적분','geom':'기하'}
 # Rules refer exclusively to the source's stated objective, never to a guessed answer or student behavior.
 TOPICS=[
@@ -65,7 +65,7 @@ def render_question(doc,q):
 
 def main():
     forms=json.loads((ROOT/'parsed-forms.json').read_text());errors=json.loads((ROOT/'parse-errors.json').read_text())
-    if errors or len(forms)!=132:raise ValueError('Cannot publish an incomplete or ambiguous source bank: '+str(errors))
+    if errors or len(forms)!=156:raise ValueError('Cannot publish an incomplete or ambiguous source bank: '+str(errors))
     questions={};outforms=[];provenance=[];assets=[];dup=0
     for form in forms:
         fid=form['id'];year=form['academic_year'];month=form['month'];track=form['track'];era=curriculum(year)
@@ -85,7 +85,8 @@ def main():
             data,w,h=render_question(doc,q);sha=hashlib.sha256(data).hexdigest();imagekey=f'math/v1/questions/{key}-{sha[:12]}.webp';dest=ASSETS/(key+'.webp');dest.write_bytes(data)
             is_edu=form.get('exam_family')=='education_office' or (year==2027 and month in [3,5,7])
             if is_edu:
-                label=f'{year}학년도 {month}월 전국연합학력평가'
+                display_month=form.get('official_exam_month',month)
+                label=f'{year}학년도 {display_month}월 전국연합학력평가'
                 provider=form.get('provider') or '교육청'
                 label+=' · '+provider
             else:
@@ -96,11 +97,11 @@ def main():
             review=json.loads((REPO/'workers/cbt/math/edu-taxonomy-review.json').read_text())['entries'].get(key) if is_edu else None
             if review:
                 tax={'type':review['type'],'type_id':'math-'+era+'-'+review['topic'],'type_group':review['type_group'],'area':review['type_group'],'category':review['type'],'analysis_eligible':True,'review_status':review['review_status'],'topic':review['topic']}
-            elif is_edu and year in [2025,2026]:
+            elif is_edu and year in [2023,2024,2025,2026]:
                 raise ValueError('Missing manual education-office taxonomy '+key)
             else:tax=classify(objectives,era)
             provider=form.get('provider') or ('교육청' if is_edu else '한국교육과정평가원')
-            questions[key]={'question_key':key,'unit_id':unit,'academic_year':year,'month':month,'section_code':sec,'original_no':no,'track':'common' if sec=='mcommon' else track,'curriculum':era,'exam_type':'csat' if month==11 else 'school' if is_edu or month in [3,5,7] else 'mock','exam_family':'education_office' if is_edu else 'kice','provider':provider,'administered_date':form['administered_date'],'source_label':label,'correct_answer':q['answer'],'answer_type':q['answer_type'],'points':q['points'],**tax,'objective':objectives,'image':{'src':'https://mysuneung.com/account-assets/math/questions/'+Path(imagekey).name,'w':w,'h':h},'problem_url':form['problem_url'],'problem_page':q['page'],'solution_url':form['solution_url'],'solution_page':q['solution_page'],'shared_group':stem}
+            questions[key]={'question_key':key,'unit_id':unit,'academic_year':year,'month':month,'section_code':sec,'original_no':no,'track':'common' if sec=='mcommon' else track,'curriculum':era,'exam_type':'csat' if month==11 else 'school' if is_edu or month in [3,5,7] else 'mock','exam_family':'education_office' if is_edu else 'kice','provider':provider,'administered_date':form['administered_date'],'official_exam_month':form.get('official_exam_month',month),'source_label':label,'correct_answer':q['answer'],'answer_type':q['answer_type'],'points':q['points'],**tax,'objective':objectives,'image':{'src':'https://mysuneung.com/account-assets/math/questions/'+Path(imagekey).name,'w':w,'h':h},'problem_url':form['problem_url'],'problem_page':q['page'],'solution_url':form['solution_url'],'solution_page':q['solution_page'],'shared_group':stem}
             pub=REPO/'workers/accounts/public/account-assets/math/questions'/Path(imagekey).name;pub.parent.mkdir(parents=True,exist_ok=True);pub.write_bytes(data)
             assets.append({'key':imagekey,'path':str(dest),'sha256':sha,'bytes':len(data),'width':w,'height':h})
             provenance.append({'question_key':key,'form':fid,'problem_sha256':ph,'solution_sha256':sh,'answer_evidence':q['answer_evidence'],'objective':objectives,'question_text':text if (text:=re.sub(r'\s+','',q.get('text',''))) else '', 'page':q['page'],'crop':q['rect'],'prepend_parts':q.get('prepend_parts',[]),'image_sha256':sha,'review_status':tax['review_status']})
@@ -110,7 +111,7 @@ def main():
         outforms.append({k:v for k,v in form.items() if k not in ['questions','title','listing_params'] }|{'question_keys':keys,'curriculum':era,'exam_family':'education_office' if normalized_edu else 'kice','provider':normalized_provider})
         print('BUILT',fid,'questions',len(questions),flush=True)
     years=sorted(set(f['academic_year'] for f in forms))
-    coverage={'academic_years':years,'exam_sessions':len(set((f['academic_year'],f['month'],f.get('exam_family','kice')) for f in outforms)),'forms':len(forms),'question_references':len(forms)*30,'distinct_questions':len(questions),'common_duplicates_removed':dup,'pending_taxonomy':sum(not q['analysis_eligible'] for q in questions.values()),'manual_taxonomy_reviewed':sum(q.get('review_status')=='manual_question_review' for q in questions.values()),'education_office_sessions':len(set((f['academic_year'],f['month']) for f in outforms if f.get('exam_family')=='education_office')),'periods':[{'year':y,'months':sorted(set(f['month'] for f in forms if f['academic_year']==y)),'tracks':sorted(set(f['track'] for f in forms if f['academic_year']==y))} for y in years],'not_published':['2027학년도 수능'],'source':'EBSi 공개 기출 문제·해설 PDF','scope_note':'2014–2026학년도 평가원 6·9월 및 수능 + 2025·2026학년도 고3 교육청 3·5·7·10월 + 2027 대비 공개된 3·5·6·7·9월. 2027 수능 제외.','textbook_links_verified':0}
+    coverage={'academic_years':years,'exam_sessions':len(set((f['academic_year'],f['month'],f.get('exam_family','kice')) for f in outforms)),'forms':len(forms),'question_references':len(forms)*30,'distinct_questions':len(questions),'common_duplicates_removed':dup,'pending_taxonomy':sum(not q['analysis_eligible'] for q in questions.values()),'manual_taxonomy_reviewed':sum(q.get('review_status')=='manual_question_review' for q in questions.values()),'education_office_sessions':len(set((f['academic_year'],f['month']) for f in outforms if f.get('exam_family')=='education_office')),'periods':[{'year':y,'months':sorted(set(f['month'] for f in forms if f['academic_year']==y)),'tracks':sorted(set(f['track'] for f in forms if f['academic_year']==y))} for y in years],'not_published':['2027학년도 수능'],'source':'EBSi 공개 기출 문제·해설 PDF','scope_note':'2014–2026학년도 평가원 6·9월 및 수능 + 2023·2024학년도 고3 교육청 각 4회차 + 2025·2026학년도 고3 교육청 3·5·7·10월 + 2027 대비 교육청 3·5·7월 및 평가원 6·9월. 2027 수능 제외.','textbook_links_verified':0}
     bank={'version':VERSION,'years':years,'coverage':coverage,'forms':outforms,'questions':questions}
     path=REPO/'workers/cbt/data/math-bank.json';path.write_text(json.dumps(bank,ensure_ascii=False,separators=(',',':')))
     (ROOT/'assets-manifest.json').write_text(json.dumps(assets,ensure_ascii=False,indent=2))
