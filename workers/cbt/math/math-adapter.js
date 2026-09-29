@@ -2,16 +2,21 @@
 var MATH_TRACKS={A:'수학 A형',B:'수학 B형',ga:'수학 가형',na:'수학 나형',prob:'확률과 통계',calc:'미적분',geom:'기하'};
 function mathEra(y){return y<=2016?'ab':y<=2021?'gana':'current'}
 function mathChoice(){return document.querySelector('input[name="choice"]:checked')?.value||'prob'}
-window.mathQuestionMatchesSelection=function(q){return selectedYears.has(q.academic_year)&&(q.section_code==='mcommon'||q.section_code==='m'+mathChoice())};
+function mathSourceScope(){return document.querySelector('input[name="sourceFamily"]:checked')?.value||'all'}
+window.mathChoice=mathChoice;window.mathSourceScope=mathSourceScope;
+window.mathQuestionMatchesSelection=function(q){var source=mathSourceScope();return selectedYears.has(q.academic_year)&&(q.section_code==='mcommon'||q.section_code==='m'+mathChoice())&&(source==='all'||(q.exam_family||'kice')===source)};
 refreshYearModeUi=function(){
  var legacy=usesLegacyYears(),era=mathEra(Math.min(...selectedYears));
  var valid=era==='ab'?['A','B']:era==='gana'?['ga','na']:['prob','calc','geom'];
  var c=mathChoice();if(!valid.includes(c))c=valid[0];
  document.querySelectorAll('input[name="choice"]').forEach(function(r){r.checked=r.value===c;r.parentElement.classList.toggle('hidden',!valid.includes(r.value));});
+ var edu=document.querySelector('input[name="sourceFamily"][value="education_office"]'),canEdu=era==='current'&&[...selectedYears].some(y=>y>=2025);
+ if(edu){edu.disabled=!canEdu;edu.parentElement.classList.toggle('disabled',!canEdu);if(!canEdu&&mathSourceScope()==='education_office')document.querySelector('input[name="sourceFamily"][value="all"]').checked=true;}
+ var source=mathSourceScope(),hint=$('#sourceHint');if(hint)hint.textContent=source==='education_office'?'교육청 고3 전국연합만 출제 · 2025·2026학년도 3·5·7·10월 + 2027학년도 3·5·7월':source==='kice'?'평가원 6·9월과 수능만 출제합니다.':'평가원·수능과 수록된 교육청 기출을 함께 사용합니다.';
  $('#choiceSetting').classList.remove('hidden');$('#currentComposition').classList.toggle('hidden',legacy);$('#legacyComposition').classList.toggle('hidden',!legacy);
  $('#compositionNote').textContent=legacy?'이전 체제는 같은 회차 30문항을 그대로 출제합니다.':'공통 22문항 + 선택 8문항 · 원래 문항 위치와 배점을 유지합니다.';
  $('#startHint').textContent=mode==='full'?'30문항 · 객관식 21 + 단답형 9 · 100분 · 100점':'선택 범주 1~30문항 · 공통 자료 보존 · 문항 수에 맞춰 시간 설정';
- $('#generate').textContent=mode==='full'?'수학 30문항 만들기':'맞춤 문제 만들기';
+ $('#generate').textContent=mode==='full'?(source==='education_office'?'교육청 30문항 만들기':'수학 30문항 만들기'):(source==='education_office'?'교육청 맞춤 문제 만들기':'맞춤 문제 만들기');
  document.querySelectorAll('#years .year').forEach(function(b){b.classList.toggle('on',selectedYears.has(Number(b.dataset.year)));});
  document.querySelectorAll('[data-math-era]').forEach(function(b){b.classList.toggle('on',b.dataset.mathEra===era);});
  window.dispatchEvent(new Event('math-selection-change'));
@@ -22,12 +27,13 @@ initYears=function(){
  b.onclick=function(){if(mathEra(y)!==mathEra(Math.min(...selectedYears)))selectedYears=new Set([y]);else if(selectedYears.has(y)){if(selectedYears.size===1)return;selectedYears.delete(y);}else selectedYears.add(y);selectedCategories.clear();refreshYearModeUi();initCategories();};box.appendChild(b);});
  document.querySelectorAll('[data-math-era]').forEach(function(b){b.onclick=function(){selectedYears=new Set(YEARS.filter(y=>mathEra(y)===b.dataset.mathEra));selectedCategories.clear();refreshYearModeUi();initCategories();};});
  document.querySelectorAll('input[name="choice"]').forEach(function(r){r.onchange=function(){selectedCategories.clear();refreshYearModeUi();initCategories();};});
+ document.querySelectorAll('input[name="sourceFamily"]').forEach(function(r){r.onchange=function(){selectedCategories.clear();refreshYearModeUi();initCategories();};});
  refreshYearModeUi();
 };
 var mathCategoryRequest=0;
 initCategories=async function(){
  var request=++mathCategoryRequest;try{
- var p=new URLSearchParams({years:[...selectedYears].join(','),choice:mathChoice()});var res=await fetch('/api/cbt/math/categories?'+p),data=await res.json();if(!res.ok)throw Error(data.error||'분류 로드 실패');if(request!==mathCategoryRequest)return;
+ var p=new URLSearchParams({years:[...selectedYears].join(','),choice:mathChoice(),source_family:mathSourceScope()});var res=await fetch('/api/cbt/math/categories?'+p),data=await res.json();if(!res.ok)throw Error(data.error||'분류 로드 실패');if(request!==mathCategoryRequest)return;
  var box=$('#categoryGroups');box.textContent='';var valid=new Set();
  for(const group of data.groups||[]){var wrap=document.createElement('div');wrap.className='category-group';var title=document.createElement('div');title.className='category-name';title.textContent=group.area;var chips=document.createElement('div');chips.className='category-chips';
  for(const item of group.categories){valid.add(item.name);var b=document.createElement('button');b.type='button';b.className='cat'+(selectedCategories.has(item.name)?' on':'');b.dataset.category=item.name;b.innerHTML=esc(item.name)+'<small>'+item.unit_count+'문항</small>';b.onclick=function(){var c=this.dataset.category;if(selectedCategories.has(c)){selectedCategories.delete(c);this.classList.remove('on');}else{selectedCategories.add(c);this.classList.add('on');}};chips.appendChild(b);}wrap.append(title,chips);box.appendChild(wrap);}

@@ -118,7 +118,7 @@ def solparse(path,track):
         if next_table:content=content[:next_table.start()]
         ans=[av(m[1]) for m in A.finditer(content) if (m.start()==0 or content[m.start()-1] not in '해정')]
         # A following section title ending in 정답 is not the previous question's answer.
-        if path.name.startswith('2027-07') and q==22:ans=[]
+        if (path.name.startswith('2027-07') or path.name.startswith('2025-07') or path.name.startswith('2026-07')) and q==22:ans=[]
         # A missing heading means this span contains another question. Grade only from the independent answer table.
         if idx+1<len(heads) and int(heads[idx+1][1])!=q+1 and q not in [22,30]:ans=[]
         if path.name=='2016-11-B-solution.pdf' and q==9:ans=[]  # adjudicated from problem + table; see manual-review.json

@@ -2,7 +2,7 @@
 import * as Learning from './learning-core.mjs';
 import * as Study from './study-core.mjs';
 import MATH_BANK from '../data/math-bank.json' with {type:'json'};
-export const MATH_VERSION='2026-09-29.math.v1';
+export const MATH_VERSION='2026-09-29.math.v2';
 export const TRACKS=Object.freeze({A:'수학 A형',B:'수학 B형',ga:'수학 가형',na:'수학 나형',prob:'확률과 통계',calc:'미적분',geom:'기하'});
 
 export class MathInputError extends Error{constructor(message,code='INVALID_MATH_REQUEST',status=400){super(message);this.code=code;this.status=status;}}
@@ -14,7 +14,8 @@ export function mathTaxonomy(bank){return Object.fromEntries(Object.entries(bank
  unit_id:q.unit_id,original_no:q.original_no,academic_year:q.academic_year,month:q.month,section_code:q.section_code,
  answer_type:q.answer_type,points:q.points,analysis_eligible:q.analysis_eligible===true,review_status:q.review_status,
  taxonomy_version:MATH_VERSION,original_url:q.image.src,solution_url:q.solution_url,solution_page:q.solution_page,
- problem_url:q.problem_url,problem_page:q.problem_page,review_note:q.objective||'분류 근거 검토 중',source_label:q.source_label,track:q.track,curriculum:q.curriculum
+ problem_url:q.problem_url,problem_page:q.problem_page,review_note:q.objective||'분류 근거 검토 중',source_label:q.source_label,track:q.track,curriculum:q.curriculum,
+ exam_family:q.exam_family||'kice',provider:q.provider||''
  }]));}
 export function mathLearningMeta(bank){
  const questions=mathTaxonomy(bank),groups={},statuses={};
@@ -24,12 +25,14 @@ export function mathLearningMeta(bank){
   reasons:Learning.REASONS,coverage:bank.coverage};
 }
 export function mathCategories(bank,params=null){
- const ys=params?.get('years')?.split(',').map(Number),choice=params?.get('choice');
+ const ys=params?.get('years')?.split(',').map(Number),choice=params?.get('choice'),sourceFamily=params?.get('source_family')||'all';
+ if(!['all','kice','education_office'].includes(sourceFamily))fail('출처 선택을 확인해 주세요.','MATH_SOURCE_FAMILY');
  const groups=new Map();for(const q of Object.values(bank.questions)){
   if(ys?.length&&!ys.includes(q.academic_year))continue;if(choice&&q.section_code!=='mcommon'&&q.section_code!=='m'+choice)continue;
+  if(sourceFamily!=='all'&&(q.exam_family||'kice')!==sourceFamily)continue;
   if(!groups.has(q.area))groups.set(q.area,new Map());const g=groups.get(q.area);g.set(q.category,(g.get(q.category)||0)+1);
  }
- return {ok:true,groups:[...groups].map(([area,c])=>({area,categories:[...c].map(([name,unit_count])=>({name,unit_count}))})),years:bank.years,tracks:TRACKS,coverage:bank.coverage};
+ return {ok:true,groups:[...groups].map(([area,c])=>({area,categories:[...c].map(([name,unit_count])=>({name,unit_count}))})),years:bank.years,tracks:TRACKS,source_family:sourceFamily,coverage:bank.coverage};
 }
 export function mathUnit(q,display=1){
  // Explicit allowlist: no correct_answer or answer evidence is copied to an ungraded exam.
@@ -39,14 +42,14 @@ export function mathUnit(q,display=1){
   question_type:q.type,skill:q.type,type_group:q.type_group,type_id:q.type_id,review_status:q.review_status,analysis_eligible:q.analysis_eligible===true,
   taxonomy_version:MATH_VERSION,qc:{unsafe_glyph:true},assets:[],original_url:original};
  return {id:q.unit_id,section_code:q.section_code,area:q.area,category:q.category,display_start:display,display_end:display,
-  source:{academic_year:q.academic_year,month:q.month,exam_type:q.exam_type,section:q.source_label,original_questions:[q.original_no],area:q.area,category:q.category,administered_date:q.administered_date},
+  source:{academic_year:q.academic_year,month:q.month,exam_type:q.exam_type,exam_family:q.exam_family||'kice',provider:q.provider||'',section:q.source_label,original_questions:[q.original_no],area:q.area,category:q.category,administered_date:q.administered_date},
   passage:{sections:[]},questions:[question],assets:[],force_image_render:true,original_url:original,
   problem_url:q.problem_url,problem_page:q.problem_page,
   render_meta:{original:original,originalParts:[im],questions:{[q.original_no]:{full:[im],parts:[im],render_mode:'full',allow_text:false}},passage:[]}};
 }
 export function mathExamFromQuestions(qs,opts={}){
  if(!Array.isArray(qs)||!qs.length||qs.length>30)fail('수학 문항 수가 올바르지 않습니다.');
- return {id:opts.id||crypto.randomUUID(),generated_at:new Date().toISOString(),subject:'수학',mode:opts.mode||'custom',choice:opts.choice||null,
+ return {id:opts.id||crypto.randomUUID(),generated_at:new Date().toISOString(),subject:'수학',mode:opts.mode||'custom',choice:opts.choice||null,source_family:opts.source_family||'all',
   legacy_format:qs.every(q=>q.academic_year<2022),categories:[...new Set(qs.map(q=>q.category))],years:opts.years||[...new Set(qs.map(q=>q.academic_year))],
   time_limit_seconds:opts.mode==='full'?6000:Math.max(300,Math.ceil(qs.length*200/60)*60),question_count:qs.length,
   common_count:qs.filter(q=>q.section_code==='mcommon').length,elective_count:qs.filter(q=>['mprob','mcalc','mgeom'].includes(q.section_code)).length,
@@ -68,7 +71,7 @@ export function mathGrade(bank,refs,answers={},options={}){
    selected,correct_answer:q.correct_answer,is_correct,answer_type:q.answer_type,points:q.points,earned_points:is_correct?q.points:0,
    area:q.area,category:q.category,type_group:q.type_group,type_id:q.type_id,question_type:q.type,skill:q.type,
    review_status:q.review_status,analysis_eligible:q.analysis_eligible===true,taxonomy_version:MATH_VERSION,
-   source_label:q.source_label,source:{academic_year:q.academic_year,month:q.month,section:q.source_label},original_url:q.image.src,
+   source_label:q.source_label,exam_family:q.exam_family||'kice',provider:q.provider||'',source:{academic_year:q.academic_year,month:q.month,section:q.source_label,exam_family:q.exam_family||'kice',provider:q.provider||''},original_url:q.image.src,
    solution_url:q.solution_url,solution_page:q.solution_page,problem_url:q.problem_url,problem_page:q.problem_page};
  });
  const correct=details.filter(d=>d.is_correct).length,blank=details.filter(d=>d.selected===null).length;
@@ -83,7 +86,8 @@ function randomOrder(rows,weights={},seen=new Set()){
 export function generateMath(bank,body={}){
  if(!body||typeof body!=='object'||Array.isArray(body))fail('출제 조건을 확인해 주세요.');
  if(body.mode!==undefined&&!['full','custom'].includes(body.mode))fail('출제 모드가 올바르지 않습니다.');
- const mode=body.mode||'full',transfer=body.practice_mode==='transfer';
+ const mode=body.mode||'full',transfer=body.practice_mode==='transfer',sourceFamily=body.source_family??'all';
+ if(!['all','kice','education_office'].includes(sourceFamily))fail('출처는 전체·평가원·교육청 중에서 선택해 주세요.','MATH_SOURCE_FAMILY');
  if(body.practice_mode!==undefined&&!transfer)fail('보완 출제 모드가 올바르지 않습니다.');
  const history=body.recent_attempts??[];
  if(!Array.isArray(history)||history.length>30||history.some(a=>!a||!Array.isArray(a.details)||a.details.length>30))fail('최근 수학 기록은 30회, 회당 30문항까지 사용합니다.');
@@ -107,10 +111,10 @@ export function generateMath(bank,body={}){
  if(new Set(years.map(epoch)).size!==1)fail('A/B형·가/나형·현행 선택과목은 한 시험에 섞지 않습니다. 체제를 하나 선택해 주세요.','MIXED_MATH_CURRICULUM');
  const era=epoch(years[0]),validTracks=era==='AB'?['A','B']:era==='gana'?['ga','na']:['prob','calc','geom'];
  if(!validTracks.includes(choice))fail('선택한 학년도에 맞는 수학 유형을 선택해 주세요.','MATH_TRACK_MISMATCH');
- let pool=Object.values(bank.questions).filter(q=>years.includes(q.academic_year)&&(q.section_code==='m'+choice||q.section_code==='mcommon'));
+ let pool=Object.values(bank.questions).filter(q=>years.includes(q.academic_year)&&(q.section_code==='m'+choice||q.section_code==='mcommon')&&(sourceFamily==='all'||(q.exam_family||'kice')===sourceFamily));
  let selected=[];
  if(mode==='full'){
-  const forms=bank.forms.filter(f=>years.includes(f.academic_year)&&f.track===choice&&f.question_keys.length===30);
+  const forms=bank.forms.filter(f=>years.includes(f.academic_year)&&f.track===choice&&f.question_keys.length===30&&(sourceFamily==='all'||(f.exam_family||'kice')===sourceFamily));
   if(!forms.length)fail('선택한 조건의 완전한 30문항 시험이 없습니다.');
   if(era!=='current'){
    const f=randomOrder(forms.map(f=>({...f,question_key:f.id,type_id:'',score:f.question_keys.reduce((n,k)=>n+(seen.has(k)?0:1)+(weights[bank.questions[k].type_id]||0),0)}))).sort((a,b)=>b.score-a.score)[0];selected=f.question_keys.map(k=>bank.questions[k]);
@@ -138,8 +142,8 @@ export function generateMath(bank,body={}){
  const learning={strategy:types.length?'targeted':active?'weakness':'balanced',practice_mode:transfer?'transfer':null,source_question_keys:anchor?[anchor.question_key]:[],targets:types.length?types:Object.keys(weights),
   selected_sets:selected.length,requested_sets:body.set_count||null,total_questions:selected.length,matched_questions:selected.filter(q=>types.includes(q.type_id)||weights[q.type_id]).length,
   repeated_recent_sets:selected.filter(q=>seen.has(q.question_key)).length,requested:body.strategy==='weakness',study_version:Study.STUDY_VERSION,min_evidence:Learning.MIN_EVIDENCE,
-  note:transfer?'다른 회차의 미풀이 문항 '+selected.length+'개 · 같은 교육과정':mode==='full'?(era==='current'?'공통 22 + 선택 8 · 객관식 21 + 단답형 9 · 100점':'이전 체제 한 회차 30문항 · 100점'):'선택한 범주의 수학 기출 '+selected.length+'문항'};
- return {ok:true,exam:mathExamFromQuestions(selected,{mode,choice,years,learning})};
+  source_family:sourceFamily,note:transfer?'다른 회차의 미풀이 문항 '+selected.length+'개 · '+(sourceFamily==='education_office'?'교육청 기출 · ':'')+'같은 교육과정':mode==='full'?(era==='current'?'공통 22 + 선택 8 · 객관식 21 + 단답형 9 · 100점':'이전 체제 한 회차 30문항 · 100점'):'선택한 범주의 '+(sourceFamily==='education_office'?'교육청 ':'')+'수학 기출 '+selected.length+'문항'};
+ return {ok:true,exam:mathExamFromQuestions(selected,{mode,choice,years,learning,source_family:sourceFamily})};
 }
 export async function handleMath(request,env){
  const json=(v,status=200)=>Response.json(v,{status,headers:{'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});

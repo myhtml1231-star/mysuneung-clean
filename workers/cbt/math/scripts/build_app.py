@@ -23,6 +23,7 @@ soup=BeautifulSoup(SRC.read_text(),'html.parser');scripts=soup.find_all('script'
 base=re.sub(r'(?m)^var CBT_RENDER_DATA=.*$', 'var CBT_RENDER_DATA={version:"math-v1",units:{}};',base)
 base=base.replace('var YEARS=[2017,','var YEARS=[2014,2015,2016,2017,')
 base=base.replace('/api/cbt/','/api/cbt/math/').replace('mysuneung-cbt-current','mysuneung-math-cbt-current').replace('mysuneung-cbt-history','mysuneung-math-cbt-history')
+base=base.replace('var body={mode:mode,years:Array.from(selectedYears)};','var body={mode:mode,years:Array.from(selectedYears),source_family:window.mathSourceScope()};')
 base=base.replace('<=45','<=30').replace('>45','>30').replace('||4800','||6000')
 base=base.replace('국어 CBT','수학 CBT').replace('지문 보기','풀이 노트 보기').replace('지문 접기','풀이 노트 접기').replace('국어 혼합 CBT','수학 혼합 CBT').replace('2017~2021학년도는 이전 30문항 체제 기출입니다. 이전 학년도만 고르면 실제 한 회차 30문항 구성으로 출제됩니다.','2014–2016 A/B형 · 2017–2021 가/나형 · 2022–2027 공통·선택. 서로 다른 체제를 섞지 않습니다.').replace('0 / 45 응답','0 / 30 응답').replace('80:00','100:00').replace('지문 보기','풀이 노트 보기').replace('지문 접기','풀이 노트 접기')
 anchor='window.MSNAccount.ready.then('
@@ -37,8 +38,11 @@ subprocess.run(['node','-e',"require('./workers/accounts/node_modules/esbuild').
 scripts[3].string=out.read_text();scripts[4].decompose()
 ui=ui.replace('/api/cbt/','/api/cbt/math/').replace('mysuneung-cbt-learning-history-v2','mysuneung-math-cbt-learning-history-v2').replace('mysuneung-cbt-history','mysuneung-math-cbt-history').replace('.slice(0,45)','.slice(0,30)')
 ui=ui.replace("schema_version:2,id,at:before", "schema_version:2,subject:'수학',raw_score:data.raw_score,max_score:data.max_score,id,at:before")
+ui=ui.replace("mode:window.exam.mode,choice:window.exam.choice,years:window.exam.years", "mode:window.exam.mode,choice:window.exam.choice,source_family:window.exam.source_family||'all',years:window.exam.years")
 ui=ui.replace("if(body.mode==='full')body.choice=$('input[name=\"choice\"]:checked').value;\n  else{", "body.choice=window.mathChoice();\n  if(body.mode==='custom'){")
 ui=ui.replace("mode:'custom',years:[2017,", "mode:'custom',choice:window.mathChoice(),years:[2014,2015,2016,2017,")
+ui=ui.replace("const body={mode:window.mode,years:Array.from(window.selectedYears||[]),strategy:", "const body={mode:window.mode,years:Array.from(window.selectedYears||[]),source_family:window.mathSourceScope(),strategy:")
+ui=ui.replace("const body={mode:full?'full':'custom',years:years.length?years:[2022,2023,2024,2025,2026,2027],strategy:", "const body={mode:full?'full':'custom',years:years.length?years:[2022,2023,2024,2025,2026,2027],source_family:window.exam?.source_family||window.mathSourceScope(),strategy:")
 ui=ui.replace("'국어 · '","'수학 · '")
 ui=ui.replace("const reviewNames={", "const reviewNames={source_objective_mapped:'공식 출제의도 기반 분류',pending:'분류 검토 중',")
 ui=replacefun(ui,'sourceName',"function sourceName(d){return (meta?.questions?.[d.question_key]?.source_label||d.academic_year+'학년도 '+d.month+'월')+' · 원문 '+d.original_no+'번';}")
@@ -78,11 +82,18 @@ ui=ui.replace('EBS 연계는 공식 분석표의 해당 문항과 교재 위치�
 ui=ui.replace('배점을 적용한 원점수·등급·백분위로 환산하지 않습니다.','수학 점수는 원문 배점을 합산합니다. 등급·백분위로 환산하지 않습니다.')
 ui=ui.replace('<option value="hw">화법과 작문</option><option value="lm">언어와 매체</option>','<option value="prob">확률과 통계</option><option value="calc">미적분</option><option value="geom">기하</option><option value="A">A형</option><option value="B">B형</option><option value="ga">가형</option><option value="na">나형</option>')
 ui=ui.replace('지문에 딸린 문항도 함께 풉니다.','공통 자료가 있는 문항은 자료를 함께 표시합니다.').replace('같은 지문','같은 자료')
+ui=ui.replace("if(b.dataset.r5Transfer){practice(b.dataset.r5Transfer,false,b.dataset.r5Origin);return;}","if(b.dataset.r5Transfer){practice(b.dataset.r5Transfer,false,b.dataset.r5Origin,b.dataset.r5Source||'all');return;}")
+ui=ui.replace('async function practice(id,full,origin){','async function practice(id,full,origin,sourceFamily){')
+ui=ui.replace("practice_mode:'transfer',source_question_keys:[example]","source_family:sourceFamily||'all',practice_mode:'transfer',source_question_keys:[example]")
+old_transfer='''<button type="button" class="r5-primary" data-r5-transfer="'+esc(d.type_id)+'" data-r5-origin="'+esc(d.question_key)+'">새 기출로 보완하기 →</button>'''
+new_transfer='''<button type="button" class="r5-primary" data-r5-transfer="'+esc(d.type_id)+'" data-r5-origin="'+esc(d.question_key)+'" data-r5-source="education_office">교육청 기출로 양치기 →</button><button type="button" class="r5-quiet" data-r5-transfer="'+esc(d.type_id)+'" data-r5-origin="'+esc(d.question_key)+'" data-r5-source="all">전체 기출에서 보완 →</button>'''
+ui=ui.replace(old_transfer,new_transfer)
+
 scripts[5].string=ui
 # Subject label/settings changes only. Preserve existing structural classes and all ink markup.
 soup.title.string='수학 CBT · 수능기출'
 soup.select_one('#start h1').string='수학 혼합 모의고사'
-soup.select_one('#start .desc').string='2014~2027학년도 기출로 풀어보세요. 현행 시험은 공통·선택 구성과 배점을 유지하고, 이전 체제는 같은 회차를 그대로 제공합니다.'
+soup.select_one('#start .desc').string='2014~2027학년도 수학 기출을 풀어보세요. 평가원·수능과 수록된 교육청 전국연합을 출처별로 골라 연습할 수 있습니다.'
 for old in soup.select('.cbt-subject-nav'):old.decompose()
 nav=BeautifulSoup('<div class="math-subject-nav"><a class="ghost" href="/mixed-cbt">국어</a><span class="ghost math-active" aria-current="page">수학</span></div>','html.parser').div
 soup.select_one('#start .brand').insert_after(nav)
@@ -91,14 +102,16 @@ for id,content in [('currentComposition','<b>공통 22</b><span class="arrow">�
 choice=soup.select_one('#choiceSetting');choice.extract();soup.select_one('#fullSettings').insert_before(choice);choice.select_one('.seg').clear()
 for v,label in [('prob','확률과 통계'),('calc','미적분'),('geom','기하'),('A','수학 A형'),('B','수학 B형'),('ga','수학 가형'),('na','수학 나형')]:
  choice.select_one('.seg').append(BeautifulSoup('<div><input type="radio" name="choice" id="math-'+v+'" value="'+v+'"'+(' checked' if v=='prob' else '')+'><label for="math-'+v+'">'+label+'</label></div>','html.parser'))
+source=BeautifulSoup('<div class="setting" id="sourceSetting"><div class="title">출처</div><div class="seg math-source-seg"><div><input type="radio" name="sourceFamily" id="math-source-all" value="all" checked><label for="math-source-all">전체</label></div><div><input type="radio" name="sourceFamily" id="math-source-kice" value="kice"><label for="math-source-kice">평가원·수능</label></div><div><input type="radio" name="sourceFamily" id="math-source-edu" value="education_office"><label for="math-source-edu">교육청</label></div></div><div class="mode-note" id="sourceHint">평가원·수능과 수록된 교육청 기출을 함께 사용합니다.</div></div>','html.parser').div
+choice.insert_after(source)
 yearbox=soup.select_one('#years');yearbox.insert_before(BeautifulSoup('<div class="count-seg math-eras"><button class="on" type="button" data-math-era="current">2022–2027</button><button type="button" data-math-era="gana">2017–2021</button><button type="button" data-math-era="ab">2014–2016</button></div>','html.parser'))
 custom=soup.select_one('#setCounts');custom.find_previous_sibling(class_='title').string='문항 수';custom.clear()
 for n in [1,3,5,10,20,30]:custom.append(BeautifulSoup('<button type="button" data-count="'+str(n)+'"'+(' class="on"' if n==3 else '')+'>'+str(n)+'문항</button>','html.parser'))
 custom.find_next_sibling(class_='mode-note').string='선택 범주의 기출에서 뽑습니다. 공통문항은 선택과목이 달라도 중복 집계하지 않습니다.'
-cover=BeautifulSoup('<details class="learn-policy math-coverage"><summary>수록 범위·출처</summary><p>2014–2026학년도 평가원 6·9월 및 수능, 2027 수능 대비 공개된 3·5·6·7·9월 자료입니다. 아직 시행되지 않은 2027학년도 수능은 제외합니다.</p><p>44회차 · 108종 시험지 · 공통문항 중복 제외 2,360문항. 수식과 도형은 EBS 공개 문제 PDF 원문을 그대로 표시합니다. EBS 교재 연계표는 확인된 경우에만 제공하며, 현재는 공식 정답·해설을 연결합니다.</p></details>','html.parser')
+cover=BeautifulSoup('<details class="learn-policy math-coverage"><summary>수록 범위·출처</summary><p>평가원·수능: 2014–2026학년도 6·9월 및 수능. 교육청: 2025·2026학년도 고3 3·5·7·10월과 2027학년도 3·5·7월. 2027학년도 평가원 6·9월도 포함하며 아직 시행되지 않은 2027 수능은 제외합니다.</p><p>총 52회차 · 132종 시험지 · 공통문항 중복 제외 2,728문항. 이번 교육청 추가분 368문항은 각 문항의 EBS 공식 해설 [출제의도]를 문항별로 확인해 유형을 판정했습니다. 수식·도형은 EBS 공개 문제 PDF 원문을 표시합니다.</p></details>','html.parser')
 soup.select_one('#generate').insert_before(cover)
 css=soup.new_tag('style');css['data-math-ui']='v1';css.string='''
-.math-subject-nav{display:flex;justify-content:center;gap:8px;margin:14px 0 22px}.math-subject-nav a{text-decoration:none;color:inherit}.math-active{background:#303747!important;color:#fff!important}.math-eras{margin:0 0 14px}.math-coverage{margin:18px 0}.math-notebook{min-height:650px;position:relative;background-image:linear-gradient(#edf0f4 1px,transparent 1px),linear-gradient(90deg,#edf0f4 1px,transparent 1px);background-size:24px 24px}.math-note-label{display:block;padding:12px;background:#fff;color:#98a2b3;font-size:12px}.math-short-answer{margin-top:14px;width:100%}.math-short-answer label{font-size:14px;font-weight:700}.math-answer-row{display:flex;gap:12px;margin-top:10px;align-items:center}.math-answer-row input{width:170px;max-width:65%;border:1px solid #c9d2df;border-radius:12px;font-family:inherit;font-weight:700;font-size:24px;line-height:1.4;padding:12px;text-align:center;background:#fff;color:#202b3c}.math-answer-row input:focus{outline:2px solid #91bafb;outline-offset:2px}.math-short-answer p{font-size:12px;color:#8994a4;margin-top:8px}.math-short-answer #math-answer-error{color:#ba344c}.math-answer-row input[aria-invalid=true]{border-color:#ba344c}.math-short-answer input[readonly]{background:#f4f6f9}.math-coverage p{font-size:12px;line-height:1.8}#choiceSetting .seg{display:flex;flex-wrap:wrap}#choiceSetting .seg>div:not(.hidden){flex:1 1 28%}@media(max-width:640px){.math-eras{flex-wrap:wrap}.math-notebook{min-height:450px}.math-short-answer input{font-size:20px}#setCounts{flex-wrap:wrap}}
+.math-subject-nav{display:flex;justify-content:center;gap:8px;margin:14px 0 22px}.math-source-seg{display:flex;flex-wrap:wrap}.math-source-seg>div{flex:1 1 30%}.math-source-seg>div.disabled{opacity:.38}.math-source-seg input:disabled+label{cursor:not-allowed}.math-subject-nav a{text-decoration:none;color:inherit}.math-active{background:#303747!important;color:#fff!important}.math-eras{margin:0 0 14px}.math-coverage{margin:18px 0}.math-notebook{min-height:650px;position:relative;background-image:linear-gradient(#edf0f4 1px,transparent 1px),linear-gradient(90deg,#edf0f4 1px,transparent 1px);background-size:24px 24px}.math-note-label{display:block;padding:12px;background:#fff;color:#98a2b3;font-size:12px}.math-short-answer{margin-top:14px;width:100%}.math-short-answer label{font-size:14px;font-weight:700}.math-answer-row{display:flex;gap:12px;margin-top:10px;align-items:center}.math-answer-row input{width:170px;max-width:65%;border:1px solid #c9d2df;border-radius:12px;font-family:inherit;font-weight:700;font-size:24px;line-height:1.4;padding:12px;text-align:center;background:#fff;color:#202b3c}.math-answer-row input:focus{outline:2px solid #91bafb;outline-offset:2px}.math-short-answer p{font-size:12px;color:#8994a4;margin-top:8px}.math-short-answer #math-answer-error{color:#ba344c}.math-answer-row input[aria-invalid=true]{border-color:#ba344c}.math-short-answer input[readonly]{background:#f4f6f9}.math-coverage p{font-size:12px;line-height:1.8}#choiceSetting .seg{display:flex;flex-wrap:wrap}#choiceSetting .seg>div:not(.hidden){flex:1 1 28%}@media(max-width:640px){.math-eras{flex-wrap:wrap}.math-notebook{min-height:450px}.math-short-answer input{font-size:20px}#setCounts{flex-wrap:wrap}}
 ''';soup.head.append(css)
 # Static Korean explanation strings outside scripts do not apply to math.
 for node in list(soup.find_all(string=True)):

@@ -1,24 +1,31 @@
 {
-  "stage": "deployed-verified-complete",
+  "stage": "education-office-expanded-live-verified",
   "production_changed": true,
-  "scope": "2014-2027 academic years; preserve Korean CBT; official question/answer verification",
+  "scope": "2014-2027 math; KICE plus bounded high3 education-office drilling",
   "started_at": "2026-09-28T23:46:54.162925+00:00",
-  "question_count": 2360,
-  "forms": 108,
-  "sessions": 44,
-  "pdfs": 216,
+  "question_count": 2728,
+  "forms": 132,
+  "sessions": 52,
+  "pdfs": 264,
   "pending_taxonomy": 89,
   "updated_at": "2026-09-29T00:55:22.273474+00:00",
-  "account_worker": "c1e3af52-22ac-4ac8-a7d8-d392ad632b16",
-  "cbt_worker": "d794306f-1bf7-4683-86f4-6990f688c04f",
+  "account_worker": "6a14ba95-c7b7-43b4-bc7d-085482fb6624",
+  "cbt_worker": "4c9766bc-0671-48e5-a274-84137ed282fe",
   "tests": {
-    "math_core": 16,
+    "math_core": 19,
     "generated_full_exams": 350,
     "math_ui": 14,
+    "math_education_ui": 10,
+    "math_workspace": 10,
     "math_account": 9,
-    "live_api": 11,
+    "korean_safety": 6,
     "live_browser": 10,
-    "original_images": 2360
+    "original_images": 2728
   },
-  "finished_at": "2026-09-29T01:07:46.305263+00:00"
+  "finished_at": "2026-09-29T02:31:14.802590+00:00",
+  "education_office_sessions": 11,
+  "education_office_unique": 506,
+  "education_office_new_manual_review": 368,
+  "math_version": "2026-09-29.math.v2",
+  "math_bank_sha256": "46175f9489be3d68e4ed5baf77a0ef71ba0f25c57ae3a9dabbfeb5af43c0c7e3"
 }

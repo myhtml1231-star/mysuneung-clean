@@ -16,7 +16,8 @@ export function questionKey(d) {
  if(!d || typeof d!=='object') return null;
  const s=d.source||d, y=Number(d.academic_year??s.academic_year??d.year),m=Number(d.month??s.month),no=Number(d.original_no);
  const sec=d.section_code,math=['mA','mB','mga','mna','mcommon','mprob','mcalc','mgeom'].includes(sec);
- if(!Number.isInteger(y)||y<(math?2014:2017)||y>2027||![3,5,6,7,9,11].includes(m)||!Number.isInteger(no)||no<1||no>(math?30:45)||(!math&&!['common','hw','lm','full'].includes(sec)))return null;
+ const months=math?[3,5,6,7,9,10,11]:[3,5,6,7,9,11];
+ if(!Number.isInteger(y)||y<(math?2014:2017)||y>2027||!months.includes(m)||!Number.isInteger(no)||no<1||no>(math?30:45)||(!math&&!['common','hw','lm','full'].includes(sec)))return null;
  if(math&&((['mA','mB'].includes(sec)&&y>2016)||(['mga','mna'].includes(sec)&&(y<2017||y>2021))||(['mcommon','mprob','mcalc','mgeom'].includes(sec)&&y<2022)))return null;
  return `${y}-${String(m).padStart(2,'0')}-${sec}-${String(no).padStart(2,'0')}`;
 }

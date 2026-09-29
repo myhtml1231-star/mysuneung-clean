@@ -15,12 +15,14 @@
     2026,
     2027
   ],
-  "exam_sessions": 44,
-  "forms": 108,
-  "question_references": 3240,
-  "distinct_questions": 2360,
-  "common_duplicates_removed": 880,
+  "exam_sessions": 52,
+  "forms": 132,
+  "question_references": 3960,
+  "distinct_questions": 2728,
+  "common_duplicates_removed": 1232,
   "pending_taxonomy": 89,
+  "manual_taxonomy_reviewed": 368,
+  "education_office_sessions": 11,
   "periods": [
     {
       "year": 2014,
@@ -160,8 +162,12 @@
     {
       "year": 2025,
       "months": [
+        3,
+        5,
         6,
+        7,
         9,
+        10,
         11
       ],
       "tracks": [
@@ -173,8 +179,12 @@
     {
       "year": 2026,
       "months": [
+        3,
+        5,
         6,
+        7,
         9,
+        10,
         11
       ],
       "tracks": [
@@ -203,6 +213,6 @@
     "2027학년도 수능"
   ],
   "source": "EBSi 공개 기출 문제·해설 PDF",
-  "scope_note": "2014–2026학년도 6·9월 평가원 및 수능, 2027 대비 공개된 3·5·6·7·9월. 2027 수능 제외.",
+  "scope_note": "2014–2026학년도 평가원 6·9월 및 수능 + 2025·2026학년도 고3 교육청 3·5·7·10월 + 2027 대비 공개된 3·5·6·7·9월. 2027 수능 제외.",
   "textbook_links_verified": 0
 }

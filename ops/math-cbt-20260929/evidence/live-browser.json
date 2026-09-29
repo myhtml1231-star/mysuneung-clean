@@ -2,16 +2,16 @@
   "passed": 10,
   "checks": [
     "Korean entry has math tab",
-    "live subject navigation and 14 years",
-    "live original image and 30/100 exam",
-    "actual pointer drawing on math note canvas",
+    "live subject navigation, 14 years and education-office source selector",
+    "live education-office-only original-image 30/100 exam",
+    "actual pointer drawing on movable math note popup",
     "numeric zero entered as an answered value",
     "live draft restore retains zero",
     "live weighted result 96 points with one wrong and one unanswered",
     "official EBS solution on graded question",
     "live 390px report no horizontal overflow",
-    "live report launches fresh other-session transfer questions"
+    "live report launches fresh other-session education-office transfer questions"
   ],
   "errors": [],
-  "verified_at": "2026-09-29T01:03:24.951Z"
+  "verified_at": "2026-09-29T02:27:32.776Z"
 }

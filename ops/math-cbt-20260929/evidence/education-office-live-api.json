@@ -1,0 +1,28 @@
+{
+  "coverage": {
+    "version": "2026-09-29.math.v2",
+    "distinct_questions": 2728,
+    "forms": 132,
+    "exam_sessions": 52,
+    "education_office_sessions": 11,
+    "manual_taxonomy_reviewed": 368,
+    "pending_taxonomy": 89
+  },
+  "generated": {
+    "source_family": "education_office",
+    "question_count": 30,
+    "max_score": 100,
+    "section_families": [
+      "education_office"
+    ],
+    "providers": [
+      "경기도교육청",
+      "교육청",
+      "서울특별시교육청",
+      "인천광역시교육청"
+    ]
+  },
+  "category_groups": 3,
+  "category_count": 18,
+  "answer_keys_exposed": false
+}

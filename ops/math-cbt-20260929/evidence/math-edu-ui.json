@@ -1,0 +1,53 @@
+{
+  "passed": 10,
+  "full": {
+    "source_family": "education_office",
+    "score": 100,
+    "n": 30,
+    "sources": [
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office",
+      "education_office"
+    ],
+    "months": [
+      7,
+      10,
+      5,
+      3
+    ],
+    "years": [
+      2027,
+      2025,
+      2026
+    ]
+  },
+  "category_count": 23,
+  "errors": []
+}
