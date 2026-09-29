@@ -69,97 +69,112 @@ var mathOriginalFinish=finish;
 finish=async function(){var input=$('#math-answer');if(input?.getAttribute('aria-invalid')==='true'){input.focus();alert('단답형 답안을 숫자로 수정한 뒤 채점해 주세요.');return;}return mathOriginalFinish();};
 
 
-// Math workspace v2: problem-first layout + movable notebook.
-var mathNoteStrokes=[],mathNoteRedo=[],mathNoteSession=null,mathNoteFrame=0,mathNoteLoadedKey='',mathNoteResizeTimer=0;
+// Math workspace v3: problem left, handwriting scratchpad right, movable typed note.
+var mathTextNoteKey='',mathTextSaveTimer=0,mathTextWindowTimer=0;
 function mathAccountScope(){try{return window.MSNAccount?.info()?.user?.id||'guest'}catch(e){return'guest'}}
-function mathNoteStorageKey(){return exam?'mysuneung-math-note-v2:'+mathAccountScope()+':'+exam.id:''}
-function mathNoteWindowKey(){return 'mysuneung-math-note-window-v2:'+mathAccountScope()}
-function mathNoteCanvas(){return document.querySelector('#mathNoteCanvas')}
-function mathNotePopup(){return document.querySelector('#mathNotePopup')}
-function loadMathNote(){
- var key=mathNoteStorageKey();if(!key||mathNoteLoadedKey===key)return;mathNoteLoadedKey=key;mathNoteRedo=[];
- try{var x=JSON.parse(localStorage.getItem(key)||'[]');mathNoteStrokes=Array.isArray(x)?x.filter(s=>s&&Array.isArray(s.points)&&s.points.length):[]}catch(e){mathNoteStrokes=[]}
+function mathQuestionNoteKey(){
+ var it=flat?.[current];if(!exam||!it)return'';
+ return 'mysuneung-math-text-note-v3:'+mathAccountScope()+':'+exam.id+':'+(it.q.question_key||it.set.id||it.q.display_no);
 }
-function saveMathNote(){var key=mathNoteStorageKey();if(!key)return;try{localStorage.setItem(key,JSON.stringify(mathNoteStrokes.slice(-700)))}catch(e){}}
+function mathNoteWindowKey(){return 'mysuneung-math-text-note-window-v3:'+mathAccountScope()}
+function mathNotePopup(){return document.querySelector('#mathNotePopup')}
+function mathNoteInput(){return document.querySelector('#mathTextNote')}
+function noteStoreGet(k){try{return window.MSNStorage?.getItem?MSNStorage.getItem(k):localStorage.getItem(k)}catch(e){return null}}
+function noteStoreSet(k,v){try{if(window.MSNStorage?.setItem)MSNStorage.setItem(k,v);else localStorage.setItem(k,v)}catch(e){}}
+function noteStoreRemove(k){try{if(window.MSNStorage?.removeItem)MSNStorage.removeItem(k);else localStorage.removeItem(k)}catch(e){}}
 function saveMathNoteWindow(){
  var p=mathNotePopup();if(!p||p.classList.contains('hidden'))return;var r=p.getBoundingClientRect();
  try{localStorage.setItem(mathNoteWindowKey(),JSON.stringify({left:r.left,top:r.top,width:r.width,height:r.height}))}catch(e){}
 }
 function restoreMathNoteWindow(){
  var p=mathNotePopup();if(!p)return;var state=null;try{state=JSON.parse(localStorage.getItem(mathNoteWindowKey())||'null')}catch(e){}
- var w=Math.min(innerWidth-16,Math.max(300,Number(state?.width)||520)),h=Math.min(innerHeight-16,Math.max(260,Number(state?.height)||470));
+ var w=Math.min(innerWidth-16,Math.max(320,Number(state?.width)||500)),h=Math.min(innerHeight-16,Math.max(250,Number(state?.height)||390));
  var left=Number(state?.left),top=Number(state?.top);
- if(!Number.isFinite(left))left=Math.max(8,innerWidth-w-220);if(!Number.isFinite(top))top=84;
+ if(!Number.isFinite(left))left=Math.max(8,innerWidth-w-28);if(!Number.isFinite(top))top=86;
  left=Math.max(8,Math.min(innerWidth-w-8,left));top=Math.max(8,Math.min(innerHeight-h-8,top));
  p.style.width=w+'px';p.style.height=h+'px';p.style.left=left+'px';p.style.top=top+'px';
 }
-function resizeMathNoteCanvas(){
- var p=mathNotePopup(),c=mathNoteCanvas(),wrap=p?.querySelector('.math-note-canvas-wrap');if(!p||p.classList.contains('hidden')||!c||!wrap||wrap.clientWidth<1||wrap.clientHeight<1)return;
- fitInkCanvas(c,wrap.clientWidth,wrap.clientHeight,5000000);drawMathNote();
+function setMathNoteStatus(text){var s=document.querySelector('#mathNoteStatus');if(s)s.textContent=text||''}
+function loadMathTextNote(force){
+ var input=mathNoteInput(),key=mathQuestionNoteKey();if(!input||!key)return;
+ if(!force&&mathTextNoteKey===key)return;mathTextNoteKey=key;
+ input.value=String(noteStoreGet(key)||'');input.dataset.key=key;setMathNoteStatus(input.value?'저장됨':'새 메모');
+ var title=document.querySelector('#mathNoteQuestion');var it=flat?.[current];if(title&&it)title.textContent=(it.q.display_no||current+1)+'번 메모';
 }
-function drawMathNote(){
- var c=mathNoteCanvas();if(!c)return;var w=Number(c.dataset.cssWidth)||c.clientWidth,h=Number(c.dataset.cssHeight)||c.clientHeight;if(!w||!h)return;
- var ctx=c.getContext('2d'),dpr=Number(c.dataset.renderDpr)||1;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
- mathNoteStrokes.forEach(s=>drawStroke(ctx,s,w,h));if(mathNoteSession?.stroke)drawStroke(ctx,mathNoteSession.stroke,w,h);
+function saveMathTextNote(){
+ var input=mathNoteInput(),key=input?.dataset.key||mathQuestionNoteKey();if(!input||!key)return;
+ var value=input.value.slice(0,8000);if(value)noteStoreSet(key,value);else noteStoreRemove(key);
+ setMathNoteStatus('저장됨');
 }
-function queueMathNoteDraw(){if(!mathNoteFrame)mathNoteFrame=requestAnimationFrame(()=>{mathNoteFrame=0;drawMathNote()})}
-function finishMathNoteStroke(){
- var s=mathNoteSession;if(!s)return;mathNoteSession=null;if(s.stroke?.points?.length){mathNoteStrokes.push(s.stroke);saveMathNote()}try{s.canvas.releasePointerCapture(s.id)}catch(e){}drawMathNote()
+function queueMathTextNoteSave(){setMathNoteStatus('저장 중…');clearTimeout(mathTextSaveTimer);mathTextSaveTimer=setTimeout(saveMathTextNote,240)}
+function clearMathTextNote(){
+ var input=mathNoteInput();if(!input||!input.value)return;if(!confirm('이 문항의 텍스트 노트를 지울까요?'))return;
+ input.value='';saveMathTextNote();input.focus();
 }
-function undoMathNote(){finishMathNoteStroke();if(mathNoteStrokes.length){mathNoteRedo.push(mathNoteStrokes.pop());saveMathNote();drawMathNote()}}
-function redoMathNote(){finishMathNoteStroke();if(mathNoteRedo.length){mathNoteStrokes.push(mathNoteRedo.pop());saveMathNote();drawMathNote()}}
-function clearMathNote(){finishMathNoteStroke();if(mathNoteStrokes.length&&confirm('풀이 노트를 모두 지울까요?')){mathNoteStrokes=[];mathNoteRedo=[];saveMathNote();drawMathNote()}}
 function closeMathNote(privateView){
- finishMathNoteStroke();var p=mathNotePopup();if(!p)return;if(!privateView)saveMathNoteWindow();p.classList.add('hidden');
+ clearTimeout(mathTextSaveTimer);if(!privateView)saveMathTextNote();var p=mathNotePopup();if(!p)return;if(!privateView)saveMathNoteWindow();p.classList.add('hidden');
  for(var id of ['mathNoteToggle','mathNoteToggleRibbon'])document.getElementById(id)?.setAttribute('aria-expanded','false');
 }
 function openMathNote(){
  if(!exam)return;var p=mathNotePopup();if(!p)return;if(!p.classList.contains('hidden')){closeMathNote(false);return}
- loadMathNote();p.classList.remove('hidden');restoreMathNoteWindow();
+ p.classList.remove('hidden');restoreMathNoteWindow();loadMathTextNote(true);
  for(var id of ['mathNoteToggle','mathNoteToggleRibbon'])document.getElementById(id)?.setAttribute('aria-expanded','true');
- mathNoteCanvas()?.classList.toggle('active',drawTool!=='hand');requestAnimationFrame(resizeMathNoteCanvas)
+ requestAnimationFrame(()=>mathNoteInput()?.focus());
 }
 function installMathNoteButton(){
  var qt=document.querySelector('#questionInkTools');if(qt&&!document.querySelector('#mathNoteToggle')){
-  var b=document.createElement('button');b.id='mathNoteToggle';b.type='button';b.className='ink-action math-note-button';b.title='이동식 풀이 노트';b.setAttribute('aria-label','이동식 풀이 노트 열기');b.setAttribute('aria-expanded','false');b.innerHTML='▤';b.onclick=openMathNote;
-  var undo=document.querySelector('#questionUndo');qt.insertBefore(b,undo)
+  var b=document.createElement('button');b.id='mathNoteToggle';b.type='button';b.className='ink-action math-note-button';b.title='키보드 노트';b.setAttribute('aria-label','키보드 노트 열기');b.setAttribute('aria-expanded','false');b.innerHTML='⌨';b.onclick=openMathNote;
+  qt.appendChild(b)
  }
  var ribbon=document.querySelector('#paintRibbon');if(ribbon&&!document.querySelector('#mathNoteToggleRibbon')){
-  var b=document.createElement('button');b.id='mathNoteToggleRibbon';b.type='button';b.className='paint-source-btn math-note-ribbon-button';b.title='이동식 풀이 노트';b.setAttribute('aria-label','이동식 풀이 노트 열기');b.setAttribute('aria-expanded','false');
-  b.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"></path><path d="M8 8h8M8 12h8M8 16h5"></path></svg><span class="paint-source-label">풀이 노트</span>';b.onclick=openMathNote;
+  var b=document.createElement('button');b.id='mathNoteToggleRibbon';b.type='button';b.className='paint-source-btn math-note-ribbon-button';b.title='키보드 노트';b.setAttribute('aria-label','키보드 노트 열기');b.setAttribute('aria-expanded','false');
+  b.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M6 9h1M10 9h1M14 9h1M18 9h1M6 12h1M10 12h1M14 12h1M18 12h1M8 15h8"></path></svg><span class="paint-source-label">텍스트 노트</span>';b.onclick=openMathNote;
   document.querySelector('#showOriginal')?.before(b)
  }
 }
 function initMathNotePopup(){
  if(document.querySelector('#mathNotePopup'))return;installMathNoteButton();
- var p=document.createElement('section');p.id='mathNotePopup';p.className='math-note-popup hidden';p.setAttribute('role','dialog');p.setAttribute('aria-label','이동식 풀이 노트');
- p.innerHTML='<header class="math-note-header"><strong>풀이 노트</strong><div class="math-note-tools" role="toolbar" aria-label="노트 필기 도구"><button type="button" class="math-note-tool" data-note-tool="hand" title="손">✋</button><button type="button" class="math-note-tool" data-note-tool="pen" title="연필">✎</button><button type="button" class="math-note-tool" data-note-tool="highlight" title="형광펜">▰</button><button type="button" class="math-note-tool" data-note-tool="eraser" title="지우개">⌫</button><label class="math-note-color" title="색"><input id="mathNoteColor" type="color" value="#202020" aria-label="노트 필기 색"></label></div><div class="math-note-actions"><button type="button" id="mathNoteUndo" title="노트 실행 취소">↶</button><button type="button" id="mathNoteRedo" title="노트 다시 실행">↷</button><button type="button" id="mathNoteClear" title="노트 모두 지우기">지우기</button><button type="button" id="mathNoteClose" title="노트 닫기">×</button></div></header><div class="math-note-canvas-wrap"><canvas id="mathNoteCanvas" aria-label="풀이 노트 필기 영역"></canvas></div><div class="math-note-resize-hint">모서리를 드래그해 크기 조절</div>';
- document.body.appendChild(p);document.querySelectorAll('.math-note-tool').forEach(b=>b.onclick=function(){setDrawTool(this.dataset.noteTool);document.querySelectorAll('.math-note-tool').forEach(x=>x.classList.toggle('on',x.dataset.noteTool===drawTool))});var noteColor=document.querySelector('#mathNoteColor');noteColor.value=drawColor;noteColor.oninput=function(){drawColor=this.value;document.querySelectorAll('.paint-swatch').forEach(x=>x.classList.toggle('on',x.dataset.color===drawColor));var pc=document.querySelector('#paintCurrentColor');if(pc)pc.style.background=drawColor;updatePaintDock()};document.querySelector('#mathNoteUndo').onclick=undoMathNote;document.querySelector('#mathNoteRedo').onclick=redoMathNote;document.querySelector('#mathNoteClear').onclick=clearMathNote;document.querySelector('#mathNoteClose').onclick=()=>closeMathNote(false);
- var c=mathNoteCanvas();c.addEventListener('pointerdown',function(e){if(drawTool==='hand'||e.button>0||mathNoteSession)return;e.preventDefault();c.setPointerCapture(e.pointerId);mathNoteRedo=[];mathNoteSession={id:e.pointerId,canvas:c,stroke:{tool:drawTool,color:drawColor,size:drawSize,points:[canvasPoint(e,c)]}};queueMathNoteDraw()});
- c.addEventListener('pointermove',function(e){if(!mathNoteSession||mathNoteSession.id!==e.pointerId)return;e.preventDefault();var events=e.getCoalescedEvents?e.getCoalescedEvents():[e];if(!events.length)events=[e];for(var ev of events){var pt=canvasPoint(ev,c);if(mathNoteSession.stroke.tool==='underline')mathNoteSession.stroke.points=[mathNoteSession.stroke.points[0],{x:pt.x,y:mathNoteSession.stroke.points[0].y}];else mathNoteSession.stroke.points.push(pt)}if(mathNoteSession.stroke.points.length>2500)mathNoteSession.stroke.points=mathNoteSession.stroke.points.filter((_,i)=>i%2===0||i===mathNoteSession.stroke.points.length-1);queueMathNoteDraw()});
- for(var ev of ['pointerup','pointercancel','lostpointercapture'])c.addEventListener(ev,e=>{if(mathNoteSession?.id===e.pointerId)finishMathNoteStroke()});
- var header=p.querySelector('.math-note-header'),drag=null;header.addEventListener('pointerdown',function(e){if(e.target.closest('button'))return;var r=p.getBoundingClientRect();drag={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top};header.setPointerCapture(e.pointerId);e.preventDefault()});
+ var p=document.createElement('section');p.id='mathNotePopup';p.className='math-note-popup hidden';p.setAttribute('role','dialog');p.setAttribute('aria-label','이동식 텍스트 노트');
+ p.innerHTML='<header class="math-note-header"><div><strong>키보드 노트</strong><span id="mathNoteQuestion"></span></div><div class="math-note-actions"><span id="mathNoteStatus" aria-live="polite"></span><button type="button" id="mathNoteClear" title="현재 문항 메모 지우기">지우기</button><button type="button" id="mathNoteClose" title="노트 닫기">×</button></div></header><div class="math-note-text-wrap"><textarea id="mathTextNote" maxlength="8000" spellcheck="false" placeholder="풀이 과정, 공식, 실수한 이유 등을 키보드로 적어 두세요."></textarea></div><div class="math-note-resize-hint">자동 저장 · 제목 부분을 드래그해 이동 · 모서리로 크기 조절</div>';
+ document.body.appendChild(p);var input=mathNoteInput();input.addEventListener('input',queueMathTextNoteSave);input.addEventListener('blur',saveMathTextNote);
+ document.querySelector('#mathNoteClear').onclick=clearMathTextNote;document.querySelector('#mathNoteClose').onclick=()=>closeMathNote(false);
+ var header=p.querySelector('.math-note-header'),drag=null;header.addEventListener('pointerdown',function(e){if(e.target.closest('button,textarea,input'))return;var r=p.getBoundingClientRect();drag={id:e.pointerId,x:e.clientX,y:e.clientY,left:r.left,top:r.top};header.setPointerCapture(e.pointerId);e.preventDefault()});
  header.addEventListener('pointermove',function(e){if(!drag||drag.id!==e.pointerId)return;var w=p.offsetWidth,h=p.offsetHeight,left=Math.max(8,Math.min(innerWidth-w-8,drag.left+e.clientX-drag.x)),top=Math.max(8,Math.min(innerHeight-h-8,drag.top+e.clientY-drag.y));p.style.left=left+'px';p.style.top=top+'px'});
  function endDrag(e){if(!drag||drag.id!==e.pointerId)return;drag=null;try{header.releasePointerCapture(e.pointerId)}catch(x){}saveMathNoteWindow()}
  header.addEventListener('pointerup',endDrag);header.addEventListener('pointercancel',endDrag);
- new ResizeObserver(function(){clearTimeout(mathNoteResizeTimer);mathNoteResizeTimer=setTimeout(function(){resizeMathNoteCanvas();saveMathNoteWindow()},40)}).observe(p);
- window.addEventListener('resize',function(){if(!p.classList.contains('hidden')){restoreMathNoteWindow();resizeMathNoteCanvas()}});
- window.addEventListener('pagehide',function(){finishMathNoteStroke();saveMathNoteWindow()});window.addEventListener('msn-account-locked',function(){closeMathNote(true);mathNoteStrokes=[];mathNoteRedo=[];mathNoteLoadedKey=''});
+ new ResizeObserver(function(){clearTimeout(mathTextWindowTimer);mathTextWindowTimer=setTimeout(saveMathNoteWindow,60)}).observe(p);
+ window.addEventListener('resize',function(){if(!p.classList.contains('hidden'))restoreMathNoteWindow()});
+ window.addEventListener('pagehide',function(){saveMathTextNote();saveMathNoteWindow()});
+ window.addEventListener('msn-account-locked',function(){closeMathNote(true);mathTextNoteKey='';if(input)input.value=''});
+}
+function renderMathScratchpad(){
+ var host=$('#reading'),it=flat?.[current];if(!host||!it)return;
+ host.innerHTML='<div class="math-scratchpad-hint"><strong>손필기 공간</strong><span>연필·형광펜·지우개를 선택하고 오른쪽 빈 공간에 자유롭게 풀이하세요.</span></div>';
+ $('#tag').textContent='손필기 · '+(it.q.display_no||current+1)+'번';
+ if(!mathNotePopup()?.classList.contains('hidden'))loadMathTextNote(true);
+ requestAnimationFrame(resizeDrawCanvas);
+}
+renderReading=renderMathScratchpad;
+var mathBaseResizeDrawCanvas=resizeDrawCanvas;
+resizeDrawCanvas=function(){
+ if(!currentSetId)return;
+ var stage=$('#readingStage'),canvas=$('#drawCanvas'),qstage=$('#questionStage'),body=$('#questionBody');
+ if(stage&&stage.clientWidth>0&&stage.getClientRects().length){
+  var h=Math.max(360,stage.clientHeight||$('#passageScroll')?.clientHeight||520);fitInkCanvas(canvas,stage.clientWidth,h,8000000)
+ }
+ if(qstage&&body&&qstage.clientWidth>0)fitInkCanvas($('#questionCanvas'),qstage.clientWidth,Math.max(100,body.offsetHeight),8000000);
+ drawAll();
 }
 function initMathWorkspaceLayout(){
- var ribbon=document.querySelector('#paintRibbon'),dock=document.querySelector('#paintDock');if(ribbon&&ribbon.parentElement!==document.body)document.body.appendChild(ribbon);if(dock&&dock.parentElement!==document.body)document.body.appendChild(dock);
+ var layout=document.querySelector('.layout'),pane=$('#passagePane'),toggle=$('#mobileToggle'),ribbon=$('#paintRibbon'),dock=$('#paintDock');
+ layout?.classList.remove('passage-collapsed');if(toggle)toggle.textContent='필기장 보기';
+ if(pane){pane.classList.remove('open');pane.setAttribute('aria-label','수학 손필기 공간')}
+ if(ribbon){ribbon.classList.remove('floating','math-global-ribbon','hidden');ribbon.style.left='';ribbon.style.top='';ribbon.style.right='';ribbon.style.bottom=''}
+ if(dock)dock.classList.add('hidden');paintCollapsed=false;try{MSNStorage.removeItem('mysuneung-cbt-paint-collapsed')}catch(e){}
  document.querySelector('#showOriginal')?.classList.add('hidden');initMathNotePopup();
+ requestAnimationFrame(resizeDrawCanvas);
 }
-var mathOldSavedPaintDockPosition=savedPaintDockPosition,mathOldSavePaintDockPosition=savePaintDockPosition;
-savedPaintDockPosition=function(){try{var p=JSON.parse(localStorage.getItem('mysuneung-math-paint-dock-v2:'+mathAccountScope())||'null');if(p&&Number.isFinite(+p.left)&&Number.isFinite(+p.top))return{left:+p.left,top:+p.top}}catch(e){}return null};
-savePaintDockPosition=function(left,top){try{localStorage.setItem('mysuneung-math-paint-dock-v2:'+mathAccountScope(),JSON.stringify({left:+left,top:+top}))}catch(e){}};
-placePaintRibbonAtSaved=function(){
- var ribbon=$('#paintRibbon');if(!ribbon)return;var p=savedPaintDockPosition(),pane=$('#questionPane')?.getBoundingClientRect();if(!p)p={left:Math.max(8,(pane?.left||8)+18),top:Math.max(72,(pane?.top||64)+14)};
- ribbon.classList.add('floating','math-global-ribbon');ribbon.style.left=p.left+'px';ribbon.style.top=p.top+'px';ribbon.style.right='auto';ribbon.style.bottom='auto';requestAnimationFrame(function(){var c=clampPaintRibbon(p.left,p.top);ribbon.style.left=c.left+'px';ribbon.style.top=c.top+'px';savePaintDockPosition(c.left,c.top)})
-};
-placePaintDock=function(){var dock=$('#paintDock');if(!dock)return;var p=savedPaintDockPosition(),pane=$('#questionPane')?.getBoundingClientRect();if(!p)p={left:Math.max(8,(pane?.left||8)+18),top:Math.max(72,(pane?.top||64)+14)};p=clampPaintDock(p.left,p.top);dock.style.left=p.left+'px';dock.style.top=p.top+'px';dock.style.right='auto';dock.style.bottom='auto';savePaintDockPosition(p.left,p.top)};
-var mathOldSetDrawTool=setDrawTool;setDrawTool=function(tool){mathOldSetDrawTool(tool);mathNoteCanvas()?.classList.toggle('active',tool!=='hand');document.querySelectorAll('.math-note-tool').forEach(x=>x.classList.toggle('on',x.dataset.noteTool===tool))};
 var mathOldInitDrawing=initDrawing;initDrawing=function(){mathOldInitDrawing();initMathWorkspaceLayout()};
-var mathOldInitPaintDock=initPaintDock;initPaintDock=function(){mathOldInitPaintDock();if(!paintCollapsed)setTimeout(placePaintRibbonAtSaved,0)};
-var mathOldLoadExam=loadExam;loadExam=function(e,isNew){mathNoteLoadedKey='';closeMathNote(false);return mathOldLoadExam(e,isNew)};
-renderReading=function(){};
+var mathOldInitPaintDock=initPaintDock;initPaintDock=function(){mathOldInitPaintDock();var ribbon=$('#paintRibbon'),dock=$('#paintDock');paintCollapsed=false;ribbon?.classList.remove('floating','hidden');if(ribbon){ribbon.style.left='';ribbon.style.top='';ribbon.style.right='';ribbon.style.bottom=''}dock?.classList.add('hidden');};
+var mathWorkspaceRender=render;render=function(){mathWorkspaceRender();renderMathScratchpad();};
+var mathOldLoadExam=loadExam;loadExam=function(e,isNew){closeMathNote(false);mathTextNoteKey='';return mathOldLoadExam(e,isNew)};

@@ -1,0 +1,49 @@
+{
+  "passed": 15,
+  "layout": {
+    "q": {
+      "x": 0,
+      "w": 854.359375,
+      "right": 854.359375
+    },
+    "scratch": {
+      "x": 854.359375,
+      "w": 415.625
+    },
+    "pal": {
+      "x": 1269.984375,
+      "w": 170
+    },
+    "imgWidth": 781.359375,
+    "passage": "flex",
+    "ribbonParent": "passagePane",
+    "noteButton": true,
+    "workspace": true
+  },
+  "before": {
+    "left": 912,
+    "top": 86,
+    "width": 500,
+    "height": 390
+  },
+  "after": {
+    "left": 792,
+    "top": 156
+  },
+  "initialMobile": {
+    "doc": 390,
+    "w": 390,
+    "scratch": "none",
+    "toggle": "필기장 보기"
+  },
+  "mobileScratch": {
+    "w": 338,
+    "h": 719
+  },
+  "mobile": {
+    "doc": 390,
+    "w": 390,
+    "note": 374
+  },
+  "errors": []
+}

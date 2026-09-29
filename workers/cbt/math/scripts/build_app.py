@@ -31,7 +31,7 @@ old_wrong='''<div class="wrong-answers">선택 '+(d.selected||"-")+' · 정답 '
 new_wrong='''<div class="wrong-answers">선택 '+(d.selected||"-")+' · 정답 '+(Array.isArray(d.accepted_answers)&&d.accepted_answers.length>1?'모두 정답':d.correct_answer)+'</div>'''
 assert old_wrong in base;base=base.replace(old_wrong,new_wrong)
 
-base=base.replace('국어 CBT','수학 CBT').replace('지문 보기','풀이 노트 보기').replace('지문 접기','풀이 노트 접기').replace('국어 혼합 CBT','수학 혼합 CBT').replace('2017~2021학년도는 이전 30문항 체제 기출입니다. 이전 학년도만 고르면 실제 한 회차 30문항 구성으로 출제됩니다.','2014–2016 A/B형 · 2017–2021 가/나형 · 2022–2027 공통·선택. 서로 다른 체제를 섞지 않습니다.').replace('0 / 45 응답','0 / 30 응답').replace('80:00','100:00').replace('지문 보기','풀이 노트 보기').replace('지문 접기','풀이 노트 접기')
+base=base.replace('국어 CBT','수학 CBT').replace('지문 보기','필기장 보기').replace('지문 접기','필기장 닫기').replace('국어 혼합 CBT','수학 혼합 CBT').replace('2017~2021학년도는 이전 30문항 체제 기출입니다. 이전 학년도만 고르면 실제 한 회차 30문항 구성으로 출제됩니다.','2014–2016 A/B형 · 2017–2021 가/나형 · 2022–2027 공통·선택. 서로 다른 체제를 섞지 않습니다.').replace('0 / 45 응답','0 / 30 응답').replace('80:00','100:00').replace('지문 보기','필기장 보기').replace('지문 접기','필기장 닫기')
 anchor='window.MSNAccount.ready.then('
 pos=base.rfind(anchor)
 if pos<0:raise ValueError('missing init promise')
@@ -125,40 +125,67 @@ css=soup.new_tag('style');css['data-math-ui']='v1';css.string='''
 # Static Korean explanation strings outside scripts do not apply to math.
 for node in list(soup.find_all(string=True)):
  if node.parent.name not in ['script','style']:
-  text=str(node).replace('45문항','30문항').replace('80분','100분').replace('국어 CBT','수학 CBT').replace('국어 혼합 CBT','수학 혼합 CBT').replace('2017~2021학년도는 이전 30문항 체제 기출입니다. 이전 학년도만 고르면 실제 한 회차 30문항 구성으로 출제됩니다.','2014–2016 A/B형 · 2017–2021 가/나형 · 2022–2027 공통·선택. 서로 다른 체제를 섞지 않습니다.').replace('0 / 45 응답','0 / 30 응답').replace('80:00','100:00').replace('지문 보기','풀이 노트 보기').replace('지문 접기','풀이 노트 접기')
-  if '지문 / 자료' in text:text=text.replace('지문 / 자료','풀이 노트')
+  text=str(node).replace('45문항','30문항').replace('80분','100분').replace('국어 CBT','수학 CBT').replace('국어 혼합 CBT','수학 혼합 CBT').replace('2017~2021학년도는 이전 30문항 체제 기출입니다. 이전 학년도만 고르면 실제 한 회차 30문항 구성으로 출제됩니다.','2014–2016 A/B형 · 2017–2021 가/나형 · 2022–2027 공통·선택. 서로 다른 체제를 섞지 않습니다.').replace('0 / 45 응답','0 / 30 응답').replace('80:00','100:00').replace('지문 보기','필기장 보기').replace('지문 접기','필기장 닫기')
+  if '지문 / 자료' in text:text=text.replace('지문 / 자료','손필기')
   if text!=str(node):node.replace_with(text)
 for sc in soup.find_all('script',src=True):
  if any(x in sc['src'] for x in ['/store.js','/cbt-account.js']):sc['src']=sc['src'].split('?')[0]+'?v=math-20260929-v1'
 
-workspace_css=soup.new_tag('style');workspace_css['data-math-workspace']='v2';workspace_css.string=r"""
-#passagePane,#passageResizer,#mobileToggle{display:none!important}
-@media(min-width:961px){
- .layout,.layout.passage-collapsed{grid-template-columns:minmax(0,1fr) 190px!important;max-width:1680px}
- #questionPane{grid-column:1!important;padding:30px 44px 36px!important;overflow:auto}
- .palette{grid-column:2!important}
- #questionBody,#questionPane .nav,#questionPane .source-credit{max-width:1080px;margin-left:0;margin-right:auto}
- #qassets .source-frame{max-width:960px!important;margin:20px 0!important}
+workspace_css=soup.new_tag('style');workspace_css['data-math-workspace']='v3';workspace_css.string=r"""
+#passageResizer{display:none!important}
+@media(min-width:1200px){
+ .layout,.layout.passage-collapsed{grid-template-columns:minmax(0,1.48fr) minmax(360px,.72fr) 170px!important;max-width:1760px}
+ #questionPane{grid-column:1!important;grid-row:1!important;padding:28px 36px 36px!important;overflow:auto;border-right:1px solid #e3e9f1}
+ #passagePane{display:flex!important;grid-column:2!important;grid-row:1!important;visibility:visible!important;pointer-events:auto!important;border-right:1px solid #e3e9f1;padding:0!important;overflow:hidden!important}
+ .palette{grid-column:3!important;grid-row:1!important}
+ #questionBody,#questionPane .nav,#questionPane .source-credit{max-width:980px;margin-left:0;margin-right:auto}
+ #qassets .source-frame{max-width:920px!important;margin:18px 0!important}
  #qassets .source-frame .managed-source{margin-left:0!important;margin-right:auto!important}
 }
-@media(min-width:1200px){#questionPane{padding-left:58px!important}#qassets .source-frame{max-width:1000px!important}}
-#paintRibbon.math-global-ribbon{z-index:72}
-#paintRibbon .math-note-ribbon-button{grid-column:5;grid-row:1;margin-right:42px}
-#paintRibbon #showOriginal.hidden{display:none!important}
-.math-note-button{font-size:17px!important;font-weight:800}
-.math-note-popup{position:fixed;z-index:86;left:40px;top:84px;width:520px;height:470px;min-width:300px;min-height:260px;max-width:calc(100vw - 16px);max-height:calc(100vh - 16px);display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:#fff;border:1px solid #cfd8e6;border-radius:14px;box-shadow:0 18px 55px rgba(24,39,67,.24);overflow:hidden;resize:both}
+@media(min-width:961px) and (max-width:1199px){
+ .layout,.layout.passage-collapsed{grid-template-columns:minmax(0,1.42fr) minmax(330px,.78fr)!important;max-width:100%}
+ #questionPane{grid-column:1!important;grid-row:1!important;padding:24px 28px calc(var(--cbt-palette-height,64px) + 22px)!important;border-right:1px solid #e3e9f1}
+ #passagePane{display:flex!important;grid-column:2!important;grid-row:1!important;visibility:visible!important;pointer-events:auto!important;padding:0!important;overflow:hidden!important}
+ .palette{position:fixed!important;left:0!important;right:0!important;bottom:0!important;z-index:45!important}
+}
+#passagePane{background:#fbfcfe}
+#passagePane .passage-scroll{display:flex;flex-direction:column;flex:1;min-height:0;height:100%;padding:12px 12px 14px!important;overflow:hidden!important}
+#passagePane #tag{flex:none;margin:0 0 9px;padding:5px 9px;background:#eef4fc;color:#536b8b}
+#passagePane .reading-stage{position:relative;flex:1;min-height:360px!important;height:auto;border:1px solid #d9e2ee;border-radius:12px;overflow:hidden;background-color:#fff;background-image:linear-gradient(#e8edf4 1px,transparent 1px),linear-gradient(90deg,#e8edf4 1px,transparent 1px);background-size:24px 24px;box-shadow:inset 0 1px 3px rgba(41,61,91,.04)}
+#passagePane .reading{position:absolute;inset:0;z-index:1;pointer-events:none;font-family:inherit}
+#passagePane #drawCanvas{z-index:4}
+.math-scratchpad-hint{display:flex;align-items:center;gap:8px;padding:10px 12px;color:#8692a3;font-size:11px;line-height:1.45;background:linear-gradient(#fff,rgba(255,255,255,.78));border-bottom:1px solid #edf1f6}
+.math-scratchpad-hint strong{color:#53647c;font-size:12px;white-space:nowrap}.math-scratchpad-hint span{min-width:0}
+#passagePane #inlineOriginal{display:none!important}
+#passagePane .paint-ribbon{position:relative!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;width:100%!important;max-width:none!important;border:0!important;border-bottom:1px solid #dfe6ef!important;border-radius:0!important;box-shadow:none!important;z-index:7!important;background:#f8fafc!important}
+#passagePane .paint-collapse{display:none!important}
+#passagePane .paint-ribbon{grid-template-columns:56px 104px minmax(166px,1fr) auto!important;min-height:76px!important;padding:7px 8px!important;gap:6px!important}
+#passagePane .paint-quick{grid-column:1!important}
+#passagePane .paint-tools-group{grid-column:2!important}
+#passagePane .paint-colors-group{grid-column:3!important}
+#passagePane .paint-source-btn{grid-column:4!important}
+#passagePane .math-note-ribbon-button{grid-column:4!important;margin:0!important}
+#passagePane #showOriginal.hidden{display:none!important}
+.math-note-button{font-size:16px!important;font-weight:800}
+.math-note-popup{position:fixed;z-index:86;left:40px;top:84px;width:500px;height:390px;min-width:320px;min-height:250px;max-width:calc(100vw - 16px);max-height:calc(100vh - 16px);display:grid;grid-template-rows:auto minmax(0,1fr) auto;background:#fff;border:1px solid #cfd8e6;border-radius:14px;box-shadow:0 18px 55px rgba(24,39,67,.24);overflow:hidden;resize:both}
 .math-note-popup.hidden{display:none!important}
-.math-note-header{height:auto;min-height:48px;display:flex;align-items:center;gap:10px;padding:8px 9px 8px 14px;background:#f8fafc;border-bottom:1px solid #dfe6ef;cursor:move;touch-action:none;user-select:none}
-.math-note-header strong{font-size:14px;white-space:nowrap}.math-note-tools,.math-note-actions{display:flex;align-items:center;gap:3px}.math-note-tools{flex:1}.math-note-tools button,.math-note-actions button{border:0;background:#fff;border-radius:7px;min-width:31px;height:31px;padding:0 7px;color:#42526a;font-weight:800;box-shadow:inset 0 0 0 1px #e1e7ef}.math-note-tools button:hover,.math-note-actions button:hover,.math-note-tools button.on{background:#eaf2ff;color:#245fc6}.math-note-color{width:31px;height:31px;border-radius:7px;background:#fff;box-shadow:inset 0 0 0 1px #e1e7ef;display:grid;place-items:center;overflow:hidden}.math-note-color input{width:34px;height:34px;border:0;padding:0;background:transparent;cursor:pointer}
-.math-note-canvas-wrap{position:relative;min-height:0;overflow:hidden;background-color:#fff;background-image:linear-gradient(#e8edf4 1px,transparent 1px),linear-gradient(90deg,#e8edf4 1px,transparent 1px);background-size:24px 24px}
-#mathNoteCanvas{display:block;width:100%;height:100%;touch-action:none}.math-note-canvas-wrap #mathNoteCanvas.active{cursor:crosshair}
+.math-note-header{min-height:50px;display:flex;align-items:center;gap:10px;padding:8px 9px 8px 14px;background:#f8fafc;border-bottom:1px solid #dfe6ef;cursor:move;touch-action:none;user-select:none}
+.math-note-header>div:first-child{display:flex;align-items:baseline;gap:8px;min-width:0;flex:1}.math-note-header strong{font-size:14px;white-space:nowrap}.math-note-header #mathNoteQuestion{font-size:11px;color:#7f8b9b;white-space:nowrap}
+.math-note-actions{display:flex;align-items:center;gap:5px}.math-note-actions #mathNoteStatus{font-size:10px;color:#7f8b9b;min-width:42px;text-align:right}.math-note-actions button{border:0;background:#fff;border-radius:7px;height:31px;padding:0 9px;color:#42526a;font-weight:800;box-shadow:inset 0 0 0 1px #e1e7ef}.math-note-actions button:hover{background:#eef4fd}
+.math-note-text-wrap{min-height:0;padding:12px;background:#fff}.math-note-text-wrap textarea{width:100%;height:100%;min-height:100%;resize:none;border:1px solid #dbe3ed;border-radius:10px;padding:14px 15px;outline:none;font:14px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;color:#243247;background:#fff;box-sizing:border-box}.math-note-text-wrap textarea:focus{border-color:#90b7ee;box-shadow:0 0 0 3px rgba(49,130,246,.12)}
 .math-note-resize-hint{font-size:10px;color:#98a2b3;padding:5px 9px;text-align:right;background:#fafbfc;border-top:1px solid #edf0f4}
 @media(max-width:960px){
- .layout,.layout.passage-collapsed{display:block!important}.question{padding:14px 14px calc(var(--cbt-palette-height,64px) + 28px)!important}
+ .layout,.layout.passage-collapsed{display:block!important;height:auto!important;min-height:0!important}
+ #questionPane{padding:14px 14px calc(var(--cbt-palette-height,64px) + 28px)!important}
  #qassets .source-frame{max-width:100%!important;margin:16px 0!important}
- #paintRibbon.math-global-ribbon{max-width:calc(100vw - 12px)!important}
- .math-note-popup{width:min(92vw,440px);height:min(62vh,470px);min-width:280px}
-
+ #passagePane{display:none!important;position:relative!important;height:min(62vh,560px)!important;border:1px solid #dfe6ef!important;border-radius:12px;margin:0 12px 14px;overflow:hidden!important}
+ #passagePane.open{display:flex!important}
+ #mobileToggle{display:block!important}
+ #passagePane .passage-scroll{min-height:0!important}
+ #passagePane .reading-stage{min-height:300px!important}
+ #passagePane .paint-ribbon{overflow-x:auto!important;overflow-y:hidden!important;grid-template-columns:54px 102px minmax(180px,1fr) auto!important}
+ .math-note-popup{width:min(92vw,440px);height:min(58vh,420px);min-width:280px}
+ .math-note-actions #mathNoteStatus{display:none}
 }
 """
 soup.head.append(workspace_css)
