@@ -37,34 +37,34 @@
       "education_office"
     ],
     "months": [
-      3,
-      10,
       7,
+      10,
+      3,
       5,
       4
     ],
     "years": [
-      2022,
+      2027,
       2025,
+      2022,
       2026,
       2024,
-      2023,
-      2027
+      2023
     ]
   },
   "legacy": {
     "source_family": "education_office",
-    "choice": "ga",
+    "choice": "A",
     "score": 100,
     "n": 30,
     "years": [
-      2017
+      2015
     ],
     "families": [
       "education_office"
     ],
     "sessions": [
-      "2017-10"
+      "2015-10"
     ]
   },
   "category_count": 23,

@@ -179,14 +179,14 @@ def positions(path):
         marks=[]
         for tx,x,y,x1,y1 in lines:
             pair=re.search(r'\[\s*(\d{1,2})\s*[~∼～－-]\s*(\d{1,2})\s*\]',tx)
-            if pair:shared.append({'first':int(pair[1]),'last':int(pair[2]),'page':pi+1,'col':0 if x<w/2 else 1,'top':y-7,'w':w})
+            if pair:shared.append({'first':int(pair[1]),'last':int(pair[2]),'page':pi+1,'col':0 if x<.48*w else 1,'top':y-7,'w':w})
         for tx,x,y,x1,y1 in lines:
             m=re.match(r'^\s*(\d{1,2})\.\s*',tx)
             if m and 1<=int(m[1])<=30 and y>.115*h and y<.89*h:
-                if .085*w<x<.13*w or .49*w<x<.55*w:marks.append({'no':int(m[1]),'page':pi+1,'x':x,'y':y,'col':0 if x<w/2 else 1})
+                if .075*w<x<.135*w or .48*w<x<.555*w:marks.append({'no':int(m[1]),'page':pi+1,'x':x,'y':y,'col':0 if x<.48*w else 1})
         for m in marks:
             nx=[z['y'] for z in marks if z['col']==m['col'] and z['y']>m['y']+8]
-            left=(.098 if m['col']==0 else .512)*w;right=(.493 if m['col']==0 else .9)*w
+            left=(.098 if m['col']==0 else .485)*w;right=(.493 if m['col']==0 else .9)*w
             bottom=min(nx)-7 if nx else .892*h
             # Avoid end-of-exam instructions; keep all actual question content above.
             foot=[y for tx,x,y,x1,y1 in lines if y>m['y']+20 and left<x<right and re.search(r'확인\s*사항|◦이어서|◦답안지',tx)]
@@ -206,7 +206,7 @@ def positions(path):
         first=next((q for q in found if q['no']==stem['first']),None)
         if not first or first['page']!=stem['page'] or first['col']!=stem['col']:raise ValueError('shared stem needs manual layout')
         if first['rect'][1]<=stem['top']:raise ValueError('invalid shared stem bounds')
-        part={'page':stem['page'],'rect':[(.098 if stem['col']==0 else .512)*stem['w'],stem['top'],(.493 if stem['col']==0 else .9)*stem['w'],first['rect'][1]-2]}
+        part={'page':stem['page'],'rect':[(.098 if stem['col']==0 else .485)*stem['w'],stem['top'],(.493 if stem['col']==0 else .9)*stem['w'],first['rect'][1]-2]}
         for q in found:
             if stem['first']<=q['no']<=stem['last']:
                 q['shared_group']=str(stem['first'])+'-'+str(stem['last']);q['prepend_parts']=[part]

@@ -17,7 +17,9 @@ if not CALENDARS or not MONTHS: raise SystemExit('calendar years and months are 
 (ROOT/'listings').mkdir(parents=True,exist_ok=True)
 BASE='https://wdown.ebsi.co.kr/W61001/01exam'
 API='https://www.ebsi.co.kr/ebs/xip/xipc/previousPaperListAjax.ajax'
-TRACK={'61001':'ga','61007':'na','140119':'prob','140120':'calc','140121':'geom'}
+TRACK_CURRENT={'140119':'prob','140120':'calc','140121':'geom'}
+TRACK_GANA={'61001':'ga','61007':'na'}
+TRACK_AB={'61001':'A','61007':'B'}
 PROVIDER={'서울':'서울특별시교육청','경기':'경기도교육청','인천':'인천광역시교육청','경남':'경상남도교육청'}
 
 def curl(url,dest,post=None):
@@ -44,7 +46,9 @@ def listing(calendar):
         if '고3' not in title or '학평' not in title: continue
         hm=re.search(rf'{calendar}\s+({allowed})월',title)
         if not hm: continue
-        month=int(hm[1]);track=TRACK.get(a[5])
+        month=int(hm[1])
+        track_map=TRACK_AB if calendar<=2015 else TRACK_GANA if calendar<2021 else TRACK_CURRENT
+        track=track_map.get(a[5])
         if not track: continue
         named_month=re.search(r'고3\s+(\d+)월\s+학평',title)
         official_exam_month=int(named_month[1]) if named_month else month

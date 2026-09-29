@@ -1,18 +1,18 @@
 
  ⛅️ wrangler 4.142.0 (update available 4.143.0)
 ───────────────────────────────────────────────
-Total Upload: 6342.15 KiB / gzip: 416.75 KiB
-Worker Startup Time: 12 ms
+Total Upload: 7004.01 KiB / gzip: 454.13 KiB
+Worker Startup Time: 11 ms
 Your Worker has access to the following bindings:
 Binding                      Resource
 env.CBT (mysuneung-cbt)      R2 Bucket
 
-Uploaded mysuneung-cbt-api (12.62 sec)
-Deployed mysuneung-cbt-api triggers (2.06 sec)
+Uploaded mysuneung-cbt-api (4.20 sec)
+Deployed mysuneung-cbt-api triggers (1.68 sec)
   mysuneung.com/api/cbt/* (zone name: mysuneung.com)
   mysuneung.com/cbt-data/* (zone name: mysuneung.com)
   mysuneung.com/mixed-cbt* (zone name: mysuneung.com)
   www.mysuneung.com/api/cbt/* (zone name: mysuneung.com)
   www.mysuneung.com/cbt-data/* (zone name: mysuneung.com)
   www.mysuneung.com/mixed-cbt* (zone name: mysuneung.com)
-Current Version ID: e04f9baf-2c91-4071-a6c6-6ef0f4e1c049
+Current Version ID: 985d8a31-319d-4c0e-a105-f7a3848a2f51

@@ -4,7 +4,7 @@ Entry: `/mixed-cbt?subject=math`.
 
 ## Current coverage
 
-The canonical bank contains **4,480 unique questions**, **208 paper variants** and **84 source sessions**.
+The canonical bank contains **4,960 unique questions**, **224 paper variants** and **92 source sessions**.
 
 KICE:
 - 2014–2016: June, September, CSAT; A/B
@@ -13,6 +13,7 @@ KICE:
 - 2027 preparation: June and September
 
 Education office:
+- 2015–2016: high3 March/April/July/October; A/B
 - 2017–2021: high3 March/April/July/October; ga/na
 - 2022: high3 March/April/July/October; common + electives
 - 2023: March/April/July/October
@@ -20,18 +21,20 @@ Education office:
 - 2025–2026: March/May/July/October
 - 2027: March/May/July
 
-Education-office coverage is **43 sessions, 109 variants and 2,258 unique questions**.
+Education-office coverage is **51 sessions, 125 variants and 2,738 unique questions**.
 
 ## Per-question review
 
-Academic 2017–2026 education-office reviewed batches contain **2,120 manually reviewed unique questions**.
+Academic 2015–2026 education-office reviewed batches contain **2,600 manually reviewed unique questions**.
 
-- 2,027 questions: official EBS solution `[출제의도]`, reviewed question by question
-- 93 questions: official problem text/rendered source because the solution objective text layer is missing
-- 2017 April na Q7/Q22/Q28 are in the second group and were directly checked from the official problem source
+- 2,471 questions: official EBS solution `[출제의도]`, reviewed question by question
+- 129 questions: official problem text/rendered source because the solution objective text is missing or corrupt
 - all decisions are stored in `edu-taxonomy-review.json`
+- older pending taxonomy elsewhere in the bank remains gradeable but excluded from automatic type diagnosis/transfer
 
 Legacy PDF answer/layout irregularities use SHA-256-locked entries in `manual-review.json`. OCR is not used to reconstruct problem text.
+
+For 2015 April A/B, the legacy two-column layout prints Q14 close to the page center. The parser uses a widened legacy column tolerance and keeps the shared source for Q13–Q14 attached to both questions; the rebuilt forms pass answer/point/layout validation.
 
 ## Solving workspace
 
@@ -52,10 +55,10 @@ Direct ink on the problem remains available.
 
 Full exam: 30 questions, 100 points, 100 minutes, 21 multiple-choice + 9 numeric.
 
-- Legacy A/B and ga/na full exams preserve one intact original paper.
+- A/B and ga/na full exams preserve one intact original paper.
 - Modern exams preserve common 22 + elective 8, original slots and points.
 - `source_family`: `all`, `kice`, `education_office`.
-- Education-office-only generation is server validated.
+- Education-office-only generation is server validated in A/B, ga/na and modern eras.
 - Numeric zero is valid and differs from blank.
 - Official multi-answer adjudications are graded server-side and are not exposed before submission.
 
@@ -72,5 +75,5 @@ Full exam: 30 questions, 100 points, 100 minutes, 21 multiple-choice + 9 numeric
 7. Deploy account assets, CBT Worker and R2 `app/math.html`.
 8. Run live API/browser checks.
 
-Current data version: `2026-09-29.math.v6`
-Bank SHA-256: `54a30d68cb92b0bf13c6c56a25c30ee8295c035ea707cc094e156fee622563a3`
+Current data version: `2026-09-29.math.v7`
+Bank SHA-256: `56457b2b8d437bf9558d395e2b96c3ec852f28eb8a5ab1591342efbf6c280340`
