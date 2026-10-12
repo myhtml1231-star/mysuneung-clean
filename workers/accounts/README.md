@@ -1,3 +1,7 @@
+## University request periods (R112)
+
+The admin overlay shows today and current-month universitypredict.com HTTP requests using Asia/Seoul calendar boundaries. It uses existing administrator authentication and the private UNIVERSITY_METRICS service binding. The metrics gateway retains daily aggregate rows for 35 days without request identities or URLs. The latest live admin_base.mjs, SHA256 d6cf08a1c926ce1d0ff34c4bc256dd2d13a8f0abacd1da4cdaf29995be7c300b, was preserved. Signed-in admin display and calendar boundary tests passed. All sources and evidence remain cloud-only.
+
 # 수능기출 통합 계정 / 내 학습실
 
 배포 기능 버전: `2026-09-27.accounts.v1.1`
