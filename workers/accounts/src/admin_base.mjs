@@ -2430,7 +2430,7 @@ async function serveExamDownloads(request, env, url) {
   if(request.method !== 'GET' && request.method !== 'HEAD') return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
   let key, file;
   if(path.startsWith('/other-exams/download/')) { const id=path.slice('/other-exams/download/'.length); file=Object.hasOwn(EXAM_DOWNLOAD_FILES,id)?EXAM_DOWNLOAD_FILES[id]:null; if(!file) return new Response('Not found',{status:404});key=file.key; }
-  else key='downloads/20261012-v2/'+(path==='/other-exams/app.js'?'app.js':path==='/account-assets/navigation.js'?'navigation.js':['academy','leet'].includes(url.searchParams.get('source'))?url.searchParams.get('source')+'.html':'index.html');
+  else key='downloads/20261012-v3/'+(path==='/other-exams/app.js'?'app.js':path==='/account-assets/navigation.js'?'navigation.js':['academy','leet'].includes(url.searchParams.get('source'))?url.searchParams.get('source')+'.html':'index.html');
   const object=request.method==='HEAD'?await env.CBT.head(key):await env.CBT.get(key);
   if(!object) return new Response('Not found',{status:404});
   const headers=new Headers({'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Content-Length':String(object.size),'Cache-Control':file?'public,max-age=86400':'no-cache,max-age=0'});
