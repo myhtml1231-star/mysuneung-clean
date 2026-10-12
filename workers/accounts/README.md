@@ -49,3 +49,7 @@
 ## 복구
 
 `backup/finalize-1935`는 이번 마무리 이전 코드/화면이며 DB 자체의 백업이 아니다. 화면/코드를 롤백할 때에도 기존 회원 DB를 삭제하지 않는다. 원문 기출·정답 파일은 이번 계정 구현의 변경 대상이 아니었다.
+
+## University request total overlay (2026-10-12)
+
+The overview at /admin displays the existing UniversityPredict aggregate request total. /api/account/admin/requests first delegates to the deployed administrator me endpoint; unauthorized callers cannot access statistics. UNIVERSITY_METRICS reaches the private universitypredict-admin-metrics Worker, which can return only the existing aggregate count. The original accounts runtime is preserved byte for byte in src/admin_base.mjs and the deployment entry is src/request_metrics_overlay.mjs. All other account, community, CBT and scheduled behavior remains delegated to that runtime. Underlying accounts runtime changes must refresh the preserved base module as part of the reviewed build. The private counter endpoint has no public workers.dev or preview access. Public UniversityPredict UI/count API have been removed. Actual signed-in browser verification is pending Mac unlock/login; anonymous rejection, native access boundaries and deployed module/binding preservation pass. No local project files were created.
