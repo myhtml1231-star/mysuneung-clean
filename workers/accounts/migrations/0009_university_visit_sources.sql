@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS visitor_source_daily(day TEXT NOT NULL,visitor_hash TEXT NOT NULL,source TEXT NOT NULL CHECK(source='university'),first_seen INTEGER NOT NULL,PRIMARY KEY(day,visitor_hash,source));
