@@ -1,3 +1,7 @@
+## Operations overview R113
+
+Preserves the latest live admin_base.mjs and existing authentication, assets and bindings. University requests include daily/monthly counts plus private operational aggregates. University-source visitors reuse visitor_daily identity via visitor_source_daily; only aggregate counts leave the private database. Browser/header-classified attempts and automated/API attempts are separate; input errors and unsupported calculations are separate from server failure rates. Recent source rows retain 35 days. The signed-in dashboard was verified after an actual browser calculation. Full release evidence is in universitypredict-cloudflare/evidence/user-flow-operations-r113.json.
+
 ## University request periods (R112)
 
 The admin overlay shows today and current-month universitypredict.com HTTP requests using Asia/Seoul calendar boundaries. It uses existing administrator authentication and the private UNIVERSITY_METRICS service binding. The metrics gateway retains daily aggregate rows for 35 days without request identities or URLs. The latest live admin_base.mjs, SHA256 d6cf08a1c926ce1d0ff34c4bc256dd2d13a8f0abacd1da4cdaf29995be7c300b, was preserved. Signed-in admin display and calendar boundary tests passed. All sources and evidence remain cloud-only.
