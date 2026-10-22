@@ -1,0 +1,2014 @@
+{
+  "fetched_at": "2026-10-22T13:47:26.633694+00:00",
+  "grades": [
+    {
+      "grade": 1,
+      "record": "202610201",
+      "source_url": "https://www.ebsi.co.kr/ebs/xip/xipt/RetrieveSCVMainTop.ajax?irecord=202610201",
+      "downloads": [
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/kor_main_mun_4W5F8P35.pdf",
+          "subject": "국어"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/math_main_mun_8AK22H1E.pdf",
+          "subject": "수학"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/eng_mun_39891KL3.zip",
+          "subject": "영어"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/his_main_mun_611NY412.pdf",
+          "subject": "한국사"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/sat_main_mun_NN16F9G8.pdf",
+          "subject": "사회"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/gat_main_mun_V475886I.pdf",
+          "subject": "과학"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/kor_main_hsj_YUKI5Y4I.pdf",
+          "subject": "국어"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/math_main_hsj_1IEA7IFY.pdf",
+          "subject": "수학"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/eng_main_hsj_MV9D87RS.pdf",
+          "subject": "영어"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/his_main_hsj_A18S4776.pdf",
+          "subject": "한국사"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/sat_main_hsj_9R54L11A.pdf",
+          "subject": "사회"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/gat_main_hsj_XLGU24X4.pdf",
+          "subject": "과학"
+        }
+      ],
+      "cut_subjects": 6,
+      "difficulty": [
+        {
+          "label": "매우 어려웠다.",
+          "percent": 32.7
+        },
+        {
+          "label": "약간 어려웠다.",
+          "percent": 46.1
+        },
+        {
+          "label": "보통이었다.",
+          "percent": 15.2
+        },
+        {
+          "label": "약간 쉬웠다.",
+          "percent": 3.4
+        },
+        {
+          "label": "매우 쉬웠다.",
+          "percent": 2.6
+        }
+      ]
+    },
+    {
+      "grade": 2,
+      "record": "202610202",
+      "source_url": "https://www.ebsi.co.kr/ebs/xip/xipt/RetrieveSCVMainTop.ajax?irecord=202610202",
+      "downloads": [
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/kor_main_mun_68T4H738.pdf",
+          "subject": "국어"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/math_main_mun_1I88X596.pdf",
+          "subject": "수학"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/eng_mun_J2768R2R.zip",
+          "subject": "영어"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/his_main_mun_6A75WSR3.pdf",
+          "subject": "한국사"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/sat_main_mun_C67GSFN5.pdf",
+          "subject": "사회"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/gat_main_mun_W1U615A5.pdf",
+          "subject": "과학"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/job_main_mun_BOT276B8.pdf",
+          "subject": "직업"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/2nd_mun_6A7774WG.zip",
+          "subject": "제2외/한문"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/kor_main_hsj_Z7H82D57.pdf",
+          "subject": "국어"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/math_main_hsj_7R581SJ9.pdf",
+          "subject": "수학"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/eng_main_hsj_E5Z5NAEW.pdf",
+          "subject": "영어"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/his_main_hsj_8B521732.pdf",
+          "subject": "한국사"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/sat_main_hsj_PSA86697.pdf",
+          "subject": "사회"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/gat_main_hsj_TFR6A75J_1.pdf",
+          "subject": "과학"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/job_main_hsj_88TWU1Y1.pdf",
+          "subject": "직업"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/2nd_hsj_64Z16K17_1.zip",
+          "subject": "제2외/한문"
+        }
+      ],
+      "cut_subjects": 14,
+      "difficulty": [
+        {
+          "label": "매우 어려웠다.",
+          "percent": 19.1
+        },
+        {
+          "label": "약간 어려웠다.",
+          "percent": 48.9
+        },
+        {
+          "label": "보통이었다.",
+          "percent": 21.7
+        },
+        {
+          "label": "약간 쉬웠다.",
+          "percent": 7.8
+        },
+        {
+          "label": "매우 쉬웠다.",
+          "percent": 2.5
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "record": "202610203",
+      "source_url": "https://www.ebsi.co.kr/ebs/xip/xipt/RetrieveSCVMainTop.ajax?irecord=202610203",
+      "downloads": [
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/kor_main_mun_F1C79QBB.pdf",
+          "subject": "국어"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/math_main_mun_OK58LHR5.pdf",
+          "subject": "수학"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/eng_mun_5A83DW63.zip",
+          "subject": "영어"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/his_main_mun_H37AP99N.pdf",
+          "subject": "한국사"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/sat_mun_2697WBJP.zip",
+          "subject": "사회"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/gat_mun_S84S89TR.zip",
+          "subject": "과학"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/job_mun_Q693HBKM.zip",
+          "subject": "직업"
+        },
+        {
+          "kind": "question",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/2nd_mun_F9E2N24E.zip",
+          "subject": "제2외/한문"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/kor_main_hsj_86294E3N_1.pdf",
+          "subject": "국어"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/math_main_hsj_AQ213N6U.pdf",
+          "subject": "수학"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/eng_main_hsj_W5371XRC.pdf",
+          "subject": "영어"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/his_main_hsj_X27A8Z11.pdf",
+          "subject": "한국사"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/sat_hsj_FO421AY5.zip",
+          "subject": "사회"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/gat_hsj_9R8R6257.zip",
+          "subject": "과학"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/job_hsj_LPYRA7O7.zip",
+          "subject": "직업"
+        },
+        {
+          "kind": "answer",
+          "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/2nd_hsj_7W4Q8HPF.zip",
+          "subject": "제2외/한문"
+        }
+      ],
+      "cut_subjects": 34,
+      "difficulty": [
+        {
+          "label": "매우 어려웠다.",
+          "percent": 13.7
+        },
+        {
+          "label": "약간 어려웠다.",
+          "percent": 38.2
+        },
+        {
+          "label": "보통이었다.",
+          "percent": 32.5
+        },
+        {
+          "label": "약간 쉬웠다.",
+          "percent": 11.2
+        },
+        {
+          "label": "매우 쉬웠다.",
+          "percent": 4.4
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/kor_main_mun_4W5F8P35.pdf",
+      "subject": "국어",
+      "grade": 1,
+      "file": "originals/go1/kor_main_mun_4W5F8P35.pdf",
+      "size": 799950,
+      "sha256": "0da48b879058d07277b090a6ae64c6b49be9b9031a5845e2c5dadcb5dfa16b45",
+      "pdf": {
+        "pages": 16,
+        "text_characters": 43989,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/math_main_mun_8AK22H1E.pdf",
+      "subject": "수학",
+      "grade": 1,
+      "file": "originals/go1/math_main_mun_8AK22H1E.pdf",
+      "size": 419466,
+      "sha256": "c5fefd391cdc09199986f293d49d6a9db3da231300bd6dbad671f69dd76e1e57",
+      "pdf": {
+        "pages": 12,
+        "text_characters": 5561,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/eng_mun_39891KL3.zip",
+      "subject": "영어",
+      "grade": 1,
+      "file": "originals/go1/eng_mun_39891KL3.zip",
+      "size": 16428208,
+      "sha256": "537adc61ee4cbb0e5e557421bb4c31849098226af3b3dc613427f1424f001755",
+      "members": [
+        {
+          "name": "2026학년도 10월 1학년 영어 듣기평가.mp3",
+          "size": 23012562,
+          "sha256": "7724fd0642615bd30b2e366006a61d20eb6e843a2e1c885f6dfcc4557ca0d89b",
+          "file": "originals/go1/eng_mun_39891KL3-members/000-2026학년도 10월 1학년 영어 듣기평가.mp3"
+        },
+        {
+          "name": "2610고1영어_듣기대본.pdf",
+          "size": 111562,
+          "sha256": "3c1b85bc7eb2bb32ac0b02b8d0c688d7e2f267c498a97d589497d206f165c5b4",
+          "file": "originals/go1/eng_mun_39891KL3-members/001-2610고1영어_듣기대본.pdf",
+          "pdf": {
+            "pages": 6,
+            "text_characters": 12732,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고1영어_문제지.pdf",
+          "size": 520618,
+          "sha256": "511b2904795b454bbe16d118099b47029ce281598e218b345c0de65f14909f10",
+          "file": "originals/go1/eng_mun_39891KL3-members/002-2610고1영어_문제지.pdf",
+          "pdf": {
+            "pages": 8,
+            "text_characters": 32516,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/his_main_mun_611NY412.pdf",
+      "subject": "한국사",
+      "grade": 1,
+      "file": "originals/go1/his_main_mun_611NY412.pdf",
+      "size": 918998,
+      "sha256": "856cdff20cbb2be10b87cac71bb174c0ca5645ab431353e6fc417b1c6ae7f911",
+      "pdf": {
+        "pages": 4,
+        "text_characters": 6896,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/sat_main_mun_NN16F9G8.pdf",
+      "subject": "사회",
+      "grade": 1,
+      "file": "originals/go1/sat_main_mun_NN16F9G8.pdf",
+      "size": 3263882,
+      "sha256": "fd7a54a7740996806de0850b8206ff7224911ef4ed1177a02b5cbaab3275d94e",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 13344,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/gat_main_mun_V475886I.pdf",
+      "subject": "과학",
+      "grade": 1,
+      "file": "originals/go1/gat_main_mun_V475886I.pdf",
+      "size": 1528249,
+      "sha256": "3c52047dbaeb74e61d1106f30319ecb654776de2a81ee24b3fef1677b43c492b",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 7668,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/kor_main_hsj_YUKI5Y4I.pdf",
+      "subject": "국어",
+      "grade": 1,
+      "file": "originals/go1/kor_main_hsj_YUKI5Y4I.pdf",
+      "size": 332625,
+      "sha256": "59134a11201e0510b7106453dd6e12effd0dc6210877e7c8e51a0d75b11ae618",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 26768,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/math_main_hsj_1IEA7IFY.pdf",
+      "subject": "수학",
+      "grade": 1,
+      "file": "originals/go1/math_main_hsj_1IEA7IFY.pdf",
+      "size": 276525,
+      "sha256": "793316b0302e85c3249a09e36111c4d49817fa3cba0af024d83079f2df410646",
+      "pdf": {
+        "pages": 5,
+        "text_characters": 12803,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/eng_main_hsj_MV9D87RS.pdf",
+      "subject": "영어",
+      "grade": 1,
+      "file": "originals/go1/eng_main_hsj_MV9D87RS.pdf",
+      "size": 314671,
+      "sha256": "260b9454eba74298a3d542c99bebeece8b1ab58e990d70ebd65bdd5d6ea37ac6",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 25341,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/his_main_hsj_A18S4776.pdf",
+      "subject": "한국사",
+      "grade": 1,
+      "file": "originals/go1/his_main_hsj_A18S4776.pdf",
+      "size": 159030,
+      "sha256": "61bd776dcad9ceee93b7e26d658812e99d140514b0f2a5c034db02e493e74a02",
+      "pdf": {
+        "pages": 3,
+        "text_characters": 4951,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/sat_main_hsj_9R54L11A.pdf",
+      "subject": "사회",
+      "grade": 1,
+      "file": "originals/go1/sat_main_hsj_9R54L11A.pdf",
+      "size": 182471,
+      "sha256": "c366d4826116e73919536252f9bf45f5ce389964ec3b5e17e54c93cf016aaf8a",
+      "pdf": {
+        "pages": 3,
+        "text_characters": 7052,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go1/gat_main_hsj_XLGU24X4.pdf",
+      "subject": "과학",
+      "grade": 1,
+      "file": "originals/go1/gat_main_hsj_XLGU24X4.pdf",
+      "size": 197693,
+      "sha256": "6f92bf1ef8095ba2cb27d06dd405797ad47fc144c4a10c222bbdb225a33a9fb0",
+      "pdf": {
+        "pages": 3,
+        "text_characters": 8202,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/kor_main_mun_68T4H738.pdf",
+      "subject": "국어",
+      "grade": 2,
+      "file": "originals/go2/kor_main_mun_68T4H738.pdf",
+      "size": 794381,
+      "sha256": "1399ce74e765fca416098d460b31605c452194b3282edca34161f56ff1d8b38d",
+      "pdf": {
+        "pages": 16,
+        "text_characters": 42612,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/math_main_mun_1I88X596.pdf",
+      "subject": "수학",
+      "grade": 2,
+      "file": "originals/go2/math_main_mun_1I88X596.pdf",
+      "size": 408611,
+      "sha256": "943d8e138d91edcb796cf6c7958ee5b7d822f0faaeda1c0a6ca6df2ffad4b22e",
+      "pdf": {
+        "pages": 12,
+        "text_characters": 5175,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/eng_mun_J2768R2R.zip",
+      "subject": "영어",
+      "grade": 2,
+      "file": "originals/go2/eng_mun_J2768R2R.zip",
+      "size": 17383181,
+      "sha256": "0b0de19f4f48b51d8f1bb2f885b989f8ede929c4c01b3054b2f7035fd252523e",
+      "members": [
+        {
+          "name": "2026학년도 10월 2학년 영어 듣기평가.mp3",
+          "size": 24014613,
+          "sha256": "876865bdf67bbf55503df47b334e4db6a18d5f4439ed18397f4cf471be399bb8",
+          "file": "originals/go2/eng_mun_J2768R2R-members/000-2026학년도 10월 2학년 영어 듣기평가.mp3"
+        },
+        {
+          "name": "2610고2영어_듣기대본.pdf",
+          "size": 119068,
+          "sha256": "a463cf987f704d7932a774cd052b181eff2f17dc1be81d3fe4161c41c61c9aae",
+          "file": "originals/go2/eng_mun_J2768R2R-members/001-2610고2영어_듣기대본.pdf",
+          "pdf": {
+            "pages": 6,
+            "text_characters": 13915,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2영어_문제지.pdf",
+          "size": 432738,
+          "sha256": "3558dfd5caf7735089f88a2dfc080794261f14316e4841f490ff2739cd746aa6",
+          "file": "originals/go2/eng_mun_J2768R2R-members/002-2610고2영어_문제지.pdf",
+          "pdf": {
+            "pages": 8,
+            "text_characters": 34170,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/his_main_mun_6A75WSR3.pdf",
+      "subject": "한국사",
+      "grade": 2,
+      "file": "originals/go2/his_main_mun_6A75WSR3.pdf",
+      "size": 950195,
+      "sha256": "7fa96374bd7aa7d3fea21156ed1e558acd5f88b2df6f86227b0eed3b885359fa",
+      "pdf": {
+        "pages": 4,
+        "text_characters": 7273,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/sat_main_mun_C67GSFN5.pdf",
+      "subject": "사회",
+      "grade": 2,
+      "file": "originals/go2/sat_main_mun_C67GSFN5.pdf",
+      "size": 1081619,
+      "sha256": "3b71ac9f3e8cde57012d01c3c67f68a7c684249af989399dfbf1162ed80783ec",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 14777,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/gat_main_mun_W1U615A5.pdf",
+      "subject": "과학",
+      "grade": 2,
+      "file": "originals/go2/gat_main_mun_W1U615A5.pdf",
+      "size": 960515,
+      "sha256": "d2c163f2018ef1c161e90f165e8ce1381979c99d5a220cfe69eb52fac530c9e4",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 7824,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/job_main_mun_BOT276B8.pdf",
+      "subject": "직업",
+      "grade": 2,
+      "file": "originals/go2/job_main_mun_BOT276B8.pdf",
+      "size": 1569493,
+      "sha256": "a59fd7d5108bc722468b85e77e25e818026c65074f0e5139edd9d86845ac73ab",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 13823,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/2nd_mun_6A7774WG.zip",
+      "subject": "제2외/한문",
+      "grade": 2,
+      "file": "originals/go2/2nd_mun_6A7774WG.zip",
+      "size": 5170009,
+      "sha256": "d891aefb108a88a4eadaaecd08d3f8c1c930bc352f779d5afdcb76104206adee",
+      "members": [
+        {
+          "name": "2610고2독일어_문제지.pdf",
+          "size": 597588,
+          "sha256": "0f3de11e3374e4fb4b652d25ccf1d0b20e7cc818bc7fb41d78f049ef3054f6e0",
+          "file": "originals/go2/2nd_mun_6A7774WG-members/000-2610고2독일어_문제지.pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 7212,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2러시아어_문제지.pdf",
+          "size": 559059,
+          "sha256": "0f082acc64085dc41798c6ab132dae48ac9141f46e13dc18040a964c369f9305",
+          "file": "originals/go2/2nd_mun_6A7774WG-members/001-2610고2러시아어_문제지.pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 7071,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2스페인어_문제지.pdf",
+          "size": 458098,
+          "sha256": "e7c6ee0991247cc304faed21cf6066ef66ccb3ad7a2d8c68007c699bdeb447b8",
+          "file": "originals/go2/2nd_mun_6A7774WG-members/002-2610고2스페인어_문제지.pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 7648,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2일본어_문제지.pdf",
+          "size": 758176,
+          "sha256": "1cb118d73e42334ebbf6b8debb6627ac93c9264bb08b205864805c1bf7167d30",
+          "file": "originals/go2/2nd_mun_6A7774WG-members/003-2610고2일본어_문제지.pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 5692,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2중국어_문제지.pdf",
+          "size": 1388610,
+          "sha256": "f4800f6da069b29b9115aadfe9f8892a2bedc8df09321dc242621e1386e65d8e",
+          "file": "originals/go2/2nd_mun_6A7774WG-members/004-2610고2중국어_문제지.pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 3830,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2프랑스어_문제지.pdf",
+          "size": 926531,
+          "sha256": "930dae56dadbff310befdf4a4858e03f1af97caf3eb46118c5e385f4bba1a37e",
+          "file": "originals/go2/2nd_mun_6A7774WG-members/005-2610고2프랑스어_문제지.pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6805,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2한문_문제지.pdf",
+          "size": 1285277,
+          "sha256": "9c7b765bfb5800bd8c86b46d969318b448b6141e60067a5cc197d9ff388b4ede",
+          "file": "originals/go2/2nd_mun_6A7774WG-members/006-2610고2한문_문제지.pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 3973,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/kor_main_hsj_Z7H82D57.pdf",
+      "subject": "국어",
+      "grade": 2,
+      "file": "originals/go2/kor_main_hsj_Z7H82D57.pdf",
+      "size": 309176,
+      "sha256": "01bde64ee34bff0953fecba3618857e5819de824463404fb659f77686f88d921",
+      "pdf": {
+        "pages": 5,
+        "text_characters": 22477,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/math_main_hsj_7R581SJ9.pdf",
+      "subject": "수학",
+      "grade": 2,
+      "file": "originals/go2/math_main_hsj_7R581SJ9.pdf",
+      "size": 172380,
+      "sha256": "e941804682b7550b160e7d512909f33db2cf8f6ca15724cc13e8d4004b80cc9c",
+      "pdf": {
+        "pages": 3,
+        "text_characters": 9888,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/eng_main_hsj_E5Z5NAEW.pdf",
+      "subject": "영어",
+      "grade": 2,
+      "file": "originals/go2/eng_main_hsj_E5Z5NAEW.pdf",
+      "size": 309623,
+      "sha256": "da965232523e491f7d51d699a8ff497d07019c254fb041a3fbbaebaab662328f",
+      "pdf": {
+        "pages": 5,
+        "text_characters": 27028,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/his_main_hsj_8B521732.pdf",
+      "subject": "한국사",
+      "grade": 2,
+      "file": "originals/go2/his_main_hsj_8B521732.pdf",
+      "size": 158997,
+      "sha256": "4f632f1464d7d0c91b5f97d5c2214de156e4b1698eee6421f30e7e651740b12e",
+      "pdf": {
+        "pages": 2,
+        "text_characters": 5207,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/sat_main_hsj_PSA86697.pdf",
+      "subject": "사회",
+      "grade": 2,
+      "file": "originals/go2/sat_main_hsj_PSA86697.pdf",
+      "size": 190487,
+      "sha256": "ac5be57618581adc2b75ecda287cd70a6c0a4222c66a762b1b9e732ba53484eb",
+      "pdf": {
+        "pages": 2,
+        "text_characters": 7991,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/gat_main_hsj_TFR6A75J_1.pdf",
+      "subject": "과학",
+      "grade": 2,
+      "file": "originals/go2/gat_main_hsj_TFR6A75J_1.pdf",
+      "size": 191418,
+      "sha256": "fd67a87974a41e4d754dec46895d165fa3e8308c1f989df0b798c85a00f2e6b1",
+      "pdf": {
+        "pages": 2,
+        "text_characters": 8016,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/job_main_hsj_88TWU1Y1.pdf",
+      "subject": "직업",
+      "grade": 2,
+      "file": "originals/go2/job_main_hsj_88TWU1Y1.pdf",
+      "size": 185753,
+      "sha256": "c64eb9158a8ccb19cf183146af571ee286492477c443e5c95605b753b2d0f6c3",
+      "pdf": {
+        "pages": 2,
+        "text_characters": 7912,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go2/2nd_hsj_64Z16K17_1.zip",
+      "subject": "제2외/한문",
+      "grade": 2,
+      "file": "originals/go2/2nd_hsj_64Z16K17_1.zip",
+      "size": 1220940,
+      "sha256": "daab49893059639b70bdd43e6bac54162d0390c9841cfa9b1c2d906abb957674",
+      "members": [
+        {
+          "name": "2610고2_정답및해설(5교시)_독일어.pdf",
+          "size": 181777,
+          "sha256": "55d6ae48e7572e4be40992eb995684c3090436aeba6207120a5932d21cb1495f",
+          "file": "originals/go2/2nd_hsj_64Z16K17_1-members/000-2610고2_정답및해설(5교시)_독일어.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 4472,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2_정답및해설(5교시)_러시아어.pdf",
+          "size": 174184,
+          "sha256": "964f7d14608d45261f53103ed26bcc40d9a5297481ae1b5c1613a5a49d927a83",
+          "file": "originals/go2/2nd_hsj_64Z16K17_1-members/001-2610고2_정답및해설(5교시)_러시아어.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 4027,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2_정답및해설(5교시)_스페인어.pdf",
+          "size": 180318,
+          "sha256": "07b8db3dd37b7625dada929f7479d2634b95749361553963a56f74cbe5b09c9b",
+          "file": "originals/go2/2nd_hsj_64Z16K17_1-members/002-2610고2_정답및해설(5교시)_스페인어.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 4124,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2_정답및해설(5교시)_일본어.pdf",
+          "size": 186480,
+          "sha256": "148ea41803ddd41f6a850568acc744f61a0340d2e62cba38251c4691a3f8776c",
+          "file": "originals/go2/2nd_hsj_64Z16K17_1-members/003-2610고2_정답및해설(5교시)_일본어.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3864,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2_정답및해설(5교시)_중국어.pdf",
+          "size": 182090,
+          "sha256": "f0757b663a82344550cc02586d9a57a0734d7b5e4984efe58196277bf7c85c32",
+          "file": "originals/go2/2nd_hsj_64Z16K17_1-members/004-2610고2_정답및해설(5교시)_중국어.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3442,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2_정답및해설(5교시)_프랑스어.pdf",
+          "size": 180872,
+          "sha256": "de4e92f5995553e94e0e72e9374c1634cdcee99c67b6887b4b590437dd33579b",
+          "file": "originals/go2/2nd_hsj_64Z16K17_1-members/005-2610고2_정답및해설(5교시)_프랑스어.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3939,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2610고2_정답및해설(5교시)_한문.pdf",
+          "size": 197409,
+          "sha256": "60ccb920f08cfba6a89f12608d9bffef47cf40d10621ec84551f430b9cfd5187",
+          "file": "originals/go2/2nd_hsj_64Z16K17_1-members/006-2610고2_정답및해설(5교시)_한문.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3694,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/kor_main_mun_F1C79QBB.pdf",
+      "subject": "국어",
+      "grade": 3,
+      "file": "originals/go3/kor_main_mun_F1C79QBB.pdf",
+      "size": 2945317,
+      "sha256": "3f3b135a2f1c5cde15ca47403a99370a5e15ae9e075c6355bbeae1d87e3001b8",
+      "pdf": {
+        "pages": 20,
+        "text_characters": 46585,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/math_main_mun_OK58LHR5.pdf",
+      "subject": "수학",
+      "grade": 3,
+      "file": "originals/go3/math_main_mun_OK58LHR5.pdf",
+      "size": 1516236,
+      "sha256": "6bed777dacec3203035271c724ce1c6d48422f6599a2251726681b8516387cfe",
+      "pdf": {
+        "pages": 20,
+        "text_characters": 8348,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/eng_mun_5A83DW63.zip",
+      "subject": "영어",
+      "grade": 3,
+      "file": "originals/go3/eng_mun_5A83DW63.zip",
+      "size": 31445586,
+      "sha256": "f484d036e4a6088dd1ba7f7cbb1a257d9487f834d0784abf16f25530022e0ebe",
+      "members": [
+        {
+          "name": "01.10월_고3_영어_문제지.pdf",
+          "size": 441034,
+          "sha256": "5601cdf64264b999be864b4d28017fa9b9f5390bed484ea27ac6dd98a2dd7997",
+          "file": "originals/go3/eng_mun_5A83DW63-members/000-01.10월_고3_영어_문제지.pdf",
+          "pdf": {
+            "pages": 8,
+            "text_characters": 35964,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "02.10월_고3_영어_듣기대본.pdf",
+          "size": 1297011,
+          "sha256": "3a55d93f174fe795f5d79d22a0774d15ff444ab7d1adcfabb7f9e9299020006c",
+          "file": "originals/go3/eng_mun_5A83DW63-members/001-02.10월_고3_영어_듣기대본.pdf",
+          "pdf": {
+            "pages": 18,
+            "text_characters": 12206,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "2026학년도 10월 3학년 영어 듣기평가.mp3",
+          "size": 37446694,
+          "sha256": "51187306d2afcdd3583f690d3e1409b9826b632806a5ce0565f091d213aad538",
+          "file": "originals/go3/eng_mun_5A83DW63-members/002-2026학년도 10월 3학년 영어 듣기평가.mp3"
+        }
+      ]
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/his_main_mun_H37AP99N.pdf",
+      "subject": "한국사",
+      "grade": 3,
+      "file": "originals/go3/his_main_mun_H37AP99N.pdf",
+      "size": 3875185,
+      "sha256": "abdbd87f8ab0814338e9994841651e6fcc8e01885947bed1f712f1169dd10681",
+      "pdf": {
+        "pages": 4,
+        "text_characters": 7226,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/sat_mun_2697WBJP.zip",
+      "subject": "사회",
+      "grade": 3,
+      "file": "originals/go3/sat_mun_2697WBJP.zip",
+      "size": 27244138,
+      "sha256": "1773abf4aeb011283ca9d1625f5841508334cdedaefe652d190ed2e3b02a9e30",
+      "members": [
+        {
+          "name": "03.10월_고3_사회(한국지리).pdf",
+          "size": 6432531,
+          "sha256": "1c009555f09c57ae4377f55da11095cc1b783a8dbe55430da4dd7fd9a21fbbb1",
+          "file": "originals/go3/sat_mun_2697WBJP-members/000-03.10월_고3_사회(한국지리).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6728,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "04.10월_고3_사회(세계지리).pdf",
+          "size": 3874641,
+          "sha256": "c2151d56b853bfbd201eb38ee48dfa536a4591f150c4de10c9a93de89ac69acb",
+          "file": "originals/go3/sat_mun_2697WBJP-members/001-04.10월_고3_사회(세계지리).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 7806,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "05.10월_고3_사회(동아시아사).pdf",
+          "size": 5611385,
+          "sha256": "801d1d1fb76b50881ddd4f9c83c021c5b066ff20a5f68e1bb78eac52dfc89f7a",
+          "file": "originals/go3/sat_mun_2697WBJP-members/002-05.10월_고3_사회(동아시아사).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 7430,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "06.10월_고3_사회(세계사).pdf",
+          "size": 8164992,
+          "sha256": "bf36f3092f3c28e34b028ff5912e0ff084a8028cccf029e741b53dc09ebf5a83",
+          "file": "originals/go3/sat_mun_2697WBJP-members/003-06.10월_고3_사회(세계사).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6849,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "07.10월_고3_사회(경제).pdf",
+          "size": 1092973,
+          "sha256": "843370a12a3d3485d97107bb79aefd038f4776230372f56b98dfce4117e8c94b",
+          "file": "originals/go3/sat_mun_2697WBJP-members/004-07.10월_고3_사회(경제).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8661,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "08.10월_고3_사회(정치와법).pdf",
+          "size": 735646,
+          "sha256": "3a84a41277a19aa74f764602b796cd501a9b5caf6ed7b0a35657a6241ff01474",
+          "file": "originals/go3/sat_mun_2697WBJP-members/005-08.10월_고3_사회(정치와법).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 9994,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "09.10월_고3_사회(사회문화).pdf",
+          "size": 372576,
+          "sha256": "80ebecd2786989deb63367522e3a31c7bed35cb3986745e5d7a359b9c60378d0",
+          "file": "originals/go3/sat_mun_2697WBJP-members/006-09.10월_고3_사회(사회문화).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 10083,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "01.10월_고3_사회(생활과윤리).pdf",
+          "size": 557740,
+          "sha256": "66ed383286132a66cb612fa56eddacf1522ff42301b6a43a263ad9c7ba19434e",
+          "file": "originals/go3/sat_mun_2697WBJP-members/007-01.10월_고3_사회(생활과윤리).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 10016,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "02.10월_고3_사회(윤리와사상).pdf",
+          "size": 1246140,
+          "sha256": "c579689006a9c84ab271df68aae52bd50124726181dd752197ce59863549ae60",
+          "file": "originals/go3/sat_mun_2697WBJP-members/008-02.10월_고3_사회(윤리와사상).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 9132,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/gat_mun_S84S89TR.zip",
+      "subject": "과학",
+      "grade": 3,
+      "file": "originals/go3/gat_mun_S84S89TR.zip",
+      "size": 14845807,
+      "sha256": "bf3e28335d54ea38d88e4a8305e7d95ea4f7775a11cb317f1776ea56139bbf71",
+      "members": [
+        {
+          "name": "10월_고3_과학(물리학1).pdf",
+          "size": 2157704,
+          "sha256": "702b794f1b15d16597a6664f82c53d5eaad49326ba7c769db6cb7c928b4cffd9",
+          "file": "originals/go3/gat_mun_S84S89TR-members/000-10월_고3_과학(물리학1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6926,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "10월_고3_과학(물리학2).pdf",
+          "size": 1989512,
+          "sha256": "419047e00c517d029e117c49ba5b3029db49ffb62fe5cc1d46adeff5f91ca2dd",
+          "file": "originals/go3/gat_mun_S84S89TR-members/001-10월_고3_과학(물리학2).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6591,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "10월_고3_과학(생명과학1).pdf",
+          "size": 1258850,
+          "sha256": "1fc10e0c2bb7203cc2a1e130d60796474a590a81dd4d314308e7a415ec281706",
+          "file": "originals/go3/gat_mun_S84S89TR-members/002-10월_고3_과학(생명과학1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8282,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "10월_고3_과학(생명과학2).pdf",
+          "size": 644474,
+          "sha256": "f6ecea1af29a933042c0593d38cc29b693121fef3a6025ff61a39a5670ff4c6a",
+          "file": "originals/go3/gat_mun_S84S89TR-members/003-10월_고3_과학(생명과학2).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8410,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "10월_고3_과학(지구과학1).pdf",
+          "size": 2922534,
+          "sha256": "0e6330fde2862b3f06bf15330cc65b2b3c3064b419bd75f7357340055e977475",
+          "file": "originals/go3/gat_mun_S84S89TR-members/004-10월_고3_과학(지구과학1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6749,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "10월_고3_과학(지구과학2).pdf",
+          "size": 3912948,
+          "sha256": "087a26092d0e3697b99765e9cc5da45b28531a404973f3b05253bea6bc35bf9f",
+          "file": "originals/go3/gat_mun_S84S89TR-members/005-10월_고3_과학(지구과학2).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6040,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "10월_고3_과학(화학1).pdf",
+          "size": 1262986,
+          "sha256": "ba826d084445d00c7ab3075443ffd368300cbefa2e9d3888b2993ec681756408",
+          "file": "originals/go3/gat_mun_S84S89TR-members/006-10월_고3_과학(화학1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6580,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "10월_고3_과학(화학2).pdf",
+          "size": 1237524,
+          "sha256": "1ef03bc2b1a1c962105b55d53a9905beae20d14f98d02e6e65f38cf06c929e21",
+          "file": "originals/go3/gat_mun_S84S89TR-members/007-10월_고3_과학(화학2).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 7174,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/job_mun_Q693HBKM.zip",
+      "subject": "직업",
+      "grade": 3,
+      "file": "originals/go3/job_mun_Q693HBKM.zip",
+      "size": 8288818,
+      "sha256": "0db21e8760dff04cce8921c6720a3637c13f4828246de9fe0613929c9036f67f",
+      "members": [
+        {
+          "name": "01.10월_고3_직업(성공적인직업생활).pdf",
+          "size": 636651,
+          "sha256": "f8f8ec531c420438d3b7403fbb0f07fc66fa241824843aa8bdfda2f43e4796a8",
+          "file": "originals/go3/job_mun_Q693HBKM-members/000-01.10월_고3_직업(성공적인직업생활).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8682,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "02.10월_고3_직업(농업기초기술).pdf",
+          "size": 3175647,
+          "sha256": "72ab2e4070de5a2786bca7df39dc974a6b95bb92f82d1a62bb98a9d1ae87774b",
+          "file": "originals/go3/job_mun_Q693HBKM-members/001-02.10월_고3_직업(농업기초기술).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6417,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "03.10월_고3_직업(공업일반).pdf",
+          "size": 1346043,
+          "sha256": "33993f3a3c71448f53d42072f4b02edf5a99673f22195c013104fe2f4bf53390",
+          "file": "originals/go3/job_mun_Q693HBKM-members/002-03.10월_고3_직업(공업일반).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8799,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "04.10월_고3_직업(상업경제).pdf",
+          "size": 629772,
+          "sha256": "d22ac0f78e001a8d716b947db83e1414fcc1008db5d0f9f6162001987d22d4a8",
+          "file": "originals/go3/job_mun_Q693HBKM-members/003-04.10월_고3_직업(상업경제).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8005,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "05.10월_고3_직업(수산해운산업기초).pdf",
+          "size": 2379548,
+          "sha256": "9b286d0c63c63b120395ea6c55ee5447d1f4bcf7299738bb08dfb6ff2d04cdd8",
+          "file": "originals/go3/job_mun_Q693HBKM-members/004-05.10월_고3_직업(수산해운산업기초).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 7547,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "06.10월_고3_직업(인간발달).pdf",
+          "size": 573767,
+          "sha256": "935063b024be5137f60765356bc54ef77d27ab08be60ec7b10c0d1d45fda9711",
+          "file": "originals/go3/job_mun_Q693HBKM-members/005-06.10월_고3_직업(인간발달).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8783,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "question",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/2nd_mun_F9E2N24E.zip",
+      "subject": "제2외/한문",
+      "grade": 3,
+      "file": "originals/go3/2nd_mun_F9E2N24E.zip",
+      "size": 24659143,
+      "sha256": "c96310a04a00fca4eebbd6f998251b030de63849151de2869fc7c756600382a5",
+      "members": [
+        {
+          "name": "07.10월_고3_제2외국어(한문1).pdf",
+          "size": 7288775,
+          "sha256": "7e4fdcefd5e6de50fb4622eab92de56a29a85796fcea148a748c5ad49d5c5e6b",
+          "file": "originals/go3/2nd_mun_F9E2N24E-members/000-07.10월_고3_제2외국어(한문1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 4525,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "01.10월_고3_제2외국어(독일어1).pdf",
+          "size": 1309488,
+          "sha256": "ba8c02cffc923131734fffca360ac3a825d09eb4bee844c50ed046d8f2d420d3",
+          "file": "originals/go3/2nd_mun_F9E2N24E-members/001-01.10월_고3_제2외국어(독일어1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 9443,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "02.10월_고3_제2외국어(프랑스어1).pdf",
+          "size": 3801721,
+          "sha256": "ed2d67cbce27616064788367e37cf4ee4b55dcb640b63911924c11713c14dfa7",
+          "file": "originals/go3/2nd_mun_F9E2N24E-members/002-02.10월_고3_제2외국어(프랑스어1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8805,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "03.10월_고3_제2외국어(스페인어1).pdf",
+          "size": 3687226,
+          "sha256": "239bff00cf4cabd4c8712561fc0dc7581dd46d3592af6728bcec04cdab9c6973",
+          "file": "originals/go3/2nd_mun_F9E2N24E-members/003-03.10월_고3_제2외국어(스페인어1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8054,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "04.10월_고3_제2외국어(중국어1).pdf",
+          "size": 3829357,
+          "sha256": "1b7f7325f9d5ebbc4092f351c326e465a79383086936d194dee8c84dd270110f",
+          "file": "originals/go3/2nd_mun_F9E2N24E-members/004-04.10월_고3_제2외국어(중국어1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 5104,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "05.10월_고3_제2외국어(일본어1).pdf",
+          "size": 2506515,
+          "sha256": "da291853ca62c2dfba933f2eb10eb20a7b1ef48aefde58371e1c027007d40b84",
+          "file": "originals/go3/2nd_mun_F9E2N24E-members/005-05.10월_고3_제2외국어(일본어1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 6657,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "06.10월_고3_제2외국어(러시아어1).pdf",
+          "size": 2934902,
+          "sha256": "b7cd5a600a3447a2eca8ba7cc2e29de55cb6075a596c207723b7a129b83e77ac",
+          "file": "originals/go3/2nd_mun_F9E2N24E-members/006-06.10월_고3_제2외국어(러시아어1).pdf",
+          "pdf": {
+            "pages": 4,
+            "text_characters": 8538,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        }
+      ]
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/kor_main_hsj_86294E3N_1.pdf",
+      "subject": "국어",
+      "grade": 3,
+      "file": "originals/go3/kor_main_hsj_86294E3N_1.pdf",
+      "size": 312937,
+      "sha256": "14f3fa6f8e769ca014ec8325f205d831b3b1ad689742a86bdf6819aa26f72939",
+      "pdf": {
+        "pages": 5,
+        "text_characters": 26403,
+        "mentions_2026": true,
+        "mentions_october": true,
+        "manual_exam_identity_review_required": false
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/math_main_hsj_AQ213N6U.pdf",
+      "subject": "수학",
+      "grade": 3,
+      "file": "originals/go3/math_main_hsj_AQ213N6U.pdf",
+      "size": 278616,
+      "sha256": "211945d9184d11c472e8aa0ea7bdff7db815310ddc6ad500065e238fc9066b2e",
+      "pdf": {
+        "pages": 6,
+        "text_characters": 18937,
+        "mentions_2026": false,
+        "mentions_october": false,
+        "manual_exam_identity_review_required": true
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/eng_main_hsj_W5371XRC.pdf",
+      "subject": "영어",
+      "grade": 3,
+      "file": "originals/go3/eng_main_hsj_W5371XRC.pdf",
+      "size": 309337,
+      "sha256": "02ea2280f45057a0c7ee5bb9ede24cb0fe5eb9a4b4a4fa2c1ac72861c1c67a9b",
+      "pdf": {
+        "pages": 5,
+        "text_characters": 25631,
+        "mentions_2026": false,
+        "mentions_october": false,
+        "manual_exam_identity_review_required": true
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/his_main_hsj_X27A8Z11.pdf",
+      "subject": "한국사",
+      "grade": 3,
+      "file": "originals/go3/his_main_hsj_X27A8Z11.pdf",
+      "size": 131998,
+      "sha256": "3005c612b8458489394dae082ff364ffbddcb2fe9381f1715a445f4e03cfc09d",
+      "pdf": {
+        "pages": 1,
+        "text_characters": 3072,
+        "mentions_2026": false,
+        "mentions_october": false,
+        "manual_exam_identity_review_required": true
+      }
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/sat_hsj_FO421AY5.zip",
+      "subject": "사회",
+      "grade": 3,
+      "file": "originals/go3/sat_hsj_FO421AY5.zip",
+      "size": 1058152,
+      "sha256": "8616ac9ead590cd786cfc68d96c905725cc3d26ccd49259ff832b30b810343f9",
+      "members": [
+        {
+          "name": "5007.10월_고3_사회(경제)_정답해설.pdf",
+          "size": 111435,
+          "sha256": "61d716c1eef528936a0e6d8e89f0e67b9921264a2fce7267db487a92ef4d2422",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/000-5007.10월_고3_사회(경제)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3094,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5008.10월_고3_사회(정치와법)_정답해설.pdf",
+          "size": 109976,
+          "sha256": "f751f95b355b896bf0976a5f3f856f045820a9fcdfb12758fc62aacca9114f70",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/001-5008.10월_고3_사회(정치와법)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3007,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5009.10월_고3_사회(사회문화)_정답해설.pdf",
+          "size": 121756,
+          "sha256": "ccf8eddf3c71b34e677e3548a1090f67da2e1afe2dd031865b23c6477e7a942b",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/002-5009.10월_고3_사회(사회문화)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 2657,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5001.10월_고3_사회(생활과윤리)_정답해설.pdf",
+          "size": 119657,
+          "sha256": "9c0bc14cff33068692639d65b7ce068eb49b85f54f55337e691bb1ebee246781",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/003-5001.10월_고3_사회(생활과윤리)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 2722,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5002.10월_고3_사회(윤리와사상)_정답해설.pdf",
+          "size": 129288,
+          "sha256": "74324a9f600ba85197acd36ced5188a53aff9b75b2cbfc84269ae711a3b95fb6",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/004-5002.10월_고3_사회(윤리와사상)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3053,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5003.10월_고3_사회(한국지리)_정답해설.pdf",
+          "size": 113006,
+          "sha256": "4d9123fc9aa560a2868656793273e5da055042bf5c30010570c97cf9df4a78f7",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/005-5003.10월_고3_사회(한국지리)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3018,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5004.10월_고3_사회(세계지리)_정답해설.pdf",
+          "size": 117290,
+          "sha256": "933a19b30b5cf164d3118250bf92a9b87cc8a8e10d05cadd4f0ced592821f308",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/006-5004.10월_고3_사회(세계지리)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 2848,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5005.10월_고3_사회(동아시아사)_정답해설.pdf",
+          "size": 131745,
+          "sha256": "4cc6ebe7d040e691131bff59f549dcd6e38b686dad92a27605de6468309404d0",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/007-5005.10월_고3_사회(동아시아사)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3155,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "5006.10월_고3_사회(세계사)_정답해설.pdf",
+          "size": 130122,
+          "sha256": "cd9542366baaf7904deda43a8640e94f3e07054bc7385625e227fe0e73867059",
+          "file": "originals/go3/sat_hsj_FO421AY5-members/008-5006.10월_고3_사회(세계사)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3080,
+            "mentions_2026": false,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": true
+          }
+        }
+      ]
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/gat_hsj_9R8R6257.zip",
+      "subject": "과학",
+      "grade": 3,
+      "file": "originals/go3/gat_hsj_9R8R6257.zip",
+      "size": 883271,
+      "sha256": "3ce3929f1869c3361c7b255daa458405e9579caa5f6b4ade61f074252f4fd3d6",
+      "members": [
+        {
+          "name": "10월_고3_과학(물리학1)_정답해설.pdf",
+          "size": 112153,
+          "sha256": "102fa380beae59dbe38579131515f6b867856ee48337796662650434ccc9ad94",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/000-10월_고3_과학(물리학1)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3074,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "10월_고3_과학(물리학2)_정답해설.pdf",
+          "size": 115618,
+          "sha256": "1016e07ada32ff0abbc06cf449a57ae66001d3ee7b2d1aa50c3d269d2f8e1b4c",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/001-10월_고3_과학(물리학2)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3076,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "10월_고3_과학(생명과학1)_정답해설.pdf",
+          "size": 124421,
+          "sha256": "3f31ae65ff1266777bc6ed81a629467329131d61930837a34dac9c8fdc660af0",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/002-10월_고3_과학(생명과학1)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3140,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "10월_고3_과학(생명과학2)_정답해설.pdf",
+          "size": 128874,
+          "sha256": "109f1761014fe863567ab26c89fa44cb7dcf4f38357a5f23df97d68e9978b55e",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/003-10월_고3_과학(생명과학2)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3325,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "10월_고3_과학(지구과학1)_정답해설.pdf",
+          "size": 135511,
+          "sha256": "201903a69146a93db35c411036920b1407c4a1e5dae0b73cd2228c5dd3d5f976",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/004-10월_고3_과학(지구과학1)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3210,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "10월_고3_과학(지구과학2)_정답해설.pdf",
+          "size": 119611,
+          "sha256": "652a817129aa211aa2d0114a58f8c8f9c33efa9437b6e39f8ce14d2291cc3bf7",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/005-10월_고3_과학(지구과학2)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3051,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "10월_고3_과학(화학1)_정답해설.pdf",
+          "size": 95070,
+          "sha256": "03bb369d32c43f0097993c796d5b2c6fcbb79e8a7229d675c360b466d094afa5",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/006-10월_고3_과학(화학1)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 2874,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "10월_고3_과학(화학2)_정답해설.pdf",
+          "size": 100647,
+          "sha256": "9d8e5bfaf5278b5cd4409d00bab1bf16a5683001600820b0db9d9b9909f9e090",
+          "file": "originals/go3/gat_hsj_9R8R6257-members/007-10월_고3_과학(화학2)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3191,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        }
+      ]
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/job_hsj_LPYRA7O7.zip",
+      "subject": "직업",
+      "grade": 3,
+      "file": "originals/go3/job_hsj_LPYRA7O7.zip",
+      "size": 730099,
+      "sha256": "645dddd1cb7af60b0bdf6fc00c624010e8c92a876beef5ac9f608e7cac775dda",
+      "members": [
+        {
+          "name": "01.10월_고3_직업(성공적인직업생활)_정답해설.pdf",
+          "size": 111569,
+          "sha256": "fc3544a2695a1e1406189718f35ba9d87cfa2c7de9545c899750d2c9c3740015",
+          "file": "originals/go3/job_hsj_LPYRA7O7-members/000-01.10월_고3_직업(성공적인직업생활)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 2954,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "02.10월_고3_직업(농업기초기술)_정답해설.pdf",
+          "size": 142436,
+          "sha256": "7bc30b8e722dcf1aa1e75654d4f9c36dcd65555e60a1b16d64499092b0f8b001",
+          "file": "originals/go3/job_hsj_LPYRA7O7-members/001-02.10월_고3_직업(농업기초기술)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3136,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "03.10월_고3_직업(공업일반)_정답해설.pdf",
+          "size": 126565,
+          "sha256": "79e7ebe721ec1d3a720b18ba46a94b462488aaf9fb9d83d6e0d6807cf0687d5d",
+          "file": "originals/go3/job_hsj_LPYRA7O7-members/002-03.10월_고3_직업(공업일반)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3054,
+            "mentions_2026": true,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "04.10월_고3_직업(상업경제)_정답해설.pdf",
+          "size": 114840,
+          "sha256": "a8221abc0a4f5a64e8bb590c1ce98c50112cb4fd704643be3cba8d1556ea30f5",
+          "file": "originals/go3/job_hsj_LPYRA7O7-members/003-04.10월_고3_직업(상업경제)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 2831,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "05.10월_고3_직업(수산해운산업기초)_정답해설.pdf",
+          "size": 131449,
+          "sha256": "fdeec86c056f653f0f567d2771b4cd20e8571e0e285bc947831c4a1e862b6559",
+          "file": "originals/go3/job_hsj_LPYRA7O7-members/004-05.10월_고3_직업(수산해운산업기초)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3128,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "06.10월_고3_직업(인간발달)_정답해설.pdf",
+          "size": 120002,
+          "sha256": "a485e5ba5dbc66f455a5f1b39acad4c6482abccb4a540a24b1d12fa107bd7238",
+          "file": "originals/go3/job_hsj_LPYRA7O7-members/005-06.10월_고3_직업(인간발달)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 2817,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        }
+      ]
+    },
+    {
+      "kind": "answer",
+      "url": "https://wdown.ebsi.co.kr/W61001/01exam/20261020/go3/2nd_hsj_7W4Q8HPF.zip",
+      "subject": "제2외/한문",
+      "grade": 3,
+      "file": "originals/go3/2nd_hsj_7W4Q8HPF.zip",
+      "size": 1207742,
+      "sha256": "5fe8a0079bb5916a732d03c358918c0c695cf79adff4f5f52d87b80149cfde89",
+      "members": [
+        {
+          "name": "8007.10월_고3_제2외국어(한문1)_정답해설.pdf",
+          "size": 177189,
+          "sha256": "70becc54ae9ef3ef7039affc1c1ea568f878a672df736f09a8f7f0aedf9cf8d3",
+          "file": "originals/go3/2nd_hsj_7W4Q8HPF-members/000-8007.10월_고3_제2외국어(한문1)_정답해설.pdf",
+          "pdf": {
+            "pages": 2,
+            "text_characters": 4273,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "8001.10월_고3_제2외국어(독일어1)_정답해설.pdf",
+          "size": 160830,
+          "sha256": "0ed16b4fa47d45dede674d2118c1208866042ca38d50125f557b1b5b24ed0ae0",
+          "file": "originals/go3/2nd_hsj_7W4Q8HPF-members/001-8001.10월_고3_제2외국어(독일어1)_정답해설.pdf",
+          "pdf": {
+            "pages": 2,
+            "text_characters": 3741,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "8002.10월_고3_제2외국어(프랑스어1)_정답해설.pdf",
+          "size": 162735,
+          "sha256": "3c4891472f71cf4bac2e0c40167e0447121b9f7c9e574f48ef357a6ae4178f66",
+          "file": "originals/go3/2nd_hsj_7W4Q8HPF-members/002-8002.10월_고3_제2외국어(프랑스어1)_정답해설.pdf",
+          "pdf": {
+            "pages": 2,
+            "text_characters": 3617,
+            "mentions_2026": true,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": false
+          }
+        },
+        {
+          "name": "8003.10월_고3_제2외국어(스페인어1)_정답해설.pdf",
+          "size": 160861,
+          "sha256": "4c8f42295d8550da191d77b198e5aa3cd331da6cd2b63bd3add6d3ddfcc092c4",
+          "file": "originals/go3/2nd_hsj_7W4Q8HPF-members/003-8003.10월_고3_제2외국어(스페인어1)_정답해설.pdf",
+          "pdf": {
+            "pages": 2,
+            "text_characters": 3763,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "8004.10월_고3_제2외국어(중국어1)_정답해설.pdf",
+          "size": 227845,
+          "sha256": "13347087804b513c91254fee754d5ab8d22507773508bdb697c133812f666105",
+          "file": "originals/go3/2nd_hsj_7W4Q8HPF-members/004-8004.10월_고3_제2외국어(중국어1)_정답해설.pdf",
+          "pdf": {
+            "pages": 2,
+            "text_characters": 3876,
+            "mentions_2026": false,
+            "mentions_october": true,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "8005.10월_고3_제2외국어(일본어1)_정답해설.pdf",
+          "size": 180275,
+          "sha256": "bdbd531645cd6ced5f07c760fe08dd991c1bb1f0dbfb98bd191797655a3c7f95",
+          "file": "originals/go3/2nd_hsj_7W4Q8HPF-members/005-8005.10월_고3_제2외국어(일본어1)_정답해설.pdf",
+          "pdf": {
+            "pages": 1,
+            "text_characters": 3788,
+            "mentions_2026": false,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        },
+        {
+          "name": "8006.10월_고3_제2외국어(러시아어1)_정답해설.pdf",
+          "size": 172606,
+          "sha256": "37e28ebe709baba38cb2f25698640cdec1b6abcf5e9ab2ee4e8d9ecb290beaa6",
+          "file": "originals/go3/2nd_hsj_7W4Q8HPF-members/006-8006.10월_고3_제2외국어(러시아어1)_정답해설.pdf",
+          "pdf": {
+            "pages": 2,
+            "text_characters": 3925,
+            "mentions_2026": true,
+            "mentions_october": false,
+            "manual_exam_identity_review_required": true
+          }
+        }
+      ]
+    }
+  ]
+}

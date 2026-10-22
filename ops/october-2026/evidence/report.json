@@ -1,0 +1,24 @@
+{
+  "fetched_at": "2026-10-22T13:47:26.633694+00:00",
+  "exam_date": "2026-10-20",
+  "grades": [
+    1,
+    2,
+    3
+  ],
+  "official_downloads": 44,
+  "pdf_count": 111,
+  "pdf_pages": 447,
+  "pdf_identity_review_required": 31,
+  "cut_subject_tables": 54,
+  "difficulty_surveys": 3,
+  "source_files_integrity_checked": true,
+  "cbt_import_complete": false,
+  "production_deployed": false,
+  "remaining": [
+    "Obtain current production source and existing import templates",
+    "Import questions, choices, answer keys, explanations, taxonomy and source crops into the existing CBT schema",
+    "Apply existing archive, cut and difficulty templates without redesign",
+    "Verify every subject, grade, route, asset and actual production serving state"
+  ]
+}
