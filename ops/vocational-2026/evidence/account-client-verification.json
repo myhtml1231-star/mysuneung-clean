@@ -1,0 +1,9 @@
+{
+  "history_sync": true,
+  "draft_sync": true,
+  "annotation_sync": true,
+  "separate_subject_projection": true,
+  "account_switch_locks_old_page": true,
+  "offline_queue_keeps_original_owner": true,
+  "other_account_receives_no_records": true
+}

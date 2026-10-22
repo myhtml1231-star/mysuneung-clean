@@ -1,0 +1,32 @@
+{
+  "old_auth_before_new_routes": true,
+  "new_static_allowlist": true,
+  "october_page_overrides": [
+    "/2027-10-job2.html",
+    "/2027-10-language2.html",
+    "/026-10-language1.html",
+    "/2027-10-language3.html",
+    "/2027-10-job3.html",
+    "/026-10.html",
+    "/026-10-language7.html",
+    "/cut-g3-2026-10.html",
+    "/2027-10-job4.html",
+    "/2027-10-language4.html",
+    "/2027-10-language5.html",
+    "/2027_10.html",
+    "/cut-g2-2026-10.html",
+    "/2027-10-job5.html",
+    "/026-10-language6.html",
+    "/026-10-language5.html",
+    "/2027-10-language6.html",
+    "/2027-10-job6.html",
+    "/2027-10-language7.html",
+    "/026-10-language4.html",
+    "/026-10-job1.html",
+    "/026-10-language3.html",
+    "/026-10-language2.html",
+    "/2027-10-job1.html",
+    "/2027-10-language1.html"
+  ],
+  "production_deployed": false
+}
