@@ -1,0 +1,108 @@
+{
+  "version": "2026-10-23.voclang.v1",
+  "partial": false,
+  "production_deployed": false,
+  "built_at": "2026-10-22T22:13:52.600205+00:00",
+  "subjects": [
+    {
+      "subject": "lang-chinese",
+      "forms": 27,
+      "questions": 800
+    },
+    {
+      "subject": "lang-classical",
+      "forms": 27,
+      "questions": 800
+    },
+    {
+      "subject": "lang-french",
+      "forms": 27,
+      "questions": 800
+    },
+    {
+      "subject": "lang-german",
+      "forms": 27,
+      "questions": 800
+    },
+    {
+      "subject": "lang-japanese",
+      "forms": 27,
+      "questions": 800
+    },
+    {
+      "subject": "lang-russian",
+      "forms": 27,
+      "questions": 800
+    },
+    {
+      "subject": "lang-spanish",
+      "forms": 27,
+      "questions": 800
+    },
+    {
+      "subject": "voc-agriculture-tech",
+      "forms": 26,
+      "questions": 520
+    },
+    {
+      "subject": "voc-career",
+      "forms": 21,
+      "questions": 425
+    },
+    {
+      "subject": "voc-commerce",
+      "forms": 26,
+      "questions": 520
+    },
+    {
+      "subject": "voc-human",
+      "forms": 26,
+      "questions": 520
+    },
+    {
+      "subject": "voc-industry",
+      "forms": 26,
+      "questions": 520
+    },
+    {
+      "subject": "voc-marine",
+      "forms": 26,
+      "questions": 520
+    },
+    {
+      "subject": "lang-arabic",
+      "forms": 23,
+      "questions": 690
+    },
+    {
+      "subject": "lang-vietnamese",
+      "forms": 23,
+      "questions": 690
+    },
+    {
+      "subject": "voc-accounting",
+      "forms": 6,
+      "questions": 120
+    },
+    {
+      "subject": "voc-agriculture",
+      "forms": 6,
+      "questions": 120
+    },
+    {
+      "subject": "voc-drafting",
+      "forms": 6,
+      "questions": 120
+    },
+    {
+      "subject": "voc-ocean",
+      "forms": 6,
+      "questions": 120
+    },
+    {
+      "subject": "voc-service",
+      "forms": 6,
+      "questions": 120
+    }
+  ]
+}

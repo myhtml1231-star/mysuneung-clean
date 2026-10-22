@@ -1,0 +1,2127 @@
+{
+  "worker_routes": [
+    {
+      "path": "/mixed-cbt?subject=lang-japanese",
+      "status": 302
+    },
+    {
+      "path": "/mixed-cbt?subject=voc-career",
+      "status": 302
+    },
+    {
+      "path": "/api/cbt/lang-japanese/coverage",
+      "status": 401
+    },
+    {
+      "path": "/api/cbt/voc-career/learning-meta",
+      "status": 401
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/banks/lang-japanese.json",
+      "status": 404
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/packs/g3-2027-09-lang-japanese.bin",
+      "status": 404
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/ui/lang-japanese.html",
+      "status": 404
+    },
+    {
+      "path": "/account-assets/store.js",
+      "status": 200,
+      "sha256": "1fcae0020cb8057f6d2e6803d6e2a696a3c5533fb0d37711c1c31ce5507d9424"
+    },
+    {
+      "path": "/account-assets/workspace.js",
+      "status": 200,
+      "sha256": "5f7b26479c77fc6758e35e66247bcecefe13a09d6f5fbc3ae1c59c6ebb9a4c6b"
+    }
+  ],
+  "source_images_verified": 416,
+  "all_416_paper_first_images_match": true,
+  "copy_endpoint_not_deployed": true,
+  "images": [
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "5e9b79739e3a39ef33ecf5b61d62d25dfee37d3d850da538ee38e0f45bb6f44a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "fe391c2b65a9bde5d8149bc1c37990d1e0bd02b2646c8f8452b562f3ea6ad007"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "b0933ae78183c520c407f7facb7766412fcd2a4be2b61407526cbe553b19a983"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "cbdd41400350b50d8ddc945de4bc76ae20f40d67cb160e34f6f042b696eaddce"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "b0b519a4d3055025a97ddcb095b42c95dc5cbb7dea5b32590c855d01bde70052"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "3dd1e0b18466ebd6986cba6672db29a5005f3c6fd7d4afa97622f8c179f12296"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "358c50455d084bf8b5f28dd29450ea3e8221e37f30838a4dd3891b65ed1cf571"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "2a578edf0c94cee8759bd380ea4b305682653d40ec3738d911e8674e8463be38"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "b4ba908d98c37c06083e95ed1c963ce1143df23530e473614fc07518c76b1808"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "ca7b4be1900153ea9da2a979f43b174e2cf6b2496fbefc485e52ac7a0aaf6223"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "0586af0ad2f08df8b3803edc914b0478469b02d719a44185c79023a9bcdd8ee5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "4049b6f1314cab26661a36f60a557156632cac3cc6304291ed73d4f8b46cdc59"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "85ed67789f4b4471e5f7632d4df481195feefbe5b3b225323ec98c4a0cdb7363"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "b8153e673732e9b8f7d0e2dea198836f621145991ecb03d068da51fdb2ca0297"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "aa938af1648edbf14daecad9472d99715fa38b10845ef45bd56cbf522c8283f9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "0a5c38972e3c3cd71de85b0ca783f9bfdc4a93f6029579e1e5253a304ed3a7ad"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "7866b8e22b01f41b1ed61210b62b6f5a63178c7a3ab88ea1fe78559ac931b469"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "d472deace754e3295114050caf820e0403d17902e928eb09053a95b10d407994"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "10cf69e68c2319e083a6ebc8c256f6605dc186272605bb92ae18db0737cda241"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "9abbaa430d0cb44c72da8492c4041650e9e3685c0f4b926fed3161154d121bea"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "8379fe214fd4fd11cf20aff6ecb2616fd35a09eec5dc9bdeefb167779faeed08"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "4ace419895111ab91d3c2b57540917e34d664f2d3b87384d5f911b24bef30bff"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "38ceb61d57ee7de88d984b9eed599cf8e8ce59194cf89a44e40992236730f97b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "002862b0d6bfc495f9399019fc33ae1c153a96f73b125811c46bb683edfa871d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "503b2a326bfc3f769f242a0091ad66ee1ee688fb1867915a55ef1f59dc51f6ce"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "3db5a5264697292a2fd1e3a1f5d27338577ece556f1e1a8e5413127da7cd301f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-lang-classical/01.webp",
+      "status": 200,
+      "sha256": "b8f7ebee277ff64fcd720d0e3011b4d30a58fb9296b3ddaa77e99cb98e24d825"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "b35e2defc4e60d71ee04d6d66760ef9e9a19869657fd1bb7051a9856f27e5349"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "11b0e1deaadc377bf6228b72be6203c8cfd0e12ab85c7b09fac94ef71cb15d64"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "595184d8615fbd3ac7eab8386ec40eb4d94a7562104d98d7079181b7b1ed0d94"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "05e91a2009c6d4f924ccc493bdee60f9e80edaddce10bb1213d46383d6848bba"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "e30d25d4cf8c1589cbe6266fd836be548b08fec849e693b9696444753e71e6a4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "fdd288e5cedbdd622aa53a6a0ac3048cf809c38621dc4f4e3f908b6caa23ed3e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "df549eeb9ba8915f17eb2c6fac573371c60d1ee0d2a79f544a322cdf7a2ee950"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "20729c73c5b9b8c0870a8aa25dc9cce768a0ccfb011188b9ce5a0a60e7622d05"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "0aea49e0807e7ff527c992f62edc4070be5cfc76a1183147d88eb408eca12505"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "21d7090147424a3775e0fb6833aab4682fcf48be3027e6769e0d1cf81f89b5d4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "d84986bf77364a720b105df27d8b28a05a42e902c761279b604f3b2fcb968dc4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "be5186490640f89e5e01c8c94ad7355b62a8df670ec080c3f44fe91cb306800e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "771f91904ba2544465fd5f5bab795e86c92e322998b84648034bdfcaf9da7e88"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "b8a982f46d153d98f6ea4dd693bb83a4b69e9c39cd7e19e71df5d7d7f001c10d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "4ca847a6267c3bfc2534fd18f70b6c5e20f001f6494fa24791d271ea3079b2aa"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "0d5737173d0d8dcdf45c1e445b884b1a7e1848e62648539fbcd893f4dbf7e259"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "1e2717e0b8cc6c0f4aa26a9838cd81dbc40971230671d6b62e66da6a6a62ae3b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "539e0617f50e1ea17e79073411cabd1546abf4f87311c944c6c180a722fc807c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "1c4245a9a54ec23eb560c4738b4fe56b8210ebdd63d67ec07db9be8749f3119d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "533a9c7337f5665cdd43927f277f8d288e71edee578aa6fb9e6978661cbfabb1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "98fa49884aaa40638fc87a8a5559d09b23250842c580507799cd60238b556a44"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "bd4c1f35d712ecf5553bf23e92128614011c83c82ac262c140ca1dbf91e79442"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "55533787c0b19035e66972d4e486df48b64a10c83638113dd8cb052ec9600557"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "74e63da548f7dca59aa511e89744b745a7ca1b801139e6f076ea197b2820295d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "d58914fcab41916bb2374074797f8e4c1c306e98ee760068f2b1b7131a21f67b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "b0cbb9aef15803e75db1dbe3dd0f2b204618b99aa1340801b08170a3c33e343e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-lang-chinese/01.webp",
+      "status": 200,
+      "sha256": "01d9d8db98fa19af4971b31d47a3d8bbe3fbae20ba81b75314af70890894e553"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-service/01.webp",
+      "status": 200,
+      "sha256": "c38b481180e321bc84460e3f11be16fd17bbcb63faebcf51c181f2f1800604cc"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-service/01.webp",
+      "status": 200,
+      "sha256": "e2b2cc9ecf4358d0ca5406b97d9dae0bcf526f5fbb8c5376fb6bf35c5e924305"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-service/01.webp",
+      "status": 200,
+      "sha256": "4890ec0bcf2121c5a8a6a724bd17484b7fec53f95bc89caedd1e7ec3aba35052"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-service/01.webp",
+      "status": 200,
+      "sha256": "b05d9bd78929d24b3e8c27858cfe0dfadb808bb67e4d0681faf3ba15d8c19ff8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-service/01.webp",
+      "status": 200,
+      "sha256": "de3e495a268ae5e50ca40a4fada0cfc20909c62b589c88db68c0e54dfd83e906"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-service/01.webp",
+      "status": 200,
+      "sha256": "325b26fffc2591b8de9738ca28559dbbe982d5ec1628993e3e74add36cdfcc36"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "1386bb40a42d3999b27f8c650ff4825f5f01a9b6465c533f7bbd9fdd2d24dd0b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "93d6112c8aad63b16ca129a4fa8f7526a022f2042fe92667db4acfa8bbe3e804"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "7e933364c2c6cbcd1a9d119f2f21e9a488b98ec117bcd8cbacfa10ff0328bc49"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "b282bbe04aaece0aa92caac3d778f5f472f58f7513a643a76d61648f4c2ed8ba"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "40c80c9157e05ce0cb35c6352ad1230e3b41c12a441e0dcea27563a3f201edaf"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "91b3991113ab7c32f99dfb307a58a8c99cc0c14f72ab56421213f782af9faedf"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "3c1e926960de27e1dffd092fe3455388d3db6fd29137ba18fbbafd20bc4cdcdf"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "4fc758c0cd16a4815345cfb6ba54b9862f6a2e8540934ef2522e705ab3667fbd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "bf64f18b94c6bec2c6001a2c4abf8bea686c481bb2da35d17a53b35c18fe1af7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "f45325c089836086f8ef8e8a95d4f028ee03eda7cee4a8bb080f774294aadcf8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "fae4cf87af963a63f0ed3e4e8d969d00d1ab5ca09c9fed663340f1721acf2e94"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "67ccf304e9f6cec1f15b3fe656ce81b81d1755f469ce5bb7a4dbd44d12e50b93"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "59f177b7913889f7023481040b2cfbfeff18b5d8a34cd19b86267f22f2576c3e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "38b612ebd38b9defe7c8b4c9fbe2b5cb65ecff7fd0746c449bcc14b52d839d03"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "7e880667206244769119baa71d8b84931b2f554ccf76eee13401f422f2a6417b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "a3b2734f8f8d71828131c39085e791d001aedc25143f9638e510e5d66f6fcfce"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "14f702b0ac7e31548b337de0650b4abbf69e8f8fa3af8aedccb8ff12310bbd42"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "85bbac6d496c7b409c1109d24a74e859aa71c0f0809f28619335c5e0870a848a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "4062af4435c1c29c745880b71dc1bae221545394c314d7e16b37531f86c6c062"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "85a40424e433e7c728561fae28fd5c29a533a87c1ebdeabbbd06931acee805f9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "aedd609c9216d8966bfbf44772930a4384b3464388e2717f00711cd73206c854"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "6c9e8c07323595be06ce648a7109ba3f248d65b40ae905cbb0d29075ba75dd39"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-vietnamese/01.webp",
+      "status": 200,
+      "sha256": "be47156dad43bc26cc8c0c976bb2d6bbe0de961a7f20874f40b7f3a6e9e04a70"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "12d6f4917eec7cb75ae96bc67c616dd2cc628663ff90879bf0b2f21d4f2c05e0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "676d1399efab31074be6c59a4cf4310eac5bfbd6ff557955060f9d52edc77539"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "8c430c6bf05a23d16206a6794af05ac56413d91eb74ef65c00dc316f8ac5de4a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "fc5173b38e4bb8726d793b533d55d7ff248a1b27fee9b3fb815fbdd9d71c1bc3"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "d38db30f5af0c14cda57b31853940efe9e7efc3f708da7b721ad47af19ab66df"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "62631285c7caf14e0a8ef86c7c01664975ff75118c51a190641dc47fd4bf3e33"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "11b786c4103d9731e720b8e6973d24cb30cbf1479c3a3797ea646e330988ba05"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "5dc0252ac52d8a15eeb546b26610032d4a82cf2db186d21adaf03f8b24c39348"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "3933d78196469199c05c04cd5f7aea66b49acb92d5dafddd1253e0f297099f66"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "a5663456184199af6410ebba4c055608ac940b5f0b7b8cbde49f7cde16e1dea8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "e4b5bd02ece7565ed8663e3481193d4341ae94df1304bdefd24d6ba2c0eea63d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "ac9c6164195f9c9b285f7d1aeb31f8be65ec48a7ec6a46d269f5c780a93990cd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "f2ac9d044c26fb4e74cb580e738050fb188344d737d8b52f4478d09d1b4d9913"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "e98ea9b1507b8c29bef0f9a51ce57f3fa2b08447074f3541583d446299f9df33"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "cbffe2d58077f1d33c5d67e542bceec2fdf8dc9ca1a48b6cac7f054332e8d66d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "6cd6be59f6b40f1ababa33d39fc476ba2ea01352b6bf086c1663a8dcedaa1cdf"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "a67d56f952e1de8e075ed6002915d7f28b917ee33172256d7773491d65863339"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "732911326e5bf997c9e656dcc53d4484771085eefff1dc2501ff9e304d5e41c0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "7ad650fbe8631793f9d829b5e5716cc82c8ca57c09259d430806b070c59327d9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "dff6aa0ac53dfcccc47b0ea987ac6c7f3a4ff02e4d38d71df0a032a86aa6e4fc"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "130e7232d430f9184088d8f912170093c1ef6d100417a19beb248c8e8b15b97e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "37ce746742852ff1e9f9676b36d9ce6631653ef8d05ee0673dfb1fed4018aa56"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "910f6524aa075875ea55f33c0be5605097a93544a83c17549f1bc6c321ff08df"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "0e3585d7082a8991f92ae8ba11656d9ece281f076229ea4d33be07f96216fce5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "5adf87306b646494abeacd3efe75c4abb888cb3f8955aa94b0e4c98ec0896880"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-voc-commerce/01.webp",
+      "status": 200,
+      "sha256": "382b8f0d201af7cf75daaa3a76deae019d3ec324a8c12dad10bca6f2f5dc2387"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "a90bdc184e5e6af82b3e1d0616ec9dc3bf051778adadad7e5d188359212cf1e6"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "a6dad636bbdc2dab5053d3ba85bb83ccc1578c67aa1eb2ff41cf85446fb6a749"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "eb74324d243070f4ad0366ed452b20dcb290ce0ba4e571499d3274eda6e77952"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "f305c4a559144b324edfe2d340684daae25f6482cb30232218fcd3a95cf059f7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "2eb00950c8a2ac0b30286e3a97538b8f334f9d64a42b1ccc88f4de0452c603f5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "1fb7be1347f08888d6f4682aab9db079af427346faa5739bcc9cc0f99a60d5ae"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "26b0a63b32d6bfef194f2efc9938f4e7e92dbb8d5e7a357ad4df3ce780308fe0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "a8fdfebe0ef24e8e1e2dbf297309a08853616b40a8fbafb255e8e40c8c62b559"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "f6fe74aab5833f2e3384c591b35c77f987bc2a69e7fb28d3ba4dd82f62730e4d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "506c5e729ffb857f54b50d6ec5c7ade9e48d74c95ec99452482c2e7178734745"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "a33b758c7b499cf6240ff796ec35df2d0cc1098553d831f674f553798e460b1f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "05cdd06306d8c9e73f60f6166bda475862dbc600500303e0816d28a0cd6485f4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "23694ac2f0cf049b35a6726afefb3b9e9496ec95c8c089653a508dab95763ca3"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "2b9eced289e8b2bde994f870ec96a3865d056030d91e49917e1713394d4521e3"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "9c135aaa873f2a38ca465c9f52a056f51850a94b8c51f746f9002f41910a1fe8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "6d988b54ff38c583c902894583cf7aa2218d8c807ee9a380a4412c58bba43269"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "1a57d265302b5c3351e682657557fdf46f55ad14f0108a2c4d36b476ab390141"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "b57163317173404edd58315224073bdc1899572ba464e44e4145050811329d0f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "254aa98a5e0277946d3eaea90a535f50a58518d924d952fd3ab6c5683727fa44"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "e67bc90d5efaa2e7cc157d5bde3563ea3219d971eb7f8422e4261c199bfd8a1c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "15fe23949fe96d9da7a18a77321fb4a79e3d90771db0efbd1c056f790fbf5eae"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "5073ccf270655c4ac86ba2207299fd1e44563af7c0b5889480027f9b511bd202"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "c2149e613f937fcc3329cb07d830fb9de429a05722ade6625cebe4be39371127"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "16822e6eeef8c8450af1b5df808d2bc8dc8e3544dbfc543a5c6874b9be168811"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "d11c11c86001740d7492e2429c597a88a0ccbacf777183e6e4cd5e22f7fd6266"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-voc-agriculture-tech/01.webp",
+      "status": 200,
+      "sha256": "7dc7753be890ce5153c0862fd36d5ca686322bc9780db8512e5cb8797ba68315"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-drafting/01.webp",
+      "status": 200,
+      "sha256": "39f8985a1211c809e9273609a94570175f87b7ddcfaa99e7e037b8fe2e453f5d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-drafting/01.webp",
+      "status": 200,
+      "sha256": "1c4c01486b86f46d40842bb92f1511645a717e3551c82f5b3f7387ac0e38c8a8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-drafting/01.webp",
+      "status": 200,
+      "sha256": "5cc0b5bed055bab8282c7c24025b0140b188b6bad7c2bdba344356b3f6adf499"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-drafting/01.webp",
+      "status": 200,
+      "sha256": "a8eca9cbdb5fc279eb1d94798acbfcbd421a755ecc242d601afa8fa346dad45c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-drafting/01.webp",
+      "status": 200,
+      "sha256": "b0c9f7a783bae76068ffb2449c32a4336f03c6fe70617857c49a491f4fd48c2a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-drafting/01.webp",
+      "status": 200,
+      "sha256": "700cc95cb48d1273f051c62c3b4a38642ec5305cf2474293e6c9cd1ce1a7fb88"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "6d868c3998c357a9b960c568b863ee18a4898fcc52fe1471701b470d34917df8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "23f7ad5ecd9aa61c761283e8df6b61f3c2cf9aa06c68cbf99307acc7bf0070be"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "5fc14d679ccc192f56e3139f926c397bfb66cc0f21a231799039b471611a7916"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "c0bf8b903d79ad5d33c549d98b7811af6a29bdabc5269183e5e783e59ec8c47e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "067b5afb46394e0b3d716b872c50412b34b4de2ae63668b7d0eaf25361c625f0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "a2f7c91b9ba1d3b4365a439ae699ff5818b5678b31084c78e3af0548548fb1cc"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "791129b9c2ceefc215b8ed9a01d5f973d91eb406bac9076fc419293d30f274f2"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "3529c52bd8113733d9be19762b6985c543a9079c5b3a2a9b20a2e73cc5f7fad0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "f7495208f92dae02ae90c8e3b9aa4138bf643a157ea083915aa1caa4aafc004b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "17fa9e0f81badc4baa05c7971a068be33be081b50cfa03d0337b82eb6cfc02df"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "fc7c6ee3245e0bc9336a6ea7dd985e1a02f26e4126ee8533b3a5998fa9a53f4b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "e1064488cf833370c3b463e9d0c078cb4f005c230a67a2c9f7514f85235ab71b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "4f07c55ad760be2971a1f1a623d7d7c3851f53f36b96286581b4ba0b8f3b2d46"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "1bb719715a84d2b71ff98118cc5752dbf5c15702f6c1092ccfbc892db166d81c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "281768fcb526c867a5fb8c49f2554d957a9f3928e1c514c263266020e39d2746"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "4278f37d29b8bbc85a23475385557ce474a0e095918c805832f38d403fea0166"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "1b3d34637601fb14a06898d115c5efc0f0c8b3531c7abdcf279ef3cfbeb8a3c9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "9d9536446037ef594e1958baef1fd8c82c5b47f906bbbab3a80d79e7b1039c6e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "7a72f91380a314bbb012bb3188af415d2da2ea82296005b00d2f1958bbda8662"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "06eaa03f912284d1cdd598c4dfdd3231dccf7165ce30439454fc3abe22a11d02"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "b0822beba1fda47b6ed30f12b6dabc2e7887768819c05c5c27ffe0740e61e237"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "a483b6d5ca6c7faef78f5e4cb57862d87d3320fc70c312d7fb9e5fc8a867e247"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "574cd5e1b64a1316f5f307097b77a66e6029c9c693d175280c7cbf125d256670"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "dc8281d75be6b6b2e254fe642f1a8471ed625046ed1d904bae1c6a88554affdd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "c34f398cfff20ee5edab5046afd0d4c048303ed2a05402bed23bb3a4080593f3"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "33ecb73f42ef41699bfdb89101535ab51a502a13d36995db6ef606a7a32f07f0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-lang-spanish/01.webp",
+      "status": 200,
+      "sha256": "0b4975b6dc0a88576a6cfa075d655a3fa099e4fa4d968abea917a22ef6c2affa"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "91816e38ae1d0809cd45a91c0a8dfbbb207f8a779f08215b7a367cdd66bace0b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "8183a41c300b38227890ccf57f3df6cebb8e1965a90b9dc888c6a9f3061a51e5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "8cf55eede30bf6dcc263424259047811878a62060d93a37b49e318b0becd9296"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "ba89ac442da20dcbe5d57a41d1d7ca532e7fb58d792c63aa9d77fa47ffc12058"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "47e98b7f5a3f9af0add4ffb32f2f8b5382337c0007b466ca56ddf755a5cc6774"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "8fd556f4c161e5b827f0b82e98458165b9c7618dfcc3bd69ae4a99f277309f19"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "8ecf9d48a3315aefe2c998782dabd6cc209d240cf59f51bbd7fd8565b1d3d858"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "855cd70d93cf114d912d4729ed6818a8d7a6354e03e28604ba21b041dfd49268"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "72608649ee985c1b442aff3d7b8466d5829b263200e7fd5b234ef52291c4cf99"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "2f58331b6aba3dd825957c05a9cbda3d063ee95c4d4c61f313dd7990dcd8f090"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "262deead279ce896cb535f28899f07a949e51337b4eeb2c3acac2e24b131370f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "423c2aa8803dec846fb57502fce48c9401eb6e3dc5e8602f3b2c5cdacf3f8eda"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "434d3ac67a4f1f7f759b14b0691cce26485c1685dd2ef9d3ef63356338a87469"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "3bd66f0daedb884e45b8b587fac4ece4277409103634a65dc8cbe7b7b5cd2196"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "2717269dbcaf0e5ecf4db77c6ff5015f7b7251da1b26d899d53034690dcd8acd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "d78f8d47d838ac6909458f0b0400bc1ff9888f5aecf268494504a1e8c2a423bd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "c5fbe780f050e7c5af010adaf96bb27a541541f5a3a34d81d129e3707d38c161"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "a619259ce850bd79c409fa77c4d7efa76faa515776285289151d1370248e3e69"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "fc602cc3c5b2e18a7ab8321fe6089f525cf1a3e0c9a074cd551b148174948c8b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "80e3fac9fd0f598535294d24e7efcc680916f45aa37f012f0e1085c08f1477a2"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "573ee29f7367a68e45ca85952a35df97ad0f2bb08a45497656447487ae073db0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "94c49c50eb57926bca0d4921ef468285d9ee1da56b50148b4d8ce80691173fa9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "ed40bd9f8b8e6b2fbb22f04a74a633422f0d195b06fe523bfab8dff770f2fb85"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "45e8fc8da739dc05e0cdd90a2385bb83ea5ba5123561c17eb94b549c62e960ed"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "49e35f7c8c178cc16573332df43d065352e99c0e9d7c023250ad8b87f9c7c218"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-voc-industry/01.webp",
+      "status": 200,
+      "sha256": "a497391f4f3167e4362532dbafdaee1b76783417c11b43221ae2b1657fad6841"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-voc-career/01.webp",
+      "status": 200,
+      "sha256": "b4faf71db77231a5ff9ccbc47383a9712531433bc04ce57c4b2c257519ed05c8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-voc-career/01.webp",
+      "status": 200,
+      "sha256": "b62ee07d374ada4ee87376d1fadc1982914360f84b5689ceb052cdeb00fe6769"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-voc-career/01.webp",
+      "status": 200,
+      "sha256": "9fee70dd5fc9a8a207213c8232e43748b07aed45272a80c609ff016aaa93d34b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-voc-career/01.webp",
+      "status": 200,
+      "sha256": "063a8942d33e43f179b80fc78e7aea0775faf12fe7c8c22df3976168016ccd7d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-voc-career/01.webp",
+      "status": 200,
+      "sha256": "4eb72b8c34865655ac4677d8375ecd44693980aee772c991550ad4be6d682ecd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-voc-career/01.webp",
+      "status": 200,
+      "sha256": "d2b79811f0a1ba27b99286bf4cc007f366e2cc97d240a28fd75a9cd398a06bee"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-voc-career/01.webp",
+      "status": 200,
+      "sha256": "0ee3d5e3db77e50e6be40b96fc5bcdd9cdb3c7984fc72d0bda672ae28f20a5f2"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-voc-career/01.webp",
+      "status": 200,
+      "sha256": "eb21238f5f3796e476f1f4d38e9cf0cf5b1ede5704dc41c620ddb0f00d6a1839"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-voc-career/01.webp",
+      "status": 200,
+      "sha256": "63c6ae44217df426fa91c12085bb242b5a3cd5396a3011b6fb6e7a748f73eb24"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-voc-career/01.webp",
+      "status": 200,
+      "sha256": "ab7ed868c920ff36136409ba1af05493d7ac559949761a10f89887501f93b7b8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-voc-career/01.webp",
+      "status": 200,
+      "sha256": "1ae3b08e0534db1aba2f3b61f7bb24d6fe383839f1f1bc8c0432cc0ccca26016"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-voc-career/01.webp",
+      "status": 200,
+      "sha256": "346d39c31c9b39b4998ff4b22bf58017364f72bb5eaa2357541d7a66882d8c23"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-voc-career/01.webp",
+      "status": 200,
+      "sha256": "a6725c54c5a7fe55a9c00345b81ec0120d6f9855b14cc228f3247a51ee1fad62"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-voc-career/01.webp",
+      "status": 200,
+      "sha256": "9c83e691f03b0c5d6e8b91845fd59097a78c1377bc3e546b5daf6ffbaa860cf1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-voc-career/01.webp",
+      "status": 200,
+      "sha256": "9a5035c5763cc28c772ec2f28c1b9f3be462b21d4d9e13430772766169533ac5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-voc-career/01.webp",
+      "status": 200,
+      "sha256": "75aa5eefad185aa78ae2c665da2ab041916ec8ef291327e3eb2c6556e9a55f3a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-voc-career/01.webp",
+      "status": 200,
+      "sha256": "9c8b2844b2eec50bb3647593e74c7868c4d1bd450e32d8a3bd4da158a7f92c28"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-voc-career/01.webp",
+      "status": 200,
+      "sha256": "008b2b13153b9fe8c48b47e4d4cb3065ca996d7d840d6558ce59fe4d955656d5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-voc-career/01.webp",
+      "status": 200,
+      "sha256": "e611c6b8e378510f0eaae13dd78333109217f6b6dc3d363e517ae4ce16cf09ae"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-voc-career/01.webp",
+      "status": 200,
+      "sha256": "d6158e0609fd44ac0c67905cf2287855036c46febf02d5eff8f48f9a74188c55"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-voc-career/01.webp",
+      "status": 200,
+      "sha256": "eec544842e8823c7222e0c2bf7c41b700624e4476ad6ba27df67c28239e110b0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "48f6d325157a3318a7fe5f39a94822dc450301e98d7d123dc0efdd8d73296e5d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "c0d913635c9d9f9a7c363574010587094b97a1e833cfe60b1f974e709bbed200"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "cf2265ac9d2e7c7bd5702f8bd9897c9ca88b6abe5a2463a3972657331b97e70e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "a0d72a381b622751c52d427b153d623fc5f64431aba68b4f7ca1d0a41cadd876"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "7db0c5eab51dfccfb7ac9bc1b07f130935cb38470b3650a160f1dd8bbc5a43bc"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "577340d778bd344b287692add2e056c3e39ef29a73b91d57dc7776fc1a7bd40f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "4cb0707ad185c0bc2be706337cc777fee88446a9159a32e1d10712f41f649085"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "449403c06da498fa337d80599e80f08bae9ab4d1266478d939b61a35f54f0bae"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "b5cef38ae3f9915637b00731eb44280f8b2254bf1b1a78a4f34fe5b70974722a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "be18b2ad2f2d756e52dd61c723f134f8096a7ceec9f21859316dd91b29cc5e3b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "1d506c50d31c741a9e234b1d32c004d19faa6ed59ed97186b7acc50d02b28c9a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "b4c2fded64db91fb9afb67a4ede1e99090782289b07e763e9113df6888a11225"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "05a4956385b1d51e301fc38756a8ccc1f95cb4c7a331c0af5b8f44a86a64d402"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "39254c16e28b9df08f80cfda0905122fea8f55cf87a49be53f8eaa2cc3150b43"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "3a68ec33b04135fcfcfeba79557e61edd9ac89fd2037ea8239db298ed22220b8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "ebf4b829c8e8eef4ad0092de79613830b4dd3c6fc6a12f554936283d21f2a296"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "2c47817f77e8aecda0e26625b4944416e8520726742d674d2256738f9557082a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "c323c1abf3248d3180535be34fcff72167237dfd349b30680596bbceecbe5e8e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "9be51f1313be7a1531d0f59f668ca90a49771a37006f23d5d4987be99a509e19"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "969fd293074f1d1c42884c1a4875ebf439c3c8493a00882a18b798ae41e87140"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "38b4f2b4d364b9212d77022c1313f8f1b6f895e97df8df7134b6ef69eb484fe3"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "9d3f0427681c0dc348e4acf82b0e4ed74d22a75601aa67339c3526d387420f02"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "9d7f0e30fbf3a35f9b44b3c0a78cedb52482eed6a06d07e8bd8d74e5914ca5df"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "bbe750398edcc88460bf5eb7525c0c6d1313d8c5d591cfd5680fca1721a2dca2"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "f94e96a95aad8f690a3d4a71a17210d09b7b32ff36343051abee011372078f40"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "5adb47776d95dd8bde6d4c3316f932ffd16aeb4ab70ad5b35df5d2e9a103bc4e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-lang-russian/01.webp",
+      "status": 200,
+      "sha256": "8bb322d49028b77e6a7d478dacb9fc0d57293355af5ceebb2a39c6ba41fe0adf"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-voc-human/01.webp",
+      "status": 200,
+      "sha256": "11d4c22cbd6aa09332051398681524d5e7ed8b48836f723269b6d7970f8b64d7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-voc-human/01.webp",
+      "status": 200,
+      "sha256": "f3cbff5dd55830c3521fae7309ffc6e52675a787400fcf60bbf1bc0c952f81a4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "d3c955c5adfa91b9fae91786c5fe34dcb9cbd06f38c327bab98dedb9014f19d3"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "59acb591085ce593bd3090e562efedac7f1fffe0c64bbf61c172253b572a17b4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-human/01.webp",
+      "status": 200,
+      "sha256": "72b94fbd1380d332279d52b2c613e3fa8b596b290ee377c8cc3924d2d360f102"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "6909702200275ba800b641bc0c9e3bea01d8339caf043a8eab50cb8c4ca4bffc"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "178af6a0eaf10a33dbcb7f53e654e49e4f80f5c48714ca24fbbbafbdf9bd2e35"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-human/01.webp",
+      "status": 200,
+      "sha256": "bed07e96c84ced8e5842c978bee6c9e1b903456a5e59fcfbaff0cfe0ccbeb583"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "64b36112b41ec14737e495c2efa619591ae5519b35dbc8c2deb5ba77ae337bef"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "80d66b581f720eea899af6776bc14e164e3ae156b072d6b925626dcc2964bd5f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-voc-human/01.webp",
+      "status": 200,
+      "sha256": "a4eba715f4de973fdcdc3e621d8dd770f0be5d4173defd98515aeda43a318ace"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "d47489886ca8ce5d9547ab69b8d25d3ab64776958e313c7a61a6047d8a962987"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "ed23dd0f3582e76d9ae96bcdec887643f85c1ea8db5cf07bc6037f8fd7fb3763"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-voc-human/01.webp",
+      "status": 200,
+      "sha256": "efd4438868161008392fa6eaf359559f4fd58d4bf6ac13f5389310734ff2c4d5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "104d68e3dbbe7745681164d8bf670619e554abe4c456ef73df610ba79d333f21"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "079063056d493d20b47d36c1c6e09e717635f5daaa12db4896486a6d0e117745"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-voc-human/01.webp",
+      "status": 200,
+      "sha256": "accab8aa098ce1dee8a4bc0ceb2bcf1c73d69494555d0142ba8f018de3c163fe"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "26aa81649378138a969443187faf17fb7041cff84ac0030be30d4f00b36cc049"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "d4f4b3108b71faff60e8699de2634c1aae778a1e5aae06eb4206df583f733550"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-voc-human/01.webp",
+      "status": 200,
+      "sha256": "d883dd7181d419639f49d28bd6969ab3e09f1294646931064e9b90dfe9e75fcb"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "30c3b45c41dba75a77d3422b23c634acb3268b84814cf63b3edf98ac5e4959ed"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "21658c08dd11335889f664f4be52ec3d6ff45e65b80bb24a9740a9aa2364d0cf"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-voc-human/01.webp",
+      "status": 200,
+      "sha256": "f3bf3f85136a0634846c21251fd5870893a5e5b7e807fb189b19e0b898ef1f08"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-voc-human/01.webp",
+      "status": 200,
+      "sha256": "6b95dcf47df6d426793733d514f0a38fb795d87adad6cc38203e6d28ee892561"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-voc-human/01.webp",
+      "status": 200,
+      "sha256": "0e9bdd38c375c09642f164f52f6a555947d75e885e4b67e40cd1b75c5c610f7a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-voc-human/01.webp",
+      "status": 200,
+      "sha256": "ace582a285658540fc7a7030cc653087cc8087d444f8829350f80adc24c5a244"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-lang-german/01.webp",
+      "status": 200,
+      "sha256": "edae1f51b4ec58fb6fff148fa51489b7120d3c3e7d5c19299b6819b0913ef39b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-lang-german/01.webp",
+      "status": 200,
+      "sha256": "4afcb6baa9a92c847d7fd3d6065a6568ea26e2293a8ee3675a899531d194063a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-lang-german/01.webp",
+      "status": 200,
+      "sha256": "23a89ea1c32400b6d4a99d9939058f7619f337861d10ea6142619b444045cdcc"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "80c64547cc4cd108aaf6db7fe6826cde0681e10f576a3861166d5cd91bec6450"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "6bed61468d05b823149fa0fd817baba533420e30370489fcce752cb9b080483a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-german/01.webp",
+      "status": 200,
+      "sha256": "e517b22d5f74624e08cbb1f5e8476a80a4be730f90bbbb0b69655f62d058fed5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "604b9e9f8627fe43542af830f4c0c970f7e5ecc888b6bac6edde8367267312e7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "026c7ebd87cdc1e6379b2a17bda98ebdf99866e0975f5c96a9bb9e813339c94b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-german/01.webp",
+      "status": 200,
+      "sha256": "393b8931265a573881b501e161b7722fcca559aa55051e52d7d20f8311ab5cd5"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "e68254990408de6445c04aafd62d9b404e40e2d6deed05e5489161d5ae068960"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "bbdcdb3bc92c07cef049f0f871db18b16c176152f0ae0dbf0c1da7dfb29e69aa"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-german/01.webp",
+      "status": 200,
+      "sha256": "0a0bd9d61b5dfd65ce9be13d44c31774a5bab9ee825ab6a84122e20c10c6eb7d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "c4d9ba12fb1693d87ea1f8f74c5ea7ab3da649780531a7f2cd058934760e0c27"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "3be505306fe8718b6d84e6d9bd7e55c6bceeeeba42f911b619d94de734ecb005"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-german/01.webp",
+      "status": 200,
+      "sha256": "205921d4f962408c5fbf02319c37357ce51afca22070923d8303dd758d676d7d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "6fcb7e66bc43239d2e485b9036bebd7ce88e8d147af6d96d1985f90a116db43d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "4f810265cc3985328cd8e2d9f720e4abca44fdb0301c4d31997e26a536fc5306"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-german/01.webp",
+      "status": 200,
+      "sha256": "d42d798190f3420442125e9867dd9b9c2a9e7dda98b97fcbfe8fb16f10fd8aa8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "c28760455500864e731b887876b1aba4e9c3532e2bc32a4c8fd129bd0f669b67"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "1532b474e22dd0f848c70316d8fc8ee5786a941119022eb6c1687739f27b54b2"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-german/01.webp",
+      "status": 200,
+      "sha256": "0a152ecf92a596d17e0a216f100ce3f78f23e177a7f9a6a73ae3f6615a725729"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "f2ff64464c2742bd3681e7a62b9a02101973a4397d6a09c8fba29b8b459a205c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "324428054757fe6460ecbc28e5041ce472882a13d082ae8d434105f8bef86ba6"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-german/01.webp",
+      "status": 200,
+      "sha256": "628a744672fc0a7b3a9f6470c47d37630c329571657e26c62ba1c910457ba70c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-german/01.webp",
+      "status": 200,
+      "sha256": "161a031bc1b5c289e2a43ac73eebdb1a63703f8ce636603e34539a95f51964c8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-german/01.webp",
+      "status": 200,
+      "sha256": "801cf9507210992d17a6daed7444d69674d8b7c179e45df2eef29a50b7beabde"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-lang-german/01.webp",
+      "status": 200,
+      "sha256": "f274503de9cc75087bb2930b16bf801a68d96d0b0aa1fa2cb8a5910d1adbd9c1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-accounting/01.webp",
+      "status": 200,
+      "sha256": "3748bd0cb5ef5b4578afcdd0090186a4c0f5031d50b5a4b5d7ca33789390b032"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-accounting/01.webp",
+      "status": 200,
+      "sha256": "911019f5d19cc1b1c70d3175b130692d369412125d44a4c3fd66790c934755d6"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-accounting/01.webp",
+      "status": 200,
+      "sha256": "6057981f7f789ae9c92dcfdb50daa4f44caea849556b584c6df5d28bdf3eaac0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-accounting/01.webp",
+      "status": 200,
+      "sha256": "dbaa4629fbdaa0c66bbe1eb5578ffaa925982b007dc10d31436443a410ea4cfe"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-accounting/01.webp",
+      "status": 200,
+      "sha256": "c4cb4267de41ca5d782ea21e501dcb5c3cda1f6c6e7f3c9727b9da17b4eba5a0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-accounting/01.webp",
+      "status": 200,
+      "sha256": "32599c120556d12b6402a0fcd1a5a213fefe63900e74371f32f61f0264d0a3af"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-agriculture/01.webp",
+      "status": 200,
+      "sha256": "13d7bdf55a2d49f2011fe6975310ea0021ac734231ebd7e7bc35210479d0dc0b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-agriculture/01.webp",
+      "status": 200,
+      "sha256": "a802b57e2f8d37bc52094e80ba37290e3b4c46504dd118a913bd8b7faa1a3d24"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-agriculture/01.webp",
+      "status": 200,
+      "sha256": "68cd437bc71650783634b08a157694e2efc1566c3678cba4e3eb18d26f680989"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-agriculture/01.webp",
+      "status": 200,
+      "sha256": "d79f0ff369157f8a61b255f4180072a341530f61c2c5048d8aa7008e5bade81b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-agriculture/01.webp",
+      "status": 200,
+      "sha256": "a01ad43fb394fe55b5ac5bce9fc4f46d5dfc7d2935a1d2911cecbb9e572fa7f8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-agriculture/01.webp",
+      "status": 200,
+      "sha256": "0e45d6691ebc728bb77beecc554325e39ae43ca51828ba81f48a38c52382bde1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "3f37b7b9f592188477b35e0725b1e11dd7a8b18dc0205dd1885bae2306c3e133"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "3d75703635c58b942c66081fcfdfe6db2826381ae912978e36039c8307245085"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "0c971e999badd57ebaf0507f75a21879683e7bebe3143aa37ccbfd42cc13e3c2"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "a588cd502f05c4b90ed6a937eb682e623c31bfa6099a73532506a4a1f768997e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "9c15b12c90070c6ed1859cfdd45c1249af7506cc6559c0ad6fff1165c81b1e02"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "e0268fccd2f6eb9f3b5118b63a0a1e0e9a9985f1e1316628e68a69dfb9d1e0ac"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "350fb56effe15c22a12e1b942a7f40672953632bc45e32a8a77f4ec1e79c317b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "2c533bd1a63f6feeaf427efe7bd2b110e31c887c73da7e155c33067143052921"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "1f9d9e27e381780b55d6c9dc4cd695b5777e285d732779f3658a3b0b9466dbbd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "2d6e30b7f73e5e2305686eab5ec728d3592231c9e7ecc71cd87a8a9985fdd85c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "9b5db098f5fd71c0718070b64a48993a15b59e46875e8c189f047ce84326fb4c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "3b99d87ff6d38deb33963051b336627cce717a62daa421e569bbb6a6ca5a92dc"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "e2016a4829c3aa39e99325a937b8f9596ded5e3d12c3937875feaa4511f22b7e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "250e4b6657911b491b92cbb15a3f8bfd656e80d9d5480c56aea479c8c13f99e1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "4ce01ee8623a1af8549278e9facdd27f0da6734549a24d94d470ec6ed925ec18"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "d32b6b2e8a547b8cb8ee1c58691bcbc42e1135f93e2c57a8a36646fb6067a4fa"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "8d3a9acecbc424d15d00cf971cdfdd7c1e21a8bdf59230fb51f8d726e5c10c68"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "a95d4b4f03b84a6abc6338ab638859a957e13674a44d17ed9800e7e9c666ddf4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "052f4806619970fc1d411a4e89d920f49bf2c0971aacf9430984755bbdb3d3b2"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "20982fe3d16a40c7374cdd2a7d1c50469d55493db4c8e09fb45e8a4049b95a3d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "5c40252c91f3ad464005d401e1e9f52ffc234341ce2e554e61951b8537fad735"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "ae7f4019c2fc7e64e1b057ad97c6804438b49cde294ac82b824edac5e9e0f475"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-arabic/01.webp",
+      "status": 200,
+      "sha256": "fc2711f34290f52000ed9bb0acc5110379ec39cf5c473b272c2e9d66a49c4ae4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-lang-french/01.webp",
+      "status": 200,
+      "sha256": "29de4256807f009bae554d57a879ce9420e52bc5c51d0c9e7fc21377ae1640f0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-lang-french/01.webp",
+      "status": 200,
+      "sha256": "a7e70a6d39d03acf1a2ee5fa8fb893e2d5b9e5c9525607f0a6c86c3d7cc2376d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-lang-french/01.webp",
+      "status": 200,
+      "sha256": "cf37b9cd1f44f01b819e9f19ee6571efc9b29461d7fcb7d174a1c022b15d11ab"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "b59ee74050e9e0d7beb18e8646b35aeb98b74c379a8d97c3344aad3e8f1aed1b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "d29c4fc884fea8785f6dd7960a8539847cdefeceaa7cb9f3261739d00924680c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-french/01.webp",
+      "status": 200,
+      "sha256": "11a578d2a2068d1422384ae1dfea9790cf45eea5bd94d356cee97b6b7d42b45c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "a58a861b0942166c691ac254d0f47c326190fbd4a721926e004345af9951bbea"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "13e62545f480a254d87784552a1360987dc419892660ca0538b1cfabed283c01"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-french/01.webp",
+      "status": 200,
+      "sha256": "591d507a4160a31935289fcf43b1783db300e8d74f8c582ed09fea05834ea78a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "268a157539b80dd257eb5f8a31476ceb41a80e788952636bb39e8353cbc8ed37"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "8b8f6417d86448f56c1e4c98fa795777a34b8852f361e9a9c3fd5941217cd34c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-french/01.webp",
+      "status": 200,
+      "sha256": "b51ae598712ed1c5b217658c66f330e02ebceff904d4fde71015e347031b2a3e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "0b8dbe927a58efa1e7dce2027ec8963491d53232505fae31ba4639ee16faf472"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "71434319b086fce429e8bccbdeeb9e7cc9f9ec6b065e3729492d464d79313044"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-french/01.webp",
+      "status": 200,
+      "sha256": "308d6fcf86193199f3c105eb40ef33dfff3999be71ddd2eb669e0e2531ff1241"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "d3d7e6fed3c2d16d101a4189750e9b5b0c8196ccca079bc4c2ec23d5979bebd3"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "a2263978a95e175c533f17d383b5bf691fc2cf8e819ce5effe629d6149d6705c"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-french/01.webp",
+      "status": 200,
+      "sha256": "cf68428418292ce30ed33f9d24be74b2293206bf41dea3c518ba85c85ade7ebd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "79330a5042c7194b6d965efe408de08a353cf0f40f10f4b8ac059fe488c09d81"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "2895552480c3a9a31a340af12f725c1d0d2fd4092fff558b131d5817abc92e2d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-french/01.webp",
+      "status": 200,
+      "sha256": "e6be1c3bbb020ae4b2f310ba927d2f29c4381cdf47b22085d176e2ac42a0b2c4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "89a310c8ac60e33832732921031dab9d03039b9cdb971aedf65f47e53aa68424"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "d2117ddc606ae1e86a4e41a1ea3ab91d65608a4db3a3321ac40f3a2ae672b159"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-french/01.webp",
+      "status": 200,
+      "sha256": "d20475abf253f4f07ce6ec48ad97af4fd9c123842fe94060cbdc28007e627e93"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-french/01.webp",
+      "status": 200,
+      "sha256": "a25977dc28e565018e54de7baab347b4bb6fd73941961254703706115cd4bf12"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-french/01.webp",
+      "status": 200,
+      "sha256": "b40cd112adf98b74f577932e2f7f977ac3f04fc05a4d15596e63a95abacb984f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-lang-french/01.webp",
+      "status": 200,
+      "sha256": "df5d897a8c66ecd92dbccb2292cc5e18c3d184367665f90952c1f2cbcb1f332b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-ocean/01.webp",
+      "status": 200,
+      "sha256": "21c56af9552c5d023741d616855c5950efcb7d4b567b5df0f92b8a16b9410ff6"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-ocean/01.webp",
+      "status": 200,
+      "sha256": "7d65f8fcf14a2c1e63b3262263283a9757fb29504ba2439dc4704c7f82ddec84"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-ocean/01.webp",
+      "status": 200,
+      "sha256": "e202ddfa122d5b30b5180968cf12970f72786f70ef00f60063cc4fc5c08f2b9f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-ocean/01.webp",
+      "status": 200,
+      "sha256": "15d0a0d9504a411815fac898ddd43ef665042f302409e68334171257ce3b682a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-ocean/01.webp",
+      "status": 200,
+      "sha256": "eeaf9bbf219d3a81f672e28d053708f1f374d328715ddd53a726237673623714"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-ocean/01.webp",
+      "status": 200,
+      "sha256": "1ee74139dc7ce962fe0e8cb8228e590e6af00c99b453efda228fdd118a155348"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "16edc4ec72fa4cb131215b1d60282965f36f73385c7e4a081f07ea5a7099542e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "85f4372c2647bc8ae0275972669b07dead95e545f8bd638528613014ca1783ea"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2026-10-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "5e4f932a5fff13e300006994170e651e7dfc61bd4a7f3d2e7d93971c276f480a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "599c150993b0bae59e04981ad4ba8e36c8bb38e88a1eeb1dc72148dab45e2480"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "908c1dd5766cf3a5d9d2e1a0259fbe063306c323bd5d589117f509a62099d399"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "27e27114f38133b2148aa8994fe8e7d4fc3ad7c244c5ebbc0a46a28d1d45cd9a"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "6b4ead4ed295433964f9c862494c2827aeda3abe01c9b98997f03fb1dd4bb810"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "5ae5427a1124333a7ea72d7c091c7f275d8582c5ae3ae783801edc89df5e72b9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "cb7a75364bd1cdc7ac1f4f1f7140243483bd717d84c10958cfc35f855a604a99"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "9d4bd30d6996392dae37f0acaa1fdf7081f0fc0c3ea0b55b95a3c3b228bcbfa1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "281b00ec76bab8bd959bb8282555fef48b4d7f3e154effcc1c52a8e51f83a5cd"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "798fee05c2618c4b144d156dc3887c58ee2530f8f05fc8d95ec035178375f853"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "90d8a72d73ffac877d623538373615923510a7ee4522c82f96445c46a991c402"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "695a146348f1fcec40cc75e7ad417e331bb598cc8f5fd83ba17f8bbe86b69a74"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "5c43d41e0ab50a50d22454863cfb42d4a98e56891ddf3a32e4d3fdb075f438ec"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "844068c541eace30ffcc635d47f92232d669b1971ff1365b659c1691fba37dd8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "4d8f7530d71a300674e7049d745246b257549e8245fcdb40bf600b0bd5ba8bad"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "7138307884ceb71ba3094f62dba218d72daf9f034b0c17ab6c37e4051f6ab5a4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "3fa38ef7aa14bedaee23e225f7086e162fb64bea1dc6a1cbe4ad3171e168095d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "ad215591aedd1d60df7e8b4b406ca679324cb116931a609771c962ac0632bc34"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "4fb42ac96b4a9d00f4dd71d7ed10180fb3a221fe8d5d3d14e7160c75cc66b342"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "fd30cedc2f16c617728d5af251acee0b3b2f7706895ae3d1059d82b89ec85869"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "eb9165e2fee0bf85c20faf0a6e85bb7299f10962385a7d8d980437460930c9e0"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "c056fd7b809c92c6fdd807845468cb1d1bed48097191a6f838564ca3476432ab"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "49cd6024426a0bad479ed0d232a5ecff4de52f0e58b4f8fa512206f090273a79"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "d659d0a004ca11c9e77f2de80334325ae1fca6ae7750f4cbe3b28d5bfbfb569d"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-lang-japanese/01.webp",
+      "status": 200,
+      "sha256": "b8caa088051c841fbd91c770eebfd1336a174af5bcd00aa92e232689545aa1f9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2024-10-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "9dbc7a648ca7fe09f74769a209db9e3c247b3265e86df908f4a94b8962df25e4"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g2-2025-10-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "9e2b16ae1d047f4a4e7aaa7502db8718bbb00463b5df087fb938d0e06f09a4d1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "8eb09902fa77d7b16597bd0a87eb915da58a1fd0279d8018b8aa2c616e315191"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "b2982252dd235bea9a8e6a605f171dfeb6c4d8835c3281f9af6326d0fe468f54"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2020-11-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "8daf33fb4f55e2d67c0893495d6a91cff4b1b9db7f9f4820ea4da670843d4d36"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "88f3867d93a7df36bb31328ad497b429962fecc5d3bb91df116f7f76d9b659f8"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "e8e08ea710dfa6d67fbb29754adf555b06e8c75e3adf0013901baa0eb4dacdb7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2021-11-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "88311ec43c59975ca074d9a5808fd884adfe1abfa1b65b6217e165f462cf10a7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "2cb918c3162cb087e30a8b826373d191d3a43917c4cec2bf9afafa037e219c73"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "a69b0a550674a3dfffca0e905d7944490e3bff2cb923c995b276b635b6f938d1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2022-11-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "e4f7a911592968082d994eb4563a33b88b79f4450ade4142558097aff7a97b38"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "d6f12deeb978aec95b85428a928e31a29f73ebc14ecfd8b9372802f9abd0115e"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "eef8748e7c98a47cf2cc15390ec65d3471aa6e14d43cc348b1d2c90718f6191b"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2023-11-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "e3f89777d3890a8d828b8b55ac27857bc54cb29430f200fdfa6c4bfc5b4406b7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "c4f0ac443ff8e660c5816e4dd4d2d3f468c2aa3844c665e99fe064ead31ad382"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "95015c15882f1e852cca18ce25c055a18c3d29b1dafd93177638a58a54ee8666"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2024-11-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "0aa53c6b2bb68fd819839cda49161cbea4d52a9e6aadc461d0329bee98fc9df1"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "0539846c10dbb1757d61715641d5ba054e8e1f08380092dd98905351e2671639"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "d030f40427857d662a682b90a634738e10290ffaa24f54fd16928b45ad7c5b35"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2025-11-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "ae7308579284d9988801c039ae611d2bd655360ba306c67604dadeb335f533f9"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "4cd31a4c20c178044884de56e0bcf576622dbdc64c4015b80084ec2355689eef"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "85a176f0e2a173a18b5989902581a277d7f7100c885c294700b2ccd44c4f0692"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2026-11-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "61242c6e36728a352675ce482bf7fd5d9d6a62fd0879834be09f14c38a71ac3f"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-06-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "d6635404dfd80dcaf2a27ac57fb832f4ae34c0ff880ecaeb823dbc3729ab3528"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-09-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "48489907177d3a4c772486d07a4e326b1995dd9e39128ee987b52fc9a36d6aa7"
+    },
+    {
+      "path": "/cbt-data/vocational/20261023-v1/images/g3-2027-10-voc-marine/01.webp",
+      "status": 200,
+      "sha256": "f0d05afab5b57a70431615ba55c18a11074ed4b604b78ace208604ad55249d7b"
+    }
+  ]
+}

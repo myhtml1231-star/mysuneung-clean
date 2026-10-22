@@ -1,0 +1,8 @@
+{
+  "forms": 416,
+  "server_side_record_grading": true,
+  "draft_answer_keys_removed": true,
+  "paused_time_preserved": true,
+  "reconstruction_verified": true,
+  "forged_owner_and_invalid_strokes_rejected": true
+}

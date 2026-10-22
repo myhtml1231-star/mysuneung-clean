@@ -1,0 +1,13 @@
+{
+  "local_preview_only": true,
+  "japanese_g3_30_questions_40_minutes": true,
+  "japanese_g2_20_questions_30_minutes": true,
+  "vocational_g2_25_questions_40_minutes_fractional_points": true,
+  "japanese_submit_and_question_grading": true,
+  "outlined_chinese_original_image_preserved": true,
+  "previous_day_paused_draft_restores_question_25_and_987_seconds": true,
+  "account_replay_restores_50_point_score": true,
+  "account_question_deep_link": true,
+  "2020_vocational_custom_3_questions": true,
+  "custom_counts_limited_to_selected_form_inventory": true
+}

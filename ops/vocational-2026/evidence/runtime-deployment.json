@@ -1,0 +1,12 @@
+{
+  "cbt": {
+    "active_version_prefix": "773f8725",
+    "source_sha256": "f84121031e9fd930101074a33b6303bac1eaf8721019fee718edc9ca74b1280f"
+  },
+  "accounts": {
+    "active_version_prefix": "7bccecfb",
+    "source_sha256": "5a66fd9c3cd3cb7ad4b3ddff249d3271061eb396fdd7019eb57659cb02a15634"
+  },
+  "production_complete": false,
+  "updated_at": "2026-10-22T22:46:45.267873+00:00"
+}

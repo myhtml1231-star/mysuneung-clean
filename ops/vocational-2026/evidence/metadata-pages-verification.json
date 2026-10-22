@@ -1,0 +1,12 @@
+{
+  "html_pages": 497,
+  "subject_pages": 416,
+  "round_selectors": 27,
+  "cut_tables": 416,
+  "wrong_rate_rows": 6240,
+  "cbt_source_links": 416,
+  "original_download_links_preserved": true,
+  "original_style_blocks_preserved": true,
+  "all_references_resolve": true,
+  "production_deployed": false
+}

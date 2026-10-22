@@ -1,0 +1,10 @@
+{
+  "representative_forms": 4,
+  "real_worker_api_and_sql_records": true,
+  "login_required": true,
+  "server_regrades_saved_attempts": true,
+  "draft_and_paused_time_restored": true,
+  "annotations_saved": true,
+  "cross_account_replay_denied": true,
+  "answer_banks_and_packs_not_public_via_worker": true
+}
