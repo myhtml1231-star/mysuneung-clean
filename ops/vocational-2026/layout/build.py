@@ -22,6 +22,9 @@ for name in {cut_name(s) for s in rows}:
     text=(SOURCE/name).read_text()
     text=re.sub(r'<section class="notice"><strong>[^<]*체감 난이도.*?</section>','',text,flags=re.S)
     (OUT/name).write_text(text)
+name='cut-g1-2026-10.html'
+text=Path('suneung-work/release/pages',name).read_text()
+(OUT/name).write_text(re.sub(r'<section class="notice"><strong>[^<]*체감 난이도.*?</section>','',text,flags=re.S))
 for name in {difficulty_name(s) for s in rows}:
     text=(SOURCE/name).read_text()
     text=re.sub(r'<p><a href="[^\"]+">문제·정답·해설</a>.*?</p>','',text,flags=re.S)
@@ -126,5 +129,5 @@ worker+='''async function separateStudyPages(response,path,isHome){
 }
 '''
 (ROOT/'admin_base.mjs').write_text(worker)
-(ROOT/'verification.json').write_text(json.dumps({'download_pages':len(rows),'round_selectors':len({s['selector'] for s in rows}),'grade_cut_pages':27,'wrong_rate_pages':27,'difficulty_rank_pages':4,'total_pages':len(list(OUT.glob('*.html'))),'ranks':rank_report},ensure_ascii=False,indent=2))
+(ROOT/'verification.json').write_text(json.dumps({'download_pages':len(rows),'round_selectors':len({s['selector'] for s in rows}),'grade_cut_pages':28,'wrong_rate_pages':27,'difficulty_rank_pages':4,'total_pages':len(list(OUT.glob('*.html'))),'ranks':rank_report},ensure_ascii=False,indent=2))
 print('Prepared',len(list(OUT.glob('*.html'))),'separated pages and plain login navigation')
