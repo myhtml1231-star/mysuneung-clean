@@ -1,0 +1,29 @@
+{
+  "release": "20261022-october-v1",
+  "deployed_at": "2026-10-22T15:01:30.370068+00:00",
+  "workers": [
+    {
+      "worker": "mysuneung-cbt-api",
+      "version": null,
+      "etag": "625e635a11840baa23a9e8e9025c8f81a6bcedc3b65702ac8e82912d101158d1",
+      "modules": {
+        "index.js": "cafcbf8d6e945ce6f2ae506bbc2f5bbe1fa2b508823f3b966f921bf5ecb3a642"
+      },
+      "bindings_preserved": true,
+      "readback_verified": true
+    },
+    {
+      "worker": "mysuneung-accounts",
+      "version": null,
+      "etag": "72cdf52fea9fb2ff18bb62e1f6b7a2f3a06b3e8a422630a80bb7be278e2f644c",
+      "modules": {
+        "preserved_admin_overlay.mjs": "fe5e2a8b48e8759e0494e68ed0f1fa06b164516318503dcbf7f5e68b4a693630",
+        "mysuneung_connect_ui.js": "c5bb0f69cb0f6351eafd7e52ee0c3ee3dfdc372f63ab5227729d378d3a40ded2",
+        "admin_base.mjs": "01dc21900fb0708875cc39b386d21708107717bc8b9404023fd9cc41c2af215e",
+        "index.mjs": "51502bf3082063915a64e2b303679e1088e7d66ac9746536f2391535399b16f2"
+      },
+      "bindings_preserved": true,
+      "readback_verified": true
+    }
+  ]
+}

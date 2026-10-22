@@ -1,0 +1,26 @@
+{
+  "fetched_at": "2026-10-22T13:47:26.633694+00:00",
+  "source_url": "https://www.ebsi.co.kr/ebs/xip/xipt/retrieveSCVBottomSurvey.ajax?nsMenuType=102&bbsId=1000009517&irecord=202610201",
+  "values": [
+    {
+      "label": "매우 어려웠다.",
+      "percent": 32.7
+    },
+    {
+      "label": "약간 어려웠다.",
+      "percent": 46.1
+    },
+    {
+      "label": "보통이었다.",
+      "percent": 15.2
+    },
+    {
+      "label": "약간 쉬웠다.",
+      "percent": 3.4
+    },
+    {
+      "label": "매우 쉬웠다.",
+      "percent": 2.6
+    }
+  ]
+}

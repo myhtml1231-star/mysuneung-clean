@@ -1,0 +1,70 @@
+[
+  {
+    "subject": "biology2",
+    "split_questions": 20
+  },
+  {
+    "subject": "earthscience2",
+    "split_questions": 20
+  },
+  {
+    "subject": "chemistry",
+    "split_questions": 20
+  },
+  {
+    "subject": "worldgeography",
+    "split_questions": 20
+  },
+  {
+    "subject": "ethics",
+    "split_questions": 20
+  },
+  {
+    "subject": "earthscience",
+    "split_questions": 20
+  },
+  {
+    "subject": "economics",
+    "split_questions": 20
+  },
+  {
+    "subject": "politics",
+    "split_questions": 20
+  },
+  {
+    "subject": "ethicslife",
+    "split_questions": 20
+  },
+  {
+    "subject": "eastasianhistory",
+    "split_questions": 20
+  },
+  {
+    "subject": "biology",
+    "split_questions": 20
+  },
+  {
+    "subject": "koreangeography",
+    "split_questions": 20
+  },
+  {
+    "subject": "physics",
+    "split_questions": 20
+  },
+  {
+    "subject": "chemistry2",
+    "split_questions": 20
+  },
+  {
+    "subject": "worldhistory",
+    "split_questions": 20
+  },
+  {
+    "subject": "society",
+    "split_questions": 20
+  },
+  {
+    "subject": "physics2",
+    "split_questions": 20
+  }
+]
