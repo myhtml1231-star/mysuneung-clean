@@ -1,0 +1,414 @@
+[
+  {
+    "page": "26-10-ko.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      45
+    ]
+  },
+  {
+    "page": "26-10-ma.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "26-10-en.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      45
+    ]
+  },
+  {
+    "page": "26-10-hi.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "26-10-sa.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      25
+    ]
+  },
+  {
+    "page": "26-10-sc.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      25
+    ]
+  },
+  {
+    "page": "026-10-ko.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      45
+    ]
+  },
+  {
+    "page": "026-10-ma.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "026-10-영어.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      45
+    ]
+  },
+  {
+    "page": "026-10-hi.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-sa.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      25
+    ]
+  },
+  {
+    "page": "026-10-sc.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      25
+    ]
+  },
+  {
+    "page": "2027-10-언매.html",
+    "panels": 3,
+    "answer_pairs_per_panel": [
+      34,
+      11,
+      11
+    ]
+  },
+  {
+    "page": "2027-10-화작.html",
+    "panels": 3,
+    "answer_pairs_per_panel": [
+      34,
+      11,
+      11
+    ]
+  },
+  {
+    "page": "2027-10-확통.html",
+    "panels": 4,
+    "answer_pairs_per_panel": [
+      22,
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "page": "2027-10-미적.html",
+    "panels": 4,
+    "answer_pairs_per_panel": [
+      22,
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "page": "2027-10-기하.html",
+    "panels": 4,
+    "answer_pairs_per_panel": [
+      22,
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "page": "2027-10-역사.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-영어.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      45
+    ]
+  },
+  {
+    "page": "2027-10-y.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-j.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-k.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-sm.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-s.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-h.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-sa.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-d.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-sj.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-m.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-c.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-l.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-e.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-m2.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-c2.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-l2.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-e2.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-job1.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      25
+    ]
+  },
+  {
+    "page": "026-10-language1.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-language2.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-language3.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-language4.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-language5.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-language6.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "026-10-language7.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-job1.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-job2.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-job3.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-job4.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-job5.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-job6.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      20
+    ]
+  },
+  {
+    "page": "2027-10-language1.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "2027-10-language2.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "2027-10-language3.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "2027-10-language4.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "2027-10-language5.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "2027-10-language6.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  },
+  {
+    "page": "2027-10-language7.html",
+    "panels": 1,
+    "answer_pairs_per_panel": [
+      30
+    ]
+  }
+]
