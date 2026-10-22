@@ -1,10 +1,10 @@
 {
   "download_pages": 416,
   "round_selectors": 27,
-  "grade_cut_pages": 27,
+  "grade_cut_pages": 28,
   "wrong_rate_pages": 27,
   "difficulty_rank_pages": 4,
-  "total_pages": 501,
+  "total_pages": 502,
   "ranks": [
     {
       "grade": 2,
