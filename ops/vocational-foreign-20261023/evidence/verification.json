@@ -1,0 +1,3901 @@
+{
+  "additional_subjects": 395,
+  "vocational": 174,
+  "languages": 221,
+  "additional_rounds": 25,
+  "new_subject_pages": 395,
+  "modified_selectors": 25,
+  "pdf_files": 1185,
+  "style_blocks_preserved": true,
+  "existing_selector_links_preserved": true,
+  "answer_panels_pixel_identical": 395,
+  "native_problem_solution_pdfs_unchanged": 790,
+  "proof_samples": [
+    "024-10-job17078",
+    "024-10-language17065",
+    "2020-6-job178",
+    "2020-6-language195",
+    "2023-6-job140122",
+    "2025-9-language195",
+    "2027-9-language198"
+  ],
+  "checks": [
+    {
+      "page": "024-10-job17078.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-job50620.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-job17049.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-job50622.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-job17054.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-job140110.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-language17058.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-language17059.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-language17060.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-language17061.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-language17062.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-language17063.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "024-10-language17065.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20241015",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-job17078.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-job50620.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-job17049.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-job50622.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-job17054.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-job140110.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-language17058.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-language17059.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-language17060.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-language17061.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-language17062.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-language17063.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "025-10-language17065.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20251014",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job178.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "농업 이해",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job174.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job60005.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job181.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "기초 제도",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job182.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job183.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "회계 원리",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job186.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "해양의 이해",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job60007.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job187.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-job60008.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "생활 서비스 산업의 이해",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language191.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language192.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language193.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language194.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language195.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language196.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language60009.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-6-language198.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20190604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job178.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "농업 이해",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job174.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job60005.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job181.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "기초 제도",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job182.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job183.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "회계 원리",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job186.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "해양의 이해",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job60007.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job187.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-job60008.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "생활 서비스 산업의 이해",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language191.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language192.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language193.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language194.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language195.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language196.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language60009.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-9-language198.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20190904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job178.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "농업 이해",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job174.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job60005.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job181.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "기초 제도",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job182.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job183.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "회계 원리",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job186.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "해양의 이해",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job60007.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job187.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-job60008.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "생활 서비스 산업의 이해",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language191.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language192.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language193.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language194.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language195.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language196.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language60009.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2020-s-language198.html",
+      "native_year_headers": [
+        "2020"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20191114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job178.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "농업 이해",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job174.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job60005.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job181.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "기초 제도",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job182.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job183.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "회계 원리",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job186.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "해양의 이해",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job60007.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job187.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-job60008.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "생활 서비스 산업의 이해",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language191.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language192.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language193.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language194.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language195.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language196.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language60009.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-6-language198.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20200618",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job178.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "농업 이해",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job174.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job60005.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job181.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "기초 제도",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job182.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job183.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "회계 원리",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job186.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "해양의 이해",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job60007.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job187.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-job60008.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "생활 서비스 산업의 이해",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language191.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language192.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language193.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language194.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language195.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language196.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language60009.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-9-language198.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20200916",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job178.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "농업 이해",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job174.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job60005.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job181.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "기초 제도",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job182.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job183.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "회계 원리",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job186.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "해양의 이해",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job60007.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job187.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-job60008.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "생활 서비스 산업의 이해",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language191.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language192.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language193.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language194.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language195.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language196.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language60009.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2021-s-language198.html",
+      "native_year_headers": [
+        "2021"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20201203",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-job174.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-job60005.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-job182.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-job60007.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-job187.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-job140122.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language191.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language192.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language193.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language194.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language195.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language196.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language60009.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-6-language198.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20210603",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-job174.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-job60005.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-job182.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-job60007.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-job187.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-job140122.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language191.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language192.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language193.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language194.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language195.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language196.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language60009.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-9-language198.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20210901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-job174.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-job60005.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-job182.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-job60007.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-job187.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-job140122.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language191.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language192.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language193.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language194.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language195.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language196.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language60009.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2022-s-language198.html",
+      "native_year_headers": [
+        "2022"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20211118",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-job174.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-job60005.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-job182.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-job60007.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-job187.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-job140122.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language191.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language192.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language193.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language194.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language195.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language196.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language60009.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-6-language198.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20220609",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-job174.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-job60005.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-job182.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-job60007.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-job187.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-job140122.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language191.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language192.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language193.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language194.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language195.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language196.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language60009.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-9-language198.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20220901",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-job174.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-job60005.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-job182.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-job60007.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-job187.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-job140122.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language191.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language192.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language193.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language194.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language195.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language196.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language60009.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2023-s-language198.html",
+      "native_year_headers": [
+        "2023"
+      ],
+      "published_catalog_subject": "한문",
+      "source_question_date": "20221117",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-job174.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-job60005.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-job182.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-job60007.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-job187.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-job140122.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language191.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language192.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language193.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language194.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language195.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language196.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language60009.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-6-language198.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20230601",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-job174.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-job60005.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-job182.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-job60007.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-job187.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-job140122.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language191.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language192.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language193.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language194.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language195.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language196.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language60009.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-9-language198.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20230906",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-job174.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-job60005.html",
+      "native_year_headers": [
+        "2023",
+        "2024"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-job182.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-job60007.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-job187.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-job140122.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language191.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language192.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language193.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language194.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language195.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language196.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language60009.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2024-s-language198.html",
+      "native_year_headers": [
+        "2024"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20231116",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-job174.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-job60005.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-job182.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-job60007.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-job187.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-job140122.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language191.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language192.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language193.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language194.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language195.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language196.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language60009.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-6-language198.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20240604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-job174.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-job60005.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-job182.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-job60007.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-job187.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-job140122.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language191.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language192.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language193.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language194.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language195.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language196.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language60009.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-9-language198.html",
+      "native_year_headers": [
+        "2025"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20240904",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-job174.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-job60005.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-job182.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-job60007.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-job187.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-job140122.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language191.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language192.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language193.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language194.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language195.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language196.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language60009.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2025-s-language198.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20241114",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-job174.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-job60005.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-job182.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-job60007.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-job187.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-job140122.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language191.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language192.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language193.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language194.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language195.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language196.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language60009.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-6-language198.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20250604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-job174.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-job60005.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-job182.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-job60007.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-job187.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-job140122.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language191.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language192.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language193.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language194.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language195.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language196.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language60009.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-9-language198.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20250903",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-job174.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-job60005.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-job182.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-job60007.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-job187.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-job140122.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language191.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language192.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language193.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language194.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language195.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language196.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language60009.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2026-s-language198.html",
+      "native_year_headers": [
+        "2026"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20251113",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-job174.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-job60005.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-job182.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-job60007.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-job187.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-job140122.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language191.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language192.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language193.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language194.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language195.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language196.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language60009.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-6-language198.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20260604",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-job174.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "농업 기초 기술",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-job60005.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "공업 일반",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-job182.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "상업 경제",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-job60007.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "수산·해운 산업 기초",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-job187.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "인간 발달",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-job140122.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "성공적인 직업 생활",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language191.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "독일어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language192.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "프랑스어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language193.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "스페인어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language194.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "중국어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language195.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "일본어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language196.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "러시아어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language197.html",
+      "native_year_headers": [],
+      "published_catalog_subject": "아랍어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language60009.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "베트남어Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    },
+    {
+      "page": "2027-9-language198.html",
+      "native_year_headers": [
+        "2027"
+      ],
+      "published_catalog_subject": "한문Ⅰ",
+      "source_question_date": "20260902",
+      "native_source_pdfs_unchanged": true,
+      "answer_panel_pixels_identical": true
+    }
+  ]
+}

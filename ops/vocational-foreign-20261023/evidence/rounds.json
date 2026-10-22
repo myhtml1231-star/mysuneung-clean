@@ -1,0 +1,1579 @@
+[
+  {
+    "selector": "020-10.html",
+    "site_title": "2020학년도 고2 10월 모의평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 2,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2020",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "020-3.html",
+    "site_title": "2020학년도 고2 3월 모의평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 2,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2020",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "020-6.html",
+    "site_title": "2020학년도 고2 6월 모의평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 2,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2020",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "020-9.html",
+    "site_title": "2020학년도 고2 9월 모의평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 2,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2020",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "021-10.html",
+    "site_title": "2021학년도 고2 10월 모의평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 2,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2021",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "021-3.html",
+    "site_title": "2021학년도 고2 3월 모의평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 2,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2021",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "021-6.html",
+    "site_title": "2021학년도 고2 6월 모의평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 2,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2021",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "021-9.html",
+    "site_title": "2021학년도 고2 9월 모의평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 2,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2021",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "022-10.html",
+    "site_title": "2022학년도 고2 10월 모의평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 2,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2022",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "022-3.html",
+    "site_title": "2022학년도 고2 3월 모의평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 2,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2022",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "022-6.html",
+    "site_title": "2022학년도 고2 6월 모의평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 2,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2022",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "022-9.html",
+    "site_title": "2022학년도 고2 9월 모의평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 2,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2022",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "023-10.html",
+    "site_title": "2023학년도 고2 10월 모의평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 2,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2023",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "023-3.html",
+    "site_title": "2023학년도 고2 3월 모의평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 2,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2023",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "023-6.html",
+    "site_title": "2023학년도 고2 6월 모의평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 2,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2023",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "023-9.html",
+    "site_title": "2023학년도 고2 9월 모의평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 2,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2023",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "024-10.html",
+    "site_title": "2024학년도 고2 10월 모의평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 2,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 13,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2024",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "024-3.html",
+    "site_title": "2024학년도 고2 3월 모의평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 2,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2024",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "024-6.html",
+    "site_title": "2024학년도 고2 6월 모의평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 2,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2024",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "024-9.html",
+    "site_title": "2024학년도 고2 9월 모의평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 2,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2024",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "025-10.html",
+    "site_title": "2025학년도 고2 10월 모의평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 2,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 13,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2025",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "025-3.html",
+    "site_title": "2025학년도 고2 3월 모의평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 2,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2025",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "025-6.html",
+    "site_title": "2025학년도 고2 6월 모의평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 2,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2025",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "025-9.html",
+    "site_title": "2025학년도 고2 9월 모의평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 2,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2025",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "026-10.html",
+    "site_title": "2026학년도 고2 10월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 2,
+    "month": 10,
+    "already_has_extra": true,
+    "official_rows": 8,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2026",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "026-3.html",
+    "site_title": "2026학년도 고2 3월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 2,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2026",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "026-6.html",
+    "site_title": "2026학년도 고2 6월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 2,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2026",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "026-9.html",
+    "site_title": "2026학년도 고2 9월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 2,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D200",
+      "yearList": "2026",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "17078,50620,17049,50622,17054,140110,jobPast,17058,17059,17060,17061,17062,17063,17065",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "20-10.html",
+    "site_title": "2020학년도 고1 10월 학력평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 1,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2020",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "20-3.html",
+    "site_title": "2020학년도 고1 3월 학력평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 1,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2020",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "20-6.html",
+    "site_title": "2020학년도 고1 6월 학력평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 1,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2020",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "20-9.html",
+    "site_title": "2020학년도 고1 9월 학력평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 1,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2020",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2020_6.html",
+    "site_title": "2020학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2019,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 19,
+    "pagination_pages": 2,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2019",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "2"
+    }
+  },
+  {
+    "selector": "2020_9.html",
+    "site_title": "2020학년도 9월 모의평가 과목 선택",
+    "calendar_year": 2019,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 19,
+    "pagination_pages": 2,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2019",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "2"
+    }
+  },
+  {
+    "selector": "2020_s.html",
+    "site_title": "2020학년도 고3 수능 과목 선택",
+    "calendar_year": 2019,
+    "grade": 3,
+    "month": 11,
+    "already_has_extra": false,
+    "official_rows": 19,
+    "pagination_pages": 2,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2019",
+      "monthList": "11,12",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "2"
+    }
+  },
+  {
+    "selector": "2021_6.html",
+    "site_title": "2021학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 19,
+    "pagination_pages": 2,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2020",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "2"
+    }
+  },
+  {
+    "selector": "2021_9.html",
+    "site_title": "2021학년도 고3 9월 모의평가 과목 선택",
+    "calendar_year": 2020,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 19,
+    "pagination_pages": 2,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2020",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "2"
+    }
+  },
+  {
+    "selector": "2021_s.html",
+    "site_title": "2021학년도 고3 수능 과목 선택",
+    "calendar_year": 2020,
+    "grade": 3,
+    "month": 11,
+    "already_has_extra": false,
+    "official_rows": 19,
+    "pagination_pages": 2,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2020",
+      "monthList": "11,12",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "2"
+    }
+  },
+  {
+    "selector": "2022_6.html",
+    "site_title": "2022학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2021",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2022_9.html",
+    "site_title": "2022학년도 고3 9월 모의평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2021",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2022_s.html",
+    "site_title": "2022학년도 고3 수능 과목 선택",
+    "calendar_year": 2021,
+    "grade": 3,
+    "month": 11,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2021",
+      "monthList": "11,12",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2023_6.html",
+    "site_title": "2023학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2022",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2023_9.html",
+    "site_title": "2023학년도 고3 9월 모의평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2022",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2023_s.html",
+    "site_title": "2023학년도 고3 수능 과목 선택",
+    "calendar_year": 2022,
+    "grade": 3,
+    "month": 11,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2022",
+      "monthList": "11,12",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2024_6.html",
+    "site_title": "2024학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2023",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2024_9.html",
+    "site_title": "2024학년도 고3 9월 모의평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2023",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2024_s.html",
+    "site_title": "2024학년도 고3 수능 과목 선택",
+    "calendar_year": 2023,
+    "grade": 3,
+    "month": 11,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2023",
+      "monthList": "11,12",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2025_6.html",
+    "site_title": "2025학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2024",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2025_9.html",
+    "site_title": "2025학년도 고3 9월 모의평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2024",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2025_s.html",
+    "site_title": "2025학년도 고3 수능 과목 선택",
+    "calendar_year": 2024,
+    "grade": 3,
+    "month": 11,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2024",
+      "monthList": "11,12",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2026_6.html",
+    "site_title": "2026학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2025",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2026_9.html",
+    "site_title": "2026학년도 고3 9월 모의평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2025",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2026_s.html",
+    "site_title": "2026학년도 고3 수능 과목 선택",
+    "calendar_year": 2025,
+    "grade": 3,
+    "month": 11,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2025",
+      "monthList": "11,12",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2027_10.html",
+    "site_title": "2027학년도 고3 10월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 3,
+    "month": 10,
+    "already_has_extra": true,
+    "official_rows": 13,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2026",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2027_3.html",
+    "site_title": "2027학년도 고3 3월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 3,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2026",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2027_5.html",
+    "site_title": "2027학년도 고3 5월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 3,
+    "month": 5,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2026",
+      "monthList": "05",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2027_6.html",
+    "site_title": "2027학년도 고3 6월 모의평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 3,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2026",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2027_7.html",
+    "site_title": "2027학년도 고3 7월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 3,
+    "month": 7,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2026",
+      "monthList": "07",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "2027_9.html",
+    "site_title": "2027학년도 고3 9월 모의평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 3,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 15,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D300",
+      "yearList": "2026",
+      "monthList": "08,09",
+      "arOrd": "7,8",
+      "subjIdList": "174,60005,182,60007,187,140122,jobPast,191,192,193,194,195,196,197,60009,198",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "21-10.html",
+    "site_title": "2021학년도 고1 10월 학력평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 1,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2021",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "21-3.html",
+    "site_title": "2021학년도 고1 3월 학력평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 1,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2021",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "21-6.html",
+    "site_title": "2021학년도 고1 6월 학력평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 1,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2021",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "21-9.html",
+    "site_title": "2021학년도 고1 9월 학력평가 과목 선택",
+    "calendar_year": 2021,
+    "grade": 1,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2021",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "22-10.html",
+    "site_title": "2022학년도 고1 10월 학력평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 1,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2022",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "22-3.html",
+    "site_title": "2022학년도 고1 3월 학력평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 1,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2022",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "22-6.html",
+    "site_title": "2022학년도 고1 6월 학력평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 1,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2022",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "22-9.html",
+    "site_title": "2022학년도 고1 9월 학력평가 과목 선택",
+    "calendar_year": 2022,
+    "grade": 1,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2022",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "23-10.html",
+    "site_title": "2023학년도 고1 10월 학력평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 1,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2023",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "23-3.html",
+    "site_title": "2023학년도 고1 3월 학력평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 1,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2023",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "23-6.html",
+    "site_title": "2023학년도 고1 6월 학력평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 1,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2023",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "23-9.html",
+    "site_title": "2023학년도 고1 9월 학력평가 과목 선택",
+    "calendar_year": 2023,
+    "grade": 1,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2023",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "24-10.html",
+    "site_title": "2024학년도 고1 10월 학력평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 1,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2024",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "24-3.html",
+    "site_title": "2024학년도 고1 3월 학력평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 1,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2024",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "24-6.html",
+    "site_title": "2024학년도 고1 6월 학력평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 1,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2024",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "24-9.html",
+    "site_title": "2024학년도 고1 9월 학력평가 과목 선택",
+    "calendar_year": 2024,
+    "grade": 1,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2024",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "25-10.html",
+    "site_title": "2025학년도 고1 10월 학력평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 1,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2025",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "25-3.html",
+    "site_title": "2025학년도 고1 3월 학력평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 1,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2025",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "25-6.html",
+    "site_title": "2025학년도 고1 6월 학력평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 1,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2025",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "25-9.html",
+    "site_title": "2025학년도 고1 9월 학력평가 과목 선택",
+    "calendar_year": 2025,
+    "grade": 1,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2025",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "26-10.html",
+    "site_title": "2026학년도 고1 10월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 1,
+    "month": 10,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2026",
+      "monthList": "10",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "26-3.html",
+    "site_title": "2026학년도 고1 3월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 1,
+    "month": 3,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2026",
+      "monthList": "03",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "26-6.html",
+    "site_title": "2026학년도 고1 6월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 1,
+    "month": 6,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2026",
+      "monthList": "06",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  },
+  {
+    "selector": "26-9.html",
+    "site_title": "2026학년도 고1 9월 학력평가 과목 선택",
+    "calendar_year": 2026,
+    "grade": 1,
+    "month": 9,
+    "already_has_extra": false,
+    "official_rows": 0,
+    "pagination_pages": 1,
+    "params": {
+      "targetCd": "D100",
+      "yearList": "2026",
+      "monthList": "09",
+      "arOrd": "7,8",
+      "subjIdList": "",
+      "sort": "recent",
+      "currentPage": "1"
+    }
+  }
+]
