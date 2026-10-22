@@ -1,0 +1,208 @@
+{
+  "download_pages": 416,
+  "round_selectors": 27,
+  "grade_cut_pages": 27,
+  "wrong_rate_pages": 27,
+  "difficulty_rank_pages": 4,
+  "total_pages": 501,
+  "ranks": [
+    {
+      "grade": 2,
+      "subject": "voc-agriculture-tech",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 2
+    },
+    {
+      "grade": 2,
+      "subject": "voc-industry",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 2
+    },
+    {
+      "grade": 2,
+      "subject": "voc-commerce",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 2
+    },
+    {
+      "grade": 2,
+      "subject": "voc-marine",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 2
+    },
+    {
+      "grade": 2,
+      "subject": "voc-human",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 2
+    },
+    {
+      "grade": 2,
+      "subject": "voc-career",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 2,
+      "subject": "lang-german",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 2,
+      "subject": "lang-french",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 2,
+      "subject": "lang-spanish",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 2,
+      "subject": "lang-chinese",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 2,
+      "subject": "lang-japanese",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 2,
+      "subject": "lang-russian",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 2,
+      "subject": "lang-classical",
+      "ranked_rounds": 2,
+      "wrong_rate_rounds": 3
+    },
+    {
+      "grade": 3,
+      "subject": "voc-agriculture",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 6
+    },
+    {
+      "grade": 3,
+      "subject": "voc-agriculture-tech",
+      "ranked_rounds": 23,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "voc-industry",
+      "ranked_rounds": 23,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "voc-drafting",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 6
+    },
+    {
+      "grade": 3,
+      "subject": "voc-commerce",
+      "ranked_rounds": 23,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "voc-accounting",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 6
+    },
+    {
+      "grade": 3,
+      "subject": "voc-ocean",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 6
+    },
+    {
+      "grade": 3,
+      "subject": "voc-marine",
+      "ranked_rounds": 23,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "voc-human",
+      "ranked_rounds": 23,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "voc-service",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 6
+    },
+    {
+      "grade": 3,
+      "subject": "voc-career",
+      "ranked_rounds": 17,
+      "wrong_rate_rounds": 18
+    },
+    {
+      "grade": 3,
+      "subject": "lang-german",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "lang-french",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "lang-spanish",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "lang-chinese",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "lang-japanese",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "lang-russian",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 24
+    },
+    {
+      "grade": 3,
+      "subject": "lang-arabic",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 23
+    },
+    {
+      "grade": 3,
+      "subject": "lang-vietnamese",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 23
+    },
+    {
+      "grade": 3,
+      "subject": "lang-classical",
+      "ranked_rounds": 6,
+      "wrong_rate_rounds": 24
+    }
+  ]
+}
