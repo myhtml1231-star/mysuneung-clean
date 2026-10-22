@@ -1,0 +1,54 @@
+name: Preserve October preparation metadata
+on:
+  push:
+    branches:
+      - codex/october-2026-import
+    paths:
+      - .github/workflows/october-2026-preserve.yml
+permissions:
+  contents: write
+jobs:
+  preserve:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 6
+    steps:
+      - name: Read verified cloud artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: october-2026-official-preparation
+          run-id: 39789798956
+          github-token: ${{ github.token }}
+          path: october-2026-preparation
+      - name: Preserve only official-source metadata in preparation branch
+        env:
+          GH_REPORT_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json,os,pathlib,urllib.request
+          repo=os.environ["GITHUB_REPOSITORY"];branch=os.environ["GITHUB_REF_NAME"];head=os.environ["GITHUB_SHA"]
+          assert repo=="myhtml1231-star/mysuneung-clean" and branch=="codex/october-2026-import"
+          root=pathlib.Path("october-2026-preparation")
+          report=json.loads((root/"report.json").read_text())
+          assert report["source_files_integrity_checked"] and report["official_downloads"]==44
+          def api(path,data=None,method=None):
+              req=urllib.request.Request("https://api.github.com/repos/"+repo+path,
+                  data=None if data is None else json.dumps(data,ensure_ascii=False).encode(),
+                  headers={"Authorization":"Bearer "+os.environ["GH_REPORT_TOKEN"],"Accept":"application/vnd.github+json","Content-Type":"application/json"},
+                  method=method)
+              with urllib.request.urlopen(req,timeout=30) as response:return json.load(response)
+          ref=api("/git/ref/heads/"+branch)
+          assert ref["object"]["sha"]==head,"Preparation branch changed"
+          old=api("/git/commits/"+head)
+          paths=[root/"report.json",root/"manifest.json"]
+          paths += sorted((root/"metadata").glob("go*/cuts.json"))
+          paths += sorted((root/"metadata").glob("go*/difficulty.json"))
+          assert len(paths)==8
+          tree=api("/git/trees",{"base_tree":old["tree"]["sha"],"tree":[{
+              "path":"ops/october-2026/evidence/"+str(p.relative_to(root)),
+              "mode":"100644","type":"blob","content":p.read_text()} for p in paths]},"POST")
+          commit=api("/git/commits",{"message":"Preserve verified October exam source manifest, cuts and difficulty snapshots [skip ci]",
+              "tree":tree["sha"],"parents":[head]},"POST")
+          api("/git/refs/heads/"+branch,{"sha":commit["sha"],"force":False},"PATCH")
+          print(json.dumps(report,ensure_ascii=False))
+          print("SOURCE_METADATA_COMMIT",commit["sha"])
+          PY
