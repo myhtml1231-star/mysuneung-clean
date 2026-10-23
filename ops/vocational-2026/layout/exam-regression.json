@@ -1,0 +1,23 @@
+[
+  {
+    "form": "g2-2026-10-voc-career",
+    "count": 25,
+    "active": true,
+    "answered": "0 / 25 응답",
+    "timer": "40:00"
+  },
+  {
+    "form": "g3-2027-09-lang-japanese",
+    "count": 30,
+    "active": true,
+    "answered": "0 / 30 응답",
+    "timer": "40:00"
+  },
+  {
+    "form": "g3-2027-10-voc-industry",
+    "count": 20,
+    "active": true,
+    "answered": "0 / 20 응답",
+    "timer": "30:00"
+  }
+]

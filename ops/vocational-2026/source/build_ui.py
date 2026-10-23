@@ -32,7 +32,6 @@ for slug,label in LABELS.items():
     assert "categories?'+p)" in source
     source=source.replace("categories?'+p)","categories?'+p+'&source_session='+encodeURIComponent(window.extraSourceSession||''))")
     source=source.replace("const inherited=id=>selected.some", "const inherited=id=>id==='전체 문항'?selected.includes(id):selected.some")
-    source=source.replace('<button data-count="20" type="button">20문항</button>','<button data-count="20" type="button">20문항</button><button data-count="25" type="button">25문항</button><button data-count="30" type="button">30문항</button>')
     source=source.replace("['사회탐구',subjects.slice(12)]","['사회탐구',subjects.slice(12,21)],['직업탐구',subjects.slice(21,32)],['제2외국어/한문',subjects.slice(32)]")
     source=source.replace("e.key==='End'?3:(groupIndex+(e.key==='ArrowRight'?1:3))%4","e.key==='End'?groups.length-1:(groupIndex+(e.key==='ArrowRight'?1:groups.length-1))%groups.length")
     source=re.sub(r'<script type="application/json" data-cbt-curriculum>.*?</script>',lambda m:'<script type="application/json" data-cbt-curriculum>'+json.dumps({'subject':slug,'title':label,'version':'2026-10-23.voclang.v1','majors':[{'id':'전체 문항','title':'전체 기출 문항','path':[label,'전체 기출 문항'],'children':[]}]},ensure_ascii=False)+'</script>',source,count=1,flags=re.S)

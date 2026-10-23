@@ -1,0 +1,11 @@
+{
+  "subjects": 20,
+  "counts": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "exact_original_controls": true
+}
