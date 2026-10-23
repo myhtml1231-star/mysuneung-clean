@@ -1,0 +1,82 @@
+[
+  {
+    "subject": "voc-agriculture",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-agriculture-tech",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-industry",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-drafting",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-commerce",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-accounting",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-ocean",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-marine",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-human",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-service",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "voc-career",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-german",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-french",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-spanish",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-chinese",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-japanese",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-russian",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-arabic",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-vietnamese",
+    "mobile_geometry_exact": true
+  },
+  {
+    "subject": "lang-classical",
+    "mobile_geometry_exact": true
+  }
+]

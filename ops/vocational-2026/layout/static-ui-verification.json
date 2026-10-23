@@ -1,0 +1,28 @@
+{
+  "ui_subjects": [
+    "voc-marine.html",
+    "lang-japanese.html",
+    "lang-arabic.html",
+    "voc-ocean.html",
+    "lang-french.html",
+    "voc-agriculture.html",
+    "voc-accounting.html",
+    "lang-german.html",
+    "voc-human.html",
+    "lang-russian.html",
+    "voc-career.html",
+    "voc-industry.html",
+    "lang-spanish.html",
+    "voc-agriculture-tech.html",
+    "voc-drafting.html",
+    "voc-commerce.html",
+    "lang-vietnamese.html",
+    "voc-service.html",
+    "lang-chinese.html",
+    "lang-classical.html"
+  ],
+  "styles_equal_to_existing": true,
+  "same_presets_and_boundaries": true,
+  "no_added_source_dropdown": true,
+  "same_mode_and_unit_labels": true
+}
