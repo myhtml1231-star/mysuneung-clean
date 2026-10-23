@@ -1,0 +1,102 @@
+[
+  {
+    "subject": "voc-agriculture",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-agriculture-tech",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-industry",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-drafting",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-commerce",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-accounting",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-ocean",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-marine",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-human",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-service",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "voc-career",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-german",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-french",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-spanish",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-chinese",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-japanese",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-russian",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-arabic",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-vietnamese",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  },
+  {
+    "subject": "lang-classical",
+    "range_geometry_exact": true,
+    "mode_labels_exact": true
+  }
+]

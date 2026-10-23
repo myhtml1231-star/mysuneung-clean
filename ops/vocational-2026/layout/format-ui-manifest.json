@@ -1,0 +1,102 @@
+[
+  {
+    "key": "vocational/20261023-v1/ui/lang-arabic.html",
+    "sha256": "90b62856b1e67045b7769886fc35c3b0e2cec505005100257b8f3abba35f0d1a",
+    "size": 355845
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-chinese.html",
+    "sha256": "370957f63ac48fa87910313b312306624643546d40a2b93272c31356131f43b0",
+    "size": 358254
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-classical.html",
+    "sha256": "2972e3465a48f49a736fd997f4a5319a2c6fcd8fa4373588c19e94c6eadc0f8d",
+    "size": 358270
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-french.html",
+    "sha256": "3e23ce501b1d1063771cb086b7d07c3d3aaf18a00097ef3d811f36aeeadb7a7a",
+    "size": 358288
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-german.html",
+    "sha256": "c9812a978460d9efd3c742ac81ba9256f9565aef08b8806e3fba0d2543dcde59",
+    "size": 358210
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-japanese.html",
+    "sha256": "b38c1dc150a51ad6ce9dd7865b50274d0ecc8555b1937ea203ebbc64c4ec5fe4",
+    "size": 358296
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-russian.html",
+    "sha256": "4ac50017d8c2effe5fafdfdde49e62bdf11af17832302aac3019ab448376acd1",
+    "size": 358334
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-spanish.html",
+    "sha256": "584144fd9eedb0bfb6351917e494ea77867f60fc61dc8682c59471a40a89667c",
+    "size": 358334
+  },
+  {
+    "key": "vocational/20261023-v1/ui/lang-vietnamese.html",
+    "sha256": "fe47d4f231b1daf434dc6646a80e9de8d5b2636f61b9e8b294eeffb4c510a8ab",
+    "size": 356231
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-accounting.html",
+    "sha256": "db59d3542680034c51d7d3eabbc9677bcb1d0293304ff68060a66052393b27d9",
+    "size": 346235
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-agriculture-tech.html",
+    "sha256": "298b56feddfe314cdafa9af8a07196b0d6bffa88569b562bc0dc1a98f1cc4b3e",
+    "size": 357776
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-agriculture.html",
+    "sha256": "5f29b2fd7ac13493b9faafb470c8f556e325d0e55769c3f9b1db98e2233c4a06",
+    "size": 346262
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-career.html",
+    "sha256": "de37794a695e470bbe957698f4f46ec1a2ecfc415c1ce767ad9c22d80b6fbc9e",
+    "size": 354991
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-commerce.html",
+    "sha256": "caf276a141e86e03390e0322b0213a39e7cb76e937c019befaaa890f4d0ae862",
+    "size": 357236
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-drafting.html",
+    "sha256": "48d417cf4e8e05f95206b852d48d9e3913538d11797ce4d13ce54ad8f273a9e7",
+    "size": 346187
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-human.html",
+    "sha256": "d573f7644f49f2315b8c80bae1be3d2532b17d5b34d19c19877c5566b6dfe381",
+    "size": 357101
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-industry.html",
+    "sha256": "d07f186e23470e3cc5c59cf5455911251973a966a51ee22b0e378d66235d91fb",
+    "size": 357374
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-marine.html",
+    "sha256": "bff4134ee47380b8377fe1d65f9817691d22152eacde9a6fc197a3c4b668f3c0",
+    "size": 357674
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-ocean.html",
+    "sha256": "79695c98f4206d085cec1795c25c4cb8650be510f64e6ab601586f7a9616b909",
+    "size": 346190
+  },
+  {
+    "key": "vocational/20261023-v1/ui/voc-service.html",
+    "sha256": "8c54405b75942ad4d196f5d0103481ea4b4f8217519fa50a865c9064390cbc7e",
+    "size": 346718
+  }
+]

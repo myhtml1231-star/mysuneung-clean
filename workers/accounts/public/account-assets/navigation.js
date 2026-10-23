@@ -10,7 +10,7 @@ if(wrapper){wrapper.style.cssText='list-style:none;display:inline-flex;align-ite
 const sh=host.attachShadow({mode:'open'});
 const buttonStyle='display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none;background:transparent;border:0;color:#334155;border-radius:0;font:700 12px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;padding:0;white-space:nowrap';
 const states='a:hover{color:#b06a08}a:focus-visible{outline:3px solid #b9d6ff;outline-offset:2px}';
-sh.innerHTML='<style>:host{display:inline-flex;flex:none;max-width:100%;vertical-align:middle}a{'+buttonStyle+'}'+states+'</style><a href="/auth"><span>로그인</span></a>';
+sh.innerHTML='<style>:host{display:inline-flex;flex:none;max-width:100%;vertical-align:middle}@media(max-width:640px){:host{top:4px!important}}a{'+buttonStyle+'}'+states+'</style><a href="/auth"><span>로그인</span></a>';
 const secondary=[];
 function accountButton(destination,setup=false){const link=document.createElement('a');link.className='msn-account-button';link.href=destination;link.textContent='내 정보';link.style.cssText=buttonStyle;if(setup)link.style.removeProperty('font-size');secondary.push({link,destination});return link;}
 const style=document.createElement('style');style.textContent='.msn-account-button:hover{color:#b06a08!important}.msn-account-button:focus-visible{outline:3px solid #b9d6ff;outline-offset:2px}';document.head.append(style);

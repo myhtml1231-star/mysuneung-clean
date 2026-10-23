@@ -80,7 +80,6 @@ for grade in (2,3):
     text=re.sub(r'<title>.*?</title>',f'<title>{title}</title>',template,count=1)
     start=text.index('<body>');end=text.index('<script>',start)
     text=text[:start]+body+text[end:]
-    text=text.replace('</style>','@media(max-width:640px){.subject-filter{padding-top:24px}}\n</style>',1)
     (OUT/rank_name(grade,category)).write_text(text)
 
 # Login remains a plain button. No page-wide row or border is inserted.
@@ -88,6 +87,7 @@ nav=(ROOT/'navigation.js').read_text()
 nav=nav.replace('background:#fff;border:1px solid #dfe4eb','background:transparent;border:0').replace('border-radius:9px','border-radius:0').replace('padding:8px 12px','padding:0')
 nav=nav.replace("a:hover{background:#f8fafc}","a:hover{color:#b06a08}")
 nav=nav.replace(".msn-account-button:hover{background:#f8fafc!important}",".msn-account-button:hover{color:#b06a08!important}")
+nav=nav.replace(':host{display:inline-flex;flex:none;max-width:100%;vertical-align:middle}',':host{display:inline-flex;flex:none;max-width:100%;vertical-align:middle}@media(max-width:640px){:host{top:4px!important}}')
 old="""      const row=document.createElement('div');
       row.style.cssText='display:flex;justify-content:flex-end;align-items:center;gap:12px;padding:8px 18px;background:#fff;border-bottom:1px solid #e9edf5;box-sizing:border-box;position:relative;z-index:1';
       row.append(host);document.body.prepend(row);"""
