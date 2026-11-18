@@ -37,42 +37,50 @@ export function freeAccountBase(createHandler,previous){
  }};
 }
 const noticeCSS=String.raw`
-#banner-popup .popup-box{max-width:430px!important;width:calc(100% - 32px)!important;max-height:calc(100dvh - 32px);box-sizing:border-box;overflow:auto}
-#examNotice{padding:20px 10px 12px;letter-spacing:.015em;line-height:1.7}
-#examNotice .exam-tabs{display:flex;gap:8px;margin:8px 0 24px}
-#examNotice .exam-tabs button{flex:1;padding:10px 8px;border:1px solid #e6dfd3;background:#fff;border-radius:12px;font:inherit;cursor:pointer}
-#examNotice .exam-tabs button[aria-selected=true]{background:#fff4da;border-color:#efb940;color:#7b5212;font-weight:700}
-#examNotice h2{font-size:28px;line-height:1.45;letter-spacing:.02em;margin:12px 0 16px;color:#202939}
-#examNotice p{font-size:15px;color:#5c6678;line-height:1.9;margin:8px 0}
-#examNotice .exam-mark{font-size:42px;line-height:1.5}
-#examNotice .free-address{display:block;font-size:12px;overflow-wrap:anywhere;padding:12px;margin-top:16px;border-radius:12px;background:#f8f5ef;color:#655137}
-#examNotice img{max-height:min(42dvh,320px);width:100%;object-fit:contain}
-#examNotice [hidden]{display:none!important}
-#freeAddressNotice{font:inherit;font-size:13px;line-height:1.7;padding:10px 18px;background:#fff4d9;color:#70521b;text-align:center;letter-spacing:.015em;overflow-wrap:anywhere}
-#freeAddressNotice a{color:inherit;font-weight:700}
+#banner-popup{padding:16px!important;box-sizing:border-box}
+#banner-popup .popup-box{position:relative;width:min(420px,100%)!important;max-width:420px!important;max-height:calc(100dvh - 32px);padding:0!important;box-sizing:border-box;overflow:auto;border-radius:18px!important;background:#fffaf0!important;box-shadow:0 24px 80px #30210d38}
+#examNotice{margin:0;padding:0;line-height:0}
+#examNotice img{display:block;width:100%;height:auto;max-height:calc(100dvh - 108px);object-fit:contain}
+#banner-popup #popup-close{position:absolute;right:10px;top:10px;z-index:2;width:34px;height:34px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:#fffdf5ed;color:#4d321e;font-size:24px;line-height:1;cursor:pointer}
+#banner-popup .popup-box>div:last-child{padding:12px 16px!important;box-sizing:border-box}
+#banner-popup #today-hide{font:inherit;font-size:13px;letter-spacing:.025em;line-height:1.6;color:#6d5e4d}
+#freeAddressNotice{display:flex;justify-content:center;align-items:center;gap:10px;min-height:38px;padding:4px 14px;box-sizing:border-box;background:#fff4d9;color:#70521b;font:inherit;font-size:13px;line-height:1.5;letter-spacing:.025em}
+#migrationCopyButton{border:0;background:transparent;color:inherit;font:inherit;font-weight:700;letter-spacing:.025em;cursor:pointer;padding:6px 10px;border-radius:6px}
+#migrationCopyButton:focus-visible{outline:2px solid #a36c1b;outline-offset:2px}
+#migrationCopyStatus:empty{display:none}
 `;
 const noticeJS=String.raw`(()=>{'use strict';
-const kstDay=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10),key='csat-2027-notice-v1-hide',popup=document.getElementById('banner-popup');
+const target='https://mysuneung-accounts.myhtml1231.workers.dev/',copyButton=document.getElementById('migrationCopyButton'),copyStatus=document.getElementById('migrationCopyStatus');
+async function copyAddress(){
+ if(!copyButton||copyButton.disabled)return;copyButton.disabled=true;
+ let copied=false;
+ try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(target);copied=true;}}catch{}
+ if(!copied){const field=document.createElement('textarea');field.value=target;field.setAttribute('readonly','');field.style.cssText='position:fixed;left:-9999px;top:0';document.body.append(field);field.select();try{copied=document.execCommand('copy');}catch{}field.remove();copyButton.focus({preventScroll:true});}
+ if(copyStatus)copyStatus.textContent=copied?'주소가 복사됐어요.':'복사하지 못했어요. 다시 눌러 주세요.';
+ copyButton.disabled=false;
+}
+copyButton?.addEventListener('click',copyAddress);
+const kstDay=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10),key='csat-2027-image-notice-v2-hide',popup=document.getElementById('banner-popup');
 if(!popup)return;
-const after=Date.now()>=Date.parse('2026-11-19T18:10:00+09:00'),title=document.getElementById('examNoticeTitle'),message=document.getElementById('examNoticeMessage');
-if(title)title.textContent=after?'수능, 정말 수고 많았어요.':kstDay()==='2026-11-18'?'내일의 너를 응원해요.':'마지막까지, 너를 응원해요.';
-if(message)message.textContent=after?'여기까지 달려온 모든 순간을 응원합니다. 오늘은 마음 편히 쉬어가요.':'그동안 쌓아온 시간이 힘이 될 거예요. 수험생 여러분의 하루를 응원합니다.';
-const updateTabs=tab=>{for(const button of document.querySelectorAll('[data-exam-tab]'))button.setAttribute('aria-selected',String(button.dataset.examTab===tab));for(const panel of document.querySelectorAll('[data-exam-panel]'))panel.hidden=panel.dataset.examPanel!==tab;};
-for(const button of document.querySelectorAll('[data-exam-tab]'))button.addEventListener('click',()=>updateTabs(button.dataset.examTab));
-const hide=()=>{popup.classList.add('hidden');};
+const close=document.getElementById('popup-close'),hide=()=>{popup.classList.add('hidden');copyButton?.focus({preventScroll:true});};
+popup.setAttribute('role','dialog');popup.setAttribute('aria-modal','true');popup.setAttribute('aria-label','2027 수능 응원');
+close?.setAttribute('aria-label','수능 응원 팝업 닫기');close?.addEventListener('click',hide);
 document.getElementById('today-hide')?.addEventListener('click',()=>{try{localStorage.setItem(key,kstDay());}catch{}hide();});
-document.getElementById('popup-close')?.setAttribute('aria-label','안내 닫기');
-document.addEventListener('keydown',event=>{if(event.key==='Escape')hide();});
-window.addEventListener('load',()=>{let hidden=false;try{hidden=localStorage.getItem(key)===kstDay();}catch{}popup.classList.toggle('hidden',hidden);if(!hidden)document.getElementById('popup-close')?.focus({preventScroll:true});},{once:true});
+document.addEventListener('keydown',event=>{
+ if(popup.classList.contains('hidden'))return;
+ if(event.key==='Escape'){event.preventDefault();hide();}
+ if(event.key==='Tab'){const controls=[close,document.getElementById('today-hide')].filter(Boolean),first=controls[0],last=controls.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}}
+});
+window.addEventListener('load',()=>{let hidden=false;try{hidden=localStorage.getItem(key)===kstDay();}catch{}popup.classList.toggle('hidden',hidden);if(!hidden)close?.focus({preventScroll:true});},{once:true});
 })();`;
-const noticeHTML='<section id="examNotice"><div class="exam-tabs" role="tablist" aria-label="수험생 안내"><button type="button" role="tab" data-exam-tab="message" aria-selected="true">수능 응원</button><button type="button" role="tab" data-exam-tab="coffee" aria-selected="false">아메리카노 안내</button></div><div data-exam-panel="message"><div class="exam-mark" aria-hidden="true">🌿</div><h2 id="examNoticeTitle">수험생 여러분을 응원해요.</h2><p id="examNoticeMessage">그동안 달려온 모든 순간을 응원합니다.</p><a class="free-address" href="'+ACCOUNT+'/">새 무료 주소<br>mysuneung-accounts.myhtml1231.workers.dev</a><p>주소를 즐겨찾기에 저장해 주세요.</p></div><div data-exam-panel="coffee" hidden><img src="/Images/banner.png" alt="아메리카노 오류 제보 행사 안내"><a href="/error-report.html">오류 제보하기 →</a></div></section>';
+const noticeHTML="<section id=\"examNotice\"><img src=\"/Images/csat-2027-cheer-20261118.png\" width=\"1122\" height=\"1402\" alt=\"2027 수능. 여기까지 달려온 너를 진심으로 응원해. 수능기출.\" fetchpriority=\"high\" decoding=\"async\"></section>";
 export function freeDomainLifecycle(application,{createHandler}){
  return {...application,async fetch(request,env,ctx){
   const u=new URL(request.url);
   if(!ACCOUNT_HOSTS.has(u.hostname))return new Response('Not found',{status:404});
   if(u.origin!==ACCOUNT)return new Response(null,{status:308,headers:{Location:ACCOUNT+u.pathname+u.search,'Cache-Control':'no-store'}});
   const configured={...env,SITE_ORIGIN:ACCOUNT};
-  if(u.pathname==='/account-assets/exam-notice-20261118.css'||u.pathname==='/account-assets/exam-notice-20261118.js'){
+  if(u.pathname==='/account-assets/exam-image-notice-20261118-v2.css'||u.pathname==='/account-assets/exam-image-notice-20261118-v2.js'){
    const css=u.pathname.endsWith('.css'),allowed=['GET','HEAD'].includes(request.method);
    return new Response(!allowed?'Method not allowed':request.method==='HEAD'?null:css?noticeCSS:noticeJS,{status:allowed?200:405,headers:{'Content-Type':css?'text/css; charset=utf-8':'application/javascript; charset=utf-8','Cache-Control':'no-cache, max-age=0',...(!allowed?{Allow:'GET, HEAD'}:{})}});
   }
@@ -104,8 +112,8 @@ export function freeDomainLifecycle(application,{createHandler}){
    let text=replaceOrigins(await response.text());headers.delete('Content-Length');headers.delete('Content-Encoding');headers.delete('ETag');headers.delete('Last-Modified');
    if(type.includes('text/html')&&['/','/index.html'].includes(u.pathname)){
     text=text.replace(/<img\b[^>]*src=["'](?:\.\/|\/)?Images\/banner\.png["'][^>]*>/i,noticeHTML);
-    text=text.replace(/<\/head>/i,'<link rel="stylesheet" href="/account-assets/exam-notice-20261118.css"><script defer src="/account-assets/exam-notice-20261118.js"></script></head>');
-    text=text.replace(/<body([^>]*)>/i,'<body$1><aside id="freeAddressNotice">새 무료 주소 <a href="'+ACCOUNT+'/">mysuneung-accounts.myhtml1231.workers.dev</a></aside>');
+    text=text.replace(/<\/head>/i,'<link rel="stylesheet" href="/account-assets/exam-image-notice-20261118-v2.css"><script defer src="/account-assets/exam-image-notice-20261118-v2.js"></script></head>');
+    text=text.replace(/<body([^>]*)>/i,'<body$1><aside id="freeAddressNotice"><button id="migrationCopyButton" type="button" title="새 주소 복사">주소 이전</button><span id="migrationCopyStatus" role="status" aria-live="polite"></span></aside>');
    }
    return new Response(text,{status:response.status,headers});
   }
