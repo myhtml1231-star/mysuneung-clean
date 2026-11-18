@@ -16,7 +16,7 @@ async function publicStaticFetch(input,init){
  for(const name of ['Accept','Range','If-Range','If-None-Match','If-Modified-Since'])if(request.headers.has(name))headers.set(name,request.headers.get(name));
  headers.set('User-Agent','mysuneung-public-assets/20261118');
  // Public static files only: never forward sessions, authorization or form/query data.
- let response=await fetch('https://raw.githubusercontent.com/myhtml1231-star/mysuneung-clean/main'+path,{method:request.method,headers,redirect:'error'});
+ let response=await fetch('https://raw.githubusercontent.com/myhtml1231-star/mysuneung-clean/main'+path,{method:request.method,headers,redirect:'manual'});
  const out=new Headers(response.headers);out.delete('Set-Cookie');out.set('Content-Type',types[extension]);out.set('X-Content-Type-Options','nosniff');
  return new Response(response.body,{status:response.status,statusText:response.statusText,headers:out});
 }
