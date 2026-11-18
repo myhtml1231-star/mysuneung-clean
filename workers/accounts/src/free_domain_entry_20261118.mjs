@@ -40,10 +40,9 @@ const noticeCSS=String.raw`
 #banner-popup{padding:16px!important;box-sizing:border-box}
 #banner-popup .popup-box{position:relative;width:min(420px,100%)!important;max-width:420px!important;max-height:calc(100dvh - 32px);padding:0!important;box-sizing:border-box;overflow:auto;border-radius:18px!important;background:#fffaf0!important;box-shadow:0 24px 80px #30210d38}
 #examNotice{margin:0;padding:0;line-height:0}
-#examNotice img{display:block;width:100%;height:auto;max-height:calc(100dvh - 108px);object-fit:contain}
+#examNotice img{display:block;width:100%;height:auto;max-height:min(62dvh,480px);object-fit:contain}
 #banner-popup #popup-close{position:absolute;right:10px;top:10px;z-index:2;width:34px;height:34px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:#fffdf5ed;color:#4d321e;font-size:24px;line-height:1;cursor:pointer}
-#banner-popup .popup-box>div:last-child{padding:12px 16px!important;box-sizing:border-box}
-#banner-popup #today-hide{font:inherit;font-size:13px;letter-spacing:.025em;line-height:1.6;color:#6d5e4d}
+#banner-popup #today-hide{display:block;width:100%;margin:0!important;padding:12px 16px!important;border:0!important;border-top:1px solid #e9dfce!important;border-radius:0!important;box-shadow:none!important;background:#fffaf0!important;font:inherit;font-size:13px;letter-spacing:.025em;line-height:1.6;color:#6d5e4d;cursor:pointer}
 #freeAddressNotice{display:flex;justify-content:center;align-items:center;gap:10px;min-height:38px;padding:4px 14px;box-sizing:border-box;background:#fff4d9;color:#70521b;font:inherit;font-size:13px;line-height:1.5;letter-spacing:.025em}
 #migrationCopyButton{border:0;background:transparent;color:inherit;font:inherit;font-weight:700;letter-spacing:.025em;cursor:pointer;padding:6px 10px;border-radius:6px}
 #migrationCopyButton:focus-visible{outline:2px solid #a36c1b;outline-offset:2px}
