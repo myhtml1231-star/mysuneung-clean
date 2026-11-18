@@ -37,7 +37,7 @@ export function freeAccountBase(createHandler,previous){
  }};
 }
 const noticeCSS=String.raw`
-#banner-popup .popup-box{max-width:430px!important;width:calc(100% - 32px)!important;max-height:90svh;overflow:auto}
+#banner-popup .popup-box{max-width:430px!important;width:calc(100% - 32px)!important;max-height:calc(100dvh - 32px);box-sizing:border-box;overflow:auto}
 #examNotice{padding:20px 10px 12px;letter-spacing:.015em;line-height:1.7}
 #examNotice .exam-tabs{display:flex;gap:8px;margin:8px 0 24px}
 #examNotice .exam-tabs button{flex:1;padding:10px 8px;border:1px solid #e6dfd3;background:#fff;border-radius:12px;font:inherit;cursor:pointer}
@@ -46,7 +46,7 @@ const noticeCSS=String.raw`
 #examNotice p{font-size:15px;color:#5c6678;line-height:1.9;margin:8px 0}
 #examNotice .exam-mark{font-size:42px;line-height:1.5}
 #examNotice .free-address{display:block;font-size:12px;overflow-wrap:anywhere;padding:12px;margin-top:16px;border-radius:12px;background:#f8f5ef;color:#655137}
-#examNotice img{max-height:54svh;width:100%;object-fit:contain}
+#examNotice img{max-height:min(42dvh,320px);width:100%;object-fit:contain}
 #examNotice [hidden]{display:none!important}
 #freeAddressNotice{font:inherit;font-size:13px;line-height:1.7;padding:10px 18px;background:#fff4d9;color:#70521b;text-align:center;letter-spacing:.015em;overflow-wrap:anywhere}
 #freeAddressNotice a{color:inherit;font-weight:700}
@@ -65,7 +65,7 @@ document.getElementById('popup-close')?.setAttribute('aria-label','안내 닫기
 document.addEventListener('keydown',event=>{if(event.key==='Escape')hide();});
 window.addEventListener('load',()=>{let hidden=false;try{hidden=localStorage.getItem(key)===kstDay();}catch{}popup.classList.toggle('hidden',hidden);if(!hidden)document.getElementById('popup-close')?.focus({preventScroll:true});},{once:true});
 })();`;
-const noticeHTML='<section id="examNotice"><div class="exam-tabs" role="tablist" aria-label="수험생 안내"><button type="button" role="tab" data-exam-tab="message" aria-selected="true">수능 응원</button><button type="button" role="tab" data-exam-tab="coffee" aria-selected="false">아메리카노 안내</button></div><div data-exam-panel="message"><div class="exam-mark" aria-hidden="true">🌿</div><h2 id="examNoticeTitle">수험생 여러분을 응원해요.</h2><p id="examNoticeMessage">그동안 달려온 모든 순간을 응원합니다.</p><a class="free-address" href="'+ACCOUNT+'/">새 무료 주소<br>mysuneung-accounts.myhtml1231.workers.dev</a><p>주소를 즐겨찾기에 저장해 주세요.</p></div><div data-exam-panel="coffee" hidden><img src="/Images/banner.png" alt="기존 아메리카노 오류 제보 행사 안내"><a href="/error-report.html">오류 제보하기 →</a></div></section>';
+const noticeHTML='<section id="examNotice"><div class="exam-tabs" role="tablist" aria-label="수험생 안내"><button type="button" role="tab" data-exam-tab="message" aria-selected="true">수능 응원</button><button type="button" role="tab" data-exam-tab="coffee" aria-selected="false">아메리카노 안내</button></div><div data-exam-panel="message"><div class="exam-mark" aria-hidden="true">🌿</div><h2 id="examNoticeTitle">수험생 여러분을 응원해요.</h2><p id="examNoticeMessage">그동안 달려온 모든 순간을 응원합니다.</p><a class="free-address" href="'+ACCOUNT+'/">새 무료 주소<br>mysuneung-accounts.myhtml1231.workers.dev</a><p>주소를 즐겨찾기에 저장해 주세요.</p></div><div data-exam-panel="coffee" hidden><img src="/Images/banner.png" alt="아메리카노 오류 제보 행사 안내"><a href="/error-report.html">오류 제보하기 →</a></div></section>';
 export function freeDomainLifecycle(application,{createHandler}){
  return {...application,async fetch(request,env,ctx){
   const u=new URL(request.url);
@@ -105,7 +105,7 @@ export function freeDomainLifecycle(application,{createHandler}){
    if(type.includes('text/html')&&['/','/index.html'].includes(u.pathname)){
     text=text.replace(/<img\b[^>]*src=["'](?:\.\/|\/)?Images\/banner\.png["'][^>]*>/i,noticeHTML);
     text=text.replace(/<\/head>/i,'<link rel="stylesheet" href="/account-assets/exam-notice-20261118.css"><script defer src="/account-assets/exam-notice-20261118.js"></script></head>');
-    text=text.replace(/<body([^>]*)>/i,'<body$1><aside id="freeAddressNotice">새 무료 주소로 이전했어요. <a href="'+ACCOUNT+'/">주소 저장하기 →</a></aside>');
+    text=text.replace(/<body([^>]*)>/i,'<body$1><aside id="freeAddressNotice">새 무료 주소 <a href="'+ACCOUNT+'/">mysuneung-accounts.myhtml1231.workers.dev</a></aside>');
    }
    return new Response(text,{status:response.status,headers});
   }
