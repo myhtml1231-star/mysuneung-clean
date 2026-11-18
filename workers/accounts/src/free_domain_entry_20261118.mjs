@@ -91,9 +91,7 @@ export function freeDomainLifecycle(application,{createHandler}){
    const response=await env.CBT_SERVICE.fetch(request),headers=new Headers(response.headers);headers.set('Cache-Control','no-store, private');
    return new Response(response.body,{status:response.status,headers});
   }
-  const extension=decodeURIComponent(u.pathname).split('.').at(-1).toLowerCase();
-  const staticFile=types[extension]&&!/^\/(?:api|auth|account-assets|site-content|workers|\.git|\.github)(?:\/|$)/.test(u.pathname)&&['GET','HEAD'].includes(request.method);
-  let response=staticFile?await publicStaticFetch(request):await application.fetch(request,configured,ctx),headers=new Headers(response.headers);
+  let response=await application.fetch(request,configured,ctx),headers=new Headers(response.headers);
   if(headers.has('Location'))headers.set('Location',replaceOrigins(headers.get('Location')));
   if(u.pathname==='/api/account/connect/authorize'&&response.ok){
    const value=await response.json(),target=new URL(value.redirect);
@@ -102,7 +100,7 @@ export function freeDomainLifecycle(application,{createHandler}){
    return new Response(JSON.stringify(value),{status:response.status,headers});
   }
   const type=headers.get('Content-Type')||'';
-  if(request.method!=='HEAD'&&response.status===200&&/text\/html|javascript|text\/css|application\/xml/.test(type)){
+  if(request.method!=='HEAD'&&response.status===200&&(/text\/html|javascript|text\/css|application\/xml/.test(type)||(u.pathname==='/robots.txt'&&type.includes('text/plain')))){
    let text=replaceOrigins(await response.text());headers.delete('Content-Length');headers.delete('Content-Encoding');headers.delete('ETag');headers.delete('Last-Modified');
    if(type.includes('text/html')&&['/','/index.html'].includes(u.pathname)){
     text=text.replace(/<img\b[^>]*src=["'](?:\.\/|\/)?Images\/banner\.png["'][^>]*>/i,noticeHTML);
