@@ -1,5 +1,5 @@
 name = "mysuneung-cbt-api"
-main = "src/index.js"
+main = "runtime/free-domain-20261118.mjs"
 compatibility_date = "2026-09-19"
 account_id = "8ca84f021b7a0f52cd48b650a0f5e1e9"
 workers_dev = false
@@ -31,3 +31,7 @@ zone_name = "mysuneung.com"
 [[routes]]
 pattern = "www.mysuneung.com/mixed-cbt*"
 zone_name = "mysuneung.com"
+
+[[services]]
+binding = "ACCOUNTS"
+service = "mysuneung-accounts"
