@@ -47,30 +47,53 @@ const noticeCSS=String.raw`
 #migrationCopyButton{border:0;background:transparent;color:inherit;font:inherit;font-weight:700;letter-spacing:.025em;cursor:pointer;padding:6px 10px;border-radius:6px}
 #migrationCopyButton:focus-visible{outline:2px solid #a36c1b;outline-offset:2px}
 #migrationCopyStatus:empty{display:none}
+
+#freeAddressNotice{flex-wrap:wrap;gap:8px}
+#freeAddressNotice .migration-text{font-weight:500}
+#freeAddressNotice .migration-move{display:inline-flex;align-items:center;gap:4px;padding:5px 11px;border-radius:7px;background:#78501e;color:#fff;text-decoration:none;font-weight:700;white-space:nowrap}
+#migrationCopyButton{display:inline-flex;align-items:center;padding:5px;line-height:1}
+#migrationCopyButton svg{width:17px;height:17px;pointer-events:none}
+#address-migration-popup{padding:16px;box-sizing:border-box;z-index:10000}
+#address-migration-popup .popup-box{position:relative;width:min(390px,100%);max-width:390px;max-height:calc(100dvh - 32px);padding:0;box-sizing:border-box;overflow:auto;border-radius:18px;background:#fffaf0;box-shadow:0 24px 80px #30210d38}
+#address-migration-popup img{display:block;width:100%;height:auto;max-height:min(48dvh,380px);object-fit:contain}
+#migrationPopupClose{position:absolute;right:10px;top:10px;z-index:2;width:34px;height:34px;padding:0;display:grid;place-items:center;border:0;border-radius:50%;background:#fffdf5ed;color:#4d321e;font:inherit;font-size:24px;line-height:1;cursor:pointer}
+.migration-popup-actions{display:flex;gap:8px;padding:12px 16px 6px}
+#migrationPopupMove{flex:1;display:block;padding:12px 16px;border-radius:10px;background:#efad21;color:#422a10;font:inherit;font-weight:700;text-align:center;text-decoration:none;letter-spacing:.025em;line-height:1.5}
+#migrationPopupCopy{padding:10px 12px;border:1px solid #e5d7c1;border-radius:10px;background:#fffaf0;color:#614725;font:inherit;font-size:13px;letter-spacing:.02em;cursor:pointer}
+#migrationPopupStatus{margin:0;padding:0 16px;font:inherit;font-size:12px;line-height:1.6;color:#6d5e4d;text-align:center}
+#migrationPopupStatus:empty{display:none}
+#migrationPopupToday{display:block;width:100%;padding:10px 16px 12px;margin:0;border:0;background:transparent;color:#6d5e4d;font:inherit;font-size:12px;letter-spacing:.025em;line-height:1.6;cursor:pointer}
+#address-migration-popup :is(button,a):focus-visible{outline:2px solid #a36c1b;outline-offset:-3px}
 `;
 const noticeJS=String.raw`(()=>{'use strict';
-const target='https://mysuneung-accounts.myhtml1231.workers.dev/',copyButton=document.getElementById('migrationCopyButton'),copyStatus=document.getElementById('migrationCopyStatus');
-async function copyAddress(){
- if(!copyButton||copyButton.disabled)return;copyButton.disabled=true;
- let copied=false;
+const target='https://mysuneung-accounts.myhtml1231.workers.dev/',day=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10),examKey='csat-2027-image-notice-v2-hide',migrationKey='address-migration-image-v1-hide',seenKey='address-migration-image-v1-seen';
+const exam=document.getElementById('banner-popup'),migration=document.getElementById('address-migration-popup'),topCopy=document.getElementById('migrationCopyButton');
+const get=(storage,key)=>{try{return window[storage].getItem(key);}catch{return null;}},put=(storage,key,value)=>{try{window[storage].setItem(key,value);}catch{}};
+const hiddenToday=key=>get('localStorage',key)===day(),markSeen=()=>put('sessionStorage',seenKey,'1');
+const visible=node=>node&&!node.classList.contains('hidden'),closeExam=document.getElementById('popup-close'),closeMigration=document.getElementById('migrationPopupClose');
+function showExam(){if(!exam)return;const show=!hiddenToday(examKey);exam.classList.toggle('hidden',!show);if(show)closeExam?.focus({preventScroll:true});else topCopy?.focus({preventScroll:true});}
+function hideExam(){exam?.classList.add('hidden');topCopy?.focus({preventScroll:true});}
+function hideMigration(){markSeen();migration?.classList.add('hidden');showExam();}
+async function copyAddress(button,status){
+ if(button.disabled)return;button.disabled=true;let copied=false;
  try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(target);copied=true;}}catch{}
- if(!copied){const field=document.createElement('textarea');field.value=target;field.setAttribute('readonly','');field.style.cssText='position:fixed;left:-9999px;top:0';document.body.append(field);field.select();try{copied=document.execCommand('copy');}catch{}field.remove();copyButton.focus({preventScroll:true});}
- if(copyStatus)copyStatus.textContent=copied?'주소가 복사됐어요.':'복사하지 못했어요. 다시 눌러 주세요.';
- copyButton.disabled=false;
+ if(!copied){const field=document.createElement('textarea');field.value=target;field.setAttribute('readonly','');field.style.cssText='position:fixed;left:-9999px;top:0';document.body.append(field);field.select();try{copied=document.execCommand('copy');}catch{}field.remove();button.focus({preventScroll:true});}
+ if(status)status.textContent=copied?'주소가 복사됐어요.':'복사하지 못했어요. 다시 눌러 주세요.';button.disabled=false;
 }
-copyButton?.addEventListener('click',copyAddress);
-const kstDay=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10),key='csat-2027-image-notice-v2-hide',popup=document.getElementById('banner-popup');
-if(!popup)return;
-const close=document.getElementById('popup-close'),hide=()=>{popup.classList.add('hidden');copyButton?.focus({preventScroll:true});};
-popup.setAttribute('role','dialog');popup.setAttribute('aria-modal','true');popup.setAttribute('aria-label','2027 수능 응원');
-close?.setAttribute('aria-label','수능 응원 팝업 닫기');close?.addEventListener('click',hide);
-document.getElementById('today-hide')?.addEventListener('click',()=>{try{localStorage.setItem(key,kstDay());}catch{}hide();});
+topCopy?.addEventListener('click',()=>copyAddress(topCopy,document.getElementById('migrationCopyStatus')));
+const popupCopy=document.getElementById('migrationPopupCopy');popupCopy?.addEventListener('click',()=>copyAddress(popupCopy,document.getElementById('migrationPopupStatus')));
+for(const link of document.querySelectorAll('[data-migration-move]'))link.addEventListener('click',markSeen);
+if(exam){exam.setAttribute('role','dialog');exam.setAttribute('aria-modal','true');exam.setAttribute('aria-label','2027 수능 응원');closeExam?.setAttribute('aria-label','수능 응원 팝업 닫기');closeExam?.addEventListener('click',hideExam);document.getElementById('today-hide')?.addEventListener('click',()=>{put('localStorage',examKey,day());hideExam();});}
+closeMigration?.addEventListener('click',hideMigration);
+document.getElementById('migrationPopupToday')?.addEventListener('click',()=>{put('localStorage',migrationKey,day());hideMigration();});
 document.addEventListener('keydown',event=>{
- if(popup.classList.contains('hidden'))return;
- if(event.key==='Escape'){event.preventDefault();hide();}
- if(event.key==='Tab'){const controls=[close,document.getElementById('today-hide')].filter(Boolean),first=controls[0],last=controls.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}}
+ const modal=visible(migration)?migration:visible(exam)?exam:null;if(!modal)return;
+ if(event.key==='Escape'){event.preventDefault();modal===migration?hideMigration():hideExam();return;}
+ if(event.key==='Tab'){const controls=Array.from(modal.querySelectorAll('button,a[href]')).filter(node=>!node.disabled),first=controls[0],last=controls.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}}
 });
-window.addEventListener('load',()=>{let hidden=false;try{hidden=localStorage.getItem(key)===kstDay();}catch{}popup.classList.toggle('hidden',hidden);if(!hidden)close?.focus({preventScroll:true});},{once:true});
+window.addEventListener('load',()=>{
+ exam?.classList.add('hidden');const show=!!migration&&!hiddenToday(migrationKey)&&get('sessionStorage',seenKey)!=='1';migration?.classList.toggle('hidden',!show);if(show)closeMigration?.focus({preventScroll:true});else showExam();
+},{once:true});
 })();`;
 const noticeHTML="<section id=\"examNotice\"><img src=\"/Images/csat-2027-cheer-20261118.png\" width=\"1122\" height=\"1402\" alt=\"2027 수능. 여기까지 달려온 너를 진심으로 응원해. 수능기출.\" fetchpriority=\"high\" decoding=\"async\"></section>";
 export function freeDomainLifecycle(application,{createHandler}){
@@ -79,7 +102,7 @@ export function freeDomainLifecycle(application,{createHandler}){
   if(!ACCOUNT_HOSTS.has(u.hostname))return new Response('Not found',{status:404});
   if(u.origin!==ACCOUNT)return new Response(null,{status:308,headers:{Location:ACCOUNT+u.pathname+u.search,'Cache-Control':'no-store'}});
   const configured={...env,SITE_ORIGIN:ACCOUNT};
-  if(u.pathname==='/account-assets/exam-image-notice-20261118-v2.css'||u.pathname==='/account-assets/exam-image-notice-20261118-v2.js'){
+  if(u.pathname==='/account-assets/exam-image-notice-20261118-v3.css'||u.pathname==='/account-assets/exam-image-notice-20261118-v3.js'){
    const css=u.pathname.endsWith('.css'),allowed=['GET','HEAD'].includes(request.method);
    return new Response(!allowed?'Method not allowed':request.method==='HEAD'?null:css?noticeCSS:noticeJS,{status:allowed?200:405,headers:{'Content-Type':css?'text/css; charset=utf-8':'application/javascript; charset=utf-8','Cache-Control':'no-cache, max-age=0',...(!allowed?{Allow:'GET, HEAD'}:{})}});
   }
@@ -111,8 +134,8 @@ export function freeDomainLifecycle(application,{createHandler}){
    let text=replaceOrigins(await response.text());headers.delete('Content-Length');headers.delete('Content-Encoding');headers.delete('ETag');headers.delete('Last-Modified');
    if(type.includes('text/html')&&['/','/index.html'].includes(u.pathname)){
     text=text.replace(/<img\b[^>]*src=["'](?:\.\/|\/)?Images\/banner\.png["'][^>]*>/i,noticeHTML);
-    text=text.replace(/<\/head>/i,'<link rel="stylesheet" href="/account-assets/exam-image-notice-20261118-v2.css"><script defer src="/account-assets/exam-image-notice-20261118-v2.js"></script></head>');
-    text=text.replace(/<body([^>]*)>/i,'<body$1><aside id="freeAddressNotice"><button id="migrationCopyButton" type="button" title="새 주소 복사">주소 이전</button><span id="migrationCopyStatus" role="status" aria-live="polite"></span></aside>');
+    text=text.replace(/<\/head>/i,'<link rel="stylesheet" href="/account-assets/exam-image-notice-20261118-v3.css"><script defer src="/account-assets/exam-image-notice-20261118-v3.js"></script></head>');
+    text=text.replace(/<body([^>]*)>/i,(match,attrs)=>'<body'+attrs+'>'+"<aside id=\"freeAddressNotice\" aria-label=\"주소 이전 안내\"><span class=\"migration-text\">새 주소로 이전했어요</span><a class=\"migration-move\" data-migration-move href=\"https://mysuneung-accounts.myhtml1231.workers.dev/\">이동하기 →</a><button id=\"migrationCopyButton\" type=\"button\" title=\"새 주소 복사\" aria-label=\"새 주소 복사\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"12\" height=\"13\" rx=\"2\"/><path d=\"M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3\"/></svg></button><span id=\"migrationCopyStatus\" role=\"status\" aria-live=\"polite\"></span></aside><div id=\"address-migration-popup\" class=\"popup-overlay hidden\" role=\"dialog\" aria-modal=\"true\" aria-label=\"새 주소로 이전했어요\"><div class=\"popup-box\"><button id=\"migrationPopupClose\" type=\"button\" aria-label=\"주소 이전 안내 닫기\">×</button><img src=\"/Images/address-migration-20261118.png\" width=\"1122\" height=\"1402\" alt=\"수능기출. 새 주소로 이전했어요. 새로운 주소에서 만나요.\" fetchpriority=\"high\" decoding=\"async\"><div class=\"migration-popup-actions\"><a id=\"migrationPopupMove\" data-migration-move href=\"https://mysuneung-accounts.myhtml1231.workers.dev/\">이동하기 →</a><button id=\"migrationPopupCopy\" type=\"button\">주소 복사</button></div><p id=\"migrationPopupStatus\" role=\"status\" aria-live=\"polite\"></p><button id=\"migrationPopupToday\" type=\"button\">오늘 하루 보지 않기</button></div></div>");
    }
    return new Response(text,{status:response.status,headers});
   }
