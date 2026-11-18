@@ -16,8 +16,7 @@ async function publicStaticFetch(input,init){
  for(const name of ['Accept','Range','If-Range','If-None-Match','If-Modified-Since'])if(request.headers.has(name))headers.set(name,request.headers.get(name));
  headers.set('User-Agent','mysuneung-public-assets/20261118');
  // Public static files only: never forward sessions, authorization or form/query data.
- let response=await fetch('https://myhtml1231-star.github.io/mysuneung-clean'+path,{method:request.method,headers,redirect:'manual'});
- if(response.status>=300&&response.status<400)response=await fetch('https://raw.githubusercontent.com/myhtml1231-star/mysuneung-clean/main'+path,{method:request.method,headers,redirect:'error'});
+ let response=await fetch('https://raw.githubusercontent.com/myhtml1231-star/mysuneung-clean/main'+path,{method:request.method,headers,redirect:'error'});
  const out=new Headers(response.headers);out.delete('Set-Cookie');out.set('Content-Type',types[extension]);out.set('X-Content-Type-Options','nosniff');
  return new Response(response.body,{status:response.status,statusText:response.statusText,headers:out});
 }
@@ -92,7 +91,9 @@ export function freeDomainLifecycle(application,{createHandler}){
    const response=await env.CBT_SERVICE.fetch(request),headers=new Headers(response.headers);headers.set('Cache-Control','no-store, private');
    return new Response(response.body,{status:response.status,headers});
   }
-  let response=await application.fetch(request,configured,ctx),headers=new Headers(response.headers);
+  const extension=decodeURIComponent(u.pathname).split('.').at(-1).toLowerCase();
+  const staticFile=types[extension]&&!/^\/(?:api|auth|account-assets|site-content|workers|\.git|\.github)(?:\/|$)/.test(u.pathname)&&['GET','HEAD'].includes(request.method);
+  let response=staticFile?await publicStaticFetch(request):await application.fetch(request,configured,ctx),headers=new Headers(response.headers);
   if(headers.has('Location'))headers.set('Location',replaceOrigins(headers.get('Location')));
   if(u.pathname==='/api/account/connect/authorize'&&response.ok){
    const value=await response.json(),target=new URL(value.redirect);
