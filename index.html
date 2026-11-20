@@ -1856,15 +1856,16 @@ popup.addEventListener("click", e => {
 
 
 
-    const getExamDate = () => ({examDate:new Date('2026-11-19T00:00:00+09:00'),academicYear:2027});
+    const getExamDate = () => ({examDate:new Date('2027-11-18T00:00:00+09:00'),academicYear:2028});
     const padTime = value => String(value).padStart(2,'0');
     const updateDDay = () => {
       const now=new Date(),{examDate,academicYear}=getExamDate();
       const day=new Date(now.getTime()+9*3600000).toISOString().slice(0,10);
       const diffMs=Math.max(0,examDate.getTime()-now.getTime()),totalSeconds=Math.floor(diffMs/1000);
+      const daysLeft=Math.max(0,Math.round((Date.parse('2027-11-18T00:00:00Z')-Date.parse(day+'T00:00:00Z'))/86400000));
       document.getElementById('dday-label').textContent='📅 '+academicYear+'학년도 수능';
-      document.getElementById('dday').textContent=day==='2026-11-19'?'D-DAY':day>'2026-11-19'?'수고했어요':'D-'+Math.ceil(diffMs/86400000);
-      document.getElementById('dday-time').textContent=day>='2026-11-19'?'수험생 여러분을 응원해요':padTime(Math.floor(totalSeconds%86400/3600))+':'+padTime(Math.floor(totalSeconds%3600/60))+':'+padTime(totalSeconds%60);
+      document.getElementById('dday').textContent=day==='2027-11-18'?'D-DAY':day>'2027-11-18'?'수고했어요':'D-'+daysLeft;
+      document.getElementById('dday-time').textContent=day>='2027-11-18'?'수험생 여러분을 응원해요':padTime(Math.floor(totalSeconds%86400/3600))+':'+padTime(Math.floor(totalSeconds%3600/60))+':'+padTime(totalSeconds%60);
       setTimeout(updateDDay,1000-now.getMilliseconds());
     };
 
