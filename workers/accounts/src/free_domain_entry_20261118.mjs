@@ -1,9 +1,10 @@
-const ACCOUNT='https://mysuneung-accounts.myhtml1231.workers.dev';
+const ACCOUNT='https://mysuneung.com';
+const LEGACY_ACCOUNT='https://mysuneung-accounts.myhtml1231.workers.dev';
 const UNIVERSITY='https://universitypredict-migration.myhtml1231.workers.dev';
-const OLD_ACCOUNT='https://mysuneung.com',OLD_UNIVERSITY='https://universitypredict.com';
-const ACCOUNT_HOSTS=new Set(['mysuneung.com','www.mysuneung.com',new URL(ACCOUNT).hostname]);
-const originMap=new Map([[ACCOUNT,OLD_ACCOUNT],[UNIVERSITY,OLD_UNIVERSITY],[OLD_ACCOUNT,OLD_ACCOUNT],['https://www.mysuneung.com','https://www.mysuneung.com'],[OLD_UNIVERSITY,OLD_UNIVERSITY],['https://www.universitypredict.com','https://www.universitypredict.com']]);
-const replaceOrigins=value=>String(value).replaceAll('https://www.mysuneung.com',ACCOUNT).replaceAll(OLD_ACCOUNT,ACCOUNT).replaceAll('https://www.universitypredict.com',UNIVERSITY).replaceAll(OLD_UNIVERSITY,UNIVERSITY);
+const OLD_UNIVERSITY='https://universitypredict.com';
+const ACCOUNT_HOSTS=new Set(['mysuneung.com','www.mysuneung.com',new URL(LEGACY_ACCOUNT).hostname]);
+const originMap=new Map([[LEGACY_ACCOUNT,ACCOUNT],[UNIVERSITY,OLD_UNIVERSITY],[ACCOUNT,ACCOUNT],['https://www.mysuneung.com','https://www.mysuneung.com'],[OLD_UNIVERSITY,OLD_UNIVERSITY],['https://www.universitypredict.com','https://www.universitypredict.com']]);
+const replaceOrigins=value=>String(value).replaceAll('https://www.mysuneung.com',ACCOUNT).replaceAll(LEGACY_ACCOUNT,ACCOUNT).replaceAll('https://www.universitypredict.com',UNIVERSITY).replaceAll(OLD_UNIVERSITY,UNIVERSITY);
 const responseJSON=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'no-store, private','X-Content-Type-Options':'nosniff'}});
 const types={html:'text/html; charset=utf-8',css:'text/css; charset=utf-8',js:'application/javascript; charset=utf-8',json:'application/json; charset=utf-8',pdf:'application/pdf',png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg',webp:'image/webp',gif:'image/gif',svg:'image/svg+xml',ico:'image/x-icon',txt:'text/plain; charset=utf-8',xml:'application/xml; charset=utf-8',woff2:'font/woff2',woff:'font/woff',mp3:'audio/mpeg',mp4:'video/mp4',wav:'audio/wav',ogg:'audio/ogg',wasm:'application/wasm',csv:'text/csv; charset=utf-8'};
 async function publicStaticFetch(input,init){
@@ -28,7 +29,7 @@ export function freeAccountBase(createHandler,previous){
    visitOrigin=request.headers.get('Origin')||u.origin;
    if(!originMap.has(visitOrigin))return responseJSON({ok:false,code:'VISIT_ORIGIN',error:'허용되지 않은 방문 출처입니다.'},403);
    const h=new Headers(request.headers);if(h.has('Origin'))h.set('Origin',originMap.get(visitOrigin));
-   forwarded=new Request(OLD_ACCOUNT+u.pathname+u.search,{method:request.method,headers:h,body:['GET','HEAD'].includes(request.method)?undefined:request.body,redirect:'manual'});
+   forwarded=new Request(ACCOUNT+u.pathname+u.search,{method:request.method,headers:h,body:['GET','HEAD'].includes(request.method)?undefined:request.body,redirect:'manual'});
   }
   const response=await createHandler({fetch:publicStaticFetch}).fetch(forwarded,configured,ctx);
   if(!visitOrigin)return response;
@@ -43,55 +44,34 @@ const noticeCSS=String.raw`
 #examNotice img{display:block;width:100%;height:auto;max-height:min(62dvh,480px);object-fit:contain}
 #banner-popup #popup-close{position:absolute;right:10px;top:10px;z-index:2;width:34px;height:34px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:#fffdf5ed;color:#4d321e;font-size:24px;line-height:1;cursor:pointer}
 #banner-popup #today-hide{display:block;width:100%;margin:0!important;padding:12px 16px!important;border:0!important;border-top:1px solid #e9dfce!important;border-radius:0!important;box-shadow:none!important;background:#fffaf0!important;font:inherit;font-size:13px;letter-spacing:.025em;line-height:1.6;color:#6d5e4d;cursor:pointer}
-#freeAddressNotice{display:flex;justify-content:center;align-items:center;gap:10px;min-height:38px;padding:4px 14px;box-sizing:border-box;background:#fff4d9;color:#70521b;font:inherit;font-size:13px;line-height:1.5;letter-spacing:.025em}
-#migrationCopyButton{border:0;background:transparent;color:inherit;font:inherit;font-weight:700;letter-spacing:.025em;cursor:pointer;padding:6px 10px;border-radius:6px}
-#migrationCopyButton:focus-visible{outline:2px solid #a36c1b;outline-offset:2px}
-#migrationCopyStatus:empty{display:none}
-
-#freeAddressNotice{flex-wrap:wrap;gap:8px}
-#freeAddressNotice .migration-text{font-weight:500}
-#migrationCopyButton{display:inline-flex;align-items:center;padding:6px 10px;line-height:1.5}
-#address-migration-popup{padding:16px;box-sizing:border-box;z-index:10000}
-#address-migration-popup .popup-box{position:relative;width:min(390px,100%);max-width:390px;max-height:calc(100dvh - 32px);padding:0;box-sizing:border-box;overflow:auto;border-radius:18px;background:#fffaf0;box-shadow:0 24px 80px #30210d38}
-#address-migration-popup img{display:block;width:100%;height:auto;max-height:min(48dvh,380px);object-fit:contain}
-#migrationPopupClose{position:absolute;right:10px;top:10px;z-index:2;width:34px;height:34px;padding:0;display:grid;place-items:center;border:0;border-radius:50%;background:#fffdf5ed;color:#4d321e;font:inherit;font-size:24px;line-height:1;cursor:pointer}
-.migration-popup-actions{display:flex;gap:8px;padding:12px 16px 6px}
-#migrationPopupMove{flex:1;display:block;padding:12px 16px;border-radius:10px;background:#efad21;color:#422a10;font:inherit;font-weight:700;text-align:center;text-decoration:none;letter-spacing:.025em;line-height:1.5}
-#migrationPopupCopy{padding:10px 12px;border:1px solid #e5d7c1;border-radius:10px;background:#fffaf0;color:#614725;font:inherit;font-size:13px;letter-spacing:.02em;cursor:pointer}
-#migrationPopupStatus{margin:0;padding:0 16px;font:inherit;font-size:12px;line-height:1.6;color:#6d5e4d;text-align:center}
-#migrationPopupStatus:empty{display:none}
-#migrationPopupToday{display:block;width:100%;padding:10px 16px 12px;margin:0;border:0;background:transparent;color:#6d5e4d;font:inherit;font-size:12px;letter-spacing:.025em;line-height:1.6;cursor:pointer}
-#address-migration-popup :is(button,a):focus-visible{outline:2px solid #a36c1b;outline-offset:-3px}
 `;
-const noticeJS=String.raw`(()=>{'use strict';
-const target='https://mysuneung-accounts.myhtml1231.workers.dev/',day=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10),examKey='csat-2027-image-notice-v2-hide',migrationKey='address-migration-image-v1-hide',seenKey='address-migration-image-v1-seen';
-const exam=document.getElementById('banner-popup'),migration=document.getElementById('address-migration-popup'),topCopy=document.getElementById('migrationCopyButton');
-const get=(storage,key)=>{try{return window[storage].getItem(key);}catch{return null;}},put=(storage,key,value)=>{try{window[storage].setItem(key,value);}catch{}};
-const hiddenToday=key=>get('localStorage',key)===day(),markSeen=()=>put('sessionStorage',seenKey,'1');
-const visible=node=>node&&!node.classList.contains('hidden'),closeExam=document.getElementById('popup-close'),closeMigration=document.getElementById('migrationPopupClose');
-function showExam(){if(!exam)return;const show=!hiddenToday(examKey);exam.classList.toggle('hidden',!show);if(show)closeExam?.focus({preventScroll:true});else topCopy?.focus({preventScroll:true});}
-function hideExam(){exam?.classList.add('hidden');topCopy?.focus({preventScroll:true});}
-function hideMigration(){markSeen();migration?.classList.add('hidden');showExam();}
-async function copyAddress(button,status){
- if(button.disabled)return;button.disabled=true;let copied=false;
- try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(target);copied=true;}}catch{}
- if(!copied){const field=document.createElement('textarea');field.value=target;field.setAttribute('readonly','');field.style.cssText='position:fixed;left:-9999px;top:0';document.body.append(field);field.select();try{copied=document.execCommand('copy');}catch{}field.remove();button.focus({preventScroll:true});}
- if(status)status.textContent=copied?'주소가 복사됐어요.':'복사하지 못했어요. 다시 눌러 주세요.';button.disabled=false;
-}
-topCopy?.addEventListener('click',()=>copyAddress(topCopy,document.getElementById('migrationCopyStatus')));
-const popupCopy=document.getElementById('migrationPopupCopy');popupCopy?.addEventListener('click',()=>copyAddress(popupCopy,document.getElementById('migrationPopupStatus')));
-for(const link of document.querySelectorAll('[data-migration-move]'))link.addEventListener('click',markSeen);
-if(exam){exam.setAttribute('role','dialog');exam.setAttribute('aria-modal','true');exam.setAttribute('aria-label','2027 수능 응원');closeExam?.setAttribute('aria-label','수능 응원 팝업 닫기');closeExam?.addEventListener('click',hideExam);document.getElementById('today-hide')?.addEventListener('click',()=>{put('localStorage',examKey,day());hideExam();});}
-closeMigration?.addEventListener('click',hideMigration);
-document.getElementById('migrationPopupToday')?.addEventListener('click',()=>{put('localStorage',migrationKey,day());hideMigration();});
-document.addEventListener('keydown',event=>{
- const modal=visible(migration)?migration:visible(exam)?exam:null;if(!modal)return;
- if(event.key==='Escape'){event.preventDefault();modal===migration?hideMigration():hideExam();return;}
- if(event.key==='Tab'){const controls=Array.from(modal.querySelectorAll('button,a[href]')).filter(node=>!node.disabled),first=controls[0],last=controls.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}}
-});
-window.addEventListener('load',()=>{
- exam?.classList.add('hidden');const show=!!migration&&!hiddenToday(migrationKey)&&get('sessionStorage',seenKey)!=='1';migration?.classList.toggle('hidden',!show);if(show)closeMigration?.focus({preventScroll:true});else showExam();
-},{once:true});
+const noticeJS=String.raw`(()=>{
+ const exam=document.getElementById('banner-popup');
+ if(!exam)return;
+ const close=document.getElementById('popup-close');
+ const today=document.getElementById('today-hide');
+ const key='csat-2027-image-notice-v2-hide';
+ const day=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10);
+ const hide=()=>exam.classList.add('hidden');
+ exam.setAttribute('role','dialog');
+ exam.setAttribute('aria-modal','true');
+ exam.setAttribute('aria-label','2027 수능 응원');
+ close?.setAttribute('aria-label','수능 응원 팝업 닫기');
+ close?.addEventListener('click',hide);
+ today?.addEventListener('click',()=>{try{localStorage.setItem(key,day());}catch{} hide();});
+ document.addEventListener('keydown',event=>{
+  if(exam.classList.contains('hidden'))return;
+  if(event.key==='Escape'){event.preventDefault();hide();}
+  if(event.key==='Tab'&&close&&today){
+   if(event.shiftKey&&document.activeElement===close){event.preventDefault();today.focus();}
+   else if(!event.shiftKey&&document.activeElement===today){event.preventDefault();close.focus();}
+  }
+ });
+ window.addEventListener('load',()=>{
+  let hidden=false;try{hidden=localStorage.getItem(key)===day();}catch{}
+  exam.classList.toggle('hidden',hidden);
+  if(!hidden)close?.focus({preventScroll:true});
+ },{once:true});
 })();`;
 const noticeHTML="<section id=\"examNotice\"><img src=\"/Images/csat-2027-cheer-20261118.png\" width=\"1122\" height=\"1402\" alt=\"2027 수능. 여기까지 달려온 너를 진심으로 응원해. 수능기출.\" fetchpriority=\"high\" decoding=\"async\"></section>";
 
@@ -118,13 +98,15 @@ function repairBrandHTML(html,baseURL){
  });
  return iconFound?result:result.replace(/<\/head>/i,'<link rel="icon" type="image/png" href="'+BRAND_ICON_PATH+'"></head>');
 }
-async function publicPageCSP(html){
+async function publicPageCSP(html,pathname){
+ const examFiles=/^\/2027-s-[^/]+\.html$/.test(pathname);
+ const examSources=examFiles?' https://cdn2.kice.re.kr https://wdown.ebsi.co.kr':'';
  const hash=async value=>"'sha256-"+btoa(String.fromCharCode(...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value)))))+"'";
  const inlineScripts=[...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)].filter(m=>! /\bsrc\s*=/i.test(m[1])).map(m=>m[2].replace(/\r\n?/g,'\n'));
  const decode=value=>value.replace(/&(?:quot|#34);/gi,'"').replace(/&(?:apos|#39);/gi,"'").replace(/&lt;/gi,'<').replace(/&gt;/gi,'>').replace(/&amp;/gi,'&').replace(/&#(x[0-9a-f]+|[0-9]+);/gi,(_,n)=>String.fromCodePoint(n[0].toLowerCase()==='x'?parseInt(n.slice(1),16):parseInt(n,10)));
  const handlers=[...html.matchAll(/\bon[a-z]+\s*=\s*(["'])([\s\S]*?)\1/gi)].map(m=>decode(m[2]).replace(/\r\n?/g,'\n'));
  const scripts=[...new Set(await Promise.all(inlineScripts.map(hash)))],attributes=[...new Set(await Promise.all(handlers.map(hash)))];
- return ["default-src 'self'","script-src 'self' "+scripts.join(' ')+" https://www.googletagmanager.com https://pagead2.googlesyndication.com https://apis.google.com","script-src-attr "+(attributes.length?"'unsafe-hashes' "+attributes.join(' '):"'none'"),"style-src 'self' 'unsafe-inline' https://fonts.googleapis.com","img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://pagead2.googlesyndication.com","font-src 'self' https://fonts.gstatic.com","connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://firestore.googleapis.com","frame-src https://mysuneung.firebaseapp.com https://accounts.google.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com","object-src 'none'","base-uri 'self'","form-action 'self'","frame-ancestors 'none'"].join('; ');
+ return ["default-src 'self'","script-src 'self' "+scripts.join(' ')+" https://www.googletagmanager.com https://pagead2.googlesyndication.com https://apis.google.com","script-src-attr "+(attributes.length?"'unsafe-hashes' "+attributes.join(' '):"'none'"),"style-src 'self' 'unsafe-inline' https://fonts.googleapis.com","img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://pagead2.googlesyndication.com","font-src 'self' https://fonts.gstatic.com","connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://firestore.googleapis.com"+examSources,...(examFiles?["media-src 'self' blob:"]:[]),"frame-src https://mysuneung.firebaseapp.com https://accounts.google.com https://googleads.g.doubleclick.net https://tpc.googlesyndication.com","object-src 'none'","base-uri 'self'","form-action 'self'","frame-ancestors 'none'"].join('; ');
 }
 
 const correctedCountdownCode="    const getExamDate = () => ({examDate:new Date('2027-11-18T00:00:00+09:00'),academicYear:2028});\n    const padTime = value => String(value).padStart(2,'0');\n    const updateDDay = () => {\n      const now=new Date(),{examDate,academicYear}=getExamDate();\n      const day=new Date(now.getTime()+9*3600000).toISOString().slice(0,10);\n      const diffMs=Math.max(0,examDate.getTime()-now.getTime()),totalSeconds=Math.floor(diffMs/1000);\n      const daysLeft=Math.max(0,Math.round((Date.parse('2027-11-18T00:00:00Z')-Date.parse(day+'T00:00:00Z'))/86400000));\n      document.getElementById('dday-label').textContent='📅 '+academicYear+'학년도 수능';\n      document.getElementById('dday').textContent=day==='2027-11-18'?'D-DAY':day>'2027-11-18'?'수고했어요':'D-'+daysLeft;\n      document.getElementById('dday-time').textContent=day>='2027-11-18'?'수험생 여러분을 응원해요':padTime(Math.floor(totalSeconds%86400/3600))+':'+padTime(Math.floor(totalSeconds%3600/60))+':'+padTime(totalSeconds%60);\n      setTimeout(updateDDay,1000-now.getMilliseconds());\n    };\n\n";
@@ -132,7 +114,7 @@ export function freeDomainLifecycle(application,{createHandler}){
  return {...application,async fetch(request,env,ctx){
   const u=new URL(request.url);
   if(!ACCOUNT_HOSTS.has(u.hostname))return new Response('Not found',{status:404});
-  if(u.origin!==ACCOUNT)return new Response(null,{status:308,headers:{Location:ACCOUNT+u.pathname+u.search,'Cache-Control':'no-store'}});
+  if(u.origin!==ACCOUNT)return new Response(null,{status:307,headers:{Location:ACCOUNT+u.pathname+u.search,'Cache-Control':'no-store'}});
   const configured={...env,SITE_ORIGIN:ACCOUNT};
   if(u.pathname===BRAND_LOGO_PATH||/\/Images\/(?:logo|site-logo-20261119)\.png$/i.test(u.pathname))return brandAssetResponse(request,'logo');
   if(u.pathname===BRAND_ICON_PATH||u.pathname==='/favicon.ico'||/\/Images\/site-favicon-20261119\.png$/i.test(u.pathname))return brandAssetResponse(request,'favicon');
@@ -170,12 +152,15 @@ export function freeDomainLifecycle(application,{createHandler}){
    if(type.includes('text/html')&&['/','/index.html'].includes(u.pathname)){
     text=text.replace(/    const getExamDate = [\s\S]*?(?=\n\s*function (?:openModal|formatStatNumber)\b)/,()=>correctedCountdownCode);
     text=text.replace(/<img\b[^>]*src=["'](?:\.\/|\/)?Images\/banner\.png["'][^>]*>/i,noticeHTML);
+    if(!text.includes('href="2027_s.html"')){
+     text=text.replace(/(<div><a href="2027_10\.html">10월<\/a><\/div>)/,'$1<div><a href="2027_s.html">수능</a></div>');
+    }
+    text=text.replace('2027학년도 3·5·6·7·9월 자료 업데이트 완료','2027학년도 수능 자료 업데이트 완료');
     text=text.replace(/<\/head>/i,'<link rel="stylesheet" href="/account-assets/exam-image-notice-20261118-v3.css"><script defer src="/account-assets/exam-image-notice-20261118-v3.js"></script></head>');
-    text=text.replace(/<body([^>]*)>/i,(match,attrs)=>'<body'+attrs+'>'+"<aside id=\"freeAddressNotice\" aria-label=\"현재 주소 안내\"><span class=\"migration-text\">이곳이 새 주소예요</span><button id=\"migrationCopyButton\" type=\"button\" title=\"새 주소 복사\" aria-label=\"새 주소 복사\">주소 복사</button><span id=\"migrationCopyStatus\" role=\"status\" aria-live=\"polite\"></span></aside><div id=\"address-migration-popup\" class=\"popup-overlay hidden\" role=\"dialog\" aria-modal=\"true\" aria-label=\"새 주소로 이전했어요\"><div class=\"popup-box\"><button id=\"migrationPopupClose\" type=\"button\" aria-label=\"주소 이전 안내 닫기\">×</button><img src=\"/Images/address-migration-20261118.png\" width=\"1122\" height=\"1402\" alt=\"수능기출. 새 주소로 이전했어요. 새로운 주소에서 만나요.\" fetchpriority=\"high\" decoding=\"async\"><div class=\"migration-popup-actions\"><a id=\"migrationPopupMove\" data-migration-move href=\"https://mysuneung-accounts.myhtml1231.workers.dev/\">이동하기 →</a><button id=\"migrationPopupCopy\" type=\"button\">주소 복사</button></div><p id=\"migrationPopupStatus\" role=\"status\" aria-live=\"polite\"></p><button id=\"migrationPopupToday\" type=\"button\">오늘 하루 보지 않기</button></div></div>");
    }
    const upstreamCSP=headers.get('Content-Security-Policy')||'';
    if(type.includes('text/html')&&/default-src\s+'none'/i.test(upstreamCSP)&&/(?:^|;)\s*sandbox(?:\s*;|\s*$)/i.test(upstreamCSP)){
-    headers.set('Content-Security-Policy',await publicPageCSP(text));headers.set('X-Mysuneung-Static-Policy','public-site-20261119');headers.set('Referrer-Policy','strict-origin-when-cross-origin');headers.set('X-Frame-Options','DENY');headers.set('X-Content-Type-Options','nosniff');
+    headers.set('Content-Security-Policy',await publicPageCSP(text,u.pathname));headers.set('X-Mysuneung-Static-Policy','public-site-20261119');headers.set('Referrer-Policy','strict-origin-when-cross-origin');headers.set('X-Frame-Options','DENY');headers.set('X-Content-Type-Options','nosniff');
    }
    return new Response(text,{status:response.status,headers});
   }

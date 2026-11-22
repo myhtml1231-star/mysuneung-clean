@@ -5,7 +5,7 @@ account_id = "8ca84f021b7a0f52cd48b650a0f5e1e9"
 workers_dev = true
 
 [vars]
-SITE_ORIGIN = "https://mysuneung-accounts.myhtml1231.workers.dev"
+SITE_ORIGIN = "https://mysuneung.com"
 FIREBASE_PROJECT_ID = "mysuneung"
 
 [assets]

@@ -74,7 +74,7 @@ async function handlePrint(request, env) {
         bytes = await o.arrayBuffer();
       } else {
         const u = new URL(p.url);
-        if (["mysuneung.com", "www.mysuneung.com"].includes(u.hostname)) {u.protocol="https:";u.hostname="mysuneung-accounts.myhtml1231.workers.dev";u.port="";}
+        if (["mysuneung.com", "www.mysuneung.com"].includes(u.hostname)) {u.protocol="https:";u.hostname="mysuneung.com";u.port="";}
         if (!["wdown.ebsi.co.kr", "www.suneung.re.kr", "mysuneung.com", "mysuneung-accounts.myhtml1231.workers.dev", "leet.uwayapply.com", "pub-847376fcebac40e496cc5726d0ff6245.r2.dev"].includes(u.hostname)) return json({ error: "\uC6D0\uBCF8 \uCD9C\uCC98\uB97C \uD655\uC778\uD574\uC57C \uD569\uB2C8\uB2E4." }, 422);
         let res;
         let target = u;
@@ -3057,7 +3057,7 @@ async function requireCBTLogin(request, env) {
   let authenticated = false;
   if (/^[-\w]{43}$/.test(token)) {
     try {
-      const response = await env.ACCOUNTS.fetch(new Request("https://mysuneung-accounts.myhtml1231.workers.dev/api/account/session", {
+      const response = await env.ACCOUNTS.fetch(new Request("https://mysuneung.com/api/account/session", {
         headers: { "Cookie": SESSION_COOKIE + "=" + token, "Accept": "application/json" },
         signal: AbortSignal.timeout(8e3)
       }));
@@ -3133,7 +3133,12 @@ var questionTypesCache = null;
 var index_default = {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (["mysuneung.com", "www.mysuneung.com"].includes(url.hostname)) return Response.redirect("https://mysuneung-accounts.myhtml1231.workers.dev" + url.pathname + url.search, 308);
+    if (url.hostname === "www.mysuneung.com") {
+      return new Response(null, { status: 307, headers: {
+        Location: "https://mysuneung.com" + url.pathname + url.search,
+        "Cache-Control": "no-store",
+      } });
+    }
     if (url.pathname === "/api/cbt/access.js" && ["GET", "HEAD"].includes(request.method)) return accessScriptResponse();
     if (isCBTPage(url.pathname) || url.pathname.startsWith("/api/cbt/") && url.pathname !== "/api/cbt/health") {
       const denied = await requireCBTLogin(request, env);
