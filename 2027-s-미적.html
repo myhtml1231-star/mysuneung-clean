@@ -1,134 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-  <title>기출 다운로드</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: "Noto Sans KR", sans-serif;
-      background: #fafafa;
-      text-align: center;
-    }
-
-    /* 로고 */
-    .logo {
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-    .logo img {
-      width: 180px;
-      user-select: none;
-    }
-
-    /* 제목 */
-    .title {
-      font-size: 32px;
-      font-weight: 900;
-      color: #333;
-      margin-bottom: 50px;
-    }
-
-    /* 박스 전체 컨테이너 */
-    .box-container {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      padding: 20px;
-    }
-
-    /* 박스 디자인 */
-    .download-box {
-      background: white;
-      padding: 40px 10px;
-      border-radius: 18px;
-      border: 1px solid #e6e6e6;
-      font-size: 22px;
-      font-weight: 700;
-      color: #333;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      text-decoration: none;
-      transition: 0.2s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .download-box:hover {
-      background: #fff8e5;
-      border-color: #F4B733;
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
-
-    /* 뒤로가기 */
-    .back-btn {
-      display: inline-block;
-      margin-top: 60px;
-      padding: 12px 24px;
-      background: #f0f0f0;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #444;
-      font-size: 18px;
-      border: 1px solid #ddd;
-      transition: 0.2s;
-    }
-    .back-btn:hover {
-      background: #e4e4e4;
-      transform: translateY(-2px);
-    }
-
-    /* 반응형 */
-    @media (max-width: 720px) {
-      .box-container {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-      }
-      .download-box {
-        padding: 32px 10px;
-        font-size: 20px;
-      }
-    }
-  </style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B7Q0KVYYH5');
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>미적분 | 2027학년도 수능</title>
+  <link rel="stylesheet" href="csat-2027-layout.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-B7Q0KVYYH5');
+  </script>
 </head>
-<body>
-
-  <!-- 로고 -->
-  <div class="logo">
-    <img src="Images/logo.png" alt="logo">
+<body class="csat-page">
+  <div class="csat-wrap">
+    <header class="csat-header">
+      <a class="csat-brand" href="index.html">수능기출</a>
+      <div class="header-actions"></div>
+    </header>
+    <main>
+      <div class="csat-subject-title">
+        <p>2027학년도 수능</p>
+        <h1>미적분</h1>
+      </div>
+      <div class="csat-subject-content">
+        <section class="csat-file-section" aria-label="문제, 정답 및 해설">
+          <ul class="csat-download-list">
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_2.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 미적분 문제.pdf" data-pdf-track="math-calculus" data-pdf-kind="paper"><span data-download-label>문제</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_2a.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 미적분 정답.pdf" data-pdf-track="math-calculus" data-pdf-kind="answer"><span data-download-label>정답</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/math_main_hsj_IXPVUCKG.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 미적분 해설.pdf" data-pdf-track="math-calculus" data-pdf-kind="solution"><span data-download-label>해설</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="csat-download-status" id="csat-download-status" role="status"></p>
+    </main>
+    <a class="csat-back" href="2027_s.html"><span aria-hidden="true">←</span>&nbsp;이전 화면</a>
   </div>
-
-  <!-- 제목 -->
-  <div class="title">2027학년도 고3 수능 수학(미적분) — 다운로드</div>
-
-  <!-- 다운로드 박스 3개 -->
-  <div class="box-container">
-    <a class="download-box" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_2.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 미적분 문제.pdf" data-pdf-track="math-calculus" data-pdf-kind="paper">문제</a>
-    <a class="download-box" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_2a.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 미적분 정답.pdf" data-pdf-track="math-calculus" data-pdf-kind="answer">정답</a>
-    <a class="download-box" href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/math_main_hsj_IXPVUCKG.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 미적분 해설.pdf" data-pdf-track="math-calculus" data-pdf-kind="solution">해설</a>
-  </div>
-
-  <!-- 뒤로가기 -->
-  <a class="back-btn" href="2027_s.html">← 이전 화면으로 돌아가기</a>
-
-
-<script type="module" src="visit-counter.js"></script>
-
-<script type="module" src="csat-2027-downloads.js"></script>
+  <script type="module" src="visit-counter.js"></script>
+  <script type="module" src="csat-2027-downloads.js"></script>
 </body>
 </html>

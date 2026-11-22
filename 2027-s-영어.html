@@ -1,217 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>기출 다운로드</title>
-<style>
-  :root{
-    --bg:#f5f7fa; --card:#fff; --muted:#6b7280; --accent:#F4B733; --border:#e6e6e6;
-  }
-  body{margin:0;font-family:"Pretendard","Noto Sans KR",sans-serif;background:var(--bg);color:#111}
-  header{padding:18px;text-align:center}
-  header img{width:56px;height:auto;display:block;margin:0 auto 8px}
-  h1{font-size:26px;text-align:center;margin:6px 0 18px;font-weight:800}
-
-  .main{max-width:1100px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
-  .card{background:var(--card);border-radius:14px;padding:26px;border:1px solid var(--border);box-shadow:0 6px 18px rgba(0,0,0,0.04)}
-  .group-title{font-weight:800;margin-bottom:18px;font-size:20px;color:#222;text-align:center}
-
-  .item{display:flex;justify-content:space-between;align-items:center;padding:14px;border-radius:12px;background:#fff;margin-bottom:12px;border:1px solid #f0f0f0}
-  .item .label{font-weight:700}
-  .item a{color:#111;text-decoration:none;font-weight:700}
-
-  /* player */
-  .player-center{text-align:center}
-  .seek{width:100%;-webkit-appearance:none;height:8px;background:#e6e6e6;border-radius:6px;outline:none}
-  .seek::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;background:var(--accent);border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.18);border:2px solid #fff}
-
-  .controls{display:flex;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap}
-  .btn{background:#f3f3f3;border:1px solid #ddd;padding:8px 12px;border-radius:10px;cursor:pointer;font-weight:700}
-  .btn:hover{background:#eee}
-  .speed-btn{padding:6px 10px;border-radius:8px;border:1px solid #e0e0e0;background:#fafafa;cursor:pointer;font-weight:700}
-  .speed-btn.active{background:#fff2d6;border-color:var(--accent)}
-  .time{margin-top:10px;color:var(--muted);font-size:14px}
-
-  .downloads{margin-top:16px;display:flex;flex-direction:column;gap:10px}
-  .download-link{padding:12px;border-radius:10px;background:#fff;border:1px solid #f0f0f0;text-decoration:none;color:#111;font-weight:700;text-align:center}
-
-  .back{display:inline-block;margin:28px auto;padding:10px 18px;border-radius:10px;background:#fff;border:1px solid #ddd;text-decoration:none;color:#111;font-weight:700}
-
-  @media(max-width:900px){
-    .main{grid-template-columns:1fr}
-    .back{margin-bottom:40px}
-  }
-     .back-btn {
-      margin-top: 50px;
-      display: inline-block;
-      padding: 12px 24px;
-      background: #f0f0f0;
-      border-radius: 10px;
-      font-size: 18px;
-      color: #444;
-      text-decoration: none;
-      font-weight: 600;
-      border: 1px solid #ddd;
-      transition: 0.2s;
-    }
-
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B7Q0KVYYH5');
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>영어 | 2027학년도 수능</title>
+  <link rel="stylesheet" href="csat-2027-layout.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-B7Q0KVYYH5');
+  </script>
 </head>
-<body>
-
-<header>    <img src="Images/logo.png" alt="logo">
-</header>
-
-<h1>2027학년도 고3 수능 영어-다운로드</h1>
-
-<div class="main">
-
-  <!-- LEFT -->
-  <div class="card">
-    <div class="group-title">문항 자료</div>
-
-    <div class="item">
-      <div class="label">문제지</div>
-      <a href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_3.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 문제.pdf">다운로드</a>
-    </div>
-
-    <div class="item">
-      <div class="label">정답지</div>
-      <a href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_3a.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 정답.pdf">다운로드</a>
-    </div>
-
-    <div class="item">
-      <div class="label">해설지</div>
-      <a href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/eng_main_hsj_5HW518F7.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 해설.pdf">다운로드</a>
-    </div>
+<body class="csat-page">
+  <div class="csat-wrap">
+    <header class="csat-header">
+      <a class="csat-brand" href="index.html">수능기출</a>
+      <div class="header-actions"></div>
+    </header>
+    <main>
+      <div class="csat-subject-title">
+        <p>2027학년도 수능</p>
+        <h1>영어</h1>
+      </div>
+      <div class="csat-subject-content csat-with-listening">
+        <section class="csat-file-section" aria-label="문제, 정답 및 해설">
+          <h2 class="csat-section-title">문항 자료</h2>
+          <ul class="csat-download-list">
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_3.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 문제.pdf"><span data-download-label>문제</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_3a.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 정답.pdf"><span data-download-label>정답</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/eng_main_hsj_5HW518F7.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 해설.pdf"><span data-download-label>해설</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="csat-listening-heading">
+          <h2 class="csat-section-title" id="csat-listening-heading">듣기 자료</h2>
+          <audio id="audio" preload="none" data-listening-zip="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/eng_mun_7T63VY95.zip"></audio>
+          <input class="csat-seek" id="seek" type="range" min="0" max="0" value="0" step="0.1"
+                 aria-label="듣기 재생 위치" disabled>
+          <output class="csat-time" id="time" aria-live="off">0:00 / 0:00</output>
+          <div class="csat-player-controls" aria-label="듣기 재생 제어" role="group">
+            <button type="button" id="back10" disabled>−10초</button>
+            <button type="button" id="toggle">재생</button>
+            <button type="button" id="fwd10" disabled>+10초</button>
+          </div>
+          <div class="csat-player-controls" aria-label="재생 속도" role="group">
+              <button type="button" data-speed="0.5" aria-pressed="false">0.5×</button>
+              <button type="button" data-speed="0.75" aria-pressed="false">0.75×</button>
+              <button type="button" data-speed="1" aria-pressed="true">1×</button>
+              <button type="button" data-speed="1.25" aria-pressed="false">1.25×</button>
+              <button type="button" data-speed="1.5" aria-pressed="false">1.5×</button>
+              <button type="button" data-speed="2" aria-pressed="false">2×</button>
+          </div>
+          <ul class="csat-download-list csat-audio-files">
+            <li><a class="csat-row" href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/eng_mun_7T63VY95.zip" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 듣기 전체.mp3" data-zip-extension=".mp3"><span data-download-label>듣기 전체</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_3.zip" target="_blank" rel="noopener"><span>듣기 개별</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_31.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 듣기 대본.pdf"><span data-download-label>듣기 대본</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="csat-download-status" id="csat-download-status" role="status"></p>
+    </main>
+    <a class="csat-back" href="2027_s.html"><span aria-hidden="true">←</span>&nbsp;이전 화면</a>
   </div>
-
-  <!-- RIGHT -->
-  <div class="card">
-    <div class="group-title">듣기 자료</div>
-
-    <div class="player-center">
-
-      <audio id="audio" preload="metadata" data-listening-zip="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/eng_mun_7T63VY95.zip"></audio>
-
-      <input id="seek" class="seek" type="range" min="0" max="100" value="0">
-
-      <div class="controls">
-        <button class="btn" id="back10">⏪ -10s</button>
-        <button class="btn" id="toggle">▶ 재생</button>
-        <button class="btn" id="fwd10">+10s ⏩</button>
-      </div>
-
-      <div class="controls">
-        <button class="speed-btn" data-speed="0.5">0.5x</button>
-        <button class="speed-btn" data-speed="0.75">0.75x</button>
-        <button class="speed-btn active" data-speed="1">1.0x</button>
-        <button class="speed-btn" data-speed="1.25">1.25x</button>
-        <button class="speed-btn" data-speed="1.5">1.5x</button>
-        <button class="speed-btn" data-speed="2">2.0x</button>
-      </div>
-
-      <div class="time" id="time">00:00 / 00:00</div>
-
-      <!-- DOWNLOAD AREA: 2개로 분리 -->
-      <div class="downloads">
-        <a class="download-link"
-           href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/eng_mun_7T63VY95.zip" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 듣기 전체.mp3" data-zip-extension=".mp3">
-           듣기 전체 다운로드         </a>
-
-        <a class="download-link"
-           href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_3.zip" target="_blank" rel="noopener">
-           듣기 개별 다운로드         </a>
-
-        <a class="download-link" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_31.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 영어 듣기 대본.pdf">
-          듣기 대본 다운로드        </a>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-<div style="text-align:center;">
-
-  <a class="back-btn" href="2027_s.html">← 이전 화면으로 돌아가기</a>
-
-</div>
-
-<script>
-  const audio = document.getElementById('audio');
-  const seek = document.getElementById('seek');
-  const timeEl = document.getElementById('time');
-  const toggle = document.getElementById('toggle');
-  const back10 = document.getElementById('back10');
-  const fwd10 = document.getElementById('fwd10');
-  const speedBtns = document.querySelectorAll('.speed-btn');
-
-  function fmt(t){
-    if(!isFinite(t) || t <= 0) return '00:00';
-    const m = Math.floor(t/60).toString().padStart(2,'0');
-    const s = Math.floor(t%60).toString().padStart(2,'0');
-    return `${m}:${s}`;
-  }
-
-  audio.addEventListener('loadedmetadata', () => {
-    seek.max = Math.floor(audio.duration);
-    timeEl.textContent = `00:00 / ${fmt(audio.duration)}`;
-  });
-
-  audio.addEventListener('timeupdate', () => {
-    seek.value = audio.currentTime;
-    timeEl.textContent = `${fmt(audio.currentTime)} / ${fmt(audio.duration)}`;
-  });
-
-  seek.addEventListener('input', () => {
-    audio.currentTime = seek.value;
-  });
-
-  toggle.addEventListener('click', async () => {
-    if (!audio.paused) {
-      audio.pause();
-      toggle.textContent = '▶ 재생';
-      return;
-    }
-    toggle.disabled = true;
-    toggle.textContent = '준비 중…';
-    try {
-      await audio.loadListening();
-      await audio.play();
-      toggle.textContent = '⏸ 일시정지';
-    } catch {
-      toggle.textContent = '▶ 다시 시도';
-    } finally {
-      toggle.disabled = false;
-    }
-  });
-
-  back10.addEventListener('click', ()=> audio.currentTime = Math.max(0, audio.currentTime - 10));
-  fwd10.addEventListener('click', ()=> audio.currentTime = Math.min(audio.duration, audio.currentTime + 10));
-
-  speedBtns.forEach(btn => {
-    btn.addEventListener('click', ()=>{
-      audio.playbackRate = parseFloat(btn.dataset.speed);
-      speedBtns.forEach(b=>b.classList.remove('active'));
-      btn.classList.add('active');
-    });
-  });
-</script>
-
-
-<script type="module" src="visit-counter.js"></script>
-
-<script type="module" src="csat-2027-downloads.js"></script>
+  <script type="module" src="visit-counter.js"></script>
+  <script type="module" src="csat-2027-downloads.js"></script>
+  <script type="module" src="csat-2027-listening.js"></script>
 </body>
 </html>

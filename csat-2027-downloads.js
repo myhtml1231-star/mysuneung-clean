@@ -140,14 +140,8 @@ function saveFile(bytes, name) {
 }
 
 function showDownloadError(url) {
-  let status = document.getElementById('csat-download-status');
-  if (!status) {
-    status = document.createElement('p');
-    status.id = 'csat-download-status';
-    status.setAttribute('role', 'status');
-    status.style.textAlign = 'center';
-    document.body.append(status);
-  }
+  const status = document.getElementById('csat-download-status');
+  if (!status) return;
   const source = document.createElement('a');
   source.href = url;
   source.target = '_blank';
@@ -172,11 +166,12 @@ for (const link of document.querySelectorAll('a[data-filename]')) {
     if (link.getAttribute('aria-busy') === 'true') return;
 
     const { filename, zipMember, zipExtension, pdfTrack, pdfKind } = link.dataset;
-    const originalLabel = link.textContent;
+    const label = link.querySelector('[data-download-label]') ?? link;
+    const originalLabel = label.textContent;
     const url = link.href;
     link.setAttribute('aria-busy', 'true');
-    link.textContent = '준비 중…';
-    document.getElementById('csat-download-status')?.remove();
+    label.textContent = '준비 중…';
+    document.getElementById('csat-download-status')?.replaceChildren();
     try {
       let bytes = zipExtension ? await getListeningAudio(url) : await fetchSource(url);
       if (zipMember) bytes = await unzipMember(bytes, name => name === zipMember);
@@ -186,7 +181,7 @@ for (const link of document.querySelectorAll('a[data-filename]')) {
       showDownloadError(url);
     } finally {
       link.removeAttribute('aria-busy');
-      link.textContent = originalLabel;
+      label.textContent = originalLabel;
     }
   });
 }

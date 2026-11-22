@@ -1,148 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>기출 다운로드</title>
-
-<style>
-    body {
-        margin: 0;
-        background: #f5f7fa;
-        font-family: "Pretendard", sans-serif;
-    }
-
-    /* 상단 로고 영역 */
-    .header {
-        width: 100%;
-        padding: 18px 0;
-        background: white;
-        border-bottom: 1px solid #e5e8eb;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-
-    .header img {
-        height: 42px;
-    }
-
-    /* 페이지 제목 */
-    .title {
-        text-align: center;
-        font-size: 26px;
-        margin: 30px 0 20px;
-        font-weight: 600;
-        color: #2d2f33;
-    }
-
-    /* 다운로드 박스 전체 */
-    .box-container {
-        width: 92%;
-        max-width: 600px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    /* 개별 박스 */
-    .download-box {
-        background: white;
-        padding: 22px;
-        border-radius: 14px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.15s ease;
-        text-decoration: none;
-        color: #2b2d31;
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    .download-box:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 14px rgba(0,0,0,0.08);
-    }
-
-    .download-box span {
-        font-size: 16px;
-        color: #636a73;
-    }
-
-    /* 이전으로 돌아가기 버튼 */
-    .back-btn {
-        margin-top: 35px;
-        display: inline-block;
-        padding: 12px 24px;
-        background: #f0f0f0;
-        border-radius: 10px;
-        font-size: 18px;
-        color: #444;
-        text-decoration: none;
-        font-weight: 600;
-        border: 1px solid #ddd;
-        transition: 0.2s;
-        text-align: center;
-    }
-
-    .back-btn:hover {
-        background: #e4e4e4;
-        transform: translateY(-2px);
-    }
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-B7Q0KVYYH5');
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>언어와 매체 | 2027학년도 수능</title>
+  <link rel="stylesheet" href="csat-2027-layout.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-B7Q0KVYYH5');
+  </script>
 </head>
-
-<body>
-
-<!-- 로고 -->
-<div class="header">
-     <img src="Images/logo.png" alt="logo">
-</div>
-
-<!-- 제목 -->
-<div class="title">2027학년도 고3 수능 국어(언어와매체) — 다운로드</div>
-
-<!-- 3개 다운로드 버튼 -->
-<div class="box-container">
-
-    <a class="download-box" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_1.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 언어와매체 문제.pdf" data-pdf-track="korean-media" data-pdf-kind="paper">
-        문제지
-        <span>PDF 다운로드</span>
-    </a>
-
-    <!-- 🔥 이 부분만 수정 -->
-    <a class="download-box" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_1a.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 언어와매체 정답.pdf" data-pdf-track="korean-media" data-pdf-kind="answer">
-        정답지
-        <span>PDF 다운로드</span>
-    </a>
-
-    <a class="download-box" href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/kor_main_hsj_Y78V37UD.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 언어와매체 해설.pdf" data-pdf-track="korean-media" data-pdf-kind="solution">
-        해설지
-        <span>PDF 다운로드</span>
-    </a>
-
-    <a class="back-btn" href="2027_s.html">← 이전 화면으로 돌아가기</a>
-
-</div>
-
-
-<script type="module" src="visit-counter.js"></script>
-
-<script type="module" src="csat-2027-downloads.js"></script>
+<body class="csat-page">
+  <div class="csat-wrap">
+    <header class="csat-header">
+      <a class="csat-brand" href="index.html">수능기출</a>
+      <div class="header-actions"></div>
+    </header>
+    <main>
+      <div class="csat-subject-title">
+        <p>2027학년도 수능</p>
+        <h1>언어와 매체</h1>
+      </div>
+      <div class="csat-subject-content">
+        <section class="csat-file-section" aria-label="문제, 정답 및 해설">
+          <ul class="csat-download-list">
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_1.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 언어와매체 문제.pdf" data-pdf-track="korean-media" data-pdf-kind="paper"><span data-download-label>문제</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://cdn2.kice.re.kr/27dae-suneung/27DaeSuneung_1a.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 언어와매체 정답.pdf" data-pdf-track="korean-media" data-pdf-kind="answer"><span data-download-label>정답</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+            <li><a class="csat-row" href="https://wdown.ebsi.co.kr/W61001/01exam/20261119/go3/kor_main_hsj_Y78V37UD.pdf" target="_blank" rel="noopener" data-filename="2027학년도 수능 언어와매체 해설.pdf" data-pdf-track="korean-media" data-pdf-kind="solution"><span data-download-label>해설</span><span class="csat-arrow" aria-hidden="true">↓</span></a></li>
+          </ul>
+        </section>
+      </div>
+      <p class="csat-download-status" id="csat-download-status" role="status"></p>
+    </main>
+    <a class="csat-back" href="2027_s.html"><span aria-hidden="true">←</span>&nbsp;이전 화면</a>
+  </div>
+  <script type="module" src="visit-counter.js"></script>
+  <script type="module" src="csat-2027-downloads.js"></script>
 </body>
 </html>
