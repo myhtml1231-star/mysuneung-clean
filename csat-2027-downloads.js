@@ -29,6 +29,13 @@ const tracks = {
   },
 };
 
+// The official combined booklet tells readers to continue to the next elective.
+const nextElectivePages = { math: new Set([8, 12, 16]), korean: new Set([12, 16]) };
+const withoutNextElective = [
+  { below: 1026 }, { above: 1026, below: 1065, right: 443 },
+  { above: 1026, below: 1065, left: 751 }, { above: 1065 },
+];
+
 const libraries = new Map();
 function loadScript(file) {
   if (!libraries.has(file)) {
@@ -82,16 +89,20 @@ async function splitPdf(bytes, trackName, kind) {
     }, commonEnd - 0.4);
   } else {
     const selections = track[kind].flatMap(([first, last, region]) =>
-      Array.from({ length: last - first + 1 }, (_, index) => ({ index: first - 1 + index, region })));
-    const wholePages = await output.copyPages(source, selections.filter(page => !page.region).map(page => page.index));
+      Array.from({ length: last - first + 1 }, (_, offset) => {
+        const page = first + offset;
+        const needsNoteRemoved = kind === 'paper' && nextElectivePages[trackName.split('-')[0]].has(page);
+        return { index: page - 1, regions: needsNoteRemoved ? withoutNextElective : (region ? [region] : []) };
+      }));
+    const wholePages = await output.copyPages(source, selections.filter(page => !page.regions.length).map(page => page.index));
     let nextWholePage = 0;
-    for (const { index, region } of selections) {
-      if (!region) {
+    for (const { index, regions } of selections) {
+      if (!regions.length) {
         output.addPage(wholePages[nextWholePage++]);
       } else {
         const original = source.getPage(index);
         const target = output.addPage([original.getWidth(), original.getHeight()]);
-        await addRegion(output, target, original, region);
+        for (const region of regions) await addRegion(output, target, original, region);
       }
     }
   }
