@@ -78,8 +78,10 @@
 
 .csat-hero-image {
   display: block;
-  width: min(100%, 338px, max(236px, 31vh));
-  height: auto;
+  width: auto;
+  max-width: 100%;
+  height: clamp(220px, 34vh, 340px);
+  object-fit: contain;
   justify-self: end;
 }
 
@@ -272,7 +274,8 @@
   }
 
   .csat-hero-image {
-    width: min(100%, 295px, max(210px, 31vh));
+    width: min(100%, 230px);
+    height: auto;
   }
 }
 
