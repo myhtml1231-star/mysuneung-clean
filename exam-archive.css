@@ -1,0 +1,106 @@
+.exam-rounds {
+  margin-block: -8px 12px;
+  border-bottom: 1px solid var(--csat-line);
+}
+
+.exam-rounds .csat-course-link {
+  min-height: 40px;
+}
+
+.exam-resource-group + .exam-resource-group {
+  margin-top: 14px;
+}
+
+.exam-resource-group .csat-section-title {
+  margin-bottom: 6px;
+}
+
+.exam-archive .csat-player-controls button.active {
+  color: var(--csat-accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.exam-archive .csat-player-controls button {
+  padding-inline: 0;
+}
+
+.exam-archive .csat-seek {
+  display: block;
+  margin-inline: 0;
+}
+
+.exam-archive .csat-audio-files {
+  margin-top: 8px;
+}
+
+/* The main menu shares a single surface for year and month selection. */
+.nav-list .nav-item[data-name="고3"] > .dropdown-panel,
+.nav-list .nav-item[data-name="고2"] > .dropdown-panel,
+.nav-list .nav-item[data-name="고1"] > .dropdown-panel {
+  top: 100%;
+  box-sizing: border-box;
+  min-width: 248px;
+  padding: 8px 12px;
+  border: 1px solid #d3d9e1;
+  border-radius: 0;
+  background: #fbfcfd;
+  box-shadow: 0 8px 22px rgb(22 28 37 / 8%);
+}
+
+.nav-list .year-list {
+  position: relative;
+  gap: 0;
+  min-height: 240px;
+}
+
+.nav-list .year-item {
+  position: static;
+  width: 106px;
+  box-sizing: border-box;
+  padding: 8px 10px 8px 0;
+  border-radius: 0;
+}
+
+.nav-list .year-item:is(:hover, :focus-visible, .active),
+.nav-list .submenu a:is(:hover, :focus-visible) {
+  color: #1552a8;
+  background: transparent;
+}
+
+.nav-list .submenu {
+  inset: 0 auto auto 106px;
+  min-width: 0;
+  padding: 0 12px;
+  border-inline-start: 1px solid #d3d9e1;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.nav-list .submenu div {
+  padding: 0;
+}
+
+.nav-list .submenu a {
+  min-height: 34px;
+  box-sizing: border-box;
+  padding: 7px 0;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    position: relative;
+  }
+
+  .nav-list .nav-item:is([data-name="고3"], [data-name="고2"], [data-name="고1"]) {
+    position: static;
+  }
+
+  .nav-list .nav-item:is([data-name="고3"], [data-name="고2"], [data-name="고1"]) > .dropdown-panel {
+    inset-inline: 0;
+    width: min(100%, 285px);
+    min-width: 0;
+    margin-inline: auto;
+  }
+}

@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>2020학년도 고2 10월 모의평가 과목 선택</title>
-<style>
-body{margin:0;font-family:"Noto Sans KR",sans-serif;background:#fafafa;}
-.container{width:100%;max-width:900px;margin:0 auto;padding:60px 20px;text-align:center;}
-.title{font-size:38px;font-weight:900;margin-bottom:40px;color:#333;}
-.subject-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:20px;}
-.subject-item{position:relative;}
-.subject-box{padding:45px 10px;background:white;border-radius:18px;border:1px solid #e6e6e6;box-shadow:0 4px 12px rgba(0,0,0,0.05);font-size:24px;font-weight:700;color:#333;text-decoration:none;display:flex;align-items:center;justify-content:center;transition:0.2s;cursor:pointer;user-select:none;}
-.subject-box:hover{transform:translateY(-4px);background:#fff8e5;border-color:#F4B733;box-shadow:0 6px 16px rgba(0,0,0,0.08);}
-.dropdown{display:none;position:absolute;left:0;top:100%;width:100%;margin-top:12px;background:white;border-radius:14px;border:1px solid #e6e6e6;box-shadow:0 8px 20px rgba(0,0,0,0.06);padding:10px;z-index:40;}
-.dropdown a{display:block;padding:10px 12px;font-weight:700;font-size:18px;color:#333;text-decoration:none;border-radius:10px;transition:0.15s;}
-.dropdown a:hover{background:#fff8e5;border-color:#F4B733;transform:translateY(-2px);}
-.subject-item.open .dropdown{display:block;}
-.subject-box .caret{margin-left:8px;font-size:16px;opacity:0.85;transform:translateY(1px);}
-.back-btn{margin-top:50px;display:inline-block;padding:12px 24px;background:#f0f0f0;border-radius:10px;font-size:18px;color:#444;text-decoration:none;font-weight:600;border:1px solid #ddd;transition:0.2s;}
-.back-btn:hover{background:#e4e4e4;transform:translateY(-2px);}
-@media(max-width:720px){.subject-grid{grid-template-columns:repeat(2,1fr);gap:18px;}.subject-box{padding:36px 8px;font-size:20px;}.title{font-size:32px;}}
-@media(max-width:420px){.subject-grid{grid-template-columns:1fr;}.subject-box{padding:30px 8px;font-size:20px;}}
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2020학년도 고2 10월 모의평가 | 수능기출</title>
+  <link rel="stylesheet" href="csat-2027-layout.css?v=3">
+  <link rel="stylesheet" href="exam-archive.css">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);} 
@@ -31,55 +15,49 @@ body{margin:0;font-family:"Noto Sans KR",sans-serif;background:#fafafa;}
   gtag('config', 'G-B7Q0KVYYH5');
 </script>
 </head>
-<body>
-<div class="container">
-<div class="title">2020학년도 고2 10월 모의평가 과목 선택</div>
-<div class="subject-grid">
-<div class="subject-item"><a class="subject-box" href="020-10-ko.html">국어</a></div>
-<div class="subject-item"><a class="subject-box" href="020-10-ma.html">수학</a></div>
-<div class="subject-item"><a class="subject-box" href="020-10-영어.html">영어</a></div>
-<div class="subject-item"><a class="subject-box" href="020-10-hi.html">한국사</a></div>
-
-<div class="subject-item" data-subject="social">
-<div class="subject-box" role="button" aria-expanded="false" tabindex="0">사회탐구 <span class="caret">▾</span></div>
-<div class="dropdown">
-<a class="subject-box" href="020-10-y.html">윤리와사상</a>
-<a class="subject-box" href="020-10-j.html">정치와법</a>
-<a class="subject-box" href="020-10-k.html">경제</a>
-<a class="subject-box" href="020-10-sm.html">사회문화</a>
-<a class="subject-box" href="020-10-s.html">세계사</a>
-<a class="subject-box" href="020-10-h.html">한국지리</a>
-<a class="subject-box" href="020-10-sa.html">생활과윤리</a>
-<a class="subject-box" href="020-10-d.html">동아시아사</a>
-<a class="subject-box" href="020-10-sj.html">세계지리</a>
-</div>
-</div>
-
-<div class="subject-item" data-subject="science">
-<div class="subject-box" role="button" aria-expanded="false" tabindex="0">과학탐구 <span class="caret">▾</span></div>
-<div class="dropdown">
-<a class="subject-box" href="020-10-m.html">물리학Ⅰ</a>
-<a class="subject-box" href="020-10-c.html">화학Ⅰ</a>
-<a class="subject-box" href="020-10-l.html">생명과학Ⅰ</a>
-<a class="subject-box" href="020-10-e.html">지구과학Ⅰ</a>
-</div>
-</div>
-
-</div>
-<a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
-</div>
-
-<script>
-(function(){
-  const items=document.querySelectorAll('.subject-item');
-  function closeAll(except=null){items.forEach(it=>{if(it!==except){it.classList.remove('open');const box=it.querySelector('.subject-box');if(box)box.setAttribute('aria-expanded','false');const dd=it.querySelector('.dropdown');if(dd)dd.setAttribute('aria-hidden','true');}});}
-  items.forEach(item=>{const box=item.querySelector('.subject-box');const dropdown=item.querySelector('.dropdown');if(!box)return;
-  box.addEventListener('click',()=>{const isOpen=item.classList.contains('open');if(isOpen){item.classList.remove('open');box.setAttribute('aria-expanded','false');if(dropdown)dropdown.setAttribute('aria-hidden','true');}else{closeAll(item);item.classList.add('open');box.setAttribute('aria-expanded','true');if(dropdown)dropdown.setAttribute('aria-hidden','false');}});  box.addEventListener('keydown',(e)=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();box.click();}});  if(dropdown){dropdown.addEventListener('click',(e)=>{if(e.target.tagName.toLowerCase()==='a')closeAll();});}});  document.addEventListener('click',e=>{if(!e.target.closest('.subject-item'))closeAll();});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll();});
-})();
-</script>
-
-<script type="module" src="visit-counter.js"></script>
-
+<body class="csat-page exam-archive">
+  <div class="csat-wrap">
+    <header class="csat-header">
+      <a class="csat-brand" href="index.html">수능기출</a>
+      <div class="header-actions"></div>
+    </header>
+    <main>
+      <h1 class="csat-title">2020학년도 고2 10월 모의평가</h1>
+      <nav class="exam-rounds" aria-label="시험 회차">
+      <ul class="csat-course-list">
+        <li><a class="csat-course-link" href="020-3.html">3월</a></li>
+        <li><a class="csat-course-link" href="020-6.html">6월</a></li>
+        <li><a class="csat-course-link" href="020-9.html">9월</a></li>
+        <li><a class="csat-course-link" href="020-10.html" aria-current="page">10월</a></li>
+      </ul>
+      </nav>
+      <div class="csat-layout">
+        <nav class="csat-area-nav" aria-labelledby="csat-subject-heading">
+        <h2 class="csat-section-title" id="csat-subject-heading">과목 선택</h2>
+        <ul class="csat-area-list">
+          <li><a class="csat-area-link" href="020-10-ko.html">국어</a></li>
+          <li><a class="csat-area-link" href="020-10-ma.html" aria-current="true">수학</a></li>
+          <li><a class="csat-area-link" href="020-10-영어.html">영어</a></li>
+          <li><a class="csat-area-link" href="020-10-hi.html">한국사</a></li>
+          <li><a class="csat-area-link" href="020-10-y.html">사회탐구</a></li>
+          <li><a class="csat-area-link" href="020-10-m.html">과학탐구</a></li>
+        </ul>
+        </nav>
+        <section class="csat-details" aria-labelledby="csat-materials-heading">
+        <h2 class="csat-subject-title" id="csat-materials-heading">수학</h2>
+          <div class="csat-subject-content">
+            <div>
+              <ul class="csat-download-list">
+                <li><a class="csat-row" href="020-10-ma.html"><span>수학</span><span class="csat-arrow" aria-hidden="true">→</span></a></li>
+              </ul>
+            </div>
+            <img class="csat-art" src="Images/csat-2027-math.webp" width="760" height="760" alt="" decoding="async">
+          </div>
+        </section>
+      </div>
+    </main>
+    <a class="csat-back" href="index.html"><span aria-hidden="true">←</span>&nbsp;이전 화면</a>
+  </div>
+<script src="visit-counter.js" type="module"></script>
 </body>
 </html>

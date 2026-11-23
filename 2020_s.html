@@ -1,152 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-  <title>과목선택</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: "Noto Sans KR", sans-serif;
-      background: #fafafa;
-    }
-
-    /* 중앙 전체 컨테이너 */
-    .container {
-      width: 100%;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    /* 타이틀 */
-    .title {
-      font-size: 38px;
-      font-weight: 900;
-      margin-bottom: 40px;
-      color: #333;
-    }
-
-    /* 현대적 6분할 그리드 */
-    .subject-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      margin-top: 20px;
-    }
-
-    .subject-item {
-      position: relative; /* dropdown 위치를 위해 필요 */
-    }
-
-    .subject-box {
-      padding: 45px 10px;
-      background: white;
-      border-radius: 18px;
-      border: 1px solid #e6e6e6;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      font-size: 24px;
-      font-weight: 700;
-      color: #333;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: 0.2s;
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .subject-box:hover {
-      transform: translateY(-4px);
-      background: #fff8e5;
-      border-color: #F4B733;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
-
-    /* 드롭다운 (초기 숨김) */
-    .dropdown {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      width: 100%;
-      margin-top: 12px;
-      background: white;
-      border-radius: 14px;
-      border: 1px solid #e6e6e6;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-      padding: 10px;
-      z-index: 40;
-    }
-
-    .dropdown a {
-      display: block;
-      padding: 10px 12px;
-      font-weight: 700;
-      font-size: 18px;
-      color: #333;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: 0.15s;
-    }
-
-    .dropdown a:hover {
-      background: #fff8e5;
-      border-color: #F4B733;
-      transform: translateY(-2px);
-    }
-
-    /* 표시 상태 클래스 */
-    .subject-item.open .dropdown {
-      display: block;
-    }
-
-    /* 화살표 표시 (디자인 변경 없이 미미한 표시) */
-    .subject-box .caret {
-      margin-left: 8px;
-      font-size: 16px;
-      opacity: 0.85;
-      transform: translateY(1px);
-    }
-
-    /* 뒤로가기 버튼 */
-    .back-btn {
-      margin-top: 50px;
-      display: inline-block;
-      padding: 12px 24px;
-      background: #f0f0f0;
-      border-radius: 10px;
-      font-size: 18px;
-      color: #444;
-      text-decoration: none;
-      font-weight: 600;
-      border: 1px solid #ddd;
-      transition: 0.2s;
-    }
-
-    .back-btn:hover {
-      background: #e4e4e4;
-      transform: translateY(-2px);
-    }
-
-    /* 간단한 반응형 — 레이아웃 본래 디자인을 유지하도록 보수적으로 적용 */
-    @media (max-width: 720px) {
-      .subject-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
-      .subject-box { padding: 36px 8px; font-size: 20px; }
-      .title { font-size: 32px; }
-    }
-
-    @media (max-width: 420px) {
-      .subject-grid { grid-template-columns: 1fr; }
-      .subject-box { padding: 30px 8px; font-size: 20px; }
-    }
-
-  </style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2020학년도 고3 수능 | 수능기출</title>
+  <link rel="stylesheet" href="csat-2027-layout.css?v=3">
+  <link rel="stylesheet" href="exam-archive.css">
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);} 
@@ -155,165 +15,50 @@
   gtag('config', 'G-B7Q0KVYYH5');
 </script>
 </head>
-<body>
-
-<div class="container">
-
-  <div class="title">2020학년도 고3 수능 과목 선택</div>
-
-  <div class="subject-grid">
-
-    <!-- 고3(복합) 예시: 국어 (언어와매체 / 독서/문학/화법작문 등) -->
-    <div class="subject-item">
-     <a class="subject-box" href="2020-s-국어.html">국어</a>
-    </div>
-
-    <!-- 수학: 확률과통계 / 미적분 / 기하 -->
-    <div class="subject-item">
-        <a class="subject-box" href="2020-s-수학.html">수학</a>
-    </div>
-
-    <!-- 영어: 단일 파일(예시) -->
-    <div class="subject-item">
-      <a class="subject-box" href="2020-s-영어.html">영어</a>
-    </div>
-
-    <!-- 한국사: 단일 파일 -->
-    <div class="subject-item">
-      <a class="subject-box" href="2020-s-역사.html">한국사</a>
-    </div>
-
-    <!-- 사회탐구: 여러 과목 -->
-    <div class="subject-item" data-subject="social">
-      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
-        사회탐구 <span class="caret">▾</span>
+<body class="csat-page exam-archive">
+  <div class="csat-wrap">
+    <header class="csat-header">
+      <a class="csat-brand" href="index.html">수능기출</a>
+      <div class="header-actions"></div>
+    </header>
+    <main>
+      <h1 class="csat-title">2020학년도 고3 수능</h1>
+      <nav class="exam-rounds" aria-label="시험 회차">
+      <ul class="csat-course-list">
+        <li><a class="csat-course-link" href="2020_6.html">6월</a></li>
+        <li><a class="csat-course-link" href="2020_9.html">9월</a></li>
+        <li><a class="csat-course-link" href="2020_s.html" aria-current="page">수능</a></li>
+      </ul>
+      </nav>
+      <div class="csat-layout">
+        <nav class="csat-area-nav" aria-labelledby="csat-subject-heading">
+        <h2 class="csat-section-title" id="csat-subject-heading">과목 선택</h2>
+        <ul class="csat-area-list">
+          <li><a class="csat-area-link" href="2020-s-국어.html">국어</a></li>
+          <li><a class="csat-area-link" href="2020-s-수학.html" aria-current="true">수학</a></li>
+          <li><a class="csat-area-link" href="2020-s-영어.html">영어</a></li>
+          <li><a class="csat-area-link" href="2020-s-역사.html">한국사</a></li>
+          <li><a class="csat-area-link" href="2020-s-y.html">사회탐구</a></li>
+          <li><a class="csat-area-link" href="2020-s-m.html">과학탐구</a></li>
+          <li><a class="csat-area-link" href="2020-s-job178.html">직업탐구</a></li>
+          <li><a class="csat-area-link" href="2020-s-language191.html">제2외국어·한문</a></li>
+        </ul>
+        </nav>
+        <section class="csat-details" aria-labelledby="csat-materials-heading">
+        <h2 class="csat-subject-title" id="csat-materials-heading">수학</h2>
+          <div class="csat-subject-content">
+            <div>
+              <ul class="csat-download-list">
+                <li><a class="csat-row" href="2020-s-수학.html"><span>수학</span><span class="csat-arrow" aria-hidden="true">→</span></a></li>
+              </ul>
+            </div>
+            <img class="csat-art" src="Images/csat-2027-math.webp" width="760" height="760" alt="" decoding="async">
+          </div>
+        </section>
       </div>
-<div class="dropdown">
-    <a class="subject-box" href="2020-s-y.html">윤리와사상</a>
-    <a class="subject-box" href="2020-s-j.html">정치와법</a>
-    <a class="subject-box" href="2020-s-k.html">경제</a>
-
-    <a class="subject-box" href="2020-s-sm.html">사회문화</a>
-    <a class="subject-box" href="2020-s-s.html">세계사</a>
-    <a class="subject-box" href="2020-s-h.html">한국지리</a>
-    <a class="subject-box" href="2020-s-sa.html">생활과윤리</a>
-    <a class="subject-box" href="2020-s-d.html">동아시아사</a>
-    <a class="subject-box" href="2020-s-sj.html">세계지리</a>
-</div>
-</div>
-
-
-  
-
-    <!-- 과학탐구: 여러 과목 -->
-    <div class="subject-item" data-subject="science">
-      <div class="subject-box" role="button" aria-expanded="false" tabindex="0">
-        과학탐구 <span class="caret">▾</span>
-      </div>
-<div class="dropdown">
-    <a class="subject-box" href="2020-s-m.html">물리학Ⅰ</a>
-    <a class="subject-box" href="2020-s-c.html">화학Ⅰ</a>
-    <a class="subject-box" href="2020-s-l.html">생명과학Ⅰ</a>
-    <a class="subject-box" href="2020-s-e.html">지구과학Ⅰ</a>
-    <a class="subject-box" href="2020-s-m2.html">물리학Ⅱ</a>
-    <a class="subject-box" href="2020-s-c2.html">화학Ⅱ</a>
-    <a class="subject-box" href="2020-s-l2.html">생명과학Ⅱ</a>
-    <a class="subject-box" href="2020-s-e2.html">지구과학Ⅱ</a>
-</div>
-</div>
-
-
-  <div class="subject-item"><div class="subject-box" role="button" aria-expanded="false" tabindex="0">직업탐구 <span class="caret">▾</span></div><div class="dropdown"><a href="2020-s-job178.html">농업 이해</a><a href="2020-s-job174.html">농업 기초 기술</a><a href="2020-s-job60005.html">공업 일반</a><a href="2020-s-job181.html">기초 제도</a><a href="2020-s-job182.html">상업 경제</a><a href="2020-s-job183.html">회계 원리</a><a href="2020-s-job186.html">해양의 이해</a><a href="2020-s-job60007.html">수산·해운 산업 기초</a><a href="2020-s-job187.html">인간 발달</a><a href="2020-s-job60008.html">생활 서비스 산업의 이해</a></div></div>
-<div class="subject-item"><div class="subject-box" role="button" aria-expanded="false" tabindex="0">제2외국어/한문 <span class="caret">▾</span></div><div class="dropdown"><a href="2020-s-language191.html">독일어Ⅰ</a><a href="2020-s-language192.html">프랑스어Ⅰ</a><a href="2020-s-language193.html">스페인어Ⅰ</a><a href="2020-s-language194.html">중국어Ⅰ</a><a href="2020-s-language195.html">일본어Ⅰ</a><a href="2020-s-language196.html">러시아어Ⅰ</a><a href="2020-s-language197.html">아랍어Ⅰ</a><a href="2020-s-language60009.html">베트남어Ⅰ</a><a href="2020-s-language198.html">한문Ⅰ</a></div></div>
-</div>
-
-  <!-- 뒤로가기 버튼 -->
-  <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
-
-</div>
-
-<script>
-  // 토글 동작: 클릭, 키보드(Enter/Space) 지원, 외부 클릭으로 닫기
-  (function () {
-    const items = document.querySelectorAll('.subject-item');
-
-    function closeAll(except = null) {
-      items.forEach(it => {
-        if (it !== except) {
-          it.classList.remove('open');
-          const box = it.querySelector('.subject-box');
-          if (box) box.setAttribute('aria-expanded', 'false');
-          const dd = it.querySelector('.dropdown');
-          if (dd) dd.setAttribute('aria-hidden', 'true');
-        }
-      });
-    }
-
-    items.forEach(item => {
-      const box = item.querySelector('.subject-box');
-      const dropdown = item.querySelector('.dropdown');
-
-      // subject-box가 앵커(a)인 경우(직접 링크)에는 토글 비활성
-      if (!box) return;
-
-      // 클릭 토글
-      box.addEventListener('click', (e) => {
-        // 만약 내부에 실제 링크(a.subject-box)를 사용하고 싶다면 이 부분 조정
-        const isOpen = item.classList.contains('open');
-        if (isOpen) {
-          item.classList.remove('open');
-          box.setAttribute('aria-expanded', 'false');
-          if (dropdown) dropdown.setAttribute('aria-hidden', 'true');
-        } else {
-          closeAll(item);
-          item.classList.add('open');
-          box.setAttribute('aria-expanded', 'true');
-          if (dropdown) dropdown.setAttribute('aria-hidden', 'false');
-        }
-      });
-
-      // 키보드 접근성: Enter / Space 로 열기
-      box.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          box.click();
-        }
-      });
-
-      // 드롭다운 내부에서 링크 클릭 시 자동으로 닫히도록
-      if (dropdown) {
-        dropdown.addEventListener('click', (e) => {
-          const target = e.target;
-          if (target.tagName.toLowerCase() === 'a') {
-            // 다운로드 링크 클릭했을 때 UI 닫기(브라우저가 다운로드를 처리함)
-            closeAll();
-          }
-        });
-      }
-    });
-
-    // 외부 클릭 시 모두 닫기
-    document.addEventListener('click', (e) => {
-      const isInside = e.target.closest('.subject-item');
-      if (!isInside) closeAll();
-    });
-
-    // ESC 키로 닫기
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeAll();
-    });
-
-  })();
-</script>
-
-
-<script type="module" src="visit-counter.js"></script>
-
+    </main>
+    <a class="csat-back" href="index.html"><span aria-hidden="true">←</span>&nbsp;이전 화면</a>
+  </div>
+<script src="visit-counter.js" type="module"></script>
 </body>
 </html>
-
-
-
-
-
-

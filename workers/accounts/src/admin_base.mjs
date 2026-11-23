@@ -2591,7 +2591,15 @@ function createHandler(deps = {}) {
       const cookies = (forwarded.headers.get("Cookie") || "").split(";").filter((c) => !c.trim().startsWith("__Host-msn-")).join(";");
       if (cookies.trim()) forwarded.headers.set("Cookie", cookies);
       else forwarded.headers.delete("Cookie");
-      let response = octoberKey ? await octoberPageResponse(request, env, octoberKey) : publicFile ? await env.ASSETS.fetch(new Request(new URL("/site-content/" + publicFile, url), { method: request.method })) : await externalFetch(forwarded);
+      let repositoryPage;
+      if (deps.preferRepositoryArchive && octoberKey && /^\/\d{2,4}[-_]/.test(decodedPath)) {
+        const candidate = await externalFetch(forwarded).catch(() => null);
+        if (candidate?.ok && (request.method === "HEAD" ||
+          (await candidate.clone().text()).includes('class="csat-page exam-archive"'))) {
+          repositoryPage = candidate;
+        }
+      }
+      let response = repositoryPage ?? (octoberKey ? await octoberPageResponse(request, env, octoberKey) : publicFile ? await env.ASSETS.fetch(new Request(new URL("/site-content/" + publicFile, url), { method: request.method })) : await externalFetch(forwarded));
       if (publicFile === "index.html" && request.method === "GET" && response.ok) response = await octoberHomeLinks(response);
       if (publicFile) {
         const headers = new Headers(response.headers);
@@ -2618,6 +2626,7 @@ function createHandler(deps = {}) {
 @media(max-width:640px){.header-bar{grid-template-columns:1fr!important;grid-template-areas:"brand" "nav" "search" "actions"!important;align-items:stretch!important;row-gap:10px!important}.header-bar>.header-actions>.dday-box{width:100%!important;justify-content:space-between!important}.header-bar>.header-actions>.search-box,.header-bar>.header-search-row{width:100%!important;max-width:none!important}.header-bar>.header-actions>.search-box,.header-bar>.header-search-row>.search-box{padding:9px 13px!important;border-radius:13px!important}.search-box input{font-size:14px!important}}
 </style>`;
       return removePublisherAds(new HTMLRewriter()).on("head", { element(e) {
+        if (publicFile === "index.html" && deps.preferRepositoryArchive) e.append('<link rel="stylesheet" href="/exam-archive.css">', { html: true });
         e.append(headerLayout + '<script src="/account-assets/visit.js?v=visitor-v2" data-visit-source="main" defer><\/script><script src="/account-assets/store.js?v=accounts-ui-20260927-r5" defer><\/script><script src="/account-assets/navigation.js?v=downloads-ui-20261012-v2" defer><\/script>', { html: true });
       } }).transform(new Response(response.body, { status: response.status, headers: h }));
     },
