@@ -113,7 +113,6 @@
   display: inline-flex;
   min-height: 32px;
   align-items: center;
-  gap: 5px;
   color: var(--csat-accent);
   text-decoration: none;
 }
@@ -121,10 +120,6 @@
 .ranking-exams a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
-}
-
-.ranking-exams a span:last-child {
-  flex: none;
 }
 
 .ranking-exam-unavailable {
