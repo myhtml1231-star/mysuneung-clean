@@ -2626,7 +2626,7 @@ function createHandler(deps = {}) {
 @media(max-width:640px){.header-bar{grid-template-columns:1fr!important;grid-template-areas:"brand" "nav" "search" "actions"!important;align-items:stretch!important;row-gap:10px!important}.header-bar>.header-actions>.dday-box{width:100%!important;justify-content:space-between!important}.header-bar>.header-actions>.search-box,.header-bar>.header-search-row{width:100%!important;max-width:none!important}.header-bar>.header-actions>.search-box,.header-bar>.header-search-row>.search-box{padding:9px 13px!important;border-radius:13px!important}.search-box input{font-size:14px!important}}
 </style>`;
       return removePublisherAds(new HTMLRewriter()).on("head", { element(e) {
-        if (publicFile === "index.html" && deps.preferRepositoryArchive) e.append('<link rel="stylesheet" href="/exam-archive.css">', { html: true });
+        if (publicFile === "index.html" && deps.preferRepositoryArchive) e.append('<link rel="stylesheet" href="/exam-archive.css"><link rel="stylesheet" href="/site-brand.css">', { html: true });
         e.append(headerLayout + '<script src="/account-assets/visit.js?v=visitor-v2" data-visit-source="main" defer><\/script><script src="/account-assets/store.js?v=accounts-ui-20260927-r5" defer><\/script><script src="/account-assets/navigation.js?v=downloads-ui-20261012-v2" defer><\/script>', { html: true });
       } }).transform(new Response(response.body, { status: response.status, headers: h }));
     },
