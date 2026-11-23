@@ -7,7 +7,7 @@
   <title>경찰대 신입학 기출 | 수능기출</title>
   <link rel="stylesheet" href="csat-2027-layout.css?v=3">
   <link rel="stylesheet" href="site-brand.css">
-  <link rel="stylesheet" href="police-exams.css">
+  <link rel="stylesheet" href="police-exams.css?v=2">
 </head>
 <body class="csat-page police-exam-page">
   <div class="csat-wrap">
@@ -19,34 +19,25 @@
       <h1 class="csat-title">경찰대 신입학 기출</h1>
       <div class="police-exam-layout">
         <div>
-          <div class="police-year-picker" hidden>
-            <label for="police-exam-year">학년도</label>
-            <select id="police-exam-year">
-              <option value="2027">2027학년도</option>
-              <option value="2026">2026학년도</option>
-              <option value="2025">2025학년도</option>
-              <option value="2024">2024학년도</option>
-              <option value="2023">2023학년도</option>
-              <option value="2022">2022학년도</option>
-              <option value="2021">2021학년도</option>
-              <option value="2020">2020학년도</option>
-              <option value="2019">2019학년도</option>
-              <option value="2018">2018학년도</option>
-              <option value="2017">2017학년도</option>
-              <option value="2016">2016학년도</option>
-              <option value="2015">2015학년도</option>
-              <option value="2014">2014학년도</option>
-              <option value="2013">2013학년도</option>
-              <option value="2012">2012학년도</option>
-              <option value="2011">2011학년도</option>
-              <option value="2010">2010학년도</option>
-              <option value="2009">2009학년도</option>
-              <option value="2008">2008학년도</option>
-              <option value="2007">2007학년도</option>
-              <option value="2006">2006학년도</option>
-            </select>
-          </div>
-          <section class="police-exam-year" data-year="2027" aria-labelledby="police-2027-heading">
+          <nav class="police-year-nav" aria-label="학년도 선택">
+            <ul class="police-year-list">
+              <li><a href="?year=2027#police-2027" data-year="2027">2027학년도</a></li>
+              <li><a href="?year=2026#police-2026" data-year="2026">2026학년도</a></li>
+              <li><a href="?year=2025#police-2025" data-year="2025">2025학년도</a></li>
+              <li><a href="?year=2024#police-2024" data-year="2024">2024학년도</a></li>
+              <li><a href="?year=2023#police-2023" data-year="2023">2023학년도</a></li>
+              <li><a href="?year=2022#police-2022" data-year="2022">2022학년도</a></li>
+              <li><a href="?year=2021#police-2021" data-year="2021">2021학년도</a></li>
+              <li><a href="?year=2020#police-2020" data-year="2020">2020학년도</a></li>
+              <li><a href="?year=2019#police-2019" data-year="2019">2019학년도</a></li>
+              <li><a href="?year=2018#police-2018" data-year="2018">2018학년도</a></li>
+              <li><a href="?year=2017#police-2017" data-year="2017">2017학년도</a></li>
+              <li><a href="?year=2016#police-2016" data-year="2016">2016학년도</a></li>
+              <li><a href="?year=2015#police-2015" data-year="2015">2015학년도</a></li>
+              <li><a href="?year=2014#police-2014" data-year="2014">2014학년도</a></li>
+            </ul>
+          </nav>
+          <section class="police-exam-year" id="police-2027" aria-labelledby="police-2027-heading">
             <h2 class="csat-subject-title" id="police-2027-heading">2027학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -60,7 +51,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/168760/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2026" aria-labelledby="police-2026-heading">
+          <section class="police-exam-year" id="police-2026" aria-labelledby="police-2026-heading">
             <h2 class="csat-subject-title" id="police-2026-heading">2026학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -74,7 +65,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/167549/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2025" aria-labelledby="police-2025-heading">
+          <section class="police-exam-year" id="police-2025" aria-labelledby="police-2025-heading">
             <h2 class="csat-subject-title" id="police-2025-heading">2025학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -88,7 +79,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/167120/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2024" aria-labelledby="police-2024-heading">
+          <section class="police-exam-year" id="police-2024" aria-labelledby="police-2024-heading">
             <h2 class="csat-subject-title" id="police-2024-heading">2024학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -102,7 +93,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/164671/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2023" aria-labelledby="police-2023-heading">
+          <section class="police-exam-year" id="police-2023" aria-labelledby="police-2023-heading">
             <h2 class="csat-subject-title" id="police-2023-heading">2023학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -116,7 +107,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/162828/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2022" aria-labelledby="police-2022-heading">
+          <section class="police-exam-year" id="police-2022" aria-labelledby="police-2022-heading">
             <h2 class="csat-subject-title" id="police-2022-heading">2022학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -130,7 +121,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/160997/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2021" aria-labelledby="police-2021-heading">
+          <section class="police-exam-year" id="police-2021" aria-labelledby="police-2021-heading">
             <h2 class="csat-subject-title" id="police-2021-heading">2021학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -144,7 +135,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/159459/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2020" aria-labelledby="police-2020-heading">
+          <section class="police-exam-year" id="police-2020" aria-labelledby="police-2020-heading">
             <h2 class="csat-subject-title" id="police-2020-heading">2020학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -158,7 +149,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/157823/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2019" aria-labelledby="police-2019-heading">
+          <section class="police-exam-year" id="police-2019" aria-labelledby="police-2019-heading">
             <h2 class="csat-subject-title" id="police-2019-heading">2019학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -172,7 +163,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/156210/boardView.do?mdex=police69">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2018" aria-labelledby="police-2018-heading">
+          <section class="police-exam-year" id="police-2018" aria-labelledby="police-2018-heading">
             <h2 class="csat-subject-title" id="police-2018-heading">2018학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -186,7 +177,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/154473/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2017" aria-labelledby="police-2017-heading">
+          <section class="police-exam-year" id="police-2017" aria-labelledby="police-2017-heading">
             <h2 class="csat-subject-title" id="police-2017-heading">2017학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -200,7 +191,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/152934/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2016" aria-labelledby="police-2016-heading">
+          <section class="police-exam-year" id="police-2016" aria-labelledby="police-2016-heading">
             <h2 class="csat-subject-title" id="police-2016-heading">2016학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -214,7 +205,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126991/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2015" aria-labelledby="police-2015-heading">
+          <section class="police-exam-year" id="police-2015" aria-labelledby="police-2015-heading">
             <h2 class="csat-subject-title" id="police-2015-heading">2015학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -228,7 +219,7 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126990/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2014" aria-labelledby="police-2014-heading">
+          <section class="police-exam-year" id="police-2014" aria-labelledby="police-2014-heading">
             <h2 class="csat-subject-title" id="police-2014-heading">2014학년도 1차 시험</h2>
             <table class="police-exam-table">
               <thead>
@@ -242,118 +233,6 @@
             </table>
             <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126989/boardView.do?mdex=police59">경찰대학 원문 공지</a>
           </section>
-          <section class="police-exam-year" data-year="2013" aria-labelledby="police-2013-heading">
-            <h2 class="csat-subject-title" id="police-2013-heading">2013학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">정답만 공개</span></td><td rowspan="3"><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126987&amp;fnm=1561094716030.pdf&amp;orgFnm=2013%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EA%B3%B5%ED%86%B5+%EC%A0%95%EB%8B%B5.pdf&amp;path=%2Fpds%2F" aria-label="2013학년도 경찰대 공통 정답 PDF">공통 PDF</a></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126988&amp;fnm=1561094748616.pdf&amp;orgFnm=2013%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.pdf&amp;path=%2Fpds%2F" aria-label="2013학년도 경찰대 영어 문제 PDF">PDF</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126988&amp;fnm=1561094752806.pdf&amp;orgFnm=2013%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.pdf&amp;path=%2Fpds%2F" aria-label="2013학년도 경찰대 수학 문제 PDF">PDF</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126988/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
-          <section class="police-exam-year" data-year="2012" aria-labelledby="police-2012-heading">
-            <h2 class="csat-subject-title" id="police-2012-heading">2012학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">정답만 공개</span></td><td rowspan="3"><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126986&amp;fnm=1561094899568.hwp&amp;orgFnm=2012%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EA%B3%B5%ED%86%B5+%EC%A0%95%EB%8B%B5.hwp&amp;path=%2Fpds%2F" aria-label="2012학년도 경찰대 공통 정답 HWP">공통 HWP</a></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126985&amp;fnm=1561094936149.pdf&amp;orgFnm=2012%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.pdf&amp;path=%2Fpds%2F" aria-label="2012학년도 경찰대 영어 문제 PDF">PDF</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126985&amp;fnm=1561094940319.pdf&amp;orgFnm=2012%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.pdf&amp;path=%2Fpds%2F" aria-label="2012학년도 경찰대 수학 문제 PDF">PDF</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126985/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
-          <section class="police-exam-year" data-year="2011" aria-labelledby="police-2011-heading">
-            <h2 class="csat-subject-title" id="police-2011-heading">2011학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">미공개</span></td><td rowspan="3"><span class="police-file-unavailable">공개 자료 없음</span></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126984&amp;fnm=1561098522456.pdf&amp;orgFnm=2011%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.pdf&amp;path=%2Fpds%2F" aria-label="2011학년도 경찰대 영어 문제 PDF">PDF</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126984&amp;fnm=1561098125796.pdf&amp;orgFnm=2011%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.pdf&amp;path=%2Fpds%2F" aria-label="2011학년도 경찰대 수학 문제 PDF">PDF</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126984/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
-          <section class="police-exam-year" data-year="2010" aria-labelledby="police-2010-heading">
-            <h2 class="csat-subject-title" id="police-2010-heading">2010학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">미공개</span></td><td rowspan="3"><span class="police-file-unavailable">공개 자료 없음</span></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126980&amp;fnm=1561097494920.hwp&amp;orgFnm=2010%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2010학년도 경찰대 영어 문제 HWP">HWP</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126980&amp;fnm=1561097499101.hwp&amp;orgFnm=2010%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2010학년도 경찰대 수학 문제 HWP">HWP</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126980/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
-          <section class="police-exam-year" data-year="2009" aria-labelledby="police-2009-heading">
-            <h2 class="csat-subject-title" id="police-2009-heading">2009학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">미공개</span></td><td rowspan="3"><span class="police-file-unavailable">공개 자료 없음</span></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126983&amp;fnm=1561098291234.hwp&amp;orgFnm=2009%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2009학년도 경찰대 영어 문제 HWP">HWP</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126983&amp;fnm=1561098295450.hwp&amp;orgFnm=2009%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2009학년도 경찰대 수학 문제 HWP">HWP</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126983/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
-          <section class="police-exam-year" data-year="2008" aria-labelledby="police-2008-heading">
-            <h2 class="csat-subject-title" id="police-2008-heading">2008학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">미공개</span></td><td rowspan="3"><span class="police-file-unavailable">공개 자료 없음</span></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126982&amp;fnm=1561098345345.hwp&amp;orgFnm=2008%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2008학년도 경찰대 영어 문제 HWP">HWP</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126982&amp;fnm=1561098349537.hwp&amp;orgFnm=2008%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2008학년도 경찰대 수학 문제 HWP">HWP</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126982/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
-          <section class="police-exam-year" data-year="2007" aria-labelledby="police-2007-heading">
-            <h2 class="csat-subject-title" id="police-2007-heading">2007학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">미공개</span></td><td rowspan="3"><span class="police-file-unavailable">공개 자료 없음</span></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126979&amp;fnm=1561098446523.hwp&amp;orgFnm=2007%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2007학년도 경찰대 영어 문제 HWP">HWP</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126979&amp;fnm=1561098450706.hwp&amp;orgFnm=2007%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2007학년도 경찰대 수학 문제 HWP">HWP</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126979/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
-          <section class="police-exam-year" data-year="2006" aria-labelledby="police-2006-heading">
-            <h2 class="csat-subject-title" id="police-2006-heading">2006학년도 1차 시험</h2>
-            <table class="police-exam-table">
-              <thead>
-                <tr><th scope="col">과목</th><th scope="col">문제</th><th scope="col">정답</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">국어</th><td><span class="police-file-unavailable">정답만 공개</span></td><td rowspan="3"><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126978&amp;fnm=1561098625920.hwp&amp;orgFnm=2006%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EA%B3%B5%ED%86%B5+%EC%A0%95%EB%8B%B5.hwp&amp;path=%2Fpds%2F" aria-label="2006학년도 경찰대 공통 정답 HWP">공통 HWP</a></td></tr>
-                <tr><th scope="row">영어</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126981&amp;fnm=1561098548045.hwp&amp;orgFnm=2006%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%98%81%EC%96%B4+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2006학년도 경찰대 영어 문제 HWP">HWP</a></td></tr>
-                <tr><th scope="row">수학</th><td><a href="https://www.police.ac.kr/police/common/fileDown.do?articleSeq=126981&amp;fnm=1561098552241.hwp&amp;orgFnm=2006%ED%95%99%EB%85%84%EB%8F%84+%EA%B2%BD%EC%B0%B0%EB%8C%80+%EC%88%98%ED%95%99+%EB%AC%B8%EC%A0%9C.hwp&amp;path=%2Fpds%2F" aria-label="2006학년도 경찰대 수학 문제 HWP">HWP</a></td></tr>
-              </tbody>
-            </table>
-            <a class="police-source" href="https://www.police.ac.kr/police/police/master/62/126981/boardView.do?mdex=police59">경찰대학 원문 공지</a>
-          </section>
         </div>
         <img class="csat-art police-exam-art" src="Images/csat-2027-exam-sheet.webp" width="790" height="960" alt="" decoding="async">
       </div>
@@ -361,7 +240,7 @@
     <a class="csat-back" href="index.html">이전 화면</a>
     <a class="police-source police-board-link" href="https://www.police.ac.kr/police/police/master/62/boardList.do?mdex=police59">경찰대학 기출문제 게시판</a>
   </div>
-  <script type="module" src="police-exams.js"></script>
+  <script type="module" src="police-exams.js?v=2"></script>
   <script type="module" src="visit-counter.js"></script>
 </body>
 </html>
