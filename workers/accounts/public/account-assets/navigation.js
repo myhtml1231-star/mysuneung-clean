@@ -23,7 +23,7 @@ if(publicNav){
   let menu=publicNav.querySelector('[data-other-exams]');
   if(!menu){menu=document.createElement('li');menu.dataset.otherExams='';publicNav.append(menu);}
   menu.className='nav-item';menu.dataset.name='다양한 기출';
-  menu.innerHTML='<button type="button" class="nav-btn" aria-expanded="false" aria-controls="panel-other-exams">다양한 기출</button><div class="dropdown-panel" id="panel-other-exams" aria-hidden="true"><a href="/other-exams?source=academy">사관학교</a><a href="/other-exams?source=leet">리트</a></div>';
+  menu.innerHTML='<button type="button" class="nav-btn" aria-expanded="false" aria-controls="panel-other-exams">다양한 기출</button><div class="dropdown-panel" id="panel-other-exams" aria-hidden="true"><a href="/other-exams?source=academy">사관학교</a><a href="/police-exams.html">경찰대</a><a href="/other-exams?source=leet">리트</a></div>';
   const menuButton=menu.querySelector('button'),menuPanel=menu.querySelector('.dropdown-panel');
   let menuTimer;
   function closeMenu(){menu.classList.remove('open');menuPanel.setAttribute('aria-hidden','true');menuButton.setAttribute('aria-expanded','false');}

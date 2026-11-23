@@ -1,0 +1,121 @@
+.police-exam-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: clamp(14px, 4vw, 44px);
+  align-items: start;
+}
+
+.police-year-picker {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.police-year-picker[hidden] {
+  display: none;
+}
+
+.police-year-picker label {
+  color: var(--csat-muted);
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.police-year-picker select {
+  min-height: 40px;
+  padding: 4px 6px;
+  border: 0;
+  border-bottom: 1px solid var(--csat-line);
+  border-radius: 0;
+  background: transparent;
+  color: var(--csat-ink);
+  font: inherit;
+}
+
+.police-year-picker select:focus-visible {
+  outline: 2px solid var(--csat-accent);
+  outline-offset: 3px;
+}
+
+.police-exam-year:not([hidden]) ~ .police-exam-year:not([hidden]) {
+  margin-top: 20px;
+}
+
+.police-exam-year {
+  min-width: 0;
+}
+
+.police-exam-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+}
+
+.police-exam-table :is(th, td) {
+  padding: 5px 8px 5px 0;
+  border-bottom: 1px solid var(--csat-line);
+}
+
+.police-exam-table thead th {
+  color: var(--csat-muted);
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.police-exam-table tbody th {
+  white-space: nowrap;
+}
+
+.police-exam-table a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  color: var(--csat-accent);
+  text-decoration: none;
+}
+
+.police-exam-table a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.police-file-unavailable {
+  color: var(--csat-muted);
+  font-size: .875rem;
+}
+
+.police-source {
+  display: inline-block;
+  min-height: 44px;
+  padding-block: 10px;
+  box-sizing: border-box;
+  color: var(--csat-muted);
+  font-size: .875rem;
+  text-underline-offset: 3px;
+}
+
+.police-board-link {
+  margin-inline-start: 16px;
+}
+
+@media (max-width: 560px) {
+  .police-exam-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .police-exam-page main {
+    position: relative;
+  }
+
+  .police-exam-page .csat-title {
+    padding-inline-end: 70px;
+  }
+
+  .police-exam-art {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    width: 60px;
+  }
+}

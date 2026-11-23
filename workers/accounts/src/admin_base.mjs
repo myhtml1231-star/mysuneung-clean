@@ -2437,6 +2437,15 @@ async function serveExamDownloads(request, env, url) {
   const headers=new Headers({'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','Content-Length':String(object.size),'Cache-Control':file?'public,max-age=86400':'no-cache,max-age=0'});
   if(file) {headers.set('Content-Type',({pdf:'application/pdf',hwp:'application/x-hwp',jpg:'image/jpeg',png:'image/png'})[file.format]||'application/octet-stream');headers.set('Content-Disposition','attachment; filename="'+path.slice('/other-exams/download/'.length)+'.'+file.format+'"; filename*=UTF-8\x27\x27'+encodeURIComponent(file.filename));}
   else headers.set('Content-Type',key.endsWith('.js')?'application/javascript; charset=utf-8':'text/html; charset=utf-8');
+  if (path === '/account-assets/navigation.js') {
+    headers.delete('Content-Length');
+    if (request.method === 'HEAD') return new Response(null, {headers});
+    const navigation = await object.text();
+    const academy = '<a href="/other-exams?source=academy">사관학교</a>';
+    const police = '<a href="/police-exams.html">경찰대</a>';
+    const updated = navigation.includes(police) ? navigation : navigation.replace(academy, academy + police);
+    return new Response(updated, {headers});
+  }
   return new Response(request.method==='HEAD'?null:object.body,{headers});
 }
 
