@@ -12,16 +12,13 @@
 }
 
 .csat-wrap {
-  width: min(72%, 1120px);
-  margin-inline: auto;
-  padding-bottom: clamp(48px, 9vh, 112px);
+  padding: 0 clamp(8px, 1.25vw, 24px) 8px;
 }
 
 .csat-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: clamp(30px, 7vh, 80px);
 }
 
 .csat-page .header-actions {
@@ -45,7 +42,7 @@
 }
 
 .csat-back {
-  margin-top: clamp(36px, 8vh, 82px);
+  margin-top: 8px;
   color: var(--csat-muted);
   font-size: .875rem;
 }
@@ -61,16 +58,16 @@
 
 .csat-hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: clamp(32px, 7vw, 124px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 16px;
   align-items: center;
-  margin-block: clamp(52px, 9vh, 112px) clamp(52px, 8vh, 102px);
+  margin-block: 4px 12px;
 }
 
 .csat-hero h1,
 .csat-subject-title h1 {
   margin: 0;
-  font-size: clamp(2.45rem, 4.5vw, 4.6rem);
+  font-size: clamp(1.875rem, 4vw, 3.625rem);
   line-height: 1.15;
   font-weight: 720;
   letter-spacing: -.065em;
@@ -80,23 +77,23 @@
   display: block;
   width: auto;
   max-width: 100%;
-  height: clamp(220px, 34vh, 340px);
+  height: clamp(112px, 24vh, 184px);
   object-fit: contain;
   justify-self: end;
 }
 
 .csat-section-title {
-  margin: 0 0 16px;
+  margin: 0 0 4px;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -.03em;
 }
 
 .csat-subjects,
-.csat-subject-content {
+.csat-with-listening {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: clamp(56px, 10vw, 172px);
+  column-gap: clamp(16px, 3vw, 48px);
   align-items: start;
 }
 
@@ -110,7 +107,7 @@
 
 .csat-row {
   display: flex;
-  min-height: 47px;
+  min-height: 44px;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
@@ -157,8 +154,8 @@
 }
 
 .csat-choice-list {
-  margin: 0 0 10px 11px;
-  padding-left: 16px;
+  margin-inline-start: 8px;
+  padding-inline-start: 12px;
   border-inline-start: 1px solid var(--csat-line);
 }
 
@@ -172,29 +169,18 @@
 }
 
 .csat-subject-title {
-  margin-block: clamp(62px, 12vh, 126px) clamp(42px, 7vh, 78px);
+  margin-block: 8px;
 }
 
 .csat-subject-title p {
-  margin: 0 0 16px;
+  margin: 0 0 4px;
   color: var(--csat-muted);
   font-size: .9375rem;
 }
 
-.csat-subject-content {
-  max-width: 100%;
-}
-
-.csat-file-section {
-  width: min(100%, 480px);
-}
-
-.csat-subject-content:not(.csat-with-listening) {
-  display: block;
-}
-
-.csat-with-listening {
-  column-gap: clamp(40px, 7vw, 116px);
+.csat-download-list .csat-row {
+  justify-content: flex-start;
+  gap: 12px;
 }
 
 .csat-player-controls {
@@ -250,7 +236,7 @@
 }
 
 .csat-audio-files {
-  margin-top: 18px;
+  margin-top: 6px;
 }
 
 .csat-download-status {
@@ -263,44 +249,17 @@
   margin: 0;
 }
 
-@media (max-width: 800px) {
-  .csat-wrap {
-    width: calc(100% - 64px);
-  }
-
-  .csat-subjects,
-  .csat-with-listening {
-    column-gap: 48px;
-  }
-
-  .csat-hero-image {
-    width: min(100%, 230px);
-    height: auto;
-  }
-}
-
 @media (max-width: 560px) {
-  .csat-wrap {
-    width: calc(100% - 44px);
-  }
-
-  .csat-hero {
-    grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
-    column-gap: 14px;
-    margin-block: 46px 48px;
-  }
-
-  .csat-hero h1 {
-    font-size: clamp(1.85rem, 7.5vw, 2.45rem);
+  .csat-hero-image {
+    max-height: 144px;
   }
 
   .csat-subjects,
   .csat-with-listening {
     grid-template-columns: 1fr;
-    row-gap: 8px;
   }
 
   .csat-with-listening {
-    row-gap: 36px;
+    row-gap: 12px;
   }
 }
