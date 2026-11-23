@@ -1,128 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1721316496084066" crossorigin="anonymous"></script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>역대 고2 과학 난이도 TOP10</title>
-<style>
-body {
-  font-family: "Pretendard", sans-serif;
-  background: #f5f7fb;
-  margin: 0;
-  padding: 0;
-}
-.container {
-  width: 92%;
-  max-width: 1200px;
-  margin: 0 auto 60px auto;
-}
-.page-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
-.page-title img { height: 38px; }
-.page-title h2 {
-  font-size: 25px;
-  font-weight: 800;
-}
-.note {
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 14px 18px;
-  margin: 0 auto 18px;
-  max-width: 900px;
-  font-size: 13px;
-  line-height: 1.65;
-  color: #555;
-}
-.subject-filter {
-  text-align: center;
-  margin: 20px auto;
-}
-.subject-filter button {
-  padding: 8px 15px;
-  margin: 4px;
-  border: none;
-  background: #eceff3;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.15s;
-}
-.subject-filter button:hover { background: #ffe3a6; }
-.subject-filter button.active {
-  background: #ffd27a !important;
-  color: white;
-  font-weight: 600;
-}
-.subject-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 25px;
-}
-.subject-box {
-  background: #fff;
-  padding: 20px 22px;
-  border-radius: 18px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: left;
-}
-.subject-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-.score-tag {
-  font-size: 14px;
-  color: #777;
-  white-space: nowrap;
-}
-.test-item {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px;
-  padding: 8px 4px;
-  border-bottom: 1px solid #f1f1f1;
-  font-size: 14px;
-}
-.test-item:last-child { border-bottom: none; }
-.back-btn {
-  display: block;
-  margin: 40px auto 0;
-  padding: 12px 26px;
-  background: #f3f4f6;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  text-decoration: none;
-  border: 1px solid #e2e2e2;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.07);
-  text-align: center;
-  width: 220px;
-}
-.back-btn:hover {
-  background: #e8e9eb;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.12);
-}
-@media(max-width:900px){.subject-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.subject-grid{grid-template-columns:1fr}}
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>역대 고2 과학 난이도 TOP10</title>
+  <link rel="stylesheet" href="csat-2027-layout.css?v=3">
+  <link rel="stylesheet" href="site-brand.css">
+  <link rel="stylesheet" href="exam-rankings.css">
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1721316496084066"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B7Q0KVYYH5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -130,89 +16,516 @@ body {
   gtag('config', 'G-B7Q0KVYYH5');
 </script>
 </head>
-<body>
-<div class="container">
-  <div class="subject-filter">
-    <button class="active" onclick="showSubject(&#x27;all&#x27;, this)">전체</button>
-    <button onclick="showSubject(&#x27;물리학Ⅰ&#x27;, this)">물리학Ⅰ</button>
-    <button onclick="showSubject(&#x27;생명과학Ⅰ&#x27;, this)">생명과학Ⅰ</button>
-    <button onclick="showSubject(&#x27;지구과학Ⅰ&#x27;, this)">지구과학Ⅰ</button>
-    <button onclick="showSubject(&#x27;통합과학&#x27;, this)">통합과학</button>
-    <button onclick="showSubject(&#x27;화학Ⅰ&#x27;, this)">화학Ⅰ</button>
+<body class="csat-page exam-ranking">
+  <div class="csat-wrap">
+    <header class="csat-header">
+      <a class="csat-brand" href="index.html"><img src="Images/site-logo-20261119.png" width="40" height="40" alt="">수능기출</a>
+      <div class="header-actions"></div>
+    </header>
+    <main>
+      <h1 class="csat-title">역대 고2 과학 난이도 TOP10</h1>
+      <nav class="ranking-filters" aria-label="과목 필터" hidden>
+        <button type="button" data-ranking-target="all" aria-pressed="true">전체</button>
+        <button type="button" data-ranking-target="ranking-1" aria-pressed="false">물리학Ⅰ</button>
+        <button type="button" data-ranking-target="ranking-2" aria-pressed="false">생명과학Ⅰ</button>
+        <button type="button" data-ranking-target="ranking-3" aria-pressed="false">지구과학Ⅰ</button>
+        <button type="button" data-ranking-target="ranking-4" aria-pressed="false">통합과학</button>
+        <button type="button" data-ranking-target="ranking-5" aria-pressed="false">화학Ⅰ</button>
+      </nav>
+      <div class="ranking-layout">
+        <div>
+          <section class="ranking-group" id="ranking-1" aria-labelledby="ranking-1-subject">
+            <h2 class="ranking-group-title" id="ranking-1-subject">물리학Ⅰ</h2>
+            <table class="ranking-table">
+              <thead>
+                <tr><th scope="col">순위</th><th scope="col">시험 회차 · 문제 받기</th><th scope="col">최고 표준점수</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-9-m.html" aria-label="2021학년도 9월 물리학Ⅰ 문제 자료"><span>2021학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>87</td>
+                </tr>
+                <tr>
+                  <th scope="row">2위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 9월</span></li>
+                    </ul>
+                  </td>
+                  <td>82</td>
+                </tr>
+                <tr>
+                  <th scope="row">3위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="022-9-m.html" aria-label="2022학년도 9월 물리학Ⅰ 문제 자료"><span>2022학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <th scope="row">4위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="024-9-m.html" aria-label="2024학년도 9월 물리학Ⅰ 문제 자료"><span>2024학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>79</td>
+                </tr>
+                <tr>
+                  <th scope="row">5위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="023-6-m.html" aria-label="2023학년도 6월 물리학Ⅰ 문제 자료"><span>2023학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>78</td>
+                </tr>
+                <tr>
+                  <th scope="row">6위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="020-9-m.html" aria-label="2020학년도 9월 물리학Ⅰ 문제 자료"><span>2020학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <th scope="row">7위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="025-9-m.html" aria-label="2025학년도 9월 물리학Ⅰ 문제 자료"><span>2025학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>76</td>
+                </tr>
+                <tr>
+                  <th scope="row">8위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 3월</span></li>
+                      <li><span class="ranking-exam-unavailable">2022학년도 11월</span></li>
+                      <li><a href="024-6-m.html" aria-label="2024학년도 6월 물리학Ⅰ 문제 자료"><span>2024학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-10-m.html" aria-label="2025학년도 10월 물리학Ⅰ 문제 자료"><span>2025학년도 10월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>73</td>
+                </tr>
+                <tr>
+                  <th scope="row">9위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="022-6-m.html" aria-label="2022학년도 6월 물리학Ⅰ 문제 자료"><span>2022학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="023-3-m.html" aria-label="2023학년도 3월 물리학Ⅰ 문제 자료"><span>2023학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="024-3-m.html" aria-label="2024학년도 3월 물리학Ⅰ 문제 자료"><span>2024학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-6-m.html" aria-label="2025학년도 6월 물리학Ⅰ 문제 자료"><span>2025학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>72</td>
+                </tr>
+                <tr>
+                  <th scope="row">10위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 11월</span></li>
+                      <li><span class="ranking-exam-unavailable">2020학년도 11월</span></li>
+                      <li><a href="021-6-m.html" aria-label="2021학년도 6월 물리학Ⅰ 문제 자료"><span>2021학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="023-9-m.html" aria-label="2023학년도 9월 물리학Ⅰ 문제 자료"><span>2023학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-3-m.html" aria-label="2025학년도 3월 물리학Ⅰ 문제 자료"><span>2025학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>71</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="ranking-group" id="ranking-2" aria-labelledby="ranking-2-subject">
+            <h2 class="ranking-group-title" id="ranking-2-subject">생명과학Ⅰ</h2>
+            <table class="ranking-table">
+              <thead>
+                <tr><th scope="col">순위</th><th scope="col">시험 회차 · 문제 받기</th><th scope="col">최고 표준점수</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="020-6-l.html" aria-label="2020학년도 6월 생명과학Ⅰ 문제 자료"><span>2020학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><span class="ranking-exam-unavailable">2020학년도 11월</span></li>
+                    </ul>
+                  </td>
+                  <td>79</td>
+                </tr>
+                <tr>
+                  <th scope="row">2위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 6월</span></li>
+                    </ul>
+                  </td>
+                  <td>78</td>
+                </tr>
+                <tr>
+                  <th scope="row">3위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="022-6-l.html" aria-label="2022학년도 6월 생명과학Ⅰ 문제 자료"><span>2022학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <th scope="row">4위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-6-l.html" aria-label="2021학년도 6월 생명과학Ⅰ 문제 자료"><span>2021학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="024-9-l.html" aria-label="2024학년도 9월 생명과학Ⅰ 문제 자료"><span>2024학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="024-10-l.html" aria-label="2024학년도 10월 생명과학Ⅰ 문제 자료"><span>2024학년도 10월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-10-l.html" aria-label="2025학년도 10월 생명과학Ⅰ 문제 자료"><span>2025학년도 10월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>76</td>
+                </tr>
+                <tr>
+                  <th scope="row">5위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-9-l.html" aria-label="2021학년도 9월 생명과학Ⅰ 문제 자료"><span>2021학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><span class="ranking-exam-unavailable">2021학년도 11월</span></li>
+                      <li><a href="022-9-l.html" aria-label="2022학년도 9월 생명과학Ⅰ 문제 자료"><span>2022학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <th scope="row">6위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="023-6-l.html" aria-label="2023학년도 6월 생명과학Ⅰ 문제 자료"><span>2023학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="024-6-l.html" aria-label="2024학년도 6월 생명과학Ⅰ 문제 자료"><span>2024학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-6-l.html" aria-label="2025학년도 6월 생명과학Ⅰ 문제 자료"><span>2025학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>74</td>
+                </tr>
+                <tr>
+                  <th scope="row">7위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 9월</span></li>
+                      <li><span class="ranking-exam-unavailable">2022학년도 11월</span></li>
+                      <li><a href="023-9-l.html" aria-label="2023학년도 9월 생명과학Ⅰ 문제 자료"><span>2023학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><span class="ranking-exam-unavailable">2023학년도 11월</span></li>
+                    </ul>
+                  </td>
+                  <td>73</td>
+                </tr>
+                <tr>
+                  <th scope="row">8위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 11월</span></li>
+                      <li><a href="025-9-l.html" aria-label="2025학년도 9월 생명과학Ⅰ 문제 자료"><span>2025학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>72</td>
+                </tr>
+                <tr>
+                  <th scope="row">9위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="020-9-l.html" aria-label="2020학년도 9월 생명과학Ⅰ 문제 자료"><span>2020학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="024-3-l.html" aria-label="2024학년도 3월 생명과학Ⅰ 문제 자료"><span>2024학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>70</td>
+                </tr>
+                <tr>
+                  <th scope="row">10위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 3월</span></li>
+                      <li><a href="022-3-l.html" aria-label="2022학년도 3월 생명과학Ⅰ 문제 자료"><span>2022학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>69</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="ranking-group" id="ranking-3" aria-labelledby="ranking-3-subject">
+            <h2 class="ranking-group-title" id="ranking-3-subject">지구과학Ⅰ</h2>
+            <table class="ranking-table">
+              <thead>
+                <tr><th scope="col">순위</th><th scope="col">시험 회차 · 문제 받기</th><th scope="col">최고 표준점수</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="022-9-e.html" aria-label="2022학년도 9월 지구과학Ⅰ 문제 자료"><span>2022학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>84</td>
+                </tr>
+                <tr>
+                  <th scope="row">2위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 9월</span></li>
+                    </ul>
+                  </td>
+                  <td>82</td>
+                </tr>
+                <tr>
+                  <th scope="row">3위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2021학년도 11월</span></li>
+                    </ul>
+                  </td>
+                  <td>79</td>
+                </tr>
+                <tr>
+                  <th scope="row">4위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="020-9-e.html" aria-label="2020학년도 9월 지구과학Ⅰ 문제 자료"><span>2020학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>78</td>
+                </tr>
+                <tr>
+                  <th scope="row">5위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-9-e.html" aria-label="2021학년도 9월 지구과학Ⅰ 문제 자료"><span>2021학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="022-3-e.html" aria-label="2022학년도 3월 지구과학Ⅰ 문제 자료"><span>2022학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-9-e.html" aria-label="2025학년도 9월 지구과학Ⅰ 문제 자료"><span>2025학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-10-e.html" aria-label="2025학년도 10월 지구과학Ⅰ 문제 자료"><span>2025학년도 10월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <th scope="row">6위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2020학년도 11월</span></li>
+                      <li><a href="024-9-e.html" aria-label="2024학년도 9월 지구과학Ⅰ 문제 자료"><span>2024학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>76</td>
+                </tr>
+                <tr>
+                  <th scope="row">7위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-6-e.html" aria-label="2021학년도 6월 지구과학Ⅰ 문제 자료"><span>2021학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><span class="ranking-exam-unavailable">2022학년도 11월</span></li>
+                      <li><a href="023-3-e.html" aria-label="2023학년도 3월 지구과학Ⅰ 문제 자료"><span>2023학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-3-e.html" aria-label="2025학년도 3월 지구과학Ⅰ 문제 자료"><span>2025학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <th scope="row">8위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 11월</span></li>
+                      <li><a href="023-6-e.html" aria-label="2023학년도 6월 지구과학Ⅰ 문제 자료"><span>2023학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="023-9-e.html" aria-label="2023학년도 9월 지구과학Ⅰ 문제 자료"><span>2023학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><span class="ranking-exam-unavailable">2023학년도 11월</span></li>
+                    </ul>
+                  </td>
+                  <td>73</td>
+                </tr>
+                <tr>
+                  <th scope="row">9위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="022-6-e.html" aria-label="2022학년도 6월 지구과학Ⅰ 문제 자료"><span>2022학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="024-6-e.html" aria-label="2024학년도 6월 지구과학Ⅰ 문제 자료"><span>2024학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="024-10-e.html" aria-label="2024학년도 10월 지구과학Ⅰ 문제 자료"><span>2024학년도 10월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>72</td>
+                </tr>
+                <tr>
+                  <th scope="row">10위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="020-6-e.html" aria-label="2020학년도 6월 지구과학Ⅰ 문제 자료"><span>2020학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>71</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="ranking-group" id="ranking-4" aria-labelledby="ranking-4-subject">
+            <h2 class="ranking-group-title" id="ranking-4-subject">통합과학</h2>
+            <table class="ranking-table">
+              <thead>
+                <tr><th scope="col">순위</th><th scope="col">시험 회차 · 문제 받기</th><th scope="col">최고 표준점수</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="026-6-sc.html" aria-label="2026학년도 6월 통합과학 문제 자료"><span>2026학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>78</td>
+                </tr>
+                <tr>
+                  <th scope="row">2위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="026-3-sc.html" aria-label="2026학년도 3월 통합과학 문제 자료"><span>2026학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <th scope="row">3위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="026-9-sc.html" aria-label="2026학년도 9월 통합과학 문제 자료"><span>2026학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>75</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="ranking-group" id="ranking-5" aria-labelledby="ranking-5-subject">
+            <h2 class="ranking-group-title" id="ranking-5-subject">화학Ⅰ</h2>
+            <table class="ranking-table">
+              <thead>
+                <tr><th scope="col">순위</th><th scope="col">시험 회차 · 문제 받기</th><th scope="col">최고 표준점수</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="022-9-c.html" aria-label="2022학년도 9월 화학Ⅰ 문제 자료"><span>2022학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <th scope="row">2위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-9-c.html" aria-label="2021학년도 9월 화학Ⅰ 문제 자료"><span>2021학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <th scope="row">3위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2021학년도 11월</span></li>
+                      <li><span class="ranking-exam-unavailable">2022학년도 11월</span></li>
+                      <li><span class="ranking-exam-unavailable">2023학년도 11월</span></li>
+                      <li><a href="024-9-c.html" aria-label="2024학년도 9월 화학Ⅰ 문제 자료"><span>2024학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <th scope="row">4위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="024-10-c.html" aria-label="2024학년도 10월 화학Ⅰ 문제 자료"><span>2024학년도 10월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-9-c.html" aria-label="2025학년도 9월 화학Ⅰ 문제 자료"><span>2025학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>76</td>
+                </tr>
+                <tr>
+                  <th scope="row">5위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="022-6-c.html" aria-label="2022학년도 6월 화학Ⅰ 문제 자료"><span>2022학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="023-9-c.html" aria-label="2023학년도 9월 화학Ⅰ 문제 자료"><span>2023학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <th scope="row">6위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2020학년도 11월</span></li>
+                    </ul>
+                  </td>
+                  <td>74</td>
+                </tr>
+                <tr>
+                  <th scope="row">7위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 6월</span></li>
+                      <li><a href="020-6-c.html" aria-label="2020학년도 6월 화학Ⅰ 문제 자료"><span>2020학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="020-9-c.html" aria-label="2020학년도 9월 화학Ⅰ 문제 자료"><span>2020학년도 9월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="022-3-c.html" aria-label="2022학년도 3월 화학Ⅰ 문제 자료"><span>2022학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="023-3-c.html" aria-label="2023학년도 3월 화학Ⅰ 문제 자료"><span>2023학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-10-c.html" aria-label="2025학년도 10월 화학Ⅰ 문제 자료"><span>2025학년도 10월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>73</td>
+                </tr>
+                <tr>
+                  <th scope="row">8위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><span class="ranking-exam-unavailable">2019학년도 9월</span></li>
+                    </ul>
+                  </td>
+                  <td>72</td>
+                </tr>
+                <tr>
+                  <th scope="row">9위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-6-c.html" aria-label="2021학년도 6월 화학Ⅰ 문제 자료"><span>2021학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="025-6-c.html" aria-label="2025학년도 6월 화학Ⅰ 문제 자료"><span>2025학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>71</td>
+                </tr>
+                <tr>
+                  <th scope="row">10위</th>
+                  <td>
+                    <ul class="ranking-exams">
+                      <li><a href="021-3-c.html" aria-label="2021학년도 3월 화학Ⅰ 문제 자료"><span>2021학년도 3월</span><span aria-hidden="true">→</span></a></li>
+                      <li><a href="023-6-c.html" aria-label="2023학년도 6월 화학Ⅰ 문제 자료"><span>2023학년도 6월</span><span aria-hidden="true">→</span></a></li>
+                    </ul>
+                  </td>
+                  <td>70</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <img class="csat-art ranking-art" src="Images/csat-2027-science.webp" width="760" height="760" alt="" decoding="async">
+      </div>
+    </main>
+    <a class="csat-back" href="index.html"><span aria-hidden="true">←</span>&nbsp;이전 화면</a>
   </div>
-  <div class="page-title"><img src="Images/logo.png" alt="로고"><h2>역대 고2 과학 난이도 TOP10</h2></div>
-  <div class="note">과학 영역은 과목별 최고 표준점수가 높은 순으로 정렬했습니다.<br>자료 기준: 메가스터디 역대 등급컷, EBSi 공개 등급컷 교차 확인. 확정 전 회차는 순위에서 제외했습니다.</div>
-  <div class="subject-grid">
-    <div class="subject-box" data-name="물리학Ⅰ">
-      <div class="subject-title">물리학Ⅰ <span class="score-tag">최고 표준점수</span></div>
-      <div class="test-item"><div><b>1위</b> — 2021학년도 9월</div><div>87</div></div>
-      <div class="test-item"><div><b>2위</b> — 2019학년도 9월</div><div>82</div></div>
-      <div class="test-item"><div><b>3위</b> — 2022학년도 9월</div><div>80</div></div>
-      <div class="test-item"><div><b>4위</b> — 2024학년도 9월</div><div>79</div></div>
-      <div class="test-item"><div><b>5위</b> — 2023학년도 6월</div><div>78</div></div>
-      <div class="test-item"><div><b>6위</b> — 2020학년도 9월</div><div>77</div></div>
-      <div class="test-item"><div><b>7위</b> — 2025학년도 9월</div><div>76</div></div>
-      <div class="test-item"><div><b>8위</b> — 2019학년도 3월, 2022학년도 11월, 2024학년도 6월, 2025학년도 10월</div><div>73</div></div>
-      <div class="test-item"><div><b>9위</b> — 2022학년도 6월, 2023학년도 3월, 2024학년도 3월, 2025학년도 6월</div><div>72</div></div>
-      <div class="test-item"><div><b>10위</b> — 2019학년도 11월, 2020학년도 11월, 2021학년도 6월, 2023학년도 9월, 2025학년도 3월</div><div>71</div></div>
-    </div>
-    <div class="subject-box" data-name="생명과학Ⅰ">
-      <div class="subject-title">생명과학Ⅰ <span class="score-tag">최고 표준점수</span></div>
-      <div class="test-item"><div><b>1위</b> — 2020학년도 6월, 2020학년도 11월</div><div>79</div></div>
-      <div class="test-item"><div><b>2위</b> — 2019학년도 6월</div><div>78</div></div>
-      <div class="test-item"><div><b>3위</b> — 2022학년도 6월</div><div>77</div></div>
-      <div class="test-item"><div><b>4위</b> — 2021학년도 6월, 2024학년도 9월, 2024학년도 10월, 2025학년도 10월</div><div>76</div></div>
-      <div class="test-item"><div><b>5위</b> — 2021학년도 9월, 2021학년도 11월, 2022학년도 9월</div><div>75</div></div>
-      <div class="test-item"><div><b>6위</b> — 2023학년도 6월, 2024학년도 6월, 2025학년도 6월</div><div>74</div></div>
-      <div class="test-item"><div><b>7위</b> — 2019학년도 9월, 2022학년도 11월, 2023학년도 9월, 2023학년도 11월</div><div>73</div></div>
-      <div class="test-item"><div><b>8위</b> — 2019학년도 11월, 2025학년도 9월</div><div>72</div></div>
-      <div class="test-item"><div><b>9위</b> — 2020학년도 9월, 2024학년도 3월</div><div>70</div></div>
-      <div class="test-item"><div><b>10위</b> — 2019학년도 3월, 2022학년도 3월</div><div>69</div></div>
-    </div>
-    <div class="subject-box" data-name="지구과학Ⅰ">
-      <div class="subject-title">지구과학Ⅰ <span class="score-tag">최고 표준점수</span></div>
-      <div class="test-item"><div><b>1위</b> — 2022학년도 9월</div><div>84</div></div>
-      <div class="test-item"><div><b>2위</b> — 2019학년도 9월</div><div>82</div></div>
-      <div class="test-item"><div><b>3위</b> — 2021학년도 11월</div><div>79</div></div>
-      <div class="test-item"><div><b>4위</b> — 2020학년도 9월</div><div>78</div></div>
-      <div class="test-item"><div><b>5위</b> — 2021학년도 9월, 2022학년도 3월, 2025학년도 9월, 2025학년도 10월</div><div>77</div></div>
-      <div class="test-item"><div><b>6위</b> — 2020학년도 11월, 2024학년도 9월</div><div>76</div></div>
-      <div class="test-item"><div><b>7위</b> — 2021학년도 6월, 2022학년도 11월, 2023학년도 3월, 2025학년도 3월</div><div>75</div></div>
-      <div class="test-item"><div><b>8위</b> — 2019학년도 11월, 2023학년도 6월, 2023학년도 9월, 2023학년도 11월</div><div>73</div></div>
-      <div class="test-item"><div><b>9위</b> — 2022학년도 6월, 2024학년도 6월, 2024학년도 10월</div><div>72</div></div>
-      <div class="test-item"><div><b>10위</b> — 2020학년도 6월</div><div>71</div></div>
-    </div>
-    <div class="subject-box" data-name="통합과학">
-      <div class="subject-title">통합과학 <span class="score-tag">최고 표준점수</span></div>
-      <div class="test-item"><div><b>1위</b> — 2026학년도 6월</div><div>78</div></div>
-      <div class="test-item"><div><b>2위</b> — 2026학년도 3월</div><div>77</div></div>
-      <div class="test-item"><div><b>3위</b> — 2026학년도 9월</div><div>75</div></div>
-    </div>
-    <div class="subject-box" data-name="화학Ⅰ">
-      <div class="subject-title">화학Ⅰ <span class="score-tag">최고 표준점수</span></div>
-      <div class="test-item"><div><b>1위</b> — 2022학년도 9월</div><div>88</div></div>
-      <div class="test-item"><div><b>2위</b> — 2021학년도 9월</div><div>80</div></div>
-      <div class="test-item"><div><b>3위</b> — 2021학년도 11월, 2022학년도 11월, 2023학년도 11월, 2024학년도 9월</div><div>77</div></div>
-      <div class="test-item"><div><b>4위</b> — 2024학년도 10월, 2025학년도 9월</div><div>76</div></div>
-      <div class="test-item"><div><b>5위</b> — 2022학년도 6월, 2023학년도 9월</div><div>75</div></div>
-      <div class="test-item"><div><b>6위</b> — 2020학년도 11월</div><div>74</div></div>
-      <div class="test-item"><div><b>7위</b> — 2019학년도 6월, 2020학년도 6월, 2020학년도 9월, 2022학년도 3월, 2023학년도 3월, 2025학년도 10월</div><div>73</div></div>
-      <div class="test-item"><div><b>8위</b> — 2019학년도 9월</div><div>72</div></div>
-      <div class="test-item"><div><b>9위</b> — 2021학년도 6월, 2025학년도 6월</div><div>71</div></div>
-      <div class="test-item"><div><b>10위</b> — 2021학년도 3월, 2023학년도 6월</div><div>70</div></div>
-    </div>
-  </div>
-  <a class="back-btn" href="index.html">← 이전 화면으로 돌아가기</a>
-</div>
-<script>
-function showSubject(name, btn) {
-  document.querySelectorAll('.subject-filter button').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.subject-box').forEach(box => {
-    box.style.display = (name === 'all' || box.dataset.name === name) ? 'block' : 'none';
-  });
-}
-</script>
-<script type="module" src="visit-counter.js"></script>
+  <script type="module" src="exam-rankings.js"></script>
+<script src="visit-counter.js" type="module"></script>
 </body>
 </html>
