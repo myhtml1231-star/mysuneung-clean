@@ -1,3 +1,5 @@
+@import url("exam-ranking-layout.css");
+
 #panel-cuts {
   top: 100%;
   width: 264px;
@@ -19,115 +21,6 @@
   overflow-wrap: anywhere;
 }
 
-.ranking-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 2.25fr) minmax(0, 1fr);
-  gap: clamp(16px, 4vw, 56px);
-  align-items: start;
-}
-
-.ranking-art {
-  position: sticky;
-  top: 16px;
-}
-
-.ranking-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 14px;
-  margin-bottom: 12px;
-}
-
-.ranking-filters[hidden] {
-  display: none;
-}
-
-.ranking-filters button {
-  min-height: 42px;
-  padding: 0;
-  border: 0;
-  border-bottom: 2px solid transparent;
-  color: var(--csat-muted);
-  background: none;
-  font: inherit;
-  cursor: pointer;
-}
-
-.ranking-filters button[aria-pressed="true"] {
-  border-color: var(--csat-accent);
-  color: var(--csat-accent);
-  font-weight: 700;
-}
-
-.ranking-group + .ranking-group {
-  margin-top: 24px;
-}
-
-.ranking-group-title {
-  margin: 0 0 6px;
-  font-size: 1.25rem;
-}
-
-.ranking-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: start;
-}
-
-.ranking-table :is(th, td) {
-  padding: 8px 8px 8px 0;
-  border-bottom: 1px solid var(--csat-line);
-  vertical-align: top;
-}
-
-.ranking-table thead th {
-  color: var(--csat-muted);
-  font-size: .875rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.ranking-table tbody th {
-  width: 3.2rem;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-.ranking-table :is(th, td):last-child {
-  padding-inline-end: 0;
-  text-align: end;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-.ranking-exams {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.ranking-exams a {
-  display: inline-flex;
-  min-height: 32px;
-  align-items: center;
-  color: var(--csat-accent);
-  text-decoration: none;
-}
-
-.ranking-exams a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.ranking-exam-unavailable {
-  display: inline-block;
-  padding-block: 4px;
-  color: var(--csat-muted);
-}
-
 @media (max-width: 640px) {
   .nav-list .nav-item[data-name="등급컷"] {
     position: static;
@@ -137,25 +30,5 @@
     inset-inline: 0;
     width: min(100%, 264px);
     margin-inline: auto;
-  }
-
-  .ranking-layout {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 8px;
-  }
-
-  .ranking-art {
-    position: static;
-    grid-row: 1;
-    width: 94px;
-    justify-self: end;
-  }
-
-  .ranking-table tbody th {
-    width: 2.6rem;
-  }
-
-  .ranking-exams {
-    column-gap: 8px;
   }
 }
