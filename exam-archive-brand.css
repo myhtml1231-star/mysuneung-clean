@@ -1,0 +1,14 @@
+.csat-brand {
+  gap: 7px;
+}
+
+.csat-brand::before {
+  content: "";
+  flex: none;
+  inline-size: 28px;
+  block-size: 25px;
+  /* Show the book and pencil from the full wordmark beside the link text. */
+  background: url("Images/site-logo-20261119.png") -12px -17px / 84px no-repeat;
+  filter: brightness(1.16) contrast(1.3);
+  mix-blend-mode: multiply;
+}
